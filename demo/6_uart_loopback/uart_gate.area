@@ -1,0 +1,38 @@
+standard
+***Report Model: uart_top***
+
+IO Statistics
+#IO                     4
+  #input                3
+  #output               1
+  #inout                0
+
+Utilization Statistics
+#lut                  110   out of  19600    0.56%
+#reg                   73   out of  19600    0.37%
+#le                   128
+  #lut only            55   out of    128   42.97%
+  #reg only            18   out of    128   14.06%
+  #lut&reg             55   out of    128   42.97%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    4   out of    188    2.13%
+  #ireg                 0
+  #oreg                 1
+  #treg                 0
+#pll                    1   out of      4   25.00%
+
+Report Hierarchy Area:
++---------------------------------------------------+
+|Instance     |Module          |le    |lut   |seq   |
++---------------------------------------------------+
+|top          |uart_top        |128   |110   |73    |
+|  my_uart_rx |my_uart_rx      |39    |27    |27    |
+|  my_uart_tx |my_uart_tx      |30    |24    |18    |
+|  speed_rx   |speed_setting_1 |29    |29    |14    |
+|  speed_tx   |speed_setting   |29    |29    |14    |
+|  u_pll_test |pll_test        |0     |0     |0     |
++---------------------------------------------------+

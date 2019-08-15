@@ -1,0 +1,3053 @@
+============================================================
+   Tang Dynasty, V4.6.12906
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/Anlogic/TD4.6.12906/bin/td.exe
+   Built at =   18:22:35 Jun 26 2019
+   Run by =     dell
+   Run Date =   Fri Jul 26 12:58:48 2019
+
+   Run on =     ANLOGIC-SUYANG
+============================================================
+RUN-1002 : start command "open_project Buttons&LED.al"
+GUI-8003 ERROR: Buttons_LED.v is missing!
+GUI-8003 ERROR: debounce.v is missing!
+GUI-8003 ERROR: rst.v is missing!
+RUN-1002 : start command "import_device eagle_s20.db -package BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicated  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicated  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+GUI-8003 ERROR: Buttons_LED.v is missing!
+GUI-8003 ERROR: debounce.v is missing!
+GUI-8003 ERROR: rst.v is missing!
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+RUN-1002 : start command "elaborate -top buttons_led"
+HDL-1007 : elaborate module buttons_led in sources/rtl/buttons_led.v(15)
+HDL-1007 : elaborate module debounce(N=5) in sources/rtl/debounce.v(14)
+HDL-1007 : elaborate module rst_int in sources/rtl/rst.v(9)
+HDL-1200 : Current top model is buttons_led
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc sources/sdc/button_pin.adc"
+RUN-1002 : start command "set_pin_assignment clk_24m  LOCATION = K14;  "
+RUN-1002 : start command "set_pin_assignment led[15]  LOCATION = T13;  "
+RUN-1002 : start command "set_pin_assignment led[14]  LOCATION = T12;  "
+RUN-1002 : start command "set_pin_assignment led[13]  LOCATION = R12;  "
+RUN-1002 : start command "set_pin_assignment led[12]  LOCATION = M7;  "
+RUN-1002 : start command "set_pin_assignment led[11]  LOCATION = T9;  "
+RUN-1002 : start command "set_pin_assignment led[10]  LOCATION = T8;  "
+RUN-1002 : start command "set_pin_assignment led[9]  LOCATION = T7;  "
+RUN-1002 : start command "set_pin_assignment led[8]  LOCATION = R7;  "
+RUN-1002 : start command "set_pin_assignment led[7]  LOCATION = P5;  "
+RUN-1002 : start command "set_pin_assignment led[6]  LOCATION = N5;  "
+RUN-1002 : start command "set_pin_assignment led[5]  LOCATION = P4;  "
+RUN-1002 : start command "set_pin_assignment led[4]  LOCATION = M5;  "
+RUN-1002 : start command "set_pin_assignment led[3]  LOCATION = N4;  "
+RUN-1002 : start command "set_pin_assignment led[2]  LOCATION = N3;  "
+RUN-1002 : start command "set_pin_assignment led[1]  LOCATION = M4;  "
+RUN-1002 : start command "set_pin_assignment led[0]  LOCATION = M3;  "
+RUN-1002 : start command "set_pin_assignment btn[0]  LOCATION = H14;  "
+RUN-1002 : start command "set_pin_assignment btn[1]  LOCATION = J13;  "
+RUN-1002 : start command "set_pin_assignment btn[2]  LOCATION = G11;  "
+RUN-1002 : start command "set_pin_assignment btn[3]  LOCATION = G12;  "
+RUN-1002 : start command "set_pin_assignment btn[4]  LOCATION = L12;  "
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "buttons_led"
+SYN-1012 : SanityCheck: Model "debounce(N=5)"
+SYN-1012 : SanityCheck: Model "rst_int"
+SYN-1011 : Flatten model buttons_led
+SYN-1011 : Flatten model debounce(N=5)
+SYN-1011 : Flatten model rst_int
+SYN-1014 : Optimize round 1
+SYN-1032 : 97/0 useful/useless nets, 87/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1020 : Optimized 24 distributor mux.
+SYN-1016 : Merged 54 instances.
+SYN-1015 : Optimize round 1, 94 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 59/18 useful/useless nets, 49/35 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 34 better
+SYN-1014 : Optimize round 3
+SYN-1032 : 59/1 useful/useless nets, 49/1 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 3, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 117/0 useful/useless nets, 92/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 5 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 111/6 useful/useless nets, 86/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 17/0 useful/useless nets, 13/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 4 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 13/4 useful/useless nets, 9/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "report_area -file Buttons&LED_rtl.area"
+RUN-1001 : standard
+***Report Model: buttons_led***
+
+IO Statistics
+#IO                    22
+  #input                6
+  #output              16
+  #inout                0
+
+Gate Statistics
+#Basic gates          114
+  #and                 20
+  #nand                 0
+  #or                   4
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                 30
+  #bufif1               0
+  #MX21                 0
+  #FADD                 0
+  #DFF                 60
+  #LATCH                0
+#MACRO_ADD              2
+#MACRO_EQ               2
+#MACRO_MUX             19
+
+RUN-1001 : 
+Report Hierarchy Area:
++----------------------------------------------+
+|Instance |Module      |gates  |seq    |macros |
++----------------------------------------------+
+|top      |buttons_led |54     |60     |23     |
+|  ux_btn |debounce    |24     |39     |2      |
+|  ux_rst |rst_int     |0      |5      |2      |
++----------------------------------------------+
+
+RUN-1002 : start command "export_db Buttons&LED_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "optimize_gate -packarea Buttons&LED_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+SYN-2001 : Map 22 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 76/1 useful/useless nets, 67/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 76/1 useful/useless nets, 67/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 76/1 useful/useless nets, 67/1 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 116/0 useful/useless nets, 91/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 142/0 useful/useless nets, 117/0 useful/useless insts
+SYN-2501 : Optimize round 1, 19 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 142/0 useful/useless nets, 117/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 1 macro adder
+SYN-1032 : 162/0 useful/useless nets, 137/0 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 13/0 useful/useless nets, 9/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 20/0 useful/useless nets, 16/0 useful/useless insts
+SYN-2501 : Optimize round 1, 4 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 20/0 useful/useless nets, 16/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 1 macro adder
+SYN-1032 : 25/0 useful/useless nets, 21/0 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=3, #lut = 5 (2.60), #lev = 2 (0.29)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=3, #lut = 5 (2.60), #lev = 2 (0.29)
+SYN-2581 : Mapping with K=3, #lut = 5 (2.60), #lev = 2 (0.29)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 30 instances into 21 LUTs, name keeping = 95%.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 34 (2.50), #lev = 3 (2.41)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 34 (2.50), #lev = 3 (2.41)
+SYN-2581 : Mapping with K=4, #lut = 34 (2.50), #lev = 3 (2.41)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =  73.00 sec
+SYN-3001 : Mapper mapped 70 instances into 34 LUTs, name keeping = 73%.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 1 (4.00), #lev = 1 (0.33)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 1 (4.00), #lev = 1 (0.33)
+SYN-2581 : Mapping with K=4, #lut = 1 (4.00), #lev = 1 (0.33)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =  73.04 sec
+SYN-3001 : Mapper mapped 8 instances into 1 LUTs, name keeping = 100%.
+SYN-1001 : Packing model "buttons_led" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 67/0 useful/useless nets, 58/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 16 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 21 LUT to BLE ...
+SYN-4008 : Packed 21 LUT and 16 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 5 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "buttons_led" (AL_USER_NORMAL) with 21/42 primitive instances ...
+SYN-1001 : Packing model "debounce(N=5)" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 125/0 useful/useless nets, 100/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 39 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 1 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 34 LUT to BLE ...
+SYN-4008 : Packed 34 LUT and 19 SEQ to BLE.
+SYN-4003 : Packing 20 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (20 nodes)...
+SYN-4004 : #1: Packed 9 SEQ (68 nodes)...
+SYN-4005 : Packed 9 SEQ with LUT/SLICE
+SYN-4006 : 6 single LUT's are left
+SYN-4006 : 20 single SEQ's are left
+SYN-4011 : Packing model "debounce(N=5)" (AL_USER_NORMAL) with 45/57 primitive instances ...
+SYN-1001 : Packing model "rst_int" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 17/0 useful/useless nets, 13/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 5 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 5 adder to BLE ...
+SYN-4008 : Packed 5 adder and 4 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 1 LUT to BLE ...
+SYN-4008 : Packed 1 LUT and 1 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "rst_int" (AL_USER_NORMAL) with 1/6 primitive instances ...
+RUN-1002 : start command "report_area -file Buttons&LED_gate.area"
+RUN-1001 : standard
+***Report Model: buttons_led***
+
+IO Statistics
+#IO                    22
+  #input                6
+  #output              16
+  #inout                0
+
+Utilization Statistics
+#lut                   72   out of  19600    0.37%
+#reg                   60   out of  19600    0.31%
+#le                    83
+  #lut only            23   out of     83   27.71%
+  #reg only            11   out of     83   13.25%
+  #lut&reg             49   out of     83   59.04%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   22   out of    188   11.70%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++---------------------------------------------+
+|Instance |Module        |le    |lut   |seq   |
++---------------------------------------------+
+|top      |buttons_led   |83    |72    |60    |
+|  ux_btn |debounce(N=5) |55    |44    |39    |
+|  ux_rst |rst_int       |7     |7     |5     |
++---------------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1001 : Force tag keep_hierarchy inst 'ux_btn'(AL_USER_NORMAL) to False
+SYN-1001 : Force tag keep_hierarchy inst 'ux_rst'(AL_USER_NORMAL) to False
+SYN-1011 : Flatten model buttons_led
+SYN-1011 : Flatten model debounce(N=5)
+SYN-1011 : Flatten model rst_int
+SYN-1016 : Merged 3 instances.
+RUN-1002 : start command "export_db Buttons&LED_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+PHY-3001 : Placer runs in 6 thread(s).
+SYN-4024 : Net "clk_24m_pad" drive clk pins.
+SYN-4025 : Tag rtl::Net clk_24m_pad as clock net
+SYN-4026 : Tagged 1 rtl::Net as clock net
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 68 instances
+RUN-1001 : 23 mslices, 20 lslices, 22 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 136 nets
+RUN-1001 : 66 nets have 2 pins
+RUN-1001 : 65 nets have [3 - 5] pins
+RUN-1001 : 1 nets have [6 - 10] pins
+RUN-1001 : 1 nets have [11 - 20] pins
+RUN-1001 : 3 nets have [21 - 99] pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 66 instances, 43 slices, 2 macros(8 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model buttons_led.
+TMR-2506 : Build timing graph completely. Port num: 3, tpin num: 423, tnet num: 134, tinst num: 66, tnode num: 567, tedge num: 661.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 15 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 134 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 72 clock pins, and constraint 144 relative nodes.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.011928s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (131.0%)
+
+PHY-3001 : Global placement ...
+PHY-3001 : Initial: Len = 34327.2
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997367
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(1): len = 23672.3, overlap = 0
+PHY-3002 : Step(2): len = 19995.4, overlap = 0
+PHY-3002 : Step(3): len = 18426.4, overlap = 0
+PHY-3002 : Step(4): len = 16868.2, overlap = 0
+PHY-3002 : Step(5): len = 15811.8, overlap = 0
+PHY-3002 : Step(6): len = 14596.3, overlap = 0
+PHY-3002 : Step(7): len = 13427.7, overlap = 0
+PHY-3002 : Step(8): len = 12518.2, overlap = 0
+PHY-3002 : Step(9): len = 11877.4, overlap = 0
+PHY-3002 : Step(10): len = 11205.9, overlap = 0
+PHY-3002 : Step(11): len = 10486.7, overlap = 0
+PHY-3002 : Step(12): len = 9886.2, overlap = 0
+PHY-3002 : Step(13): len = 8973.2, overlap = 0
+PHY-3002 : Step(14): len = 8623.6, overlap = 0
+PHY-3002 : Step(15): len = 8241, overlap = 0
+PHY-3002 : Step(16): len = 7930.7, overlap = 0
+PHY-3002 : Step(17): len = 7827.6, overlap = 0
+PHY-3002 : Step(18): len = 7816.9, overlap = 0
+PHY-3002 : Step(19): len = 7716.6, overlap = 0
+PHY-3002 : Step(20): len = 7643.8, overlap = 0
+PHY-3002 : Step(21): len = 7588.4, overlap = 0
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.003482s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997367
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(22): len = 7492.2, overlap = 0
+PHY-3002 : Step(23): len = 7491.6, overlap = 0
+PHY-3002 : Step(24): len = 7506.1, overlap = 0
+PHY-3002 : Step(25): len = 7457.7, overlap = 0
+PHY-3002 : Step(26): len = 7381.4, overlap = 0
+PHY-3002 : Step(27): len = 7347.9, overlap = 0
+PHY-3002 : Step(28): len = 7289.4, overlap = 0
+PHY-3002 : Step(29): len = 7285.6, overlap = 0
+PHY-3002 : Step(30): len = 7285.2, overlap = 0
+PHY-3002 : Step(31): len = 7243.1, overlap = 0
+PHY-3002 : Step(32): len = 7245.2, overlap = 0
+PHY-3002 : Step(33): len = 7187.5, overlap = 0
+PHY-3002 : Step(34): len = 7176.3, overlap = 0
+PHY-3002 : Step(35): len = 7119.4, overlap = 0
+PHY-3002 : Step(36): len = 7048.8, overlap = 0
+PHY-3002 : Step(37): len = 7032, overlap = 0
+PHY-3002 : Step(38): len = 7025.9, overlap = 0
+PHY-3002 : Step(39): len = 6976.9, overlap = 0
+PHY-3002 : Step(40): len = 6796.6, overlap = 0
+PHY-3002 : Step(41): len = 6635, overlap = 0
+PHY-3002 : Step(42): len = 6541.6, overlap = 0
+PHY-3002 : Step(43): len = 6489.2, overlap = 0
+PHY-3002 : Step(44): len = 6375.9, overlap = 0
+PHY-3002 : Step(45): len = 6328.5, overlap = 0
+PHY-3002 : Step(46): len = 6317.7, overlap = 0
+PHY-3002 : Step(47): len = 6335.5, overlap = 0
+PHY-3002 : Step(48): len = 6292, overlap = 0
+PHY-3002 : Step(49): len = 6267.8, overlap = 0
+PHY-3002 : Step(50): len = 6232.8, overlap = 0
+PHY-3002 : Step(51): len = 6202.7, overlap = 0
+PHY-3002 : Step(52): len = 6075.3, overlap = 0
+PHY-3002 : Step(53): len = 5922.6, overlap = 0
+PHY-3002 : Step(54): len = 5809.3, overlap = 0
+PHY-3002 : Step(55): len = 5735.5, overlap = 0
+PHY-3002 : Step(56): len = 5730.7, overlap = 0
+PHY-3002 : Step(57): len = 5700.1, overlap = 0
+PHY-3002 : Step(58): len = 5706.3, overlap = 0
+PHY-3002 : Step(59): len = 5634.5, overlap = 0
+PHY-3002 : Step(60): len = 5589.6, overlap = 0
+PHY-3002 : Step(61): len = 5596.3, overlap = 0
+PHY-3002 : Step(62): len = 5549.7, overlap = 0
+PHY-3002 : Step(63): len = 5535.4, overlap = 0
+PHY-3002 : Step(64): len = 5510, overlap = 0
+PHY-3002 : Step(65): len = 5418.5, overlap = 0
+PHY-3002 : Step(66): len = 5378.5, overlap = 0
+PHY-3002 : Step(67): len = 5316.9, overlap = 0
+PHY-3002 : Step(68): len = 5288.7, overlap = 0
+PHY-3002 : Step(69): len = 5127.6, overlap = 0
+PHY-3002 : Step(70): len = 5038.7, overlap = 0
+PHY-3002 : Step(71): len = 5036.2, overlap = 0
+PHY-3002 : Step(72): len = 4953.1, overlap = 0
+PHY-3002 : Step(73): len = 4955.1, overlap = 0
+PHY-3002 : Step(74): len = 4914.7, overlap = 0
+PHY-3002 : Step(75): len = 4903.3, overlap = 0
+PHY-3002 : Step(76): len = 4857.9, overlap = 0
+PHY-3002 : Step(77): len = 4825.1, overlap = 0
+PHY-3002 : Step(78): len = 4816.4, overlap = 0
+PHY-3002 : Step(79): len = 4817.5, overlap = 0
+PHY-3002 : Step(80): len = 4836.8, overlap = 0
+PHY-3002 : Step(81): len = 4763.3, overlap = 0
+PHY-3002 : Step(82): len = 4732.9, overlap = 0
+PHY-3002 : Step(83): len = 4723, overlap = 0
+PHY-3002 : Step(84): len = 4730, overlap = 0
+PHY-3002 : Step(85): len = 4734.3, overlap = 0
+PHY-3002 : Step(86): len = 4740, overlap = 0
+PHY-3002 : Step(87): len = 4741.3, overlap = 0
+PHY-3002 : Step(88): len = 4727.1, overlap = 0
+PHY-3002 : Step(89): len = 4691.2, overlap = 0
+PHY-3002 : Step(90): len = 4674.4, overlap = 0
+PHY-3002 : Step(91): len = 4679.7, overlap = 0
+PHY-3002 : Step(92): len = 4681.5, overlap = 0
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997367
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(93): len = 4652.9, overlap = 3.25
+PHY-3002 : Step(94): len = 4652.9, overlap = 3.25
+PHY-3002 : Step(95): len = 4660.5, overlap = 2.75
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.018721s wall, 0.015625s user + 0.015625s system = 0.031250s CPU (166.9%)
+
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997367
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(96): len = 5682.4, overlap = 0
+PHY-3002 : Step(97): len = 5310.9, overlap = 1.5
+PHY-3002 : Step(98): len = 5080.1, overlap = 2.5
+PHY-3002 : Step(99): len = 4896.2, overlap = 2
+PHY-3002 : Step(100): len = 4809.6, overlap = 2.5
+PHY-3002 : Step(101): len = 4783, overlap = 2.25
+PHY-3002 : Step(102): len = 4781.3, overlap = 2.25
+PHY-3002 : Step(103): len = 4761.1, overlap = 2.25
+PHY-3002 : Step(104): len = 4761.1, overlap = 2.25
+PHY-3002 : Step(105): len = 4734.5, overlap = 2.5
+PHY-3002 : Step(106): len = 4734.5, overlap = 2.5
+PHY-3002 : Step(107): len = 4716.3, overlap = 2.5
+PHY-3002 : Step(108): len = 4716.3, overlap = 2.5
+PHY-3002 : Step(109): len = 4701.8, overlap = 2.5
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.005252s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (297.5%)
+
+PHY-3001 : Legalized: Len = 5465.2, Over = 0
+PHY-3001 : Final: Len = 5465.2, Over = 0
+PHY-3001 : Improving timing with driver duplication.
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 6632, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.011170s wall, 0.031250s user + 0.031250s system = 0.062500s CPU (559.5%)
+
+RUN-1003 : finish command "place" in  1.769773s wall, 2.046875s user + 1.187500s system = 3.234375s CPU (182.8%)
+
+RUN-1004 : used memory is 155 MB, reserved memory is 103 MB, peak memory is 164 MB
+RUN-1002 : start command "route"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 30 to 26
+PHY-1001 : Pin misalignment score is improved from 26 to 25
+PHY-1001 : Pin misalignment score is improved from 25 to 25
+PHY-1001 : Route runs in 6 thread(s)
+RUN-1001 : There are total 68 instances
+RUN-1001 : 23 mslices, 20 lslices, 22 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 136 nets
+RUN-1001 : 66 nets have 2 pins
+RUN-1001 : 65 nets have [3 - 5] pins
+RUN-1001 : 1 nets have [6 - 10] pins
+RUN-1001 : 1 nets have [11 - 20] pins
+RUN-1001 : 3 nets have [21 - 99] pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 6632, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.013098s wall, 0.015625s user + 0.015625s system = 0.031250s CPU (238.6%)
+
+PHY-1001 : End global routing;  0.079577s wall, 0.078125s user + 0.015625s system = 0.093750s CPU (117.8%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2096, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.004332s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2096, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000010s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 32% nets.
+PHY-1001 : Routed 36% nets.
+PHY-1001 : Routed 41% nets.
+PHY-1001 : Routed 53% nets.
+PHY-1001 : Routed 77% nets.
+PHY-1002 : len = 12264, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 12264
+PHY-1001 : End Routed; 0.392368s wall, 0.484375s user + 0.015625s system = 0.500000s CPU (127.4%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  5.894300s wall, 5.718750s user + 0.296875s system = 6.015625s CPU (102.1%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  6.055935s wall, 5.875000s user + 0.343750s system = 6.218750s CPU (102.7%)
+
+RUN-1004 : used memory is 252 MB, reserved memory is 205 MB, peak memory is 685 MB
+RUN-1002 : start command "report_area -io_info -file Buttons&LED_phy.area"
+RUN-1001 : standard
+***Report Model: buttons_led***
+
+IO Statistics
+#IO                    22
+  #input                6
+  #output              16
+  #inout                0
+
+Utilization Statistics
+#lut                   72   out of  19600    0.37%
+#reg                   60   out of  19600    0.31%
+#le                    83
+  #lut only            23   out of     83   27.71%
+  #reg only            11   out of     83   13.25%
+  #lut&reg             49   out of     83   59.04%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   22   out of    188   11.70%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db Buttons&LED_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "bitgen -bit Buttons&LED.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 6 threads.
+BIT-1002 : Init instances completely, inst num: 68
+BIT-1002 : Init pips with 6 threads.
+BIT-1002 : Init pips completely, net num: 136, pip num: 859
+BIT-1003 : Multithreading accelaration with 6 threads.
+BIT-1003 : Generate bitstream completely, there are 271 valid insts, and 2559 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file Buttons&LED.bit.
+GUI-8003 ERROR: Buttons_LED.v is missing!
+GUI-8003 ERROR: debounce.v is missing!
+GUI-8003 ERROR: rst.v is missing!
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+RUN-1002 : start command "elaborate -top buttons_led"
+HDL-1007 : elaborate module buttons_led in sources/rtl/buttons_led.v(15)
+HDL-1007 : elaborate module debounce(N=5) in sources/rtl/debounce.v(14)
+HDL-1007 : elaborate module rst_int in sources/rtl/rst.v(9)
+HDL-1200 : Current top model is buttons_led
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc sources/sdc/button_pin.adc"
+RUN-1002 : start command "set_pin_assignment clk_24m  LOCATION = K14;  "
+RUN-1002 : start command "set_pin_assignment led[15]  LOCATION = T13;  "
+RUN-1002 : start command "set_pin_assignment led[14]  LOCATION = T12;  "
+RUN-1002 : start command "set_pin_assignment led[13]  LOCATION = R12;  "
+RUN-1002 : start command "set_pin_assignment led[12]  LOCATION = M7;  "
+RUN-1002 : start command "set_pin_assignment led[11]  LOCATION = T9;  "
+RUN-1002 : start command "set_pin_assignment led[10]  LOCATION = T8;  "
+RUN-1002 : start command "set_pin_assignment led[9]  LOCATION = T7;  "
+RUN-1002 : start command "set_pin_assignment led[8]  LOCATION = R7;  "
+RUN-1002 : start command "set_pin_assignment led[7]  LOCATION = P5;  "
+RUN-1002 : start command "set_pin_assignment led[6]  LOCATION = N5;  "
+RUN-1002 : start command "set_pin_assignment led[5]  LOCATION = P4;  "
+RUN-1002 : start command "set_pin_assignment led[4]  LOCATION = M5;  "
+RUN-1002 : start command "set_pin_assignment led[3]  LOCATION = N4;  "
+RUN-1002 : start command "set_pin_assignment led[2]  LOCATION = N3;  "
+RUN-1002 : start command "set_pin_assignment led[1]  LOCATION = M4;  "
+RUN-1002 : start command "set_pin_assignment led[0]  LOCATION = M3;  "
+RUN-1002 : start command "set_pin_assignment btn[0]  LOCATION = H14;  "
+RUN-1002 : start command "set_pin_assignment btn[1]  LOCATION = J13;  "
+RUN-1002 : start command "set_pin_assignment btn[2]  LOCATION = G11;  "
+RUN-1002 : start command "set_pin_assignment btn[3]  LOCATION = G12;  "
+RUN-1002 : start command "set_pin_assignment btn[4]  LOCATION = L12;  "
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "buttons_led"
+SYN-1012 : SanityCheck: Model "debounce(N=5)"
+SYN-1012 : SanityCheck: Model "rst_int"
+SYN-1011 : Flatten model buttons_led
+SYN-1011 : Flatten model debounce(N=5)
+SYN-1011 : Flatten model rst_int
+SYN-1014 : Optimize round 1
+SYN-1032 : 97/0 useful/useless nets, 87/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1020 : Optimized 24 distributor mux.
+SYN-1016 : Merged 54 instances.
+SYN-1015 : Optimize round 1, 94 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 59/18 useful/useless nets, 49/35 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 34 better
+SYN-1014 : Optimize round 3
+SYN-1032 : 59/1 useful/useless nets, 49/1 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 3, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 117/0 useful/useless nets, 92/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 5 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 111/6 useful/useless nets, 86/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 17/0 useful/useless nets, 13/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 4 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 13/4 useful/useless nets, 9/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "report_area -file Buttons&LED_rtl.area"
+RUN-1001 : standard
+***Report Model: buttons_led***
+
+IO Statistics
+#IO                    22
+  #input                6
+  #output              16
+  #inout                0
+
+Gate Statistics
+#Basic gates          114
+  #and                 20
+  #nand                 0
+  #or                   4
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                 30
+  #bufif1               0
+  #MX21                 0
+  #FADD                 0
+  #DFF                 60
+  #LATCH                0
+#MACRO_ADD              2
+#MACRO_EQ               2
+#MACRO_MUX             19
+
+RUN-1001 : 
+Report Hierarchy Area:
++----------------------------------------------+
+|Instance |Module      |gates  |seq    |macros |
++----------------------------------------------+
+|top      |buttons_led |54     |60     |23     |
+|  ux_btn |debounce    |24     |39     |2      |
+|  ux_rst |rst_int     |0      |5      |2      |
++----------------------------------------------+
+
+RUN-1002 : start command "export_db Buttons&LED_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "optimize_gate -packarea Buttons&LED_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+SYN-2001 : Map 22 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 76/1 useful/useless nets, 67/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 76/1 useful/useless nets, 67/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 76/1 useful/useless nets, 67/1 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 116/0 useful/useless nets, 91/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 142/0 useful/useless nets, 117/0 useful/useless insts
+SYN-2501 : Optimize round 1, 19 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 142/0 useful/useless nets, 117/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 1 macro adder
+SYN-1032 : 162/0 useful/useless nets, 137/0 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 13/0 useful/useless nets, 9/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 20/0 useful/useless nets, 16/0 useful/useless insts
+SYN-2501 : Optimize round 1, 4 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 20/0 useful/useless nets, 16/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 1 macro adder
+SYN-1032 : 25/0 useful/useless nets, 21/0 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=3, #lut = 5 (2.60), #lev = 2 (0.29)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=3, #lut = 5 (2.60), #lev = 2 (0.29)
+SYN-2581 : Mapping with K=3, #lut = 5 (2.60), #lev = 2 (0.29)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 30 instances into 21 LUTs, name keeping = 95%.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 34 (2.50), #lev = 3 (2.41)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 34 (2.50), #lev = 3 (2.41)
+SYN-2581 : Mapping with K=4, #lut = 34 (2.50), #lev = 3 (2.41)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map = 276.36 sec
+SYN-3001 : Mapper mapped 70 instances into 34 LUTs, name keeping = 73%.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 1 (4.00), #lev = 1 (0.33)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 1 (4.00), #lev = 1 (0.33)
+SYN-2581 : Mapping with K=4, #lut = 1 (4.00), #lev = 1 (0.33)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map = 276.41 sec
+SYN-3001 : Mapper mapped 8 instances into 1 LUTs, name keeping = 100%.
+SYN-1001 : Packing model "buttons_led" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 67/0 useful/useless nets, 58/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 16 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 21 LUT to BLE ...
+SYN-4008 : Packed 21 LUT and 16 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 5 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "buttons_led" (AL_USER_NORMAL) with 21/42 primitive instances ...
+SYN-1001 : Packing model "debounce(N=5)" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 125/0 useful/useless nets, 100/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 39 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 1 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 34 LUT to BLE ...
+SYN-4008 : Packed 34 LUT and 19 SEQ to BLE.
+SYN-4003 : Packing 20 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (20 nodes)...
+SYN-4004 : #1: Packed 9 SEQ (68 nodes)...
+SYN-4005 : Packed 9 SEQ with LUT/SLICE
+SYN-4006 : 6 single LUT's are left
+SYN-4006 : 20 single SEQ's are left
+SYN-4011 : Packing model "debounce(N=5)" (AL_USER_NORMAL) with 45/57 primitive instances ...
+SYN-1001 : Packing model "rst_int" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 17/0 useful/useless nets, 13/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 5 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 5 adder to BLE ...
+SYN-4008 : Packed 5 adder and 4 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 1 LUT to BLE ...
+SYN-4008 : Packed 1 LUT and 1 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "rst_int" (AL_USER_NORMAL) with 1/6 primitive instances ...
+RUN-1002 : start command "report_area -file Buttons&LED_gate.area"
+RUN-1001 : standard
+***Report Model: buttons_led***
+
+IO Statistics
+#IO                    22
+  #input                6
+  #output              16
+  #inout                0
+
+Utilization Statistics
+#lut                   72   out of  19600    0.37%
+#reg                   60   out of  19600    0.31%
+#le                    83
+  #lut only            23   out of     83   27.71%
+  #reg only            11   out of     83   13.25%
+  #lut&reg             49   out of     83   59.04%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   22   out of    188   11.70%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++---------------------------------------------+
+|Instance |Module        |le    |lut   |seq   |
++---------------------------------------------+
+|top      |buttons_led   |83    |72    |60    |
+|  ux_btn |debounce(N=5) |55    |44    |39    |
+|  ux_rst |rst_int       |7     |7     |5     |
++---------------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1001 : Force tag keep_hierarchy inst 'ux_btn'(AL_USER_NORMAL) to False
+SYN-1001 : Force tag keep_hierarchy inst 'ux_rst'(AL_USER_NORMAL) to False
+SYN-1011 : Flatten model buttons_led
+SYN-1011 : Flatten model debounce(N=5)
+SYN-1011 : Flatten model rst_int
+SYN-1016 : Merged 3 instances.
+RUN-1002 : start command "export_db Buttons&LED_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+PHY-3001 : Placer runs in 6 thread(s).
+SYN-4024 : Net "clk_24m_pad" drive clk pins.
+SYN-4025 : Tag rtl::Net clk_24m_pad as clock net
+SYN-4026 : Tagged 1 rtl::Net as clock net
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 68 instances
+RUN-1001 : 23 mslices, 20 lslices, 22 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 136 nets
+RUN-1001 : 66 nets have 2 pins
+RUN-1001 : 65 nets have [3 - 5] pins
+RUN-1001 : 1 nets have [6 - 10] pins
+RUN-1001 : 1 nets have [11 - 20] pins
+RUN-1001 : 3 nets have [21 - 99] pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 66 instances, 43 slices, 2 macros(8 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model buttons_led.
+TMR-2506 : Build timing graph completely. Port num: 3, tpin num: 423, tnet num: 134, tinst num: 66, tnode num: 567, tedge num: 661.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 15 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 134 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 72 clock pins, and constraint 144 relative nodes.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.011938s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Global placement ...
+PHY-3001 : Initial: Len = 34327.2
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997367
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(110): len = 23672.3, overlap = 0
+PHY-3002 : Step(111): len = 19995.4, overlap = 0
+PHY-3002 : Step(112): len = 18426.4, overlap = 0
+PHY-3002 : Step(113): len = 16868.2, overlap = 0
+PHY-3002 : Step(114): len = 15811.8, overlap = 0
+PHY-3002 : Step(115): len = 14596.3, overlap = 0
+PHY-3002 : Step(116): len = 13427.7, overlap = 0
+PHY-3002 : Step(117): len = 12518.2, overlap = 0
+PHY-3002 : Step(118): len = 11877.4, overlap = 0
+PHY-3002 : Step(119): len = 11205.9, overlap = 0
+PHY-3002 : Step(120): len = 10486.7, overlap = 0
+PHY-3002 : Step(121): len = 9886.2, overlap = 0
+PHY-3002 : Step(122): len = 8973.2, overlap = 0
+PHY-3002 : Step(123): len = 8623.6, overlap = 0
+PHY-3002 : Step(124): len = 8241, overlap = 0
+PHY-3002 : Step(125): len = 7930.7, overlap = 0
+PHY-3002 : Step(126): len = 7827.6, overlap = 0
+PHY-3002 : Step(127): len = 7816.9, overlap = 0
+PHY-3002 : Step(128): len = 7716.6, overlap = 0
+PHY-3002 : Step(129): len = 7643.8, overlap = 0
+PHY-3002 : Step(130): len = 7588.4, overlap = 0
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.003518s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997367
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(131): len = 7492.2, overlap = 0
+PHY-3002 : Step(132): len = 7491.6, overlap = 0
+PHY-3002 : Step(133): len = 7506.1, overlap = 0
+PHY-3002 : Step(134): len = 7457.7, overlap = 0
+PHY-3002 : Step(135): len = 7381.4, overlap = 0
+PHY-3002 : Step(136): len = 7347.9, overlap = 0
+PHY-3002 : Step(137): len = 7289.4, overlap = 0
+PHY-3002 : Step(138): len = 7285.6, overlap = 0
+PHY-3002 : Step(139): len = 7285.2, overlap = 0
+PHY-3002 : Step(140): len = 7243.1, overlap = 0
+PHY-3002 : Step(141): len = 7245.2, overlap = 0
+PHY-3002 : Step(142): len = 7187.5, overlap = 0
+PHY-3002 : Step(143): len = 7176.3, overlap = 0
+PHY-3002 : Step(144): len = 7119.4, overlap = 0
+PHY-3002 : Step(145): len = 7048.8, overlap = 0
+PHY-3002 : Step(146): len = 7032, overlap = 0
+PHY-3002 : Step(147): len = 7025.9, overlap = 0
+PHY-3002 : Step(148): len = 6976.9, overlap = 0
+PHY-3002 : Step(149): len = 6796.6, overlap = 0
+PHY-3002 : Step(150): len = 6635, overlap = 0
+PHY-3002 : Step(151): len = 6541.6, overlap = 0
+PHY-3002 : Step(152): len = 6489.2, overlap = 0
+PHY-3002 : Step(153): len = 6375.9, overlap = 0
+PHY-3002 : Step(154): len = 6328.5, overlap = 0
+PHY-3002 : Step(155): len = 6317.7, overlap = 0
+PHY-3002 : Step(156): len = 6335.5, overlap = 0
+PHY-3002 : Step(157): len = 6292, overlap = 0
+PHY-3002 : Step(158): len = 6267.8, overlap = 0
+PHY-3002 : Step(159): len = 6232.8, overlap = 0
+PHY-3002 : Step(160): len = 6202.7, overlap = 0
+PHY-3002 : Step(161): len = 6075.3, overlap = 0
+PHY-3002 : Step(162): len = 5922.6, overlap = 0
+PHY-3002 : Step(163): len = 5809.3, overlap = 0
+PHY-3002 : Step(164): len = 5735.5, overlap = 0
+PHY-3002 : Step(165): len = 5730.7, overlap = 0
+PHY-3002 : Step(166): len = 5700.1, overlap = 0
+PHY-3002 : Step(167): len = 5706.3, overlap = 0
+PHY-3002 : Step(168): len = 5634.5, overlap = 0
+PHY-3002 : Step(169): len = 5589.6, overlap = 0
+PHY-3002 : Step(170): len = 5596.3, overlap = 0
+PHY-3002 : Step(171): len = 5549.7, overlap = 0
+PHY-3002 : Step(172): len = 5535.4, overlap = 0
+PHY-3002 : Step(173): len = 5510, overlap = 0
+PHY-3002 : Step(174): len = 5418.5, overlap = 0
+PHY-3002 : Step(175): len = 5378.5, overlap = 0
+PHY-3002 : Step(176): len = 5316.9, overlap = 0
+PHY-3002 : Step(177): len = 5288.7, overlap = 0
+PHY-3002 : Step(178): len = 5127.6, overlap = 0
+PHY-3002 : Step(179): len = 5038.7, overlap = 0
+PHY-3002 : Step(180): len = 5036.2, overlap = 0
+PHY-3002 : Step(181): len = 4953.1, overlap = 0
+PHY-3002 : Step(182): len = 4955.1, overlap = 0
+PHY-3002 : Step(183): len = 4914.7, overlap = 0
+PHY-3002 : Step(184): len = 4903.3, overlap = 0
+PHY-3002 : Step(185): len = 4857.9, overlap = 0
+PHY-3002 : Step(186): len = 4825.1, overlap = 0
+PHY-3002 : Step(187): len = 4816.4, overlap = 0
+PHY-3002 : Step(188): len = 4817.5, overlap = 0
+PHY-3002 : Step(189): len = 4836.8, overlap = 0
+PHY-3002 : Step(190): len = 4763.3, overlap = 0
+PHY-3002 : Step(191): len = 4732.9, overlap = 0
+PHY-3002 : Step(192): len = 4723, overlap = 0
+PHY-3002 : Step(193): len = 4730, overlap = 0
+PHY-3002 : Step(194): len = 4734.3, overlap = 0
+PHY-3002 : Step(195): len = 4740, overlap = 0
+PHY-3002 : Step(196): len = 4741.3, overlap = 0
+PHY-3002 : Step(197): len = 4727.1, overlap = 0
+PHY-3002 : Step(198): len = 4691.2, overlap = 0
+PHY-3002 : Step(199): len = 4674.4, overlap = 0
+PHY-3002 : Step(200): len = 4679.7, overlap = 0
+PHY-3002 : Step(201): len = 4681.5, overlap = 0
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997367
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(202): len = 4652.9, overlap = 3.25
+PHY-3002 : Step(203): len = 4652.9, overlap = 3.25
+PHY-3002 : Step(204): len = 4660.5, overlap = 2.75
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.019341s wall, 0.015625s user + 0.015625s system = 0.031250s CPU (161.6%)
+
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997367
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(205): len = 5682.4, overlap = 0
+PHY-3002 : Step(206): len = 5310.9, overlap = 1.5
+PHY-3002 : Step(207): len = 5080.1, overlap = 2.5
+PHY-3002 : Step(208): len = 4896.2, overlap = 2
+PHY-3002 : Step(209): len = 4809.6, overlap = 2.5
+PHY-3002 : Step(210): len = 4783, overlap = 2.25
+PHY-3002 : Step(211): len = 4781.3, overlap = 2.25
+PHY-3002 : Step(212): len = 4761.1, overlap = 2.25
+PHY-3002 : Step(213): len = 4761.1, overlap = 2.25
+PHY-3002 : Step(214): len = 4734.5, overlap = 2.5
+PHY-3002 : Step(215): len = 4734.5, overlap = 2.5
+PHY-3002 : Step(216): len = 4716.3, overlap = 2.5
+PHY-3002 : Step(217): len = 4716.3, overlap = 2.5
+PHY-3002 : Step(218): len = 4701.8, overlap = 2.5
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.005423s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (576.2%)
+
+PHY-3001 : Legalized: Len = 5465.2, Over = 0
+PHY-3001 : Final: Len = 5465.2, Over = 0
+PHY-3001 : Improving timing with driver duplication.
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 6632, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.011820s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RUN-1003 : finish command "place" in  1.813537s wall, 2.265625s user + 1.234375s system = 3.500000s CPU (193.0%)
+
+RUN-1004 : used memory is 272 MB, reserved memory is 226 MB, peak memory is 685 MB
+RUN-1002 : start command "route"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 30 to 26
+PHY-1001 : Pin misalignment score is improved from 26 to 25
+PHY-1001 : Pin misalignment score is improved from 25 to 25
+PHY-1001 : Route runs in 6 thread(s)
+RUN-1001 : There are total 68 instances
+RUN-1001 : 23 mslices, 20 lslices, 22 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 136 nets
+RUN-1001 : 66 nets have 2 pins
+RUN-1001 : 65 nets have [3 - 5] pins
+RUN-1001 : 1 nets have [6 - 10] pins
+RUN-1001 : 1 nets have [11 - 20] pins
+RUN-1001 : 3 nets have [21 - 99] pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 6632, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.010849s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : End global routing;  0.073812s wall, 0.062500s user + 0.000000s system = 0.062500s CPU (84.7%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2096, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.003205s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2096, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000010s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 32% nets.
+PHY-1001 : Routed 36% nets.
+PHY-1001 : Routed 41% nets.
+PHY-1001 : Routed 53% nets.
+PHY-1001 : Routed 77% nets.
+PHY-1002 : len = 12264, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 12264
+PHY-1001 : End Routed; 0.412839s wall, 0.437500s user + 0.031250s system = 0.468750s CPU (113.5%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  2.451307s wall, 2.265625s user + 0.265625s system = 2.531250s CPU (103.3%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  2.606347s wall, 2.421875s user + 0.265625s system = 2.687500s CPU (103.1%)
+
+RUN-1004 : used memory is 271 MB, reserved memory is 224 MB, peak memory is 705 MB
+RUN-1002 : start command "report_area -io_info -file Buttons&LED_phy.area"
+RUN-1001 : standard
+***Report Model: buttons_led***
+
+IO Statistics
+#IO                    22
+  #input                6
+  #output              16
+  #inout                0
+
+Utilization Statistics
+#lut                   72   out of  19600    0.37%
+#reg                   60   out of  19600    0.31%
+#le                    83
+  #lut only            23   out of     83   27.71%
+  #reg only            11   out of     83   13.25%
+  #lut&reg             49   out of     83   59.04%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   22   out of    188   11.70%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db Buttons&LED_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "bitgen -bit Buttons&LED.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 6 threads.
+BIT-1002 : Init instances completely, inst num: 68
+BIT-1002 : Init pips with 6 threads.
+BIT-1002 : Init pips completely, net num: 136, pip num: 859
+BIT-1003 : Multithreading accelaration with 6 threads.
+BIT-1003 : Generate bitstream completely, there are 271 valid insts, and 2559 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file Buttons&LED.bit.
+RUN-1002 : start command "download -bit Buttons&LED.bit -mode jtag -spd 6 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit Buttons&LED.bit"
+PRG-3000 : BIT2VEC::JtagBitstream: completed! line_num = 1354, frame_num = 1259
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit Buttons&LED.bit" in  1.444619s wall, 1.343750s user + 0.093750s system = 1.437500s CPU (99.5%)
+
+RUN-1004 : used memory is 413 MB, reserved memory is 369 MB, peak memory is 705 MB
+RUN-1002 : start command "program -cable 0 -spd 6 -p"
+RUN-1003 : finish command "program -cable 0 -spd 6 -p" in  7.257642s wall, 0.796875s user + 0.218750s system = 1.015625s CPU (14.0%)
+
+RUN-1004 : used memory is 442 MB, reserved memory is 400 MB, peak memory is 705 MB
+RUN-1003 : finish command "download -bit Buttons&LED.bit -mode jtag -spd 6 -sec 64 -cable 0" in  9.243774s wall, 2.250000s user + 0.375000s system = 2.625000s CPU (28.4%)
+
+RUN-1004 : used memory is 301 MB, reserved memory is 253 MB, peak memory is 705 MB
+GUI-1001 : Download success!
+GUI-8003 ERROR: Buttons_LED.v is missing!
+GUI-8003 ERROR: debounce.v is missing!
+GUI-8003 ERROR: rst.v is missing!
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+RUN-1002 : start command "elaborate -top buttons_led"
+HDL-1007 : elaborate module buttons_led in sources/rtl/buttons_led.v(15)
+HDL-1007 : elaborate module debounce(N=5) in sources/rtl/debounce.v(14)
+HDL-1007 : elaborate module rst_int in sources/rtl/rst.v(9)
+HDL-1200 : Current top model is buttons_led
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc sources/sdc/button_pin.adc"
+RUN-1002 : start command "set_pin_assignment clk_24m  LOCATION = K14;  "
+RUN-1002 : start command "set_pin_assignment led[15]  LOCATION = T13;  "
+RUN-1002 : start command "set_pin_assignment led[14]  LOCATION = T12;  "
+RUN-1002 : start command "set_pin_assignment led[13]  LOCATION = R12;  "
+RUN-1002 : start command "set_pin_assignment led[12]  LOCATION = M7;  "
+RUN-1002 : start command "set_pin_assignment led[11]  LOCATION = T9;  "
+RUN-1002 : start command "set_pin_assignment led[10]  LOCATION = T8;  "
+RUN-1002 : start command "set_pin_assignment led[9]  LOCATION = T7;  "
+RUN-1002 : start command "set_pin_assignment led[8]  LOCATION = R7;  "
+RUN-1002 : start command "set_pin_assignment led[7]  LOCATION = P5;  "
+RUN-1002 : start command "set_pin_assignment led[6]  LOCATION = N5;  "
+RUN-1002 : start command "set_pin_assignment led[5]  LOCATION = P4;  "
+RUN-1002 : start command "set_pin_assignment led[4]  LOCATION = M5;  "
+RUN-1002 : start command "set_pin_assignment led[3]  LOCATION = N4;  "
+RUN-1002 : start command "set_pin_assignment led[2]  LOCATION = N3;  "
+RUN-1002 : start command "set_pin_assignment led[1]  LOCATION = M4;  "
+RUN-1002 : start command "set_pin_assignment led[0]  LOCATION = M3;  "
+RUN-1002 : start command "set_pin_assignment btn[0]  LOCATION = H14;  "
+RUN-1002 : start command "set_pin_assignment btn[1]  LOCATION = J13;  "
+RUN-1002 : start command "set_pin_assignment btn[2]  LOCATION = G11;  "
+RUN-1002 : start command "set_pin_assignment btn[3]  LOCATION = G12;  "
+RUN-1002 : start command "set_pin_assignment btn[4]  LOCATION = L12;  "
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "buttons_led"
+SYN-1012 : SanityCheck: Model "debounce(N=5)"
+SYN-1012 : SanityCheck: Model "rst_int"
+SYN-1011 : Flatten model buttons_led
+SYN-1011 : Flatten model debounce(N=5)
+SYN-1011 : Flatten model rst_int
+SYN-1014 : Optimize round 1
+SYN-1032 : 97/0 useful/useless nets, 87/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1020 : Optimized 24 distributor mux.
+SYN-1016 : Merged 54 instances.
+SYN-1015 : Optimize round 1, 94 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 59/18 useful/useless nets, 49/35 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 34 better
+SYN-1014 : Optimize round 3
+SYN-1032 : 59/1 useful/useless nets, 49/1 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 3, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 93/0 useful/useless nets, 68/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 5 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 87/6 useful/useless nets, 62/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 17/0 useful/useless nets, 13/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 4 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 13/4 useful/useless nets, 9/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "report_area -file Buttons&LED_rtl.area"
+RUN-1001 : standard
+***Report Model: buttons_led***
+
+IO Statistics
+#IO                    22
+  #input                6
+  #output              16
+  #inout                0
+
+Gate Statistics
+#Basic gates           90
+  #and                 15
+  #nand                 0
+  #or                   0
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                 25
+  #bufif1               0
+  #MX21                 0
+  #FADD                 0
+  #DFF                 50
+  #LATCH                0
+#MACRO_ADD              2
+#MACRO_EQ               2
+#MACRO_MUX             19
+
+RUN-1001 : 
+Report Hierarchy Area:
++----------------------------------------------+
+|Instance |Module      |gates  |seq    |macros |
++----------------------------------------------+
+|top      |buttons_led |40     |50     |23     |
+|  ux_btn |debounce    |10     |29     |2      |
+|  ux_rst |rst_int     |0      |5      |2      |
++----------------------------------------------+
+
+RUN-1002 : start command "export_db Buttons&LED_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "optimize_gate -packarea Buttons&LED_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+SYN-2001 : Map 22 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 76/1 useful/useless nets, 67/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 76/1 useful/useless nets, 67/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 76/1 useful/useless nets, 67/1 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 87/0 useful/useless nets, 62/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 113/0 useful/useless nets, 88/0 useful/useless insts
+SYN-2501 : Optimize round 1, 19 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 113/0 useful/useless nets, 88/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 1 macro adder
+SYN-1032 : 133/0 useful/useless nets, 108/0 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 13/0 useful/useless nets, 9/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 20/0 useful/useless nets, 16/0 useful/useless insts
+SYN-2501 : Optimize round 1, 4 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 20/0 useful/useless nets, 16/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 1 macro adder
+SYN-1032 : 25/0 useful/useless nets, 21/0 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=3, #lut = 5 (2.60), #lev = 2 (0.29)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=3, #lut = 5 (2.60), #lev = 2 (0.29)
+SYN-2581 : Mapping with K=3, #lut = 5 (2.60), #lev = 2 (0.29)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 30 instances into 21 LUTs, name keeping = 95%.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 31 (3.58), #lev = 3 (2.41)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 31 (3.58), #lev = 3 (2.41)
+SYN-2581 : Mapping with K=4, #lut = 31 (3.58), #lev = 3 (2.41)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map = 780.00 sec
+SYN-3001 : Mapper mapped 56 instances into 31 LUTs, name keeping = 80%.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 1 (4.00), #lev = 1 (0.33)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 1 (4.00), #lev = 1 (0.33)
+SYN-2581 : Mapping with K=4, #lut = 1 (4.00), #lev = 1 (0.33)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map = 780.04 sec
+SYN-3001 : Mapper mapped 8 instances into 1 LUTs, name keeping = 100%.
+SYN-1001 : Packing model "buttons_led" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 67/0 useful/useless nets, 58/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 16 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 21 LUT to BLE ...
+SYN-4008 : Packed 21 LUT and 16 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 5 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "buttons_led" (AL_USER_NORMAL) with 21/42 primitive instances ...
+SYN-1001 : Packing model "debounce(N=5)" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 107/0 useful/useless nets, 82/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 24 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 1 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 31 LUT to BLE ...
+SYN-4008 : Packed 31 LUT and 19 SEQ to BLE.
+SYN-4003 : Packing 5 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (5 nodes)...
+SYN-4004 : #1: Packed 5 SEQ (5 nodes)...
+SYN-4005 : Packed 5 SEQ with LUT/SLICE
+SYN-4006 : 7 single LUT's are left
+SYN-4006 : 5 single SEQ's are left
+SYN-4011 : Packing model "debounce(N=5)" (AL_USER_NORMAL) with 31/43 primitive instances ...
+SYN-1001 : Packing model "rst_int" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 17/0 useful/useless nets, 13/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 5 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 5 adder to BLE ...
+SYN-4008 : Packed 5 adder and 4 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 1 LUT to BLE ...
+SYN-4008 : Packed 1 LUT and 1 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "rst_int" (AL_USER_NORMAL) with 1/6 primitive instances ...
+RUN-1002 : start command "report_area -file Buttons&LED_gate.area"
+RUN-1001 : standard
+***Report Model: buttons_led***
+
+IO Statistics
+#IO                    22
+  #input                6
+  #output              16
+  #inout                0
+
+Utilization Statistics
+#lut                   69   out of  19600    0.35%
+#reg                   45   out of  19600    0.23%
+#le                    69
+  #lut only            24   out of     69   34.78%
+  #reg only             0   out of     69    0.00%
+  #lut&reg             45   out of     69   65.22%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   22   out of    188   11.70%
+  #ireg                 5
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++---------------------------------------------+
+|Instance |Module        |le    |lut   |seq   |
++---------------------------------------------+
+|top      |buttons_led   |69    |69    |45    |
+|  ux_btn |debounce(N=5) |41    |41    |24    |
+|  ux_rst |rst_int       |7     |7     |5     |
++---------------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1001 : Force tag keep_hierarchy inst 'ux_btn'(AL_USER_NORMAL) to False
+SYN-1001 : Force tag keep_hierarchy inst 'ux_rst'(AL_USER_NORMAL) to False
+SYN-1011 : Flatten model buttons_led
+SYN-1011 : Flatten model debounce(N=5)
+SYN-1011 : Flatten model rst_int
+SYN-1016 : Merged 3 instances.
+RUN-1002 : start command "export_db Buttons&LED_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+PHY-3001 : Placer runs in 6 thread(s).
+SYN-4024 : Net "clk_24m_pad" drive clk pins.
+SYN-4025 : Tag rtl::Net clk_24m_pad as clock net
+SYN-4026 : Tagged 1 rtl::Net as clock net
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 61 instances
+RUN-1001 : 19 mslices, 17 lslices, 22 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 118 nets
+RUN-1001 : 56 nets have 2 pins
+RUN-1001 : 54 nets have [3 - 5] pins
+RUN-1001 : 2 nets have [6 - 10] pins
+RUN-1001 : 6 nets have [21 - 99] pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 59 instances, 36 slices, 2 macros(8 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model buttons_led.
+TMR-2506 : Build timing graph completely. Port num: 3, tpin num: 412, tnet num: 116, tinst num: 59, tnode num: 542, tedge num: 668.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 15 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 116 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 66 clock pins, and constraint 130 relative nodes.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.010710s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (145.9%)
+
+PHY-3001 : Global placement ...
+PHY-3001 : Initial: Len = 31269.6
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997796
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(219): len = 23989.7, overlap = 0
+PHY-3002 : Step(220): len = 20258.1, overlap = 0
+PHY-3002 : Step(221): len = 18361, overlap = 0
+PHY-3002 : Step(222): len = 17057.4, overlap = 0
+PHY-3002 : Step(223): len = 16242.8, overlap = 0
+PHY-3002 : Step(224): len = 15562.6, overlap = 0
+PHY-3002 : Step(225): len = 14895, overlap = 0
+PHY-3002 : Step(226): len = 14242.6, overlap = 0
+PHY-3002 : Step(227): len = 13504.6, overlap = 0
+PHY-3002 : Step(228): len = 12971.9, overlap = 0
+PHY-3002 : Step(229): len = 12398.7, overlap = 0
+PHY-3002 : Step(230): len = 11948.9, overlap = 0
+PHY-3002 : Step(231): len = 11315.2, overlap = 0
+PHY-3002 : Step(232): len = 10556.4, overlap = 0
+PHY-3002 : Step(233): len = 10042.1, overlap = 0
+PHY-3002 : Step(234): len = 9804.2, overlap = 0
+PHY-3002 : Step(235): len = 9643.4, overlap = 0
+PHY-3002 : Step(236): len = 9332.1, overlap = 0
+PHY-3002 : Step(237): len = 8974.4, overlap = 0
+PHY-3002 : Step(238): len = 8765.2, overlap = 0
+PHY-3002 : Step(239): len = 8532.5, overlap = 0
+PHY-3002 : Step(240): len = 8443.2, overlap = 0
+PHY-3002 : Step(241): len = 8333.2, overlap = 0
+PHY-3002 : Step(242): len = 8159.3, overlap = 0
+PHY-3002 : Step(243): len = 7946.7, overlap = 0
+PHY-3002 : Step(244): len = 7850.4, overlap = 0
+PHY-3002 : Step(245): len = 7765.1, overlap = 0
+PHY-3002 : Step(246): len = 7619.7, overlap = 0
+PHY-3002 : Step(247): len = 7469.1, overlap = 0
+PHY-3002 : Step(248): len = 7418.2, overlap = 0
+PHY-3002 : Step(249): len = 7418.2, overlap = 0
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.003433s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (455.1%)
+
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997796
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(250): len = 7381.1, overlap = 0
+PHY-3002 : Step(251): len = 7379.5, overlap = 0
+PHY-3002 : Step(252): len = 7370, overlap = 0
+PHY-3002 : Step(253): len = 7363.5, overlap = 0
+PHY-3002 : Step(254): len = 7343.1, overlap = 0
+PHY-3002 : Step(255): len = 7343.1, overlap = 0
+PHY-3002 : Step(256): len = 7314.1, overlap = 0
+PHY-3002 : Step(257): len = 7314.1, overlap = 0
+PHY-3002 : Step(258): len = 7309, overlap = 0
+PHY-3002 : Step(259): len = 7309, overlap = 0
+PHY-3002 : Step(260): len = 7300.8, overlap = 0
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997796
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(261): len = 7298.4, overlap = 0.5
+PHY-3002 : Step(262): len = 7298.4, overlap = 0.5
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.022010s wall, 0.031250s user + 0.015625s system = 0.046875s CPU (213.0%)
+
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997796
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(263): len = 7935.8, overlap = 0
+PHY-3002 : Step(264): len = 7536.9, overlap = 0
+PHY-3002 : Step(265): len = 7437.7, overlap = 0
+PHY-3002 : Step(266): len = 7380, overlap = 0
+PHY-3002 : Step(267): len = 7343.4, overlap = 0.25
+PHY-3002 : Step(268): len = 7335.7, overlap = 0.25
+PHY-3002 : Step(269): len = 7342.4, overlap = 0.25
+PHY-3002 : Step(270): len = 7324.9, overlap = 0
+PHY-3002 : Step(271): len = 7320.9, overlap = 0
+PHY-3002 : Step(272): len = 7273.3, overlap = 0.25
+PHY-3002 : Step(273): len = 7255.7, overlap = 0.5
+PHY-3002 : Step(274): len = 7221.7, overlap = 0.25
+PHY-3002 : Step(275): len = 7173.5, overlap = 0.25
+PHY-3002 : Step(276): len = 7030.8, overlap = 0.25
+PHY-3002 : Step(277): len = 6951.5, overlap = 0.5
+PHY-3002 : Step(278): len = 6889.1, overlap = 0.25
+PHY-3002 : Step(279): len = 6872.2, overlap = 0.25
+PHY-3002 : Step(280): len = 6864.2, overlap = 0.25
+PHY-3002 : Step(281): len = 6857.5, overlap = 0.5
+PHY-3002 : Step(282): len = 6759.3, overlap = 0.25
+PHY-3002 : Step(283): len = 6736.9, overlap = 0.25
+PHY-3002 : Step(284): len = 6705.5, overlap = 0.25
+PHY-3002 : Step(285): len = 6705.5, overlap = 0.25
+PHY-3002 : Step(286): len = 6687.5, overlap = 0.5
+PHY-3002 : Step(287): len = 6687.8, overlap = 0.5
+PHY-3002 : Step(288): len = 6687.8, overlap = 0.5
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.005627s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Legalized: Len = 6959.6, Over = 0
+PHY-3001 : Final: Len = 6959.6, Over = 0
+PHY-3001 : Improving timing with driver duplication.
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 10992, over cnt = 3(0%), over = 5, worst = 2
+PHY-1002 : len = 11072, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.013579s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RUN-1003 : finish command "place" in  1.194074s wall, 1.359375s user + 0.781250s system = 2.140625s CPU (179.3%)
+
+RUN-1004 : used memory is 293 MB, reserved memory is 247 MB, peak memory is 705 MB
+RUN-1002 : start command "route"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 38 to 29
+PHY-1001 : Pin misalignment score is improved from 29 to 28
+PHY-1001 : Pin misalignment score is improved from 28 to 28
+PHY-1001 : Route runs in 6 thread(s)
+RUN-1001 : There are total 61 instances
+RUN-1001 : 19 mslices, 17 lslices, 22 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 118 nets
+RUN-1001 : 56 nets have 2 pins
+RUN-1001 : 54 nets have [3 - 5] pins
+RUN-1001 : 2 nets have [6 - 10] pins
+RUN-1001 : 6 nets have [21 - 99] pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 10992, over cnt = 3(0%), over = 5, worst = 2
+PHY-1002 : len = 11072, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.011590s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : End global routing;  0.076833s wall, 0.078125s user + 0.000000s system = 0.078125s CPU (101.7%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2984, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.006791s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2984, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000010s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 25% nets.
+PHY-1001 : Routed 33% nets.
+PHY-1001 : Routed 42% nets.
+PHY-1001 : Routed 56% nets.
+PHY-1001 : Routed 74% nets.
+PHY-1002 : len = 16280, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : End Routed; 0.379476s wall, 0.437500s user + 0.031250s system = 0.468750s CPU (123.5%)
+
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1002 : len = 16296, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 16296
+PHY-1001 : End DR Iter 1; 0.008462s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  2.431657s wall, 2.343750s user + 0.187500s system = 2.531250s CPU (104.1%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  2.590036s wall, 2.515625s user + 0.187500s system = 2.703125s CPU (104.4%)
+
+RUN-1004 : used memory is 302 MB, reserved memory is 259 MB, peak memory is 722 MB
+RUN-1002 : start command "report_area -io_info -file Buttons&LED_phy.area"
+RUN-1001 : standard
+***Report Model: buttons_led***
+
+IO Statistics
+#IO                    22
+  #input                6
+  #output              16
+  #inout                0
+
+Utilization Statistics
+#lut                   69   out of  19600    0.35%
+#reg                   45   out of  19600    0.23%
+#le                    69
+  #lut only            24   out of     69   34.78%
+  #reg only             0   out of     69    0.00%
+  #lut&reg             45   out of     69   65.22%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   22   out of    188   11.70%
+  #ireg                 5
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db Buttons&LED_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "bitgen -bit Buttons&LED.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 6 threads.
+BIT-1002 : Init instances completely, inst num: 61
+BIT-1002 : Init pips with 6 threads.
+BIT-1002 : Init pips completely, net num: 118, pip num: 938
+BIT-1003 : Multithreading accelaration with 6 threads.
+BIT-1003 : Generate bitstream completely, there are 363 valid insts, and 2706 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file Buttons&LED.bit.
+RUN-1002 : start command "download -bit Buttons&LED.bit -mode jtag -spd 6 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit Buttons&LED.bit"
+PRG-3000 : BIT2VEC::JtagBitstream: completed! line_num = 1354, frame_num = 1259
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit Buttons&LED.bit" in  1.427743s wall, 1.421875s user + 0.000000s system = 1.421875s CPU (99.6%)
+
+RUN-1004 : used memory is 432 MB, reserved memory is 394 MB, peak memory is 722 MB
+RUN-1002 : start command "program -cable 0 -spd 6 -p"
+RUN-1003 : finish command "program -cable 0 -spd 6 -p" in  6.805980s wall, 1.171875s user + 0.687500s system = 1.859375s CPU (27.3%)
+
+RUN-1004 : used memory is 461 MB, reserved memory is 422 MB, peak memory is 722 MB
+RUN-1003 : finish command "download -bit Buttons&LED.bit -mode jtag -spd 6 -sec 64 -cable 0" in  8.761598s wall, 2.781250s user + 0.796875s system = 3.578125s CPU (40.8%)
+
+RUN-1004 : used memory is 327 MB, reserved memory is 286 MB, peak memory is 722 MB
+GUI-1001 : Download success!
+GUI-8003 ERROR: Buttons_LED.v is missing!
+GUI-8003 ERROR: debounce.v is missing!
+GUI-8003 ERROR: rst.v is missing!
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+RUN-1002 : start command "elaborate -top buttons_led"
+HDL-1007 : elaborate module buttons_led in sources/rtl/buttons_led.v(15)
+HDL-1007 : elaborate module debounce(N=5) in sources/rtl/debounce.v(14)
+HDL-1007 : elaborate module rst_int in sources/rtl/rst.v(9)
+HDL-1200 : Current top model is buttons_led
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc sources/sdc/button_pin.adc"
+RUN-1002 : start command "set_pin_assignment clk_24m  LOCATION = K14;  "
+RUN-1002 : start command "set_pin_assignment led[15]  LOCATION = T13;  "
+RUN-1002 : start command "set_pin_assignment led[14]  LOCATION = T12;  "
+RUN-1002 : start command "set_pin_assignment led[13]  LOCATION = R12;  "
+RUN-1002 : start command "set_pin_assignment led[12]  LOCATION = M7;  "
+RUN-1002 : start command "set_pin_assignment led[11]  LOCATION = T9;  "
+RUN-1002 : start command "set_pin_assignment led[10]  LOCATION = T8;  "
+RUN-1002 : start command "set_pin_assignment led[9]  LOCATION = T7;  "
+RUN-1002 : start command "set_pin_assignment led[8]  LOCATION = R7;  "
+RUN-1002 : start command "set_pin_assignment led[7]  LOCATION = P5;  "
+RUN-1002 : start command "set_pin_assignment led[6]  LOCATION = N5;  "
+RUN-1002 : start command "set_pin_assignment led[5]  LOCATION = P4;  "
+RUN-1002 : start command "set_pin_assignment led[4]  LOCATION = M5;  "
+RUN-1002 : start command "set_pin_assignment led[3]  LOCATION = N4;  "
+RUN-1002 : start command "set_pin_assignment led[2]  LOCATION = N3;  "
+RUN-1002 : start command "set_pin_assignment led[1]  LOCATION = M4;  "
+RUN-1002 : start command "set_pin_assignment led[0]  LOCATION = M3;  "
+RUN-1002 : start command "set_pin_assignment btn[0]  LOCATION = H14;  "
+RUN-1002 : start command "set_pin_assignment btn[1]  LOCATION = J13;  "
+RUN-1002 : start command "set_pin_assignment btn[2]  LOCATION = G11;  "
+RUN-1002 : start command "set_pin_assignment btn[3]  LOCATION = G12;  "
+RUN-1002 : start command "set_pin_assignment btn[4]  LOCATION = L12;  "
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "buttons_led"
+SYN-1012 : SanityCheck: Model "debounce(N=5)"
+SYN-1012 : SanityCheck: Model "rst_int"
+SYN-1011 : Flatten model buttons_led
+SYN-1011 : Flatten model debounce(N=5)
+SYN-1011 : Flatten model rst_int
+SYN-1014 : Optimize round 1
+SYN-1032 : 97/0 useful/useless nets, 87/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1020 : Optimized 24 distributor mux.
+SYN-1016 : Merged 54 instances.
+SYN-1015 : Optimize round 1, 94 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 59/18 useful/useless nets, 49/35 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 34 better
+SYN-1014 : Optimize round 3
+SYN-1032 : 59/1 useful/useless nets, 49/1 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 3, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 93/0 useful/useless nets, 68/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 5 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 87/6 useful/useless nets, 62/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 17/0 useful/useless nets, 13/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 4 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 13/4 useful/useless nets, 9/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "report_area -file Buttons&LED_rtl.area"
+RUN-1001 : standard
+***Report Model: buttons_led***
+
+IO Statistics
+#IO                    22
+  #input                6
+  #output              16
+  #inout                0
+
+Gate Statistics
+#Basic gates           90
+  #and                 15
+  #nand                 0
+  #or                   0
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                 25
+  #bufif1               0
+  #MX21                 0
+  #FADD                 0
+  #DFF                 50
+  #LATCH                0
+#MACRO_ADD              2
+#MACRO_EQ               2
+#MACRO_MUX             19
+
+RUN-1001 : 
+Report Hierarchy Area:
++----------------------------------------------+
+|Instance |Module      |gates  |seq    |macros |
++----------------------------------------------+
+|top      |buttons_led |40     |50     |23     |
+|  ux_btn |debounce    |10     |29     |2      |
+|  ux_rst |rst_int     |0      |5      |2      |
++----------------------------------------------+
+
+RUN-1002 : start command "export_db Buttons&LED_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "optimize_gate -packarea Buttons&LED_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+SYN-2001 : Map 22 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 76/1 useful/useless nets, 67/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 76/1 useful/useless nets, 67/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 76/1 useful/useless nets, 67/1 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 87/0 useful/useless nets, 62/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 113/0 useful/useless nets, 88/0 useful/useless insts
+SYN-2501 : Optimize round 1, 19 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 113/0 useful/useless nets, 88/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 1 macro adder
+SYN-1032 : 133/0 useful/useless nets, 108/0 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 13/0 useful/useless nets, 9/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 20/0 useful/useless nets, 16/0 useful/useless insts
+SYN-2501 : Optimize round 1, 4 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 20/0 useful/useless nets, 16/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 1 macro adder
+SYN-1032 : 25/0 useful/useless nets, 21/0 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=3, #lut = 5 (2.60), #lev = 2 (0.29)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=3, #lut = 5 (2.60), #lev = 2 (0.29)
+SYN-2581 : Mapping with K=3, #lut = 5 (2.60), #lev = 2 (0.29)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 30 instances into 21 LUTs, name keeping = 95%.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 31 (3.58), #lev = 3 (2.41)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 31 (3.58), #lev = 3 (2.41)
+SYN-2581 : Mapping with K=4, #lut = 31 (3.58), #lev = 3 (2.41)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map = 908.15 sec
+SYN-3001 : Mapper mapped 56 instances into 31 LUTs, name keeping = 80%.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 1 (4.00), #lev = 1 (0.33)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 1 (4.00), #lev = 1 (0.33)
+SYN-2581 : Mapping with K=4, #lut = 1 (4.00), #lev = 1 (0.33)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map = 908.20 sec
+SYN-3001 : Mapper mapped 8 instances into 1 LUTs, name keeping = 100%.
+SYN-1001 : Packing model "buttons_led" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 67/0 useful/useless nets, 58/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 16 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 21 LUT to BLE ...
+SYN-4008 : Packed 21 LUT and 16 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 5 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "buttons_led" (AL_USER_NORMAL) with 21/42 primitive instances ...
+SYN-1001 : Packing model "debounce(N=5)" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 107/0 useful/useless nets, 82/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 24 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 1 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 31 LUT to BLE ...
+SYN-4008 : Packed 31 LUT and 19 SEQ to BLE.
+SYN-4003 : Packing 5 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (5 nodes)...
+SYN-4004 : #1: Packed 5 SEQ (5 nodes)...
+SYN-4005 : Packed 5 SEQ with LUT/SLICE
+SYN-4006 : 7 single LUT's are left
+SYN-4006 : 5 single SEQ's are left
+SYN-4011 : Packing model "debounce(N=5)" (AL_USER_NORMAL) with 31/43 primitive instances ...
+SYN-1001 : Packing model "rst_int" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 17/0 useful/useless nets, 13/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 5 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 5 adder to BLE ...
+SYN-4008 : Packed 5 adder and 4 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 1 LUT to BLE ...
+SYN-4008 : Packed 1 LUT and 1 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "rst_int" (AL_USER_NORMAL) with 1/6 primitive instances ...
+RUN-1002 : start command "report_area -file Buttons&LED_gate.area"
+RUN-1001 : standard
+***Report Model: buttons_led***
+
+IO Statistics
+#IO                    22
+  #input                6
+  #output              16
+  #inout                0
+
+Utilization Statistics
+#lut                   69   out of  19600    0.35%
+#reg                   45   out of  19600    0.23%
+#le                    69
+  #lut only            24   out of     69   34.78%
+  #reg only             0   out of     69    0.00%
+  #lut&reg             45   out of     69   65.22%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   22   out of    188   11.70%
+  #ireg                 5
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++---------------------------------------------+
+|Instance |Module        |le    |lut   |seq   |
++---------------------------------------------+
+|top      |buttons_led   |69    |69    |45    |
+|  ux_btn |debounce(N=5) |41    |41    |24    |
+|  ux_rst |rst_int       |7     |7     |5     |
++---------------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1001 : Force tag keep_hierarchy inst 'ux_btn'(AL_USER_NORMAL) to False
+SYN-1001 : Force tag keep_hierarchy inst 'ux_rst'(AL_USER_NORMAL) to False
+SYN-1011 : Flatten model buttons_led
+SYN-1011 : Flatten model debounce(N=5)
+SYN-1011 : Flatten model rst_int
+SYN-1016 : Merged 3 instances.
+RUN-1002 : start command "export_db Buttons&LED_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+PHY-3001 : Placer runs in 6 thread(s).
+SYN-4024 : Net "clk_24m_pad" drive clk pins.
+SYN-4025 : Tag rtl::Net clk_24m_pad as clock net
+SYN-4026 : Tagged 1 rtl::Net as clock net
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 61 instances
+RUN-1001 : 19 mslices, 17 lslices, 22 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 118 nets
+RUN-1001 : 56 nets have 2 pins
+RUN-1001 : 54 nets have [3 - 5] pins
+RUN-1001 : 2 nets have [6 - 10] pins
+RUN-1001 : 6 nets have [21 - 99] pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 59 instances, 36 slices, 2 macros(8 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model buttons_led.
+TMR-2506 : Build timing graph completely. Port num: 3, tpin num: 412, tnet num: 116, tinst num: 59, tnode num: 542, tedge num: 668.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 15 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 116 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 66 clock pins, and constraint 130 relative nodes.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.011998s wall, 0.015625s user + 0.015625s system = 0.031250s CPU (260.5%)
+
+PHY-3001 : Global placement ...
+PHY-3001 : Initial: Len = 31269.6
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997796
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(289): len = 23989.7, overlap = 0
+PHY-3002 : Step(290): len = 20258.1, overlap = 0
+PHY-3002 : Step(291): len = 18361, overlap = 0
+PHY-3002 : Step(292): len = 17057.4, overlap = 0
+PHY-3002 : Step(293): len = 16242.8, overlap = 0
+PHY-3002 : Step(294): len = 15562.6, overlap = 0
+PHY-3002 : Step(295): len = 14895, overlap = 0
+PHY-3002 : Step(296): len = 14242.6, overlap = 0
+PHY-3002 : Step(297): len = 13504.6, overlap = 0
+PHY-3002 : Step(298): len = 12971.9, overlap = 0
+PHY-3002 : Step(299): len = 12398.7, overlap = 0
+PHY-3002 : Step(300): len = 11948.9, overlap = 0
+PHY-3002 : Step(301): len = 11315.2, overlap = 0
+PHY-3002 : Step(302): len = 10556.4, overlap = 0
+PHY-3002 : Step(303): len = 10042.1, overlap = 0
+PHY-3002 : Step(304): len = 9804.2, overlap = 0
+PHY-3002 : Step(305): len = 9643.4, overlap = 0
+PHY-3002 : Step(306): len = 9332.1, overlap = 0
+PHY-3002 : Step(307): len = 8974.4, overlap = 0
+PHY-3002 : Step(308): len = 8765.2, overlap = 0
+PHY-3002 : Step(309): len = 8532.5, overlap = 0
+PHY-3002 : Step(310): len = 8443.2, overlap = 0
+PHY-3002 : Step(311): len = 8333.2, overlap = 0
+PHY-3002 : Step(312): len = 8159.3, overlap = 0
+PHY-3002 : Step(313): len = 7946.7, overlap = 0
+PHY-3002 : Step(314): len = 7850.4, overlap = 0
+PHY-3002 : Step(315): len = 7765.1, overlap = 0
+PHY-3002 : Step(316): len = 7619.7, overlap = 0
+PHY-3002 : Step(317): len = 7469.1, overlap = 0
+PHY-3002 : Step(318): len = 7418.2, overlap = 0
+PHY-3002 : Step(319): len = 7418.2, overlap = 0
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.003409s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997796
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(320): len = 7381.1, overlap = 0
+PHY-3002 : Step(321): len = 7379.5, overlap = 0
+PHY-3002 : Step(322): len = 7370, overlap = 0
+PHY-3002 : Step(323): len = 7363.5, overlap = 0
+PHY-3002 : Step(324): len = 7343.1, overlap = 0
+PHY-3002 : Step(325): len = 7343.1, overlap = 0
+PHY-3002 : Step(326): len = 7314.1, overlap = 0
+PHY-3002 : Step(327): len = 7314.1, overlap = 0
+PHY-3002 : Step(328): len = 7309, overlap = 0
+PHY-3002 : Step(329): len = 7309, overlap = 0
+PHY-3002 : Step(330): len = 7300.8, overlap = 0
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997796
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(331): len = 7298.4, overlap = 0.5
+PHY-3002 : Step(332): len = 7298.4, overlap = 0.5
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.022533s wall, 0.015625s user + 0.031250s system = 0.046875s CPU (208.0%)
+
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997796
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(333): len = 7935.8, overlap = 0
+PHY-3002 : Step(334): len = 7536.9, overlap = 0
+PHY-3002 : Step(335): len = 7437.7, overlap = 0
+PHY-3002 : Step(336): len = 7380, overlap = 0
+PHY-3002 : Step(337): len = 7343.4, overlap = 0.25
+PHY-3002 : Step(338): len = 7335.7, overlap = 0.25
+PHY-3002 : Step(339): len = 7342.4, overlap = 0.25
+PHY-3002 : Step(340): len = 7324.9, overlap = 0
+PHY-3002 : Step(341): len = 7320.9, overlap = 0
+PHY-3002 : Step(342): len = 7273.3, overlap = 0.25
+PHY-3002 : Step(343): len = 7255.7, overlap = 0.5
+PHY-3002 : Step(344): len = 7221.7, overlap = 0.25
+PHY-3002 : Step(345): len = 7173.5, overlap = 0.25
+PHY-3002 : Step(346): len = 7030.8, overlap = 0.25
+PHY-3002 : Step(347): len = 6951.5, overlap = 0.5
+PHY-3002 : Step(348): len = 6889.1, overlap = 0.25
+PHY-3002 : Step(349): len = 6872.2, overlap = 0.25
+PHY-3002 : Step(350): len = 6864.2, overlap = 0.25
+PHY-3002 : Step(351): len = 6857.5, overlap = 0.5
+PHY-3002 : Step(352): len = 6759.3, overlap = 0.25
+PHY-3002 : Step(353): len = 6736.9, overlap = 0.25
+PHY-3002 : Step(354): len = 6705.5, overlap = 0.25
+PHY-3002 : Step(355): len = 6705.5, overlap = 0.25
+PHY-3002 : Step(356): len = 6687.5, overlap = 0.5
+PHY-3002 : Step(357): len = 6687.8, overlap = 0.5
+PHY-3002 : Step(358): len = 6687.8, overlap = 0.5
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.005243s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (298.0%)
+
+PHY-3001 : Legalized: Len = 6959.6, Over = 0
+PHY-3001 : Final: Len = 6959.6, Over = 0
+PHY-3001 : Improving timing with driver duplication.
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 10992, over cnt = 3(0%), over = 5, worst = 2
+PHY-1002 : len = 11072, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.012916s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RUN-1003 : finish command "place" in  1.173321s wall, 1.546875s user + 0.968750s system = 2.515625s CPU (214.4%)
+
+RUN-1004 : used memory is 334 MB, reserved memory is 291 MB, peak memory is 722 MB
+RUN-1002 : start command "route"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 38 to 29
+PHY-1001 : Pin misalignment score is improved from 29 to 28
+PHY-1001 : Pin misalignment score is improved from 28 to 28
+PHY-1001 : Route runs in 6 thread(s)
+RUN-1001 : There are total 61 instances
+RUN-1001 : 19 mslices, 17 lslices, 22 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 118 nets
+RUN-1001 : 56 nets have 2 pins
+RUN-1001 : 54 nets have [3 - 5] pins
+RUN-1001 : 2 nets have [6 - 10] pins
+RUN-1001 : 6 nets have [21 - 99] pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 10992, over cnt = 3(0%), over = 5, worst = 2
+PHY-1002 : len = 11072, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.010649s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : End global routing;  0.074739s wall, 0.078125s user + 0.000000s system = 0.078125s CPU (104.5%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2984, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.006840s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2984, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000010s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 25% nets.
+PHY-1001 : Routed 33% nets.
+PHY-1001 : Routed 42% nets.
+PHY-1001 : Routed 56% nets.
+PHY-1001 : Routed 74% nets.
+PHY-1002 : len = 16280, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : End Routed; 0.371654s wall, 0.390625s user + 0.000000s system = 0.390625s CPU (105.1%)
+
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1002 : len = 16296, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 16296
+PHY-1001 : End DR Iter 1; 0.006116s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  2.406837s wall, 2.218750s user + 0.250000s system = 2.468750s CPU (102.6%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  2.563964s wall, 2.390625s user + 0.250000s system = 2.640625s CPU (103.0%)
+
+RUN-1004 : used memory is 337 MB, reserved memory is 293 MB, peak memory is 756 MB
+RUN-1002 : start command "report_area -io_info -file Buttons&LED_phy.area"
+RUN-1001 : standard
+***Report Model: buttons_led***
+
+IO Statistics
+#IO                    22
+  #input                6
+  #output              16
+  #inout                0
+
+Utilization Statistics
+#lut                   69   out of  19600    0.35%
+#reg                   45   out of  19600    0.23%
+#le                    69
+  #lut only            24   out of     69   34.78%
+  #reg only             0   out of     69    0.00%
+  #lut&reg             45   out of     69   65.22%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   22   out of    188   11.70%
+  #ireg                 5
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db Buttons&LED_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "bitgen -bit Buttons&LED.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 6 threads.
+BIT-1002 : Init instances completely, inst num: 61
+BIT-1002 : Init pips with 6 threads.
+BIT-1002 : Init pips completely, net num: 118, pip num: 938
+BIT-1003 : Multithreading accelaration with 6 threads.
+BIT-1003 : Generate bitstream completely, there are 363 valid insts, and 2706 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file Buttons&LED.bit.
+RUN-1002 : start command "download -bit Buttons&LED.bit -mode jtag -spd 6 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit Buttons&LED.bit"
+PRG-3000 : BIT2VEC::JtagBitstream: completed! line_num = 1354, frame_num = 1259
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit Buttons&LED.bit" in  1.415847s wall, 1.343750s user + 0.078125s system = 1.421875s CPU (100.4%)
+
+RUN-1004 : used memory is 444 MB, reserved memory is 401 MB, peak memory is 756 MB
+RUN-1002 : start command "program -cable 0 -spd 6 -p"
+RUN-1003 : finish command "program -cable 0 -spd 6 -p" in  7.119319s wall, 0.671875s user + 0.234375s system = 0.906250s CPU (12.7%)
+
+RUN-1004 : used memory is 473 MB, reserved memory is 430 MB, peak memory is 756 MB
+RUN-1003 : finish command "download -bit Buttons&LED.bit -mode jtag -spd 6 -sec 64 -cable 0" in  9.081199s wall, 2.093750s user + 0.406250s system = 2.500000s CPU (27.5%)
+
+RUN-1004 : used memory is 335 MB, reserved memory is 287 MB, peak memory is 756 MB
+GUI-1001 : Download success!
+GUI-8003 ERROR: Buttons_LED.v is missing!
+GUI-8003 ERROR: debounce.v is missing!
+GUI-8003 ERROR: rst.v is missing!
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+RUN-1002 : start command "elaborate -top buttons_led"
+HDL-8007 ERROR: cannot find port 'sclk' on this module in sources/rtl/buttons_led.v(33)
+HDL-1007 : 'rst_n' is declared here in sources/rtl/rst.v(14)
+HDL-5007 WARNING: port 'clk' is not connected on this instance in sources/rtl/buttons_led.v(35)
+GUI-8003 ERROR: Buttons_LED.v is missing!
+GUI-8003 ERROR: debounce.v is missing!
+GUI-8003 ERROR: rst.v is missing!
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+HDL-1007 : analyze verilog file sources/rtl/buttons_led.v
+HDL-1007 : analyze verilog file sources/rtl/debounce.v
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+RUN-1002 : start command "elaborate -top buttons_led"
+HDL-1007 : elaborate module buttons_led in sources/rtl/buttons_led.v(15)
+HDL-1007 : elaborate module debounce(N=5) in sources/rtl/debounce.v(14)
+HDL-1007 : elaborate module rst_n in sources/rtl/rst.v(14)
+HDL-1200 : Current top model is buttons_led
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc sources/sdc/button_pin.adc"
+RUN-1002 : start command "set_pin_assignment clk_24m  LOCATION = K14;  "
+RUN-1002 : start command "set_pin_assignment led[15]  LOCATION = T13;  "
+RUN-1002 : start command "set_pin_assignment led[14]  LOCATION = T12;  "
+RUN-1002 : start command "set_pin_assignment led[13]  LOCATION = R12;  "
+RUN-1002 : start command "set_pin_assignment led[12]  LOCATION = M7;  "
+RUN-1002 : start command "set_pin_assignment led[11]  LOCATION = T9;  "
+RUN-1002 : start command "set_pin_assignment led[10]  LOCATION = T8;  "
+RUN-1002 : start command "set_pin_assignment led[9]  LOCATION = T7;  "
+RUN-1002 : start command "set_pin_assignment led[8]  LOCATION = R7;  "
+RUN-1002 : start command "set_pin_assignment led[7]  LOCATION = P5;  "
+RUN-1002 : start command "set_pin_assignment led[6]  LOCATION = N5;  "
+RUN-1002 : start command "set_pin_assignment led[5]  LOCATION = P4;  "
+RUN-1002 : start command "set_pin_assignment led[4]  LOCATION = M5;  "
+RUN-1002 : start command "set_pin_assignment led[3]  LOCATION = N4;  "
+RUN-1002 : start command "set_pin_assignment led[2]  LOCATION = N3;  "
+RUN-1002 : start command "set_pin_assignment led[1]  LOCATION = M4;  "
+RUN-1002 : start command "set_pin_assignment led[0]  LOCATION = M3;  "
+RUN-1002 : start command "set_pin_assignment btn[0]  LOCATION = H14;  "
+RUN-1002 : start command "set_pin_assignment btn[1]  LOCATION = J13;  "
+RUN-1002 : start command "set_pin_assignment btn[2]  LOCATION = G11;  "
+RUN-1002 : start command "set_pin_assignment btn[3]  LOCATION = G12;  "
+RUN-1002 : start command "set_pin_assignment btn[4]  LOCATION = L12;  "
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "buttons_led"
+SYN-1012 : SanityCheck: Model "debounce(N=5)"
+SYN-1012 : SanityCheck: Model "rst_n"
+SYN-1011 : Flatten model buttons_led
+SYN-1011 : Flatten model debounce(N=5)
+SYN-1011 : Flatten model rst_n
+SYN-1014 : Optimize round 1
+SYN-1032 : 97/0 useful/useless nets, 87/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1020 : Optimized 24 distributor mux.
+SYN-1016 : Merged 54 instances.
+SYN-1015 : Optimize round 1, 94 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 59/18 useful/useless nets, 49/35 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 34 better
+SYN-1014 : Optimize round 3
+SYN-1032 : 59/1 useful/useless nets, 49/1 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 3, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 93/0 useful/useless nets, 68/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 5 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 87/6 useful/useless nets, 62/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 17/0 useful/useless nets, 13/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 4 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 13/4 useful/useless nets, 9/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "report_area -file Buttons&LED_rtl.area"
+RUN-1001 : standard
+***Report Model: buttons_led***
+
+IO Statistics
+#IO                    22
+  #input                6
+  #output              16
+  #inout                0
+
+Gate Statistics
+#Basic gates           90
+  #and                 15
+  #nand                 0
+  #or                   0
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                 25
+  #bufif1               0
+  #MX21                 0
+  #FADD                 0
+  #DFF                 50
+  #LATCH                0
+#MACRO_ADD              2
+#MACRO_EQ               2
+#MACRO_MUX             19
+
+RUN-1001 : 
+Report Hierarchy Area:
++----------------------------------------------+
+|Instance |Module      |gates  |seq    |macros |
++----------------------------------------------+
+|top      |buttons_led |40     |50     |23     |
+|  ux_btn |debounce    |10     |29     |2      |
+|  ux_rst |rst_n       |0      |5      |2      |
++----------------------------------------------+
+
+RUN-1002 : start command "export_db Buttons&LED_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "optimize_gate -packarea Buttons&LED_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+SYN-2001 : Map 22 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 76/1 useful/useless nets, 67/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 76/1 useful/useless nets, 67/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 76/1 useful/useless nets, 67/1 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 87/0 useful/useless nets, 62/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 113/0 useful/useless nets, 88/0 useful/useless insts
+SYN-2501 : Optimize round 1, 19 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 113/0 useful/useless nets, 88/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 1 macro adder
+SYN-1032 : 133/0 useful/useless nets, 108/0 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 13/0 useful/useless nets, 9/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 20/0 useful/useless nets, 16/0 useful/useless insts
+SYN-2501 : Optimize round 1, 4 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 20/0 useful/useless nets, 16/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 1 macro adder
+SYN-1032 : 25/0 useful/useless nets, 21/0 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=3, #lut = 5 (2.60), #lev = 2 (0.29)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=3, #lut = 5 (2.60), #lev = 2 (0.29)
+SYN-2581 : Mapping with K=3, #lut = 5 (2.60), #lev = 2 (0.29)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 30 instances into 21 LUTs, name keeping = 95%.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 31 (3.58), #lev = 3 (2.41)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 31 (3.58), #lev = 3 (2.41)
+SYN-2581 : Mapping with K=4, #lut = 31 (3.58), #lev = 3 (2.41)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map = 1784.63 sec
+SYN-3001 : Mapper mapped 56 instances into 31 LUTs, name keeping = 80%.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 1 (4.00), #lev = 1 (0.33)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 1 (4.00), #lev = 1 (0.33)
+SYN-2581 : Mapping with K=4, #lut = 1 (4.00), #lev = 1 (0.33)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map = 1784.68 sec
+SYN-3001 : Mapper mapped 8 instances into 1 LUTs, name keeping = 100%.
+SYN-1001 : Packing model "buttons_led" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 67/0 useful/useless nets, 58/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 16 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 21 LUT to BLE ...
+SYN-4008 : Packed 21 LUT and 16 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 5 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "buttons_led" (AL_USER_NORMAL) with 21/42 primitive instances ...
+SYN-1001 : Packing model "debounce(N=5)" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 107/0 useful/useless nets, 82/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 24 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 1 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 31 LUT to BLE ...
+SYN-4008 : Packed 31 LUT and 19 SEQ to BLE.
+SYN-4003 : Packing 5 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (5 nodes)...
+SYN-4004 : #1: Packed 5 SEQ (5 nodes)...
+SYN-4005 : Packed 5 SEQ with LUT/SLICE
+SYN-4006 : 7 single LUT's are left
+SYN-4006 : 5 single SEQ's are left
+SYN-4011 : Packing model "debounce(N=5)" (AL_USER_NORMAL) with 31/43 primitive instances ...
+SYN-1001 : Packing model "rst_n" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 17/0 useful/useless nets, 13/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 5 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 5 adder to BLE ...
+SYN-4008 : Packed 5 adder and 4 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 1 LUT to BLE ...
+SYN-4008 : Packed 1 LUT and 1 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "rst_n" (AL_USER_NORMAL) with 1/6 primitive instances ...
+RUN-1002 : start command "report_area -file Buttons&LED_gate.area"
+RUN-1001 : standard
+***Report Model: buttons_led***
+
+IO Statistics
+#IO                    22
+  #input                6
+  #output              16
+  #inout                0
+
+Utilization Statistics
+#lut                   69   out of  19600    0.35%
+#reg                   45   out of  19600    0.23%
+#le                    69
+  #lut only            24   out of     69   34.78%
+  #reg only             0   out of     69    0.00%
+  #lut&reg             45   out of     69   65.22%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   22   out of    188   11.70%
+  #ireg                 5
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++---------------------------------------------+
+|Instance |Module        |le    |lut   |seq   |
++---------------------------------------------+
+|top      |buttons_led   |69    |69    |45    |
+|  ux_btn |debounce(N=5) |41    |41    |24    |
+|  ux_rst |rst_n         |7     |7     |5     |
++---------------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1001 : Force tag keep_hierarchy inst 'ux_btn'(AL_USER_NORMAL) to False
+SYN-1001 : Force tag keep_hierarchy inst 'ux_rst'(AL_USER_NORMAL) to False
+SYN-1011 : Flatten model buttons_led
+SYN-1011 : Flatten model debounce(N=5)
+SYN-1011 : Flatten model rst_n
+SYN-1016 : Merged 3 instances.
+RUN-1002 : start command "export_db Buttons&LED_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+PHY-3001 : Placer runs in 6 thread(s).
+SYN-4024 : Net "clk_24m_pad" drive clk pins.
+SYN-4025 : Tag rtl::Net clk_24m_pad as clock net
+SYN-4026 : Tagged 1 rtl::Net as clock net
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 61 instances
+RUN-1001 : 19 mslices, 17 lslices, 22 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 118 nets
+RUN-1001 : 56 nets have 2 pins
+RUN-1001 : 54 nets have [3 - 5] pins
+RUN-1001 : 2 nets have [6 - 10] pins
+RUN-1001 : 6 nets have [21 - 99] pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 59 instances, 36 slices, 2 macros(8 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model buttons_led.
+TMR-2506 : Build timing graph completely. Port num: 3, tpin num: 412, tnet num: 116, tinst num: 59, tnode num: 542, tedge num: 668.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 15 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 116 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 66 clock pins, and constraint 130 relative nodes.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.011013s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (141.9%)
+
+PHY-3001 : Global placement ...
+PHY-3001 : Initial: Len = 31269.6
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997796
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(359): len = 23989.7, overlap = 0
+PHY-3002 : Step(360): len = 20258.1, overlap = 0
+PHY-3002 : Step(361): len = 18361, overlap = 0
+PHY-3002 : Step(362): len = 17057.4, overlap = 0
+PHY-3002 : Step(363): len = 16242.8, overlap = 0
+PHY-3002 : Step(364): len = 15562.6, overlap = 0
+PHY-3002 : Step(365): len = 14895, overlap = 0
+PHY-3002 : Step(366): len = 14242.6, overlap = 0
+PHY-3002 : Step(367): len = 13504.6, overlap = 0
+PHY-3002 : Step(368): len = 12971.9, overlap = 0
+PHY-3002 : Step(369): len = 12398.7, overlap = 0
+PHY-3002 : Step(370): len = 11948.9, overlap = 0
+PHY-3002 : Step(371): len = 11315.2, overlap = 0
+PHY-3002 : Step(372): len = 10556.4, overlap = 0
+PHY-3002 : Step(373): len = 10042.1, overlap = 0
+PHY-3002 : Step(374): len = 9804.2, overlap = 0
+PHY-3002 : Step(375): len = 9643.4, overlap = 0
+PHY-3002 : Step(376): len = 9332.1, overlap = 0
+PHY-3002 : Step(377): len = 8974.4, overlap = 0
+PHY-3002 : Step(378): len = 8765.2, overlap = 0
+PHY-3002 : Step(379): len = 8532.5, overlap = 0
+PHY-3002 : Step(380): len = 8443.2, overlap = 0
+PHY-3002 : Step(381): len = 8333.2, overlap = 0
+PHY-3002 : Step(382): len = 8159.3, overlap = 0
+PHY-3002 : Step(383): len = 7946.7, overlap = 0
+PHY-3002 : Step(384): len = 7850.4, overlap = 0
+PHY-3002 : Step(385): len = 7765.1, overlap = 0
+PHY-3002 : Step(386): len = 7619.7, overlap = 0
+PHY-3002 : Step(387): len = 7469.1, overlap = 0
+PHY-3002 : Step(388): len = 7418.2, overlap = 0
+PHY-3002 : Step(389): len = 7418.2, overlap = 0
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.003717s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (420.3%)
+
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997796
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(390): len = 7381.1, overlap = 0
+PHY-3002 : Step(391): len = 7379.5, overlap = 0
+PHY-3002 : Step(392): len = 7370, overlap = 0
+PHY-3002 : Step(393): len = 7363.5, overlap = 0
+PHY-3002 : Step(394): len = 7343.1, overlap = 0
+PHY-3002 : Step(395): len = 7343.1, overlap = 0
+PHY-3002 : Step(396): len = 7314.1, overlap = 0
+PHY-3002 : Step(397): len = 7314.1, overlap = 0
+PHY-3002 : Step(398): len = 7309, overlap = 0
+PHY-3002 : Step(399): len = 7309, overlap = 0
+PHY-3002 : Step(400): len = 7300.8, overlap = 0
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997796
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(401): len = 7298.4, overlap = 0.5
+PHY-3002 : Step(402): len = 7298.4, overlap = 0.5
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.022094s wall, 0.015625s user + 0.015625s system = 0.031250s CPU (141.4%)
+
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.997796
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(403): len = 7935.8, overlap = 0
+PHY-3002 : Step(404): len = 7536.9, overlap = 0
+PHY-3002 : Step(405): len = 7437.7, overlap = 0
+PHY-3002 : Step(406): len = 7380, overlap = 0
+PHY-3002 : Step(407): len = 7343.4, overlap = 0.25
+PHY-3002 : Step(408): len = 7335.7, overlap = 0.25
+PHY-3002 : Step(409): len = 7342.4, overlap = 0.25
+PHY-3002 : Step(410): len = 7324.9, overlap = 0
+PHY-3002 : Step(411): len = 7320.9, overlap = 0
+PHY-3002 : Step(412): len = 7273.3, overlap = 0.25
+PHY-3002 : Step(413): len = 7255.7, overlap = 0.5
+PHY-3002 : Step(414): len = 7221.7, overlap = 0.25
+PHY-3002 : Step(415): len = 7173.5, overlap = 0.25
+PHY-3002 : Step(416): len = 7030.8, overlap = 0.25
+PHY-3002 : Step(417): len = 6951.5, overlap = 0.5
+PHY-3002 : Step(418): len = 6889.1, overlap = 0.25
+PHY-3002 : Step(419): len = 6872.2, overlap = 0.25
+PHY-3002 : Step(420): len = 6864.2, overlap = 0.25
+PHY-3002 : Step(421): len = 6857.5, overlap = 0.5
+PHY-3002 : Step(422): len = 6759.3, overlap = 0.25
+PHY-3002 : Step(423): len = 6736.9, overlap = 0.25
+PHY-3002 : Step(424): len = 6705.5, overlap = 0.25
+PHY-3002 : Step(425): len = 6705.5, overlap = 0.25
+PHY-3002 : Step(426): len = 6687.5, overlap = 0.5
+PHY-3002 : Step(427): len = 6687.8, overlap = 0.5
+PHY-3002 : Step(428): len = 6687.8, overlap = 0.5
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.005328s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Legalized: Len = 6959.6, Over = 0
+PHY-3001 : Final: Len = 6959.6, Over = 0
+PHY-3001 : Improving timing with driver duplication.
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 10992, over cnt = 3(0%), over = 5, worst = 2
+PHY-1002 : len = 11072, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.012014s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (130.1%)
+
+RUN-1003 : finish command "place" in  1.167310s wall, 1.390625s user + 0.562500s system = 1.953125s CPU (167.3%)
+
+RUN-1004 : used memory is 359 MB, reserved memory is 313 MB, peak memory is 756 MB
+RUN-1002 : start command "route"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 38 to 29
+PHY-1001 : Pin misalignment score is improved from 29 to 28
+PHY-1001 : Pin misalignment score is improved from 28 to 28
+PHY-1001 : Route runs in 6 thread(s)
+RUN-1001 : There are total 61 instances
+RUN-1001 : 19 mslices, 17 lslices, 22 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 118 nets
+RUN-1001 : 56 nets have 2 pins
+RUN-1001 : 54 nets have [3 - 5] pins
+RUN-1001 : 2 nets have [6 - 10] pins
+RUN-1001 : 6 nets have [21 - 99] pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 10992, over cnt = 3(0%), over = 5, worst = 2
+PHY-1002 : len = 11072, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.012032s wall, 0.015625s user + 0.015625s system = 0.031250s CPU (259.7%)
+
+PHY-1001 : End global routing;  0.076594s wall, 0.078125s user + 0.015625s system = 0.093750s CPU (122.4%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2984, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.006877s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2984, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000009s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 25% nets.
+PHY-1001 : Routed 33% nets.
+PHY-1001 : Routed 42% nets.
+PHY-1001 : Routed 56% nets.
+PHY-1001 : Routed 74% nets.
+PHY-1002 : len = 16280, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : End Routed; 0.366820s wall, 0.375000s user + 0.000000s system = 0.375000s CPU (102.2%)
+
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1002 : len = 16296, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 16296
+PHY-1001 : End DR Iter 1; 0.007348s wall, 0.015625s user + 0.015625s system = 0.031250s CPU (425.3%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  2.396520s wall, 2.281250s user + 0.156250s system = 2.437500s CPU (101.7%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  2.552898s wall, 2.437500s user + 0.171875s system = 2.609375s CPU (102.2%)
+
+RUN-1004 : used memory is 352 MB, reserved memory is 307 MB, peak memory is 756 MB
+RUN-1002 : start command "report_area -io_info -file Buttons&LED_phy.area"
+RUN-1001 : standard
+***Report Model: buttons_led***
+
+IO Statistics
+#IO                    22
+  #input                6
+  #output              16
+  #inout                0
+
+Utilization Statistics
+#lut                   69   out of  19600    0.35%
+#reg                   45   out of  19600    0.23%
+#le                    69
+  #lut only            24   out of     69   34.78%
+  #reg only             0   out of     69    0.00%
+  #lut&reg             45   out of     69   65.22%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   22   out of    188   11.70%
+  #ireg                 5
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db Buttons&LED_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "bitgen -bit Buttons&LED.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 6 threads.
+BIT-1002 : Init instances completely, inst num: 61
+BIT-1002 : Init pips with 6 threads.
+BIT-1002 : Init pips completely, net num: 118, pip num: 938
+BIT-1003 : Multithreading accelaration with 6 threads.
+BIT-1003 : Generate bitstream completely, there are 363 valid insts, and 2706 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file Buttons&LED.bit.
+RUN-1002 : start command "download -bit Buttons&LED.bit -mode jtag -spd 6 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit Buttons&LED.bit"
+PRG-3000 : BIT2VEC::JtagBitstream: completed! line_num = 1354, frame_num = 1259
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit Buttons&LED.bit" in  1.429434s wall, 1.406250s user + 0.031250s system = 1.437500s CPU (100.6%)
+
+RUN-1004 : used memory is 474 MB, reserved memory is 433 MB, peak memory is 756 MB
+RUN-1002 : start command "program -cable 0 -spd 6 -p"
+RUN-1003 : finish command "program -cable 0 -spd 6 -p" in  7.064292s wall, 0.812500s user + 0.265625s system = 1.078125s CPU (15.3%)
+
+RUN-1004 : used memory is 502 MB, reserved memory is 460 MB, peak memory is 756 MB
+RUN-1003 : finish command "download -bit Buttons&LED.bit -mode jtag -spd 6 -sec 64 -cable 0" in  9.051898s wall, 2.359375s user + 0.328125s system = 2.687500s CPU (29.7%)
+
+RUN-1004 : used memory is 374 MB, reserved memory is 324 MB, peak memory is 756 MB
+GUI-1001 : Download success!

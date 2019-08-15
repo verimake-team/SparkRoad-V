@@ -1,0 +1,383 @@
+eagle_s20
+13 23 424 696 65942 12 5
+-8.549 -1.367 sdram_control eagle_s20 BG256 Detail 9 3
+clock: clkin
+13 56364 136 2
+Setup check
+23 3
+Endpoint: _al_u626|ux_seg/reg1_b3.F
+23 -8.549000 3990 3
+Timing path: u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk->_al_u626|ux_seg/reg1_b3.F
+u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk
+_al_u626|ux_seg/reg1_b3.F
+25 -8.549000 3.547000 12.096000 13 13
+sd_dataout[5] u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1]
+u2_al_u0/add0/c1 u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci
+u2_al_u0/n2[1] _al_u366|_al_u364.b[0]
+u2_al_u0/n5 _al_u513|_al_u512.c[0]
+_al_u512_o _al_u515|_al_u610.d[1]
+u2_al_u0/n12 _al_u608|_al_u607.a[0]
+_al_u607_o _al_u515|_al_u610.b[0]
+u2_al_u0/n17[1] u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1]
+u2_al_u0/add3/c3 u2_al_u0/add3/u3_al_u669.fci
+u2_al_u0/n19[3] _al_u617|_al_u620.b[1]
+u2_al_u0/n20 u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1]
+u2_al_u0/add6/c1 u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci
+u2_al_u0/n29[2] _al_u626|ux_seg/reg1_b3.a[0]
+
+Timing path: u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk->_al_u626|ux_seg/reg1_b3.F
+u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk
+_al_u626|ux_seg/reg1_b3.F
+68 -8.507000 3.547000 12.054000 13 13
+sd_dataout[5] u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1]
+u2_al_u0/add0/c1 u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci
+u2_al_u0/n2[1] _al_u366|_al_u364.b[0]
+u2_al_u0/n5 _al_u513|_al_u512.c[0]
+_al_u512_o _al_u515|_al_u610.d[1]
+u2_al_u0/n12 u2_al_u0/add2/u2|u2_al_u0/add2/u1.a[0]
+u2_al_u0/n14[1] _al_u515|_al_u610.d[0]
+u2_al_u0/n17[1] u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1]
+u2_al_u0/add3/c3 u2_al_u0/add3/u3_al_u669.fci
+u2_al_u0/n19[3] _al_u617|_al_u620.b[1]
+u2_al_u0/n20 u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1]
+u2_al_u0/add6/c1 u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci
+u2_al_u0/n29[2] _al_u626|ux_seg/reg1_b3.a[0]
+
+Timing path: u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk->_al_u626|ux_seg/reg1_b3.F
+u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk
+_al_u626|ux_seg/reg1_b3.F
+111 -8.391000 3.547000 11.938000 13 13
+sd_dataout[5] u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1]
+u2_al_u0/add0/c1 u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci
+u2_al_u0/n2[1] _al_u366|_al_u364.b[0]
+u2_al_u0/n5 _al_u513|_al_u512.c[0]
+_al_u512_o _al_u363|_al_u516.a[0]
+u2_al_u0/n11 _al_u608|_al_u607.d[0]
+_al_u607_o _al_u515|_al_u610.b[0]
+u2_al_u0/n17[1] u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1]
+u2_al_u0/add3/c3 u2_al_u0/add3/u3_al_u669.fci
+u2_al_u0/n19[3] _al_u617|_al_u620.b[1]
+u2_al_u0/n20 u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1]
+u2_al_u0/add6/c1 u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci
+u2_al_u0/n29[2] _al_u626|ux_seg/reg1_b3.a[0]
+
+
+Endpoint: _al_u336|ux_seg/reg2_b0.F
+154 -8.425000 3996 3
+Timing path: u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk->_al_u336|ux_seg/reg2_b0.F
+u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk
+_al_u336|ux_seg/reg2_b0.F
+156 -8.425000 3.547000 11.972000 13 14
+sd_dataout[5] u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1]
+u2_al_u0/add0/c1 u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci
+u2_al_u0/n2[1] _al_u366|_al_u364.b[0]
+u2_al_u0/n5 _al_u513|_al_u512.c[0]
+_al_u512_o _al_u515|_al_u610.d[1]
+u2_al_u0/n12 _al_u608|_al_u607.a[0]
+_al_u607_o _al_u515|_al_u610.b[0]
+u2_al_u0/n17[1] u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1]
+u2_al_u0/add3/c3 u2_al_u0/add3/u3_al_u669.fci
+u2_al_u0/n19[3] _al_u617|_al_u620.b[1]
+u2_al_u0/n20 u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1]
+u2_al_u0/add6/c1 u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci
+u2_al_u0/add6/c3 u2_al_u0/add6/u3_al_u672.fci
+u2_al_u0/n29[3] _al_u336|ux_seg/reg2_b0.a[0]
+
+Timing path: u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk->_al_u336|ux_seg/reg2_b0.F
+u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk
+_al_u336|ux_seg/reg2_b0.F
+201 -8.383000 3.547000 11.930000 13 14
+sd_dataout[5] u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1]
+u2_al_u0/add0/c1 u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci
+u2_al_u0/n2[1] _al_u366|_al_u364.b[0]
+u2_al_u0/n5 _al_u513|_al_u512.c[0]
+_al_u512_o _al_u515|_al_u610.d[1]
+u2_al_u0/n12 u2_al_u0/add2/u2|u2_al_u0/add2/u1.a[0]
+u2_al_u0/n14[1] _al_u515|_al_u610.d[0]
+u2_al_u0/n17[1] u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1]
+u2_al_u0/add3/c3 u2_al_u0/add3/u3_al_u669.fci
+u2_al_u0/n19[3] _al_u617|_al_u620.b[1]
+u2_al_u0/n20 u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1]
+u2_al_u0/add6/c1 u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci
+u2_al_u0/add6/c3 u2_al_u0/add6/u3_al_u672.fci
+u2_al_u0/n29[3] _al_u336|ux_seg/reg2_b0.a[0]
+
+Timing path: u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk->_al_u336|ux_seg/reg2_b0.F
+u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk
+_al_u336|ux_seg/reg2_b0.F
+246 -8.267000 3.547000 11.814000 13 14
+sd_dataout[5] u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1]
+u2_al_u0/add0/c1 u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci
+u2_al_u0/n2[1] _al_u366|_al_u364.b[0]
+u2_al_u0/n5 _al_u513|_al_u512.c[0]
+_al_u512_o _al_u363|_al_u516.a[0]
+u2_al_u0/n11 _al_u608|_al_u607.d[0]
+_al_u607_o _al_u515|_al_u610.b[0]
+u2_al_u0/n17[1] u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1]
+u2_al_u0/add3/c3 u2_al_u0/add3/u3_al_u669.fci
+u2_al_u0/n19[3] _al_u617|_al_u620.b[1]
+u2_al_u0/n20 u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1]
+u2_al_u0/add6/c1 u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci
+u2_al_u0/add6/c3 u2_al_u0/add6/u3_al_u672.fci
+u2_al_u0/n29[3] _al_u336|ux_seg/reg2_b0.a[0]
+
+
+Endpoint: ux_seg/reg1_b1|ux_seg/reg1_b2.F
+291 -8.425000 3532 3
+Timing path: u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk->ux_seg/reg1_b1|ux_seg/reg1_b2.F
+u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk
+ux_seg/reg1_b1|ux_seg/reg1_b2.F
+293 -8.425000 3.547000 11.972000 13 13
+sd_dataout[5] u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1]
+u2_al_u0/add0/c1 u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci
+u2_al_u0/n2[1] _al_u366|_al_u364.b[0]
+u2_al_u0/n5 _al_u513|_al_u512.c[0]
+_al_u512_o _al_u515|_al_u610.d[1]
+u2_al_u0/n12 _al_u608|_al_u607.a[0]
+_al_u607_o _al_u515|_al_u610.b[0]
+u2_al_u0/n17[1] u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1]
+u2_al_u0/add3/c3 u2_al_u0/add3/u3_al_u669.fci
+u2_al_u0/n19[3] _al_u617|_al_u620.b[1]
+u2_al_u0/n20 u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1]
+u2_al_u0/add6/c1 u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci
+u2_al_u0/n29[1] ux_seg/reg1_b1|ux_seg/reg1_b2.c[0]
+
+Timing path: u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk->ux_seg/reg1_b1|ux_seg/reg1_b2.F
+u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk
+ux_seg/reg1_b1|ux_seg/reg1_b2.F
+336 -8.383000 3.547000 11.930000 13 13
+sd_dataout[5] u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1]
+u2_al_u0/add0/c1 u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci
+u2_al_u0/n2[1] _al_u366|_al_u364.b[0]
+u2_al_u0/n5 _al_u513|_al_u512.c[0]
+_al_u512_o _al_u515|_al_u610.d[1]
+u2_al_u0/n12 u2_al_u0/add2/u2|u2_al_u0/add2/u1.a[0]
+u2_al_u0/n14[1] _al_u515|_al_u610.d[0]
+u2_al_u0/n17[1] u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1]
+u2_al_u0/add3/c3 u2_al_u0/add3/u3_al_u669.fci
+u2_al_u0/n19[3] _al_u617|_al_u620.b[1]
+u2_al_u0/n20 u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1]
+u2_al_u0/add6/c1 u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci
+u2_al_u0/n29[1] ux_seg/reg1_b1|ux_seg/reg1_b2.c[0]
+
+Timing path: u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk->ux_seg/reg1_b1|ux_seg/reg1_b2.F
+u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk
+ux_seg/reg1_b1|ux_seg/reg1_b2.F
+379 -8.267000 3.547000 11.814000 13 13
+sd_dataout[5] u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1]
+u2_al_u0/add0/c1 u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci
+u2_al_u0/n2[1] _al_u366|_al_u364.b[0]
+u2_al_u0/n5 _al_u513|_al_u512.c[0]
+_al_u512_o _al_u363|_al_u516.a[0]
+u2_al_u0/n11 _al_u608|_al_u607.d[0]
+_al_u607_o _al_u515|_al_u610.b[0]
+u2_al_u0/n17[1] u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1]
+u2_al_u0/add3/c3 u2_al_u0/add3/u3_al_u669.fci
+u2_al_u0/n19[3] _al_u617|_al_u620.b[1]
+u2_al_u0/n20 u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1]
+u2_al_u0/add6/c1 u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci
+u2_al_u0/n29[1] ux_seg/reg1_b1|ux_seg/reg1_b2.c[0]
+
+
+
+Hold check
+422 3
+Endpoint: ux_seg/reg0_b1|ux_seg/reg0_b0.F
+424 -1.367000 1 1
+Timing path: u_sdram/reg2_b0.clk->ux_seg/reg0_b1|ux_seg/reg0_b0.F
+u_sdram/reg2_b0.clk
+ux_seg/reg0_b1|ux_seg/reg0_b0.F
+426 -1.367000 3.883000 2.516000 1 1
+sd_dataout[0] ux_seg/reg0_b1|ux_seg/reg0_b0.mi[0]
+
+
+Endpoint: ux_seg/reg0_b1|ux_seg/reg0_b0.F
+445 -1.326000 1668 3
+Timing path: u2_al_u0/add5/u0|u2_al_u0/add5/ucin.clk->ux_seg/reg0_b1|ux_seg/reg0_b0.F
+u2_al_u0/add5/u0|u2_al_u0/add5/ucin.clk
+ux_seg/reg0_b1|ux_seg/reg0_b0.F
+447 -1.326000 3.883000 2.557000 1 1
+sd_dataout[1] ux_seg/reg0_b1|ux_seg/reg0_b0.d[1]
+
+Timing path: u2_al_u0/add5/u0|u2_al_u0/add5/ucin.clk->ux_seg/reg0_b1|ux_seg/reg0_b0.F
+u2_al_u0/add5/u0|u2_al_u0/add5/ucin.clk
+ux_seg/reg0_b1|ux_seg/reg0_b0.F
+466 -0.739000 3.883000 3.144000 2 2
+sd_dataout[1] _al_u621|ux_seg/reg0_b3.c[1]
+_al_u621_o ux_seg/reg0_b1|ux_seg/reg0_b0.a[1]
+
+Timing path: u2_al_u0/add3/u0|u2_al_u0/add3/ucin.clk->ux_seg/reg0_b1|ux_seg/reg0_b0.F
+u2_al_u0/add3/u0|u2_al_u0/add3/ucin.clk
+ux_seg/reg0_b1|ux_seg/reg0_b0.F
+487 -0.004000 3.883000 3.879000 3 3
+sd_dataout[2] _al_u617|_al_u620.d[0]
+u2_al_u0/n21[0] _al_u621|ux_seg/reg0_b3.d[1]
+_al_u621_o ux_seg/reg0_b1|ux_seg/reg0_b0.a[1]
+
+
+Endpoint: _al_u621|ux_seg/reg0_b3.F
+510 -0.830000 3166 3
+Timing path: u2_al_u0/add5/u0|u2_al_u0/add5/ucin.clk->_al_u621|ux_seg/reg0_b3.F
+u2_al_u0/add5/u0|u2_al_u0/add5/ucin.clk
+_al_u621|ux_seg/reg0_b3.F
+512 -0.830000 3.883000 3.053000 2 2
+sd_dataout[1] _al_u621|ux_seg/reg0_b3.c[1]
+_al_u621_o _al_u621|ux_seg/reg0_b3.a[0]
+
+Timing path: u2_al_u0/add3/u0|u2_al_u0/add3/ucin.clk->_al_u621|ux_seg/reg0_b3.F
+u2_al_u0/add3/u0|u2_al_u0/add3/ucin.clk
+_al_u621|ux_seg/reg0_b3.F
+533 -0.095000 3.883000 3.788000 3 3
+sd_dataout[2] _al_u617|_al_u620.d[0]
+u2_al_u0/n21[0] _al_u621|ux_seg/reg0_b3.d[1]
+_al_u621_o _al_u621|ux_seg/reg0_b3.a[0]
+
+Timing path: u2_al_u0/add3/u0|u2_al_u0/add3/ucin.clk->_al_u621|ux_seg/reg0_b3.F
+u2_al_u0/add3/u0|u2_al_u0/add3/ucin.clk
+_al_u621|ux_seg/reg0_b3.F
+556 0.739000 3.883000 4.622000 4 4
+sd_dataout[2] _al_u618|_al_u616.b[0]
+_al_u616_o _al_u617|_al_u620.e[0]
+u2_al_u0/n21[0] _al_u621|ux_seg/reg0_b3.d[1]
+_al_u621_o _al_u621|ux_seg/reg0_b3.a[0]
+
+
+
+
+clock: sd_clk
+581 9578 560 2
+Setup check
+591 3
+Endpoint: test_error_tmp_reg.F
+591 -0.345000 106 3
+Timing path: S64_DQ28reg11_b28_IN.ipclk->test_error_tmp_reg.F
+S64_DQ28reg11_b28_IN.ipclk
+test_error_tmp_reg.F
+593 -0.345000 6.890000 7.235000 3 3
+sd_dq_int[28] reg11_b3|_al_u276.b[0]
+_al_u276_o _al_u277|reg10_b6.a[1]
+_al_u277_o test_error_tmp_reg.a[0]
+
+Timing path: S64_DQ28reg11_b28_IN.ipclk->test_error_tmp_reg.F
+S64_DQ28reg11_b28_IN.ipclk
+test_error_tmp_reg.F
+616 -0.345000 6.890000 7.235000 3 3
+sd_dq_int[28] reg11_b3|_al_u276.b[0]
+_al_u276_o _al_u277|reg10_b6.a[1]
+_al_u277_o test_error_tmp_reg.a[1]
+
+Timing path: S64_DQ10reg11_b10_IN.ipclk->test_error_tmp_reg.F
+S64_DQ10reg11_b10_IN.ipclk
+test_error_tmp_reg.F
+639 -0.305000 6.890000 7.195000 3 3
+sd_dq_int[10] reg11_b3|_al_u276.a[0]
+_al_u276_o _al_u277|reg10_b6.a[1]
+_al_u277_o test_error_tmp_reg.a[0]
+
+
+Endpoint: reg8_b14.F
+662 -0.115000 127 3
+Timing path: reg8_b12.clk->reg8_b14.F
+reg8_b12.clk
+reg8_b14.F
+664 -0.115000 6.997000 7.112000 4 4
+rd_addr[12] _al_u537|reg8_b15.b[1]
+_al_u537_o reg12_b13|_al_u540.a[0]
+n53_lutinv _al_u544|_al_u541.a[0]
+_al_u541_o reg8_b14.a[0]
+
+Timing path: reg8_b12.clk->reg8_b14.F
+reg8_b12.clk
+reg8_b14.F
+689 -0.115000 6.997000 7.112000 4 4
+rd_addr[12] _al_u537|reg8_b15.b[1]
+_al_u537_o reg12_b13|_al_u540.a[0]
+n53_lutinv _al_u544|_al_u541.a[0]
+_al_u541_o reg8_b14.a[1]
+
+Timing path: reg8_b12.clk->reg8_b14.F
+reg8_b12.clk
+reg8_b14.F
+714 -0.115000 6.997000 7.112000 4 4
+rd_addr[12] _al_u537|reg8_b15.b[1]
+_al_u537_o reg12_b13|_al_u540.a[1]
+n53_lutinv _al_u544|_al_u541.a[0]
+_al_u541_o reg8_b14.a[0]
+
+
+Endpoint: reg8_b12.F
+739 -0.094000 123 3
+Timing path: reg8_b12.clk->reg8_b12.F
+reg8_b12.clk
+reg8_b12.F
+741 -0.094000 7.018000 7.112000 4 4
+rd_addr[12] _al_u537|reg8_b15.b[1]
+_al_u537_o reg12_b13|_al_u540.a[0]
+n53_lutinv _al_u544|_al_u541.a[0]
+_al_u541_o reg8_b12.a[0]
+
+Timing path: reg8_b12.clk->reg8_b12.F
+reg8_b12.clk
+reg8_b12.F
+766 -0.094000 7.018000 7.112000 4 4
+rd_addr[12] _al_u537|reg8_b15.b[1]
+_al_u537_o reg12_b13|_al_u540.a[0]
+n53_lutinv _al_u544|_al_u541.a[0]
+_al_u541_o reg8_b12.a[1]
+
+Timing path: reg8_b12.clk->reg8_b12.F
+reg8_b12.clk
+reg8_b12.F
+791 -0.094000 7.018000 7.112000 4 4
+rd_addr[12] _al_u537|reg8_b15.b[1]
+_al_u537_o reg12_b13|_al_u540.a[1]
+n53_lutinv _al_u544|_al_u541.a[0]
+_al_u541_o reg8_b12.a[0]
+
+
+
+Hold check
+816 3
+Endpoint: u_sdram/ux_command/oe1_reg.F
+818 0.287000 1 1
+Timing path: u_sdram/ux_command/do_writea_reg|u_sdram/ux_control/WRITEA_reg.clk->u_sdram/ux_command/oe1_reg.F
+u_sdram/ux_command/do_writea_reg|u_sdram/ux_control/WRITEA_reg.clk
+u_sdram/ux_command/oe1_reg.F
+820 0.287000 2.117000 2.404000 1 1
+u_sdram/ux_command/do_writea u_sdram/ux_command/oe1_reg.mi[0]
+
+
+Endpoint: u_sdram/reg2_b7|u_sdram/reg2_b6.F
+839 0.347000 1 1
+Timing path: u_sdram/reg1_b6|u_sdram/reg1_b7.clk->u_sdram/reg2_b7|u_sdram/reg2_b6.F
+u_sdram/reg1_b6|u_sdram/reg1_b7.clk
+u_sdram/reg2_b7|u_sdram/reg2_b6.F
+841 0.347000 2.036000 2.383000 1 1
+u_sdram/DQIN[7] u_sdram/reg2_b7|u_sdram/reg2_b6.mi[1]
+
+
+Endpoint: u_sdram/reg2_b7|u_sdram/reg2_b6.F
+860 0.359000 1 1
+Timing path: u_sdram/reg1_b6|u_sdram/reg1_b7.clk->u_sdram/reg2_b7|u_sdram/reg2_b6.F
+u_sdram/reg1_b6|u_sdram/reg1_b7.clk
+u_sdram/reg2_b7|u_sdram/reg2_b6.F
+862 0.359000 2.036000 2.395000 1 1
+u_sdram/DQIN[6] u_sdram/reg2_b7|u_sdram/reg2_b6.mi[0]
+
+
+
+
+clock: sd_clk1
+881 0 0 0
+
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  sd_clk (200.000MHz)                            5.345ns     187.091MHz        0.491ns       195       -0.554ns
+	  clkin (24.038MHz)                             50.149ns      19.941MHz        0.399ns        36      -70.687ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
+

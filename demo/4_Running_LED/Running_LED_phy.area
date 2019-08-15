@@ -1,0 +1,49 @@
+standard
+***Report Model: running_led***
+
+IO Statistics
+#IO                    17
+  #input                1
+  #output              16
+  #inout                0
+
+Utilization Statistics
+#lut                   45   out of  19600    0.23%
+#reg                   42   out of  19600    0.21%
+#le                    62
+  #lut only            20   out of     62   32.26%
+  #reg only            17   out of     62   27.42%
+  #lut&reg             25   out of     62   40.32%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   17   out of    188    9.04%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+
+Detailed IO Report
+
+Name        Direction     Location     IOStandard     DriveStrength     
+clk_24m     INPUT         K14          LVCMOS25       N/A               
+led[15]     OUTPUT        T13          LVCMOS25       8                 
+led[14]     OUTPUT        T12          LVCMOS25       8                 
+led[13]     OUTPUT        R12          LVCMOS25       8                 
+led[12]     OUTPUT        M7           LVCMOS25       8                 
+led[11]     OUTPUT        T9           LVCMOS25       8                 
+led[10]     OUTPUT        T8           LVCMOS25       8                 
+led[9]      OUTPUT        T7           LVCMOS25       8                 
+led[8]      OUTPUT        R7           LVCMOS25       8                 
+led[7]      OUTPUT        P5           LVCMOS25       8                 
+led[6]      OUTPUT        N5           LVCMOS25       8                 
+led[5]      OUTPUT        P4           LVCMOS25       8                 
+led[4]      OUTPUT        M5           LVCMOS25       8                 
+led[3]      OUTPUT        N4           LVCMOS25       8                 
+led[2]      OUTPUT        N3           LVCMOS25       8                 
+led[1]      OUTPUT        M4           LVCMOS25       8                 
+led[0]      OUTPUT        M3           LVCMOS25       8                 
+

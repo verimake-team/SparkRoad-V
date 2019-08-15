@@ -1,0 +1,34 @@
+####
+set_pin_assignment {clk_24m     } {location = K14 ;} 
+set_pin_assignment {rst_n  } {location = G11  ;}
+#### VGA Interport
+set_pin_assignment {vga_clk  } {location = H2  ;}
+set_pin_assignment {vga_hs  } {location = J3 ;}
+set_pin_assignment {vga_vs  } {location = J4  ;}
+
+set_pin_assignment {vga_r[0]  } {location = K6 ;}
+set_pin_assignment {vga_r[1]  } {location = K3 ;}
+set_pin_assignment {vga_r[2]  } {location = K5  ;}
+set_pin_assignment {vga_r[3]  } {location = L4  ;}
+set_pin_assignment {vga_r[4]  } {location = M1  ;}
+set_pin_assignment {vga_r[5]  } {location = M2 ;}
+set_pin_assignment {vga_r[6]  } {location = L3  ;}
+set_pin_assignment {vga_r[7]  } {location = L5  ;}
+
+set_pin_assignment {vga_g[0]  } {location = L1 ;}
+set_pin_assignment {vga_g[1]  } {location = K2 ;}
+set_pin_assignment {vga_g[2]  } {location = K1  ;}
+set_pin_assignment {vga_g[3]  } {location = J1  ;}
+set_pin_assignment {vga_g[4]  } {location = H3  ;}
+set_pin_assignment {vga_g[5]  } {location = J6 ;}
+set_pin_assignment {vga_g[6]  } {location = H1  ;}
+set_pin_assignment {vga_g[7]  } {location = H5  ;}
+
+set_pin_assignment {vga_b[0]  } {location = G1 ;}
+set_pin_assignment {vga_b[1]  } {location = F1 ;}
+set_pin_assignment {vga_b[2]  } {location = F2  ;}
+set_pin_assignment {vga_b[3]  } {location = E1  ;}
+set_pin_assignment {vga_b[4]  } {location = G3  ;}
+set_pin_assignment {vga_b[5]  } {location = E2 ;}
+set_pin_assignment {vga_b[6]  } {location = D1  ;}
+set_pin_assignment {vga_b[7]  } {location = C1  ;}

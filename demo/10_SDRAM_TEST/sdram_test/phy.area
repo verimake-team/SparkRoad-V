@@ -1,0 +1,22 @@
+standard
+IO Statistics
+#IO       	                              4 
+  #input 	                              2 
+  #output	                              2 
+  #inout 	                              0 
+
+Utilization Statistics
+#le     	                            402    out of  8640  4.65%
+  #lut   	                            401    out of  8640  4.64%
+  #reg   	                            199    out of  8640  2.30%
+#dsp    	                              0    out of     3     0%
+#bram   	                              0    out of    48     0%
+ #bram9k	                              0
+ #fifo9k	                              0
+#bram32k	                              0    out of     2     0%
+#pad    	                             54    out of   165    32%
+  #ireg 	                              0 
+  #oreg 	                             17 
+  #treg 	                              0 
+#pll     	                              1    out of     2
+#bufg   	                              2    out of    16

@@ -1,0 +1,15 @@
+standard
+***Report Model: switch_led***
+
+IO Statistics
+#IO                    32
+  #input               16
+  #output              16
+  #inout                0
+
+Report Hierarchy Area:
++---------------------------------------------+
+|Instance |Module     |gates  |seq    |macros |
++---------------------------------------------+
+|top      |switch_led |0      |0      |0      |
++---------------------------------------------+

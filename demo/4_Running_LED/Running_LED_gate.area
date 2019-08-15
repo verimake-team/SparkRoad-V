@@ -1,0 +1,33 @@
+standard
+***Report Model: running_led***
+
+IO Statistics
+#IO                    17
+  #input                1
+  #output              16
+  #inout                0
+
+Utilization Statistics
+#lut                   45   out of  19600    0.23%
+#reg                   42   out of  19600    0.21%
+#le                    62
+  #lut only            20   out of     62   32.26%
+  #reg only            17   out of     62   27.42%
+  #lut&reg             25   out of     62   40.32%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   17   out of    188    9.04%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+Report Hierarchy Area:
++-------------------------------------------+
+|Instance |Module      |le    |lut   |seq   |
++-------------------------------------------+
+|top      |running_led |62    |45    |42    |
++-------------------------------------------+

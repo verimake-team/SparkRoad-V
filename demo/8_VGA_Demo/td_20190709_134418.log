@@ -1,0 +1,49 @@
+============================================================
+   Tang Dynasty, V4.6.12906
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/SoftWare/Anlogic/TD4.6/bin/td.exe
+   Built at =   18:22:35 Jun 26 2019
+   Run by =     dell
+   Run Date =   Tue Jul  9 13:44:18 2019
+
+   Run on =     DESKTOP-E3KO8FJ
+============================================================
+RUN-1002 : start command "import_device eagle_s20.db -package BG256 -basic"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicated  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicated  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "read_verilog -file al_ip/PLL.v"
+HDL-1007 : analyze verilog file al_ip/PLL.v
+HDL-1007 : elaborate module PLL in al_ip/PLL.v(22)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(80)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="24.000",REFCLK_DIV=2,FBCLK_DIV=9,CLKC0_DIV=9,CLKC0_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=8,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(985)
+HDL-1200 : Current top model is PLL
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "PLL"
+SYN-1011 : Flatten model PLL
+SYN-1014 : Optimize round 1
+SYN-1032 : 6/0 useful/useless nets, 3/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+RUN-1002 : start command "map_macro -nopad"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 1 BUFG to GCLK
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 6/1 useful/useless nets, 4/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 6/1 useful/useless nets, 4/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 6/1 useful/useless nets, 4/1 useful/useless insts
+RUN-1002 : start command "write_verilog al_ip/PLL_sim.v"
+HDL-1201 : write out verilog file al_ip/PLL_sim.v
