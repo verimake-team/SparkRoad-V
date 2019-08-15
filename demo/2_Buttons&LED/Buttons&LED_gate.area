@@ -1,0 +1,35 @@
+standard
+***Report Model: buttons_led***
+
+IO Statistics
+#IO                    22
+  #input                6
+  #output              16
+  #inout                0
+
+Utilization Statistics
+#lut                   69   out of  19600    0.35%
+#reg                   45   out of  19600    0.23%
+#le                    69
+  #lut only            24   out of     69   34.78%
+  #reg only             0   out of     69    0.00%
+  #lut&reg             45   out of     69   65.22%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   22   out of    188   11.70%
+  #ireg                 5
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+Report Hierarchy Area:
++---------------------------------------------+
+|Instance |Module        |le    |lut   |seq   |
++---------------------------------------------+
+|top      |buttons_led   |69    |69    |45    |
+|  ux_btn |debounce(N=5) |41    |41    |24    |
+|  ux_rst |rst_n         |7     |7     |5     |
++---------------------------------------------+

@@ -1,0 +1,36 @@
+standard
+***Report Model: test_camera***
+
+IO Statistics
+#IO                    45
+  #input               13
+  #output              31
+  #inout                1
+
+Utilization Statistics
+#lut                 1624   out of  19600    8.29%
+#reg                  222   out of  19600    1.13%
+#le                  1692
+  #lut only          1470   out of   1692   86.88%
+  #reg only            68   out of   1692    4.02%
+  #lut&reg            154   out of   1692    9.10%
+#dsp                    1   out of     29    3.45%
+#bram                  61   out of     64   95.31%
+  #bram9k              61
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   45   out of    188   23.94%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      4   25.00%
+
+Report Hierarchy Area:
++--------------------------------------------------------+
+|Instance        |Module            |le    |lut   |seq   |
++--------------------------------------------------------+
+|top             |test_camera       |1692  |1624  |222   |
+|  u_camera_init |camera_init       |1009  |991   |93    |
+|    u_i2c_write |i2c_module        |226   |218   |51    |
+|  u_vga_sync    |lcd_sync(IMG_Y=1) |243   |243   |38    |
++--------------------------------------------------------+

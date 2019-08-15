@@ -1,0 +1,36 @@
+standard
+***Report Model: rgb_led***
+
+IO Statistics
+#IO                     4
+  #input                1
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                   56   out of  19600    0.29%
+#reg                   33   out of  19600    0.17%
+#le                    58
+  #lut only            25   out of     58   43.10%
+  #reg only             2   out of     58    3.45%
+  #lut&reg             31   out of     58   53.45%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    4   out of    188    2.13%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+
+Detailed IO Report
+
+Name        Direction     Location     IOStandard     DriveStrength     
+clk_24m     INPUT         K14          LVCMOS33       N/A               
+led_b       OUTPUT        N16          LVCMOS33       8                 
+led_g       OUTPUT        P16          LVCMOS33       8                 
+led_r       OUTPUT        P15          LVCMOS33       8                 
+

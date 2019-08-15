@@ -1,0 +1,18 @@
+standard
+***Report Model: running_led***
+
+IO Statistics
+#IO                    17
+  #input                1
+  #output              16
+  #inout                0
+#MACRO_ADD              1
+#MACRO_EQ               2
+#MACRO_MUX             16
+
+Report Hierarchy Area:
++----------------------------------------------+
+|Instance |Module      |gates  |seq    |macros |
++----------------------------------------------+
+|top      |running_led |0      |42     |3      |
++----------------------------------------------+

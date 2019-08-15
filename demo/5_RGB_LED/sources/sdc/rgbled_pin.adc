@@ -1,0 +1,6 @@
+###colck_pin------------------------------------------------------------
+set_pin_assignment {clk_24m} { LOCATION = K14; IOSTANDARD = LVCMOS33;  }
+###led_pins-------------------------------------------------------------
+set_pin_assignment {led_b} { LOCATION = N16; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {led_g} { LOCATION = P16; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {led_r} { LOCATION = P15; IOSTANDARD = LVCMOS33;  }

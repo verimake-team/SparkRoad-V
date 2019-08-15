@@ -1,0 +1,29 @@
+============================================================
+   Tang Dynasty, V4.6.12906
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/SoftWare/Anlogic/TD4.6/bin/td.exe
+   Built at =   18:22:35 Jun 26 2019
+   Run by =     dell
+   Run Date =   Wed Jul 10 16:19:20 2019
+
+   Run on =     DESKTOP-E3KO8FJ
+============================================================
+RUN-1002 : start command "open_project VGA_Demo.al"
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+RUN-1002 : start command "import_device eagle_s20.db -package BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicated  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicated  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "import_device ef3_4.db -package EF3L40CG332B"

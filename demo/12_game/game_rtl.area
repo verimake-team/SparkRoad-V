@@ -1,0 +1,35 @@
+standard
+***Report Model: top***
+
+IO Statistics
+#IO                    37
+  #input                8
+  #output              29
+  #inout                0
+
+Gate Statistics
+#Basic gates         1139
+  #and                129
+  #nand                 0
+  #or                  85
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                 24
+  #bufif1               0
+  #MX21                71
+  #FADD                 0
+  #DFF                830
+  #LATCH                0
+#MACRO_ADD             31
+#MACRO_EQ              88
+#MACRO_MULT             2
+#MACRO_MUX            468
+
+Report Hierarchy Area:
++-----------------------------------------+
+|Instance |Module |gates  |seq    |macros |
++-----------------------------------------+
+|top      |top    |309    |830    |126    |
++-----------------------------------------+

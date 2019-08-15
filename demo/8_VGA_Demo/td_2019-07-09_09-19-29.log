@@ -1,0 +1,2979 @@
+============================================================
+   Tang Dynasty, V4.6.12906
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/SoftWare/Anlogic/TD4.6/bin/td.exe
+   Built at =   18:22:35 Jun 26 2019
+   Run by =     dell
+   Run Date =   Tue Jul  9 09:19:29 2019
+
+   Run on =     DESKTOP-E3KO8FJ
+============================================================
+RUN-1002 : start command "open_project VGA_Demo.al"
+HDL-1007 : analyze verilog file VGA_Demo.v
+RUN-1002 : start command "import_device eagle_s20.db -package BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicated  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicated  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+RUN-1002 : start command "elaborate -top VGA_Demo"
+HDL-8007 ERROR: cannot find port 'clk_c0' on this module in VGA_Demo.v(27)
+HDL-1007 : 'Clk_div' is declared here in Clk_div.v(2)
+HDL-5007 WARNING: port 'clk_ref' remains unconnected for this instance in VGA_Demo.v(29)
+GUI-8302 ERROR: Please import a work model at first.
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+RUN-1002 : start command "elaborate -top VGA_Demo"
+HDL-1007 : elaborate module VGA_Demo in VGA_Demo.v(2)
+HDL-1007 : elaborate module Clk_div in Clk_div.v(2)
+HDL-5007 WARNING: instantiate unknown module system_init_delay in Clk_div.v(45)
+HDL-1007 : elaborate module Driver in Driver.v(2)
+HDL-1007 : elaborate module Display in Display.v(2)
+HDL-8007 ERROR: system_init_delay(SYS_DELAY_TOP=24'b01001100010010110100000) is a black box
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-8007 ERROR: syntax error near '.' in Clk_div.v(21)
+HDL-8007 ERROR: ignore module module due to previous errors in Clk_div.v(28)
+HDL-1007 : Verilog file 'Clk_div.v' ignored due to errors
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+GUI-8302 ERROR: Please import a work model at first.
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+RUN-1002 : start command "elaborate -top PLL"
+HDL-1007 : elaborate module PLL in al_ip/PLL.v(22)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(80)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="24.000",REFCLK_DIV=2,FBCLK_DIV=9,CLKC0_DIV=9,CLKC0_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=8,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(985)
+HDL-1200 : Current top model is PLL
+HDL-1100 : Inferred 0 RAMs.
+GUI-5001 WARNING: Found no ADC files
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "PLL"
+SYN-1011 : Flatten model PLL
+SYN-1014 : Optimize round 1
+SYN-1032 : 6/0 useful/useless nets, 3/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+RUN-1002 : start command "report_area -file VGA_Demo_rtl.area"
+RUN-1001 : standard
+***Report Model: PLL***
+
+IO Statistics
+#IO                     4
+  #input                2
+  #output               2
+  #inout                0
+
+RUN-1001 : 
+Report Hierarchy Area:
++-----------------------------------------+
+|Instance |Module |gates  |seq    |macros |
++-----------------------------------------+
+|top      |PLL    |0      |0      |1      |
++-----------------------------------------+
+
+RUN-1002 : start command "export_db VGA_Demo_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+RUN-1002 : start command "elaborate -top VGA_Demo"
+HDL-8007 ERROR: cannot find port 'clk_ref' on this module in VGA_Demo.v(26)
+HDL-1007 : 'Clk_div' is declared here in Clk_div.v(2)
+HDL-5007 WARNING: port 'clk_div' remains unconnected for this instance in VGA_Demo.v(27)
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+RUN-1002 : start command "elaborate -top VGA_Demo"
+HDL-1007 : elaborate module VGA_Demo in VGA_Demo.v(2)
+HDL-1007 : elaborate module Clk_div in Clk_div.v(2)
+HDL-1007 : elaborate module PLL in al_ip/PLL.v(22)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(80)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="24.000",REFCLK_DIV=2,FBCLK_DIV=9,CLKC0_DIV=9,CLKC0_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=8,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(985)
+HDL-1007 : elaborate module Driver in Driver.v(2)
+HDL-1007 : elaborate module Display in Display.v(2)
+HDL-1200 : Current top model is VGA_Demo
+HDL-1100 : Inferred 0 RAMs.
+GUI-5001 WARNING: Found no ADC files
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "VGA_Demo"
+SYN-1012 : SanityCheck: Model "Clk_div"
+SYN-1012 : SanityCheck: Model "PLL"
+SYN-1012 : SanityCheck: Model "Driver"
+SYN-1012 : SanityCheck: Model "Display"
+SYN-1043 : Mark PLL as IO macro for instance bufg_feedback
+SYN-1043 : Mark Clk_div as IO macro for instance uut
+SYN-1011 : Flatten model VGA_Demo
+SYN-1011 : Flatten model Clk_div
+SYN-1011 : Flatten model PLL
+SYN-1011 : Flatten model Driver
+SYN-1011 : Flatten model Display
+SYN-1014 : Optimize round 1
+SYN-1032 : 106/0 useful/useless nets, 30/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1016 : Merged 2 instances.
+SYN-1015 : Optimize round 1, 2 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 105/1 useful/useless nets, 29/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 3/0 useful/useless nets, 1/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 6/0 useful/useless nets, 3/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 204/0 useful/useless nets, 134/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 12 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 191/13 useful/useless nets, 121/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "report_area -file VGA_Demo_rtl.area"
+RUN-1001 : standard
+***Report Model: VGA_Demo***
+
+IO Statistics
+#IO                    30
+  #input                2
+  #output              28
+  #inout                0
+
+Gate Statistics
+#Basic gates           56
+  #and                  5
+  #nand                 0
+  #or                   0
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                  3
+  #bufif1               0
+  #MX21                 0
+  #FADD                 0
+  #DFF                 48
+  #LATCH                0
+#MACRO_ADD             14
+#MACRO_EQ               1
+#MACRO_MULT             1
+#MACRO_MUX             72
+
+RUN-1001 : 
+Report Hierarchy Area:
++-------------------------------------------+
+|Instance |Module   |gates  |seq    |macros |
++-------------------------------------------+
+|top      |VGA_Demo |8      |48     |89     |
+|  uut1   |Clk_div  |0      |0      |1      |
+|    uut  |PLL      |0      |0      |1      |
+|  uut2   |Driver   |8      |24     |15     |
++-------------------------------------------+
+
+RUN-1002 : start command "export_db VGA_Demo_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "optimize_gate -packarea VGA_Demo_gate.area"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+SYN-2001 : Map 30 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Map 1 macro multiplier
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 135/0 useful/useless nets, 60/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 111/24 useful/useless nets, 36/24 useful/useless insts
+SYN-2501 : Optimize round 1, 24 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 110/1 useful/useless nets, 35/1 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-1032 : 110/1 useful/useless nets, 35/1 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 3/2 useful/useless nets, 1/2 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 3/2 useful/useless nets, 1/2 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 3/2 useful/useless nets, 1/2 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 1 BUFG to GCLK
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 6/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 6/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 6/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 191/0 useful/useless nets, 121/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 209/0 useful/useless nets, 139/0 useful/useless insts
+SYN-2501 : Optimize round 1, 12 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 209/0 useful/useless nets, 139/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 14 macro adder
+SYN-1032 : 391/0 useful/useless nets, 321/0 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map = 16254.90 sec
+SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 78 (2.14), #lev = 2 (1.56)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 78 (2.14), #lev = 2 (1.56)
+SYN-2581 : Mapping with K=4, #lut = 78 (2.14), #lev = 2 (1.56)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map = 16254.97 sec
+SYN-3001 : Mapper mapped 99 instances into 81 LUTs, name keeping = 96%.
+SYN-1001 : Packing model "VGA_Demo" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 110/0 useful/useless nets, 35/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 0 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 0 LUT to BLE ...
+SYN-4008 : Packed 0 LUT and 0 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "VGA_Demo" (AL_USER_NORMAL) with 0/35 primitive instances ...
+SYN-1001 : Packing model "Clk_div" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 3/0 useful/useless nets, 1/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 0 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 0 LUT to BLE ...
+SYN-4008 : Packed 0 LUT and 0 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "Clk_div" (AL_USER_NORMAL) with 0/1 primitive instances ...
+SYN-1001 : Packing model "PLL" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 6/0 useful/useless nets, 3/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 0 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 0 LUT to BLE ...
+SYN-4008 : Packed 0 LUT and 0 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "PLL" (AL_USER_NORMAL) with 0/3 primitive instances ...
+SYN-1001 : Packing model "Driver" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 369/0 useful/useless nets, 299/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 24 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 4 carry chain into lslice
+SYN-4007 : Packing 140 adder to BLE ...
+SYN-4008 : Packed 140 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 81 LUT to BLE ...
+SYN-4008 : Packed 81 LUT and 24 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 57 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "Driver" (AL_USER_NORMAL) with 81/169 primitive instances ...
+RUN-1002 : start command "report_area -file VGA_Demo_gate.area"
+RUN-1001 : standard
+***Report Model: VGA_Demo***
+
+IO Statistics
+#IO                    30
+  #input                2
+  #output              28
+  #inout                0
+
+Utilization Statistics
+#lut                  253   out of  19600    1.29%
+#reg                   24   out of  19600    0.12%
+#le                   253
+  #lut only           229   out of    253   90.51%
+  #reg only             0   out of    253    0.00%
+  #lut&reg             24   out of    253    9.49%
+#dsp                    1   out of     29    3.45%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   30   out of    188   15.96%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      4   25.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++----------------------------------------+
+|Instance |Module   |le    |lut   |seq   |
++----------------------------------------+
+|top      |VGA_Demo |253   |253   |24    |
+|  uut1   |Clk_div  |0     |0     |0     |
+|    uut  |PLL      |0     |0     |0     |
+|  uut2   |Driver   |253   |253   |24    |
++----------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1001 : Force tag keep_hierarchy inst 'uut1'(AL_USER_NORMAL) to False
+SYN-1001 : Force tag keep_hierarchy inst 'uut'(AL_USER_NORMAL) to False
+SYN-1001 : Force tag keep_hierarchy inst 'uut2'(AL_USER_NORMAL) to False
+SYN-1011 : Flatten model VGA_Demo
+SYN-1011 : Flatten model Clk_div
+SYN-1011 : Flatten model PLL
+SYN-1011 : Flatten model Driver
+SYN-1016 : Merged 2 instances.
+SYN-1046 : remove 1 useless nets after legalize.
+RUN-1002 : start command "export_db VGA_Demo_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+RUN-1002 : start command "elaborate -top VGA_Demo"
+HDL-1007 : elaborate module VGA_Demo in VGA_Demo.v(2)
+HDL-1007 : elaborate module Clk_div in Clk_div.v(2)
+HDL-1007 : elaborate module PLL in al_ip/PLL.v(22)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(80)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="24.000",REFCLK_DIV=2,FBCLK_DIV=9,CLKC0_DIV=9,CLKC0_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=8,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(985)
+HDL-1007 : elaborate module Driver in Driver.v(2)
+HDL-1007 : elaborate module Display in Display.v(2)
+HDL-1200 : Current top model is VGA_Demo
+HDL-1100 : Inferred 0 RAMs.
+GUI-5001 WARNING: Found no ADC files
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "VGA_Demo"
+SYN-1012 : SanityCheck: Model "Clk_div"
+SYN-1012 : SanityCheck: Model "PLL"
+SYN-1012 : SanityCheck: Model "Driver"
+SYN-1012 : SanityCheck: Model "Display"
+SYN-1043 : Mark PLL as IO macro for instance bufg_feedback
+SYN-1043 : Mark Clk_div as IO macro for instance uut
+SYN-1011 : Flatten model VGA_Demo
+SYN-1011 : Flatten model Clk_div
+SYN-1011 : Flatten model PLL
+SYN-1011 : Flatten model Driver
+SYN-1011 : Flatten model Display
+SYN-1014 : Optimize round 1
+SYN-1032 : 106/0 useful/useless nets, 30/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1016 : Merged 2 instances.
+SYN-1015 : Optimize round 1, 2 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 105/1 useful/useless nets, 29/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 3/0 useful/useless nets, 1/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 6/0 useful/useless nets, 3/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 204/0 useful/useless nets, 134/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 12 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 191/13 useful/useless nets, 121/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "report_area -file VGA_Demo_rtl.area"
+RUN-1001 : standard
+***Report Model: VGA_Demo***
+
+IO Statistics
+#IO                    30
+  #input                2
+  #output              28
+  #inout                0
+
+Gate Statistics
+#Basic gates           56
+  #and                  5
+  #nand                 0
+  #or                   0
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                  3
+  #bufif1               0
+  #MX21                 0
+  #FADD                 0
+  #DFF                 48
+  #LATCH                0
+#MACRO_ADD             14
+#MACRO_EQ               1
+#MACRO_MULT             1
+#MACRO_MUX             72
+
+RUN-1001 : 
+Report Hierarchy Area:
++-------------------------------------------+
+|Instance |Module   |gates  |seq    |macros |
++-------------------------------------------+
+|top      |VGA_Demo |8      |48     |89     |
+|  uut1   |Clk_div  |0      |0      |1      |
+|    uut  |PLL      |0      |0      |1      |
+|  uut2   |Driver   |8      |24     |15     |
++-------------------------------------------+
+
+RUN-1002 : start command "read_sdc VGA_Demo.sdc"
+RUN-1104 : Import SDC file VGA_Demo.sdc finished, there are 0 nets kept by constraints.
+RUN-1002 : start command "export_db VGA_Demo_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+RUN-1002 : start command "elaborate -top VGA_Demo"
+HDL-1007 : elaborate module VGA_Demo in VGA_Demo.v(2)
+HDL-1007 : elaborate module Clk_div in Clk_div.v(2)
+HDL-1007 : elaborate module PLL in al_ip/PLL.v(22)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(80)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="24.000",REFCLK_DIV=2,FBCLK_DIV=9,CLKC0_DIV=9,CLKC0_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=8,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(985)
+HDL-1007 : elaborate module Driver in Driver.v(2)
+HDL-1007 : elaborate module Display in Display.v(2)
+HDL-1200 : Current top model is VGA_Demo
+HDL-1100 : Inferred 0 RAMs.
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+RUN-1002 : start command "elaborate -top VGA_Demo"
+HDL-1007 : elaborate module VGA_Demo in VGA_Demo.v(2)
+HDL-1007 : elaborate module Clk_div in Clk_div.v(2)
+HDL-1007 : elaborate module PLL in al_ip/PLL.v(22)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(80)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="24.000",REFCLK_DIV=2,FBCLK_DIV=9,CLKC0_DIV=9,CLKC0_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=8,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(985)
+HDL-1007 : elaborate module Driver in Driver.v(2)
+HDL-1007 : elaborate module Display in Display.v(2)
+HDL-1200 : Current top model is VGA_Demo
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc VGA_Demo.adc"
+RUN-1002 : start command "set_pin_assignment clk_24m      location = K14 ;"
+RUN-1002 : start command "set_pin_assignment rst_n   location = G11  ;"
+RUN-1002 : start command "set_pin_assignment vga_clk   location = H2  ;"
+RUN-1002 : start command "set_pin_assignment vga_hs   location = J3 ;"
+RUN-1002 : start command "set_pin_assignment vga_vs   location = J4  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[0]   location = K6 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[1]   location = K3 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[2]   location = K5  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[3]   location = L4  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[4]   location = M1  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[5]   location = M2 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[6]   location = L3  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[7]   location = L5  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[0]   location = L1 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[1]   location = K2 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[2]   location = K1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[3]   location = J1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[4]   location = H3  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[5]   location = J6 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[6]   location = H1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[7]   location = H5  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[0]   location = G1 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[1]   location = F1 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[2]   location = F2  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[3]   location = E1  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[4]   location = G3  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[5]   location = E2 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[6]   location = D2  ;"
+USR-8027 ERROR: Location D2 is for dedicated pin! Choose another pin for normal use.
+USR-8064 ERROR: Read VGA_Demo.adc error-out.
+GUI-8309 ERROR: Failed to read adc VGA_Demo.adc.
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+RUN-1002 : start command "elaborate -top VGA_Demo"
+HDL-1007 : elaborate module VGA_Demo in VGA_Demo.v(2)
+HDL-1007 : elaborate module Clk_div in Clk_div.v(2)
+HDL-1007 : elaborate module PLL in al_ip/PLL.v(22)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(80)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="24.000",REFCLK_DIV=2,FBCLK_DIV=9,CLKC0_DIV=9,CLKC0_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=8,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(985)
+HDL-1007 : elaborate module Driver in Driver.v(2)
+HDL-1007 : elaborate module Display in Display.v(2)
+HDL-1200 : Current top model is VGA_Demo
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc VGA_Demo.adc"
+RUN-1002 : start command "set_pin_assignment clk_24m      location = K14 ;"
+RUN-1002 : start command "set_pin_assignment rst_n   location = G11  ;"
+RUN-1002 : start command "set_pin_assignment vga_clk   location = H2  ;"
+RUN-1002 : start command "set_pin_assignment vga_hs   location = J3 ;"
+RUN-1002 : start command "set_pin_assignment vga_vs   location = J4  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[0]   location = K6 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[1]   location = K3 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[2]   location = K5  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[3]   location = L4  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[4]   location = M1  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[5]   location = M2 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[6]   location = L3  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[7]   location = L5  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[0]   location = L1 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[1]   location = K2 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[2]   location = K1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[3]   location = J1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[4]   location = H3  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[5]   location = J6 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[6]   location = H1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[7]   location = H5  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[0]   location = G1 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[1]   location = F1 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[2]   location = F2  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[3]   location = E1  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[4]   location = G3  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[5]   location = E2 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[6]   location = H1  ;"
+USR-8055 ERROR: Pin vga_b[6] is set to the same pad with vga_g[6].
+USR-8064 ERROR: Read VGA_Demo.adc error-out.
+GUI-8309 ERROR: Failed to read adc VGA_Demo.adc.
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+RUN-1002 : start command "elaborate -top VGA_Demo"
+HDL-1007 : elaborate module VGA_Demo in VGA_Demo.v(2)
+HDL-1007 : elaborate module Clk_div in Clk_div.v(2)
+HDL-1007 : elaborate module PLL in al_ip/PLL.v(22)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(80)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="24.000",REFCLK_DIV=2,FBCLK_DIV=9,CLKC0_DIV=9,CLKC0_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=8,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(985)
+HDL-1007 : elaborate module Driver in Driver.v(2)
+HDL-1007 : elaborate module Display in Display.v(2)
+HDL-1200 : Current top model is VGA_Demo
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc VGA_Demo.adc"
+RUN-1002 : start command "set_pin_assignment clk_24m      location = K14 ;"
+RUN-1002 : start command "set_pin_assignment rst_n   location = G11  ;"
+RUN-1002 : start command "set_pin_assignment vga_clk   location = H2  ;"
+RUN-1002 : start command "set_pin_assignment vga_hs   location = J3 ;"
+RUN-1002 : start command "set_pin_assignment vga_vs   location = J4  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[0]   location = K6 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[1]   location = K3 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[2]   location = K5  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[3]   location = L4  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[4]   location = M1  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[5]   location = M2 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[6]   location = L3  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[7]   location = L5  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[0]   location = L1 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[1]   location = K2 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[2]   location = K1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[3]   location = J1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[4]   location = H3  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[5]   location = J6 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[6]   location = H1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[7]   location = H5  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[0]   location = G1 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[1]   location = F1 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[2]   location = F2  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[3]   location = E1  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[4]   location = G3  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[5]   location = E2 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[6]   location = D1  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[7]   location = C1  ;"
+USR-6010 WARNING: ADC constraints: pin vga_de has no constraint.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "VGA_Demo"
+SYN-1012 : SanityCheck: Model "Clk_div"
+SYN-1012 : SanityCheck: Model "PLL"
+SYN-1012 : SanityCheck: Model "Driver"
+SYN-1012 : SanityCheck: Model "Display"
+SYN-1043 : Mark PLL as IO macro for instance bufg_feedback
+SYN-1043 : Mark Clk_div as IO macro for instance uut
+SYN-1011 : Flatten model VGA_Demo
+SYN-1011 : Flatten model Clk_div
+SYN-1011 : Flatten model PLL
+SYN-1011 : Flatten model Driver
+SYN-1011 : Flatten model Display
+SYN-1014 : Optimize round 1
+SYN-1032 : 106/0 useful/useless nets, 30/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1016 : Merged 2 instances.
+SYN-1015 : Optimize round 1, 2 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 105/1 useful/useless nets, 29/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 3/0 useful/useless nets, 1/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 6/0 useful/useless nets, 3/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 204/0 useful/useless nets, 134/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 12 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 191/13 useful/useless nets, 121/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "report_area -file VGA_Demo_rtl.area"
+RUN-1001 : standard
+***Report Model: VGA_Demo***
+
+IO Statistics
+#IO                    30
+  #input                2
+  #output              28
+  #inout                0
+
+Gate Statistics
+#Basic gates           56
+  #and                  5
+  #nand                 0
+  #or                   0
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                  3
+  #bufif1               0
+  #MX21                 0
+  #FADD                 0
+  #DFF                 48
+  #LATCH                0
+#MACRO_ADD             14
+#MACRO_EQ               1
+#MACRO_MULT             1
+#MACRO_MUX             72
+
+RUN-1001 : 
+Report Hierarchy Area:
++-------------------------------------------+
+|Instance |Module   |gates  |seq    |macros |
++-------------------------------------------+
+|top      |VGA_Demo |8      |48     |89     |
+|  uut1   |Clk_div  |0      |0      |1      |
+|    uut  |PLL      |0      |0      |1      |
+|  uut2   |Driver   |8      |24     |15     |
++-------------------------------------------+
+
+RUN-1002 : start command "read_sdc VGA_Demo.sdc"
+RUN-1002 : start command "get_ports clk_in"
+USR-8135 ERROR: No port match the pattern: clk_in.
+USR-8129 ERROR: VGA_Demo.sdc import error.
+GUI-8301 ERROR: Failed to read sdc VGA_Demo.sdc.
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+RUN-1002 : start command "elaborate -top VGA_Demo"
+HDL-1007 : elaborate module VGA_Demo in VGA_Demo.v(2)
+HDL-1007 : elaborate module Clk_div in Clk_div.v(2)
+HDL-1007 : elaborate module PLL in al_ip/PLL.v(22)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(80)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="24.000",REFCLK_DIV=2,FBCLK_DIV=9,CLKC0_DIV=9,CLKC0_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=8,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(985)
+HDL-1007 : elaborate module Driver in Driver.v(2)
+HDL-1007 : elaborate module Display in Display.v(2)
+HDL-1200 : Current top model is VGA_Demo
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc VGA_Demo.adc"
+RUN-1002 : start command "set_pin_assignment clk_24m      location = K14 ;"
+RUN-1002 : start command "set_pin_assignment rst_n   location = G11  ;"
+RUN-1002 : start command "set_pin_assignment vga_clk   location = H2  ;"
+RUN-1002 : start command "set_pin_assignment vga_hs   location = J3 ;"
+RUN-1002 : start command "set_pin_assignment vga_vs   location = J4  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[0]   location = K6 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[1]   location = K3 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[2]   location = K5  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[3]   location = L4  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[4]   location = M1  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[5]   location = M2 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[6]   location = L3  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[7]   location = L5  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[0]   location = L1 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[1]   location = K2 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[2]   location = K1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[3]   location = J1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[4]   location = H3  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[5]   location = J6 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[6]   location = H1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[7]   location = H5  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[0]   location = G1 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[1]   location = F1 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[2]   location = F2  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[3]   location = E1  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[4]   location = G3  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[5]   location = E2 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[6]   location = D1  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[7]   location = C1  ;"
+USR-6010 WARNING: ADC constraints: pin vga_de has no constraint.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "VGA_Demo"
+SYN-1012 : SanityCheck: Model "Clk_div"
+SYN-1012 : SanityCheck: Model "PLL"
+SYN-1012 : SanityCheck: Model "Driver"
+SYN-1012 : SanityCheck: Model "Display"
+SYN-1043 : Mark PLL as IO macro for instance bufg_feedback
+SYN-1043 : Mark Clk_div as IO macro for instance uut
+SYN-1011 : Flatten model VGA_Demo
+SYN-1011 : Flatten model Clk_div
+SYN-1011 : Flatten model PLL
+SYN-1011 : Flatten model Driver
+SYN-1011 : Flatten model Display
+SYN-1014 : Optimize round 1
+SYN-1032 : 106/0 useful/useless nets, 30/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1016 : Merged 2 instances.
+SYN-1015 : Optimize round 1, 2 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 105/1 useful/useless nets, 29/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 3/0 useful/useless nets, 1/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 6/0 useful/useless nets, 3/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 204/0 useful/useless nets, 134/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 12 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 191/13 useful/useless nets, 121/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "report_area -file VGA_Demo_rtl.area"
+RUN-1001 : standard
+***Report Model: VGA_Demo***
+
+IO Statistics
+#IO                    30
+  #input                2
+  #output              28
+  #inout                0
+
+Gate Statistics
+#Basic gates           56
+  #and                  5
+  #nand                 0
+  #or                   0
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                  3
+  #bufif1               0
+  #MX21                 0
+  #FADD                 0
+  #DFF                 48
+  #LATCH                0
+#MACRO_ADD             14
+#MACRO_EQ               1
+#MACRO_MULT             1
+#MACRO_MUX             72
+
+RUN-1001 : 
+Report Hierarchy Area:
++-------------------------------------------+
+|Instance |Module   |gates  |seq    |macros |
++-------------------------------------------+
+|top      |VGA_Demo |8      |48     |89     |
+|  uut1   |Clk_div  |0      |0      |1      |
+|    uut  |PLL      |0      |0      |1      |
+|  uut2   |Driver   |8      |24     |15     |
++-------------------------------------------+
+
+RUN-1002 : start command "read_sdc VGA_Demo.sdc"
+RUN-1002 : start command "get_ports clk_24m"
+RUN-1002 : start command "create_clock -name clk_24m -period 41.666 -waveform 0 20.833 "
+RUN-1102 : create_clock: clock name: clk_24m, type: 0, period: 41666, rise: 0, fall: 20833.
+RUN-1104 : Import SDC file VGA_Demo.sdc finished, there are 0 nets kept by constraints.
+RUN-1002 : start command "export_db VGA_Demo_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "optimize_gate -packarea VGA_Demo_gate.area"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+SYN-2001 : Map 30 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Map 1 macro multiplier
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 135/0 useful/useless nets, 60/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 111/24 useful/useless nets, 36/24 useful/useless insts
+SYN-2501 : Optimize round 1, 24 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 110/1 useful/useless nets, 35/1 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-1032 : 110/1 useful/useless nets, 35/1 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 3/2 useful/useless nets, 1/2 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 3/2 useful/useless nets, 1/2 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 3/2 useful/useless nets, 1/2 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 1 BUFG to GCLK
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 6/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 6/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 6/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 191/0 useful/useless nets, 121/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 209/0 useful/useless nets, 139/0 useful/useless insts
+SYN-2501 : Optimize round 1, 12 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 209/0 useful/useless nets, 139/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 14 macro adder
+SYN-1032 : 391/0 useful/useless nets, 321/0 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map = 17641.63 sec
+SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
+RUN-1002 : start command "start_timer -prepack"
+TMR-2505 : Start building timing graph for model VGA_Demo.
+TMR-2506 : Build timing graph completely. Port num: 9, tpin num: 1253, tnet num: 509, tinst num: 354, tnode num: 1558, tedge num: 1813.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 40 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 509 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3001 : Initiate 1 clocks from SDC.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=5, #lut = 76 (3.08), #lev = 3 (1.27)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=5, #lut = 76 (3.08), #lev = 3 (1.27)
+SYN-2581 : Mapping with K=5, #lut = 76 (3.08), #lev = 3 (1.27)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map = 17641.69 sec
+SYN-3001 : Mapper mapped 99 instances into 79 LUTs, name keeping = 97%.
+SYN-1001 : Packing model "VGA_Demo" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 110/0 useful/useless nets, 35/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 0 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 0 LUT to BLE ...
+SYN-4008 : Packed 0 LUT and 0 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "VGA_Demo" (AL_USER_NORMAL) with 0/35 primitive instances ...
+SYN-1001 : Packing model "Clk_div" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 3/0 useful/useless nets, 1/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 0 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 0 LUT to BLE ...
+SYN-4008 : Packed 0 LUT and 0 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "Clk_div" (AL_USER_NORMAL) with 0/1 primitive instances ...
+SYN-1001 : Packing model "PLL" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 6/0 useful/useless nets, 3/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 0 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 0 LUT to BLE ...
+SYN-4008 : Packed 0 LUT and 0 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "PLL" (AL_USER_NORMAL) with 0/3 primitive instances ...
+SYN-1001 : Packing model "Driver" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 367/0 useful/useless nets, 297/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 24 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 4 carry chain into lslice
+SYN-4007 : Packing 140 adder to BLE ...
+SYN-4008 : Packed 140 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 79 LUT to BLE ...
+SYN-4008 : Packed 79 LUT and 24 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 55 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "Driver" (AL_USER_NORMAL) with 79/167 primitive instances ...
+RUN-1002 : start command "report_area -file VGA_Demo_gate.area"
+RUN-1001 : standard
+***Report Model: VGA_Demo***
+
+IO Statistics
+#IO                    30
+  #input                2
+  #output              28
+  #inout                0
+
+Utilization Statistics
+#lut                  251   out of  19600    1.28%
+#reg                   24   out of  19600    0.12%
+#le                   251
+  #lut only           227   out of    251   90.44%
+  #reg only             0   out of    251    0.00%
+  #lut&reg             24   out of    251    9.56%
+#dsp                    1   out of     29    3.45%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   30   out of    188   15.96%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      4   25.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++----------------------------------------+
+|Instance |Module   |le    |lut   |seq   |
++----------------------------------------+
+|top      |VGA_Demo |251   |251   |24    |
+|  uut1   |Clk_div  |0     |0     |0     |
+|    uut  |PLL      |0     |0     |0     |
+|  uut2   |Driver   |251   |251   |24    |
++----------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1001 : Force tag keep_hierarchy inst 'uut1'(AL_USER_NORMAL) to False
+SYN-1001 : Force tag keep_hierarchy inst 'uut'(AL_USER_NORMAL) to False
+SYN-1001 : Force tag keep_hierarchy inst 'uut2'(AL_USER_NORMAL) to False
+SYN-1011 : Flatten model VGA_Demo
+SYN-1011 : Flatten model Clk_div
+SYN-1011 : Flatten model PLL
+SYN-1011 : Flatten model Driver
+SYN-1016 : Merged 2 instances.
+SYN-1046 : remove 1 useless nets after legalize.
+RUN-1002 : start command "read_sdc VGA_Demo.sdc"
+RUN-1002 : start command "get_ports clk_24m"
+RUN-1002 : start command "create_clock -name clk_24m -period 41.666 -waveform 0 20.833 "
+RUN-1102 : create_clock: clock name: clk_24m, type: 0, period: 41666, rise: 0, fall: 20833.
+RUN-1104 : Import SDC file VGA_Demo.sdc finished, there are 0 nets kept by constraints.
+RUN-1002 : start command "export_db VGA_Demo_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+PHY-3001 : Placer runs in 6 thread(s).
+SYN-4016 : Net clk_vga driven by BUFG (13 clock/control pins, 2 other pins).
+SYN-4019 : Net clk_24m_pad is refclk of pll uut1/uut/pll_inst.
+SYN-4020 : Net clk_24m_pad is fbclk of pll uut1/uut/pll_inst.
+SYN-4025 : Tag rtl::Net clk_24m_pad as clock net
+SYN-4025 : Tag rtl::Net clk_vga as clock net
+SYN-4026 : Tagged 2 rtl::Net as clock net
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 162 instances
+RUN-1001 : 70 mslices, 56 lslices, 30 pads, 0 brams, 1 dsps
+RUN-1001 : There are total 269 nets
+RUN-1001 : 233 nets have 2 pins
+RUN-1001 : 25 nets have [6 - 10] pins
+RUN-1001 : 4 nets have [11 - 20] pins
+RUN-1001 : 6 nets have [21 - 99] pins
+RUN-1001 : 1 nets have 100+ pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 160 instances, 126 slices, 14 macros(86 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-2505 : Start building timing graph for model VGA_Demo.
+TMR-2506 : Build timing graph completely. Port num: 9, tpin num: 862, tnet num: 267, tinst num: 160, tnode num: 918, tedge num: 1349.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 24 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 267 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3001 : Initiate 1 clocks from SDC.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.019621s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (159.3%)
+
+PHY-3001 : Global placement ...
+PHY-3001 : Initial: Len = 67804
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.992286
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(1): len = 61487.5, overlap = 2.25
+PHY-3002 : Step(2): len = 57881.4, overlap = 2.25
+PHY-3002 : Step(3): len = 35497.2, overlap = 2.25
+PHY-3002 : Step(4): len = 30586.8, overlap = 2.25
+PHY-3002 : Step(5): len = 26536.4, overlap = 2.25
+PHY-3002 : Step(6): len = 24855.6, overlap = 2.25
+PHY-3002 : Step(7): len = 22218.3, overlap = 0
+PHY-3002 : Step(8): len = 19126.6, overlap = 2.25
+PHY-3002 : Step(9): len = 18700.1, overlap = 2.25
+PHY-3002 : Step(10): len = 16628.3, overlap = 2.25
+PHY-3002 : Step(11): len = 15725.6, overlap = 2.25
+PHY-3002 : Step(12): len = 15666.3, overlap = 2.25
+PHY-3002 : Step(13): len = 14328.9, overlap = 2.25
+PHY-3002 : Step(14): len = 14345.9, overlap = 2.25
+PHY-3002 : Step(15): len = 14369.8, overlap = 2.25
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 0.000224001
+PHY-3002 : Step(16): len = 14600.4, overlap = 2.25
+PHY-3002 : Step(17): len = 14628, overlap = 0
+PHY-3002 : Step(18): len = 14632.6, overlap = 0
+PHY-3002 : Step(19): len = 13322.8, overlap = 2.25
+PHY-3002 : Step(20): len = 13283.3, overlap = 2.25
+PHY-3002 : Step(21): len = 13731.6, overlap = 2.25
+PHY-3002 : Step(22): len = 13509.6, overlap = 0
+PHY-3002 : Step(23): len = 13662.1, overlap = 0
+PHY-3002 : Step(24): len = 13005, overlap = 2.25
+PHY-3002 : Step(25): len = 12616.3, overlap = 2.25
+PHY-3002 : Step(26): len = 12682.3, overlap = 2.25
+PHY-3002 : Step(27): len = 12574, overlap = 0
+PHY-3002 : Step(28): len = 12263, overlap = 0
+PHY-3002 : Step(29): len = 12333.2, overlap = 0
+PHY-3002 : Step(30): len = 11844.7, overlap = 2.25
+PHY-3002 : Step(31): len = 11638.4, overlap = 2.25
+PHY-3002 : Step(32): len = 11576, overlap = 2.25
+PHY-3002 : Step(33): len = 11597.9, overlap = 0
+PHY-3002 : Step(34): len = 11755.1, overlap = 0
+PHY-3002 : Step(35): len = 11804, overlap = 0
+PHY-3002 : Step(36): len = 10964.4, overlap = 2.25
+PHY-3002 : Step(37): len = 10898.4, overlap = 2.25
+PHY-3002 : Step(38): len = 10962.2, overlap = 0
+PHY-3002 : Step(39): len = 10982.9, overlap = 0
+PHY-3002 : Step(40): len = 10117.3, overlap = 0
+PHY-3002 : Step(41): len = 9866.4, overlap = 0
+PHY-3002 : Step(42): len = 9902.6, overlap = 0
+PHY-3002 : Step(43): len = 9665.8, overlap = 2.25
+PHY-3002 : Step(44): len = 9653.5, overlap = 2.25
+PHY-3002 : Step(45): len = 9648.8, overlap = 2.25
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 0.000448001
+PHY-3002 : Step(46): len = 9933.5, overlap = 0
+PHY-3002 : Step(47): len = 9949.5, overlap = 0
+PHY-3002 : Step(48): len = 9960.9, overlap = 0
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.004773s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.992286
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(49): len = 10907.5, overlap = 0
+PHY-3002 : Step(50): len = 10565.3, overlap = 0
+PHY-3002 : Step(51): len = 10565.3, overlap = 0
+PHY-3002 : Step(52): len = 10541, overlap = 0
+PHY-3002 : Step(53): len = 10540.4, overlap = 0
+PHY-3002 : Step(54): len = 10536.8, overlap = 0
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.992286
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 8.62897e-06
+PHY-3002 : Step(55): len = 10585.1, overlap = 3.25
+PHY-3002 : Step(56): len = 10593.6, overlap = 3.25
+PHY-3002 : Step(57): len = 10610.1, overlap = 3.25
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 1.72579e-05
+PHY-3002 : Step(58): len = 10812.8, overlap = 3.5
+PHY-3002 : Step(59): len = 10830.6, overlap = 3.5
+PHY-3002 : Step(60): len = 10918.9, overlap = 3
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 3.45159e-05
+PHY-3002 : Step(61): len = 10973.7, overlap = 3
+PHY-3002 : Step(62): len = 10973.7, overlap = 3
+PHY-3002 : Step(63): len = 11059.7, overlap = 3
+PHY-3002 : Step(64): len = 11059.7, overlap = 3
+PHY-3002 : Step(65): len = 11142.6, overlap = 2.75
+PHY-3002 : Step(66): len = 11142.6, overlap = 2.75
+PHY-3002 : Step(67): len = 11119.2, overlap = 3.25
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.017024s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (91.8%)
+
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.992286
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(68): len = 11443.4, overlap = 4
+PHY-3002 : Step(69): len = 11400.1, overlap = 3.5
+PHY-3002 : Step(70): len = 11415.7, overlap = 3.25
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 3.36681e-05
+PHY-3002 : Step(71): len = 11398.9, overlap = 4
+PHY-3002 : Step(72): len = 11398.9, overlap = 4
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 6.73361e-05
+PHY-3002 : Step(73): len = 11425.6, overlap = 4.25
+PHY-3002 : Step(74): len = 11425.6, overlap = 4.25
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.005077s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Legalized: Len = 12404, Over = 0
+PHY-3001 : Final: Len = 12404, Over = 0
+PHY-3001 : Improving timing with driver duplication.
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 17456, over cnt = 4(0%), over = 4, worst = 1
+PHY-1002 : len = 17432, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.020227s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (77.2%)
+
+RUN-1003 : finish command "place" in  1.377879s wall, 1.359375s user + 0.656250s system = 2.015625s CPU (146.3%)
+
+RUN-1004 : used memory is 277 MB, reserved memory is 275 MB, peak memory is 277 MB
+RUN-1002 : start command "route"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 67 to 66
+PHY-1001 : Pin misalignment score is improved from 66 to 66
+PHY-1001 : Route runs in 6 thread(s)
+RUN-1001 : There are total 162 instances
+RUN-1001 : 70 mslices, 56 lslices, 30 pads, 0 brams, 1 dsps
+RUN-1001 : There are total 269 nets
+RUN-1001 : 233 nets have 2 pins
+RUN-1001 : 25 nets have [6 - 10] pins
+RUN-1001 : 4 nets have [11 - 20] pins
+RUN-1001 : 6 nets have [21 - 99] pins
+RUN-1001 : 1 nets have 100+ pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 17456, over cnt = 4(0%), over = 4, worst = 1
+PHY-1002 : len = 17432, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.033475s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (93.4%)
+
+PHY-1001 : Pin swapping for better routability
+PHY-1001 : Pin local connectivity score is improved from 14 to 9
+PHY-1001 : End pin swap;  0.001419s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : End global routing;  0.154532s wall, 0.156250s user + 0.000000s system = 0.156250s CPU (101.1%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : clock net clk_vga will be merged with clock uut1/uut/clk0_buf
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2968, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.047854s wall, 0.046875s user + 0.000000s system = 0.046875s CPU (98.0%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2968, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000008s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 19% nets.
+PHY-1001 : Routed 24% nets.
+PHY-1001 : Routed 31% nets.
+PHY-1001 : Routed 41% nets.
+PHY-1001 : Routed 60% nets.
+PHY-1002 : len = 23512, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : End Routed; 0.329243s wall, 0.375000s user + 0.000000s system = 0.375000s CPU (113.9%)
+
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1002 : len = 23488, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 23488
+PHY-1001 : End DR Iter 1; 0.005475s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : clock net clk_vga will be merged with clock uut1/uut/clk0_buf
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  5.795123s wall, 5.343750s user + 0.421875s system = 5.765625s CPU (99.5%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  6.037914s wall, 5.593750s user + 0.421875s system = 6.015625s CPU (99.6%)
+
+RUN-1004 : used memory is 377 MB, reserved memory is 381 MB, peak memory is 799 MB
+RUN-1002 : start command "report_area -io_info -file VGA_Demo_phy.area"
+RUN-1001 : standard
+***Report Model: VGA_Demo***
+
+IO Statistics
+#IO                    30
+  #input                2
+  #output              28
+  #inout                0
+
+Utilization Statistics
+#lut                  251   out of  19600    1.28%
+#reg                   24   out of  19600    0.12%
+#le                   251
+  #lut only           227   out of    251   90.44%
+  #reg only             0   out of    251    0.00%
+  #lut&reg             24   out of    251    9.56%
+#dsp                    1   out of     29    3.45%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   30   out of    188   15.96%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      4   25.00%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db VGA_Demo_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "start_timer"
+TMR-2505 : Start building timing graph for model VGA_Demo.
+TMR-2506 : Build timing graph completely. Port num: 9, tpin num: 862, tnet num: 267, tinst num: 160, tnode num: 918, tedge num: 1349.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 24 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+RUN-1002 : start command "report_timing -mode FINAL -net_info -ep_num 3 -path_num 3 -file VGA_Demo_phy.timing"
+TMR-2503 : Start to update net delay, extr mode = 6.
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : clock net clk_vga will be merged with clock uut1/uut/clk0_buf
+PHY-1001 : eco open net = 0
+TMR-2504 : Update delay of 267 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 6.
+TMR-3001 : Initiate 1 clocks from SDC.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+TMR-3506 : Start to generate timing report.
+TMR-1502 : clock_nets size = 2, clk_num = 1.
+TMR-5009 WARNING: There are(is) 1 clock net(s) without clock constraint(s).
+TMR-3508 : Export timing summary.
+TMR-3507 : Timing report generated successfully in VGA_Demo_phy.timing, timing summary in VGA_Demo_phy.tsm.
+RUN-1002 : start command "bitgen -bit VGA_Demo.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 6 threads.
+BIT-1002 : Init instances completely, inst num: 162
+BIT-1002 : Init pips with 6 threads.
+BIT-1002 : Init pips completely, net num: 269, pip num: 1882
+BIT-1003 : Multithreading accelaration with 6 threads.
+BIT-1003 : Generate bitstream completely, there are 396 valid insts, and 6205 bits set as '1'.
+BIT-1004 : PLL setting string = 0001
+BIT-1004 : Generate bits file VGA_Demo.bit.
+RUN-1003 : finish command "bitgen -bit VGA_Demo.bit -version 0X00 -g ucode:00000000000000000000000000000000" in  1.134114s wall, 2.781250s user + 0.093750s system = 2.875000s CPU (253.5%)
+
+RUN-1004 : used memory is 809 MB, reserved memory is 809 MB, peak memory is 829 MB
+RUN-1002 : start command "set_param rtl rtl_sim_model on"
+RUN-1002 : start command "set_param gate gate_sim_model on"
+RUN-1002 : start command "set_param gate map_sim_model on"
+RUN-1002 : start command "set_param route sdf on"
+GUI-1001 : set_param simulation sim_lib D:/WorkPlace/TD/EG4A20BG256_DEMO/VGA_Demo/simulation
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+RUN-1002 : start command "elaborate -top VGA_Demo"
+HDL-1007 : elaborate module VGA_Demo in VGA_Demo.v(2)
+HDL-1007 : elaborate module Clk_div in Clk_div.v(2)
+HDL-1007 : elaborate module PLL in al_ip/PLL.v(22)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(80)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="24.000",REFCLK_DIV=2,FBCLK_DIV=9,CLKC0_DIV=9,CLKC0_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=8,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(985)
+HDL-1007 : elaborate module Driver in Driver.v(2)
+HDL-1007 : elaborate module Display in Display.v(2)
+HDL-1200 : Current top model is VGA_Demo
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc VGA_Demo.adc"
+RUN-1002 : start command "set_pin_assignment clk_24m      location = K14 ;"
+RUN-1002 : start command "set_pin_assignment rst_n   location = G11  ;"
+RUN-1002 : start command "set_pin_assignment vga_clk   location = H2  ;"
+RUN-1002 : start command "set_pin_assignment vga_hs   location = J3 ;"
+RUN-1002 : start command "set_pin_assignment vga_vs   location = J4  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[0]   location = K6 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[1]   location = K3 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[2]   location = K5  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[3]   location = L4  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[4]   location = M1  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[5]   location = M2 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[6]   location = L3  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[7]   location = L5  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[0]   location = L1 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[1]   location = K2 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[2]   location = K1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[3]   location = J1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[4]   location = H3  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[5]   location = J6 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[6]   location = H1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[7]   location = H5  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[0]   location = G1 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[1]   location = F1 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[2]   location = F2  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[3]   location = E1  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[4]   location = G3  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[5]   location = E2 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[6]   location = D1  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[7]   location = C1  ;"
+USR-6010 WARNING: ADC constraints: pin vga_de has no constraint.
+RUN-1002 : start command "set_param rtl rtl_sim_model on"
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "VGA_Demo"
+SYN-1012 : SanityCheck: Model "Clk_div"
+SYN-1012 : SanityCheck: Model "PLL"
+SYN-1012 : SanityCheck: Model "Driver"
+SYN-1012 : SanityCheck: Model "Display"
+SYN-1043 : Mark PLL as IO macro for instance bufg_feedback
+SYN-1043 : Mark Clk_div as IO macro for instance uut
+SYN-1011 : Flatten model VGA_Demo
+SYN-1011 : Flatten model Clk_div
+SYN-1011 : Flatten model PLL
+SYN-1011 : Flatten model Driver
+SYN-1011 : Flatten model Display
+SYN-1014 : Optimize round 1
+SYN-1032 : 106/0 useful/useless nets, 30/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1016 : Merged 2 instances.
+SYN-1015 : Optimize round 1, 2 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 105/1 useful/useless nets, 29/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 3/0 useful/useless nets, 1/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 6/0 useful/useless nets, 3/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 204/0 useful/useless nets, 134/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 12 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 191/13 useful/useless nets, 121/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "write_verilog simulation/VGA_Demo_rtl_sim.v"
+HDL-1201 : write out verilog file simulation/VGA_Demo_rtl_sim.v
+RUN-1002 : start command "report_area -file VGA_Demo_rtl.area"
+RUN-1001 : standard
+***Report Model: VGA_Demo***
+
+IO Statistics
+#IO                    30
+  #input                2
+  #output              28
+  #inout                0
+
+Gate Statistics
+#Basic gates           56
+  #and                  5
+  #nand                 0
+  #or                   0
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                  3
+  #bufif1               0
+  #MX21                 0
+  #FADD                 0
+  #DFF                 48
+  #LATCH                0
+#MACRO_ADD             14
+#MACRO_EQ               1
+#MACRO_MULT             1
+#MACRO_MUX             72
+
+RUN-1001 : 
+Report Hierarchy Area:
++-------------------------------------------+
+|Instance |Module   |gates  |seq    |macros |
++-------------------------------------------+
+|top      |VGA_Demo |8      |48     |89     |
+|  uut1   |Clk_div  |0      |0      |1      |
+|    uut  |PLL      |0      |0      |1      |
+|  uut2   |Driver   |8      |24     |15     |
++-------------------------------------------+
+
+RUN-1002 : start command "read_sdc VGA_Demo.sdc"
+RUN-1002 : start command "get_ports clk_24m"
+RUN-1002 : start command "create_clock -name clk_24m -period 41.666 -waveform 0 20.833 "
+RUN-1102 : create_clock: clock name: clk_24m, type: 0, period: 41666, rise: 0, fall: 20833.
+RUN-1104 : Import SDC file VGA_Demo.sdc finished, there are 0 nets kept by constraints.
+RUN-1002 : start command "export_db VGA_Demo_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "set_param gate map_sim_model on"
+RUN-1002 : start command "set_param gate gate_sim_model on"
+RUN-1002 : start command "optimize_gate -mapsim simulation/VGA_Demo_map_sim.v -packsim simulation/VGA_Demo_gate_sim.v -packarea VGA_Demo_gate.area"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+SYN-2001 : Map 30 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Map 1 macro multiplier
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 135/0 useful/useless nets, 60/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 111/24 useful/useless nets, 36/24 useful/useless insts
+SYN-2501 : Optimize round 1, 24 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 110/1 useful/useless nets, 35/1 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-1032 : 110/1 useful/useless nets, 35/1 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 3/2 useful/useless nets, 1/2 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 3/2 useful/useless nets, 1/2 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 3/2 useful/useless nets, 1/2 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 1 BUFG to GCLK
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 6/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 6/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 6/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 191/0 useful/useless nets, 121/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 209/0 useful/useless nets, 139/0 useful/useless insts
+SYN-2501 : Optimize round 1, 12 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 209/0 useful/useless nets, 139/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 14 macro adder
+SYN-1032 : 391/0 useful/useless nets, 321/0 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map = 17875.47 sec
+SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
+RUN-1002 : start command "start_timer -prepack"
+TMR-2505 : Start building timing graph for model VGA_Demo.
+TMR-2506 : Build timing graph completely. Port num: 9, tpin num: 1253, tnet num: 509, tinst num: 354, tnode num: 1558, tedge num: 1813.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 40 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 509 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3001 : Initiate 1 clocks from SDC.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=5, #lut = 76 (3.08), #lev = 3 (1.27)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=5, #lut = 76 (3.08), #lev = 3 (1.27)
+SYN-2581 : Mapping with K=5, #lut = 76 (3.08), #lev = 3 (1.27)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map = 17875.53 sec
+SYN-3001 : Mapper mapped 99 instances into 79 LUTs, name keeping = 97%.
+RUN-1002 : start command "write_verilog simulation/VGA_Demo_map_sim.v"
+HDL-1201 : write out verilog file simulation/VGA_Demo_map_sim.v
+SYN-1001 : Packing model "VGA_Demo" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 110/0 useful/useless nets, 35/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 0 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 0 LUT to BLE ...
+SYN-4008 : Packed 0 LUT and 0 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "VGA_Demo" (AL_USER_NORMAL) with 0/35 primitive instances ...
+SYN-1001 : Packing model "Clk_div" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 3/0 useful/useless nets, 1/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 0 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 0 LUT to BLE ...
+SYN-4008 : Packed 0 LUT and 0 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "Clk_div" (AL_USER_NORMAL) with 0/1 primitive instances ...
+SYN-1001 : Packing model "PLL" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 6/0 useful/useless nets, 3/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 0 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 0 LUT to BLE ...
+SYN-4008 : Packed 0 LUT and 0 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "PLL" (AL_USER_NORMAL) with 0/3 primitive instances ...
+SYN-1001 : Packing model "Driver" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 367/0 useful/useless nets, 297/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 24 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 4 carry chain into lslice
+SYN-4007 : Packing 140 adder to BLE ...
+SYN-4008 : Packed 140 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 79 LUT to BLE ...
+SYN-4008 : Packed 79 LUT and 24 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 55 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "Driver" (AL_USER_NORMAL) with 79/167 primitive instances ...
+RUN-1002 : start command "write_verilog simulation/VGA_Demo_gate_sim.v"
+HDL-1201 : write out verilog file simulation/VGA_Demo_gate_sim.v
+RUN-1002 : start command "report_area -file VGA_Demo_gate.area"
+RUN-1001 : standard
+***Report Model: VGA_Demo***
+
+IO Statistics
+#IO                    30
+  #input                2
+  #output              28
+  #inout                0
+
+Utilization Statistics
+#lut                  251   out of  19600    1.28%
+#reg                   24   out of  19600    0.12%
+#le                   251
+  #lut only           227   out of    251   90.44%
+  #reg only             0   out of    251    0.00%
+  #lut&reg             24   out of    251    9.56%
+#dsp                    1   out of     29    3.45%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   30   out of    188   15.96%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      4   25.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++----------------------------------------+
+|Instance |Module   |le    |lut   |seq   |
++----------------------------------------+
+|top      |VGA_Demo |251   |251   |24    |
+|  uut1   |Clk_div  |0     |0     |0     |
+|    uut  |PLL      |0     |0     |0     |
+|  uut2   |Driver   |251   |251   |24    |
++----------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1001 : Force tag keep_hierarchy inst 'uut1'(AL_USER_NORMAL) to False
+SYN-1001 : Force tag keep_hierarchy inst 'uut'(AL_USER_NORMAL) to False
+SYN-1001 : Force tag keep_hierarchy inst 'uut2'(AL_USER_NORMAL) to False
+SYN-1011 : Flatten model VGA_Demo
+SYN-1011 : Flatten model Clk_div
+SYN-1011 : Flatten model PLL
+SYN-1011 : Flatten model Driver
+SYN-1016 : Merged 2 instances.
+SYN-1046 : remove 1 useless nets after legalize.
+RUN-1002 : start command "read_sdc VGA_Demo.sdc"
+RUN-1002 : start command "get_ports clk_24m"
+RUN-1002 : start command "create_clock -name clk_24m -period 41.666 -waveform 0 20.833 "
+RUN-1102 : create_clock: clock name: clk_24m, type: 0, period: 41666, rise: 0, fall: 20833.
+RUN-1104 : Import SDC file VGA_Demo.sdc finished, there are 0 nets kept by constraints.
+RUN-1002 : start command "export_db VGA_Demo_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+PHY-3001 : Placer runs in 6 thread(s).
+SYN-4016 : Net clk_vga driven by BUFG (13 clock/control pins, 2 other pins).
+SYN-4019 : Net clk_24m_pad is refclk of pll uut1/uut/pll_inst.
+SYN-4020 : Net clk_24m_pad is fbclk of pll uut1/uut/pll_inst.
+SYN-4025 : Tag rtl::Net clk_24m_pad as clock net
+SYN-4025 : Tag rtl::Net clk_vga as clock net
+SYN-4026 : Tagged 2 rtl::Net as clock net
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 162 instances
+RUN-1001 : 70 mslices, 56 lslices, 30 pads, 0 brams, 1 dsps
+RUN-1001 : There are total 269 nets
+RUN-1001 : 233 nets have 2 pins
+RUN-1001 : 25 nets have [6 - 10] pins
+RUN-1001 : 4 nets have [11 - 20] pins
+RUN-1001 : 6 nets have [21 - 99] pins
+RUN-1001 : 1 nets have 100+ pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 160 instances, 126 slices, 14 macros(86 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-2505 : Start building timing graph for model VGA_Demo.
+TMR-2506 : Build timing graph completely. Port num: 9, tpin num: 862, tnet num: 267, tinst num: 160, tnode num: 918, tedge num: 1349.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 24 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 267 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3001 : Initiate 1 clocks from SDC.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.018512s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (84.4%)
+
+PHY-3001 : Global placement ...
+PHY-3001 : Initial: Len = 67804
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.992286
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(75): len = 61487.5, overlap = 2.25
+PHY-3002 : Step(76): len = 57881.4, overlap = 2.25
+PHY-3002 : Step(77): len = 35497.2, overlap = 2.25
+PHY-3002 : Step(78): len = 30586.8, overlap = 2.25
+PHY-3002 : Step(79): len = 26536.4, overlap = 2.25
+PHY-3002 : Step(80): len = 24855.6, overlap = 2.25
+PHY-3002 : Step(81): len = 22218.3, overlap = 0
+PHY-3002 : Step(82): len = 19126.6, overlap = 2.25
+PHY-3002 : Step(83): len = 18700.1, overlap = 2.25
+PHY-3002 : Step(84): len = 16628.3, overlap = 2.25
+PHY-3002 : Step(85): len = 15725.6, overlap = 2.25
+PHY-3002 : Step(86): len = 15666.3, overlap = 2.25
+PHY-3002 : Step(87): len = 14328.9, overlap = 2.25
+PHY-3002 : Step(88): len = 14345.9, overlap = 2.25
+PHY-3002 : Step(89): len = 14369.8, overlap = 2.25
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 0.000224001
+PHY-3002 : Step(90): len = 14600.4, overlap = 2.25
+PHY-3002 : Step(91): len = 14628, overlap = 0
+PHY-3002 : Step(92): len = 14632.6, overlap = 0
+PHY-3002 : Step(93): len = 13322.8, overlap = 2.25
+PHY-3002 : Step(94): len = 13283.3, overlap = 2.25
+PHY-3002 : Step(95): len = 13731.6, overlap = 2.25
+PHY-3002 : Step(96): len = 13509.6, overlap = 0
+PHY-3002 : Step(97): len = 13662.1, overlap = 0
+PHY-3002 : Step(98): len = 13005, overlap = 2.25
+PHY-3002 : Step(99): len = 12616.3, overlap = 2.25
+PHY-3002 : Step(100): len = 12682.3, overlap = 2.25
+PHY-3002 : Step(101): len = 12574, overlap = 0
+PHY-3002 : Step(102): len = 12263, overlap = 0
+PHY-3002 : Step(103): len = 12333.2, overlap = 0
+PHY-3002 : Step(104): len = 11844.7, overlap = 2.25
+PHY-3002 : Step(105): len = 11638.4, overlap = 2.25
+PHY-3002 : Step(106): len = 11576, overlap = 2.25
+PHY-3002 : Step(107): len = 11597.9, overlap = 0
+PHY-3002 : Step(108): len = 11755.1, overlap = 0
+PHY-3002 : Step(109): len = 11804, overlap = 0
+PHY-3002 : Step(110): len = 10964.4, overlap = 2.25
+PHY-3002 : Step(111): len = 10898.4, overlap = 2.25
+PHY-3002 : Step(112): len = 10962.2, overlap = 0
+PHY-3002 : Step(113): len = 10982.9, overlap = 0
+PHY-3002 : Step(114): len = 10117.3, overlap = 0
+PHY-3002 : Step(115): len = 9866.4, overlap = 0
+PHY-3002 : Step(116): len = 9902.6, overlap = 0
+PHY-3002 : Step(117): len = 9665.8, overlap = 2.25
+PHY-3002 : Step(118): len = 9653.5, overlap = 2.25
+PHY-3002 : Step(119): len = 9648.8, overlap = 2.25
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 0.000448001
+PHY-3002 : Step(120): len = 9933.5, overlap = 0
+PHY-3002 : Step(121): len = 9949.5, overlap = 0
+PHY-3002 : Step(122): len = 9960.9, overlap = 0
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.004946s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (315.9%)
+
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.992286
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(123): len = 10907.5, overlap = 0
+PHY-3002 : Step(124): len = 10565.3, overlap = 0
+PHY-3002 : Step(125): len = 10565.3, overlap = 0
+PHY-3002 : Step(126): len = 10541, overlap = 0
+PHY-3002 : Step(127): len = 10540.4, overlap = 0
+PHY-3002 : Step(128): len = 10536.8, overlap = 0
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.992286
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 8.62897e-06
+PHY-3002 : Step(129): len = 10585.1, overlap = 3.25
+PHY-3002 : Step(130): len = 10593.6, overlap = 3.25
+PHY-3002 : Step(131): len = 10610.1, overlap = 3.25
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 1.72579e-05
+PHY-3002 : Step(132): len = 10812.8, overlap = 3.5
+PHY-3002 : Step(133): len = 10830.6, overlap = 3.5
+PHY-3002 : Step(134): len = 10918.9, overlap = 3
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 3.45159e-05
+PHY-3002 : Step(135): len = 10973.7, overlap = 3
+PHY-3002 : Step(136): len = 10973.7, overlap = 3
+PHY-3002 : Step(137): len = 11059.7, overlap = 3
+PHY-3002 : Step(138): len = 11059.7, overlap = 3
+PHY-3002 : Step(139): len = 11142.6, overlap = 2.75
+PHY-3002 : Step(140): len = 11142.6, overlap = 2.75
+PHY-3002 : Step(141): len = 11119.2, overlap = 3.25
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.017497s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (89.3%)
+
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.992286
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(142): len = 11443.4, overlap = 4
+PHY-3002 : Step(143): len = 11400.1, overlap = 3.5
+PHY-3002 : Step(144): len = 11415.7, overlap = 3.25
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 3.36681e-05
+PHY-3002 : Step(145): len = 11398.9, overlap = 4
+PHY-3002 : Step(146): len = 11398.9, overlap = 4
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 6.73361e-05
+PHY-3002 : Step(147): len = 11425.6, overlap = 4.25
+PHY-3002 : Step(148): len = 11425.6, overlap = 4.25
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.005092s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Legalized: Len = 12404, Over = 0
+PHY-3001 : Final: Len = 12404, Over = 0
+PHY-3001 : Improving timing with driver duplication.
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 17456, over cnt = 4(0%), over = 4, worst = 1
+PHY-1002 : len = 17432, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.019938s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (78.4%)
+
+RUN-1003 : finish command "place" in  1.416634s wall, 1.734375s user + 0.781250s system = 2.515625s CPU (177.6%)
+
+RUN-1004 : used memory is 421 MB, reserved memory is 426 MB, peak memory is 829 MB
+RUN-1002 : start command "route"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 67 to 66
+PHY-1001 : Pin misalignment score is improved from 66 to 66
+PHY-1001 : Route runs in 6 thread(s)
+RUN-1001 : There are total 162 instances
+RUN-1001 : 70 mslices, 56 lslices, 30 pads, 0 brams, 1 dsps
+RUN-1001 : There are total 269 nets
+RUN-1001 : 233 nets have 2 pins
+RUN-1001 : 25 nets have [6 - 10] pins
+RUN-1001 : 4 nets have [11 - 20] pins
+RUN-1001 : 6 nets have [21 - 99] pins
+RUN-1001 : 1 nets have 100+ pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 17456, over cnt = 4(0%), over = 4, worst = 1
+PHY-1002 : len = 17432, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.034340s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (91.0%)
+
+PHY-1001 : Pin swapping for better routability
+PHY-1001 : Pin local connectivity score is improved from 14 to 9
+PHY-1001 : End pin swap;  0.001350s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : End global routing;  0.156720s wall, 0.156250s user + 0.015625s system = 0.171875s CPU (109.7%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : clock net clk_vga will be merged with clock uut1/uut/clk0_buf
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2968, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.049428s wall, 0.078125s user + 0.000000s system = 0.078125s CPU (158.1%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2968, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000007s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 19% nets.
+PHY-1001 : Routed 24% nets.
+PHY-1001 : Routed 31% nets.
+PHY-1001 : Routed 41% nets.
+PHY-1001 : Routed 60% nets.
+PHY-1002 : len = 23512, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : End Routed; 0.326462s wall, 0.468750s user + 0.015625s system = 0.484375s CPU (148.4%)
+
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1002 : len = 23488, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 23488
+PHY-1001 : End DR Iter 1; 0.005447s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (286.9%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : clock net clk_vga will be merged with clock uut1/uut/clk0_buf
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  2.348094s wall, 2.265625s user + 0.281250s system = 2.546875s CPU (108.5%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  2.592968s wall, 2.546875s user + 0.296875s system = 2.843750s CPU (109.7%)
+
+RUN-1004 : used memory is 429 MB, reserved memory is 431 MB, peak memory is 839 MB
+RUN-1002 : start command "report_area -io_info -file VGA_Demo_phy.area"
+RUN-1001 : standard
+***Report Model: VGA_Demo***
+
+IO Statistics
+#IO                    30
+  #input                2
+  #output              28
+  #inout                0
+
+Utilization Statistics
+#lut                  251   out of  19600    1.28%
+#reg                   24   out of  19600    0.12%
+#le                   251
+  #lut only           227   out of    251   90.44%
+  #reg only             0   out of    251    0.00%
+  #lut&reg             24   out of    251    9.56%
+#dsp                    1   out of     29    3.45%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   30   out of    188   15.96%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      4   25.00%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db VGA_Demo_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "start_timer"
+TMR-2505 : Start building timing graph for model VGA_Demo.
+TMR-2506 : Build timing graph completely. Port num: 9, tpin num: 862, tnet num: 267, tinst num: 160, tnode num: 918, tedge num: 1349.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 24 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+RUN-1002 : start command "report_timing -mode FINAL -net_info -ep_num 3 -path_num 3 -file VGA_Demo_phy.timing -sdf simulation/VGA_Demo.sdf"
+TMR-2503 : Start to update net delay, extr mode = 6.
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : clock net clk_vga will be merged with clock uut1/uut/clk0_buf
+PHY-1001 : eco open net = 0
+TMR-2504 : Update delay of 267 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 6.
+TMR-3001 : Initiate 1 clocks from SDC.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+TMR-3506 : Start to generate timing report.
+TMR-1502 : clock_nets size = 2, clk_num = 1.
+TMR-5009 WARNING: There are(is) 1 clock net(s) without clock constraint(s).
+TMR-3508 : Export timing summary.
+TMR-3507 : Timing report generated successfully in VGA_Demo_phy.timing, timing summary in VGA_Demo_phy.tsm.
+TMR-1001 : Start to generate SDF file...
+RUN-1002 : start command "write_verilog -sdf VGA_Demo.sdf simulation/VGA_Demo_phy_sim.v"
+HDL-1201 : write out verilog file simulation/VGA_Demo_phy_sim.v
+RUN-1002 : start command "bitgen -bit VGA_Demo.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 6 threads.
+BIT-1002 : Init instances completely, inst num: 162
+BIT-1002 : Init pips with 6 threads.
+BIT-1002 : Init pips completely, net num: 269, pip num: 1882
+BIT-1003 : Multithreading accelaration with 6 threads.
+BIT-1003 : Generate bitstream completely, there are 396 valid insts, and 6205 bits set as '1'.
+BIT-1004 : PLL setting string = 0001
+BIT-1004 : Generate bits file VGA_Demo.bit.
+RUN-1003 : finish command "bitgen -bit VGA_Demo.bit -version 0X00 -g ucode:00000000000000000000000000000000" in  1.095293s wall, 2.812500s user + 0.046875s system = 2.859375s CPU (261.1%)
+
+RUN-1004 : used memory is 848 MB, reserved memory is 853 MB, peak memory is 867 MB
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+HDL-1007 : analyze verilog file VGA_Demo.v
+HDL-1007 : analyze verilog file Clk_div.v
+HDL-1007 : analyze verilog file Driver.v
+HDL-1007 : analyze verilog file Display.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+RUN-1002 : start command "elaborate -top VGA_Demo"
+HDL-1007 : elaborate module VGA_Demo in VGA_Demo.v(2)
+HDL-1007 : elaborate module Clk_div in Clk_div.v(2)
+HDL-1007 : elaborate module PLL in al_ip/PLL.v(22)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(80)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="24.000",REFCLK_DIV=2,FBCLK_DIV=9,CLKC0_DIV=9,CLKC0_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=8,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in C:/SoftWare/Anlogic/TD4.6/arch/eagle_macro.v(985)
+HDL-1007 : elaborate module Driver in Driver.v(2)
+HDL-1007 : elaborate module Display in Display.v(2)
+HDL-1200 : Current top model is VGA_Demo
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc VGA_Demo.adc"
+RUN-1002 : start command "set_pin_assignment clk_24m      location = K14 ;"
+RUN-1002 : start command "set_pin_assignment rst_n   location = G11  ;"
+RUN-1002 : start command "set_pin_assignment vga_clk   location = H2  ;"
+RUN-1002 : start command "set_pin_assignment vga_hs   location = J3 ;"
+RUN-1002 : start command "set_pin_assignment vga_vs   location = J4  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[0]   location = K6 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[1]   location = K3 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[2]   location = K5  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[3]   location = L4  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[4]   location = M1  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[5]   location = M2 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[6]   location = L3  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[7]   location = L5  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[0]   location = L1 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[1]   location = K2 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[2]   location = K1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[3]   location = J1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[4]   location = H3  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[5]   location = J6 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[6]   location = H1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[7]   location = H5  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[0]   location = G1 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[1]   location = F1 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[2]   location = F2  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[3]   location = E1  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[4]   location = G3  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[5]   location = E2 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[6]   location = D1  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[7]   location = C1  ;"
+USR-6010 WARNING: ADC constraints: pin vga_de has no constraint.
+RUN-1002 : start command "set_param rtl rtl_sim_model on"
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "VGA_Demo"
+SYN-1012 : SanityCheck: Model "Clk_div"
+SYN-1012 : SanityCheck: Model "PLL"
+SYN-1012 : SanityCheck: Model "Driver"
+SYN-1012 : SanityCheck: Model "Display"
+SYN-1043 : Mark PLL as IO macro for instance bufg_feedback
+SYN-1043 : Mark Clk_div as IO macro for instance uut
+SYN-1011 : Flatten model VGA_Demo
+SYN-1011 : Flatten model Clk_div
+SYN-1011 : Flatten model PLL
+SYN-1011 : Flatten model Driver
+SYN-1011 : Flatten model Display
+SYN-1016 : Merged 1 instances.
+SYN-1014 : Optimize round 1
+SYN-1032 : 106/0 useful/useless nets, 30/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1016 : Merged 2 instances.
+SYN-1015 : Optimize round 1, 2 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 106/0 useful/useless nets, 30/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 3/0 useful/useless nets, 1/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 6/0 useful/useless nets, 3/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+SYN-1014 : Optimize round 1
+SYN-1032 : 204/0 useful/useless nets, 134/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 12 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 191/13 useful/useless nets, 121/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "write_verilog simulation/VGA_Demo_rtl_sim.v"
+HDL-1201 : write out verilog file simulation/VGA_Demo_rtl_sim.v
+RUN-1002 : start command "report_area -file VGA_Demo_rtl.area"
+RUN-1001 : standard
+***Report Model: VGA_Demo***
+
+IO Statistics
+#IO                    30
+  #input                2
+  #output              28
+  #inout                0
+
+Gate Statistics
+#Basic gates           57
+  #and                  5
+  #nand                 0
+  #or                   0
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                  4
+  #bufif1               0
+  #MX21                 0
+  #FADD                 0
+  #DFF                 48
+  #LATCH                0
+#MACRO_ADD             14
+#MACRO_EQ               1
+#MACRO_MULT             1
+#MACRO_MUX             72
+
+RUN-1001 : 
+Report Hierarchy Area:
++-------------------------------------------+
+|Instance |Module   |gates  |seq    |macros |
++-------------------------------------------+
+|top      |VGA_Demo |9      |48     |89     |
+|  uut1   |Clk_div  |0      |0      |1      |
+|    uut  |PLL      |0      |0      |1      |
+|  uut2   |Driver   |8      |24     |15     |
++-------------------------------------------+
+
+RUN-1002 : start command "read_sdc VGA_Demo.sdc"
+RUN-1002 : start command "get_ports clk_24m"
+RUN-1002 : start command "create_clock -name clk_24m -period 41.666 -waveform 0 20.833 "
+RUN-1102 : create_clock: clock name: clk_24m, type: 0, period: 41666, rise: 0, fall: 20833.
+RUN-1104 : Import SDC file VGA_Demo.sdc finished, there are 0 nets kept by constraints.
+RUN-1002 : start command "export_db VGA_Demo_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "set_param gate map_sim_model on"
+RUN-1002 : start command "set_param gate gate_sim_model on"
+RUN-1002 : start command "optimize_gate -mapsim simulation/VGA_Demo_map_sim.v -packsim simulation/VGA_Demo_gate_sim.v -packarea VGA_Demo_gate.area"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+SYN-2001 : Map 30 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Map 1 macro multiplier
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 136/0 useful/useless nets, 61/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 112/24 useful/useless nets, 37/24 useful/useless insts
+SYN-2501 : Optimize round 1, 24 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 111/1 useful/useless nets, 36/1 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-1032 : 111/1 useful/useless nets, 36/1 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 3/2 useful/useless nets, 1/2 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 3/2 useful/useless nets, 1/2 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 3/2 useful/useless nets, 1/2 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 1 BUFG to GCLK
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 6/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 6/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 6/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 191/0 useful/useless nets, 121/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 209/0 useful/useless nets, 139/0 useful/useless insts
+SYN-2501 : Optimize round 1, 12 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 209/0 useful/useless nets, 139/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 14 macro adder
+SYN-1032 : 391/0 useful/useless nets, 321/0 useful/useless insts
+RUN-1002 : start command "start_timer -prepack"
+TMR-2505 : Start building timing graph for model VGA_Demo.
+TMR-2506 : Build timing graph completely. Port num: 9, tpin num: 1255, tnet num: 510, tinst num: 355, tnode num: 1560, tedge num: 1815.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 40 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 510 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3001 : Initiate 1 clocks from SDC.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 1 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map = 19031.18 sec
+SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
+RUN-1002 : start command "start_timer -prepack"
+TMR-2505 : Start building timing graph for model VGA_Demo.
+TMR-2506 : Build timing graph completely. Port num: 9, tpin num: 1255, tnet num: 510, tinst num: 355, tnode num: 1560, tedge num: 1815.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 40 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 510 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3001 : Initiate 1 clocks from SDC.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=5, #lut = 76 (3.08), #lev = 3 (1.27)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=5, #lut = 76 (3.08), #lev = 3 (1.27)
+SYN-2581 : Mapping with K=5, #lut = 76 (3.08), #lev = 3 (1.27)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map = 19031.24 sec
+SYN-3001 : Mapper mapped 99 instances into 79 LUTs, name keeping = 97%.
+RUN-1002 : start command "write_verilog simulation/VGA_Demo_map_sim.v"
+HDL-1201 : write out verilog file simulation/VGA_Demo_map_sim.v
+SYN-1001 : Packing model "VGA_Demo" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 111/0 useful/useless nets, 36/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 0 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 1 LUT to BLE ...
+SYN-4008 : Packed 1 LUT and 0 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 1 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "VGA_Demo" (AL_USER_NORMAL) with 1/36 primitive instances ...
+SYN-1001 : Packing model "Clk_div" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 3/0 useful/useless nets, 1/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 0 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 0 LUT to BLE ...
+SYN-4008 : Packed 0 LUT and 0 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "Clk_div" (AL_USER_NORMAL) with 0/1 primitive instances ...
+SYN-1001 : Packing model "PLL" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 6/0 useful/useless nets, 3/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 0 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 0 LUT to BLE ...
+SYN-4008 : Packed 0 LUT and 0 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "PLL" (AL_USER_NORMAL) with 0/3 primitive instances ...
+SYN-1001 : Packing model "Driver" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 367/0 useful/useless nets, 297/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 24 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 4 carry chain into lslice
+SYN-4007 : Packing 140 adder to BLE ...
+SYN-4008 : Packed 140 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 79 LUT to BLE ...
+SYN-4008 : Packed 79 LUT and 24 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 55 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "Driver" (AL_USER_NORMAL) with 79/167 primitive instances ...
+RUN-1002 : start command "write_verilog simulation/VGA_Demo_gate_sim.v"
+HDL-1201 : write out verilog file simulation/VGA_Demo_gate_sim.v
+RUN-1002 : start command "report_area -file VGA_Demo_gate.area"
+RUN-1001 : standard
+***Report Model: VGA_Demo***
+
+IO Statistics
+#IO                    30
+  #input                2
+  #output              28
+  #inout                0
+
+Utilization Statistics
+#lut                  252   out of  19600    1.29%
+#reg                   24   out of  19600    0.12%
+#le                   252
+  #lut only           228   out of    252   90.48%
+  #reg only             0   out of    252    0.00%
+  #lut&reg             24   out of    252    9.52%
+#dsp                    1   out of     29    3.45%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   30   out of    188   15.96%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      4   25.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++----------------------------------------+
+|Instance |Module   |le    |lut   |seq   |
++----------------------------------------+
+|top      |VGA_Demo |252   |252   |24    |
+|  uut1   |Clk_div  |0     |0     |0     |
+|    uut  |PLL      |0     |0     |0     |
+|  uut2   |Driver   |251   |251   |24    |
++----------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1001 : Force tag keep_hierarchy inst 'uut1'(AL_USER_NORMAL) to False
+SYN-1001 : Force tag keep_hierarchy inst 'uut'(AL_USER_NORMAL) to False
+SYN-1001 : Force tag keep_hierarchy inst 'uut2'(AL_USER_NORMAL) to False
+SYN-1011 : Flatten model VGA_Demo
+SYN-1011 : Flatten model Clk_div
+SYN-1011 : Flatten model PLL
+SYN-1011 : Flatten model Driver
+SYN-1016 : Merged 2 instances.
+SYN-1046 : remove 1 useless nets after legalize.
+RUN-1002 : start command "read_sdc VGA_Demo.sdc"
+RUN-1002 : start command "get_ports clk_24m"
+RUN-1002 : start command "create_clock -name clk_24m -period 41.666 -waveform 0 20.833 "
+RUN-1102 : create_clock: clock name: clk_24m, type: 0, period: 41666, rise: 0, fall: 20833.
+RUN-1104 : Import SDC file VGA_Demo.sdc finished, there are 0 nets kept by constraints.
+RUN-1002 : start command "export_db VGA_Demo_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+PHY-3001 : Placer runs in 6 thread(s).
+SYN-4016 : Net clk_vga driven by BUFG (13 clock/control pins, 2 other pins).
+SYN-4019 : Net clk_24m_pad is refclk of pll uut1/uut/pll_inst.
+SYN-4020 : Net clk_24m_pad is fbclk of pll uut1/uut/pll_inst.
+SYN-4025 : Tag rtl::Net clk_24m_pad as clock net
+SYN-4025 : Tag rtl::Net clk_vga as clock net
+SYN-4026 : Tagged 2 rtl::Net as clock net
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 163 instances
+RUN-1001 : 70 mslices, 57 lslices, 30 pads, 0 brams, 1 dsps
+RUN-1001 : There are total 270 nets
+RUN-1001 : 234 nets have 2 pins
+RUN-1001 : 25 nets have [6 - 10] pins
+RUN-1001 : 4 nets have [11 - 20] pins
+RUN-1001 : 6 nets have [21 - 99] pins
+RUN-1001 : 1 nets have 100+ pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 161 instances, 127 slices, 14 macros(86 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-2505 : Start building timing graph for model VGA_Demo.
+TMR-2506 : Build timing graph completely. Port num: 9, tpin num: 864, tnet num: 268, tinst num: 161, tnode num: 920, tedge num: 1351.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 24 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 268 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3001 : Initiate 1 clocks from SDC.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.018679s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (83.7%)
+
+PHY-3001 : Global placement ...
+PHY-3001 : Initial: Len = 66691.2
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.992224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(149): len = 59298.7, overlap = 2.25
+PHY-3002 : Step(150): len = 56565.4, overlap = 2.25
+PHY-3002 : Step(151): len = 34893.3, overlap = 2.25
+PHY-3002 : Step(152): len = 29330.7, overlap = 2.25
+PHY-3002 : Step(153): len = 25750.9, overlap = 2.25
+PHY-3002 : Step(154): len = 23933.3, overlap = 2.25
+PHY-3002 : Step(155): len = 20428.8, overlap = 0
+PHY-3002 : Step(156): len = 17213.5, overlap = 2.25
+PHY-3002 : Step(157): len = 16396.2, overlap = 2.25
+PHY-3002 : Step(158): len = 15112.2, overlap = 2.25
+PHY-3002 : Step(159): len = 13918.9, overlap = 2.25
+PHY-3002 : Step(160): len = 13449.3, overlap = 2.25
+PHY-3002 : Step(161): len = 12720, overlap = 2.25
+PHY-3002 : Step(162): len = 12663.8, overlap = 2.25
+PHY-3002 : Step(163): len = 12329.6, overlap = 2.25
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 0.00168117
+PHY-3002 : Step(164): len = 12261.9, overlap = 2.25
+PHY-3002 : Step(165): len = 12255.3, overlap = 2.25
+PHY-3002 : Step(166): len = 12246.8, overlap = 2.25
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 0.00336235
+PHY-3002 : Step(167): len = 36399.1, overlap = 0
+PHY-3002 : Step(168): len = 36596.5, overlap = 0
+PHY-3002 : Step(169): len = 24583.5, overlap = 2.25
+PHY-3002 : Step(170): len = 20185.4, overlap = 0
+PHY-3002 : Step(171): len = 19111.2, overlap = 0
+PHY-3002 : Step(172): len = 18695.3, overlap = 0
+PHY-3002 : Step(173): len = 18288.6, overlap = 0
+PHY-3002 : Step(174): len = 16891.2, overlap = 0
+PHY-3002 : Step(175): len = 16305.1, overlap = 0
+PHY-3002 : Step(176): len = 15446.1, overlap = 0
+PHY-3002 : Step(177): len = 14457.7, overlap = 0
+PHY-3002 : Step(178): len = 14087, overlap = 0
+PHY-3002 : Step(179): len = 13160.4, overlap = 0
+PHY-3002 : Step(180): len = 13190.3, overlap = 0
+PHY-3002 : Step(181): len = 13026.3, overlap = 0
+PHY-3002 : Step(182): len = 12939.9, overlap = 0
+PHY-3002 : Step(183): len = 12776.3, overlap = 0
+PHY-3002 : Step(184): len = 12504, overlap = 0
+PHY-3002 : Step(185): len = 12340, overlap = 0
+PHY-3002 : Step(186): len = 12053.9, overlap = 0
+PHY-3002 : Step(187): len = 12042.6, overlap = 0
+PHY-3002 : Step(188): len = 11962.7, overlap = 0
+PHY-3002 : Step(189): len = 11948.1, overlap = 0
+PHY-3002 : Step(190): len = 11952.7, overlap = 0
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.004944s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.992224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0.00346502
+PHY-3002 : Step(191): len = 12996.4, overlap = 0
+PHY-3002 : Step(192): len = 12621, overlap = 0
+PHY-3002 : Step(193): len = 12318, overlap = 0
+PHY-3002 : Step(194): len = 12071.7, overlap = 0
+PHY-3002 : Step(195): len = 12081.3, overlap = 0
+PHY-3002 : Step(196): len = 11667, overlap = 1
+PHY-3002 : Step(197): len = 11666.7, overlap = 1
+PHY-3002 : Step(198): len = 11636.2, overlap = 1
+PHY-3002 : Step(199): len = 11356.7, overlap = 1.25
+PHY-3002 : Step(200): len = 11352.5, overlap = 1.25
+PHY-3002 : Step(201): len = 11321.1, overlap = 1.25
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.992224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 2.40301e-05
+PHY-3002 : Step(202): len = 11474.4, overlap = 2.25
+PHY-3002 : Step(203): len = 11524.7, overlap = 2.25
+PHY-3002 : Step(204): len = 11575.8, overlap = 2.25
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 4.80602e-05
+PHY-3002 : Step(205): len = 11786.5, overlap = 2.5
+PHY-3002 : Step(206): len = 11796.2, overlap = 2.5
+PHY-3002 : Step(207): len = 11949.2, overlap = 2.5
+PHY-3002 : Step(208): len = 11971.3, overlap = 2.5
+PHY-3002 : Step(209): len = 12003.5, overlap = 2.5
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 9.61205e-05
+PHY-3002 : Step(210): len = 12054.6, overlap = 2.75
+PHY-3002 : Step(211): len = 12054.6, overlap = 2.75
+PHY-3002 : Step(212): len = 12045.6, overlap = 2.5
+PHY-3001 : :::3::: Try harder cell spreading with beta_ = 0.000175358
+PHY-3002 : Step(213): len = 12101.4, overlap = 2.5
+PHY-3002 : Step(214): len = 12105, overlap = 2.5
+PHY-3002 : Step(215): len = 12105, overlap = 2.5
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.021929s wall, 0.015625s user + 0.031250s system = 0.046875s CPU (213.8%)
+
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.992224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(216): len = 12189.3, overlap = 2.25
+PHY-3002 : Step(217): len = 12269.9, overlap = 3
+PHY-3002 : Step(218): len = 12269.9, overlap = 3
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 8.89507e-05
+PHY-3002 : Step(219): len = 12159.5, overlap = 2.5
+PHY-3002 : Step(220): len = 12144, overlap = 2.5
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 0.000177901
+PHY-3002 : Step(221): len = 12150.6, overlap = 2.25
+PHY-3002 : Step(222): len = 12159.2, overlap = 2.25
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.005314s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Legalized: Len = 12932.2, Over = 0
+PHY-3001 : Final: Len = 12932.2, Over = 0
+PHY-3001 : Improving timing with driver duplication.
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 18136, over cnt = 5(0%), over = 5, worst = 1
+PHY-1002 : len = 18168, over cnt = 3(0%), over = 3, worst = 1
+PHY-1002 : len = 18096, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.024211s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (129.1%)
+
+RUN-1003 : finish command "place" in  1.466041s wall, 2.312500s user + 0.687500s system = 3.000000s CPU (204.6%)
+
+RUN-1004 : used memory is 436 MB, reserved memory is 462 MB, peak memory is 867 MB
+RUN-1002 : start command "route"
+RUN-1001 : Open license file C:/SoftWare/Anlogic/TD4.6/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 67 to 67
+PHY-1001 : Route runs in 6 thread(s)
+RUN-1001 : There are total 163 instances
+RUN-1001 : 70 mslices, 57 lslices, 30 pads, 0 brams, 1 dsps
+RUN-1001 : There are total 270 nets
+RUN-1001 : 234 nets have 2 pins
+RUN-1001 : 25 nets have [6 - 10] pins
+RUN-1001 : 4 nets have [11 - 20] pins
+RUN-1001 : 6 nets have [21 - 99] pins
+RUN-1001 : 1 nets have 100+ pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 18136, over cnt = 5(0%), over = 5, worst = 1
+PHY-1002 : len = 18168, over cnt = 3(0%), over = 3, worst = 1
+PHY-1002 : len = 18096, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.036809s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (84.9%)
+
+PHY-1001 : Pin swapping for better routability
+PHY-1001 : Pin local connectivity score is improved from 9 to 7
+PHY-1001 : End pin swap;  0.001112s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : End global routing;  0.162053s wall, 0.156250s user + 0.000000s system = 0.156250s CPU (96.4%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : clock net clk_vga will be merged with clock uut1/uut/clk0_buf
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2704, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.051072s wall, 0.062500s user + 0.015625s system = 0.078125s CPU (153.0%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2704, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000010s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 22% nets.
+PHY-1001 : Routed 25% nets.
+PHY-1001 : Routed 33% nets.
+PHY-1001 : Routed 41% nets.
+PHY-1001 : Routed 61% nets.
+PHY-1002 : len = 26152, over cnt = 4(0%), over = 4, worst = 1
+PHY-1001 : End Routed; 0.329172s wall, 0.390625s user + 0.062500s system = 0.453125s CPU (137.7%)
+
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1002 : len = 26136, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 26136
+PHY-1001 : End DR Iter 1; 0.006401s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : clock net clk_vga will be merged with clock uut1/uut/clk0_buf
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  2.338454s wall, 2.218750s user + 0.296875s system = 2.515625s CPU (107.6%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  2.583788s wall, 2.453125s user + 0.296875s system = 2.750000s CPU (106.4%)
+
+RUN-1004 : used memory is 472 MB, reserved memory is 498 MB, peak memory is 867 MB
+RUN-1002 : start command "report_area -io_info -file VGA_Demo_phy.area"
+RUN-1001 : standard
+***Report Model: VGA_Demo***
+
+IO Statistics
+#IO                    30
+  #input                2
+  #output              28
+  #inout                0
+
+Utilization Statistics
+#lut                  252   out of  19600    1.29%
+#reg                   24   out of  19600    0.12%
+#le                   252
+  #lut only           228   out of    252   90.48%
+  #reg only             0   out of    252    0.00%
+  #lut&reg             24   out of    252    9.52%
+#dsp                    1   out of     29    3.45%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   30   out of    188   15.96%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      4   25.00%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db VGA_Demo_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "start_timer"
+TMR-2505 : Start building timing graph for model VGA_Demo.
+TMR-2506 : Build timing graph completely. Port num: 9, tpin num: 864, tnet num: 268, tinst num: 161, tnode num: 920, tedge num: 1351.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 24 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+RUN-1002 : start command "report_timing -mode FINAL -net_info -ep_num 3 -path_num 3 -file VGA_Demo_phy.timing -sdf simulation/VGA_Demo.sdf"
+TMR-2503 : Start to update net delay, extr mode = 6.
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : clock net clk_vga will be merged with clock uut1/uut/clk0_buf
+PHY-1001 : eco open net = 0
+TMR-2504 : Update delay of 268 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 6.
+TMR-3001 : Initiate 1 clocks from SDC.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+TMR-3506 : Start to generate timing report.
+TMR-1502 : clock_nets size = 2, clk_num = 1.
+TMR-5009 WARNING: There are(is) 1 clock net(s) without clock constraint(s).
+TMR-3508 : Export timing summary.
+TMR-3507 : Timing report generated successfully in VGA_Demo_phy.timing, timing summary in VGA_Demo_phy.tsm.
+TMR-1001 : Start to generate SDF file...
+RUN-1002 : start command "write_verilog -sdf VGA_Demo.sdf simulation/VGA_Demo_phy_sim.v"
+HDL-1201 : write out verilog file simulation/VGA_Demo_phy_sim.v
+RUN-1002 : start command "bitgen -bit VGA_Demo.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 6 threads.
+BIT-1002 : Init instances completely, inst num: 163
+BIT-1002 : Init pips with 6 threads.
+BIT-1002 : Init pips completely, net num: 270, pip num: 1912
+BIT-1003 : Multithreading accelaration with 6 threads.
+BIT-1003 : Generate bitstream completely, there are 391 valid insts, and 6278 bits set as '1'.
+BIT-1004 : PLL setting string = 0001
+BIT-1004 : Generate bits file VGA_Demo.bit.
+RUN-1003 : finish command "bitgen -bit VGA_Demo.bit -version 0X00 -g ucode:00000000000000000000000000000000" in  1.228692s wall, 3.000000s user + 0.015625s system = 3.015625s CPU (245.4%)
+
+RUN-1004 : used memory is 858 MB, reserved memory is 881 MB, peak memory is 877 MB

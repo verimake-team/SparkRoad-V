@@ -1,0 +1,38 @@
+standard
+***Report Model: VGA_Demo***
+
+IO Statistics
+#IO                    30
+  #input                2
+  #output              28
+  #inout                0
+
+Gate Statistics
+#Basic gates           57
+  #and                  5
+  #nand                 0
+  #or                   0
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                  4
+  #bufif1               0
+  #MX21                 0
+  #FADD                 0
+  #DFF                 48
+  #LATCH                0
+#MACRO_ADD             13
+#MACRO_EQ               2
+#MACRO_MULT             1
+#MACRO_MUX             72
+
+Report Hierarchy Area:
++----------------------------------------------+
+|Instance    |Module   |gates  |seq    |macros |
++----------------------------------------------+
+|top         |VGA_Demo |9      |48     |89     |
+|  u0_PLL    |Clk_div  |1      |0      |1      |
+|    uut     |PLL      |0      |0      |1      |
+|  u1_Driver |Driver   |8      |24     |15     |
++----------------------------------------------+

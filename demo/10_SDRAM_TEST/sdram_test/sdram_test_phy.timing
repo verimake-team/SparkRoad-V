@@ -1,0 +1,909 @@
+=========================================================================================================
+Auto created by the td v4.3.949
+@Copy Right: Shanghai Anlogic Infotech, 2011 - 2021.
+Fri Aug  9 19:51:47 2019
+=========================================================================================================
+
+
+Top Model:                sdram_control                                                   
+Device:                   eagle_s20                                                       
+Timing Constraint File:   sdram_test.sdc                                                  
+STA Level:                Detail                                                          
+Process parameter::       TT  1.10v  85C                                                  
+
+=========================================================================================================
+Timing constraint:        clock: clkin                                                    
+Clock = clkin, period 41.6ns, rising at 0ns, falling at 20.8ns
+
+136 endpoints analyzed totally, and 56364 paths analyzed
+14 errors detected : 9 setup errors (TNS = -70.687), 5 hold errors (TNS = -5.046)
+Minimum period is 50.149ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point _al_u626|ux_seg/reg1_b3.F (3990 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -8.549 ns                                                        
+ StartPoint:              u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                _al_u626|ux_seg/reg1_b3.a[0] (rising edge triggered by clock clkin)
+ Clock group:             clkin                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk                     clock                   2.134
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.q[0]                    cell                    0.146
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1] (sd_dataout[5])    net (fanout = 4)        0.760 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(26)
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.fco                     cell                    0.627
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci (u2_al_u0/add0/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.f[0]                      cell                    0.144
+ _al_u366|_al_u364.b[0] (u2_al_u0/n2[1])                     net (fanout = 1)        0.309               
+ _al_u366|_al_u364.f[0]                                      cell                    0.431
+ _al_u513|_al_u512.c[0] (u2_al_u0/n5)                        net (fanout = 3)        0.470               
+ _al_u513|_al_u512.f[0]                                      cell                    0.251
+ _al_u515|_al_u610.d[1] (_al_u512_o)                         net (fanout = 4)        0.470               
+ _al_u515|_al_u610.f[1]                                      cell                    0.205
+ _al_u608|_al_u607.a[0] (u2_al_u0/n12)                       net (fanout = 3)        0.470               
+ _al_u608|_al_u607.f[0]                                      cell                    0.408
+ _al_u515|_al_u610.b[0] (_al_u607_o)                         net (fanout = 4)        0.470               
+ _al_u515|_al_u610.f[0]                                      cell                    0.333
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1] (u2_al_u0/n17[1])    net (fanout = 3)        0.456               
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.fco                       cell                    0.539
+ u2_al_u0/add3/u3_al_u669.fci (u2_al_u0/add3/c3)             net (fanout = 1)        0.000               
+ u2_al_u0/add3/u3_al_u669.f[0]                               cell                    0.144
+ _al_u617|_al_u620.b[1] (u2_al_u0/n19[3])                    net (fanout = 1)        0.459               
+ _al_u617|_al_u620.f[1]                                      cell                    0.431
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1] (u2_al_u0/n20)     net (fanout = 3)        0.622               
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.fco                     cell                    0.627
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci (u2_al_u0/add6/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.f[1]                      cell                    0.355
+ _al_u626|ux_seg/reg1_b3.a[0] (u2_al_u0/n29[2])              net (fanout = 1)        0.835 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_test/seg_4.v(29)
+ Arrival time                                                                       12.096 (13 lvl)
+                                                                                          (57% logic, 43% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    3.547
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -8.549 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -8.507 ns                                                        
+ StartPoint:              u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                _al_u626|ux_seg/reg1_b3.a[0] (rising edge triggered by clock clkin)
+ Clock group:             clkin                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk                     clock                   2.134
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.q[0]                    cell                    0.146
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1] (sd_dataout[5])    net (fanout = 4)        0.760 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(26)
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.fco                     cell                    0.627
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci (u2_al_u0/add0/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.f[0]                      cell                    0.144
+ _al_u366|_al_u364.b[0] (u2_al_u0/n2[1])                     net (fanout = 1)        0.309               
+ _al_u366|_al_u364.f[0]                                      cell                    0.431
+ _al_u513|_al_u512.c[0] (u2_al_u0/n5)                        net (fanout = 3)        0.470               
+ _al_u513|_al_u512.f[0]                                      cell                    0.251
+ _al_u515|_al_u610.d[1] (_al_u512_o)                         net (fanout = 4)        0.470               
+ _al_u515|_al_u610.f[1]                                      cell                    0.205
+ u2_al_u0/add2/u2|u2_al_u0/add2/u1.a[0] (u2_al_u0/n12)       net (fanout = 3)        0.468               
+ u2_al_u0/add2/u2|u2_al_u0/add2/u1.f[0]                      cell                    0.507
+ _al_u515|_al_u610.d[0] (u2_al_u0/n14[1])                    net (fanout = 1)        0.459               
+ _al_u515|_al_u610.f[0]                                      cell                    0.205
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1] (u2_al_u0/n17[1])    net (fanout = 3)        0.456               
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.fco                       cell                    0.539
+ u2_al_u0/add3/u3_al_u669.fci (u2_al_u0/add3/c3)             net (fanout = 1)        0.000               
+ u2_al_u0/add3/u3_al_u669.f[0]                               cell                    0.144
+ _al_u617|_al_u620.b[1] (u2_al_u0/n19[3])                    net (fanout = 1)        0.459               
+ _al_u617|_al_u620.f[1]                                      cell                    0.431
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1] (u2_al_u0/n20)     net (fanout = 3)        0.622               
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.fco                     cell                    0.627
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci (u2_al_u0/add6/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.f[1]                      cell                    0.355
+ _al_u626|ux_seg/reg1_b3.a[0] (u2_al_u0/n29[2])              net (fanout = 1)        0.835 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_test/seg_4.v(29)
+ Arrival time                                                                       12.054 (13 lvl)
+                                                                                          (56% logic, 44% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    3.547
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -8.507 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -8.391 ns                                                        
+ StartPoint:              u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                _al_u626|ux_seg/reg1_b3.a[0] (rising edge triggered by clock clkin)
+ Clock group:             clkin                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk                     clock                   2.134
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.q[0]                    cell                    0.146
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1] (sd_dataout[5])    net (fanout = 4)        0.760 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(26)
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.fco                     cell                    0.627
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci (u2_al_u0/add0/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.f[0]                      cell                    0.144
+ _al_u366|_al_u364.b[0] (u2_al_u0/n2[1])                     net (fanout = 1)        0.309               
+ _al_u366|_al_u364.f[0]                                      cell                    0.431
+ _al_u513|_al_u512.c[0] (u2_al_u0/n5)                        net (fanout = 3)        0.470               
+ _al_u513|_al_u512.f[0]                                      cell                    0.251
+ _al_u363|_al_u516.a[0] (_al_u512_o)                         net (fanout = 4)        0.323               
+ _al_u363|_al_u516.f[0]                                      cell                    0.408
+ _al_u608|_al_u607.d[0] (u2_al_u0/n11)                       net (fanout = 3)        0.459               
+ _al_u608|_al_u607.f[0]                                      cell                    0.205
+ _al_u515|_al_u610.b[0] (_al_u607_o)                         net (fanout = 4)        0.470               
+ _al_u515|_al_u610.f[0]                                      cell                    0.333
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1] (u2_al_u0/n17[1])    net (fanout = 3)        0.456               
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.fco                       cell                    0.539
+ u2_al_u0/add3/u3_al_u669.fci (u2_al_u0/add3/c3)             net (fanout = 1)        0.000               
+ u2_al_u0/add3/u3_al_u669.f[0]                               cell                    0.144
+ _al_u617|_al_u620.b[1] (u2_al_u0/n19[3])                    net (fanout = 1)        0.459               
+ _al_u617|_al_u620.f[1]                                      cell                    0.431
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1] (u2_al_u0/n20)     net (fanout = 3)        0.622               
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.fco                     cell                    0.627
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci (u2_al_u0/add6/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.f[1]                      cell                    0.355
+ _al_u626|ux_seg/reg1_b3.a[0] (u2_al_u0/n29[2])              net (fanout = 1)        0.835 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_test/seg_4.v(29)
+ Arrival time                                                                       11.938 (13 lvl)
+                                                                                          (57% logic, 43% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    3.547
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -8.391 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point _al_u336|ux_seg/reg2_b0.F (3996 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -8.425 ns                                                        
+ StartPoint:              u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                _al_u336|ux_seg/reg2_b0.a[0] (rising edge triggered by clock clkin)
+ Clock group:             clkin                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk                     clock                   2.134
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.q[0]                    cell                    0.146
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1] (sd_dataout[5])    net (fanout = 4)        0.760 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(26)
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.fco                     cell                    0.627
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci (u2_al_u0/add0/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.f[0]                      cell                    0.144
+ _al_u366|_al_u364.b[0] (u2_al_u0/n2[1])                     net (fanout = 1)        0.309               
+ _al_u366|_al_u364.f[0]                                      cell                    0.431
+ _al_u513|_al_u512.c[0] (u2_al_u0/n5)                        net (fanout = 3)        0.470               
+ _al_u513|_al_u512.f[0]                                      cell                    0.251
+ _al_u515|_al_u610.d[1] (_al_u512_o)                         net (fanout = 4)        0.470               
+ _al_u515|_al_u610.f[1]                                      cell                    0.205
+ _al_u608|_al_u607.a[0] (u2_al_u0/n12)                       net (fanout = 3)        0.470               
+ _al_u608|_al_u607.f[0]                                      cell                    0.408
+ _al_u515|_al_u610.b[0] (_al_u607_o)                         net (fanout = 4)        0.470               
+ _al_u515|_al_u610.f[0]                                      cell                    0.333
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1] (u2_al_u0/n17[1])    net (fanout = 3)        0.456               
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.fco                       cell                    0.539
+ u2_al_u0/add3/u3_al_u669.fci (u2_al_u0/add3/c3)             net (fanout = 1)        0.000               
+ u2_al_u0/add3/u3_al_u669.f[0]                               cell                    0.144
+ _al_u617|_al_u620.b[1] (u2_al_u0/n19[3])                    net (fanout = 1)        0.459               
+ _al_u617|_al_u620.f[1]                                      cell                    0.431
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1] (u2_al_u0/n20)     net (fanout = 3)        0.622               
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.fco                     cell                    0.627
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci (u2_al_u0/add6/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.fco                       cell                    0.073
+ u2_al_u0/add6/u3_al_u672.fci (u2_al_u0/add6/c3)             net (fanout = 1)        0.000               
+ u2_al_u0/add6/u3_al_u672.f[0]                               cell                    0.144
+ _al_u336|ux_seg/reg2_b0.a[0] (u2_al_u0/n29[3])              net (fanout = 1)        0.849 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_test/seg_4.v(30)
+ Arrival time                                                                       11.972 (13 lvl)
+                                                                                          (56% logic, 44% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    3.547
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -8.425 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -8.383 ns                                                        
+ StartPoint:              u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                _al_u336|ux_seg/reg2_b0.a[0] (rising edge triggered by clock clkin)
+ Clock group:             clkin                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk                     clock                   2.134
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.q[0]                    cell                    0.146
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1] (sd_dataout[5])    net (fanout = 4)        0.760 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(26)
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.fco                     cell                    0.627
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci (u2_al_u0/add0/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.f[0]                      cell                    0.144
+ _al_u366|_al_u364.b[0] (u2_al_u0/n2[1])                     net (fanout = 1)        0.309               
+ _al_u366|_al_u364.f[0]                                      cell                    0.431
+ _al_u513|_al_u512.c[0] (u2_al_u0/n5)                        net (fanout = 3)        0.470               
+ _al_u513|_al_u512.f[0]                                      cell                    0.251
+ _al_u515|_al_u610.d[1] (_al_u512_o)                         net (fanout = 4)        0.470               
+ _al_u515|_al_u610.f[1]                                      cell                    0.205
+ u2_al_u0/add2/u2|u2_al_u0/add2/u1.a[0] (u2_al_u0/n12)       net (fanout = 3)        0.468               
+ u2_al_u0/add2/u2|u2_al_u0/add2/u1.f[0]                      cell                    0.507
+ _al_u515|_al_u610.d[0] (u2_al_u0/n14[1])                    net (fanout = 1)        0.459               
+ _al_u515|_al_u610.f[0]                                      cell                    0.205
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1] (u2_al_u0/n17[1])    net (fanout = 3)        0.456               
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.fco                       cell                    0.539
+ u2_al_u0/add3/u3_al_u669.fci (u2_al_u0/add3/c3)             net (fanout = 1)        0.000               
+ u2_al_u0/add3/u3_al_u669.f[0]                               cell                    0.144
+ _al_u617|_al_u620.b[1] (u2_al_u0/n19[3])                    net (fanout = 1)        0.459               
+ _al_u617|_al_u620.f[1]                                      cell                    0.431
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1] (u2_al_u0/n20)     net (fanout = 3)        0.622               
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.fco                     cell                    0.627
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci (u2_al_u0/add6/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.fco                       cell                    0.073
+ u2_al_u0/add6/u3_al_u672.fci (u2_al_u0/add6/c3)             net (fanout = 1)        0.000               
+ u2_al_u0/add6/u3_al_u672.f[0]                               cell                    0.144
+ _al_u336|ux_seg/reg2_b0.a[0] (u2_al_u0/n29[3])              net (fanout = 1)        0.849 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_test/seg_4.v(30)
+ Arrival time                                                                       11.930 (13 lvl)
+                                                                                          (56% logic, 44% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    3.547
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -8.383 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -8.267 ns                                                        
+ StartPoint:              u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                _al_u336|ux_seg/reg2_b0.a[0] (rising edge triggered by clock clkin)
+ Clock group:             clkin                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk                     clock                   2.134
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.q[0]                    cell                    0.146
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1] (sd_dataout[5])    net (fanout = 4)        0.760 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(26)
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.fco                     cell                    0.627
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci (u2_al_u0/add0/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.f[0]                      cell                    0.144
+ _al_u366|_al_u364.b[0] (u2_al_u0/n2[1])                     net (fanout = 1)        0.309               
+ _al_u366|_al_u364.f[0]                                      cell                    0.431
+ _al_u513|_al_u512.c[0] (u2_al_u0/n5)                        net (fanout = 3)        0.470               
+ _al_u513|_al_u512.f[0]                                      cell                    0.251
+ _al_u363|_al_u516.a[0] (_al_u512_o)                         net (fanout = 4)        0.323               
+ _al_u363|_al_u516.f[0]                                      cell                    0.408
+ _al_u608|_al_u607.d[0] (u2_al_u0/n11)                       net (fanout = 3)        0.459               
+ _al_u608|_al_u607.f[0]                                      cell                    0.205
+ _al_u515|_al_u610.b[0] (_al_u607_o)                         net (fanout = 4)        0.470               
+ _al_u515|_al_u610.f[0]                                      cell                    0.333
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1] (u2_al_u0/n17[1])    net (fanout = 3)        0.456               
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.fco                       cell                    0.539
+ u2_al_u0/add3/u3_al_u669.fci (u2_al_u0/add3/c3)             net (fanout = 1)        0.000               
+ u2_al_u0/add3/u3_al_u669.f[0]                               cell                    0.144
+ _al_u617|_al_u620.b[1] (u2_al_u0/n19[3])                    net (fanout = 1)        0.459               
+ _al_u617|_al_u620.f[1]                                      cell                    0.431
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1] (u2_al_u0/n20)     net (fanout = 3)        0.622               
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.fco                     cell                    0.627
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci (u2_al_u0/add6/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.fco                       cell                    0.073
+ u2_al_u0/add6/u3_al_u672.fci (u2_al_u0/add6/c3)             net (fanout = 1)        0.000               
+ u2_al_u0/add6/u3_al_u672.f[0]                               cell                    0.144
+ _al_u336|ux_seg/reg2_b0.a[0] (u2_al_u0/n29[3])              net (fanout = 1)        0.849 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_test/seg_4.v(30)
+ Arrival time                                                                       11.814 (13 lvl)
+                                                                                          (57% logic, 43% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    3.547
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -8.267 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point ux_seg/reg1_b1|ux_seg/reg1_b2.F (3532 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -8.425 ns                                                        
+ StartPoint:              u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                ux_seg/reg1_b1|ux_seg/reg1_b2.c[0] (rising edge triggered by clock clkin)
+ Clock group:             clkin                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk                     clock                   2.134
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.q[0]                    cell                    0.146
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1] (sd_dataout[5])    net (fanout = 4)        0.760 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(26)
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.fco                     cell                    0.627
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci (u2_al_u0/add0/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.f[0]                      cell                    0.144
+ _al_u366|_al_u364.b[0] (u2_al_u0/n2[1])                     net (fanout = 1)        0.309               
+ _al_u366|_al_u364.f[0]                                      cell                    0.431
+ _al_u513|_al_u512.c[0] (u2_al_u0/n5)                        net (fanout = 3)        0.470               
+ _al_u513|_al_u512.f[0]                                      cell                    0.251
+ _al_u515|_al_u610.d[1] (_al_u512_o)                         net (fanout = 4)        0.470               
+ _al_u515|_al_u610.f[1]                                      cell                    0.205
+ _al_u608|_al_u607.a[0] (u2_al_u0/n12)                       net (fanout = 3)        0.470               
+ _al_u608|_al_u607.f[0]                                      cell                    0.408
+ _al_u515|_al_u610.b[0] (_al_u607_o)                         net (fanout = 4)        0.470               
+ _al_u515|_al_u610.f[0]                                      cell                    0.333
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1] (u2_al_u0/n17[1])    net (fanout = 3)        0.456               
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.fco                       cell                    0.539
+ u2_al_u0/add3/u3_al_u669.fci (u2_al_u0/add3/c3)             net (fanout = 1)        0.000               
+ u2_al_u0/add3/u3_al_u669.f[0]                               cell                    0.144
+ _al_u617|_al_u620.b[1] (u2_al_u0/n19[3])                    net (fanout = 1)        0.459               
+ _al_u617|_al_u620.f[1]                                      cell                    0.431
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1] (u2_al_u0/n20)     net (fanout = 3)        0.622               
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.fco                     cell                    0.627
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci (u2_al_u0/add6/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.f[0]                      cell                    0.144
+ ux_seg/reg1_b1|ux_seg/reg1_b2.c[0] (u2_al_u0/n29[1])        net (fanout = 1)        0.922 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_test/seg_4.v(29)
+ Arrival time                                                                       11.972 (13 lvl)
+                                                                                          (55% logic, 45% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    3.547
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -8.425 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -8.383 ns                                                        
+ StartPoint:              u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                ux_seg/reg1_b1|ux_seg/reg1_b2.c[0] (rising edge triggered by clock clkin)
+ Clock group:             clkin                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk                     clock                   2.134
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.q[0]                    cell                    0.146
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1] (sd_dataout[5])    net (fanout = 4)        0.760 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(26)
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.fco                     cell                    0.627
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci (u2_al_u0/add0/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.f[0]                      cell                    0.144
+ _al_u366|_al_u364.b[0] (u2_al_u0/n2[1])                     net (fanout = 1)        0.309               
+ _al_u366|_al_u364.f[0]                                      cell                    0.431
+ _al_u513|_al_u512.c[0] (u2_al_u0/n5)                        net (fanout = 3)        0.470               
+ _al_u513|_al_u512.f[0]                                      cell                    0.251
+ _al_u515|_al_u610.d[1] (_al_u512_o)                         net (fanout = 4)        0.470               
+ _al_u515|_al_u610.f[1]                                      cell                    0.205
+ u2_al_u0/add2/u2|u2_al_u0/add2/u1.a[0] (u2_al_u0/n12)       net (fanout = 3)        0.468               
+ u2_al_u0/add2/u2|u2_al_u0/add2/u1.f[0]                      cell                    0.507
+ _al_u515|_al_u610.d[0] (u2_al_u0/n14[1])                    net (fanout = 1)        0.459               
+ _al_u515|_al_u610.f[0]                                      cell                    0.205
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1] (u2_al_u0/n17[1])    net (fanout = 3)        0.456               
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.fco                       cell                    0.539
+ u2_al_u0/add3/u3_al_u669.fci (u2_al_u0/add3/c3)             net (fanout = 1)        0.000               
+ u2_al_u0/add3/u3_al_u669.f[0]                               cell                    0.144
+ _al_u617|_al_u620.b[1] (u2_al_u0/n19[3])                    net (fanout = 1)        0.459               
+ _al_u617|_al_u620.f[1]                                      cell                    0.431
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1] (u2_al_u0/n20)     net (fanout = 3)        0.622               
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.fco                     cell                    0.627
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci (u2_al_u0/add6/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.f[0]                      cell                    0.144
+ ux_seg/reg1_b1|ux_seg/reg1_b2.c[0] (u2_al_u0/n29[1])        net (fanout = 1)        0.922 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_test/seg_4.v(29)
+ Arrival time                                                                       11.930 (13 lvl)
+                                                                                          (55% logic, 45% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    3.547
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -8.383 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -8.267 ns                                                        
+ StartPoint:              u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                ux_seg/reg1_b1|ux_seg/reg1_b2.c[0] (rising edge triggered by clock clkin)
+ Clock group:             clkin                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.clk                     clock                   2.134
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.q[0]                    cell                    0.146
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.a[1] (sd_dataout[5])    net (fanout = 4)        0.760 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(26)
+ u2_al_u0/add0/u0|u2_al_u0/add0/ucin.fco                     cell                    0.627
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.fci (u2_al_u0/add0/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add0/u2|u2_al_u0/add0/u1.f[0]                      cell                    0.144
+ _al_u366|_al_u364.b[0] (u2_al_u0/n2[1])                     net (fanout = 1)        0.309               
+ _al_u366|_al_u364.f[0]                                      cell                    0.431
+ _al_u513|_al_u512.c[0] (u2_al_u0/n5)                        net (fanout = 3)        0.470               
+ _al_u513|_al_u512.f[0]                                      cell                    0.251
+ _al_u363|_al_u516.a[0] (_al_u512_o)                         net (fanout = 4)        0.323               
+ _al_u363|_al_u516.f[0]                                      cell                    0.408
+ _al_u608|_al_u607.d[0] (u2_al_u0/n11)                       net (fanout = 3)        0.459               
+ _al_u608|_al_u607.f[0]                                      cell                    0.205
+ _al_u515|_al_u610.b[0] (_al_u607_o)                         net (fanout = 4)        0.470               
+ _al_u515|_al_u610.f[0]                                      cell                    0.333
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.b[1] (u2_al_u0/n17[1])    net (fanout = 3)        0.456               
+ u2_al_u0/add3/u2|u2_al_u0/add3/u1.fco                       cell                    0.539
+ u2_al_u0/add3/u3_al_u669.fci (u2_al_u0/add3/c3)             net (fanout = 1)        0.000               
+ u2_al_u0/add3/u3_al_u669.f[0]                               cell                    0.144
+ _al_u617|_al_u620.b[1] (u2_al_u0/n19[3])                    net (fanout = 1)        0.459               
+ _al_u617|_al_u620.f[1]                                      cell                    0.431
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.a[1] (u2_al_u0/n20)     net (fanout = 3)        0.622               
+ u2_al_u0/add6/u0|u2_al_u0/add6/ucin.fco                     cell                    0.627
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.fci (u2_al_u0/add6/c1)    net (fanout = 1)        0.000               
+ u2_al_u0/add6/u2|u2_al_u0/add6/u1.f[0]                      cell                    0.144
+ ux_seg/reg1_b1|ux_seg/reg1_b2.c[0] (u2_al_u0/n29[1])        net (fanout = 1)        0.922 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_test/seg_4.v(29)
+ Arrival time                                                                       11.814 (13 lvl)
+                                                                                          (56% logic, 44% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    3.547
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -8.267 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point ux_seg/reg0_b1|ux_seg/reg0_b0.F (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)      -1.367 ns                                                        
+ StartPoint:              u_sdram/reg2_b0.clk (rising edge triggered by clock sd_clk)     
+ EndPoint:                ux_seg/reg0_b1|ux_seg/reg0_b0.mi[0] (rising edge triggered by clock clkin)
+ Clock group:             clkin                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg2_b0.clk                                         clock                   1.834
+ u_sdram/reg2_b0.q[0]                                        cell                    0.140
+ ux_seg/reg0_b1|ux_seg/reg0_b0.mi[0] (sd_dataout[0])         net (fanout = 1)        0.542 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(26)
+ Arrival time                                                                        2.516 (1 lvl)
+                                                                                          (79% logic, 21% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     3.883
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -1.367 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point ux_seg/reg0_b1|ux_seg/reg0_b0.F (1668 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)      -1.326 ns                                                        
+ StartPoint:              u2_al_u0/add5/u0|u2_al_u0/add5/ucin.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                ux_seg/reg0_b1|ux_seg/reg0_b0.d[1] (rising edge triggered by clock clkin)
+ Clock group:             clkin                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u2_al_u0/add5/u0|u2_al_u0/add5/ucin.clk                     clock                   1.834
+ u2_al_u0/add5/u0|u2_al_u0/add5/ucin.q[0]                    cell                    0.140
+ ux_seg/reg0_b1|ux_seg/reg0_b0.d[1] (sd_dataout[1])          net (fanout = 3)        0.583 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(26)
+ Arrival time                                                                        2.557 (1 lvl)
+                                                                                          (78% logic, 22% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     3.883
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -1.326 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)      -0.739 ns                                                        
+ StartPoint:              u2_al_u0/add5/u0|u2_al_u0/add5/ucin.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                ux_seg/reg0_b1|ux_seg/reg0_b0.a[1] (rising edge triggered by clock clkin)
+ Clock group:             clkin                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u2_al_u0/add5/u0|u2_al_u0/add5/ucin.clk                     clock                   1.834
+ u2_al_u0/add5/u0|u2_al_u0/add5/ucin.q[0]                    cell                    0.140
+ _al_u621|ux_seg/reg0_b3.c[1] (sd_dataout[1])                net (fanout = 3)        0.147 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(26)
+ _al_u621|ux_seg/reg0_b3.f[1]                                cell                    0.297
+ ux_seg/reg0_b1|ux_seg/reg0_b0.a[1] (_al_u621_o)             net (fanout = 4)        0.726 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_test/seg_4.v(28)
+ Arrival time                                                                        3.144 (2 lvl)
+                                                                                          (73% logic, 27% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     3.883
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -0.739 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)      -0.004 ns                                                        
+ StartPoint:              u2_al_u0/add3/u0|u2_al_u0/add3/ucin.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                ux_seg/reg0_b1|ux_seg/reg0_b0.a[1] (rising edge triggered by clock clkin)
+ Clock group:             clkin                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u2_al_u0/add3/u0|u2_al_u0/add3/ucin.clk                     clock                   1.834
+ u2_al_u0/add3/u0|u2_al_u0/add3/ucin.q[0]                    cell                    0.140
+ _al_u617|_al_u620.d[0] (sd_dataout[2])                      net (fanout = 3)        0.271 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(26)
+ _al_u617|_al_u620.f[0]                                      cell                    0.251
+ _al_u621|ux_seg/reg0_b3.d[1] (u2_al_u0/n21[0])              net (fanout = 3)        0.406               
+ _al_u621|ux_seg/reg0_b3.f[1]                                cell                    0.251
+ ux_seg/reg0_b1|ux_seg/reg0_b0.a[1] (_al_u621_o)             net (fanout = 4)        0.726 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_test/seg_4.v(28)
+ Arrival time                                                                        3.879 (3 lvl)
+                                                                                          (64% logic, 36% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     3.883
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -0.004 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point _al_u621|ux_seg/reg0_b3.F (3166 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)      -0.830 ns                                                        
+ StartPoint:              u2_al_u0/add5/u0|u2_al_u0/add5/ucin.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                _al_u621|ux_seg/reg0_b3.a[0] (rising edge triggered by clock clkin)
+ Clock group:             clkin                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u2_al_u0/add5/u0|u2_al_u0/add5/ucin.clk                     clock                   1.834
+ u2_al_u0/add5/u0|u2_al_u0/add5/ucin.q[0]                    cell                    0.140
+ _al_u621|ux_seg/reg0_b3.c[1] (sd_dataout[1])                net (fanout = 3)        0.147 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(26)
+ _al_u621|ux_seg/reg0_b3.f[1]                                cell                    0.297
+ _al_u621|ux_seg/reg0_b3.a[0] (_al_u621_o)                   net (fanout = 4)        0.635 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_test/seg_4.v(28)
+ Arrival time                                                                        3.053 (2 lvl)
+                                                                                          (75% logic, 25% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     3.883
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -0.830 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)      -0.095 ns                                                        
+ StartPoint:              u2_al_u0/add3/u0|u2_al_u0/add3/ucin.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                _al_u621|ux_seg/reg0_b3.a[0] (rising edge triggered by clock clkin)
+ Clock group:             clkin                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u2_al_u0/add3/u0|u2_al_u0/add3/ucin.clk                     clock                   1.834
+ u2_al_u0/add3/u0|u2_al_u0/add3/ucin.q[0]                    cell                    0.140
+ _al_u617|_al_u620.d[0] (sd_dataout[2])                      net (fanout = 3)        0.271 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(26)
+ _al_u617|_al_u620.f[0]                                      cell                    0.251
+ _al_u621|ux_seg/reg0_b3.d[1] (u2_al_u0/n21[0])              net (fanout = 3)        0.406               
+ _al_u621|ux_seg/reg0_b3.f[1]                                cell                    0.251
+ _al_u621|ux_seg/reg0_b3.a[0] (_al_u621_o)                   net (fanout = 4)        0.635 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_test/seg_4.v(28)
+ Arrival time                                                                        3.788 (3 lvl)
+                                                                                          (66% logic, 34% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     3.883
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -0.095 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.739 ns                                                        
+ StartPoint:              u2_al_u0/add3/u0|u2_al_u0/add3/ucin.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                _al_u621|ux_seg/reg0_b3.a[0] (rising edge triggered by clock clkin)
+ Clock group:             clkin                                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u2_al_u0/add3/u0|u2_al_u0/add3/ucin.clk                     clock                   1.834
+ u2_al_u0/add3/u0|u2_al_u0/add3/ucin.q[0]                    cell                    0.140
+ _al_u618|_al_u616.b[0] (sd_dataout[2])                      net (fanout = 3)        0.416 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(26)
+ _al_u618|_al_u616.f[0]                                      cell                    0.402
+ _al_u617|_al_u620.e[0] (_al_u616_o)                         net (fanout = 4)        0.268               
+ _al_u617|_al_u620.f[0]                                      cell                    0.270
+ _al_u621|ux_seg/reg0_b3.d[1] (u2_al_u0/n21[0])              net (fanout = 3)        0.406               
+ _al_u621|ux_seg/reg0_b3.f[1]                                cell                    0.251
+ _al_u621|ux_seg/reg0_b3.a[0] (_al_u621_o)                   net (fanout = 4)        0.635 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_test/seg_4.v(28)
+ Arrival time                                                                        4.622 (4 lvl)
+                                                                                          (63% logic, 37% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     3.883
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.739 ns
+
+---------------------------------------------------------------------------------------------------------
+
+
+=========================================================================================================
+Timing constraint:        clock: sd_clk                                                   
+Clock = sd_clk, period 5ns, rising at 0ns, falling at 2.5ns
+
+560 endpoints analyzed totally, and 9578 paths analyzed
+3 errors detected : 3 setup errors (TNS = -0.554), 0 hold errors (TNS = 0.000)
+Minimum period is 5.345ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point test_error_tmp_reg.F (106 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -0.345 ns                                                        
+ StartPoint:              S64_DQ28reg11_b28_IN.ipclk (rising edge triggered by clock sd_clk)
+ EndPoint:                test_error_tmp_reg.a[0] (rising edge triggered by clock sd_clk) 
+ Clock group:             sd_clk                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ S64_DQ28reg11_b28_IN.ipclk                                  clock                   1.925
+ S64_DQ28reg11_b28_IN.diq[0]                                 cell                    0.567
+ reg11_b3|_al_u276.b[0] (sd_dq_int[28])                      net (fanout = 2)        1.962 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(31)
+ reg11_b3|_al_u276.f[0]                                      cell                    0.431
+ _al_u277|reg10_b6.a[1] (_al_u276_o)                         net (fanout = 1)        0.738               
+ _al_u277|reg10_b6.f[1]                                      cell                    0.424
+ test_error_tmp_reg.a[0] (_al_u277_o)                        net (fanout = 2)        1.188 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(24)
+ Arrival time                                                                        7.235 (3 lvl)
+                                                                                          (47% logic, 53% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    6.890
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -0.345 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -0.345 ns                                                        
+ StartPoint:              S64_DQ28reg11_b28_IN.ipclk (rising edge triggered by clock sd_clk)
+ EndPoint:                test_error_tmp_reg.a[1] (rising edge triggered by clock sd_clk) 
+ Clock group:             sd_clk                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ S64_DQ28reg11_b28_IN.ipclk                                  clock                   1.925
+ S64_DQ28reg11_b28_IN.diq[0]                                 cell                    0.567
+ reg11_b3|_al_u276.b[0] (sd_dq_int[28])                      net (fanout = 2)        1.962 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(31)
+ reg11_b3|_al_u276.f[0]                                      cell                    0.431
+ _al_u277|reg10_b6.a[1] (_al_u276_o)                         net (fanout = 1)        0.738               
+ _al_u277|reg10_b6.f[1]                                      cell                    0.424
+ test_error_tmp_reg.a[1] (_al_u277_o)                        net (fanout = 2)        1.188 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(24)
+ Arrival time                                                                        7.235 (3 lvl)
+                                                                                          (47% logic, 53% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    6.890
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -0.345 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -0.305 ns                                                        
+ StartPoint:              S64_DQ10reg11_b10_IN.ipclk (rising edge triggered by clock sd_clk)
+ EndPoint:                test_error_tmp_reg.a[0] (rising edge triggered by clock sd_clk) 
+ Clock group:             sd_clk                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ S64_DQ10reg11_b10_IN.ipclk                                  clock                   1.925
+ S64_DQ10reg11_b10_IN.diq[0]                                 cell                    0.567
+ reg11_b3|_al_u276.a[0] (sd_dq_int[10])                      net (fanout = 1)        1.929 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(31)
+ reg11_b3|_al_u276.f[0]                                      cell                    0.424
+ _al_u277|reg10_b6.a[1] (_al_u276_o)                         net (fanout = 1)        0.738               
+ _al_u277|reg10_b6.f[1]                                      cell                    0.424
+ test_error_tmp_reg.a[0] (_al_u277_o)                        net (fanout = 2)        1.188 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(24)
+ Arrival time                                                                        7.195 (3 lvl)
+                                                                                          (47% logic, 53% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    6.890
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -0.305 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point reg8_b14.F (127 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -0.115 ns                                                        
+ StartPoint:              reg8_b12.clk (rising edge triggered by clock sd_clk)            
+ EndPoint:                reg8_b14.a[0] (rising edge triggered by clock sd_clk)           
+ Clock group:             sd_clk                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ reg8_b12.clk                                                clock                   2.134
+ reg8_b12.q[0]                                               cell                    0.146
+ _al_u537|reg8_b15.b[1] (rd_addr[12])                        net (fanout = 5)        0.643 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(15)
+ _al_u537|reg8_b15.f[1]                                      cell                    0.431
+ reg12_b13|_al_u540.a[0] (_al_u537_o)                        net (fanout = 2)        0.618               
+ reg12_b13|_al_u540.fx[0]                                    cell                    0.618
+ _al_u544|_al_u541.a[0] (n53_lutinv)                         net (fanout = 24)       0.760               
+ _al_u544|_al_u541.f[0]                                      cell                    0.424
+ reg8_b14.a[0] (_al_u541_o)                                  net (fanout = 6)        1.338 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(15)
+ Arrival time                                                                        7.112 (4 lvl)
+                                                                                          (53% logic, 47% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    6.997
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -0.115 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -0.115 ns                                                        
+ StartPoint:              reg8_b12.clk (rising edge triggered by clock sd_clk)            
+ EndPoint:                reg8_b14.a[1] (rising edge triggered by clock sd_clk)           
+ Clock group:             sd_clk                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ reg8_b12.clk                                                clock                   2.134
+ reg8_b12.q[0]                                               cell                    0.146
+ _al_u537|reg8_b15.b[1] (rd_addr[12])                        net (fanout = 5)        0.643 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(15)
+ _al_u537|reg8_b15.f[1]                                      cell                    0.431
+ reg12_b13|_al_u540.a[0] (_al_u537_o)                        net (fanout = 2)        0.618               
+ reg12_b13|_al_u540.fx[0]                                    cell                    0.618
+ _al_u544|_al_u541.a[0] (n53_lutinv)                         net (fanout = 24)       0.760               
+ _al_u544|_al_u541.f[0]                                      cell                    0.424
+ reg8_b14.a[1] (_al_u541_o)                                  net (fanout = 6)        1.338 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(15)
+ Arrival time                                                                        7.112 (4 lvl)
+                                                                                          (53% logic, 47% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    6.997
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -0.115 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -0.115 ns                                                        
+ StartPoint:              reg8_b12.clk (rising edge triggered by clock sd_clk)            
+ EndPoint:                reg8_b14.a[0] (rising edge triggered by clock sd_clk)           
+ Clock group:             sd_clk                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ reg8_b12.clk                                                clock                   2.134
+ reg8_b12.q[0]                                               cell                    0.146
+ _al_u537|reg8_b15.b[1] (rd_addr[12])                        net (fanout = 5)        0.643 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(15)
+ _al_u537|reg8_b15.f[1]                                      cell                    0.431
+ reg12_b13|_al_u540.a[1] (_al_u537_o)                        net (fanout = 2)        0.618               
+ reg12_b13|_al_u540.fx[0]                                    cell                    0.618
+ _al_u544|_al_u541.a[0] (n53_lutinv)                         net (fanout = 24)       0.760               
+ _al_u544|_al_u541.f[0]                                      cell                    0.424
+ reg8_b14.a[0] (_al_u541_o)                                  net (fanout = 6)        1.338 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(15)
+ Arrival time                                                                        7.112 (4 lvl)
+                                                                                          (53% logic, 47% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    6.997
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -0.115 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point reg8_b12.F (123 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -0.094 ns                                                        
+ StartPoint:              reg8_b12.clk (rising edge triggered by clock sd_clk)            
+ EndPoint:                reg8_b12.a[0] (rising edge triggered by clock sd_clk)           
+ Clock group:             sd_clk                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ reg8_b12.clk                                                clock                   2.134
+ reg8_b12.q[0]                                               cell                    0.146
+ _al_u537|reg8_b15.b[1] (rd_addr[12])                        net (fanout = 5)        0.643 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(15)
+ _al_u537|reg8_b15.f[1]                                      cell                    0.431
+ reg12_b13|_al_u540.a[0] (_al_u537_o)                        net (fanout = 2)        0.618               
+ reg12_b13|_al_u540.fx[0]                                    cell                    0.618
+ _al_u544|_al_u541.a[0] (n53_lutinv)                         net (fanout = 24)       0.760               
+ _al_u544|_al_u541.f[0]                                      cell                    0.424
+ reg8_b12.a[0] (_al_u541_o)                                  net (fanout = 6)        1.338 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(15)
+ Arrival time                                                                        7.112 (4 lvl)
+                                                                                          (53% logic, 47% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    7.018
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -0.094 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -0.094 ns                                                        
+ StartPoint:              reg8_b12.clk (rising edge triggered by clock sd_clk)            
+ EndPoint:                reg8_b12.a[1] (rising edge triggered by clock sd_clk)           
+ Clock group:             sd_clk                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ reg8_b12.clk                                                clock                   2.134
+ reg8_b12.q[0]                                               cell                    0.146
+ _al_u537|reg8_b15.b[1] (rd_addr[12])                        net (fanout = 5)        0.643 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(15)
+ _al_u537|reg8_b15.f[1]                                      cell                    0.431
+ reg12_b13|_al_u540.a[0] (_al_u537_o)                        net (fanout = 2)        0.618               
+ reg12_b13|_al_u540.fx[0]                                    cell                    0.618
+ _al_u544|_al_u541.a[0] (n53_lutinv)                         net (fanout = 24)       0.760               
+ _al_u544|_al_u541.f[0]                                      cell                    0.424
+ reg8_b12.a[1] (_al_u541_o)                                  net (fanout = 6)        1.338 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(15)
+ Arrival time                                                                        7.112 (4 lvl)
+                                                                                          (53% logic, 47% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    7.018
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -0.094 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -0.094 ns                                                        
+ StartPoint:              reg8_b12.clk (rising edge triggered by clock sd_clk)            
+ EndPoint:                reg8_b12.a[0] (rising edge triggered by clock sd_clk)           
+ Clock group:             sd_clk                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ reg8_b12.clk                                                clock                   2.134
+ reg8_b12.q[0]                                               cell                    0.146
+ _al_u537|reg8_b15.b[1] (rd_addr[12])                        net (fanout = 5)        0.643 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(15)
+ _al_u537|reg8_b15.f[1]                                      cell                    0.431
+ reg12_b13|_al_u540.a[1] (_al_u537_o)                        net (fanout = 2)        0.618               
+ reg12_b13|_al_u540.fx[0]                                    cell                    0.618
+ _al_u544|_al_u541.a[0] (n53_lutinv)                         net (fanout = 24)       0.760               
+ _al_u544|_al_u541.f[0]                                      cell                    0.424
+ reg8_b12.a[0] (_al_u541_o)                                  net (fanout = 6)        1.338 C:/Users/dell/Desktop/Tang_FPGA_Examples-master/3.SDRAM/SDRAM_TEST/sdram_control.v(15)
+ Arrival time                                                                        7.112 (4 lvl)
+                                                                                          (53% logic, 47% net)
+
+ Required time (t_capture_clk - setup_time - uncertainty_s + crp)                    7.018
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -0.094 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point u_sdram/ux_command/oe1_reg.F (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.287 ns                                                        
+ StartPoint:              u_sdram/ux_command/do_writea_reg|u_sdram/ux_control/WRITEA_reg.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                u_sdram/ux_command/oe1_reg.mi[0] (rising edge triggered by clock sd_clk)
+ Clock group:             sd_clk                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_sdram/ux_command/do_writea_reg|u_sdram/ux_control/WRITEA_reg.clk clock                   1.834
+ u_sdram/ux_command/do_writea_reg|u_sdram/ux_control/WRITEA_reg.q[1] cell                    0.140
+ u_sdram/ux_command/oe1_reg.mi[0] (u_sdram/ux_command/do_writea) net (fanout = 5)        0.430 ../Command.v(49)
+ Arrival time                                                                        2.404 (1 lvl)
+                                                                                          (83% logic, 17% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     2.117
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.287 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_sdram/reg2_b7|u_sdram/reg2_b6.F (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.347 ns                                                        
+ StartPoint:              u_sdram/reg1_b6|u_sdram/reg1_b7.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                u_sdram/reg2_b7|u_sdram/reg2_b6.mi[1] (rising edge triggered by clock sd_clk)
+ Clock group:             sd_clk                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_b6|u_sdram/reg1_b7.clk                         clock                   1.834
+ u_sdram/reg1_b6|u_sdram/reg1_b7.q[0]                        cell                    0.140
+ u_sdram/reg2_b7|u_sdram/reg2_b6.mi[1] (u_sdram/DQIN[7])     net (fanout = 1)        0.409 ../sdr_sdram.v(46)
+ Arrival time                                                                        2.383 (1 lvl)
+                                                                                          (83% logic, 17% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     2.036
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.347 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_sdram/reg2_b7|u_sdram/reg2_b6.F (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.359 ns                                                        
+ StartPoint:              u_sdram/reg1_b6|u_sdram/reg1_b7.clk (rising edge triggered by clock sd_clk)
+ EndPoint:                u_sdram/reg2_b7|u_sdram/reg2_b6.mi[0] (rising edge triggered by clock sd_clk)
+ Clock group:             sd_clk                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_b6|u_sdram/reg1_b7.clk                         clock                   1.834
+ u_sdram/reg1_b6|u_sdram/reg1_b7.q[1]                        cell                    0.140
+ u_sdram/reg2_b7|u_sdram/reg2_b6.mi[0] (u_sdram/DQIN[6])     net (fanout = 1)        0.421 ../sdr_sdram.v(46)
+ Arrival time                                                                        2.395 (1 lvl)
+                                                                                          (83% logic, 17% net)
+
+ Required time (t_capture_clk + hold_time + uncertainty_h + crp)                     2.036
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.359 ns
+
+---------------------------------------------------------------------------------------------------------
+
+
+=========================================================================================================
+Timing constraint:        clock: sd_clk1                                                  
+Clock = sd_clk1, period 5ns, rising at 0ns, falling at 2.5ns
+
+0 endpoints analyzed totally, and 0 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0.000), 0 hold errors (TNS = 0.000)
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+
+=========================================================================================================
+Timing summary:                                                                           
+---------------------------------------------------------------------------------------------------------
+Constraint path number: 65942 (STA coverage = 91.69%)
+Timing violations: 12 setup errors, and 5 hold errors.
+Minimal setup slack: -8.549, minimal hold slack: -1.367
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  sd_clk (200.000MHz)                            5.345ns     187.091MHz        0.491ns       195       -0.554ns
+	  clkin (24.038MHz)                             50.149ns      19.941MHz        0.399ns        36      -70.687ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
+---------------------------------------------------------------------------------------------------------

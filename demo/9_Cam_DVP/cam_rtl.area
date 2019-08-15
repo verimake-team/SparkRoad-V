@@ -1,0 +1,38 @@
+standard
+***Report Model: test_camera***
+
+IO Statistics
+#IO                    45
+  #input               13
+  #output              31
+  #inout                1
+
+Gate Statistics
+#Basic gates         3517
+  #and               1933
+  #nand                 0
+  #or                 580
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                284
+  #bufif1               1
+  #MX21               506
+  #FADD                 0
+  #DFF                213
+  #LATCH                0
+#MACRO_ADD             27
+#MACRO_EQ             239
+#MACRO_MULT             1
+#MACRO_MUX            548
+
+Report Hierarchy Area:
++-----------------------------------------------------+
+|Instance        |Module      |gates  |seq    |macros |
++-----------------------------------------------------+
+|top             |test_camera |3303   |213    |785    |
+|  u_camera_init |camera_init |3234   |96     |277    |
+|    u_i2c_write |i2c_module  |1106   |51     |43     |
+|  u_vga_sync    |lcd_sync    |11     |38     |25     |
++-----------------------------------------------------+

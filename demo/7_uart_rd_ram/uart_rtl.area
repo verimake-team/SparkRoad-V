@@ -1,0 +1,40 @@
+standard
+***Report Model: uart_top***
+
+IO Statistics
+#IO                     5
+  #input                3
+  #output               2
+  #inout                0
+
+Gate Statistics
+#Basic gates          141
+  #and                 26
+  #nand                 0
+  #or                   4
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                  8
+  #bufif1               0
+  #MX21                 0
+  #FADD                 0
+  #DFF                103
+  #LATCH                0
+#MACRO_ADD              7
+#MACRO_EQ              14
+#MACRO_MUX             51
+
+Report Hierarchy Area:
++------------------------------------------------------------+
+|Instance           |Module          |gates  |seq    |macros |
++------------------------------------------------------------+
+|top                |uart_top        |38     |103    |74     |
+|  my_uart_rx       |my_uart_rx      |26     |27     |10     |
+|  my_uart_tx       |my_uart_tx      |5      |19     |2      |
+|  speed_rx         |speed_setting_1 |2      |14     |3      |
+|  speed_tx         |speed_setting   |2      |14     |3      |
+|  u_pll_test       |pll_test        |0      |0      |1      |
+|  u_ram_rw_control |ram_rw_control  |2      |29     |4      |
++------------------------------------------------------------+

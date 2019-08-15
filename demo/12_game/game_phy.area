@@ -1,0 +1,69 @@
+standard
+***Report Model: top***
+
+IO Statistics
+#IO                    37
+  #input                8
+  #output              29
+  #inout                0
+
+Utilization Statistics
+#lut                 1104   out of  19600    5.63%
+#reg                  822   out of  19600    4.19%
+#le                  1381
+  #lut only           559   out of   1381   40.48%
+  #reg only           277   out of   1381   20.06%
+  #lut&reg            545   out of   1381   39.46%
+#dsp                    1   out of     29    3.45%
+#bram                   7   out of     64   10.94%
+  #bram9k               7
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   37   out of    188   19.68%
+  #ireg                 0
+  #oreg                 3
+  #treg                 0
+#pll                    1   out of      4   25.00%
+
+
+Detailed IO Report
+
+Name            Direction     Location     IOStandard     DriveStrength     
+clk             INPUT         K14          LVCMOS25       N/A               
+key[5]          INPUT         G12          LVCMOS25       N/A               
+key[4]          INPUT         S41          LVCMOS25       N/A               
+key[3]          INPUT         J13          LVCMOS25       N/A               
+key[2]          INPUT         G11          LVCMOS25       N/A               
+key[1]          INPUT         N16          LVCMOS25       N/A               
+key[0]          INPUT         H14          LVCMOS25       N/A               
+rx              INPUT         F16          LVCMOS25       N/A               
+led             OUTPUT        M3           LVCMOS25       8                 
+tx              OUTPUT        E16          LVCMOS25       8                 
+vga_clk         OUTPUT        H2           LVCMOS25       8                 
+vga_hs          OUTPUT        J3           LVCMOS25       8                 
+vga_rgb[23]     OUTPUT        L5           LVCMOS25       8                 
+vga_rgb[22]     OUTPUT        L3           LVCMOS25       8                 
+vga_rgb[21]     OUTPUT        M2           LVCMOS25       8                 
+vga_rgb[20]     OUTPUT        M1           LVCMOS25       8                 
+vga_rgb[19]     OUTPUT        L4           LVCMOS25       8                 
+vga_rgb[18]     OUTPUT        K5           LVCMOS25       8                 
+vga_rgb[17]     OUTPUT        K3           LVCMOS25       8                 
+vga_rgb[16]     OUTPUT        K6           LVCMOS25       8                 
+vga_rgb[15]     OUTPUT        H5           LVCMOS25       8                 
+vga_rgb[14]     OUTPUT        H1           LVCMOS25       8                 
+vga_rgb[13]     OUTPUT        J6           LVCMOS25       8                 
+vga_rgb[12]     OUTPUT        H3           LVCMOS25       8                 
+vga_rgb[11]     OUTPUT        J1           LVCMOS25       8                 
+vga_rgb[10]     OUTPUT        K1           LVCMOS25       8                 
+vga_rgb[9]      OUTPUT        K2           LVCMOS25       8                 
+vga_rgb[8]      OUTPUT        L1           LVCMOS25       8                 
+vga_rgb[7]      OUTPUT        C1           LVCMOS25       8                 
+vga_rgb[6]      OUTPUT        D1           LVCMOS25       8                 
+vga_rgb[5]      OUTPUT        E2           LVCMOS25       8                 
+vga_rgb[4]      OUTPUT        G3           LVCMOS25       8                 
+vga_rgb[3]      OUTPUT        E1           LVCMOS25       8                 
+vga_rgb[2]      OUTPUT        F2           LVCMOS25       8                 
+vga_rgb[1]      OUTPUT        F1           LVCMOS25       8                 
+vga_rgb[0]      OUTPUT        G1           LVCMOS25       8                 
+vga_vs          OUTPUT        J4           LVCMOS25       8                 
+

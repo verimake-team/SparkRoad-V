@@ -1,0 +1,1462 @@
+============================================================
+   Tang Dynasty, V4.6.12906
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/Anlogic/TD4.6.12906/bin/td.exe
+   Built at =   18:22:35 Jun 26 2019
+   Run by =     dell
+   Run Date =   Fri Jul 26 13:30:24 2019
+
+   Run on =     ANLOGIC-SUYANG
+============================================================
+RUN-1002 : start command "open_project seg_4.al"
+GUI-8003 ERROR: seg_4.v is missing!
+GUI-8003 ERROR: rst.v is missing!
+RUN-1002 : start command "import_device eagle_s20.db -package BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicated  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicated  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+GUI-8003 ERROR: seg_4.v is missing!
+GUI-8003 ERROR: rst.v is missing!
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+HDL-1007 : analyze verilog file sources/rtl/seg_4.v
+HDL-1007 : analyze verilog file sources/rtl/seg_4.v
+HDL-1007 : analyze verilog file sources/rtl/seg_4.v
+HDL-1007 : analyze verilog file sources/rtl/seg_4.v
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+HDL-1007 : analyze verilog file sources/rtl/seg_4.v
+RUN-1002 : start command "elaborate -top seg4"
+HDL-1007 : elaborate module seg4 in sources/rtl/seg_4.v(14)
+HDL-1007 : elaborate module rst_int in sources/rtl/rst.v(9)
+HDL-1200 : Current top model is seg4
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc seg..adc"
+USR-8002 ERROR: Cannot open file seg..adc.
+GUI-8309 ERROR: Failed to read adc seg..adc.
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+HDL-1007 : analyze verilog file sources/rtl/seg_4.v
+RUN-1002 : start command "elaborate -top seg4"
+HDL-1007 : elaborate module seg4 in sources/rtl/seg_4.v(14)
+HDL-1007 : elaborate module rst_int in sources/rtl/rst.v(9)
+HDL-1200 : Current top model is seg4
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc sources/sdc/seg_pin.adc"
+RUN-1002 : start command "set_pin_assignment clk_24m  LOCATION = K14; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_bit[3]  LOCATION = F3; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_bit[2]  LOCATION = C2; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_bit[1]  LOCATION = C3; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_bit[0]  LOCATION = B1; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[7]  LOCATION = A2; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[6]  LOCATION = B2; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[5]  LOCATION = D3; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[4]  LOCATION = F5; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[3]  LOCATION = E4; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[2]  LOCATION = F4; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[1]  LOCATION = B3; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[0]  LOCATION = E3; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "seg4"
+SYN-1012 : SanityCheck: Model "rst_int"
+SYN-1011 : Flatten model seg4
+SYN-1011 : Flatten model rst_int
+SYN-1016 : Merged 2 instances.
+SYN-1014 : Optimize round 1
+SYN-1032 : 259/0 useful/useless nets, 202/0 useful/useless insts
+SYN-1019 : Optimized 1 mux instances.
+SYN-1020 : Optimized 5 distributor mux.
+SYN-1016 : Merged 2 instances.
+SYN-1015 : Optimize round 1, 36 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 239/30 useful/useless nets, 182/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "report_area -file seg_4_rtl.area"
+RUN-1001 : standard
+***Report Model: seg4***
+
+IO Statistics
+#IO                    13
+  #input                1
+  #output              12
+  #inout                0
+
+Gate Statistics
+#Basic gates           93
+  #and                 11
+  #nand                 0
+  #or                   0
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                  5
+  #bufif1               0
+  #MX21                 1
+  #FADD                 0
+  #DFF                 76
+  #LATCH                0
+#MACRO_ADD             12
+#MACRO_EQ               6
+#MACRO_MUX             69
+
+RUN-1001 : 
+Report Hierarchy Area:
++-----------------------------------------+
+|Instance |Module |gates  |seq    |macros |
++-----------------------------------------+
+|top      |seg4   |17     |76     |18     |
++-----------------------------------------+
+
+RUN-1002 : start command "export_db seg_4_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "optimize_gate -packarea seg_4_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+SYN-2001 : Map 13 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 260/1 useful/useless nets, 204/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 341/0 useful/useless nets, 285/0 useful/useless insts
+SYN-1016 : Merged 2 instances.
+SYN-2501 : Optimize round 1, 69 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 339/0 useful/useless nets, 283/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 12 macro adder
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-2501 : Inferred 6 ROM instances
+SYN-1032 : 471/0 useful/useless nets, 415/0 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 100 (2.78), #lev = 4 (1.93)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 100 (2.78), #lev = 4 (1.93)
+SYN-2581 : Mapping with K=4, #lut = 100 (2.78), #lev = 4 (1.93)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 217 instances into 100 LUTs, name keeping = 78%.
+SYN-1001 : Packing model "seg4" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 347/0 useful/useless nets, 291/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 72 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 2 carry chain into lslice
+SYN-4007 : Packing 52 adder to BLE ...
+SYN-4008 : Packed 52 adder and 4 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 106 LUT to BLE ...
+SYN-4008 : Packed 106 LUT and 64 SEQ to BLE.
+SYN-4003 : Packing 4 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (4 nodes)...
+SYN-4004 : #1: Packed 4 SEQ (19 nodes)...
+SYN-4005 : Packed 4 SEQ with LUT/SLICE
+SYN-4006 : 38 single LUT's are left
+SYN-4006 : 4 single SEQ's are left
+SYN-4011 : Packing model "seg4" (AL_USER_NORMAL) with 106/163 primitive instances ...
+RUN-1002 : start command "report_area -file seg_4_gate.area"
+RUN-1001 : standard
+***Report Model: seg4***
+
+IO Statistics
+#IO                    13
+  #input                1
+  #output              12
+  #inout                0
+
+Utilization Statistics
+#lut                  188   out of  19600    0.96%
+#reg                   72   out of  19600    0.37%
+#le                   188
+  #lut only           116   out of    188   61.70%
+  #reg only             0   out of    188    0.00%
+  #lut&reg             72   out of    188   38.30%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   13   out of    188    6.91%
+  #ireg                 0
+  #oreg                 4
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++--------------------------------------+
+|Instance |Module |le    |lut   |seq   |
++--------------------------------------+
+|top      |seg4   |188   |188   |72    |
++--------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model seg4
+RUN-1002 : start command "export_db seg_4_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+PHY-3001 : Placer runs in 6 thread(s).
+SYN-4024 : Net "clk_24m_pad" drive clk pins.
+SYN-4025 : Tag rtl::Net clk_24m_pad as clock net
+SYN-4026 : Tagged 1 rtl::Net as clock net
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 110 instances
+RUN-1001 : 47 mslices, 47 lslices, 13 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 224 nets
+RUN-1001 : 137 nets have 2 pins
+RUN-1001 : 66 nets have [3 - 5] pins
+RUN-1001 : 13 nets have [6 - 10] pins
+RUN-1001 : 3 nets have [11 - 20] pins
+RUN-1001 : 4 nets have [21 - 99] pins
+RUN-1001 : 1 nets have 100+ pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 108 instances, 94 slices, 8 macros(41 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model seg4.
+TMR-2506 : Build timing graph completely. Port num: 3, tpin num: 779, tnet num: 222, tinst num: 108, tnode num: 961, tedge num: 1314.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 33 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 222 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 96 clock pins, and constraint 182 relative nodes.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.020930s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (149.3%)
+
+PHY-3001 : Global placement ...
+PHY-3001 : Initial: Len = 70851.6
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.994245
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(1): len = 51644.5, overlap = 0
+PHY-3002 : Step(2): len = 39025.2, overlap = 0
+PHY-3002 : Step(3): len = 30475.3, overlap = 0
+PHY-3002 : Step(4): len = 25344.4, overlap = 0
+PHY-3002 : Step(5): len = 21625.5, overlap = 0
+PHY-3002 : Step(6): len = 18257.5, overlap = 0
+PHY-3002 : Step(7): len = 15166.6, overlap = 0
+PHY-3002 : Step(8): len = 13492.7, overlap = 0
+PHY-3002 : Step(9): len = 12493.3, overlap = 0
+PHY-3002 : Step(10): len = 11682, overlap = 0
+PHY-3002 : Step(11): len = 10145.4, overlap = 0
+PHY-3002 : Step(12): len = 9424.6, overlap = 0
+PHY-3002 : Step(13): len = 8811.9, overlap = 0
+PHY-3002 : Step(14): len = 8404.2, overlap = 0
+PHY-3002 : Step(15): len = 7770.1, overlap = 0
+PHY-3002 : Step(16): len = 7199.7, overlap = 0
+PHY-3002 : Step(17): len = 6782.2, overlap = 0
+PHY-3002 : Step(18): len = 6530.4, overlap = 0
+PHY-3002 : Step(19): len = 6185.2, overlap = 0
+PHY-3002 : Step(20): len = 6017.5, overlap = 0
+PHY-3002 : Step(21): len = 5883, overlap = 0
+PHY-3002 : Step(22): len = 5846.8, overlap = 0
+PHY-3002 : Step(23): len = 5700.4, overlap = 0
+PHY-3002 : Step(24): len = 5671.6, overlap = 0
+PHY-3002 : Step(25): len = 5681.3, overlap = 0
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.003372s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.994245
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(26): len = 5607.1, overlap = 0
+PHY-3002 : Step(27): len = 5607.1, overlap = 0
+PHY-3002 : Step(28): len = 5602.3, overlap = 0
+PHY-3002 : Step(29): len = 5602.3, overlap = 0
+PHY-3002 : Step(30): len = 5577.1, overlap = 0
+PHY-3002 : Step(31): len = 5585.7, overlap = 0
+PHY-3002 : Step(32): len = 5585.7, overlap = 0
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.994245
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 7.86939e-05
+PHY-3002 : Step(33): len = 5596.5, overlap = 3.5
+PHY-3002 : Step(34): len = 5596.5, overlap = 3.5
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 0.000157388
+PHY-3002 : Step(35): len = 5630.8, overlap = 3.5
+PHY-3002 : Step(36): len = 5663.8, overlap = 3.25
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 0.000314775
+PHY-3002 : Step(37): len = 5650.7, overlap = 3.25
+PHY-3002 : Step(38): len = 5734.6, overlap = 3
+PHY-3002 : Step(39): len = 5789.5, overlap = 2.75
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.019967s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (78.3%)
+
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.994245
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(40): len = 7206.9, overlap = 1
+PHY-3002 : Step(41): len = 6539.1, overlap = 2.5
+PHY-3002 : Step(42): len = 6166.6, overlap = 3.25
+PHY-3002 : Step(43): len = 6023, overlap = 3
+PHY-3002 : Step(44): len = 5981.1, overlap = 3.25
+PHY-3002 : Step(45): len = 5923.1, overlap = 3.25
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 0.000726557
+PHY-3002 : Step(46): len = 5929.1, overlap = 3
+PHY-3002 : Step(47): len = 5929.1, overlap = 3
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 0.00145311
+PHY-3002 : Step(48): len = 5924.3, overlap = 2.5
+PHY-3002 : Step(49): len = 5933.3, overlap = 2.5
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.005243s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (298.0%)
+
+PHY-3001 : Legalized: Len = 6957.6, Over = 0
+PHY-3001 : Final: Len = 6957.6, Over = 0
+PHY-3001 : Improving timing with driver duplication.
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 8752, over cnt = 3(0%), over = 3, worst = 1
+PHY-1002 : len = 8744, over cnt = 2(0%), over = 2, worst = 1
+PHY-1002 : len = 8776, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.014566s wall, 0.031250s user + 0.015625s system = 0.046875s CPU (321.8%)
+
+RUN-1002 : start command "route"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 103 to 85
+PHY-1001 : Pin misalignment score is improved from 85 to 85
+PHY-1001 : Route runs in 6 thread(s)
+RUN-1001 : There are total 110 instances
+RUN-1001 : 47 mslices, 47 lslices, 13 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 224 nets
+RUN-1001 : 137 nets have 2 pins
+RUN-1001 : 66 nets have [3 - 5] pins
+RUN-1001 : 13 nets have [6 - 10] pins
+RUN-1001 : 3 nets have [11 - 20] pins
+RUN-1001 : 4 nets have [21 - 99] pins
+RUN-1001 : 1 nets have 100+ pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 8752, over cnt = 3(0%), over = 3, worst = 1
+PHY-1002 : len = 8744, over cnt = 2(0%), over = 2, worst = 1
+PHY-1002 : len = 8776, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.014020s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (222.9%)
+
+PHY-1001 : End global routing;  0.080265s wall, 0.093750s user + 0.000000s system = 0.093750s CPU (116.8%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 3736, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.006749s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 3736, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000010s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 35% nets.
+PHY-1001 : Routed 39% nets.
+PHY-1001 : Routed 47% nets.
+PHY-1001 : Routed 59% nets.
+PHY-1001 : Routed 78% nets.
+PHY-1002 : len = 16520, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : End Routed; 0.239027s wall, 0.406250s user + 0.000000s system = 0.406250s CPU (170.0%)
+
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1002 : len = 16520, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 16520
+PHY-1001 : End DR Iter 1; 0.007625s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (204.9%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  5.908056s wall, 5.750000s user + 0.406250s system = 6.156250s CPU (104.2%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  6.079114s wall, 5.968750s user + 0.406250s system = 6.375000s CPU (104.9%)
+
+RUN-1004 : used memory is 258 MB, reserved memory is 210 MB, peak memory is 692 MB
+RUN-1002 : start command "report_area -io_info -file seg_4_phy.area"
+RUN-1001 : standard
+***Report Model: seg4***
+
+IO Statistics
+#IO                    13
+  #input                1
+  #output              12
+  #inout                0
+
+Utilization Statistics
+#lut                  188   out of  19600    0.96%
+#reg                   72   out of  19600    0.37%
+#le                   188
+  #lut only           116   out of    188   61.70%
+  #reg only             0   out of    188    0.00%
+  #lut&reg             72   out of    188   38.30%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   13   out of    188    6.91%
+  #ireg                 0
+  #oreg                 4
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db seg_4_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "bitgen -bit seg_4.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 6 threads.
+BIT-1002 : Init instances completely, inst num: 110
+BIT-1002 : Init pips with 6 threads.
+BIT-1002 : Init pips completely, net num: 224, pip num: 1479
+BIT-1003 : Multithreading accelaration with 6 threads.
+BIT-1003 : Generate bitstream completely, there are 196 valid insts, and 5014 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file seg_4.bit.
+RUN-1002 : start command "download -bit seg_4.bit -mode jtag -spd 6 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit seg_4.bit"
+PRG-3000 : BIT2VEC::JtagBitstream: completed! line_num = 1354, frame_num = 1259
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit seg_4.bit" in  1.455362s wall, 1.421875s user + 0.046875s system = 1.468750s CPU (100.9%)
+
+RUN-1004 : used memory is 403 MB, reserved memory is 359 MB, peak memory is 692 MB
+RUN-1002 : start command "program -cable 0 -spd 6 -p"
+RUN-1003 : finish command "program -cable 0 -spd 6 -p" in  6.909432s wall, 0.656250s user + 0.250000s system = 0.906250s CPU (13.1%)
+
+RUN-1004 : used memory is 430 MB, reserved memory is 388 MB, peak memory is 692 MB
+RUN-1003 : finish command "download -bit seg_4.bit -mode jtag -spd 6 -sec 64 -cable 0" in  8.902041s wall, 2.234375s user + 0.359375s system = 2.593750s CPU (29.1%)
+
+RUN-1004 : used memory is 288 MB, reserved memory is 240 MB, peak memory is 692 MB
+GUI-1001 : Download success!
+GUI-8003 ERROR: seg_4.v is missing!
+GUI-8003 ERROR: rst.v is missing!
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+HDL-1007 : analyze verilog file sources/rtl/seg_4.v
+HDL-1007 : analyze verilog file sources/rtl/seg_4.v
+HDL-1007 : analyze verilog file sources/rtl/seg_4.v
+RUN-1002 : start command "download -bit seg_4.bit -mode jtag -spd 6 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit seg_4.bit"
+PRG-3000 : BIT2VEC::JtagBitstream: completed! line_num = 1354, frame_num = 1259
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit seg_4.bit" in  1.436431s wall, 1.437500s user + 0.015625s system = 1.453125s CPU (101.2%)
+
+RUN-1004 : used memory is 357 MB, reserved memory is 357 MB, peak memory is 692 MB
+RUN-1002 : start command "program -cable 0 -spd 6 -p"
+RUN-1003 : finish command "program -cable 0 -spd 6 -p" in  6.585170s wall, 0.359375s user + 0.203125s system = 0.562500s CPU (8.5%)
+
+RUN-1004 : used memory is 384 MB, reserved memory is 385 MB, peak memory is 692 MB
+RUN-1003 : finish command "download -bit seg_4.bit -mode jtag -spd 6 -sec 64 -cable 0" in  8.548036s wall, 1.906250s user + 0.250000s system = 2.156250s CPU (25.2%)
+
+RUN-1004 : used memory is 241 MB, reserved memory is 238 MB, peak memory is 692 MB
+GUI-1001 : Download success!
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+HDL-1007 : analyze verilog file sources/rtl/seg_4.v
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+HDL-1007 : analyze verilog file sources/rtl/seg_4.v
+RUN-1002 : start command "elaborate -top seg4"
+HDL-1007 : elaborate module seg4 in sources/rtl/seg_4.v(14)
+HDL-1007 : elaborate module rst_n in sources/rtl/rst.v(9)
+HDL-1200 : Current top model is seg4
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc sources/sdc/seg_pin.adc"
+RUN-1002 : start command "set_pin_assignment clk_24m  LOCATION = K14; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_bit[3]  LOCATION = F3; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_bit[2]  LOCATION = C2; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_bit[1]  LOCATION = C3; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_bit[0]  LOCATION = B1; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[7]  LOCATION = A2; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[6]  LOCATION = B2; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[5]  LOCATION = D3; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[4]  LOCATION = F5; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[3]  LOCATION = E4; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[2]  LOCATION = F4; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[1]  LOCATION = B3; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[0]  LOCATION = E3; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "seg4"
+SYN-1012 : SanityCheck: Model "rst_n"
+SYN-1011 : Flatten model seg4
+SYN-1011 : Flatten model rst_n
+SYN-1016 : Merged 2 instances.
+SYN-1014 : Optimize round 1
+SYN-1032 : 259/0 useful/useless nets, 202/0 useful/useless insts
+SYN-1019 : Optimized 1 mux instances.
+SYN-1020 : Optimized 5 distributor mux.
+SYN-1016 : Merged 2 instances.
+SYN-1015 : Optimize round 1, 36 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 239/30 useful/useless nets, 182/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "report_area -file seg_4_rtl.area"
+RUN-1001 : standard
+***Report Model: seg4***
+
+IO Statistics
+#IO                    13
+  #input                1
+  #output              12
+  #inout                0
+
+Gate Statistics
+#Basic gates           93
+  #and                 11
+  #nand                 0
+  #or                   0
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                  5
+  #bufif1               0
+  #MX21                 1
+  #FADD                 0
+  #DFF                 76
+  #LATCH                0
+#MACRO_ADD             12
+#MACRO_EQ               6
+#MACRO_MUX             69
+
+RUN-1001 : 
+Report Hierarchy Area:
++-----------------------------------------+
+|Instance |Module |gates  |seq    |macros |
++-----------------------------------------+
+|top      |seg4   |17     |76     |18     |
++-----------------------------------------+
+
+RUN-1002 : start command "export_db seg_4_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "optimize_gate -packarea seg_4_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+SYN-2001 : Map 13 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 260/1 useful/useless nets, 204/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 341/0 useful/useless nets, 285/0 useful/useless insts
+SYN-1016 : Merged 2 instances.
+SYN-2501 : Optimize round 1, 69 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 339/0 useful/useless nets, 283/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 12 macro adder
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-2501 : Inferred 6 ROM instances
+SYN-1032 : 471/0 useful/useless nets, 415/0 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 100 (2.78), #lev = 4 (1.93)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 100 (2.78), #lev = 4 (1.93)
+SYN-2581 : Mapping with K=4, #lut = 100 (2.78), #lev = 4 (1.93)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 217 instances into 100 LUTs, name keeping = 78%.
+SYN-1001 : Packing model "seg4" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 347/0 useful/useless nets, 291/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 72 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 2 carry chain into lslice
+SYN-4007 : Packing 52 adder to BLE ...
+SYN-4008 : Packed 52 adder and 4 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 106 LUT to BLE ...
+SYN-4008 : Packed 106 LUT and 64 SEQ to BLE.
+SYN-4003 : Packing 4 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (4 nodes)...
+SYN-4004 : #1: Packed 4 SEQ (29 nodes)...
+SYN-4005 : Packed 4 SEQ with LUT/SLICE
+SYN-4006 : 38 single LUT's are left
+SYN-4006 : 4 single SEQ's are left
+SYN-4011 : Packing model "seg4" (AL_USER_NORMAL) with 106/163 primitive instances ...
+RUN-1002 : start command "report_area -file seg_4_gate.area"
+RUN-1001 : standard
+***Report Model: seg4***
+
+IO Statistics
+#IO                    13
+  #input                1
+  #output              12
+  #inout                0
+
+Utilization Statistics
+#lut                  188   out of  19600    0.96%
+#reg                   72   out of  19600    0.37%
+#le                   188
+  #lut only           116   out of    188   61.70%
+  #reg only             0   out of    188    0.00%
+  #lut&reg             72   out of    188   38.30%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   13   out of    188    6.91%
+  #ireg                 0
+  #oreg                 4
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++--------------------------------------+
+|Instance |Module |le    |lut   |seq   |
++--------------------------------------+
+|top      |seg4   |188   |188   |72    |
++--------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model seg4
+RUN-1002 : start command "export_db seg_4_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+PHY-3001 : Placer runs in 6 thread(s).
+SYN-4024 : Net "clk_24m_pad" drive clk pins.
+SYN-4025 : Tag rtl::Net clk_24m_pad as clock net
+SYN-4026 : Tagged 1 rtl::Net as clock net
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 110 instances
+RUN-1001 : 47 mslices, 47 lslices, 13 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 224 nets
+RUN-1001 : 137 nets have 2 pins
+RUN-1001 : 65 nets have [3 - 5] pins
+RUN-1001 : 14 nets have [6 - 10] pins
+RUN-1001 : 3 nets have [11 - 20] pins
+RUN-1001 : 4 nets have [21 - 99] pins
+RUN-1001 : 1 nets have 100+ pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 108 instances, 94 slices, 8 macros(41 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model seg4.
+TMR-2506 : Build timing graph completely. Port num: 3, tpin num: 779, tnet num: 222, tinst num: 108, tnode num: 961, tedge num: 1314.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 33 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 222 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 96 clock pins, and constraint 182 relative nodes.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.018746s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (83.3%)
+
+PHY-3001 : Global placement ...
+PHY-3001 : Initial: Len = 56067.6
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.994245
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(50): len = 37262.5, overlap = 0
+PHY-3002 : Step(51): len = 24033.1, overlap = 0
+PHY-3002 : Step(52): len = 20109.7, overlap = 0
+PHY-3002 : Step(53): len = 17802.6, overlap = 0
+PHY-3002 : Step(54): len = 15840.8, overlap = 0
+PHY-3002 : Step(55): len = 14143, overlap = 0
+PHY-3002 : Step(56): len = 12581.4, overlap = 0
+PHY-3002 : Step(57): len = 11392.4, overlap = 0
+PHY-3002 : Step(58): len = 10481.1, overlap = 0
+PHY-3002 : Step(59): len = 9530.1, overlap = 0
+PHY-3002 : Step(60): len = 9014.2, overlap = 0
+PHY-3002 : Step(61): len = 8335.4, overlap = 0
+PHY-3002 : Step(62): len = 8009.9, overlap = 0
+PHY-3002 : Step(63): len = 7712.8, overlap = 0
+PHY-3002 : Step(64): len = 7432.5, overlap = 0
+PHY-3002 : Step(65): len = 7239.5, overlap = 0
+PHY-3002 : Step(66): len = 6992.7, overlap = 0
+PHY-3002 : Step(67): len = 6858.2, overlap = 0
+PHY-3002 : Step(68): len = 6737.9, overlap = 0
+PHY-3002 : Step(69): len = 6536, overlap = 0
+PHY-3002 : Step(70): len = 6088.7, overlap = 0
+PHY-3002 : Step(71): len = 5818.2, overlap = 0
+PHY-3002 : Step(72): len = 5513.7, overlap = 0
+PHY-3002 : Step(73): len = 5459.5, overlap = 0
+PHY-3002 : Step(74): len = 5126.6, overlap = 0
+PHY-3002 : Step(75): len = 4907.9, overlap = 0
+PHY-3002 : Step(76): len = 4860.2, overlap = 0
+PHY-3002 : Step(77): len = 4761.4, overlap = 0
+PHY-3002 : Step(78): len = 4761.4, overlap = 0
+PHY-3002 : Step(79): len = 4733.7, overlap = 0
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.003566s wall, 0.015625s user + 0.015625s system = 0.031250s CPU (876.4%)
+
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.994245
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(80): len = 4706.6, overlap = 3
+PHY-3002 : Step(81): len = 4707.8, overlap = 3.25
+PHY-3002 : Step(82): len = 4707.8, overlap = 3.25
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.994245
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 1.88266e-05
+PHY-3002 : Step(83): len = 4698.6, overlap = 5.25
+PHY-3002 : Step(84): len = 4732.3, overlap = 5.25
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 3.76532e-05
+PHY-3002 : Step(85): len = 4759.9, overlap = 5.5
+PHY-3002 : Step(86): len = 4806.4, overlap = 5.25
+PHY-3002 : Step(87): len = 4983, overlap = 1.75
+PHY-3002 : Step(88): len = 5146.4, overlap = 1.75
+PHY-3002 : Step(89): len = 5181.7, overlap = 1.5
+PHY-3002 : Step(90): len = 5193.4, overlap = 2.5
+PHY-3002 : Step(91): len = 5064.8, overlap = 1.25
+PHY-3002 : Step(92): len = 5046, overlap = 1
+PHY-3002 : Step(93): len = 4962.9, overlap = 1
+PHY-3002 : Step(94): len = 4936.4, overlap = 1
+PHY-3002 : Step(95): len = 4917.5, overlap = 1.25
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 7.53064e-05
+PHY-3002 : Step(96): len = 4872.4, overlap = 1
+PHY-3002 : Step(97): len = 4879.3, overlap = 0.75
+PHY-3001 : :::3::: Try harder cell spreading with beta_ = 0.000150613
+PHY-3002 : Step(98): len = 4922.4, overlap = 0.5
+PHY-3002 : Step(99): len = 4940.8, overlap = 0.5
+PHY-3002 : Step(100): len = 4894.4, overlap = 0.5
+PHY-3002 : Step(101): len = 4870.3, overlap = 1.25
+PHY-3002 : Step(102): len = 4864.5, overlap = 1.25
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.021575s wall, 0.015625s user + 0.015625s system = 0.031250s CPU (144.8%)
+
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.994245
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(103): len = 6200.4, overlap = 0.25
+PHY-3002 : Step(104): len = 5621.5, overlap = 2
+PHY-3002 : Step(105): len = 5317.6, overlap = 3.25
+PHY-3002 : Step(106): len = 5192.6, overlap = 3.75
+PHY-3002 : Step(107): len = 5182.5, overlap = 3.75
+PHY-3002 : Step(108): len = 5135.7, overlap = 3.5
+PHY-3002 : Step(109): len = 5131.4, overlap = 3.5
+PHY-3002 : Step(110): len = 5132.7, overlap = 3
+PHY-3002 : Step(111): len = 5101.7, overlap = 3
+PHY-3002 : Step(112): len = 5101.7, overlap = 3
+PHY-3002 : Step(113): len = 5091, overlap = 3.25
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.005485s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Legalized: Len = 6095.6, Over = 0
+PHY-3001 : Final: Len = 6095.6, Over = 0
+PHY-3001 : Improving timing with driver duplication.
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 8472, over cnt = 3(0%), over = 3, worst = 1
+PHY-1002 : len = 8488, over cnt = 1(0%), over = 1, worst = 1
+PHY-1002 : len = 8504, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.013004s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (120.2%)
+
+RUN-1003 : finish command "place" in  1.208652s wall, 1.671875s user + 0.718750s system = 2.390625s CPU (197.8%)
+
+RUN-1004 : used memory is 264 MB, reserved memory is 255 MB, peak memory is 692 MB
+RUN-1002 : start command "route"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 110 to 90
+PHY-1001 : Pin misalignment score is improved from 90 to 87
+PHY-1001 : Pin misalignment score is improved from 87 to 87
+PHY-1001 : Route runs in 6 thread(s)
+RUN-1001 : There are total 110 instances
+RUN-1001 : 47 mslices, 47 lslices, 13 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 224 nets
+RUN-1001 : 137 nets have 2 pins
+RUN-1001 : 65 nets have [3 - 5] pins
+RUN-1001 : 14 nets have [6 - 10] pins
+RUN-1001 : 3 nets have [11 - 20] pins
+RUN-1001 : 4 nets have [21 - 99] pins
+RUN-1001 : 1 nets have 100+ pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 8472, over cnt = 3(0%), over = 3, worst = 1
+PHY-1002 : len = 8488, over cnt = 1(0%), over = 1, worst = 1
+PHY-1002 : len = 8504, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.013471s wall, 0.000000s user + 0.015625s system = 0.015625s CPU (116.0%)
+
+PHY-1001 : End global routing;  0.080482s wall, 0.078125s user + 0.015625s system = 0.093750s CPU (116.5%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2344, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.004476s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2344, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000012s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 30% nets.
+PHY-1001 : Routed 38% nets.
+PHY-1001 : Routed 50% nets.
+PHY-1001 : Routed 60% nets.
+PHY-1001 : Routed 78% nets.
+PHY-1002 : len = 14504, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : End Routed; 0.191051s wall, 0.343750s user + 0.031250s system = 0.375000s CPU (196.3%)
+
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1002 : len = 14520, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 14520
+PHY-1001 : End DR Iter 1; 0.007556s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (206.8%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  2.445521s wall, 2.250000s user + 0.375000s system = 2.625000s CPU (107.3%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  2.617319s wall, 2.453125s user + 0.390625s system = 2.843750s CPU (108.7%)
+
+RUN-1004 : used memory is 270 MB, reserved memory is 267 MB, peak memory is 697 MB
+RUN-1002 : start command "report_area -io_info -file seg_4_phy.area"
+RUN-1001 : standard
+***Report Model: seg4***
+
+IO Statistics
+#IO                    13
+  #input                1
+  #output              12
+  #inout                0
+
+Utilization Statistics
+#lut                  188   out of  19600    0.96%
+#reg                   72   out of  19600    0.37%
+#le                   188
+  #lut only           116   out of    188   61.70%
+  #reg only             0   out of    188    0.00%
+  #lut&reg             72   out of    188   38.30%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   13   out of    188    6.91%
+  #ireg                 0
+  #oreg                 4
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db seg_4_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "bitgen -bit seg_4.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 6 threads.
+BIT-1002 : Init instances completely, inst num: 110
+BIT-1002 : Init pips with 6 threads.
+BIT-1002 : Init pips completely, net num: 224, pip num: 1506
+BIT-1003 : Multithreading accelaration with 6 threads.
+BIT-1003 : Generate bitstream completely, there are 192 valid insts, and 5072 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file seg_4.bit.
+RUN-1002 : start command "download -bit seg_4.bit -mode jtag -spd 6 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit seg_4.bit"
+PRG-3000 : BIT2VEC::JtagBitstream: completed! line_num = 1354, frame_num = 1259
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit seg_4.bit" in  1.435598s wall, 1.406250s user + 0.031250s system = 1.437500s CPU (100.1%)
+
+RUN-1004 : used memory is 378 MB, reserved memory is 372 MB, peak memory is 697 MB
+RUN-1002 : start command "program -cable 0 -spd 6 -p"
+RUN-1003 : finish command "program -cable 0 -spd 6 -p" in  6.607830s wall, 0.343750s user + 0.093750s system = 0.437500s CPU (6.6%)
+
+RUN-1004 : used memory is 407 MB, reserved memory is 403 MB, peak memory is 697 MB
+RUN-1003 : finish command "download -bit seg_4.bit -mode jtag -spd 6 -sec 64 -cable 0" in  8.574466s wall, 1.859375s user + 0.140625s system = 2.000000s CPU (23.3%)
+
+RUN-1004 : used memory is 266 MB, reserved memory is 256 MB, peak memory is 697 MB
+GUI-1001 : Download success!
+GUI-8003 ERROR: seg_4.v is missing!
+GUI-8003 ERROR: rst.v is missing!
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+HDL-1007 : analyze verilog file sources/rtl/seg_4.v
+HDL-1007 : analyze verilog file sources/rtl/rst.v
+HDL-1007 : analyze verilog file sources/rtl/seg_4.v
+RUN-1002 : start command "elaborate -top seg4"
+HDL-1007 : elaborate module seg4 in sources/rtl/seg_4.v(14)
+HDL-1007 : elaborate module rst_n in sources/rtl/rst.v(9)
+HDL-1200 : Current top model is seg4
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc sources/sdc/seg_pin.adc"
+RUN-1002 : start command "set_pin_assignment clk_24m  LOCATION = K14; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_bit[3]  LOCATION = F3; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_bit[2]  LOCATION = C2; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_bit[1]  LOCATION = C3; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_bit[0]  LOCATION = B1; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[7]  LOCATION = A2; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[6]  LOCATION = B2; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[5]  LOCATION = D3; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[4]  LOCATION = F5; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[3]  LOCATION = E4; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[2]  LOCATION = F4; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[1]  LOCATION = B3; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment sm_seg[0]  LOCATION = E3; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "seg4"
+SYN-1012 : SanityCheck: Model "rst_n"
+SYN-1011 : Flatten model seg4
+SYN-1011 : Flatten model rst_n
+SYN-1016 : Merged 2 instances.
+SYN-1014 : Optimize round 1
+SYN-1032 : 251/0 useful/useless nets, 194/0 useful/useless insts
+SYN-1019 : Optimized 1 mux instances.
+SYN-1020 : Optimized 5 distributor mux.
+SYN-1016 : Merged 2 instances.
+SYN-1015 : Optimize round 1, 32 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 235/26 useful/useless nets, 178/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "report_area -file seg_4_rtl.area"
+RUN-1001 : standard
+***Report Model: seg4***
+
+IO Statistics
+#IO                    13
+  #input                1
+  #output              12
+  #inout                0
+
+Gate Statistics
+#Basic gates           89
+  #and                 11
+  #nand                 0
+  #or                   0
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                  5
+  #bufif1               0
+  #MX21                 1
+  #FADD                 0
+  #DFF                 72
+  #LATCH                0
+#MACRO_ADD             12
+#MACRO_EQ               6
+#MACRO_MUX             69
+
+RUN-1001 : 
+Report Hierarchy Area:
++-----------------------------------------+
+|Instance |Module |gates  |seq    |macros |
++-----------------------------------------+
+|top      |seg4   |17     |72     |18     |
++-----------------------------------------+
+
+RUN-1002 : start command "export_db seg_4_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "optimize_gate -packarea seg_4_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+SYN-2001 : Map 13 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 256/1 useful/useless nets, 200/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 337/0 useful/useless nets, 281/0 useful/useless insts
+SYN-1016 : Merged 2 instances.
+SYN-2501 : Optimize round 1, 69 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 335/0 useful/useless nets, 279/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 12 macro adder
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-2501 : Inferred 6 ROM instances
+SYN-1032 : 467/0 useful/useless nets, 411/0 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 100 (2.78), #lev = 4 (1.93)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 100 (2.78), #lev = 4 (1.93)
+SYN-2581 : Mapping with K=4, #lut = 100 (2.78), #lev = 4 (1.93)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 217 instances into 100 LUTs, name keeping = 78%.
+SYN-1001 : Packing model "seg4" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 343/0 useful/useless nets, 287/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 68 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 2 carry chain into lslice
+SYN-4007 : Packing 52 adder to BLE ...
+SYN-4008 : Packed 52 adder and 4 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 106 LUT to BLE ...
+SYN-4008 : Packed 106 LUT and 64 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 42 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "seg4" (AL_USER_NORMAL) with 106/163 primitive instances ...
+RUN-1002 : start command "report_area -file seg_4_gate.area"
+RUN-1001 : standard
+***Report Model: seg4***
+
+IO Statistics
+#IO                    13
+  #input                1
+  #output              12
+  #inout                0
+
+Utilization Statistics
+#lut                  188   out of  19600    0.96%
+#reg                   68   out of  19600    0.35%
+#le                   188
+  #lut only           120   out of    188   63.83%
+  #reg only             0   out of    188    0.00%
+  #lut&reg             68   out of    188   36.17%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   13   out of    188    6.91%
+  #ireg                 0
+  #oreg                 4
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++--------------------------------------+
+|Instance |Module |le    |lut   |seq   |
++--------------------------------------+
+|top      |seg4   |188   |188   |68    |
++--------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model seg4
+RUN-1002 : start command "export_db seg_4_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+PHY-3001 : Placer runs in 6 thread(s).
+SYN-4024 : Net "clk_24m_pad" drive clk pins.
+SYN-4025 : Tag rtl::Net clk_24m_pad as clock net
+SYN-4026 : Tagged 1 rtl::Net as clock net
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 110 instances
+RUN-1001 : 47 mslices, 47 lslices, 13 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 220 nets
+RUN-1001 : 137 nets have 2 pins
+RUN-1001 : 62 nets have [3 - 5] pins
+RUN-1001 : 13 nets have [6 - 10] pins
+RUN-1001 : 3 nets have [11 - 20] pins
+RUN-1001 : 4 nets have [21 - 99] pins
+RUN-1001 : 1 nets have 100+ pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 108 instances, 94 slices, 8 macros(41 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model seg4.
+TMR-2506 : Build timing graph completely. Port num: 3, tpin num: 762, tnet num: 218, tinst num: 108, tnode num: 931, tedge num: 1287.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 33 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 218 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 90 clock pins, and constraint 169 relative nodes.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.018496s wall, 0.046875s user + 0.000000s system = 0.046875s CPU (253.4%)
+
+PHY-3001 : Global placement ...
+PHY-3001 : Initial: Len = 58474.8
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.994245
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(114): len = 46765, overlap = 0
+PHY-3002 : Step(115): len = 38087.8, overlap = 0
+PHY-3002 : Step(116): len = 32647.6, overlap = 0
+PHY-3002 : Step(117): len = 27434.3, overlap = 0
+PHY-3002 : Step(118): len = 23910.8, overlap = 0
+PHY-3002 : Step(119): len = 21635.5, overlap = 0
+PHY-3002 : Step(120): len = 19766.1, overlap = 0
+PHY-3002 : Step(121): len = 17764.6, overlap = 0
+PHY-3002 : Step(122): len = 15788.1, overlap = 0
+PHY-3002 : Step(123): len = 13732.3, overlap = 0
+PHY-3002 : Step(124): len = 12618.6, overlap = 0
+PHY-3002 : Step(125): len = 11233.4, overlap = 0
+PHY-3002 : Step(126): len = 9776.6, overlap = 0
+PHY-3002 : Step(127): len = 9314.5, overlap = 0
+PHY-3002 : Step(128): len = 8365.1, overlap = 0
+PHY-3002 : Step(129): len = 8144, overlap = 0
+PHY-3002 : Step(130): len = 7654.5, overlap = 0
+PHY-3002 : Step(131): len = 7338.6, overlap = 0
+PHY-3002 : Step(132): len = 6978.3, overlap = 0
+PHY-3002 : Step(133): len = 6472.8, overlap = 0
+PHY-3002 : Step(134): len = 6353, overlap = 0
+PHY-3002 : Step(135): len = 6114.9, overlap = 0
+PHY-3002 : Step(136): len = 6078, overlap = 0
+PHY-3002 : Step(137): len = 5969.7, overlap = 0
+PHY-3002 : Step(138): len = 5928.4, overlap = 0
+PHY-3002 : Step(139): len = 5739.5, overlap = 0
+PHY-3002 : Step(140): len = 5615.7, overlap = 0
+PHY-3002 : Step(141): len = 5549, overlap = 0
+PHY-3002 : Step(142): len = 5377.4, overlap = 0
+PHY-3002 : Step(143): len = 5323.3, overlap = 0
+PHY-3002 : Step(144): len = 5142.7, overlap = 0
+PHY-3002 : Step(145): len = 5094.5, overlap = 0
+PHY-3002 : Step(146): len = 5060.9, overlap = 0
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.003516s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.994245
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(147): len = 5018.3, overlap = 0.25
+PHY-3002 : Step(148): len = 5008.6, overlap = 0.25
+PHY-3002 : Step(149): len = 5001.5, overlap = 0.25
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.994245
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 8.51042e-05
+PHY-3002 : Step(150): len = 4984.5, overlap = 2.75
+PHY-3002 : Step(151): len = 4999.8, overlap = 2.75
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 0.000170208
+PHY-3002 : Step(152): len = 4996.3, overlap = 3
+PHY-3002 : Step(153): len = 5025.5, overlap = 3
+PHY-3002 : Step(154): len = 5087, overlap = 2.75
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 0.000340417
+PHY-3002 : Step(155): len = 5118.1, overlap = 2.75
+PHY-3002 : Step(156): len = 5129.2, overlap = 2.75
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.022208s wall, 0.046875s user + 0.000000s system = 0.046875s CPU (211.1%)
+
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 1%, beta_incr = 0.994245
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(157): len = 6337.1, overlap = 1.25
+PHY-3002 : Step(158): len = 5833.8, overlap = 3
+PHY-3002 : Step(159): len = 5567.8, overlap = 3.5
+PHY-3002 : Step(160): len = 5437.3, overlap = 5
+PHY-3002 : Step(161): len = 5395.5, overlap = 5
+PHY-3002 : Step(162): len = 5336.9, overlap = 5
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 0.000177152
+PHY-3002 : Step(163): len = 5255.5, overlap = 5
+PHY-3002 : Step(164): len = 5248.9, overlap = 4.5
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 0.000354304
+PHY-3002 : Step(165): len = 5227.4, overlap = 4.5
+PHY-3002 : Step(166): len = 5243, overlap = 4.5
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.005810s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (268.9%)
+
+PHY-3001 : Legalized: Len = 6414.8, Over = 0
+PHY-3001 : Final: Len = 6414.8, Over = 0
+PHY-3001 : Improving timing with driver duplication.
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 8896, over cnt = 3(0%), over = 5, worst = 2
+PHY-1002 : len = 8960, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.012503s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RUN-1003 : finish command "place" in  1.027701s wall, 1.484375s user + 0.609375s system = 2.093750s CPU (203.7%)
+
+RUN-1004 : used memory is 283 MB, reserved memory is 278 MB, peak memory is 697 MB
+RUN-1002 : start command "route"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.12906/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 101 to 92
+PHY-1001 : Pin misalignment score is improved from 92 to 92
+PHY-1001 : Route runs in 6 thread(s)
+RUN-1001 : There are total 110 instances
+RUN-1001 : 47 mslices, 47 lslices, 13 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 220 nets
+RUN-1001 : 137 nets have 2 pins
+RUN-1001 : 62 nets have [3 - 5] pins
+RUN-1001 : 13 nets have [6 - 10] pins
+RUN-1001 : 3 nets have [11 - 20] pins
+RUN-1001 : 4 nets have [21 - 99] pins
+RUN-1001 : 1 nets have 100+ pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 6 thread ...
+PHY-1002 : len = 8896, over cnt = 3(0%), over = 5, worst = 2
+PHY-1002 : len = 8960, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.011860s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (263.5%)
+
+PHY-1001 : End global routing;  0.076061s wall, 0.078125s user + 0.000000s system = 0.078125s CPU (102.7%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2848, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.005013s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (311.7%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 2848, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000010s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 28% nets.
+PHY-1001 : Routed 36% nets.
+PHY-1001 : Routed 44% nets.
+PHY-1001 : Routed 57% nets.
+PHY-1001 : Routed 78% nets.
+PHY-1002 : len = 16032, over cnt = 2(0%), over = 2, worst = 1
+PHY-1001 : End Routed; 0.198756s wall, 0.406250s user + 0.031250s system = 0.437500s CPU (220.1%)
+
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1002 : len = 16032, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 16032
+PHY-1001 : End DR Iter 1; 0.006481s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_24m_pad will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  2.275633s wall, 2.343750s user + 0.187500s system = 2.531250s CPU (111.2%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  2.440742s wall, 2.515625s user + 0.187500s system = 2.703125s CPU (110.8%)
+
+RUN-1004 : used memory is 286 MB, reserved memory is 275 MB, peak memory is 710 MB
+RUN-1002 : start command "report_area -io_info -file seg_4_phy.area"
+RUN-1001 : standard
+***Report Model: seg4***
+
+IO Statistics
+#IO                    13
+  #input                1
+  #output              12
+  #inout                0
+
+Utilization Statistics
+#lut                  188   out of  19600    0.96%
+#reg                   68   out of  19600    0.35%
+#le                   188
+  #lut only           120   out of    188   63.83%
+  #reg only             0   out of    188    0.00%
+  #lut&reg             68   out of    188   36.17%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   13   out of    188    6.91%
+  #ireg                 0
+  #oreg                 4
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db seg_4_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "bitgen -bit seg_4.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 6 threads.
+BIT-1002 : Init instances completely, inst num: 110
+BIT-1002 : Init pips with 6 threads.
+BIT-1002 : Init pips completely, net num: 220, pip num: 1500
+BIT-1003 : Multithreading accelaration with 6 threads.
+BIT-1003 : Generate bitstream completely, there are 200 valid insts, and 5033 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file seg_4.bit.
+RUN-1002 : start command "download -bit seg_4.bit -mode jtag -spd 6 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit seg_4.bit"
+PRG-3000 : BIT2VEC::JtagBitstream: completed! line_num = 1354, frame_num = 1259
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit seg_4.bit" in  1.443390s wall, 1.390625s user + 0.078125s system = 1.468750s CPU (101.8%)
+
+RUN-1004 : used memory is 396 MB, reserved memory is 391 MB, peak memory is 710 MB
+RUN-1002 : start command "program -cable 0 -spd 6 -p"
+RUN-1003 : finish command "program -cable 0 -spd 6 -p" in  6.708714s wall, 0.453125s user + 0.187500s system = 0.640625s CPU (9.5%)
+
+RUN-1004 : used memory is 425 MB, reserved memory is 421 MB, peak memory is 710 MB
+RUN-1003 : finish command "download -bit seg_4.bit -mode jtag -spd 6 -sec 64 -cable 0" in  8.684673s wall, 1.953125s user + 0.265625s system = 2.218750s CPU (25.5%)
+
+RUN-1004 : used memory is 290 MB, reserved memory is 281 MB, peak memory is 710 MB
+GUI-1001 : Download success!

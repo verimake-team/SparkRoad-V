@@ -1,0 +1,47 @@
+simple
+IO Statistics
+#IO                    16
+  #input                2
+  #output              14
+  #inout                0
+
+Utilization Statistics
+#lut                  577   out of  19600    2.94%
+#reg                  295   out of  19600    1.51%
+#le                   621
+  #lut only           326   out of    621   52.50%
+  #reg only            44   out of    621    7.09%
+  #lut&reg            251   out of    621   40.42%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   71   out of    243   29.22%
+  #ireg                24
+  #oreg                23
+  #treg                 0
+#pll                    1   out of      4   25.00%
+#clknet                 3   out of     16   18.75%
+  #gclk                 1
+
+
+Detailed IO Report
+
+Name               Direction     Location     IOStandard     DriveStrength     
+CLKIN              INPUT         K14          LVCMOS25       N/A               
+rst_n              INPUT         H14          LVCMOS25       N/A               
+sm_bit[3]          OUTPUT        F3           LVCMOS33       8                 
+sm_bit[2]          OUTPUT        C2           LVCMOS33       8                 
+sm_bit[1]          OUTPUT        C3           LVCMOS33       8                 
+sm_bit[0]          OUTPUT        B1           LVCMOS33       8                 
+sm_seg[7]          OUTPUT        A2           LVCMOS33       8                 
+sm_seg[6]          OUTPUT        B2           LVCMOS33       8                 
+sm_seg[5]          OUTPUT        D3           LVCMOS33       8                 
+sm_seg[4]          OUTPUT        F5           LVCMOS33       8                 
+sm_seg[3]          OUTPUT        E4           LVCMOS33       8                 
+sm_seg[2]          OUTPUT        F4           LVCMOS33       8                 
+sm_seg[1]          OUTPUT        B3           LVCMOS33       8                 
+sm_seg[0]          OUTPUT        E3           LVCMOS33       8                 
+test_error_led     OUTPUT        M3           LVCMOS33       8                 
+test_io            OUTPUT        M4           LVCMOS33       8                 

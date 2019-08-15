@@ -1,0 +1,8 @@
+balance; rewrite -l; rewrite -lz; balance; rewrite -lz; balance
+balance; rewrite -l; refactor -l; balance; rewrite -l; rewrite -lz; balance; refactor -lz; rewrite -lz; balance
+cost_lut -K 6; if -K 6 -a -C 12
+fraig_store; balance; rewrite -l; rewrite -lz; balance; rewrite -lz; balance; fraig_store; balance; rewrite -l; refactor -l; balance; rewrite -l; rewrite -lz; balance; refactor -lz; rewrite -lz; balance; fraig_store; fraig_restore
+unset progressbar
+cost_lut -K 6; if -C 12 -K 6 -a
+mfs -M 5000 -W 4 -e
+lutpack

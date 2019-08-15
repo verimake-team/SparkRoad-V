@@ -1,0 +1,19 @@
+standard
+***Report Model: rgb_led***
+
+IO Statistics
+#IO                     4
+  #input                1
+  #output               3
+  #inout                0
+#MACRO_ADD              2
+#MACRO_EQ               2
+#MACRO_MUX             25
+
+Report Hierarchy Area:
++--------------------------------------------+
+|Instance   |Module  |gates  |seq    |macros |
++--------------------------------------------+
+|top        |rgb_led |0      |33     |4      |
+|  ux_rst_n |rst_n   |0      |5      |2      |
++--------------------------------------------+

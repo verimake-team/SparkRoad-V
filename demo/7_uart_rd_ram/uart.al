@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+    <Project_Created_Time>2019-07-11 08:37:02</Project_Created_Time>
+    <TD_Version>4.6.12906</TD_Version>
+    <UCode>10111010</UCode>
+    <Name>uart</Name>
+    <HardWare>
+        <Family>EG4</Family>
+        <Device>EG4S20BG256</Device>
+    </HardWare>
+    <Source_Files>
+        <Verilog>
+            <File>source/my_uart_rx.v</File>
+            <File>source/my_uart_tx.v</File>
+            <File>source/speed_setting.v</File>
+            <File>source/uart_top.v</File>
+            <File>al_ip/pll_test.v</File>
+            <File>al_ip/Double_RAM_uut.v</File>
+            <File>source/rtl/my_uart_rx.v</File>
+            <File>source/rtl/my_uart_tx.v</File>
+            <File>source/rtl/speed_setting.v</File>
+            <File>source/rtl/uart_top.v</File>
+            <File>source/rtl/ram_rw_control.v</File>
+        </Verilog>
+        <ADC_FILE>source/sdc/mini_EG4S20BG256.adc</ADC_FILE>
+        <SDC_FILE/>
+        <CWC_FILE/>
+    </Source_Files>
+    <TOP_MODULE>
+        <LABEL/>
+        <MODULE>uart_top</MODULE>
+        <CREATEINDEX>auto</CREATEINDEX>
+    </TOP_MODULE>
+    <Property>
+        <SimProperty>
+            <lib>E:/DEMO/EG4S20BG256_DEMO/uart_r_ram/uart/simulation</lib>
+        </SimProperty>
+        <RtlProperty>
+            <rtl_sim_model>on</rtl_sim_model>
+        </RtlProperty>
+    </Property>
+    <Project_Settings>
+        <Step_Last_Change>2019-08-08 17:24:51</Step_Last_Change>
+        <Current_Step>0</Current_Step>
+        <Step_Status>true</Step_Status>
+    </Project_Settings>
+</Project>
