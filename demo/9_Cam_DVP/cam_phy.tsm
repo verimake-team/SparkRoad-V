@@ -1,0 +1,573 @@
+eagle_s20
+13 591 959 477 145371 0 0
+28.982 0.293 test_camera eagle_s20 BG256 Detail 13 5
+clock: clk_24m
+13 0 0 0
+
+clock: u_pll/pll_inst.refclk
+24 0 0 0
+
+clock: u_pll/pll_inst.clkc[2]
+35 176 34 2
+Setup check
+45 3
+Endpoint: u_camera_init/reg4_b2|u_camera_init/reg4_b8
+45 243.776000 9 3
+Timing path: u_camera_init/add0/ucin_al_u4197.clk->u_camera_init/reg4_b2|u_camera_init/reg4_b8
+u_camera_init/add0/ucin_al_u4197.clk
+u_camera_init/reg4_b2|u_camera_init/reg4_b8
+47 243.776000 249.174000 5.398000 3 4
+u_camera_init/divider2[0] u_camera_init/add0/ucin_al_u4197.b[0]
+u_camera_init/add0/c3 u_camera_init/add0/u3_al_u4198.fci
+u_camera_init/add0/c7 u_camera_init/add0/u7_al_u4199.fci
+u_camera_init/n0[8] u_camera_init/reg4_b2|u_camera_init/reg4_b8.mi[0]
+
+Timing path: u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.clk->u_camera_init/reg4_b2|u_camera_init/reg4_b8
+u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.clk
+u_camera_init/reg4_b2|u_camera_init/reg4_b8
+79 244.010000 249.174000 5.164000 3 3
+u_camera_init/divider2[5] u_camera_init/add0/u3_al_u4198.a[1]
+u_camera_init/add0/c7 u_camera_init/add0/u7_al_u4199.fci
+u_camera_init/n0[8] u_camera_init/reg4_b2|u_camera_init/reg4_b8.mi[0]
+
+Timing path: u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6.clk->u_camera_init/reg4_b2|u_camera_init/reg4_b8
+u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6.clk
+u_camera_init/reg4_b2|u_camera_init/reg4_b8
+109 244.073000 249.174000 5.101000 3 3
+u_camera_init/divider2[3] u_camera_init/add0/u3_al_u4198.a[0]
+u_camera_init/add0/c7 u_camera_init/add0/u7_al_u4199.fci
+u_camera_init/n0[8] u_camera_init/reg4_b2|u_camera_init/reg4_b8.mi[0]
+
+
+Endpoint: u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6
+139 243.865000 7 3
+Timing path: u_camera_init/u_i2c_write/add0/ucin_al_u4206.clk->u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6
+u_camera_init/u_i2c_write/add0/ucin_al_u4206.clk
+u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6
+141 243.865000 249.067000 5.202000 3 3
+u_camera_init/u_i2c_write/divider2[0] u_camera_init/u_i2c_write/add0/ucin_al_u4206.b[0]
+u_camera_init/u_i2c_write/add0/c3 u_camera_init/u_i2c_write/add0/u3_al_u4207.fci
+u_camera_init/u_i2c_write/n1[6] u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6.mi[0]
+
+Timing path: u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.clk->u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6
+u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.clk
+u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6
+171 244.104000 249.067000 4.963000 2 2
+u_camera_init/u_i2c_write/divider2[4] u_camera_init/u_i2c_write/add0/u3_al_u4207.b[0]
+u_camera_init/u_i2c_write/n1[6] u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6.mi[0]
+
+Timing path: u_camera_init/reg4_b6|u_camera_init/u_i2c_write/reg0_b3.clk->u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6
+u_camera_init/reg4_b6|u_camera_init/u_i2c_write/reg0_b3.clk
+u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6
+199 244.269000 249.067000 4.798000 2 2
+u_camera_init/u_i2c_write/divider2[3] u_camera_init/u_i2c_write/add0/u3_al_u4207.a[0]
+u_camera_init/u_i2c_write/n1[6] u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6.mi[0]
+
+
+Endpoint: u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5
+227 243.928000 5 3
+Timing path: u_camera_init/add0/ucin_al_u4197.clk->u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5
+u_camera_init/add0/ucin_al_u4197.clk
+u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5
+229 243.928000 249.067000 5.139000 3 3
+u_camera_init/divider2[0] u_camera_init/add0/ucin_al_u4197.b[0]
+u_camera_init/add0/c3 u_camera_init/add0/u3_al_u4198.fci
+u_camera_init/n0[4] u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5.mi[1]
+
+Timing path: u_camera_init/reg4_b2|u_camera_init/reg4_b8.clk->u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5
+u_camera_init/reg4_b2|u_camera_init/reg4_b8.clk
+u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5
+259 244.417000 249.067000 4.650000 3 3
+u_camera_init/divider2[2] u_camera_init/add0/ucin_al_u4197.b[1]
+u_camera_init/add0/c3 u_camera_init/add0/u3_al_u4198.fci
+u_camera_init/n0[4] u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5.mi[1]
+
+Timing path: u_camera_init/add0/ucin_al_u4197.clk->u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5
+u_camera_init/add0/ucin_al_u4197.clk
+u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5
+289 244.459000 249.067000 4.608000 3 3
+u_camera_init/divider2[1] u_camera_init/add0/ucin_al_u4197.a[1]
+u_camera_init/add0/c3 u_camera_init/add0/u3_al_u4198.fci
+u_camera_init/n0[4] u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5.mi[1]
+
+
+
+Hold check
+319 3
+Endpoint: u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4
+321 1.357000 7 3
+Timing path: u_camera_init/reg4_b6|u_camera_init/u_i2c_write/reg0_b3.clk->u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4
+u_camera_init/reg4_b6|u_camera_init/u_i2c_write/reg0_b3.clk
+u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4
+323 1.357000 2.020000 3.377000 2 2
+u_camera_init/divider2[6] u_camera_init/add0/u3_al_u4198.b[1]
+u_camera_init/n0[5] u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.mi[1]
+
+Timing path: u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.clk->u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4
+u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.clk
+u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4
+351 1.618000 2.020000 3.638000 2 2
+u_camera_init/divider2[5] u_camera_init/add0/u3_al_u4198.a[1]
+u_camera_init/n0[5] u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.mi[1]
+
+Timing path: u_camera_init/add0/ucin_al_u4197.clk->u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4
+u_camera_init/add0/ucin_al_u4197.clk
+u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4
+379 1.683000 2.020000 3.703000 3 3
+u_camera_init/divider2[1] u_camera_init/add0/ucin_al_u4197.a[1]
+u_camera_init/add0/c3 u_camera_init/add0/u3_al_u4198.fci
+u_camera_init/n0[5] u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.mi[1]
+
+
+Endpoint: u_camera_init/add0/ucin_al_u4197
+409 1.379000 3 3
+Timing path: u_camera_init/add0/ucin_al_u4197.clk->u_camera_init/add0/ucin_al_u4197
+u_camera_init/add0/ucin_al_u4197.clk
+u_camera_init/add0/ucin_al_u4197
+411 1.379000 1.999000 3.378000 2 2
+u_camera_init/divider2[1] u_camera_init/add0/ucin_al_u4197.a[1]
+u_camera_init/n0[1] u_camera_init/add0/ucin_al_u4197.mi[1]
+
+Timing path: u_camera_init/reg4_b2|u_camera_init/reg4_b8.clk->u_camera_init/add0/ucin_al_u4197
+u_camera_init/reg4_b2|u_camera_init/reg4_b8.clk
+u_camera_init/add0/ucin_al_u4197
+439 1.490000 1.999000 3.489000 2 2
+u_camera_init/divider2[2] u_camera_init/add0/ucin_al_u4197.b[1]
+u_camera_init/n0[1] u_camera_init/add0/ucin_al_u4197.mi[1]
+
+Timing path: u_camera_init/add0/ucin_al_u4197.clk->u_camera_init/add0/ucin_al_u4197
+u_camera_init/add0/ucin_al_u4197.clk
+u_camera_init/add0/ucin_al_u4197
+467 2.170000 1.999000 4.169000 2 2
+u_camera_init/divider2[0] u_camera_init/add0/ucin_al_u4197.b[0]
+u_camera_init/n0[1] u_camera_init/add0/ucin_al_u4197.mi[1]
+
+
+Endpoint: u_camera_init/u_i2c_write/add0/ucin_al_u4206
+495 1.379000 3 3
+Timing path: u_camera_init/u_i2c_write/add0/ucin_al_u4206.clk->u_camera_init/u_i2c_write/add0/ucin_al_u4206
+u_camera_init/u_i2c_write/add0/ucin_al_u4206.clk
+u_camera_init/u_i2c_write/add0/ucin_al_u4206
+497 1.379000 1.999000 3.378000 2 2
+u_camera_init/u_i2c_write/divider2[1] u_camera_init/u_i2c_write/add0/ucin_al_u4206.a[1]
+u_camera_init/u_i2c_write/n1[1] u_camera_init/u_i2c_write/add0/ucin_al_u4206.mi[1]
+
+Timing path: u_camera_init/reg4_b7|u_camera_init/u_i2c_write/reg0_b2.clk->u_camera_init/u_i2c_write/add0/ucin_al_u4206
+u_camera_init/reg4_b7|u_camera_init/u_i2c_write/reg0_b2.clk
+u_camera_init/u_i2c_write/add0/ucin_al_u4206
+525 1.490000 1.999000 3.489000 2 2
+u_camera_init/u_i2c_write/divider2[2] u_camera_init/u_i2c_write/add0/ucin_al_u4206.b[1]
+u_camera_init/u_i2c_write/n1[1] u_camera_init/u_i2c_write/add0/ucin_al_u4206.mi[1]
+
+Timing path: u_camera_init/u_i2c_write/add0/ucin_al_u4206.clk->u_camera_init/u_i2c_write/add0/ucin_al_u4206
+u_camera_init/u_i2c_write/add0/ucin_al_u4206.clk
+u_camera_init/u_i2c_write/add0/ucin_al_u4206
+553 2.170000 1.999000 4.169000 2 2
+u_camera_init/u_i2c_write/divider2[0] u_camera_init/u_i2c_write/add0/ucin_al_u4206.b[0]
+u_camera_init/u_i2c_write/n1[1] u_camera_init/u_i2c_write/add0/ucin_al_u4206.mi[1]
+
+
+
+
+clock: u_pll/pll_inst.clkc[0]
+581 145195 443 3
+Setup check
+591 3
+Endpoint: u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220
+591 28.982000 993 3
+Timing path: u_vga_sync/reg0_b1|u_vga_sync/reg0_b8.clk->u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220
+u_vga_sync/reg0_b1|u_vga_sync/reg0_b8.clk
+u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220
+593 28.982000 41.087000 12.105000 6 8
+u_vga_sync/vsync_cnt[1] u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.b[0]
+u_vga_sync/sub4_u_vga_sync/sub5/c3 u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fci
+u_vga_sync/sub4_u_vga_sync/sub5/c7 u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci
+n5[10] u_vga_sync/mult0_.a[11]
+u_vga_sync/n32[5] u2/ucin_al_u4180.e[1]
+u2/c3 u2/u3_al_u4181.fci
+u2/c7 u2/u7_al_u4182.fci
+n3[8] u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220.a[0]
+
+Timing path: u_vga_sync/reg0_b4|u_vga_sync/reg0_b7.clk->u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220
+u_vga_sync/reg0_b4|u_vga_sync/reg0_b7.clk
+u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220
+633 28.998000 41.087000 12.089000 6 7
+u_vga_sync/vsync_cnt[4] u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.a[0]
+u_vga_sync/sub4_u_vga_sync/sub5/c7 u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci
+n5[10] u_vga_sync/mult0_.a[11]
+u_vga_sync/n32[5] u2/ucin_al_u4180.e[1]
+u2/c3 u2/u3_al_u4181.fci
+u2/c7 u2/u7_al_u4182.fci
+n3[8] u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220.a[0]
+
+Timing path: u_vga_sync/reg0_b10|u_vga_sync/reg0_b2.clk->u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220
+u_vga_sync/reg0_b10|u_vga_sync/reg0_b2.clk
+u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220
+671 29.053000 41.087000 12.034000 6 8
+u_vga_sync/vsync_cnt[2] u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.a[1]
+u_vga_sync/sub4_u_vga_sync/sub5/c3 u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fci
+u_vga_sync/sub4_u_vga_sync/sub5/c7 u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci
+n5[10] u_vga_sync/mult0_.a[11]
+u_vga_sync/n32[5] u2/ucin_al_u4180.e[1]
+u2/c3 u2/u3_al_u4181.fci
+u2/c7 u2/u7_al_u4182.fci
+n3[8] u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220.a[0]
+
+
+Endpoint: u_vga_sync/reg1_b10|u_vga_sync/reg1_b11
+711 29.134000 993 3
+Timing path: u_vga_sync/reg0_b1|u_vga_sync/reg0_b8.clk->u_vga_sync/reg1_b10|u_vga_sync/reg1_b11
+u_vga_sync/reg0_b1|u_vga_sync/reg0_b8.clk
+u_vga_sync/reg1_b10|u_vga_sync/reg1_b11
+713 29.134000 41.087000 11.953000 6 8
+u_vga_sync/vsync_cnt[1] u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.b[0]
+u_vga_sync/sub4_u_vga_sync/sub5/c3 u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fci
+u_vga_sync/sub4_u_vga_sync/sub5/c7 u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci
+n5[10] u_vga_sync/mult0_.a[11]
+u_vga_sync/n32[5] u2/ucin_al_u4180.e[1]
+u2/c3 u2/u3_al_u4181.fci
+u2/c7 u2/u7_al_u4182.fci
+n3[8] u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.a[0]
+
+Timing path: u_vga_sync/reg0_b4|u_vga_sync/reg0_b7.clk->u_vga_sync/reg1_b10|u_vga_sync/reg1_b11
+u_vga_sync/reg0_b4|u_vga_sync/reg0_b7.clk
+u_vga_sync/reg1_b10|u_vga_sync/reg1_b11
+753 29.150000 41.087000 11.937000 6 7
+u_vga_sync/vsync_cnt[4] u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.a[0]
+u_vga_sync/sub4_u_vga_sync/sub5/c7 u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci
+n5[10] u_vga_sync/mult0_.a[11]
+u_vga_sync/n32[5] u2/ucin_al_u4180.e[1]
+u2/c3 u2/u3_al_u4181.fci
+u2/c7 u2/u7_al_u4182.fci
+n3[8] u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.a[0]
+
+Timing path: u_vga_sync/reg0_b10|u_vga_sync/reg0_b2.clk->u_vga_sync/reg1_b10|u_vga_sync/reg1_b11
+u_vga_sync/reg0_b10|u_vga_sync/reg0_b2.clk
+u_vga_sync/reg1_b10|u_vga_sync/reg1_b11
+791 29.205000 41.087000 11.882000 6 8
+u_vga_sync/vsync_cnt[2] u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.a[1]
+u_vga_sync/sub4_u_vga_sync/sub5/c3 u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fci
+u_vga_sync/sub4_u_vga_sync/sub5/c7 u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci
+n5[10] u_vga_sync/mult0_.a[11]
+u_vga_sync/n32[5] u2/ucin_al_u4180.e[1]
+u2/c3 u2/u3_al_u4181.fci
+u2/c7 u2/u7_al_u4182.fci
+n3[8] u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.a[0]
+
+
+Endpoint: u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3
+831 29.198000 1337 3
+Timing path: u_vga_sync/reg0_b1|u_vga_sync/reg0_b8.clk->u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3
+u_vga_sync/reg0_b1|u_vga_sync/reg0_b8.clk
+u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3
+833 29.198000 41.087000 11.889000 6 9
+u_vga_sync/vsync_cnt[1] u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.b[0]
+u_vga_sync/sub4_u_vga_sync/sub5/c3 u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fci
+u_vga_sync/sub4_u_vga_sync/sub5/c7 u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci
+n5[10] u_vga_sync/mult0_.a[11]
+u_vga_sync/n32[5] u2/ucin_al_u4180.e[1]
+u2/c3 u2/u3_al_u4181.fci
+u2/c7 u2/u7_al_u4182.fci
+u2/c11 u2/u11_al_u4183.fci
+n3[12] u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3.e[1]
+
+Timing path: u_vga_sync/reg0_b4|u_vga_sync/reg0_b7.clk->u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3
+u_vga_sync/reg0_b4|u_vga_sync/reg0_b7.clk
+u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3
+875 29.214000 41.087000 11.873000 6 8
+u_vga_sync/vsync_cnt[4] u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.a[0]
+u_vga_sync/sub4_u_vga_sync/sub5/c7 u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci
+n5[10] u_vga_sync/mult0_.a[11]
+u_vga_sync/n32[5] u2/ucin_al_u4180.e[1]
+u2/c3 u2/u3_al_u4181.fci
+u2/c7 u2/u7_al_u4182.fci
+u2/c11 u2/u11_al_u4183.fci
+n3[12] u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3.e[1]
+
+Timing path: u_vga_sync/reg0_b10|u_vga_sync/reg0_b2.clk->u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3
+u_vga_sync/reg0_b10|u_vga_sync/reg0_b2.clk
+u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3
+915 29.269000 41.087000 11.818000 6 9
+u_vga_sync/vsync_cnt[2] u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.a[1]
+u_vga_sync/sub4_u_vga_sync/sub5/c3 u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fci
+u_vga_sync/sub4_u_vga_sync/sub5/c7 u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci
+n5[10] u_vga_sync/mult0_.a[11]
+u_vga_sync/n32[5] u2/ucin_al_u4180.e[1]
+u2/c3 u2/u3_al_u4181.fci
+u2/c7 u2/u7_al_u4182.fci
+u2/c11 u2/u11_al_u4183.fci
+n3[12] u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3.e[1]
+
+
+
+Hold check
+957 3
+Endpoint: u_img/inst_32800x16_sub_023552_000
+959 0.293000 258 3
+Timing path: u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.clk->u_img/inst_32800x16_sub_023552_000
+u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.clk
+u_img/inst_32800x16_sub_023552_000
+961 0.293000 2.162000 2.455000 1 1
+vga_rdaddr[10] u_img/inst_32800x16_sub_023552_000.csb[0]
+
+Timing path: _al_u3430|u_vga_sync/reg1_b4_placeOpt_3.clk->u_img/inst_32800x16_sub_023552_000
+_al_u3430|u_vga_sync/reg1_b4_placeOpt_3.clk
+u_img/inst_32800x16_sub_023552_000
+987 0.503000 2.162000 2.665000 1 1
+vga_rdaddr[4]_placeOpt_3 u_img/inst_32800x16_sub_023552_000.addrb[7]
+
+Timing path: u_vga_sync/reg2_b2|u_vga_sync/reg1_b2_placeOpt_3.clk->u_img/inst_32800x16_sub_023552_000
+u_vga_sync/reg2_b2|u_vga_sync/reg1_b2_placeOpt_3.clk
+u_img/inst_32800x16_sub_023552_000
+1013 0.507000 2.162000 2.669000 1 1
+vga_rdaddr[2]_placeOpt_3 u_img/inst_32800x16_sub_023552_000.addrb[5]
+
+
+Endpoint: u_img/inst_32800x16_sub_021504_000
+1039 0.324000 258 3
+Timing path: u_vga_sync/reg1_b3|u_vga_sync/reg1_b5_placeOpt_3_al_u4224.clk->u_img/inst_32800x16_sub_021504_000
+u_vga_sync/reg1_b3|u_vga_sync/reg1_b5_placeOpt_3_al_u4224.clk
+u_img/inst_32800x16_sub_021504_000
+1041 0.324000 2.162000 2.486000 1 1
+vga_rdaddr[5]_placeOpt_3 u_img/inst_32800x16_sub_021504_000.addrb[8]
+
+Timing path: u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.clk->u_img/inst_32800x16_sub_021504_000
+u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.clk
+u_img/inst_32800x16_sub_021504_000
+1067 0.355000 2.162000 2.517000 1 1
+vga_rdaddr[10] u_img/inst_32800x16_sub_021504_000.csb[0]
+
+Timing path: u_vga_sync/reg1_b12|u_vga_sync/reg1_b9_placeOpt_3.clk->u_img/inst_32800x16_sub_021504_000
+u_vga_sync/reg1_b12|u_vga_sync/reg1_b9_placeOpt_3.clk
+u_img/inst_32800x16_sub_021504_000
+1093 0.437000 2.162000 2.599000 1 1
+vga_rdaddr[9]_placeOpt_3 u_img/inst_32800x16_sub_021504_000.addrb[12]
+
+
+Endpoint: u_img/inst_32800x16_sub_016384_011
+1119 0.334000 258 3
+Timing path: u_vga_sync/reg1_b13|u_vga_sync/reg1_b8.clk->u_img/inst_32800x16_sub_016384_011
+u_vga_sync/reg1_b13|u_vga_sync/reg1_b8.clk
+u_img/inst_32800x16_sub_016384_011
+1121 0.334000 2.162000 2.496000 1 1
+vga_rdaddr[8] u_img/inst_32800x16_sub_016384_011.addrb[8]
+
+Timing path: u_vga_sync/reg1_b12|u_vga_sync/reg1_b9.clk->u_img/inst_32800x16_sub_016384_011
+u_vga_sync/reg1_b12|u_vga_sync/reg1_b9.clk
+u_img/inst_32800x16_sub_016384_011
+1147 0.492000 2.162000 2.654000 1 1
+vga_rdaddr[12] u_img/inst_32800x16_sub_016384_011.addrb[12]
+
+Timing path: u_vga_sync/reg1_b14|u_vga_sync/reg1_b7.clk->u_img/inst_32800x16_sub_016384_011
+u_vga_sync/reg1_b14|u_vga_sync/reg1_b7.clk
+u_img/inst_32800x16_sub_016384_011
+1173 0.495000 2.162000 2.657000 1 1
+vga_rdaddr[7] u_img/inst_32800x16_sub_016384_011.addrb[7]
+
+
+
+Period check
+1199 61
+Endpoint: u_img/inst_32800x16_sub_000000_000.clkb
+1203 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_000000_009.clkb
+1204 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_000000_010.clkb
+1205 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_000000_011.clkb
+1206 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_000000_012.clkb
+1207 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_000000_013.clkb
+1208 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_000000_014.clkb
+1209 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_000000_015.clkb
+1210 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_001024_000.clkb
+1211 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_002048_000.clkb
+1212 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_003072_000.clkb
+1213 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_004096_000.clkb
+1214 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_005120_000.clkb
+1215 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_006144_000.clkb
+1216 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_007168_000.clkb
+1217 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_008192_000.clkb
+1218 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_008192_009.clkb
+1219 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_008192_010.clkb
+1220 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_008192_011.clkb
+1221 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_008192_012.clkb
+1222 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_008192_013.clkb
+1223 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_008192_014.clkb
+1224 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_008192_015.clkb
+1225 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_009216_000.clkb
+1226 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_010240_000.clkb
+1227 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_011264_000.clkb
+1228 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_012288_000.clkb
+1229 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_013312_000.clkb
+1230 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_014336_000.clkb
+1231 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_015360_000.clkb
+1232 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_016384_000.clkb
+1233 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_016384_009.clkb
+1234 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_016384_010.clkb
+1235 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_016384_011.clkb
+1236 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_016384_012.clkb
+1237 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_016384_013.clkb
+1238 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_016384_014.clkb
+1239 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_016384_015.clkb
+1240 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_017408_000.clkb
+1241 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_018432_000.clkb
+1242 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_019456_000.clkb
+1243 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_020480_000.clkb
+1244 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_021504_000.clkb
+1245 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_022528_000.clkb
+1246 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_023552_000.clkb
+1247 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_024576_000.clkb
+1248 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_024576_009.clkb
+1249 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_024576_010.clkb
+1250 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_024576_011.clkb
+1251 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_024576_012.clkb
+1252 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_024576_013.clkb
+1253 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_024576_014.clkb
+1254 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_024576_015.clkb
+1255 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_025600_000.clkb
+1256 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_026624_000.clkb
+1257 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_027648_000.clkb
+1258 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_028672_000.clkb
+1259 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_029696_000.clkb
+1260 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_030720_000.clkb
+1261 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_031744_000.clkb
+1262 35.797000 1 0
+
+Endpoint: u_img/inst_32800x16_sub_032768_000.clkb
+1263 35.797000 1 0
+
+
+
+clock: u_pll/pll_inst.clkc[1]
+1264 0 0 0
+
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  u_pll/pll_inst.clkc[0] (25.512MHz)            10.215ns      97.895MHz        0.303ns       130        0.000ns
+	  u_pll/pll_inst.clkc[2] (4.048MHz)              3.267ns     306.091MHz        0.128ns        31        0.000ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+Warning: there are 4 clock nets without clock constraints.
+	cam_pclk_pad
+	camera_wrreq
+	u_camera_init/divider2[8]
+	u_camera_init/u_i2c_write/divider2[7]
+

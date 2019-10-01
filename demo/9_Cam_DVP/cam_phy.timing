@@ -1,0 +1,1299 @@
+=========================================================================================================
+Auto created by the td v4.6.13941
+@Copy Right: Shanghai Anlogic Infotech, 2011 - 2021.
+Tue Oct  1 11:28:47 2019
+=========================================================================================================
+
+
+Top Model:                test_camera                                                     
+Device:                   eagle_s20                                                       
+Timing Constraint File:   cam.sdc                                                         
+STA Level:                Detail                                                          
+Process parameter::       TT  1.10v  85C                                                  
+
+=========================================================================================================
+Timing constraint:        clock: clk_24m                                                  
+Clock = clk_24m, period 41.6ns, rising at 0ns, falling at 20.8ns
+
+0 endpoints analyzed totally, and 0 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0.000), 0 hold errors (TNS = 0.000)
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+
+=========================================================================================================
+Timing constraint:        clock: u_pll/pll_inst.refclk                                    
+Clock = u_pll/pll_inst.refclk, period 41.667ns, rising at 0ns, falling at 20.833ns
+
+0 endpoints analyzed totally, and 0 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0.000), 0 hold errors (TNS = 0.000)
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+
+=========================================================================================================
+Timing constraint:        clock: u_pll/pll_inst.clkc[2]                                   
+Clock = u_pll/pll_inst.clkc[2], period 247.043ns, rising at 0ns, falling at 123.518ns
+
+34 endpoints analyzed totally, and 176 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0.000), 0 hold errors (TNS = 0.000)
+Minimum period is 3.267ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_camera_init/reg4_b2|u_camera_init/reg4_b8 (9 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)      243.776 ns                                                      
+ StartPoint:              u_camera_init/add0/ucin_al_u4197.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/reg4_b2|u_camera_init/reg4_b8.mi[0] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/add0/ucin_al_u4197.clk                        clock                   2.268
+ launch clock edge                                           clock                   0.000
+ u_camera_init/add0/ucin_al_u4197.q[0]                       cell                    0.146
+ u_camera_init/add0/ucin_al_u4197.b[0] (u_camera_init/divider2[0]) net (fanout = 1)        0.749 sources/rtl/camera_init.v(67)
+ u_camera_init/add0/ucin_al_u4197.fco                        cell                    0.836
+ u_camera_init/add0/u3_al_u4198.fci (u_camera_init/add0/c3)  net (fanout = 1)        0.000               
+ u_camera_init/add0/u3_al_u4198.fco                          cell                    0.132
+ u_camera_init/add0/u7_al_u4199.fci (u_camera_init/add0/c7)  net (fanout = 1)        0.000               
+ u_camera_init/add0/u7_al_u4199.fx[0]                        cell                    0.387
+ u_camera_init/reg4_b2|u_camera_init/reg4_b8.mi[0] (u_camera_init/n0[8]) net (fanout = 1)        0.737 sources/rtl/camera_init.v(67)
+ u_camera_init/reg4_b2|u_camera_init/reg4_b8                 path2reg0               0.143
+ Arrival time                                                                        5.398 (3 lvl)
+                                                                                          (73% logic, 27% net)
+
+ u_camera_init/reg4_b2|u_camera_init/reg4_b8.clk                                     1.925
+ capture clock edge                                                                247.043
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.322
+ Required time                                                                     249.174
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          243.776 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      244.010 ns                                                      
+ StartPoint:              u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/reg4_b2|u_camera_init/reg4_b8.mi[0] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.clk clock                   2.268
+ launch clock edge                                           clock                   0.000
+ u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.q[1] cell                    0.146
+ u_camera_init/add0/u3_al_u4198.a[1] (u_camera_init/divider2[5]) net (fanout = 1)        0.602 sources/rtl/camera_init.v(67)
+ u_camera_init/add0/u3_al_u4198.fco                          cell                    0.881
+ u_camera_init/add0/u7_al_u4199.fci (u_camera_init/add0/c7)  net (fanout = 1)        0.000               
+ u_camera_init/add0/u7_al_u4199.fx[0]                        cell                    0.387
+ u_camera_init/reg4_b2|u_camera_init/reg4_b8.mi[0] (u_camera_init/n0[8]) net (fanout = 1)        0.737 sources/rtl/camera_init.v(67)
+ u_camera_init/reg4_b2|u_camera_init/reg4_b8                 path2reg0               0.143
+ Arrival time                                                                        5.164 (3 lvl)
+                                                                                          (75% logic, 25% net)
+
+ u_camera_init/reg4_b2|u_camera_init/reg4_b8.clk                                     1.925
+ capture clock edge                                                                247.043
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.322
+ Required time                                                                     249.174
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          244.010 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      244.073 ns                                                      
+ StartPoint:              u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/reg4_b2|u_camera_init/reg4_b8.mi[0] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6.clk clock                   2.268
+ launch clock edge                                           clock                   0.000
+ u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6.q[1] cell                    0.146
+ u_camera_init/add0/u3_al_u4198.a[0] (u_camera_init/divider2[3]) net (fanout = 1)        0.473 sources/rtl/camera_init.v(67)
+ u_camera_init/add0/u3_al_u4198.fco                          cell                    0.947
+ u_camera_init/add0/u7_al_u4199.fci (u_camera_init/add0/c7)  net (fanout = 1)        0.000               
+ u_camera_init/add0/u7_al_u4199.fx[0]                        cell                    0.387
+ u_camera_init/reg4_b2|u_camera_init/reg4_b8.mi[0] (u_camera_init/n0[8]) net (fanout = 1)        0.737 sources/rtl/camera_init.v(67)
+ u_camera_init/reg4_b2|u_camera_init/reg4_b8                 path2reg0               0.143
+ Arrival time                                                                        5.101 (3 lvl)
+                                                                                          (77% logic, 23% net)
+
+ u_camera_init/reg4_b2|u_camera_init/reg4_b8.clk                                     1.925
+ capture clock edge                                                                247.043
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.322
+ Required time                                                                     249.174
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          244.073 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6 (7 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)      243.865 ns                                                      
+ StartPoint:              u_camera_init/u_i2c_write/add0/ucin_al_u4206.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6.mi[0] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.clk            clock                   2.268
+ launch clock edge                                           clock                   0.000
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.q[0]           cell                    0.146
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.b[0] (u_camera_init/u_i2c_write/divider2[0]) net (fanout = 1)        0.749 sources/rtl/i2c_module.v(71)
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.fco            cell                    0.836
+ u_camera_init/u_i2c_write/add0/u3_al_u4207.fci (u_camera_init/u_i2c_write/add0/c3) net (fanout = 1)        0.000               
+ u_camera_init/u_i2c_write/add0/u3_al_u4207.fx[1]            cell                    0.453
+ u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6.mi[0] (u_camera_init/u_i2c_write/n1[6]) net (fanout = 1)        0.607 sources/rtl/i2c_module.v(71)
+ u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6     path2reg0               0.143
+ Arrival time                                                                        5.202 (3 lvl)
+                                                                                          (74% logic, 26% net)
+
+ u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6.clk                         1.925
+ capture clock edge                                                                247.043
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.215
+ Required time                                                                     249.067
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          243.865 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      244.104 ns                                                      
+ StartPoint:              u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6.mi[0] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.clk clock                   2.268
+ launch clock edge                                           clock                   0.000
+ u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.q[0] cell                    0.146
+ u_camera_init/u_i2c_write/add0/u3_al_u4207.b[0] (u_camera_init/u_i2c_write/divider2[4]) net (fanout = 1)        0.749 sources/rtl/i2c_module.v(71)
+ u_camera_init/u_i2c_write/add0/u3_al_u4207.fx[1]            cell                    1.157
+ u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6.mi[0] (u_camera_init/u_i2c_write/n1[6]) net (fanout = 1)        0.607 sources/rtl/i2c_module.v(71)
+ u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6     path2reg0               0.143
+ Arrival time                                                                        5.070 (2 lvl)
+                                                                                          (74% logic, 26% net)
+
+ u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6.clk                         1.925
+ capture clock edge                                                                247.043
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.322
+ Required time                                                                     249.174
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          244.104 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      244.269 ns                                                      
+ StartPoint:              u_camera_init/reg4_b6|u_camera_init/u_i2c_write/reg0_b3.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6.mi[0] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/reg4_b6|u_camera_init/u_i2c_write/reg0_b3.clk clock                   2.268
+ launch clock edge                                           clock                   0.000
+ u_camera_init/reg4_b6|u_camera_init/u_i2c_write/reg0_b3.q[0] cell                    0.146
+ u_camera_init/u_i2c_write/add0/u3_al_u4207.a[0] (u_camera_init/u_i2c_write/divider2[3]) net (fanout = 1)        0.473 sources/rtl/i2c_module.v(71)
+ u_camera_init/u_i2c_write/add0/u3_al_u4207.fx[1]            cell                    1.268
+ u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6.mi[0] (u_camera_init/u_i2c_write/n1[6]) net (fanout = 1)        0.607 sources/rtl/i2c_module.v(71)
+ u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6     path2reg0               0.143
+ Arrival time                                                                        4.905 (2 lvl)
+                                                                                          (78% logic, 22% net)
+
+ u_camera_init/reg4_b3|u_camera_init/u_i2c_write/reg0_b6.clk                         1.925
+ capture clock edge                                                                247.043
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.322
+ Required time                                                                     249.174
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          244.269 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5 (5 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)      243.928 ns                                                      
+ StartPoint:              u_camera_init/add0/ucin_al_u4197.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5.mi[1] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/add0/ucin_al_u4197.clk                        clock                   2.268
+ launch clock edge                                           clock                   0.000
+ u_camera_init/add0/ucin_al_u4197.q[0]                       cell                    0.146
+ u_camera_init/add0/ucin_al_u4197.b[0] (u_camera_init/divider2[0]) net (fanout = 1)        0.749 sources/rtl/camera_init.v(67)
+ u_camera_init/add0/ucin_al_u4197.fco                        cell                    0.836
+ u_camera_init/add0/u3_al_u4198.fci (u_camera_init/add0/c3)  net (fanout = 1)        0.000               
+ u_camera_init/add0/u3_al_u4198.fx[0]                        cell                    0.387
+ u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5.mi[1] (u_camera_init/n0[4]) net (fanout = 1)        0.610 sources/rtl/camera_init.v(67)
+ u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5     path2reg1               0.143
+ Arrival time                                                                        5.139 (3 lvl)
+                                                                                          (74% logic, 26% net)
+
+ u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5.clk                         1.925
+ capture clock edge                                                                247.043
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.215
+ Required time                                                                     249.067
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          243.928 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      244.417 ns                                                      
+ StartPoint:              u_camera_init/reg4_b2|u_camera_init/reg4_b8.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5.mi[1] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/reg4_b2|u_camera_init/reg4_b8.clk             clock                   2.268
+ launch clock edge                                           clock                   0.000
+ u_camera_init/reg4_b2|u_camera_init/reg4_b8.q[1]            cell                    0.146
+ u_camera_init/add0/ucin_al_u4197.b[1] (u_camera_init/divider2[2]) net (fanout = 1)        0.326 sources/rtl/camera_init.v(67)
+ u_camera_init/add0/ucin_al_u4197.fco                        cell                    0.770
+ u_camera_init/add0/u3_al_u4198.fci (u_camera_init/add0/c3)  net (fanout = 1)        0.000               
+ u_camera_init/add0/u3_al_u4198.fx[0]                        cell                    0.387
+ u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5.mi[1] (u_camera_init/n0[4]) net (fanout = 1)        0.610 sources/rtl/camera_init.v(67)
+ u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5     path2reg1               0.143
+ Arrival time                                                                        4.650 (3 lvl)
+                                                                                          (80% logic, 20% net)
+
+ u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5.clk                         1.925
+ capture clock edge                                                                247.043
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.215
+ Required time                                                                     249.067
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          244.417 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      244.459 ns                                                      
+ StartPoint:              u_camera_init/add0/ucin_al_u4197.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5.mi[1] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/add0/ucin_al_u4197.clk                        clock                   2.268
+ launch clock edge                                           clock                   0.000
+ u_camera_init/add0/ucin_al_u4197.q[1]                       cell                    0.146
+ u_camera_init/add0/ucin_al_u4197.a[1] (u_camera_init/divider2[1]) net (fanout = 1)        0.173 sources/rtl/camera_init.v(67)
+ u_camera_init/add0/ucin_al_u4197.fco                        cell                    0.881
+ u_camera_init/add0/u3_al_u4198.fci (u_camera_init/add0/c3)  net (fanout = 1)        0.000               
+ u_camera_init/add0/u3_al_u4198.fx[0]                        cell                    0.387
+ u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5.mi[1] (u_camera_init/n0[4]) net (fanout = 1)        0.610 sources/rtl/camera_init.v(67)
+ u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5     path2reg1               0.143
+ Arrival time                                                                        4.608 (3 lvl)
+                                                                                          (84% logic, 16% net)
+
+ u_camera_init/reg4_b4|u_camera_init/u_i2c_write/reg0_b5.clk                         1.925
+ capture clock edge                                                                247.043
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.215
+ Required time                                                                     249.067
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          244.459 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4 (7 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       1.357 ns                                                        
+ StartPoint:              u_camera_init/reg4_b6|u_camera_init/u_i2c_write/reg0_b3.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.mi[1] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/reg4_b6|u_camera_init/u_i2c_write/reg0_b3.clk clock                   1.925
+ launch clock edge                                           clock                   0.000
+ u_camera_init/reg4_b6|u_camera_init/u_i2c_write/reg0_b3.q[1] cell                    0.140
+ u_camera_init/add0/u3_al_u4198.b[1] (u_camera_init/divider2[6]) net (fanout = 1)        0.271 sources/rtl/camera_init.v(67)
+ u_camera_init/add0/u3_al_u4198.f[1]                         cell                    0.642
+ u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.mi[1] (u_camera_init/n0[5]) net (fanout = 1)        0.261 sources/rtl/camera_init.v(67)
+ u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4     path2reg1               0.138
+ Arrival time                                                                        3.377 (2 lvl)
+                                                                                          (85% logic, 15% net)
+
+ u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.clk                         2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.322
+ Required time                                                                       2.020
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.357 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       1.618 ns                                                        
+ StartPoint:              u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.mi[1] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.clk clock                   1.925
+ launch clock edge                                           clock                   0.000
+ u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.q[1] cell                    0.140
+ u_camera_init/add0/u3_al_u4198.a[1] (u_camera_init/divider2[5]) net (fanout = 1)        0.511 sources/rtl/camera_init.v(67)
+ u_camera_init/add0/u3_al_u4198.f[1]                         cell                    0.642
+ u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.mi[1] (u_camera_init/n0[5]) net (fanout = 1)        0.261 sources/rtl/camera_init.v(67)
+ u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4     path2reg1               0.138
+ Arrival time                                                                        3.617 (2 lvl)
+                                                                                          (79% logic, 21% net)
+
+ u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.clk                         2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.343
+ Required time                                                                       1.999
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.618 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       1.683 ns                                                        
+ StartPoint:              u_camera_init/add0/ucin_al_u4197.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.mi[1] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/add0/ucin_al_u4197.clk                        clock                   1.925
+ launch clock edge                                           clock                   0.000
+ u_camera_init/add0/ucin_al_u4197.q[1]                       cell                    0.140
+ u_camera_init/add0/ucin_al_u4197.a[1] (u_camera_init/divider2[1]) net (fanout = 1)        0.139 sources/rtl/camera_init.v(67)
+ u_camera_init/add0/ucin_al_u4197.fco                        cell                    0.846
+ u_camera_init/add0/u3_al_u4198.fci (u_camera_init/add0/c3)  net (fanout = 1)        0.000               
+ u_camera_init/add0/u3_al_u4198.f[1]                         cell                    0.254
+ u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.mi[1] (u_camera_init/n0[5]) net (fanout = 1)        0.261 sources/rtl/camera_init.v(67)
+ u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4     path2reg1               0.138
+ Arrival time                                                                        3.703 (3 lvl)
+                                                                                          (90% logic, 10% net)
+
+ u_camera_init/reg4_b5|u_camera_init/u_i2c_write/reg0_b4.clk                         2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.322
+ Required time                                                                       2.020
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.683 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_camera_init/add0/ucin_al_u4197 (3 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       1.379 ns                                                        
+ StartPoint:              u_camera_init/add0/ucin_al_u4197.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/add0/ucin_al_u4197.mi[1] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/add0/ucin_al_u4197.clk                        clock                   1.925
+ launch clock edge                                           clock                   0.000
+ u_camera_init/add0/ucin_al_u4197.q[1]                       cell                    0.140
+ u_camera_init/add0/ucin_al_u4197.a[1] (u_camera_init/divider2[1]) net (fanout = 1)        0.139 sources/rtl/camera_init.v(67)
+ u_camera_init/add0/ucin_al_u4197.f[1]                       cell                    0.642
+ u_camera_init/add0/ucin_al_u4197.mi[1] (u_camera_init/n0[1]) net (fanout = 1)        0.394 sources/rtl/camera_init.v(67)
+ u_camera_init/add0/ucin_al_u4197                            path2reg1               0.138
+ Arrival time                                                                        3.378 (2 lvl)
+                                                                                          (85% logic, 15% net)
+
+ u_camera_init/add0/ucin_al_u4197.clk                                                2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.343
+ Required time                                                                       1.999
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.379 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       1.490 ns                                                        
+ StartPoint:              u_camera_init/reg4_b2|u_camera_init/reg4_b8.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/add0/ucin_al_u4197.mi[1] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/reg4_b2|u_camera_init/reg4_b8.clk             clock                   1.925
+ launch clock edge                                           clock                   0.000
+ u_camera_init/reg4_b2|u_camera_init/reg4_b8.q[1]            cell                    0.140
+ u_camera_init/add0/ucin_al_u4197.b[1] (u_camera_init/divider2[2]) net (fanout = 1)        0.271 sources/rtl/camera_init.v(67)
+ u_camera_init/add0/ucin_al_u4197.f[1]                       cell                    0.642
+ u_camera_init/add0/ucin_al_u4197.mi[1] (u_camera_init/n0[1]) net (fanout = 1)        0.394 sources/rtl/camera_init.v(67)
+ u_camera_init/add0/ucin_al_u4197                            path2reg1               0.138
+ Arrival time                                                                        3.510 (2 lvl)
+                                                                                          (82% logic, 18% net)
+
+ u_camera_init/add0/ucin_al_u4197.clk                                                2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.322
+ Required time                                                                       2.020
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.490 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       2.170 ns                                                        
+ StartPoint:              u_camera_init/add0/ucin_al_u4197.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/add0/ucin_al_u4197.mi[1] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/add0/ucin_al_u4197.clk                        clock                   1.925
+ launch clock edge                                           clock                   0.000
+ u_camera_init/add0/ucin_al_u4197.q[0]                       cell                    0.140
+ u_camera_init/add0/ucin_al_u4197.b[0] (u_camera_init/divider2[0]) net (fanout = 1)        0.643 sources/rtl/camera_init.v(67)
+ u_camera_init/add0/ucin_al_u4197.f[1]                       cell                    0.929
+ u_camera_init/add0/ucin_al_u4197.mi[1] (u_camera_init/n0[1]) net (fanout = 1)        0.394 sources/rtl/camera_init.v(67)
+ u_camera_init/add0/ucin_al_u4197                            path2reg1               0.138
+ Arrival time                                                                        4.169 (2 lvl)
+                                                                                          (76% logic, 24% net)
+
+ u_camera_init/add0/ucin_al_u4197.clk                                                2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.343
+ Required time                                                                       1.999
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            2.170 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_camera_init/u_i2c_write/add0/ucin_al_u4206 (3 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       1.379 ns                                                        
+ StartPoint:              u_camera_init/u_i2c_write/add0/ucin_al_u4206.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/u_i2c_write/add0/ucin_al_u4206.mi[1] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.clk            clock                   1.925
+ launch clock edge                                           clock                   0.000
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.q[1]           cell                    0.140
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.a[1] (u_camera_init/u_i2c_write/divider2[1]) net (fanout = 1)        0.139 sources/rtl/i2c_module.v(71)
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.f[1]           cell                    0.642
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.mi[1] (u_camera_init/u_i2c_write/n1[1]) net (fanout = 1)        0.394 sources/rtl/i2c_module.v(71)
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206                path2reg1               0.138
+ Arrival time                                                                        3.378 (2 lvl)
+                                                                                          (85% logic, 15% net)
+
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.clk                                    2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.343
+ Required time                                                                       1.999
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.379 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       1.490 ns                                                        
+ StartPoint:              u_camera_init/reg4_b7|u_camera_init/u_i2c_write/reg0_b2.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/u_i2c_write/add0/ucin_al_u4206.mi[1] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/reg4_b7|u_camera_init/u_i2c_write/reg0_b2.clk clock                   1.925
+ launch clock edge                                           clock                   0.000
+ u_camera_init/reg4_b7|u_camera_init/u_i2c_write/reg0_b2.q[0] cell                    0.140
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.b[1] (u_camera_init/u_i2c_write/divider2[2]) net (fanout = 1)        0.271 sources/rtl/i2c_module.v(71)
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.f[1]           cell                    0.642
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.mi[1] (u_camera_init/u_i2c_write/n1[1]) net (fanout = 1)        0.394 sources/rtl/i2c_module.v(71)
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206                path2reg1               0.138
+ Arrival time                                                                        3.510 (2 lvl)
+                                                                                          (82% logic, 18% net)
+
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.clk                                    2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.322
+ Required time                                                                       2.020
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.490 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       2.170 ns                                                        
+ StartPoint:              u_camera_init/u_i2c_write/add0/ucin_al_u4206.clk (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ EndPoint:                u_camera_init/u_i2c_write/add0/ucin_al_u4206.mi[1] (rising edge triggered by clock u_pll/pll_inst.clkc[2])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.clk            clock                   1.925
+ launch clock edge                                           clock                   0.000
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.q[0]           cell                    0.140
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.b[0] (u_camera_init/u_i2c_write/divider2[0]) net (fanout = 1)        0.643 sources/rtl/i2c_module.v(71)
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.f[1]           cell                    0.929
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.mi[1] (u_camera_init/u_i2c_write/n1[1]) net (fanout = 1)        0.394 sources/rtl/i2c_module.v(71)
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206                path2reg1               0.138
+ Arrival time                                                                        4.169 (2 lvl)
+                                                                                          (76% logic, 24% net)
+
+ u_camera_init/u_i2c_write/add0/ucin_al_u4206.clk                                    2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.343
+ Required time                                                                       1.999
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            2.170 ns
+
+---------------------------------------------------------------------------------------------------------
+
+
+=========================================================================================================
+Timing constraint:        clock: u_pll/pll_inst.clkc[0]                                   
+Clock = u_pll/pll_inst.clkc[0], period 39.197ns, rising at 0ns, falling at 19.598ns
+
+443 endpoints analyzed totally, and 145195 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0.000), 0 hold errors (TNS = 0.000)
+Minimum period is 10.215ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220 (993 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)      28.982 ns                                                       
+ StartPoint:              u_vga_sync/reg0_b1|u_vga_sync/reg0_b8.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220.a[0] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/reg0_b1|u_vga_sync/reg0_b8.clk                   clock                   2.134
+ launch clock edge                                           clock                   0.000
+ u_vga_sync/reg0_b1|u_vga_sync/reg0_b8.q[1]                  cell                    0.146
+ u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.b[0] (u_vga_sync/vsync_cnt[1]) net (fanout = 10)       0.874 sources/rtl/lcd_sync.v(31)
+ u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.fco           cell                    0.836
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fci (u_vga_sync/sub4_u_vga_sync/sub5/c3) net (fanout = 1)        0.000               
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fco             cell                    0.132
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci (u_vga_sync/sub4_u_vga_sync/sub5/c7) net (fanout = 1)        0.000               
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fx[1]           cell                    0.453
+ u_vga_sync/mult0_.a[11] (n5[10])                            net (fanout = 2)        0.591               
+ u_vga_sync/mult0_.p[2]                                      cell                    3.563
+ u2/ucin_al_u4180.e[1] (u_vga_sync/n32[5])                   net (fanout = 1)        0.631               
+ u2/ucin_al_u4180.fco                                        cell                    0.715
+ u2/u3_al_u4181.fci (u2/c3)                                  net (fanout = 1)        0.000               
+ u2/u3_al_u4181.fco                                          cell                    0.132
+ u2/u7_al_u4182.fci (u2/c7)                                  net (fanout = 1)        0.000               
+ u2/u7_al_u4182.fx[0]                                        cell                    0.387
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220.a[0] (n3[8]) net (fanout = 7)        0.969               
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220 path2reg0               0.542
+ Arrival time                                                                       12.105 (6 lvl)
+                                                                                          (75% logic, 25% net)
+
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220.clk                         1.834
+ capture clock edge                                                                 39.197
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.172
+ Required time                                                                      41.087
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           28.982 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      28.998 ns                                                       
+ StartPoint:              u_vga_sync/reg0_b4|u_vga_sync/reg0_b7.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220.a[0] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/reg0_b4|u_vga_sync/reg0_b7.clk                   clock                   2.134
+ launch clock edge                                           clock                   0.000
+ u_vga_sync/reg0_b4|u_vga_sync/reg0_b7.q[1]                  cell                    0.146
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.a[0] (u_vga_sync/vsync_cnt[4]) net (fanout = 9)        0.879 sources/rtl/lcd_sync.v(31)
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fco             cell                    0.947
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci (u_vga_sync/sub4_u_vga_sync/sub5/c7) net (fanout = 1)        0.000               
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fx[1]           cell                    0.453
+ u_vga_sync/mult0_.a[11] (n5[10])                            net (fanout = 2)        0.591               
+ u_vga_sync/mult0_.p[2]                                      cell                    3.563
+ u2/ucin_al_u4180.e[1] (u_vga_sync/n32[5])                   net (fanout = 1)        0.631               
+ u2/ucin_al_u4180.fco                                        cell                    0.715
+ u2/u3_al_u4181.fci (u2/c3)                                  net (fanout = 1)        0.000               
+ u2/u3_al_u4181.fco                                          cell                    0.132
+ u2/u7_al_u4182.fci (u2/c7)                                  net (fanout = 1)        0.000               
+ u2/u7_al_u4182.fx[0]                                        cell                    0.387
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220.a[0] (n3[8]) net (fanout = 7)        0.969               
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220 path2reg0               0.542
+ Arrival time                                                                       12.089 (6 lvl)
+                                                                                          (75% logic, 25% net)
+
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220.clk                         1.834
+ capture clock edge                                                                 39.197
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.172
+ Required time                                                                      41.087
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           28.998 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      29.053 ns                                                       
+ StartPoint:              u_vga_sync/reg0_b10|u_vga_sync/reg0_b2.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220.a[0] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/reg0_b10|u_vga_sync/reg0_b2.clk                  clock                   2.134
+ launch clock edge                                           clock                   0.000
+ u_vga_sync/reg0_b10|u_vga_sync/reg0_b2.q[0]                 cell                    0.146
+ u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.a[1] (u_vga_sync/vsync_cnt[2]) net (fanout = 9)        0.758 sources/rtl/lcd_sync.v(31)
+ u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.fco           cell                    0.881
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fci (u_vga_sync/sub4_u_vga_sync/sub5/c3) net (fanout = 1)        0.000               
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fco             cell                    0.132
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci (u_vga_sync/sub4_u_vga_sync/sub5/c7) net (fanout = 1)        0.000               
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fx[1]           cell                    0.453
+ u_vga_sync/mult0_.a[11] (n5[10])                            net (fanout = 2)        0.591               
+ u_vga_sync/mult0_.p[2]                                      cell                    3.563
+ u2/ucin_al_u4180.e[1] (u_vga_sync/n32[5])                   net (fanout = 1)        0.631               
+ u2/ucin_al_u4180.fco                                        cell                    0.715
+ u2/u3_al_u4181.fci (u2/c3)                                  net (fanout = 1)        0.000               
+ u2/u3_al_u4181.fco                                          cell                    0.132
+ u2/u7_al_u4182.fci (u2/c7)                                  net (fanout = 1)        0.000               
+ u2/u7_al_u4182.fx[0]                                        cell                    0.387
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220.a[0] (n3[8]) net (fanout = 7)        0.969               
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220 path2reg0               0.542
+ Arrival time                                                                       12.034 (6 lvl)
+                                                                                          (76% logic, 24% net)
+
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11_placeOpt_2_al_u4220.clk                         1.834
+ capture clock edge                                                                 39.197
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.172
+ Required time                                                                      41.087
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           29.053 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_vga_sync/reg1_b10|u_vga_sync/reg1_b11 (993 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)      29.134 ns                                                       
+ StartPoint:              u_vga_sync/reg0_b1|u_vga_sync/reg0_b8.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.a[0] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/reg0_b1|u_vga_sync/reg0_b8.clk                   clock                   2.134
+ launch clock edge                                           clock                   0.000
+ u_vga_sync/reg0_b1|u_vga_sync/reg0_b8.q[1]                  cell                    0.146
+ u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.b[0] (u_vga_sync/vsync_cnt[1]) net (fanout = 10)       0.874 sources/rtl/lcd_sync.v(31)
+ u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.fco           cell                    0.836
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fci (u_vga_sync/sub4_u_vga_sync/sub5/c3) net (fanout = 1)        0.000               
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fco             cell                    0.132
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci (u_vga_sync/sub4_u_vga_sync/sub5/c7) net (fanout = 1)        0.000               
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fx[1]           cell                    0.453
+ u_vga_sync/mult0_.a[11] (n5[10])                            net (fanout = 2)        0.591               
+ u_vga_sync/mult0_.p[2]                                      cell                    3.563
+ u2/ucin_al_u4180.e[1] (u_vga_sync/n32[5])                   net (fanout = 1)        0.631               
+ u2/ucin_al_u4180.fco                                        cell                    0.715
+ u2/u3_al_u4181.fci (u2/c3)                                  net (fanout = 1)        0.000               
+ u2/u3_al_u4181.fco                                          cell                    0.132
+ u2/u7_al_u4182.fci (u2/c7)                                  net (fanout = 1)        0.000               
+ u2/u7_al_u4182.fx[0]                                        cell                    0.387
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.a[0] (n3[8])        net (fanout = 7)        0.817 sources/rtl/test_camera.v(59)
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11                     path2reg0               0.542
+ Arrival time                                                                       11.953 (6 lvl)
+                                                                                          (76% logic, 24% net)
+
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.clk                                         1.834
+ capture clock edge                                                                 39.197
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.172
+ Required time                                                                      41.087
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           29.134 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      29.150 ns                                                       
+ StartPoint:              u_vga_sync/reg0_b4|u_vga_sync/reg0_b7.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.a[0] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/reg0_b4|u_vga_sync/reg0_b7.clk                   clock                   2.134
+ launch clock edge                                           clock                   0.000
+ u_vga_sync/reg0_b4|u_vga_sync/reg0_b7.q[1]                  cell                    0.146
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.a[0] (u_vga_sync/vsync_cnt[4]) net (fanout = 9)        0.879 sources/rtl/lcd_sync.v(31)
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fco             cell                    0.947
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci (u_vga_sync/sub4_u_vga_sync/sub5/c7) net (fanout = 1)        0.000               
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fx[1]           cell                    0.453
+ u_vga_sync/mult0_.a[11] (n5[10])                            net (fanout = 2)        0.591               
+ u_vga_sync/mult0_.p[2]                                      cell                    3.563
+ u2/ucin_al_u4180.e[1] (u_vga_sync/n32[5])                   net (fanout = 1)        0.631               
+ u2/ucin_al_u4180.fco                                        cell                    0.715
+ u2/u3_al_u4181.fci (u2/c3)                                  net (fanout = 1)        0.000               
+ u2/u3_al_u4181.fco                                          cell                    0.132
+ u2/u7_al_u4182.fci (u2/c7)                                  net (fanout = 1)        0.000               
+ u2/u7_al_u4182.fx[0]                                        cell                    0.387
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.a[0] (n3[8])        net (fanout = 7)        0.817 sources/rtl/test_camera.v(59)
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11                     path2reg0               0.542
+ Arrival time                                                                       11.937 (6 lvl)
+                                                                                          (76% logic, 24% net)
+
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.clk                                         1.834
+ capture clock edge                                                                 39.197
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.172
+ Required time                                                                      41.087
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           29.150 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      29.205 ns                                                       
+ StartPoint:              u_vga_sync/reg0_b10|u_vga_sync/reg0_b2.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.a[0] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/reg0_b10|u_vga_sync/reg0_b2.clk                  clock                   2.134
+ launch clock edge                                           clock                   0.000
+ u_vga_sync/reg0_b10|u_vga_sync/reg0_b2.q[0]                 cell                    0.146
+ u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.a[1] (u_vga_sync/vsync_cnt[2]) net (fanout = 9)        0.758 sources/rtl/lcd_sync.v(31)
+ u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.fco           cell                    0.881
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fci (u_vga_sync/sub4_u_vga_sync/sub5/c3) net (fanout = 1)        0.000               
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fco             cell                    0.132
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci (u_vga_sync/sub4_u_vga_sync/sub5/c7) net (fanout = 1)        0.000               
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fx[1]           cell                    0.453
+ u_vga_sync/mult0_.a[11] (n5[10])                            net (fanout = 2)        0.591               
+ u_vga_sync/mult0_.p[2]                                      cell                    3.563
+ u2/ucin_al_u4180.e[1] (u_vga_sync/n32[5])                   net (fanout = 1)        0.631               
+ u2/ucin_al_u4180.fco                                        cell                    0.715
+ u2/u3_al_u4181.fci (u2/c3)                                  net (fanout = 1)        0.000               
+ u2/u3_al_u4181.fco                                          cell                    0.132
+ u2/u7_al_u4182.fci (u2/c7)                                  net (fanout = 1)        0.000               
+ u2/u7_al_u4182.fx[0]                                        cell                    0.387
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.a[0] (n3[8])        net (fanout = 7)        0.817 sources/rtl/test_camera.v(59)
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11                     path2reg0               0.542
+ Arrival time                                                                       11.882 (6 lvl)
+                                                                                          (77% logic, 23% net)
+
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.clk                                         1.834
+ capture clock edge                                                                 39.197
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.172
+ Required time                                                                      41.087
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           29.205 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3 (1337 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)      29.198 ns                                                       
+ StartPoint:              u_vga_sync/reg0_b1|u_vga_sync/reg0_b8.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3.e[1] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/reg0_b1|u_vga_sync/reg0_b8.clk                   clock                   2.134
+ launch clock edge                                           clock                   0.000
+ u_vga_sync/reg0_b1|u_vga_sync/reg0_b8.q[1]                  cell                    0.146
+ u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.b[0] (u_vga_sync/vsync_cnt[1]) net (fanout = 10)       0.874 sources/rtl/lcd_sync.v(31)
+ u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.fco           cell                    0.836
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fci (u_vga_sync/sub4_u_vga_sync/sub5/c3) net (fanout = 1)        0.000               
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fco             cell                    0.132
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci (u_vga_sync/sub4_u_vga_sync/sub5/c7) net (fanout = 1)        0.000               
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fx[1]           cell                    0.453
+ u_vga_sync/mult0_.a[11] (n5[10])                            net (fanout = 2)        0.591               
+ u_vga_sync/mult0_.p[2]                                      cell                    3.563
+ u2/ucin_al_u4180.e[1] (u_vga_sync/n32[5])                   net (fanout = 1)        0.631               
+ u2/ucin_al_u4180.fco                                        cell                    0.715
+ u2/u3_al_u4181.fci (u2/c3)                                  net (fanout = 1)        0.000               
+ u2/u3_al_u4181.fco                                          cell                    0.132
+ u2/u7_al_u4182.fci (u2/c7)                                  net (fanout = 1)        0.000               
+ u2/u7_al_u4182.fco                                          cell                    0.132
+ u2/u11_al_u4183.fci (u2/c11)                                net (fanout = 1)        0.000               
+ u2/u11_al_u4183.fx[0]                                       cell                    0.387
+ u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3.e[1] (n3[12]) net (fanout = 4)        0.763               
+ u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3           path2reg1               0.400
+ Arrival time                                                                       11.889 (6 lvl)
+                                                                                          (76% logic, 24% net)
+
+ u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3.clk                               1.834
+ capture clock edge                                                                 39.197
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.172
+ Required time                                                                      41.087
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           29.198 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      29.214 ns                                                       
+ StartPoint:              u_vga_sync/reg0_b4|u_vga_sync/reg0_b7.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3.e[1] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/reg0_b4|u_vga_sync/reg0_b7.clk                   clock                   2.134
+ launch clock edge                                           clock                   0.000
+ u_vga_sync/reg0_b4|u_vga_sync/reg0_b7.q[1]                  cell                    0.146
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.a[0] (u_vga_sync/vsync_cnt[4]) net (fanout = 9)        0.879 sources/rtl/lcd_sync.v(31)
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fco             cell                    0.947
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci (u_vga_sync/sub4_u_vga_sync/sub5/c7) net (fanout = 1)        0.000               
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fx[1]           cell                    0.453
+ u_vga_sync/mult0_.a[11] (n5[10])                            net (fanout = 2)        0.591               
+ u_vga_sync/mult0_.p[2]                                      cell                    3.563
+ u2/ucin_al_u4180.e[1] (u_vga_sync/n32[5])                   net (fanout = 1)        0.631               
+ u2/ucin_al_u4180.fco                                        cell                    0.715
+ u2/u3_al_u4181.fci (u2/c3)                                  net (fanout = 1)        0.000               
+ u2/u3_al_u4181.fco                                          cell                    0.132
+ u2/u7_al_u4182.fci (u2/c7)                                  net (fanout = 1)        0.000               
+ u2/u7_al_u4182.fco                                          cell                    0.132
+ u2/u11_al_u4183.fci (u2/c11)                                net (fanout = 1)        0.000               
+ u2/u11_al_u4183.fx[0]                                       cell                    0.387
+ u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3.e[1] (n3[12]) net (fanout = 4)        0.763               
+ u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3           path2reg1               0.400
+ Arrival time                                                                       11.873 (6 lvl)
+                                                                                          (76% logic, 24% net)
+
+ u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3.clk                               1.834
+ capture clock edge                                                                 39.197
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.172
+ Required time                                                                      41.087
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           29.214 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      29.269 ns                                                       
+ StartPoint:              u_vga_sync/reg0_b10|u_vga_sync/reg0_b2.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3.e[1] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/reg0_b10|u_vga_sync/reg0_b2.clk                  clock                   2.134
+ launch clock edge                                           clock                   0.000
+ u_vga_sync/reg0_b10|u_vga_sync/reg0_b2.q[0]                 cell                    0.146
+ u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.a[1] (u_vga_sync/vsync_cnt[2]) net (fanout = 9)        0.758 sources/rtl/lcd_sync.v(31)
+ u_vga_sync/sub4_u_vga_sync/sub5/ucin_al_u4194.fco           cell                    0.881
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fci (u_vga_sync/sub4_u_vga_sync/sub5/c3) net (fanout = 1)        0.000               
+ u_vga_sync/sub4_u_vga_sync/sub5/u3_al_u4195.fco             cell                    0.132
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fci (u_vga_sync/sub4_u_vga_sync/sub5/c7) net (fanout = 1)        0.000               
+ u_vga_sync/sub4_u_vga_sync/sub5/u7_al_u4196.fx[1]           cell                    0.453
+ u_vga_sync/mult0_.a[11] (n5[10])                            net (fanout = 2)        0.591               
+ u_vga_sync/mult0_.p[2]                                      cell                    3.563
+ u2/ucin_al_u4180.e[1] (u_vga_sync/n32[5])                   net (fanout = 1)        0.631               
+ u2/ucin_al_u4180.fco                                        cell                    0.715
+ u2/u3_al_u4181.fci (u2/c3)                                  net (fanout = 1)        0.000               
+ u2/u3_al_u4181.fco                                          cell                    0.132
+ u2/u7_al_u4182.fci (u2/c7)                                  net (fanout = 1)        0.000               
+ u2/u7_al_u4182.fco                                          cell                    0.132
+ u2/u11_al_u4183.fci (u2/c11)                                net (fanout = 1)        0.000               
+ u2/u11_al_u4183.fx[0]                                       cell                    0.387
+ u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3.e[1] (n3[12]) net (fanout = 4)        0.763               
+ u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3           path2reg1               0.400
+ Arrival time                                                                       11.818 (6 lvl)
+                                                                                          (77% logic, 23% net)
+
+ u_vga_sync/reg1_b15|u_vga_sync/reg1_b6_placeOpt_3.clk                               1.834
+ capture clock edge                                                                 39.197
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.172
+ Required time                                                                      41.087
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           29.269 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point u_img/inst_32800x16_sub_023552_000 (258 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.293 ns                                                        
+ StartPoint:              u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_img/inst_32800x16_sub_023552_000.csb[0] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.clk                 clock                   1.834
+ launch clock edge                                           clock                   0.000
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.q[1]                cell                    0.140
+ u_img/inst_32800x16_sub_023552_000.csb[0] (vga_rdaddr[10])  net (fanout = 20)       0.481 sources/rtl/test_camera.v(59)
+ u_img/inst_32800x16_sub_023552_000                          path2reg                0.000
+ Arrival time                                                                        2.455 (1 lvl)
+                                                                                          (81% logic, 19% net)
+
+ u_img/inst_32800x16_sub_023552_000.clkb                                             2.134
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.200
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.172
+ Required time                                                                       2.162
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.293 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.503 ns                                                        
+ StartPoint:              _al_u3430|u_vga_sync/reg1_b4_placeOpt_3.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_img/inst_32800x16_sub_023552_000.addrb[7] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u3430|u_vga_sync/reg1_b4_placeOpt_3.clk                 clock                   1.834
+ launch clock edge                                           clock                   0.000
+ _al_u3430|u_vga_sync/reg1_b4_placeOpt_3.q[0]                cell                    0.140
+ u_img/inst_32800x16_sub_023552_000.addrb[7] (vga_rdaddr[4]_placeOpt_3) net (fanout = 18)       0.691               
+ u_img/inst_32800x16_sub_023552_000                          path2reg                0.000
+ Arrival time                                                                        2.665 (1 lvl)
+                                                                                          (75% logic, 25% net)
+
+ u_img/inst_32800x16_sub_023552_000.clkb                                             2.134
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.200
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.172
+ Required time                                                                       2.162
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.503 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.507 ns                                                        
+ StartPoint:              u_vga_sync/reg2_b2|u_vga_sync/reg1_b2_placeOpt_3.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_img/inst_32800x16_sub_023552_000.addrb[5] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/reg2_b2|u_vga_sync/reg1_b2_placeOpt_3.clk        clock                   1.834
+ launch clock edge                                           clock                   0.000
+ u_vga_sync/reg2_b2|u_vga_sync/reg1_b2_placeOpt_3.q[0]       cell                    0.140
+ u_img/inst_32800x16_sub_023552_000.addrb[5] (vga_rdaddr[2]_placeOpt_3) net (fanout = 18)       0.695               
+ u_img/inst_32800x16_sub_023552_000                          path2reg                0.000
+ Arrival time                                                                        2.669 (1 lvl)
+                                                                                          (74% logic, 26% net)
+
+ u_img/inst_32800x16_sub_023552_000.clkb                                             2.134
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.200
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.172
+ Required time                                                                       2.162
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.507 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_img/inst_32800x16_sub_021504_000 (258 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.324 ns                                                        
+ StartPoint:              u_vga_sync/reg1_b3|u_vga_sync/reg1_b5_placeOpt_3_al_u4224.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_img/inst_32800x16_sub_021504_000.addrb[8] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/reg1_b3|u_vga_sync/reg1_b5_placeOpt_3_al_u4224.clk clock                   1.834
+ launch clock edge                                           clock                   0.000
+ u_vga_sync/reg1_b3|u_vga_sync/reg1_b5_placeOpt_3_al_u4224.q[0] cell                    0.140
+ u_img/inst_32800x16_sub_021504_000.addrb[8] (vga_rdaddr[5]_placeOpt_3) net (fanout = 18)       0.512               
+ u_img/inst_32800x16_sub_021504_000                          path2reg                0.000
+ Arrival time                                                                        2.486 (1 lvl)
+                                                                                          (80% logic, 20% net)
+
+ u_img/inst_32800x16_sub_021504_000.clkb                                             2.134
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.200
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.172
+ Required time                                                                       2.162
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.324 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.355 ns                                                        
+ StartPoint:              u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_img/inst_32800x16_sub_021504_000.csb[0] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.clk                 clock                   1.834
+ launch clock edge                                           clock                   0.000
+ u_vga_sync/reg1_b10|u_vga_sync/reg1_b11.q[1]                cell                    0.140
+ u_img/inst_32800x16_sub_021504_000.csb[0] (vga_rdaddr[10])  net (fanout = 20)       0.543 sources/rtl/test_camera.v(59)
+ u_img/inst_32800x16_sub_021504_000                          path2reg                0.000
+ Arrival time                                                                        2.517 (1 lvl)
+                                                                                          (79% logic, 21% net)
+
+ u_img/inst_32800x16_sub_021504_000.clkb                                             2.134
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.200
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.172
+ Required time                                                                       2.162
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.355 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.437 ns                                                        
+ StartPoint:              u_vga_sync/reg1_b12|u_vga_sync/reg1_b9_placeOpt_3.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_img/inst_32800x16_sub_021504_000.addrb[12] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/reg1_b12|u_vga_sync/reg1_b9_placeOpt_3.clk       clock                   1.834
+ launch clock edge                                           clock                   0.000
+ u_vga_sync/reg1_b12|u_vga_sync/reg1_b9_placeOpt_3.q[0]      cell                    0.140
+ u_img/inst_32800x16_sub_021504_000.addrb[12] (vga_rdaddr[9]_placeOpt_3) net (fanout = 18)       0.625               
+ u_img/inst_32800x16_sub_021504_000                          path2reg                0.000
+ Arrival time                                                                        2.599 (1 lvl)
+                                                                                          (76% logic, 24% net)
+
+ u_img/inst_32800x16_sub_021504_000.clkb                                             2.134
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.200
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.172
+ Required time                                                                       2.162
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.437 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_img/inst_32800x16_sub_016384_011 (258 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.334 ns                                                        
+ StartPoint:              u_vga_sync/reg1_b13|u_vga_sync/reg1_b8.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_img/inst_32800x16_sub_016384_011.addrb[8] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/reg1_b13|u_vga_sync/reg1_b8.clk                  clock                   1.834
+ launch clock edge                                           clock                   0.000
+ u_vga_sync/reg1_b13|u_vga_sync/reg1_b8.q[0]                 cell                    0.140
+ u_img/inst_32800x16_sub_016384_011.addrb[8] (vga_rdaddr[8]) net (fanout = 14)       0.522 sources/rtl/test_camera.v(59)
+ u_img/inst_32800x16_sub_016384_011                          path2reg                0.000
+ Arrival time                                                                        2.496 (1 lvl)
+                                                                                          (80% logic, 20% net)
+
+ u_img/inst_32800x16_sub_016384_011.clkb                                             2.134
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.200
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.172
+ Required time                                                                       2.162
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.334 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.492 ns                                                        
+ StartPoint:              u_vga_sync/reg1_b12|u_vga_sync/reg1_b9.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_img/inst_32800x16_sub_016384_011.addrb[12] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/reg1_b12|u_vga_sync/reg1_b9.clk                  clock                   1.834
+ launch clock edge                                           clock                   0.000
+ u_vga_sync/reg1_b12|u_vga_sync/reg1_b9.q[1]                 cell                    0.140
+ u_img/inst_32800x16_sub_016384_011.addrb[12] (vga_rdaddr[12]) net (fanout = 39)       0.680 sources/rtl/test_camera.v(59)
+ u_img/inst_32800x16_sub_016384_011                          path2reg                0.000
+ Arrival time                                                                        2.654 (1 lvl)
+                                                                                          (75% logic, 25% net)
+
+ u_img/inst_32800x16_sub_016384_011.clkb                                             2.134
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.200
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.172
+ Required time                                                                       2.162
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.492 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.495 ns                                                        
+ StartPoint:              u_vga_sync/reg1_b14|u_vga_sync/reg1_b7.clk (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ EndPoint:                u_img/inst_32800x16_sub_016384_011.addrb[7] (rising edge triggered by clock u_pll/pll_inst.clkc[0])
+ Clock group:             u_pll/pll_inst.refclk                                           
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/reg1_b14|u_vga_sync/reg1_b7.clk                  clock                   1.834
+ launch clock edge                                           clock                   0.000
+ u_vga_sync/reg1_b14|u_vga_sync/reg1_b7.q[0]                 cell                    0.140
+ u_img/inst_32800x16_sub_016384_011.addrb[7] (vga_rdaddr[7]) net (fanout = 14)       0.683 sources/rtl/test_camera.v(59)
+ u_img/inst_32800x16_sub_016384_011                          path2reg                0.000
+ Arrival time                                                                        2.657 (1 lvl)
+                                                                                          (75% logic, 25% net)
+
+ u_img/inst_32800x16_sub_016384_011.clkb                                             2.134
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.200
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.172
+ Required time                                                                       2.162
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.495 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Period checks:
+---------------------------------------------------------------------------------------------------------
+ Point                                             Type          Setting(ns)    Requied(ns)     Slack(ns)  
+---------------------------------------------------------------------------------------------------------
+ u_img/inst_32800x16_sub_000000_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_000000_009.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_000000_010.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_000000_011.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_000000_012.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_000000_013.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_000000_014.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_000000_015.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_001024_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_002048_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_003072_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_004096_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_005120_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_006144_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_007168_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_008192_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_008192_009.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_008192_010.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_008192_011.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_008192_012.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_008192_013.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_008192_014.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_008192_015.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_009216_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_010240_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_011264_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_012288_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_013312_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_014336_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_015360_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_016384_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_016384_009.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_016384_010.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_016384_011.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_016384_012.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_016384_013.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_016384_014.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_016384_015.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_017408_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_018432_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_019456_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_020480_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_021504_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_022528_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_023552_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_024576_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_024576_009.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_024576_010.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_024576_011.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_024576_012.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_024576_013.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_024576_014.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_024576_015.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_025600_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_026624_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_027648_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_028672_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_029696_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_030720_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_031744_000.clkb           min period      39.197          3.400         35.797    
+ u_img/inst_32800x16_sub_032768_000.clkb           min period      39.197          3.400         35.797    
+
+=========================================================================================================
+Timing constraint:        clock: u_pll/pll_inst.clkc[1]                                   
+Clock = u_pll/pll_inst.clkc[1], period 82.333ns, rising at 0ns, falling at 41.166ns
+
+0 endpoints analyzed totally, and 0 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0.000), 0 hold errors (TNS = 0.000)
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+
+=========================================================================================================
+Timing summary:                                                                           
+---------------------------------------------------------------------------------------------------------
+Constraint path number: 145371 (STA coverage = 44.98%)
+Timing violations: 0 setup errors, and 0 hold errors.
+Minimal setup slack: 28.982, minimal hold slack: 0.293
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  u_pll/pll_inst.clkc[0] (25.512MHz)            10.215ns      97.895MHz        0.303ns       130        0.000ns
+	  u_pll/pll_inst.clkc[2] (4.048MHz)              3.267ns     306.091MHz        0.128ns        31        0.000ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
+
+Warning: there are 4 clock nets without clock constraints.
+	cam_pclk_pad
+	camera_wrreq
+	u_camera_init/divider2[8]
+	u_camera_init/u_i2c_write/divider2[7]
+
+---------------------------------------------------------------------------------------------------------
