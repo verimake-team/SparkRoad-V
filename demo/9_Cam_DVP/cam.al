@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
     <Project_Created_Time>2019-07-29 11:02:32</Project_Created_Time>
-    <TD_Version>4.6.12906</TD_Version>
-    <UCode>11110001</UCode>
+    <TD_Encoding>UTF-8</TD_Encoding>
+    <TD_Version>4.6.13941</TD_Version>
+    <UCode>11000111</UCode>
     <Name>cam</Name>
     <HardWare>
         <Family>EG4</Family>
@@ -19,7 +20,7 @@
             <File>sources/rtl/camera_reader.v</File>
         </Verilog>
         <ADC_FILE>sources/sdc/SparkRoad.adc</ADC_FILE>
-        <SDC_FILE/>
+        <SDC_FILE>cam.sdc</SDC_FILE>
         <CWC_FILE/>
     </Source_Files>
     <TOP_MODULE>
@@ -28,8 +29,8 @@
         <CREATEINDEX>auto</CREATEINDEX>
     </TOP_MODULE>
     <Project_Settings>
-        <Step_Last_Change>2019-08-08 17:27:53</Step_Last_Change>
-        <Current_Step>60</Current_Step>
+        <Step_Last_Change>2019-10-01 12:01:01</Step_Last_Change>
+        <Current_Step>0</Current_Step>
         <Step_Status>true</Step_Status>
     </Project_Settings>
 </Project>

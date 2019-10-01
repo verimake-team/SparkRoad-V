@@ -1,0 +1,50 @@
+============================================================
+   Tang Dynasty, V4.6.13941
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = D:/Anlogic/TD4.6.1/bin/td.exe
+   Built at =   17:07:14 Aug 27 2019
+   Run by =     zhang
+   Run Date =   Tue Oct  1 11:57:30 2019
+
+   Run on =     DESKTOP-SGFO9TT
+============================================================
+RUN-1002 : start command "open_project cam.al"
+HDL-1007 : analyze verilog file sources/rtl/camera_init.v
+HDL-1007 : analyze verilog file sources/rtl/i2c_module.v
+HDL-1007 : analyze verilog file sources/rtl/lcd_sync.v
+HDL-1007 : analyze verilog file sources/rtl/test_camera.v
+HDL-1007 : analyze verilog file al_ip/ip_pll.v
+HDL-1007 : analyze verilog file al_ip/ip_ram.v
+HDL-1007 : analyze verilog file sources/rtl/camera_reader.v
+RUN-1002 : start command "import_device eagle_s20.db -package BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicated  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicated  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "download -bit cam.bit -mode program_spi -v -spd 6 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m program_spi -bit cam.bit"
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_BG256 -m program_spi -bit cam.bit" in  2.235535s wall, 2.140625s user + 0.109375s system = 2.250000s CPU (100.6%)
+
+RUN-1004 : used memory is 500 MB, reserved memory is 469 MB, peak memory is 510 MB
+RUN-1002 : start command "program_spi -cable 0 -spd 6"
+RUN-1003 : finish command "program_spi -cable 0 -spd 6" in  100.866360s wall, 4.484375s user + 2.812500s system = 7.296875s CPU (7.2%)
+
+RUN-1004 : used memory is 499 MB, reserved memory is 468 MB, peak memory is 510 MB
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m verify_spi -bit cam.bit"
+RUN-1002 : start command "program -cable 0 -spd 4"
+RUN-1003 : finish command "program -cable 0 -spd 4" in  25.411303s wall, 0.718750s user + 0.812500s system = 1.531250s CPU (6.0%)
+
+RUN-1004 : used memory is 299 MB, reserved memory is 260 MB, peak memory is 510 MB
+RUN-1002 : start command "program -cable 0 -spd 1"
+RUN-1003 : finish command "download -bit cam.bit -mode program_spi -v -spd 6 -sec 64 -cable 0" in  131.422517s wall, 8.250000s user + 4.171875s system = 12.421875s CPU (9.5%)
+
+RUN-1004 : used memory is 155 MB, reserved memory is 111 MB, peak memory is 510 MB
+GUI-1001 : Download success!

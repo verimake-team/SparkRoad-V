@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <All_Bram_Infos>
-    <Ucode>11110001</Ucode>
+    <Ucode>11000111</Ucode>
     <AL_PHY_BRAM>
         <INST_1>
             <rid>0X0004</rid>
             <wid>0X0004</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_000000_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -26,7 +26,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -36,7 +36,7 @@
             <wid>0X0005</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_000000_009</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -55,7 +55,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -65,7 +65,7 @@
             <wid>0X0006</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_000000_010</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -84,7 +84,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -94,7 +94,7 @@
             <wid>0X0007</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_000000_011</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -113,7 +113,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -123,7 +123,7 @@
             <wid>0X0008</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_000000_012</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -142,7 +142,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -152,7 +152,7 @@
             <wid>0X0009</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_000000_013</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -171,7 +171,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -181,7 +181,7 @@
             <wid>0X000A</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_000000_014</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -200,7 +200,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -210,7 +210,7 @@
             <wid>0X000B</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_000000_015</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -229,7 +229,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -239,7 +239,7 @@
             <wid>0X000C</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_001024_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -258,7 +258,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -268,7 +268,7 @@
             <wid>0X000D</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_002048_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -287,7 +287,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -297,7 +297,7 @@
             <wid>0X000E</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_003072_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -316,7 +316,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -326,7 +326,7 @@
             <wid>0X000F</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_004096_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -345,7 +345,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -355,7 +355,7 @@
             <wid>0X0010</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_005120_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -374,7 +374,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -384,7 +384,7 @@
             <wid>0X0011</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_006144_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -403,7 +403,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -413,7 +413,7 @@
             <wid>0X0012</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_007168_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -432,7 +432,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -442,7 +442,7 @@
             <wid>0X0013</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_008192_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -461,7 +461,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -471,7 +471,7 @@
             <wid>0X0014</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_008192_009</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -490,7 +490,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -500,7 +500,7 @@
             <wid>0X0015</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_008192_010</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -519,7 +519,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -529,7 +529,7 @@
             <wid>0X0016</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_008192_011</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -548,7 +548,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -558,7 +558,7 @@
             <wid>0X0017</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_008192_012</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -577,7 +577,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -587,7 +587,7 @@
             <wid>0X0018</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_008192_013</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -606,7 +606,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -616,7 +616,7 @@
             <wid>0X0019</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_008192_014</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -635,7 +635,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -645,7 +645,7 @@
             <wid>0X001A</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_008192_015</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -664,7 +664,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -674,7 +674,7 @@
             <wid>0X001B</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_009216_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -693,7 +693,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -703,7 +703,7 @@
             <wid>0X001C</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_010240_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -722,7 +722,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -732,7 +732,7 @@
             <wid>0X001D</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_011264_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -751,7 +751,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -761,7 +761,7 @@
             <wid>0X001E</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_012288_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -780,7 +780,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -790,7 +790,7 @@
             <wid>0X001F</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_013312_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -809,7 +809,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -819,7 +819,7 @@
             <wid>0X0020</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_014336_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -838,7 +838,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -848,7 +848,7 @@
             <wid>0X0021</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_015360_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -867,7 +867,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -877,7 +877,7 @@
             <wid>0X0022</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_016384_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -896,7 +896,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -906,7 +906,7 @@
             <wid>0X0023</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_016384_009</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -925,7 +925,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -935,7 +935,7 @@
             <wid>0X0024</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_016384_010</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -954,7 +954,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -964,7 +964,7 @@
             <wid>0X0025</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_016384_011</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -983,7 +983,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -993,7 +993,7 @@
             <wid>0X0026</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_016384_012</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -1012,7 +1012,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -1022,7 +1022,7 @@
             <wid>0X0027</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_016384_013</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -1041,7 +1041,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -1051,7 +1051,7 @@
             <wid>0X0028</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_016384_014</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -1070,7 +1070,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -1080,7 +1080,7 @@
             <wid>0X0029</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_016384_015</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -1099,7 +1099,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -1109,7 +1109,7 @@
             <wid>0X002A</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_017408_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -1128,7 +1128,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -1138,7 +1138,7 @@
             <wid>0X002B</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_018432_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -1157,7 +1157,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -1167,7 +1167,7 @@
             <wid>0X002C</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_019456_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -1186,7 +1186,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -1196,7 +1196,7 @@
             <wid>0X002D</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_020480_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -1215,7 +1215,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -1225,7 +1225,7 @@
             <wid>0X002E</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_021504_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -1244,7 +1244,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -1254,7 +1254,7 @@
             <wid>0X002F</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_022528_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -1273,7 +1273,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -1283,7 +1283,7 @@
             <wid>0X0030</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_023552_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -1302,7 +1302,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -1312,7 +1312,7 @@
             <wid>0X0031</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_024576_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -1331,7 +1331,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -1341,7 +1341,7 @@
             <wid>0X0032</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_024576_009</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -1360,7 +1360,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -1370,7 +1370,7 @@
             <wid>0X0033</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_024576_010</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -1389,7 +1389,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -1399,7 +1399,7 @@
             <wid>0X0034</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_024576_011</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -1418,7 +1418,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -1428,7 +1428,7 @@
             <wid>0X0035</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_024576_012</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -1447,7 +1447,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -1457,7 +1457,7 @@
             <wid>0X0036</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_024576_013</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -1476,7 +1476,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -1486,7 +1486,7 @@
             <wid>0X0037</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_024576_014</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -1505,7 +1505,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -1515,7 +1515,7 @@
             <wid>0X0038</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_024576_015</name>
             <width_a>1</width_a>
             <width_b>1</width_b>
@@ -1534,7 +1534,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>8192</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>1</width>
                 </working_mode>
             </sub_bid_info>
@@ -1544,7 +1544,7 @@
             <wid>0X0039</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_025600_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -1563,7 +1563,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -1573,7 +1573,7 @@
             <wid>0X003A</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_026624_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -1592,7 +1592,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -1602,7 +1602,7 @@
             <wid>0X003B</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_027648_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -1621,7 +1621,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -1631,7 +1631,7 @@
             <wid>0X003C</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_028672_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -1650,7 +1650,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -1660,7 +1660,7 @@
             <wid>0X003D</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_029696_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -1679,7 +1679,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -1689,7 +1689,7 @@
             <wid>0X003E</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_030720_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -1708,7 +1708,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -1718,7 +1718,7 @@
             <wid>0X003F</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_031744_000</name>
             <width_a>9</width_a>
             <width_b>9</width_b>
@@ -1737,7 +1737,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>1024</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>9</width>
                 </working_mode>
             </sub_bid_info>
@@ -1747,7 +1747,7 @@
             <wid>0X0040</wid>
             <is_debuggable>n</is_debuggable>
             <is_initialize>n</is_initialize>
-            <model_type>89</model_type>
+            <model_type>AL_PHY_BRAM</model_type>
             <name>u_img/inst_32800x16_sub_032768_000</name>
             <width_a>18</width_a>
             <width_b>18</width_b>
@@ -1766,7 +1766,7 @@
                 <working_mode>
                     <address_step>1</address_step>
                     <depth>512</depth>
-                    <mode_type>89</mode_type>
+                    <mode_type>88</mode_type>
                     <width>18</width>
                 </working_mode>
             </sub_bid_info>
