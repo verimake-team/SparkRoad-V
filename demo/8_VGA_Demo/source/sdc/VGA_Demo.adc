@@ -6,14 +6,14 @@ set_pin_assignment {vga_clk  } {location = H2  ;}
 set_pin_assignment {vga_hs  } {location = J3 ;}
 set_pin_assignment {vga_vs  } {location = J4  ;}
 
-set_pin_assignment {vga_r[0]  } {location = K6 ;}
-set_pin_assignment {vga_r[1]  } {location = K3 ;}
-set_pin_assignment {vga_r[2]  } {location = K5  ;}
-set_pin_assignment {vga_r[3]  } {location = L4  ;}
-set_pin_assignment {vga_r[4]  } {location = M1  ;}
-set_pin_assignment {vga_r[5]  } {location = M2 ;}
-set_pin_assignment {vga_r[6]  } {location = L3  ;}
-set_pin_assignment {vga_r[7]  } {location = L5  ;}
+set_pin_assignment {vga_r[0]  } {location = L5 ;}
+set_pin_assignment {vga_r[1]  } {location = L3 ;}
+set_pin_assignment {vga_r[2]  } {location = M2  ;}
+set_pin_assignment {vga_r[3]  } {location = M1  ;}
+set_pin_assignment {vga_r[4]  } {location = L4  ;}
+set_pin_assignment {vga_r[5]  } {location = K5 ;}
+set_pin_assignment {vga_r[6]  } {location = K3  ;}
+set_pin_assignment {vga_r[7]  } {location = K6  ;}
 
 set_pin_assignment {vga_g[0]  } {location = L1 ;}
 set_pin_assignment {vga_g[1]  } {location = K2 ;}
