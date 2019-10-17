@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+    <Project_Created_Time>2019-09-30 16:29:26</Project_Created_Time>
+    <TD_Version>4.6.14314</TD_Version>
+    <UCode>10101000</UCode>
+    <Name>M0demo</Name>
+    <HardWare>
+        <Family>EG4</Family>
+        <Device>EG4S20BG256</Device>
+    </HardWare>
+    <Source_Files>
+        <Verilog>
+            <File>../RTL/AHB2MEM.v</File>
+            <File>../RTL/AhbLitePC.v</File>
+            <File>../RTL/cmsdk_ahb_bitband.v</File>
+            <File>../RTL/cmsdk_ahb_cs_rom_table.v</File>
+            <File>../RTL/cmsdk_ahb_default_slave.v</File>
+            <File>../RTL/cmsdk_ahb_gpio.v</File>
+            <File>../RTL/cmsdk_ahb_master_mux.v</File>
+            <File>../RTL/cmsdk_ahb_memory_models_defs.v</File>
+            <File>../RTL/cmsdk_ahb_ram_beh.v</File>
+            <File>../RTL/cmsdk_ahb_rom.v</File>
+            <File>../RTL/cmsdk_ahb_slave_mux.v</File>
+            <File>../RTL/cmsdk_ahb_to_apb.v</File>
+            <File>../RTL/cmsdk_ahb_to_iop.v</File>
+            <File>../RTL/cmsdk_apb_slave_mux.v</File>
+            <File>../RTL/cmsdk_apb_subsystem_m0ds.v</File>
+            <File>../RTL/cmsdk_apb_uart.v</File>
+            <File>../RTL/cmsdk_clkreset.v</File>
+            <File>../RTL/cmsdk_iop_gpio.v</File>
+            <File>../RTL/cmsdk_mcu.v</File>
+            <File>../RTL/cmsdk_mcu_addr_decode.v</File>
+            <File>../RTL/cmsdk_mcu_clkctrl.v</File>
+            <File>../RTL/cmsdk_mcu_defs.v</File>
+            <File>../RTL/cmsdk_mcu_pin_mux.v</File>
+            <File>../RTL/cmsdk_mcu_stclkctrl.v</File>
+            <File>../RTL/cmsdk_mcu_sysctrl.v</File>
+            <File>../RTL/cmsdk_mcu_system.v</File>
+            <File>../RTL/cortexm0ds_logic.v</File>
+            <File>../RTL/CORTEXM0INTEGRATION.v</File>
+            <File>../RTL/fpga_options_defs.v</File>
+            <File>../RTL/gpio.v</File>
+            <File>../RTL/gpio_apbif.v</File>
+            <File>../RTL/gpio_ctrl.v</File>
+            <File>../RTL/M0demo.v</File>
+            <File>al_ip/M0clkpll.v</File>
+        </Verilog>
+        <ADC_FILE>M0DEMO.adc</ADC_FILE>
+        <SDC_FILE/>
+        <CWC_FILE/>
+    </Source_Files>
+    <TOP_MODULE>
+        <LABEL/>
+        <MODULE>M0demo</MODULE>
+        <CREATEINDEX>user</CREATEINDEX>
+    </TOP_MODULE>
+    <Project_Settings>
+        <Step_Last_Change>2019-10-18 00:06:20</Step_Last_Change>
+        <Current_Step>0</Current_Step>
+        <Step_Status>true</Step_Status>
+    </Project_Settings>
+</Project>

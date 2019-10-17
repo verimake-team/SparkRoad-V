@@ -1,0 +1,10 @@
+.\objects\systick.o: src\systick.c
+.\objects\systick.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include\ARMCM0.h
+.\objects\systick.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\core_cm0.h
+.\objects\systick.o: D:\Coding\MDKeil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\systick.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\systick.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\systick.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\systick.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h
+.\objects\systick.o: src\systick.h
+.\objects\systick.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\core_cm0.h

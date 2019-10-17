@@ -1,0 +1,95 @@
+============================================================
+   Tang Dynasty, V4.6.14314
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/Anlogic/TD4.6.2/bin/td.exe
+   Built at =   11:20:06 Sep 19 2019
+   Run by =     zhang
+   Run Date =   Fri Oct 18 00:06:16 2019
+
+   Run on =     ZHANG-PC
+============================================================
+RUN-1002 : start command "open_project M0demo.al"
+HDL-1007 : analyze verilog file ../RTL/AHB2MEM.v
+HDL-1007 : analyze verilog file ../RTL/AhbLitePC.v
+HDL-1007 : analyze verilog file ../RTL/cmsdk_ahb_bitband.v
+HDL-1007 : analyze verilog file ../RTL/cmsdk_ahb_cs_rom_table.v
+HDL-1007 : analyze verilog file ../RTL/cmsdk_ahb_default_slave.v
+HDL-1007 : analyze verilog file ../RTL/cmsdk_ahb_gpio.v
+HDL-1007 : analyze verilog file ../RTL/cmsdk_ahb_master_mux.v
+HDL-1007 : analyze verilog file ../RTL/cmsdk_ahb_ram_beh.v
+HDL-1007 : analyze verilog file ../RTL/cmsdk_ahb_rom.v
+HDL-1007 : analyze included file ../RTL/cmsdk_ahb_memory_models_defs.v in ../RTL/cmsdk_ahb_rom.v(47)
+HDL-1007 : back to file '../RTL/cmsdk_ahb_rom.v' in ../RTL/cmsdk_ahb_rom.v(47)
+HDL-1007 : analyze verilog file ../RTL/cmsdk_ahb_slave_mux.v
+HDL-1007 : analyze verilog file ../RTL/cmsdk_ahb_to_apb.v
+HDL-1007 : analyze verilog file ../RTL/cmsdk_ahb_to_iop.v
+HDL-1007 : analyze verilog file ../RTL/cmsdk_apb_slave_mux.v
+HDL-1007 : analyze verilog file ../RTL/cmsdk_apb_subsystem_m0ds.v
+HDL-1007 : analyze verilog file ../RTL/cmsdk_apb_uart.v
+HDL-1007 : analyze verilog file ../RTL/cmsdk_clkreset.v
+HDL-1007 : analyze verilog file ../RTL/cmsdk_iop_gpio.v
+HDL-1007 : analyze verilog file ../RTL/cmsdk_mcu.v
+HDL-1007 : analyze included file ../RTL/cmsdk_mcu_defs.v in ../RTL/cmsdk_mcu.v(30)
+HDL-1007 : analyze included file ../RTL/fpga_options_defs.v in ../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : back to file '../RTL/cmsdk_mcu_defs.v' in ../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : analyze included file ../RTL/cmsdk_ahb_memory_models_defs.v in ../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../RTL/cmsdk_mcu_defs.v' in ../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../RTL/cmsdk_mcu.v' in ../RTL/cmsdk_mcu.v(30)
+HDL-1007 : analyze verilog file ../RTL/cmsdk_mcu_addr_decode.v
+HDL-1007 : analyze included file ../RTL/cmsdk_mcu_defs.v in ../RTL/cmsdk_mcu_addr_decode.v(30)
+HDL-1007 : analyze included file ../RTL/fpga_options_defs.v in ../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : back to file '../RTL/cmsdk_mcu_defs.v' in ../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : analyze included file ../RTL/cmsdk_ahb_memory_models_defs.v in ../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../RTL/cmsdk_mcu_defs.v' in ../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../RTL/cmsdk_mcu_addr_decode.v' in ../RTL/cmsdk_mcu_addr_decode.v(30)
+HDL-1007 : analyze verilog file ../RTL/cmsdk_mcu_clkctrl.v
+HDL-1007 : analyze included file ../RTL/cmsdk_mcu_defs.v in ../RTL/cmsdk_mcu_clkctrl.v(31)
+HDL-1007 : analyze included file ../RTL/fpga_options_defs.v in ../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : back to file '../RTL/cmsdk_mcu_defs.v' in ../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : analyze included file ../RTL/cmsdk_ahb_memory_models_defs.v in ../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../RTL/cmsdk_mcu_defs.v' in ../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../RTL/cmsdk_mcu_clkctrl.v' in ../RTL/cmsdk_mcu_clkctrl.v(31)
+HDL-1007 : analyze verilog file ../RTL/cmsdk_mcu_pin_mux.v
+HDL-1007 : analyze verilog file ../RTL/cmsdk_mcu_stclkctrl.v
+HDL-1007 : analyze verilog file ../RTL/cmsdk_mcu_sysctrl.v
+HDL-1007 : analyze included file ../RTL/cmsdk_mcu_defs.v in ../RTL/cmsdk_mcu_sysctrl.v(42)
+HDL-1007 : analyze included file ../RTL/fpga_options_defs.v in ../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : back to file '../RTL/cmsdk_mcu_defs.v' in ../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : analyze included file ../RTL/cmsdk_ahb_memory_models_defs.v in ../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../RTL/cmsdk_mcu_defs.v' in ../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../RTL/cmsdk_mcu_sysctrl.v' in ../RTL/cmsdk_mcu_sysctrl.v(42)
+HDL-1007 : analyze verilog file ../RTL/cmsdk_mcu_system.v
+HDL-1007 : analyze included file ../RTL/cmsdk_mcu_defs.v in ../RTL/cmsdk_mcu_system.v(27)
+HDL-1007 : analyze included file ../RTL/fpga_options_defs.v in ../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : back to file '../RTL/cmsdk_mcu_defs.v' in ../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : analyze included file ../RTL/cmsdk_ahb_memory_models_defs.v in ../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../RTL/cmsdk_mcu_defs.v' in ../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../RTL/cmsdk_mcu_system.v' in ../RTL/cmsdk_mcu_system.v(27)
+HDL-1007 : analyze verilog file ../RTL/cortexm0ds_logic.v
+HDL-1007 : analyze verilog file ../RTL/CORTEXM0INTEGRATION.v
+HDL-1007 : analyze verilog file ../RTL/gpio.v
+HDL-1007 : analyze verilog file ../RTL/gpio_apbif.v
+HDL-1007 : analyze verilog file ../RTL/gpio_ctrl.v
+HDL-1007 : analyze verilog file ../RTL/M0demo.v
+HDL-1007 : analyze included file ../RTL/cmsdk_mcu_defs.v in ../RTL/M0demo.v(2)
+HDL-1007 : analyze included file ../RTL/fpga_options_defs.v in ../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : back to file '../RTL/cmsdk_mcu_defs.v' in ../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : analyze included file ../RTL/cmsdk_ahb_memory_models_defs.v in ../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../RTL/cmsdk_mcu_defs.v' in ../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../RTL/M0demo.v' in ../RTL/M0demo.v(2)
+HDL-1007 : analyze verilog file al_ip/M0clkpll.v
+RUN-1003 : finish command "open_project M0demo.al" in  1.598975s wall, 1.234375s user + 0.343750s system = 1.578125s CPU (98.7%)
+
+RUN-1004 : used memory is 44 MB, reserved memory is 27 MB, peak memory is 44 MB
+RUN-1002 : start command "import_device eagle_s20.db -package BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicated  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicated  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.

@@ -1,0 +1,14 @@
+.\objects\uart.o: src\UART.c
+.\objects\uart.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include\ARMCM0.h
+.\objects\uart.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\core_cm0.h
+.\objects\uart.o: D:\Coding\MDKeil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uart.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\uart.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\uart.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\uart.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h
+.\objects\uart.o: src\UART.h
+.\objects\uart.o: src\DE10.h
+.\objects\uart.o: D:\Coding\MDKeil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\uart.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\core_cm0.h
+.\objects\uart.o: D:\Coding\MDKeil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\uart.o: D:\Coding\MDKeil\ARM\ARMCC\Bin\..\include\math.h

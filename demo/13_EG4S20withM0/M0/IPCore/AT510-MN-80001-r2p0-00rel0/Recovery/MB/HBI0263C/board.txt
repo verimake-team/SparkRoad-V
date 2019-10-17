@@ -1,0 +1,17 @@
+BOARD: HBI0263
+TITLE: Motherboard configuration file
+
+[MCCS]
+MBBIOS: mbb_v217.ebf         ; MB BIOS IMAGE. Supports RTC with time updates via MCC
+
+[APPLICATION NOTE]           ;Please select the required processor
+;APPFILE: AN382\an382_v3.txt ; - Cortex-M0
+;APPFILE: AN383\an383_v3.txt ; - Cortex-M0+
+;APPFILE: AN384\an384_v3.txt ; - Cortex-M1
+;APPFILE: AN385\an385_v3.txt ; - Cortex-M3
+;APPFILE: AN386\an386_v3.txt ; - Cortex-M4
+;APPFILE: AN500\an500_v1.txt ; - Cortex-M7
+APPFILE: AN387\an387_v5.txt ; - Cortex-M0 DesignStart
+;APPFILE: AN505\an505_v1.txt ; - Teal IoT Kit
+;APPFILE: AN519\an519_v1.txt ; - Grebe IoT Kit
+;APPFILE: AN511\an511_v1.txt  ; - Cortex-M3 DesignStart

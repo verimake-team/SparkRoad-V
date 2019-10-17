@@ -1,0 +1,6 @@
+set_pin_assignment {NRST} { LOCATION = T4;  }
+set_pin_assignment {SWCLKTCK} { LOCATION = A8;  }
+set_pin_assignment {SWDIOTMS} { LOCATION = A7;  }
+set_pin_assignment {XTAL1} { LOCATION = K14;  }
+set_pin_assignment {b_pad_gpio_porta[0]} { LOCATION = N3;  }
+set_pin_assignment {nTRST} { LOCATION = R5;  }

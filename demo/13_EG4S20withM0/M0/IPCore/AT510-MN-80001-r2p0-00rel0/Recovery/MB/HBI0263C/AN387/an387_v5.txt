@@ -1,0 +1,17 @@
+BOARD: HBI0263
+TITLE: AN387 application note configuration file
+
+[FPGAS]
+TOTALFPGAS: 1               ;Total Number of FPGAs (Max: 3)
+F0FILE: an387_v5.rbe        ;FPGA0 Filename - (single image for whole design)
+F0MODE: FPGA                ;FPGA0 Programming Mode
+
+[OSCCLKS]
+TOTALOSCCLKS: 3
+OSC0: 50.0                  ;OSC0 System clock in MHz
+OSC1: 24.576                ;OSC1 AACI clock in MHz
+OSC2: 25.0                  ;OSC2 MISC clock in MHz
+
+[SCC REGISTERS]
+TOTALSYSCONS: 1             ;Total Number of SYSCON registers defined
+SYSCON: 0x000 0x00000001    ;SCC enable ZBT remap

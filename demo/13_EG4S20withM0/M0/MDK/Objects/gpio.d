@@ -1,0 +1,14 @@
+.\objects\gpio.o: src\gpio.c
+.\objects\gpio.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include\ARMCM0.h
+.\objects\gpio.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\core_cm0.h
+.\objects\gpio.o: D:\Coding\MDKeil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gpio.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\gpio.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\gpio.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\gpio.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h
+.\objects\gpio.o: src\gpio.h
+.\objects\gpio.o: src\DE10.h
+.\objects\gpio.o: D:\Coding\MDKeil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\gpio.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\core_cm0.h
+.\objects\gpio.o: src\systick.h
+.\objects\gpio.o: D:\Coding\MDKeil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\core_cm0.h

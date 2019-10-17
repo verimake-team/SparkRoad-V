@@ -1,0 +1,9 @@
+TITLE: Versatile Express Images Configuration File
+
+[IMAGES]
+TOTALIMAGES: 1                     ;Number of Images (Max: 32)
+
+IMAGE0ADDRESS: 0x00000000          ;Please select the required executable program
+IMAGE0FILE: \SOFTWARE\dm_v111.axf  ; - demo
+;IMAGE0FILE: \SOFTWARE\st_v112.axf ; - selftest
+;IMAGE0FILE: \SOFTWARE\shield.axf   ; - Arduino Shield expansion test
