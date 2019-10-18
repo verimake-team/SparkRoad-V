@@ -1,4 +1,5 @@
-# SparkRoad-V
+# SparkRoad-V  
+ ![Image text](Docs/SparkRoad-V.jpg)
   The SparkRoad-V is a FPGA board ，which provide for 
   [National Undergraduate FPGA Innovation Design Competition](http://www.fpgachina.cn/)  .
   But it is not just used for the competition because for its wealthy peripherals.
