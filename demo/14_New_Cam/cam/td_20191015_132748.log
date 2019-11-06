@@ -1,0 +1,55 @@
+============================================================
+   Tang Dynasty, V4.6.13941
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/Anlogic/TD4.6.1/bin/td.exe
+   Built at =   17:07:14 Aug 27 2019
+   Run by =     zhang
+   Run Date =   Tue Oct 15 13:27:48 2019
+
+   Run on =     DESKTOP-0KK6GHJ
+============================================================
+RUN-1002 : start command "import_device eagle_s20.db -package BG256 -basic"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicated  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicated  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "read_verilog -file al_ip/img_cache.v"
+HDL-1007 : analyze verilog file al_ip/img_cache.v
+HDL-1007 : elaborate module img_cache in al_ip/img_cache.v(14)
+HDL-1007 : elaborate module EG_LOGIC_BRAM(DATA_WIDTH_A=16,DATA_WIDTH_B=16,ADDR_WIDTH_A=16,ADDR_WIDTH_B=16,DATA_DEPTH_A=32800,DATA_DEPTH_B=32800,MODE="PDPW") in C:/Anlogic/TD4.6.1/arch/eagle_macro.v(1072)
+HDL-1200 : Current top model is img_cache
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD4.6.1/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "img_cache"
+SYN-1011 : Flatten model img_cache
+SYN-1014 : Optimize round 1
+SYN-1032 : 70/0 useful/useless nets, 3/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+RUN-1002 : start command "map_macro -nopad"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2512 : LOGIC BRAM "inst"
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 658/0 useful/useless nets, 336/0 useful/useless insts
+SYN-1016 : Merged 216 instances.
+SYN-2571 : Optimize after map_dsp, round 1, 216 better
+SYN-2571 : Optimize after map_dsp, round 2
+SYN-1032 : 442/0 useful/useless nets, 120/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 2, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 441/0 useful/useless nets, 119/0 useful/useless insts
+SYN-2501 : Optimize round 1, 8 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 441/0 useful/useless nets, 119/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-1032 : 2445/12 useful/useless nets, 2123/12 useful/useless insts
+RUN-1002 : start command "write_verilog al_ip/img_cache_sim.v"
+HDL-1201 : write out verilog file al_ip/img_cache_sim.v
