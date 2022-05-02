@@ -1,3 +1,23 @@
+## 使用方法 Usage  
+[Click here for English version](#usage)  
+
+1. 按如下顺序将 FPGA 与兼容 SWD 的调试器相连 (请在断电状态操作)  
+  ```
+  FPGA               兼容 SWD 的调试器
+  3.3           ---- TVCC/VCC/3.3V
+  A7 (SWDIOTMS) ---- TMS
+  A8 (SWCLKTCK) ---- TCK
+  GND           ---- GND
+  ```
+  （如果你使用的是其他开发板，可能需要修改引脚约束文件将顶层模块 `M0demo.v` 中的 `SWDIOTMS` 与 `SWCLKTCK` 分配至另外可用的端口，然后再将自己分配的端口与调试器的对应端口相连）  
+  
+2. 在 4.6 版本的 TD 工具中综合项目，将 `M0demo.bit` 烧录给开发板（本项目文件可在 4.6 版本的 TD 下正常使用，若使用其他版本，可能需要修改部分文件）  
+3. 用 MDK 打开 `../M0/MDK` 中的项目  
+4. 在 MDK 中点击 `Options for Target... -> Debug -> Use(ST-Link/JLink...) -> Settings`，检查能否通过 SWD 检测到正确的内核  
+5. `rebuild` 项目  
+6. 点击 `Start/Stop Debug Session`，设置断点，开始运行，即可观察到 LED 在代码的控制下开始闪烁了  
+
+### Usage  
 <pre>
 /*******************************************************************************************
 **************************"Hello Cortex-M0" run on the Anlogic FPGA*************************
