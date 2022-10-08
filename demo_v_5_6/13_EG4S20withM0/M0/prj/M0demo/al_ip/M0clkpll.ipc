@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PLLConfig version="1.0">
+    <GeneralConfig>
+        <Type>PLL</Type>
+        <Device>EG4S20BG256</Device>
+        <create_VHDL>false</create_VHDL>
+    </GeneralConfig>
+    <Page1>
+        <speed_grade>Any</speed_grade>
+        <input_frequency>24.0000000000000000Mhz</input_frequency>
+        <feedback_mode>Normal</feedback_mode>
+        <clk_num>CLKC0</clk_num>
+        <enable_standby>ENABLE</enable_standby>
+        <enable_reset>ENABLE</enable_reset>
+        <pll_lock>ENABLE</pll_lock>
+    </Page1>
+    <Page2>
+        <bandwidth_setting>Medium</bandwidth_setting>
+    </Page2>
+    <Page3>
+        <setting>frequncy_setting</setting>
+        <multiplication_factor>1</multiplication_factor>
+        <division_factor>2</division_factor>
+        <clocks>
+            <clock>
+                <id>0</id>
+                <clock_division_factor>83</clock_division_factor>
+                <clock_frequency>8.0000000000000000MHz</clock_frequency>
+                <phase_shift>0.0000000000000000deg</phase_shift>
+            </clock>
+        </clocks>
+    </Page3>
+    <GeneratedFiles>
+        <Verilog Enable="true">M0clkpll.v</Verilog>
+    </GeneratedFiles>
+</PLLConfig>

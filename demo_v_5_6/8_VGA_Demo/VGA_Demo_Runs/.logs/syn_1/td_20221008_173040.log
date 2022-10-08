@@ -1,0 +1,500 @@
+============================================================
+   Tang Dynasty, V5.6.59063
+   Copyright (c) 2012-2022 Anlogic
+   Executable = C:/Anlogic/TD5.6.59063/bin/td.exe
+   Built at =   12:45:13 Sep  6 2022
+   Run by =     zhang
+   Run Date =   Sat Oct  8 17:30:40 2022
+
+   Run on =     DESKTOP-0KK6GHJ
+============================================================
+RUN-1002 : start command "open_project VGA_Demo.prj"
+RUN-6001 WARNING: File ../../al_ip/PLL.v already exists in IP ../../al_ip/PLL.ipc, it will be removed from project.
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1002 : start command "set_param rtl rtl_sim_model on"
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |     on     |       off        |   *    
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+HDL-1007 : analyze verilog file ../../al_ip/PLL.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../al_ip/PLL.v(73)
+HDL-1007 : analyze verilog file ../../source/rtl/VGA_Demo.v
+HDL-1007 : analyze verilog file ../../source/rtl/Clk_div.v
+HDL-1007 : analyze verilog file ../../source/rtl/Driver.v
+HDL-1007 : analyze verilog file ../../source/rtl/Display.v
+RUN-1001 : Project manager successfully analyzed 5 source files.
+RUN-1002 : start command "import_device eagle_s20.db -package EG4S20BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "elaborate -top VGA_Demo"
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1002 : start command "set_param rtl rtl_sim_model on"
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |     on     |       off        |   *    
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+HDL-1007 : elaborate module VGA_Demo in ../../source/rtl/VGA_Demo.v(2)
+HDL-1007 : elaborate module Clk_div in ../../source/rtl/Clk_div.v(2)
+HDL-1007 : elaborate module PLL in ../../al_ip/PLL.v(22)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in C:/Anlogic/TD5.6.59063/arch/eagle_macro.v(8)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="24.000",REFCLK_DIV=2,FBCLK_DIV=9,CLKC0_DIV=9,CLKC0_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=8,GMC_GAIN=0,ICP_CURRENT=9,KVCO=2,LPF_CAPACITOR=2,LPF_RESISTOR=8,SYNC_ENABLE="DISABLE") in C:/Anlogic/TD5.6.59063/arch/eagle_macro.v(929)
+HDL-1007 : elaborate module Driver in ../../source/rtl/Driver.v(11)
+HDL-1007 : elaborate module Display in ../../source/rtl/Display.v(19)
+HDL-1200 : Current top model is VGA_Demo
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "export_db VGA_Demo_elaborate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "read_adc ../../source/sdc/VGA_Demo.adc"
+RUN-1002 : start command "set_pin_assignment clk_24m      location = K14 ;"
+RUN-1002 : start command "set_pin_assignment rst_n   location = G11  ;"
+RUN-1002 : start command "set_pin_assignment vga_clk   location = H2  ;"
+RUN-1002 : start command "set_pin_assignment vga_hs   location = J3 ;"
+RUN-1002 : start command "set_pin_assignment vga_vs   location = J4  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[0]   location = L5 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[1]   location = L3 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[2]   location = M2  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[3]   location = M1  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[4]   location = L4  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[5]   location = K5 ;"
+RUN-1002 : start command "set_pin_assignment vga_r[6]   location = K3  ;"
+RUN-1002 : start command "set_pin_assignment vga_r[7]   location = K6  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[0]   location = L1 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[1]   location = K2 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[2]   location = K1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[3]   location = J1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[4]   location = H3  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[5]   location = J6 ;"
+RUN-1002 : start command "set_pin_assignment vga_g[6]   location = H1  ;"
+RUN-1002 : start command "set_pin_assignment vga_g[7]   location = H5  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[0]   location = G1 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[1]   location = F1 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[2]   location = F2  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[3]   location = E1  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[4]   location = G3  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[5]   location = E2 ;"
+RUN-1002 : start command "set_pin_assignment vga_b[6]   location = D1  ;"
+RUN-1002 : start command "set_pin_assignment vga_b[7]   location = C1  ;"
+USR-6010 WARNING: ADC constraints: top model pin vga_de has no constraint.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD5.6.59063/license/Anlogic.lic
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1002 : start command "set_param rtl rtl_sim_model on"
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |     on     |       off        |   *    
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+SYN-1012 : SanityCheck: Model "VGA_Demo"
+SYN-1012 : SanityCheck: Model "Clk_div"
+SYN-1012 : SanityCheck: Model "PLL"
+SYN-1012 : SanityCheck: Model "Driver"
+SYN-1012 : SanityCheck: Model "Display"
+SYN-1043 : Mark PLL as IO macro for instance bufg_feedback
+SYN-1043 : Mark Clk_div as IO macro for instance uut
+SYN-1011 : Flatten model VGA_Demo
+SYN-1032 : 239/4 useful/useless nets, 45/2 useful/useless insts
+SYN-1016 : Merged 7 instances.
+SYN-1032 : 219/15 useful/useless nets, 38/2 useful/useless insts
+SYN-1016 : Merged 38 instances.
+SYN-1032 : 213/6 useful/useless nets, 150/13 useful/useless insts
+SYN-1014 : Optimize round 1
+SYN-1017 : Remove 4 const input seq instances
+SYN-1002 :     u1_Driver/reg0_syn_13
+SYN-1002 :     u2_Display/reg0_syn_23
+SYN-1002 :     u2_Display/reg0_syn_24
+SYN-1002 :     u2_Display/reg0_syn_25
+SYN-1019 : Optimized 3 mux instances.
+SYN-1001 : Optimize 3 less-than instances
+SYN-1015 : Optimize round 1, 80 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 191/6 useful/useless nets, 131/0 useful/useless insts
+SYN-1015 : Optimize round 2, 0 better
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 0 better
+RUN-1002 : start command "write_verilog simulation/VGA_Demo_rtl_sim.v"
+HDL-1201 : write out verilog file simulation/VGA_Demo_rtl_sim.v
+RUN-1002 : start command "report_area -file VGA_Demo_rtl.area"
+RUN-1001 : standard
+***Report Model: VGA_Demo Device: EG4S20BG256***
+
+IO Statistics
+#IO                        30
+  #input                    2
+  #output                  28
+  #inout                    0
+
+Gate Statistics
+#Basic gates               53
+  #and                      5
+  #nand                     0
+  #or                       0
+  #nor                      0
+  #xor                      0
+  #xnor                     0
+  #buf                      0
+  #not                      2
+  #bufif1                   0
+  #MX21                     2
+  #FADD                     0
+  #DFF                     44
+  #LATCH                    0
+#MACRO_ADD                 13
+#MACRO_EQ                   2
+#MACRO_MULT                 1
+#MACRO_MUX                 58
+#MACRO_OTHERS               1
+
+Report Hierarchy Area:
++-----------------------------------------------+
+|Instance     |Module   |gates  |seq    |macros |
++-----------------------------------------------+
+|top          |VGA_Demo |9      |44     |17     |
+|  u0_PLL     |Clk_div  |1      |0      |1      |
+|    uut      |PLL      |0      |0      |1      |
+|  u1_Driver  |Driver   |8      |23     |15     |
+|  u2_Display |Display  |0      |21     |1      |
++-----------------------------------------------+
+
+RUN-1002 : start command "export_db VGA_Demo_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "read_sdc ../../source/sdc/VGA_Demo.sdc"
+USR-1009 : NO module with IP_SDC ...
+RUN-1002 : start command "get_ports clk_24m"
+RUN-1002 : start command "create_clock -name clk_24m -period 41.666 -waveform 0 20.833 "
+RUN-1102 : create_clock: clock name: clk_24m, type: 0, period: 41666, rise: 0, fall: 20833.
+RUN-1104 : Import SDC file ../../source/sdc/VGA_Demo.sdc finished, there are 0 nets kept by constraints.
+RUN-1002 : start command "optimize_gate -mapsim simulation/VGA_Demo_map_sim.v -packsim simulation/VGA_Demo_gate_sim.v -maparea VGA_Demo_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD5.6.59063/license/Anlogic.lic
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1002 : start command "set_param gate gate_sim_model on"
+RUN-1002 : start command "set_param gate map_sim_model on"
+RUN-1001 : Print Gate Property
+RUN-1001 : ------------------------------------------------------------------
+RUN-1001 :          Parameters         |  Settings  |  Default Values  |  Note  
+RUN-1001 : ------------------------------------------------------------------
+RUN-1001 :         cascade_dsp         |    off     |       off        |        
+RUN-1001 :         cascade_eram        |    off     |       off        |        
+RUN-1001 :        gate_sim_model       |     on     |       off        |   *    
+RUN-1001 :        map_sim_model        |     on     |       off        |   *    
+RUN-1001 :         map_strategy        |     1      |        1         |        
+RUN-1001 :           opt_area          |   medium   |      medium      |        
+RUN-1001 :          opt_timing         |    auto    |       auto       |        
+RUN-1001 :         pack_effort         |   medium   |      medium      |        
+RUN-1001 :      pack_lslice_ripple     |     on     |        on        |        
+RUN-1001 :   pack_lslice_ripple_ratio  |    0.5     |       0.5        |        
+RUN-1001 :        pack_seq_in_io       |    auto    |       auto       |        
+RUN-1001 :        ph1_mux_ratio        |    1.0     |       1.0        |        
+RUN-1001 :            report           |  standard  |     standard     |        
+RUN-1001 :           retiming          |    off     |       off        |        
+RUN-1001 : ------------------------------------------------------------------
+SYN-2001 : Map 30 IOs to PADs
+RUN-1002 : start command "update_pll_param -module VGA_Demo"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 1 BUFG to GCLK
+SYN-2571 : Map 1 macro multiplier
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 232/21 useful/useless nets, 173/21 useful/useless insts
+SYN-2501 : Optimize round 1, 44 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 13 macro adder
+SYN-1016 : Merged 4 instances.
+SYN-1032 : 377/2 useful/useless nets, 318/0 useful/useless insts
+RUN-1002 : start command "start_timer -prepack"
+TMR-2505 : Start building timing graph for model VGA_Demo.
+TMR-2506 : Build timing graph completely. Port num: 9, tpin num: 1004, tnet num: 375, tinst num: 316, tnode num: 1066, tedge num: 1300.
+TMR-2508 : Levelizing timing graph completed, there are 36 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 375 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3001 : Initiate 1 clocks from SDC.
+TMR-3004 : Map sdc constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=5, #lut = 66 (2.29), #lev = 4 (1.80)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=5, #lut = 66 (2.29), #lev = 4 (1.80)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 101 instances into 70 LUTs, name keeping = 94%.
+RUN-1002 : start command "write_verilog simulation/VGA_Demo_map_sim.v"
+HDL-1201 : write out verilog file simulation/VGA_Demo_map_sim.v
+RUN-1002 : start command "report_area -file VGA_Demo_gate.area"
+RUN-1001 : standard
+***Report Model: VGA_Demo Device: EG4S20BG256***
+
+IO Statistics
+#IO                        30
+  #input                    2
+  #output                  28
+  #inout                    0
+
+LUT Statistics
+#Total_luts               228
+  #lut4                    67
+  #lut5                     3
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b             158
+
+Utilization Statistics
+#lut                      228   out of  19600    1.16%
+#reg                       23   out of  19600    0.12%
+#le                         0
+#dsp                        1   out of     29    3.45%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       30   out of    188   15.96%
+  #ireg                     0
+  #oreg                     0
+  #treg                     0
+#pll                        1   out of      4   25.00%
+
+Report Hierarchy Area:
++--------------------------------------------------------------------+
+|Instance     |Module   |lut     |ripple  |seq     |bram    |dsp     |
++--------------------------------------------------------------------+
+|top          |VGA_Demo |70      |158     |23      |0       |1       |
+|  u0_PLL     |Clk_div  |1       |0       |0       |0       |0       |
+|    uut      |PLL      |1       |0       |0       |0       |0       |
+|  u1_Driver  |Driver   |22      |158     |23      |0       |0       |
+|  u2_Display |Display  |22      |0       |0       |0       |1       |
++--------------------------------------------------------------------+
+
+SYN-1001 : Packing model "VGA_Demo" ...
+SYN-4010 : Pack lib has 58 rtl pack models with 25 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 23 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 4 carry chain into lslice
+SYN-4007 : Packing 110 adder to BLE ...
+SYN-4008 : Packed 110 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+RUN-1002 : start command "write_verilog simulation/VGA_Demo_gate_sim.v"
+HDL-1201 : write out verilog file simulation/VGA_Demo_gate_sim.v
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model VGA_Demo
+RUN-1002 : start command "export_db VGA_Demo_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "backup_run_log run.log ../.logs/syn_1/td_20221008_173040.log"

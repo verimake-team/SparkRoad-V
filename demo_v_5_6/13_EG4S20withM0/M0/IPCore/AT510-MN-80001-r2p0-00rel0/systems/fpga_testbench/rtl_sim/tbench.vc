@@ -1,0 +1,76 @@
+//------------------------------------------------------------------------------
+// The confidential and proprietary information contained in this file may
+// only be used by a person authorised under and to the extent permitted
+// by a subsisting licensing agreement from ARM Limited or its affiliates.
+//
+//            (C) COPYRIGHT 2010-2015  ARM Limited or its affiliates.
+//                ALL RIGHTS RESERVED
+//
+// This entire notice must be reproduced on all copies of this file
+// and copies of this file may only be made by a person if such person is
+// permitted to do so under the terms of a subsisting license agreement
+// from ARM Limited or its affiliates.
+//
+//  Version and Release Control Information:
+//
+//  File Revision       : $Revision: 368444 $
+//  File Date           : $Date: 2017-07-25 15:10:13 +0100 (Tue, 25 Jul 2017) $
+//
+//  Release Information : Cortex-M0 DesignStart-r1p0-00rel0
+//------------------------------------------------------------------------------
+// Verilog-2001 (IEEE Std 1364-2001)
+//------------------------------------------------------------------------------
+//
+//-----------------------------------------------------------------------------
+// Abstract : Verilog Command File for DesignStart FPGA
+//-----------------------------------------------------------------------------
+//
+
+// ============= Verilog library extensions ===========
++libext+.v+.vlib
+
+// ============= Set the SIMULATION define  ===========
++define+SIMULATION
+
+// ================= Top level definitions=============
++incdir+../../../RevC/SMM_M0DS/fpga_top/verilog
++incdir+../../../logical/models/memories/
+
+// ================= Top level file ===================
+../verilog/tb_fpga.v
+-y ../../../RevC/SMM_M0DS/fpga_top/verilog
+
+// ================= Testbench path ===================
+-y ../verilog
++incdir+../verilog
+-y ../../../smm_common/verilog/spi2apb3/validation
+
+// =============    MCU Module search path    =============
+-y ../../../smm_common/verilog/ds703_scc_r0p3
+-y ../../../smm_common/verilog/spi2apb3/verilog
+-y ../../../smm_common/verilog/fpga
+-y ../../../smm_common/verilog/vga_edk/
+-y ../../../smm_common/verilog/apb_i2s/
+-y ../../../smm_common/verilog
+-y ../../../smm_common/verilog/pl022_ssp/verilog
++incdir+../../../smm_common/verilog/pl022_ssp/verilog
+-y ../../../smm_common/verilog/cmsdk_ahb_to_extmem16_psram/verilog
+//-y ../../../smm_common/verilog/cxapbasyncbridge/verilog/
+-y ../../../logical/cmsdk_apb_timer/verilog
+-y ../../../logical/cmsdk_apb_dualtimers/verilog
+-y ../../../logical/cmsdk_apb_uart/verilog
+-y ../../../logical/cmsdk_apb_watchdog/verilog
+-y ../../../logical/cmsdk_apb_slave_mux/verilog
+-y ../../../logical/cmsdk_apb_subsystem/verilog
+-y ../../../logical/cmsdk_ahb_slave_mux/verilog
+-y ../../../logical/cmsdk_ahb_default_slave/verilog
+-y ../../../logical/cmsdk_ahb_gpio/verilog
+-y ../../../logical/cmsdk_ahb_to_apb/verilog
+-y ../../../logical/cmsdk_iop_gpio/verilog
+-y ../../../logical/models/memories/
++incdir+../../../logical/cmsdk_apb_dualtimers/verilog
++incdir+../../../logical/cmsdk_apb_watchdog/verilog
+
+// ============= Cortex M0 DesignStart processor, (obfuscted code) =============
+-y ../../../cores/cortexm0_designstart_r2p0/logical/cortexm0_integration/verilog
+

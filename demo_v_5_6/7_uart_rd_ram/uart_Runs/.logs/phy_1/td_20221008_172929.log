@@ -1,0 +1,340 @@
+============================================================
+   Tang Dynasty, V5.6.59063
+   Copyright (c) 2012-2022 Anlogic
+   Executable = C:/Anlogic/TD5.6.59063/bin/td.exe
+   Built at =   12:45:13 Sep  6 2022
+   Run by =     zhang
+   Run Date =   Sat Oct  8 17:29:29 2022
+
+   Run on =     DESKTOP-0KK6GHJ
+============================================================
+RUN-1002 : start command "open_project uart.prj"
+RUN-6001 WARNING: File ../../al_ip/Double_RAM_uut.v already exists in IP ../../al_ip/Double_RAM_uut.ipc, it will be removed from project.
+RUN-6001 WARNING: File ../../al_ip/pll_test.v already exists in IP ../../al_ip/pll_test.ipc, it will be removed from project.
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+HDL-1007 : analyze verilog file ../../al_ip/pll_test.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../al_ip/pll_test.v(87)
+HDL-1007 : analyze verilog file ../../al_ip/Double_RAM_uut.v
+HDL-1007 : analyze verilog file ../../source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ANSI port 'rx_int' is not allowed in ../../source/rtl/my_uart_rx.v(39)
+HDL-1007 : analyze verilog file ../../source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file ../../source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file ../../source/rtl/uart_top.v
+HDL-1007 : analyze verilog file ../../source/rtl/ram_rw_control.v
+RUN-1001 : Project manager successfully analyzed 7 source files.
+RUN-1002 : start command "import_device eagle_s20.db -package EG4S20BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "import_db uart_place.db"
+RUN-1001 : Importing database generated by Tang Dynasty, V5.6.59063.
+RUN-1001 : Database version number 46140.
+RUN-1001 : Import flow parameters
+RUN-1001 : Import timing constraints
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import design success TD_VERSION=5.6.59063 , DB_VERSION=46140
+RUN-1002 : start command "route"
+RUN-1001 : Open license file C:/Anlogic/TD5.6.59063/license/Anlogic.lic
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Route Property
+RUN-1001 : -------------------------------------------------------
+RUN-1001 :    Parameters    |  Settings  |  Default Values  |  Note  
+RUN-1001 : -------------------------------------------------------
+RUN-1001 :      effort      |   medium   |      medium      |        
+RUN-1001 :     fix_hold     |    off     |       off        |        
+RUN-1001 :    opt_timing    |   medium   |      medium      |        
+RUN-1001 :   phy_sim_model  |    off     |       off        |        
+RUN-1001 :     priority     |   timing   |      timing      |        
+RUN-1001 :     swap_pin     |     on     |        on        |        
+RUN-1001 : -------------------------------------------------------
+PHY-1001 : Route runs in 8 thread(s)
+RUN-1001 : There are total 86 instances
+RUN-1001 : 37 mslices, 38 lslices, 5 pads, 1 brams, 0 dsps
+RUN-1001 : There are total 189 nets
+RUN-1001 : 106 nets have 2 pins
+RUN-1001 : 62 nets have [3 - 5] pins
+RUN-1001 : 12 nets have [6 - 10] pins
+RUN-1001 : 5 nets have [11 - 20] pins
+RUN-1001 : 4 nets have [21 - 99] pins
+RUN-1002 : start command "start_timer -report"
+TMR-2505 : Start building timing graph for model uart_top.
+TMR-2506 : Build timing graph completely. Port num: 5, tpin num: 736, tnet num: 187, tinst num: 84, tnode num: 965, tedge num: 1233.
+TMR-2508 : Levelizing timing graph completed, there are 13 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+PHY-1001 : 37 mslices, 38 lslices, 5 pads, 1 brams, 0 dsps
+TMR-2503 : Start to update net delay, extr mode = 3.
+TMR-2504 : Update delay of 187 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 3.
+TMR-3001 : Initiate 0 clocks from SDC.
+TMR-3004 : Map sdc constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-1001 : Start global routing, caller is route ...
+RUN-1001 : Generating global routing grids ...
+RUN-1001 : Building simple global routing graph ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 8 thread ...
+PHY-1002 : len = 5400, over cnt = 14(0%), over = 18, worst = 4
+PHY-1002 : len = 5496, over cnt = 4(0%), over = 4, worst = 1
+PHY-1002 : len = 5544, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.027426s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (113.9%)
+
+PHY-1001 : Congestion index: top1 = 11.96, top5 = 3.48, top10 = 1.74, top15 = 1.16.
+PHY-1001 : End global routing;  0.083749s wall, 0.078125s user + 0.000000s system = 0.078125s CPU (93.3%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Current memory(MB): used = 141, reserve = 116, peak = 144.
+PHY-1001 : Detailed router is running in normal mode.
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net ext_clk_25m_dup_1 will be routed on clock mesh
+PHY-1001 : clock net u_ram_rw_control/uut_Double_RAM/clkb will be merged with clock u_pll_test/clk0_buf
+PHY-1001 : Current memory(MB): used = 406, reserve = 384, peak = 406.
+PHY-1001 : End build detailed router design. 4.019615s wall, 4.000000s user + 0.031250s system = 4.031250s CPU (100.3%)
+
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Clock net routing.....
+PHY-1001 : Routed 1% nets.
+PHY-1022 : len = 5304, over cnt = 0(0%), over = 0, worst = 0, crit = 0
+PHY-1001 : End initial clock net routed; 0.301742s wall, 0.265625s user + 0.031250s system = 0.296875s CPU (98.4%)
+
+PHY-1001 : Current memory(MB): used = 436, reserve = 416, peak = 436.
+PHY-1001 : End phase 1; 0.307728s wall, 0.265625s user + 0.031250s system = 0.296875s CPU (96.5%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Initial routing.....
+PHY-1001 : Routed 28% nets.
+PHY-1001 : Routed 29% nets.
+PHY-1001 : Routed 29% nets.
+PHY-1001 : Patch 111 net; 0.097462s wall, 0.093750s user + 0.000000s system = 0.093750s CPU (96.2%)
+
+PHY-1022 : len = 15392, over cnt = 10(0%), over = 10, worst = 1, crit = 0
+PHY-1001 : Current memory(MB): used = 437, reserve = 416, peak = 437.
+PHY-1001 : End initial routed; 0.258256s wall, 0.281250s user + 0.000000s system = 0.281250s CPU (108.9%)
+
+PHY-1001 : Update timing.....
+PHY-1001 : 0/168(0%) critical/total net(s).
+RUN-1001 : ------------------------------------------
+RUN-1001 :   Type   |    WNS(ns)    |  TNS(ns)  |  FEP  
+RUN-1001 : ------------------------------------------
+RUN-1001 :   Setup  |  2147483.647  |   0.000   |   0   
+RUN-1001 :   Hold   |  2147483.647  |   0.000   |   0   
+RUN-1001 : ------------------------------------------
+PHY-1001 : End update timing; 0.047104s wall, 0.046875s user + 0.000000s system = 0.046875s CPU (99.5%)
+
+PHY-1001 : Current memory(MB): used = 438, reserve = 416, peak = 438.
+PHY-1001 : End phase 2; 0.305431s wall, 0.328125s user + 0.000000s system = 0.328125s CPU (107.4%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Optimize timing.....
+PHY-1022 : len = 15392, over cnt = 10(0%), over = 10, worst = 1, crit = 0
+PHY-1001 : End optimize timing; 0.004187s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : Ripup-reroute.....
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1022 : len = 15448, over cnt = 0(0%), over = 0, worst = 0, crit = 0
+PHY-1001 : End DR Iter 1; 0.013817s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (113.1%)
+
+PHY-1001 : Update timing.....
+PHY-1001 : 0/168(0%) critical/total net(s).
+RUN-1001 : ------------------------------------------
+RUN-1001 :   Type   |    WNS(ns)    |  TNS(ns)  |  FEP  
+RUN-1001 : ------------------------------------------
+RUN-1001 :   Setup  |  2147483.647  |   0.000   |   0   
+RUN-1001 :   Hold   |  2147483.647  |   0.000   |   0   
+RUN-1001 : ------------------------------------------
+PHY-1001 : End update timing; 0.047478s wall, 0.046875s user + 0.000000s system = 0.046875s CPU (98.7%)
+
+PHY-1001 : Commit to database.....
+PHY-1001 : 2 feed throughs used by 2 nets
+PHY-1001 : End commit to database; 0.024599s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (127.0%)
+
+PHY-1001 : Current memory(MB): used = 447, reserve = 425, peak = 447.
+PHY-1001 : End phase 3; 0.203789s wall, 0.203125s user + 0.000000s system = 0.203125s CPU (99.7%)
+
+PHY-1003 : Routed, final wirelength = 15448
+PHY-1001 : Current memory(MB): used = 447, reserve = 426, peak = 447.
+PHY-1001 : End export database. 0.005016s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : End detail routing;  5.064756s wall, 5.015625s user + 0.078125s system = 5.093750s CPU (100.6%)
+
+RUN-1003 : finish command "route" in  5.294461s wall, 5.218750s user + 0.093750s system = 5.312500s CPU (100.3%)
+
+RUN-1004 : used memory is 402 MB, reserved memory is 381 MB, peak memory is 447 MB
+RUN-1002 : start command "report_area -io_info -file uart_phy.area"
+RUN-1001 : standard
+***Report Model: uart_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                         5
+  #input                    3
+  #output                   2
+  #inout                    0
+
+Utilization Statistics
+#lut                      132   out of  19600    0.67%
+#reg                       93   out of  19600    0.47%
+#le                       142
+  #lut only                49   out of    142   34.51%
+  #reg only                10   out of    142    7.04%
+  #lut&reg                 83   out of    142   58.45%
+#dsp                        0   out of     29    0.00%
+#bram                       1   out of     64    1.56%
+  #bram9k                   1
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                        5   out of    188    2.66%
+  #ireg                     0
+  #oreg                     0
+  #treg                     0
+#pll                        1   out of      4   25.00%
+#gclk                       1   out of     16    6.25%
+
+Clock Resource Statistics
+Index     ClockNet               Type               DriverType         Driver                       Fanout
+#1        u_pll_test/clk0_buf    GCLK               pll                u_pll_test/pll_inst.clkc0    60
+#2        ext_clk_25m_dup_1      GeneralRouting     io                 ext_clk_25m_syn_2.di         1
+
+
+Detailed IO Report
+
+     Name        Direction    Location    IOStandard    DriveStrength    PullType    PackReg  
+  ext_clk_25m      INPUT        K14        LVCMOS25          N/A          PULLUP      NONE    
+   ext_rst_n       INPUT        L12        LVCMOS25          N/A          PULLUP      NONE    
+    uart_rx        INPUT        F16        LVCMOS25          N/A          PULLUP      NONE    
+      led         OUTPUT         M3        LVCMOS25           8            NONE       NONE    
+    uart_tx       OUTPUT        E16        LVCMOS25           8            NONE       NONE    
+
+Report Hierarchy Area:
++----------------------------------------------------------------------------------------+
+|Instance           |Module         |le     |lut     |ripple  |seq     |bram    |dsp     |
++----------------------------------------------------------------------------------------+
+|top                |uart_top       |142    |114     |18      |93      |1       |0       |
+|  my_uart_rx       |my_uart_rx     |36     |28      |0       |26      |0       |0       |
+|  my_uart_tx       |my_uart_tx     |13     |12      |0       |13      |0       |0       |
+|  speed_rx         |speed_setting  |28     |24      |4       |16      |0       |0       |
+|  speed_tx         |speed_setting  |30     |26      |4       |14      |0       |0       |
+|  u_pll_test       |pll_test       |1      |1       |0       |0       |0       |0       |
+|  u_ram_rw_control |ram_rw_control |34     |23      |10      |24      |1       |0       |
+|    uut_Double_RAM |Double_RAM_uut |0      |0       |0       |0       |1       |0       |
++----------------------------------------------------------------------------------------+
+
+
+DataNet Average Fanout:
+
+   Index     Fanout    Nets  
+    #1         1       100   
+    #2         2        22   
+    #3         3        25   
+    #4         4        15   
+    #5        5-10      12   
+    #6       11-50      5    
+    #7       51-100     1    
+  Average     2.68           
+
+RUN-1002 : start command "export_db uart_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "export_bid uart_inst.bid"
+RUN-1002 : start command "bitgen -bit uart.bit"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 8 threads.
+BIT-1002 : Init instances completely, inst num: 84
+BIT-1002 : Init pips with 8 threads.
+BIT-1002 : Init pips completely, net num: 189, pip num: 1484
+BIT-1002 : Init feedthrough completely, num: 2
+BIT-1003 : Multithreading accelaration with 8 threads.
+BIT-1003 : Generate bitstream completely, there are 236 valid insts, and 4328 bits set as '1'.
+BIT-1004 : the usercode register value: 00000000110000110000000000000000
+BIT-1004 : PLL setting string = 0001
+BIT-1004 : Generate bits file uart.bit.
+RUN-1002 : start command "backup_run_log run.log ../.logs/phy_1/td_20221008_172929.log"

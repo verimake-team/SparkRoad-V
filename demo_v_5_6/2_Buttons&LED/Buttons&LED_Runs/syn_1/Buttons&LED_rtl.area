@@ -1,0 +1,36 @@
+standard
+***Report Model: buttons_led Device: EG4S20BG256***
+
+IO Statistics
+#IO                        22
+  #input                    6
+  #output                  16
+  #inout                    0
+
+Gate Statistics
+#Basic gates               64
+  #and                     15
+  #nand                     0
+  #or                       0
+  #nor                      0
+  #xor                      0
+  #xnor                     0
+  #buf                      0
+  #not                     14
+  #bufif1                   0
+  #MX21                     0
+  #FADD                     0
+  #DFF                     35
+  #LATCH                    0
+#MACRO_ADD                  1
+#MACRO_EQ                   1
+#MACRO_MUX                  9
+
+Report Hierarchy Area:
++----------------------------------------------+
+|Instance |Module      |gates  |seq    |macros |
++----------------------------------------------+
+|top      |buttons_led |29     |35     |2      |
+|  ux_btn |debounce    |10     |29     |2      |
+|  ux_rst |rst_n       |0      |1      |0      |
++----------------------------------------------+

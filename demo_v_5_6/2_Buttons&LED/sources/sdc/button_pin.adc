@@ -1,0 +1,25 @@
+###clock-----------------------------------------
+set_pin_assignment {clk_24m} { LOCATION = K14;  }
+###led_pin---------------------------------------
+set_pin_assignment {led[15]} { LOCATION = T13;  }
+set_pin_assignment {led[14]} { LOCATION = T12;  }
+set_pin_assignment {led[13]} { LOCATION = R12;  }
+set_pin_assignment {led[12]} { LOCATION = M7;  }
+set_pin_assignment {led[11]} { LOCATION = T9;  }
+set_pin_assignment {led[10]} { LOCATION = T8;  }
+set_pin_assignment {led[9]} { LOCATION = T7;  }
+set_pin_assignment {led[8]} { LOCATION = R7;  }
+set_pin_assignment {led[7]} { LOCATION = P5;  }
+set_pin_assignment {led[6]} { LOCATION = N5;  }
+set_pin_assignment {led[5]} { LOCATION = P4;  }
+set_pin_assignment {led[4]} { LOCATION = M5;  }
+set_pin_assignment {led[3]} { LOCATION = N4;  }
+set_pin_assignment {led[2]} { LOCATION = N3;  }
+set_pin_assignment {led[1]} { LOCATION = M4;  }
+set_pin_assignment {led[0]} { LOCATION = M3;  }
+###btn_pin---------------------------------------
+set_pin_assignment {btn[0]} { LOCATION = H14;  }
+set_pin_assignment {btn[1]} { LOCATION = J13;  }
+set_pin_assignment {btn[2]} { LOCATION = G11;  }
+set_pin_assignment {btn[3]} { LOCATION = G12;  }
+set_pin_assignment {btn[4]} { LOCATION = L12;  }

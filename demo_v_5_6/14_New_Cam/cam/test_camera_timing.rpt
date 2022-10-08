@@ -1,0 +1,39 @@
+=========================================================================================================
+Auto created by Tang Dynasty v5.6.59063
+Copyright (c) 2012-2022 Anlogic
+Sat Oct  8 18:28:24 2022
+=========================================================================================================
+
+
+Top Model:                test_camera                                                     
+Device:                   eagle_s20                                                       
+Timing Constraint File:                                                                   
+STA Level:                Detail                                                          
+Speed Grade:              NA                                                              
+
+=========================================================================================================
+Timing summary:                                                                           
+---------------------------------------------------------------------------------------------------------
+Constraint path number: 0 (STA coverage = 0.00%)
+Timing violations: 0 setup errors, and 0 hold errors.
+Minimal setup slack: infinity, minimal hold slack: infinity
+
+Timing group statistics: 
+	Clock constraints: 
+	  No constraint path
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
+
+Warning: No clock constraint on 8 clock net(s): 
+	cam_pclk_dup_1
+	clk_24m_dup_1
+	u_cam_vga_out/clk
+	u_camera_init/divider2[7]_syn_2
+	u_camera_init/divider2[8]_syn_4
+	u_camera_init/u_i2c_write/clk
+	u_camera_reader/clk
+	u_camera_reader/wrreq_syn_8
+
+---------------------------------------------------------------------------------------------------------

@@ -1,0 +1,14 @@
+eagle_s20
+13 0 0 0 0 0 0
+infinity infinity top eagle_s20 EG4S20BG256 Detail NA 9 0
+
+Timing group statistics: 
+	Clock constraints: 
+	  No constraint path
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+Warning: No clock constraint on 2 clock net(s): 
+	clk_dup_1
+	vga_clk_dup_1
+

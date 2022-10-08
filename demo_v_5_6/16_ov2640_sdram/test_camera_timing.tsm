@@ -1,0 +1,22 @@
+eagle_s20
+13 0 0 0 0 0 0
+infinity infinity test_camera eagle_s20 EG4S20BG256 Detail NA 17 0
+
+Timing group statistics: 
+	Clock constraints: 
+	  No constraint path
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+Warning: No clock constraint on 10 clock net(s): 
+	Sdram_Control_4Port/CTRL_CLK
+	Sdram_Control_4Port/SDRAM_CLK
+	cam_pclk_dup_1
+	clk_24m_dup_1
+	u_camera_init/divider2[7]_syn_2
+	u_camera_init/divider2[8]_syn_4
+	u_camera_init/u_i2c_write/clk
+	u_camera_reader/clk
+	u_camera_reader/wrreq_syn_2
+	vga_clk_dup_1
+

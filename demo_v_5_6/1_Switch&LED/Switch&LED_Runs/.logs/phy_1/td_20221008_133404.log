@@ -1,0 +1,402 @@
+============================================================
+   Tang Dynasty, V5.6.59063
+   Copyright (c) 2012-2022 Anlogic
+   Executable = C:/Anlogic/TD5.6.59063/bin/td.exe
+   Built at =   12:45:13 Sep  6 2022
+   Run by =     zhang
+   Run Date =   Sat Oct  8 13:34:04 2022
+
+   Run on =     DESKTOP-DRS13TT
+============================================================
+RUN-1002 : start command "open_project Switch&LED.prj"
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+HDL-1007 : analyze verilog file ../../sources/rtl/switch_led.v
+RUN-1001 : Project manager successfully analyzed 1 source files.
+RUN-1002 : start command "import_device eagle_s20.db -package EG4S20BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "import_db ../syn_1/Switch&LED_gate.db"
+RUN-1001 : Importing database generated by Tang Dynasty, V5.6.59063.
+RUN-1001 : Database version number 46140.
+RUN-1001 : Import flow parameters
+RUN-1001 : Import timing constraints
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import design success TD_VERSION=5.6.59063 , DB_VERSION=46140
+RUN-1002 : start command "read_sdc"
+USR-1002 : read_sdc file_name -help -h -eco
+USR-1009 : NO module with IP_SDC ...
+RUN-1104 : Import SDC file  finished, there are 0 nets kept by constraints.
+RUN-1002 : start command "place"
+RUN-1001 : Open license file C:/Anlogic/TD5.6.59063/license/Anlogic.lic
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Place Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :      detailed_place     |     on     |        on        |        
+RUN-1001 :          effort         |   medium   |      medium      |        
+RUN-1001 :         fix_hold        |    off     |       off        |        
+RUN-1001 :       legalization      |    ori     |       ori        |        
+RUN-1001 :      new_spreading      |     on     |        on        |        
+RUN-1001 :        opt_timing       |   medium   |      medium      |        
+RUN-1001 :   post_clock_route_opt  |    off     |       off        |        
+RUN-1001 :       pr_strategy       |     1      |        1         |        
+RUN-1001 :        relaxation       |    1.00    |       1.00       |        
+RUN-1001 :         retiming        |    off     |       off        |        
+RUN-1001 : --------------------------------------------------------------
+PHY-3001 : Placer runs in 24 thread(s).
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model switch_led
+RUN-1002 : start command "phys_opt -simplify_lut"
+SYN-4026 : Tagged 0 rtl::Net as clock net
+PHY-1001 : Populate physical database on model switch_led.
+RUN-1001 : There are total 33 instances
+RUN-1001 : 0 mslices, 0 lslices, 32 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 48 nets
+RUN-1001 : 48 nets have 2 pins
+RUN-1001 : Report Control nets information:
+RUN-1001 : DFF Distribution
+RUN-1001 : ----------------------------------
+RUN-1001 :   CE   |  SSR  |  ASR  |  DFF Count  
+RUN-1001 : ----------------------------------
+RUN-1001 :   No   |  No   |  No   |      0      
+RUN-1001 :   No   |  No   |  Yes  |      0      
+RUN-1001 :   No   |  Yes  |  No   |      0      
+RUN-1001 :   Yes  |  No   |  No   |      0      
+RUN-1001 :   Yes  |  No   |  Yes  |      0      
+RUN-1001 :   Yes  |  Yes  |  No   |      0      
+RUN-1001 : ----------------------------------
+RUN-0007 : Control Group Statistic
+RUN-0007 : ---------------------------
+RUN-0007 :   #CLK  |  #CE  |  #SSR/ASR  
+RUN-0007 : ---------------------------
+RUN-0007 :    0    |   0   |     0      
+RUN-0007 : ---------------------------
+RUN-0007 : Control Set = 0
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 33 instances, 0 slices, 0 macros(0 instances: 0 mslices 0 lslices)
+PHY-3001 : End placement; No cells to be placed.
+RUN-1002 : start command "export_db Switch&LED_place.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "route"
+RUN-1001 : Open license file C:/Anlogic/TD5.6.59063/license/Anlogic.lic
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Route Property
+RUN-1001 : -------------------------------------------------------
+RUN-1001 :    Parameters    |  Settings  |  Default Values  |  Note  
+RUN-1001 : -------------------------------------------------------
+RUN-1001 :      effort      |   medium   |      medium      |        
+RUN-1001 :     fix_hold     |    off     |       off        |        
+RUN-1001 :    opt_timing    |   medium   |      medium      |        
+RUN-1001 :   phy_sim_model  |    off     |       off        |        
+RUN-1001 :     priority     |   timing   |      timing      |        
+RUN-1001 :     swap_pin     |     on     |        on        |        
+RUN-1001 : -------------------------------------------------------
+PHY-1001 : Route runs in 24 thread(s)
+RUN-1001 : There are total 33 instances
+RUN-1001 : 0 mslices, 0 lslices, 32 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 48 nets
+RUN-1001 : 48 nets have 2 pins
+RUN-1002 : start command "start_timer -report"
+TMR-2505 : Start building timing graph for model switch_led.
+TMR-2506 : Build timing graph completely. Port num: 2, tpin num: 96, tnet num: 48, tinst num: 33, tnode num: 96, tedge num: 80.
+TMR-2508 : Levelizing timing graph completed, there are 5 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+PHY-1001 : 0 mslices, 0 lslices, 32 pads, 0 brams, 0 dsps
+TMR-2503 : Start to update net delay, extr mode = 3.
+TMR-2504 : Update delay of 48 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 3.
+TMR-3001 : Initiate 0 clocks from SDC.
+TMR-3004 : Map sdc constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-1001 : Start global routing, caller is route ...
+RUN-1001 : Generating global routing grids ...
+RUN-1001 : Building simple global routing graph ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 24 thread ...
+PHY-1002 : len = 1152, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.002649s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : Congestion index: top1 = 1.74, top5 = 0.40, top10 = 0.20, top15 = 0.13.
+PHY-1001 : End global routing;  0.032090s wall, 0.015625s user + 0.015625s system = 0.031250s CPU (97.4%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Current memory(MB): used = 164, reserve = 139, peak = 186.
+PHY-1001 : Detailed router is running in normal mode.
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : Current memory(MB): used = 432, reserve = 411, peak = 432.
+PHY-1001 : End build detailed router design. 2.344376s wall, 2.281250s user + 0.062500s system = 2.343750s CPU (100.0%)
+
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Clock net routing.....
+PHY-1001 : Routed 0% nets.
+PHY-1022 : len = 0, over cnt = 0(0%), over = 0, worst = 0, crit = 0
+PHY-1001 : End initial clock net routed; 0.003056s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : Current memory(MB): used = 432, reserve = 411, peak = 432.
+PHY-1001 : End phase 1; 0.007716s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Initial routing.....
+PHY-1001 : Routed 6% nets.
+PHY-1001 : Routed 14% nets.
+PHY-1001 : Patch 9 net; 0.003508s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1022 : len = 1152, over cnt = 0(0%), over = 0, worst = 0, crit = 0
+PHY-1001 : Current memory(MB): used = 434, reserve = 413, peak = 434.
+PHY-1001 : End initial routed; 0.017607s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (88.7%)
+
+PHY-1001 : Update timing.....
+PHY-1001 : 0/16(0%) critical/total net(s).
+RUN-1001 : ------------------------------------------
+RUN-1001 :   Type   |    WNS(ns)    |  TNS(ns)  |  FEP  
+RUN-1001 : ------------------------------------------
+RUN-1001 :   Setup  |  2147483.647  |   0.000   |   0   
+RUN-1001 :   Hold   |  2147483.647  |   0.000   |   0   
+RUN-1001 : ------------------------------------------
+PHY-1001 : End update timing; 0.095046s wall, 0.093750s user + 0.000000s system = 0.093750s CPU (98.6%)
+
+PHY-1001 : Current memory(MB): used = 435, reserve = 413, peak = 435.
+PHY-1001 : End phase 2; 0.112696s wall, 0.109375s user + 0.000000s system = 0.109375s CPU (97.1%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Optimize timing.....
+PHY-1022 : len = 1152, over cnt = 0(0%), over = 0, worst = 0, crit = 0
+PHY-1001 : End optimize timing; 0.002913s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (536.4%)
+
+PHY-1001 : Update timing.....
+PHY-1001 : 0/16(0%) critical/total net(s).
+RUN-1001 : ------------------------------------------
+RUN-1001 :   Type   |    WNS(ns)    |  TNS(ns)  |  FEP  
+RUN-1001 : ------------------------------------------
+RUN-1001 :   Setup  |  2147483.647  |   0.000   |   0   
+RUN-1001 :   Hold   |  2147483.647  |   0.000   |   0   
+RUN-1001 : ------------------------------------------
+PHY-1001 : End update timing; 0.096426s wall, 0.093750s user + 0.000000s system = 0.093750s CPU (97.2%)
+
+PHY-1001 : Commit to database.....
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : End commit to database; 0.004056s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : Current memory(MB): used = 441, reserve = 419, peak = 441.
+PHY-1001 : End phase 3; 0.103487s wall, 0.109375s user + 0.000000s system = 0.109375s CPU (105.7%)
+
+PHY-1003 : Routed, final wirelength = 1152
+PHY-1001 : Current memory(MB): used = 441, reserve = 419, peak = 441.
+PHY-1001 : End export database. 0.003726s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : End detail routing;  2.706742s wall, 2.640625s user + 0.062500s system = 2.703125s CPU (99.9%)
+
+RUN-1003 : finish command "route" in  2.869290s wall, 2.781250s user + 0.078125s system = 2.859375s CPU (99.7%)
+
+RUN-1004 : used memory is 396 MB, reserved memory is 377 MB, peak memory is 441 MB
+RUN-1002 : start command "report_area -io_info -file Switch&LED_phy.area"
+RUN-1001 : standard
+***Report Model: switch_led Device: EG4S20BG256***
+
+IO Statistics
+#IO                        32
+  #input                   16
+  #output                  16
+  #inout                    0
+
+Utilization Statistics
+#lut                        0   out of  19600    0.00%
+#reg                        0   out of  19600    0.00%
+#le                         0
+#dsp                        0   out of     29    0.00%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       32   out of    188   17.02%
+  #ireg                     0
+  #oreg                     0
+  #treg                     0
+#pll                        0   out of      4    0.00%
+#gclk                       0   out of     16    0.00%
+
+Clock Resource Statistics
+Index     ClockNet    Type               DriverType         Driver    Fanout
+
+
+Detailed IO Report
+
+     Name       Direction    Location    IOStandard    DriveStrength    PullType    PackReg  
+  switch[15]      INPUT        R15        LVCMOS25          N/A          PULLUP      NONE    
+  switch[14]      INPUT        T15        LVCMOS25          N/A          PULLUP      NONE    
+  switch[13]      INPUT        R14        LVCMOS25          N/A          PULLUP      NONE    
+  switch[12]      INPUT        T14        LVCMOS25          N/A          PULLUP      NONE    
+  switch[11]      INPUT         N9        LVCMOS25          N/A          PULLUP      NONE    
+  switch[10]      INPUT         P9        LVCMOS25          N/A          PULLUP      NONE    
+  switch[9]       INPUT         R9        LVCMOS25          N/A          PULLUP      NONE    
+  switch[8]       INPUT         N8        LVCMOS25          N/A          PULLUP      NONE    
+  switch[7]       INPUT         P8        LVCMOS25          N/A          PULLUP      NONE    
+  switch[6]       INPUT         N6        LVCMOS25          N/A          PULLUP      NONE    
+  switch[5]       INPUT         P6        LVCMOS25          N/A          PULLUP      NONE    
+  switch[4]       INPUT         M6        LVCMOS25          N/A          PULLUP      NONE    
+  switch[3]       INPUT         T6        LVCMOS25          N/A          PULLUP      NONE    
+  switch[2]       INPUT         T5        LVCMOS25          N/A          PULLUP      NONE    
+  switch[1]       INPUT         R5        LVCMOS25          N/A          PULLUP      NONE    
+  switch[0]       INPUT         T4        LVCMOS25          N/A          PULLUP      NONE    
+   led[15]       OUTPUT        T13        LVCMOS25           8            NONE       NONE    
+   led[14]       OUTPUT        T12        LVCMOS25           8            NONE       NONE    
+   led[13]       OUTPUT        R12        LVCMOS25           8            NONE       NONE    
+   led[12]       OUTPUT         M7        LVCMOS25           8            NONE       NONE    
+   led[11]       OUTPUT         T9        LVCMOS25           8            NONE       NONE    
+   led[10]       OUTPUT         T8        LVCMOS25           8            NONE       NONE    
+    led[9]       OUTPUT         T7        LVCMOS25           8            NONE       NONE    
+    led[8]       OUTPUT         R7        LVCMOS25           8            NONE       NONE    
+    led[7]       OUTPUT         P5        LVCMOS25           8            NONE       NONE    
+    led[6]       OUTPUT         N5        LVCMOS25           8            NONE       NONE    
+    led[5]       OUTPUT         P4        LVCMOS25           8            NONE       NONE    
+    led[4]       OUTPUT         M5        LVCMOS25           8            NONE       NONE    
+    led[3]       OUTPUT         N4        LVCMOS25           8            NONE       NONE    
+    led[2]       OUTPUT         N3        LVCMOS25           8            NONE       NONE    
+    led[1]       OUTPUT         M4        LVCMOS25           8            NONE       NONE    
+    led[0]       OUTPUT         M3        LVCMOS25           8            NONE       NONE    
+
+Report Hierarchy Area:
++--------------------------------------------------------------------------+
+|Instance |Module     |le     |lut     |ripple  |seq     |bram    |dsp     |
++--------------------------------------------------------------------------+
+|top      |switch_led |0      |0       |0       |0       |0       |0       |
++--------------------------------------------------------------------------+
+
+
+DataNet Average Fanout:
+
+   Index     Fanout    Nets  
+    #1         1        16   
+  Average     1.00           
+
+RUN-1002 : start command "export_db Switch&LED_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "export_bid Switch&LED_inst.bid"
+RUN-1002 : start command "bitgen -bit Switch&LED.bit"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 24 threads.
+BIT-1002 : Init instances completely, inst num: 33
+BIT-1002 : Init pips with 24 threads.
+BIT-1002 : Init pips completely, net num: 48, pip num: 99
+BIT-1003 : Multithreading accelaration with 24 threads.
+BIT-1003 : Generate bitstream completely, there are 98 valid insts, and 328 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file Switch&LED.bit.
+RUN-1002 : start command "backup_run_log run.log ../.logs/phy_1/td_20221008_133404.log"

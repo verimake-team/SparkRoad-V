@@ -1,0 +1,41 @@
+set_pin_assignment {sclk} { LOCATION = K14;  } 			#24MHz
+set_pin_assignment {key} { LOCATION = G11;  } 
+
+set_pin_assignment {txd} { LOCATION = C11; }         ##外接串口模块时，除了收发两根线外，至少一根地线连接
+set_pin_assignment {rxd} { LOCATION = B15; }
+
+
+set_pin_assignment {flash_sck} { LOCATION = H4;  }
+set_pin_assignment {flash_cs}  { LOCATION = P14;  }
+set_pin_assignment {flash_sdo} { LOCATION = M13;  } 	#MOSI
+set_pin_assignment {flash_sdi} { LOCATION = K11;  }   #MISO
+
+set_pin_assignment {led[0]}	 { LOCATION = M3;  }
+set_pin_assignment {led[1]}	 { LOCATION = M4;  }
+set_pin_assignment {led[2]}	 { LOCATION = N3;  }
+set_pin_assignment {led[3]}	 { LOCATION = N4;  }
+set_pin_assignment {led[4]}	 { LOCATION = M5;  }
+set_pin_assignment {led[5]}	 { LOCATION = P4;  }
+set_pin_assignment {led[6]}	 { LOCATION = N5;  }
+set_pin_assignment {led[7]}	 { LOCATION = P5;  }
+set_pin_assignment {led[8]}	 { LOCATION = R7;  }
+set_pin_assignment {led[9]}	 { LOCATION = T7;  }
+set_pin_assignment {led[10]} { LOCATION = T8;  }
+set_pin_assignment {led[11]} { LOCATION = T9;  }
+set_pin_assignment {led[12]} { LOCATION = M7;  }
+set_pin_assignment {led[13]} { LOCATION = R12;  }
+set_pin_assignment {led[14]} { LOCATION = T12;  }
+set_pin_assignment {led[15]} { LOCATION = T13;  }
+
+set_pin_assignment {tube[0]}	{ LOCATION = E3;  }
+set_pin_assignment {tube[1]}	{ LOCATION = B3;  }
+set_pin_assignment {tube[2]}	{ LOCATION = F4;  }
+set_pin_assignment {tube[3]}	{ LOCATION = E4;  }
+set_pin_assignment {tube[4]}	{ LOCATION = F5;  }
+set_pin_assignment {tube[5]}	{ LOCATION = D3;  }
+set_pin_assignment {tube[6]}	{ LOCATION = B2;  }
+set_pin_assignment {tube[7]}	{ LOCATION = A2;  }
+set_pin_assignment {tube_sel[0]}	{ LOCATION = B1;  }
+set_pin_assignment {tube_sel[1]}	{ LOCATION = C3;  }
+set_pin_assignment {tube_sel[2]}	{ LOCATION = C2;  }
+set_pin_assignment {tube_sel[3]}	{ LOCATION = F3;  }

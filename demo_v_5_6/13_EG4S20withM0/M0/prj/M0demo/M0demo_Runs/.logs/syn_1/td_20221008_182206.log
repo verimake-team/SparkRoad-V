@@ -1,0 +1,769 @@
+============================================================
+   Tang Dynasty, V5.6.59063
+   Copyright (c) 2012-2022 Anlogic
+   Executable = C:/Anlogic/TD5.6.59063/bin/td.exe
+   Built at =   12:45:13 Sep  6 2022
+   Run by =     zhang
+   Run Date =   Sat Oct  8 18:22:06 2022
+
+   Run on =     DESKTOP-0KK6GHJ
+============================================================
+RUN-1002 : start command "open_project M0demo.prj"
+RUN-6001 WARNING: File ../../al_ip/M0clkpll.v already exists in IP ../../al_ip/M0clkpll.ipc, it will be removed from project.
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+HDL-1007 : analyze verilog file ../../al_ip/M0clkpll.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../al_ip/M0clkpll.v(75)
+HDL-1007 : analyze verilog file ../../../RTL/AHB2MEM.v
+HDL-1007 : analyze verilog file ../../../RTL/cmsdk_ahb_cs_rom_table.v
+HDL-1007 : analyze verilog file ../../../RTL/cmsdk_ahb_default_slave.v
+HDL-1007 : analyze verilog file ../../../RTL/cmsdk_ahb_gpio.v
+HDL-1007 : analyze verilog file ../../../RTL/cmsdk_ahb_slave_mux.v
+HDL-1007 : analyze verilog file ../../../RTL/cmsdk_ahb_to_apb.v
+HDL-1007 : analyze verilog file ../../../RTL/cmsdk_ahb_to_iop.v
+HDL-1007 : analyze verilog file ../../../RTL/cmsdk_apb_slave_mux.v
+HDL-1007 : analyze verilog file ../../../RTL/cmsdk_apb_subsystem_m0ds.v
+HDL-1007 : analyze verilog file ../../../RTL/cmsdk_apb_uart.v
+HDL-1007 : analyze verilog file ../../../RTL/cmsdk_iop_gpio.v
+HDL-1007 : analyze verilog file ../../../RTL/cmsdk_mcu.v
+HDL-1007 : analyze included file ../../../RTL/cmsdk_mcu_defs.v in ../../../RTL/cmsdk_mcu.v(30)
+HDL-1007 : analyze included file ../../../RTL/fpga_options_defs.v in ../../../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : back to file '../../../RTL/cmsdk_mcu_defs.v' in ../../../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : analyze included file ../../../RTL/cmsdk_ahb_memory_models_defs.v in ../../../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../../../RTL/cmsdk_mcu_defs.v' in ../../../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../../../RTL/cmsdk_mcu.v' in ../../../RTL/cmsdk_mcu.v(30)
+HDL-1007 : undeclared symbol 'timer0_extin', assumed default net type 'wire' in ../../../RTL/cmsdk_mcu.v(396)
+HDL-1007 : analyze verilog file ../../../RTL/cmsdk_mcu_addr_decode.v
+HDL-1007 : analyze included file ../../../RTL/cmsdk_mcu_defs.v in ../../../RTL/cmsdk_mcu_addr_decode.v(30)
+HDL-1007 : analyze included file ../../../RTL/fpga_options_defs.v in ../../../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : back to file '../../../RTL/cmsdk_mcu_defs.v' in ../../../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : analyze included file ../../../RTL/cmsdk_ahb_memory_models_defs.v in ../../../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../../../RTL/cmsdk_mcu_defs.v' in ../../../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../../../RTL/cmsdk_mcu_addr_decode.v' in ../../../RTL/cmsdk_mcu_addr_decode.v(30)
+HDL-1007 : analyze verilog file ../../../RTL/cmsdk_mcu_clkctrl.v
+HDL-1007 : analyze included file ../../../RTL/cmsdk_mcu_defs.v in ../../../RTL/cmsdk_mcu_clkctrl.v(31)
+HDL-1007 : analyze included file ../../../RTL/fpga_options_defs.v in ../../../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : back to file '../../../RTL/cmsdk_mcu_defs.v' in ../../../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : analyze included file ../../../RTL/cmsdk_ahb_memory_models_defs.v in ../../../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../../../RTL/cmsdk_mcu_defs.v' in ../../../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../../../RTL/cmsdk_mcu_clkctrl.v' in ../../../RTL/cmsdk_mcu_clkctrl.v(31)
+HDL-1007 : analyze verilog file ../../../RTL/cmsdk_mcu_pin_mux.v
+HDL-1007 : analyze verilog file ../../../RTL/cmsdk_mcu_stclkctrl.v
+HDL-1007 : analyze verilog file ../../../RTL/cmsdk_mcu_sysctrl.v
+HDL-1007 : analyze included file ../../../RTL/cmsdk_mcu_defs.v in ../../../RTL/cmsdk_mcu_sysctrl.v(42)
+HDL-1007 : analyze included file ../../../RTL/fpga_options_defs.v in ../../../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : back to file '../../../RTL/cmsdk_mcu_defs.v' in ../../../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : analyze included file ../../../RTL/cmsdk_ahb_memory_models_defs.v in ../../../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../../../RTL/cmsdk_mcu_defs.v' in ../../../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../../../RTL/cmsdk_mcu_sysctrl.v' in ../../../RTL/cmsdk_mcu_sysctrl.v(42)
+HDL-1007 : analyze verilog file ../../../RTL/cmsdk_mcu_system.v
+HDL-1007 : analyze included file ../../../RTL/cmsdk_mcu_defs.v in ../../../RTL/cmsdk_mcu_system.v(27)
+HDL-1007 : analyze included file ../../../RTL/fpga_options_defs.v in ../../../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : back to file '../../../RTL/cmsdk_mcu_defs.v' in ../../../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : analyze included file ../../../RTL/cmsdk_ahb_memory_models_defs.v in ../../../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../../../RTL/cmsdk_mcu_defs.v' in ../../../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../../../RTL/cmsdk_mcu_system.v' in ../../../RTL/cmsdk_mcu_system.v(27)
+HDL-1007 : undeclared symbol 'timer0_extin', assumed default net type 'wire' in ../../../RTL/cmsdk_mcu_system.v(982)
+HDL-1007 : analyze verilog file ../../../RTL/cortexm0ds_logic.v
+HDL-1007 : analyze verilog file ../../../RTL/CORTEXM0INTEGRATION.v
+HDL-1007 : analyze verilog file ../../../RTL/gpio.v
+HDL-1007 : analyze verilog file ../../../RTL/gpio_apbif.v
+HDL-1007 : analyze verilog file ../../../RTL/gpio_ctrl.v
+HDL-1007 : analyze verilog file ../../../RTL/M0demo.v
+HDL-1007 : analyze included file ../../../RTL/cmsdk_mcu_defs.v in ../../../RTL/M0demo.v(2)
+HDL-1007 : analyze included file ../../../RTL/fpga_options_defs.v in ../../../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : back to file '../../../RTL/cmsdk_mcu_defs.v' in ../../../RTL/cmsdk_mcu_defs.v(25)
+HDL-1007 : analyze included file ../../../RTL/cmsdk_ahb_memory_models_defs.v in ../../../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../../../RTL/cmsdk_mcu_defs.v' in ../../../RTL/cmsdk_mcu_defs.v(195)
+HDL-1007 : back to file '../../../RTL/M0demo.v' in ../../../RTL/M0demo.v(2)
+RUN-1001 : Project manager successfully analyzed 28 source files.
+RUN-1002 : start command "import_device eagle_s20.db -package EG4S20BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "elaborate -top M0demo"
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+HDL-5007 WARNING: port 'P1' remains unconnected for this instance in ../../../RTL/M0demo.v(42)
+HDL-5007 WARNING: port 'SWCLKTCK' is not connected on this instance in ../../../RTL/M0demo.v(42)
+HDL-5007 WARNING: port 'reset' is not connected on this instance in ../../../RTL/M0demo.v(74)
+HDL-5007 WARNING: port 'extlock' remains unconnected for this instance in ../../../RTL/M0demo.v(74)
+HDL-1007 : elaborate module M0demo in ../../../RTL/M0demo.v(4)
+HDL-5007 WARNING: port 'RSTBYPASS' is not connected on this instance in ../../../RTL/cmsdk_mcu.v(230)
+HDL-5007 WARNING: port 'GATEHCLK' remains unconnected for this instance in ../../../RTL/cmsdk_mcu.v(230)
+HDL-5007 WARNING: port 'uart0_rxd' remains unconnected for this instance in ../../../RTL/cmsdk_mcu.v(381)
+HDL-1007 : elaborate module cmsdk_mcu(WIC=1) in ../../../RTL/cmsdk_mcu.v(32)
+HDL-1007 : elaborate module cmsdk_mcu_clkctrl in ../../../RTL/cmsdk_mcu_clkctrl.v(33)
+HDL-1007 : elaborate module cmsdk_mcu_system(WIC=1) in ../../../RTL/cmsdk_mcu_system.v(29)
+HDL-1007 : elaborate module CORTEXM0INTEGRATION in ../../../RTL/CORTEXM0INTEGRATION.v(29)
+HDL-1007 : elaborate module cortexm0ds_logic in ../../../RTL/cortexm0ds_logic.v(27)
+HDL-1007 : elaborate module cmsdk_mcu_addr_decode in ../../../RTL/cmsdk_mcu_addr_decode.v(32)
+HDL-1007 : elaborate module cmsdk_ahb_slave_mux(PORT2_ENABLE=0,PORT9_ENABLE=0) in ../../../RTL/cmsdk_ahb_slave_mux.v(28)
+HDL-1007 : elaborate module cmsdk_ahb_default_slave in ../../../RTL/cmsdk_ahb_default_slave.v(30)
+HDL-1007 : elaborate module cmsdk_ahb_cs_rom_table(BASE=32'b11110000000000000000000000000000,ENTRY0BASEADDR=32'b11100000000011111111000000000000,ENTRY0PRESENT=1'b1,ENTRY1BASEADDR=32'b11110000001000000000000000000000,ENTRY1PRESENT=0) in ../../../RTL/cmsdk_ahb_cs_rom_table.v(67)
+HDL-1007 : elaborate module cmsdk_mcu_sysctrl in ../../../RTL/cmsdk_mcu_sysctrl.v(44)
+HDL-1007 : elaborate module cmsdk_ahb_gpio in ../../../RTL/cmsdk_ahb_gpio.v(24)
+HDL-1007 : elaborate module cmsdk_ahb_to_iop in ../../../RTL/cmsdk_ahb_to_iop.v(28)
+HDL-1007 : elaborate module cmsdk_iop_gpio in ../../../RTL/cmsdk_iop_gpio.v(46)
+HDL-5007 WARNING: port 'PSEL5' remains unconnected for this instance in ../../../RTL/cmsdk_apb_subsystem_m0ds.v(390)
+HDL-1007 : elaborate module cmsdk_apb_subsystem_m0ds(INCLUDE_APB_TEST_SLAVE=0,INCLUDE_APB_TIMER1=0,INCLUDE_APB_DUALTIMER0=0,INCLUDE_APB_UART1=0,INCLUDE_APB_UART2=0,INCLUDE_APB_UART3=0,INCLUDE_APB_UART4=0,INCLUDE_APB_WATCHDOG=0) in ../../../RTL/cmsdk_apb_subsystem_m0ds.v(26)
+HDL-1007 : elaborate module cmsdk_ahb_to_apb in ../../../RTL/cmsdk_ahb_to_apb.v(31)
+HDL-1007 : elaborate module cmsdk_apb_slave_mux(PORT1_ENABLE=0,PORT2_ENABLE=0,PORT3_ENABLE=0,PORT5_ENABLE=0,PORT6_ENABLE=0,PORT7_ENABLE=0,PORT8_ENABLE=0,PORT9_ENABLE=0,PORT10_ENABLE=0,PORT11_ENABLE=0,PORT12_ENABLE=0,PORT13_ENABLE=0,PORT14_ENABLE=0,PORT15_ENABLE=0) in ../../../RTL/cmsdk_apb_slave_mux.v(26)
+HDL-1007 : elaborate module gpio in ../../../RTL/gpio.v(23)
+HDL-1007 : elaborate module gpio_apbif in ../../../RTL/gpio_apbif.v(39)
+HDL-1007 : elaborate module gpio_ctrl in ../../../RTL/gpio_ctrl.v(22)
+HDL-1007 : elaborate module cmsdk_apb_uart in ../../../RTL/cmsdk_apb_uart.v(53)
+HDL-5007 WARNING: input port 'PREADY5' remains unconnected for this instance in ../../../RTL/cmsdk_apb_subsystem_m0ds.v(409)
+HDL-7007 CRITICAL-WARNING: repetition multiplier must be positive in ../../../RTL/cmsdk_mcu_system.v(1007)
+HDL-7007 CRITICAL-WARNING: repetition multiplier must be positive in ../../../RTL/cmsdk_mcu_system.v(1068)
+HDL-1007 : elaborate module cmsdk_mcu_stclkctrl in ../../../RTL/cmsdk_mcu_stclkctrl.v(26)
+HDL-5007 WARNING: net 'timer0_extin' does not have a driver in ../../../RTL/cmsdk_mcu_system.v(982)
+HDL-1007 : elaborate module AHB2MEM in ../../../RTL/AHB2MEM.v(5)
+HDL-1007 : extracting RAM for identifier 'memory' in ../../../RTL/AHB2MEM.v(25)
+HDL-5007 WARNING: actual bit length 16 differs from formal bit length 32 for port 'HADDR' in ../../../RTL/cmsdk_mcu.v(344)
+HDL-5007 WARNING: actual bit length 16 differs from formal bit length 32 for port 'HADDR' in ../../../RTL/cmsdk_mcu.v(365)
+HDL-1007 : elaborate module cmsdk_mcu_pin_mux in ../../../RTL/cmsdk_mcu_pin_mux.v(30)
+HDL-5007 WARNING: net 'i_swdo' does not have a driver in ../../../RTL/cmsdk_mcu.v(158)
+HDL-5007 WARNING: net 'i_swdoen' does not have a driver in ../../../RTL/cmsdk_mcu.v(159)
+HDL-5007 WARNING: input port 'RSTBYPASS' remains unconnected for this instance in ../../../RTL/cmsdk_mcu.v(244)
+HDL-5007 WARNING: input port 'SLOWCLK' is not connected on this instance in ../../../RTL/cmsdk_mcu.v(244)
+HDL-5007 WARNING: input port 'uart0_txd' remains unconnected for this instance in ../../../RTL/cmsdk_mcu.v(382)
+HDL-1007 : elaborate module M0clkpll in ../../al_ip/M0clkpll.v(22)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in C:/Anlogic/TD5.6.59063/arch/eagle_macro.v(8)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="24.000",REFCLK_DIV=2,CLKC0_DIV=83,CLKC0_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",CLKC0_CPHASE=82,GMC_GAIN=0,ICP_CURRENT=9,KVCO=2,LPF_CAPACITOR=2,LPF_RESISTOR=8,SYNC_ENABLE="DISABLE") in C:/Anlogic/TD5.6.59063/arch/eagle_macro.v(929)
+HDL-5007 WARNING: input port 'SWCLKTCK' remains unconnected for this instance in ../../../RTL/M0demo.v(53)
+HDL-5007 WARNING: input port 'reset' remains unconnected for this instance in ../../../RTL/M0demo.v(74)
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+HDL-1200 : Current top model is M0demo
+HDL-1100 : Inferred 1 RAMs.
+RUN-1003 : finish command "elaborate -top M0demo" in  1.033771s wall, 1.031250s user + 0.000000s system = 1.031250s CPU (99.8%)
+
+RUN-1004 : used memory is 167 MB, reserved memory is 141 MB, peak memory is 215 MB
+RUN-1002 : start command "export_db M0demo_elaborate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "read_adc ../../M0DEMO.adc"
+RUN-1002 : start command "set_pin_assignment NRST  LOCATION = T4;  "
+RUN-1002 : start command "set_pin_assignment SWCLKTCK  LOCATION = A8;  "
+RUN-1002 : start command "set_pin_assignment SWDIOTMS  LOCATION = A7;  "
+RUN-1002 : start command "set_pin_assignment XTAL1  LOCATION = K14;  "
+RUN-1002 : start command "set_pin_assignment b_pad_gpio_porta[0]  LOCATION = N3;  "
+RUN-1002 : start command "set_pin_assignment nTRST  LOCATION = R5;  "
+USR-6010 WARNING: ADC constraints: top model pin P0[15] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin P0[14] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin P0[13] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin P0[12] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin P0[11] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin P0[10] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin P0[9] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin P0[8] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin P0[7] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin P0[6] has no constraint.
+USR-6010 Similar messages will be suppressed.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD5.6.59063/license/Anlogic.lic
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+SYN-1012 : SanityCheck: Model "M0demo"
+SYN-1012 : SanityCheck: Model "M0clkpll"
+SYN-1012 : SanityCheck: Model "cmsdk_mcu(WIC=1)"
+SYN-1012 : SanityCheck: Model "AHB2MEM"
+SYN-1012 : SanityCheck: Model "cmsdk_mcu_clkctrl"
+SYN-1012 : SanityCheck: Model "cmsdk_mcu_system(WIC=1)"
+SYN-1012 : SanityCheck: Model "cmsdk_mcu_addr_decode"
+SYN-1012 : SanityCheck: Model "cmsdk_ahb_default_slave"
+SYN-1012 : SanityCheck: Model "cmsdk_ahb_gpio"
+SYN-1012 : SanityCheck: Model "cmsdk_ahb_to_iop"
+SYN-1012 : SanityCheck: Model "cmsdk_iop_gpio"
+SYN-1012 : SanityCheck: Model "cmsdk_ahb_slave_mux(PORT2_ENABLE=0,PORT9_ENABLE=0)"
+SYN-1012 : SanityCheck: Model "cmsdk_apb_subsystem_m0ds(INCLUDE_APB_TEST_SLAVE=0,INCLUDE_APB_TIMER1=0,INCLUDE_APB_DUALTIMER0=0,INCLUDE_APB_UART1=0,INCLUDE_APB_UART2=0,INCLUDE_APB_UART3=0,INCLUDE_APB_UART4=0,INCLUDE_APB_WATCHDOG=0)"
+SYN-1012 : SanityCheck: Model "gpio"
+SYN-1012 : SanityCheck: Model "gpio_apbif"
+SYN-1012 : SanityCheck: Model "gpio_ctrl"
+SYN-1012 : SanityCheck: Model "cmsdk_apb_uart"
+SYN-1012 : SanityCheck: Model "cmsdk_ahb_to_apb"
+SYN-1012 : SanityCheck: Model "cmsdk_apb_slave_mux(PORT1_ENABLE=0,PORT2_ENABLE=0,PORT3_ENABLE=0,PORT5_ENABLE=0,PORT6_ENABLE=0,PORT7_ENABLE=0,PORT8_ENABLE=0,PORT9_ENABLE=0,PORT10_ENABLE=0,PORT11_ENABLE=0,PORT12_ENABLE=0,PORT13_ENABLE=0,PORT14_ENABLE=0,PORT15_ENABLE=0)"
+SYN-1012 : SanityCheck: Model "cmsdk_mcu_stclkctrl"
+SYN-1012 : SanityCheck: Model "cmsdk_mcu_sysctrl"
+SYN-1012 : SanityCheck: Model "CORTEXM0INTEGRATION"
+SYN-1012 : SanityCheck: Model "cortexm0ds_logic"
+SYN-1012 : SanityCheck: Model "cmsdk_ahb_cs_rom_table(BASE=32'b11110000000000000000000000000000,ENTRY0BASEADDR=32'b11100000000011111111000000000000,ENTRY0PRESENT=1'b1,ENTRY1BASEADDR=32'b11110000001000000000000000000000,ENTRY1PRESENT=0)"
+SYN-1012 : SanityCheck: Model "cmsdk_mcu_pin_mux"
+SYN-1043 : Mark cmsdk_mcu_pin_mux as IO macro for instance P0_i
+SYN-1043 : Mark gpio as IO macro for instance b_pad_gpio_porta_i
+SYN-1043 : Mark cmsdk_apb_subsystem_m0ds(INCLUDE_APB_TEST_SLAVE=0,INCLUDE_APB_TIMER1=0,INCLUDE_APB_DUALTIMER0=0,INCLUDE_APB_UART1=0,INCLUDE_APB_UART2=0,INCLUDE_APB_UART3=0,INCLUDE_APB_UART4=0,INCLUDE_APB_WATCHDOG=0) as IO macro for instance gen_apb_gpio_0$u_gpio_0
+SYN-1043 : Mark cmsdk_mcu_system(WIC=1) as IO macro for instance u_apb_subsystem
+SYN-1043 : Mark cmsdk_mcu(WIC=1) as IO macro for instance TMS_i
+SYN-1043 : Mark M0clkpll as IO macro for instance bufg_feedback
+SYN-1011 : Flatten model M0demo
+SYN-1032 : 33306/2233 useful/useless nets, 29453/948 useful/useless insts
+SYN-1016 : Merged 1182 instances.
+SYN-1026 : Infer Logic BRAM(u_cmsdk_mcu/u_ahb_ram/ramread0_syn_6)
+	 port mode: single dual port
+	 port a size: 1024 x 32	 write mode: NORMAL
+	 port b size: 1024 x 32	 write mode: READBEFOREWRITE
+SYN-1026 : Infer Logic BRAM(u_cmsdk_mcu/u_ahb_rom/ramread0_syn_6)
+	 port mode: single dual port
+	 port a size: 1024 x 32	 write mode: NORMAL
+	 port b size: 1024 x 32	 write mode: READBEFOREWRITE
+SYN-1023 : Infer 0 Logic DRAMs, 2 Logic BRAMs.
+SYN-1032 : 27169/1645 useful/useless nets, 24424/489 useful/useless insts
+SYN-1016 : Merged 1253 instances.
+SYN-5011 WARNING: Undriven pin: model "M0demo" / inst "u_cmsdk_mcu/u_cmsdk_mcu_system/u_apb_subsystem/gen_apb_gpio_0$u_gpio_0/x_gpio_apbif/reg5_syn_10" in ../../../RTL/gpio_apbif.v(278) / pin "d"
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_M0clkpll/reset" in ../../al_ip/M0clkpll.v(31)
+SYN-5014 WARNING: the net's pin: pin "reset" in ../../al_ip/M0clkpll.v(65)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_M0clkpll/stdby" in ../../al_ip/M0clkpll.v(32)
+SYN-5014 WARNING: the net's pin: pin "stdby" in ../../al_ip/M0clkpll.v(65)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_cmsdk_mcu_system/p0_in[8]" in ../../../RTL/cmsdk_mcu_system.v(144)
+SYN-5014 WARNING: the net's pin: pin "d" in ../../../RTL/cmsdk_iop_gpio.v(243)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_cmsdk_mcu_system/eth_interrupt" in ../../../RTL/cmsdk_mcu_system.v(155)
+SYN-5014 WARNING: the net's pin: pin "I[0]" in ../../../RTL/cortexm0ds_logic.v(5831)
+SYN-5014 WARNING: the net's pin: pin "I[1]" in ../../../RTL/cortexm0ds_logic.v(8596)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_cmsdk_mcu_system/gpio2_interrupt" in ../../../RTL/cmsdk_mcu_system.v(157)
+SYN-5014 WARNING: the net's pin: pin "I[1]" in ../../../RTL/cmsdk_mcu_system.v(1089)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_cmsdk_mcu_system/gpio3_interrupt" in ../../../RTL/cmsdk_mcu_system.v(158)
+SYN-5014 WARNING: the net's pin: pin "I[1]" in ../../../RTL/cmsdk_mcu_system.v(1089)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_cmsdk_mcu_system/i2s_interrupt" in ../../../RTL/cmsdk_mcu_system.v(154)
+SYN-5014 WARNING: the net's pin: pin "I[0]" in ../../../RTL/cortexm0ds_logic.v(5825)
+SYN-5014 WARNING: the net's pin: pin "I[1]" in ../../../RTL/cortexm0ds_logic.v(8604)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_cmsdk_mcu_system/spi_interrupt" in ../../../RTL/cmsdk_mcu_system.v(153)
+SYN-5014 WARNING: the net's pin: pin "I[0]" in ../../../RTL/cortexm0ds_logic.v(5843)
+SYN-5014 WARNING: the net's pin: pin "I[1]" in ../../../RTL/cortexm0ds_logic.v(8580)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_cmsdk_mcu_system/ts_interrupt" in ../../../RTL/cmsdk_mcu_system.v(156)
+SYN-5014 WARNING: the net's pin: pin "I[1]" in ../../../RTL/cmsdk_mcu_system.v(1089)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_cmsdk_mcu_system/u_apb_subsystem/u_apb_slave_mux/PRDATA5[0]" in ../../../RTL/cmsdk_apb_slave_mux.v(78)
+SYN-5014 WARNING: the net's pin: pin "I[1]" in ../../../RTL/cmsdk_apb_slave_mux.v(214)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_cmsdk_mcu_system/u_apb_subsystem/u_apb_slave_mux/PREADY5" in ../../../RTL/cmsdk_apb_slave_mux.v(77)
+SYN-5014 WARNING: the net's pin: pin "I[0]" in ../../../RTL/cmsdk_apb_slave_mux.v(180)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_cmsdk_mcu_system/u_cortex_m0_integration/EDBGRQ" in ../../../RTL/CORTEXM0INTEGRATION.v(69)
+SYN-5014 WARNING: the net's pin: pin "I[1]" in ../../../RTL/cortexm0ds_logic.v(5301)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_cmsdk_mcu_system/u_cortex_m0_integration/RSTBYPASS" in ../../../RTL/CORTEXM0INTEGRATION.v(99)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../../RTL/cortexm0ds_logic.v(13979)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_cmsdk_mcu_system/u_cortex_m0_integration/SLEEPHOLDREQn" in ../../../RTL/CORTEXM0INTEGRATION.v(90)
+SYN-5014 WARNING: the net's pin: pin "I[0]" in ../../../RTL/cortexm0ds_logic.v(5030)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_cmsdk_mcu_system/u_cortex_m0_integration/u_logic/DBGRESTART" in ../../../RTL/cortexm0ds_logic.v(85)
+SYN-5014 WARNING: the net's pin: pin "I[1]" in ../../../RTL/cortexm0ds_logic.v(4167)
+SYN-5014 WARNING: the net's pin: pin "I[1]" in ../../../RTL/cortexm0ds_logic.v(5297)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_pin_mux/uart0_txd" in ../../../RTL/cmsdk_mcu_pin_mux.v(37)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../../RTL/cmsdk_mcu_pin_mux.v(107)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_pin_mux/uart0_txen" in ../../../RTL/cmsdk_mcu_pin_mux.v(38)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../../RTL/cmsdk_mcu_pin_mux.v(118)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_pin_mux/uart1_txd" in ../../../RTL/cmsdk_mcu_pin_mux.v(40)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../../RTL/cmsdk_mcu_pin_mux.v(109)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_pin_mux/uart1_txen" in ../../../RTL/cmsdk_mcu_pin_mux.v(41)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../../RTL/cmsdk_mcu_pin_mux.v(120)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_pin_mux/uart2_txd" in ../../../RTL/cmsdk_mcu_pin_mux.v(43)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../../RTL/cmsdk_mcu_pin_mux.v(111)
+SYN-5013 WARNING: Undriven net: model "M0demo" / net "u_cmsdk_mcu/u_pin_mux/uart2_txen" in ../../../RTL/cmsdk_mcu_pin_mux.v(44)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../../RTL/cmsdk_mcu_pin_mux.v(122)
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-1032 : 25555/413 useful/useless nets, 25267/503 useful/useless insts
+SYN-1014 : Optimize round 1
+SYN-1044 : Optimized 63 inv instances.
+SYN-1032 : 25490/63 useful/useless nets, 25202/2 useful/useless insts
+SYN-1017 : Remove 3 const input seq instances
+SYN-1002 :     u_cmsdk_mcu/u_cmsdk_mcu_system/u_ahb_default_slave_1/reg0_syn_2
+SYN-1002 :     u_cmsdk_mcu/u_cmsdk_mcu_system/u_ahb_gpio_0/u_iop_gpio/reg3_syn_10
+SYN-1002 :     u_cmsdk_mcu/u_cmsdk_mcu_system/u_ahb_gpio_0/u_iop_gpio/reg4_syn_10
+SYN-1019 : Optimized 196 mux instances.
+SYN-1020 : Optimized 38 distributor mux.
+SYN-1019 : Optimized 13 mux instances.
+SYN-1016 : Merged 90 instances.
+SYN-1015 : Optimize round 1, 4412 better
+SYN-1014 : Optimize round 2
+SYN-1044 : Optimized 1 inv instances.
+SYN-1032 : 23501/248 useful/useless nets, 23213/92 useful/useless insts
+SYN-1017 : Remove 4 const input seq instances
+SYN-1002 :     u_cmsdk_mcu/u_ahb_ram/reg1_syn_18
+SYN-1002 :     u_cmsdk_mcu/u_cmsdk_mcu_system/u_ahb_default_slave_1/reg0_syn_3
+SYN-1002 :     u_cmsdk_mcu/u_cmsdk_mcu_system/u_ahb_gpio_0/u_iop_gpio/reg9_syn_10
+SYN-1002 :     u_cmsdk_mcu/u_cmsdk_mcu_system/u_apb_subsystem/u_ahb_to_apb/reg3_syn_22
+SYN-1018 : Transformed 16 mux instances.
+SYN-1019 : Optimized 16 mux instances.
+SYN-1020 : Optimized 17 distributor mux.
+SYN-1019 : Optimized 7 mux instances.
+SYN-1016 : Merged 28 instances.
+SYN-1015 : Optimize round 2, 366 better
+SYN-1032 : 23454/14 useful/useless nets, 23166/63 useful/useless insts
+SYN-3004 : Optimized 1 const0 DFF(s)
+SYN-3004 : Optimized 1 const0 DFF(s)
+SYN-3008 : Optimized 1 const1 DFF(s)
+SYN-1032 : 23439/15 useful/useless nets, 23151/12 useful/useless insts
+SYN-1014 : Optimize round 1
+SYN-1044 : Optimized 9 inv instances.
+SYN-1032 : 23378/9 useful/useless nets, 23090/8 useful/useless insts
+SYN-1020 : Optimized 2 distributor mux.
+SYN-1016 : Merged 3 instances.
+SYN-1015 : Optimize round 1, 66 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 23376/0 useful/useless nets, 23088/2 useful/useless insts
+SYN-1015 : Optimize round 2, 2 better
+SYN-1014 : Optimize round 3
+SYN-1015 : Optimize round 3, 0 better
+RUN-1003 : finish command "optimize_rtl" in  7.188472s wall, 6.718750s user + 0.453125s system = 7.171875s CPU (99.8%)
+
+RUN-1004 : used memory is 235 MB, reserved memory is 207 MB, peak memory is 237 MB
+RUN-1002 : start command "report_area -file M0demo_rtl.area"
+RUN-1001 : standard
+***Report Model: M0demo Device: EG4S20BG256***
+
+IO Statistics
+#IO                        35
+  #input                    6
+  #output                  20
+  #inout                    9
+
+Gate Statistics
+#Basic gates            22300
+  #and                  10469
+  #nand                     0
+  #or                    2569
+  #nor                      0
+  #xor                     73
+  #xnor                     0
+  #buf                      0
+  #not                   6725
+  #bufif1                  26
+  #MX21                   553
+  #FADD                     0
+  #DFF                   1885
+  #LATCH                    0
+#MACRO_ADD                 15
+#MACRO_EQ                  92
+#MACRO_MULT                 1
+#MACRO_MUX                674
+#MACRO_OTHERS               3
+
+Report Hierarchy Area:
++--------------------------------------------------------------------------------------+
+|Instance                            |Module                   |gates  |seq    |macros |
++--------------------------------------------------------------------------------------+
+|top                                 |M0demo                   |20415  |1885   |111    |
+|  u_M0clkpll                        |M0clkpll                 |0      |0      |1      |
+|  u_cmsdk_mcu                       |cmsdk_mcu                |20415  |1885   |110    |
+|    u_ahb_ram                       |AHB2MEM                  |109    |16     |1      |
+|    u_ahb_rom                       |AHB2MEM                  |67     |1      |1      |
+|    u_cmsdk_mcu_clkctrl             |cmsdk_mcu_clkctrl        |3      |5      |0      |
+|    u_cmsdk_mcu_system              |cmsdk_mcu_system         |20194  |1863   |108    |
+|      u_addr_decode                 |cmsdk_mcu_addr_decode    |6      |0      |6      |
+|      u_ahb_gpio_0                  |cmsdk_ahb_gpio           |299    |129    |19     |
+|        u_ahb_to_gpio               |cmsdk_ahb_to_iop         |1      |17     |0      |
+|        u_iop_gpio                  |cmsdk_iop_gpio           |298    |112    |19     |
+|      u_ahb_gpio_1                  |cmsdk_ahb_gpio           |525    |161    |0      |
+|        u_ahb_to_gpio               |cmsdk_ahb_to_iop         |1      |1      |0      |
+|        u_iop_gpio                  |cmsdk_iop_gpio           |524    |160    |0      |
+|      u_ahb_slave_mux_sys_bus       |cmsdk_ahb_slave_mux      |248    |7      |0      |
+|      u_apb_subsystem               |cmsdk_apb_subsystem_m0ds |277    |218    |53     |
+|        gen_apb_gpio_0$u_gpio_0     |gpio                     |120    |64     |8      |
+|          x_gpio_apbif              |gpio_apbif               |32     |64     |8      |
+|          x_gpio_ctrl               |gpio_ctrl                |80     |0      |0      |
+|        gen_apb_uart_0$u_apb_uart_0 |cmsdk_apb_uart           |96     |116    |25     |
+|        u_ahb_to_apb                |cmsdk_ahb_to_apb         |3      |38     |4      |
+|        u_apb_slave_mux             |cmsdk_apb_slave_mux      |55     |0      |16     |
+|      u_cmsdk_mcu_sysctrl           |cmsdk_mcu_sysctrl        |38     |17     |6      |
+|      u_cortex_m0_integration       |CORTEXM0INTEGRATION      |18782  |1321   |14     |
+|        u_logic                     |cortexm0ds_logic         |18782  |1321   |14     |
+|      u_system_rom_table            |cmsdk_ahb_cs_rom_table   |14     |10     |10     |
+|    u_pin_mux                       |cmsdk_mcu_pin_mux        |39     |0      |0      |
++--------------------------------------------------------------------------------------+
+
+RUN-1002 : start command "export_db M0demo_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "read_sdc"
+USR-1002 : read_sdc file_name -help -h -eco
+USR-1009 : NO module with IP_SDC ...
+RUN-1104 : Import SDC file  finished, there are 0 nets kept by constraints.
+RUN-1002 : start command "optimize_gate -maparea M0demo_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD5.6.59063/license/Anlogic.lic
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Gate Property
+RUN-1001 : ------------------------------------------------------------------
+RUN-1001 :          Parameters         |  Settings  |  Default Values  |  Note  
+RUN-1001 : ------------------------------------------------------------------
+RUN-1001 :         cascade_dsp         |    off     |       off        |        
+RUN-1001 :         cascade_eram        |    off     |       off        |        
+RUN-1001 :        gate_sim_model       |    off     |       off        |        
+RUN-1001 :        map_sim_model        |    off     |       off        |        
+RUN-1001 :         map_strategy        |     1      |        1         |        
+RUN-1001 :           opt_area          |   medium   |      medium      |        
+RUN-1001 :          opt_timing         |    auto    |       auto       |        
+RUN-1001 :         pack_effort         |   medium   |      medium      |        
+RUN-1001 :      pack_lslice_ripple     |     on     |        on        |        
+RUN-1001 :   pack_lslice_ripple_ratio  |    0.5     |       0.5        |        
+RUN-1001 :        pack_seq_in_io       |    auto    |       auto       |        
+RUN-1001 :        ph1_mux_ratio        |    1.0     |       1.0        |        
+RUN-1001 :            report           |  standard  |     standard     |        
+RUN-1001 :           retiming          |    off     |       off        |        
+RUN-1001 : ------------------------------------------------------------------
+SYN-2001 : Map 35 IOs to PADs
+SYN-1032 : 23392/17 useful/useless nets, 23096/26 useful/useless insts
+RUN-1002 : start command "update_pll_param -module M0demo"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 1 BUFG to GCLK
+SYN-2595 : bram inst: u_cmsdk_mcu/u_ahb_ram/ramread0_syn_6 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: u_cmsdk_mcu/u_ahb_rom/ramread0_syn_6 is set to PDPW/SP from DP for resource saving
+SYN-2512 : LOGIC BRAM "u_cmsdk_mcu/u_ahb_ram/ramread0_syn_8"
+SYN-2512 : LOGIC BRAM "u_cmsdk_mcu/u_ahb_rom/ramread0_syn_8"
+SYN-2571 : Map 1 macro multiplier
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 23484/68 useful/useless nets, 23107/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 69 better
+SYN-2571 : Optimize after map_dsp, round 2
+SYN-2571 : Optimize after map_dsp, round 2, 0 better
+SYN-1001 : Throwback 323 control mux instances
+SYN-2501 : Optimize round 1
+SYN-1016 : Merged 410 instances.
+SYN-2501 : Optimize round 1, 1046 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 16 macro adder
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 7 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-2501 : Inferred 19 ROM instances
+SYN-1019 : Optimized 267 mux instances.
+SYN-1016 : Merged 36 instances.
+SYN-1032 : 25025/274 useful/useless nets, 24716/0 useful/useless insts
+RUN-1002 : start command "start_timer -prepack"
+TMR-2505 : Start building timing graph for model M0demo.
+TMR-2506 : Build timing graph completely. Port num: 13, tpin num: 71227, tnet num: 25023, tinst num: 24714, tnode num: 76175, tedge num: 93147.
+TMR-2508 : Levelizing timing graph completed, there are 275 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 25023 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3001 : Initiate 0 clocks from SDC.
+TMR-3004 : Map sdc constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=5, #lut = 5890 (3.71), #lev = 35 (10.36)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=5, #lut = 5810 (3.72), #lev = 35 (10.17)
+SYN-3001 : Logic optimization runtime opt =   1.63 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 22566 instances into 5810 LUTs, name keeping = 40%.
+RUN-1002 : start command "report_area -file M0demo_gate.area"
+RUN-1001 : standard
+***Report Model: M0demo Device: EG4S20BG256***
+
+IO Statistics
+#IO                        35
+  #input                    6
+  #output                  20
+  #inout                    9
+
+LUT Statistics
+#Total_luts              6025
+  #lut4                  4819
+  #lut5                  1010
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b             196
+
+Utilization Statistics
+#lut                     6025   out of  19600   30.74%
+#reg                     1885   out of  19600    9.62%
+#le                         0
+#dsp                        3   out of     29   10.34%
+#bram                       8   out of     64   12.50%
+  #bram9k                   8
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       34   out of    188   18.09%
+  #ireg                     0
+  #oreg                     0
+  #treg                     0
+#pll                        1   out of      4   25.00%
+
+Report Hierarchy Area:
++-----------------------------------------------------------------------------------------------------------+
+|Instance                            |Module                   |lut     |ripple  |seq     |bram    |dsp     |
++-----------------------------------------------------------------------------------------------------------+
+|top                                 |M0demo                   |5829    |196     |1885    |8       |3       |
+|  u_M0clkpll                        |M0clkpll                 |0       |0       |0       |0       |0       |
+|  u_cmsdk_mcu                       |cmsdk_mcu                |5828    |196     |1885    |8       |3       |
+|    u_ahb_ram                       |AHB2MEM                  |73      |0       |16      |4       |0       |
+|    u_ahb_rom                       |AHB2MEM                  |34      |0       |1       |4       |0       |
+|    u_cmsdk_mcu_clkctrl             |cmsdk_mcu_clkctrl        |1       |0       |5       |0       |0       |
+|    u_cmsdk_mcu_system              |cmsdk_mcu_system         |5704    |196     |1863    |0       |3       |
+|      u_ahb_gpio_0                  |cmsdk_ahb_gpio           |164     |0       |129     |0       |0       |
+|        u_ahb_to_gpio               |cmsdk_ahb_to_iop         |2       |0       |17      |0       |0       |
+|        u_iop_gpio                  |cmsdk_iop_gpio           |162     |0       |112     |0       |0       |
+|      u_ahb_gpio_1                  |cmsdk_ahb_gpio           |167     |0       |161     |0       |0       |
+|        u_ahb_to_gpio               |cmsdk_ahb_to_iop         |2       |0       |1       |0       |0       |
+|        u_iop_gpio                  |cmsdk_iop_gpio           |165     |0       |160     |0       |0       |
+|      u_ahb_slave_mux_sys_bus       |cmsdk_ahb_slave_mux      |0       |0       |7       |0       |0       |
+|      u_apb_subsystem               |cmsdk_apb_subsystem_m0ds |255     |23      |218     |0       |0       |
+|        gen_apb_gpio_0$u_gpio_0     |gpio                     |72      |0       |64      |0       |0       |
+|          x_gpio_apbif              |gpio_apbif               |72      |0       |64      |0       |0       |
+|        gen_apb_uart_0$u_apb_uart_0 |cmsdk_apb_uart           |151     |23      |116     |0       |0       |
+|        u_ahb_to_apb                |cmsdk_ahb_to_apb         |7       |0       |38      |0       |0       |
+|        u_apb_slave_mux             |cmsdk_apb_slave_mux      |25      |0       |0       |0       |0       |
+|      u_cmsdk_mcu_sysctrl           |cmsdk_mcu_sysctrl        |20      |0       |17      |0       |0       |
+|      u_cortex_m0_integration       |CORTEXM0INTEGRATION      |5097    |173     |1321    |0       |3       |
+|        u_logic                     |cortexm0ds_logic         |5097    |173     |1321    |0       |3       |
+|      u_system_rom_table            |cmsdk_ahb_cs_rom_table   |1       |0       |10      |0       |0       |
+|    u_pin_mux                       |cmsdk_mcu_pin_mux        |16      |0       |0       |0       |0       |
++-----------------------------------------------------------------------------------------------------------+
+
+SYN-1001 : Packing model "M0demo" ...
+SYN-4010 : Pack lib has 58 rtl pack models with 25 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 1885 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 4 carry chain into lslice
+SYN-4007 : Packing 74 adder to BLE ...
+SYN-4008 : Packed 74 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+RUN-1003 : finish command "optimize_gate -maparea M0demo_gate.area" in  13.036838s wall, 12.953125s user + 0.093750s system = 13.046875s CPU (100.1%)
+
+RUN-1004 : used memory is 270 MB, reserved memory is 255 MB, peak memory is 360 MB
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model M0demo
+RUN-1002 : start command "export_db M0demo_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1003 : finish command "export_db M0demo_gate.db" in  1.119190s wall, 1.781250s user + 0.015625s system = 1.796875s CPU (160.6%)
+
+RUN-1004 : used memory is 283 MB, reserved memory is 270 MB, peak memory is 360 MB
+RUN-1002 : start command "backup_run_log run.log ../.logs/syn_1/td_20221008_182206.log"

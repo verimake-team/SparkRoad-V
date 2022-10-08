@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SDRAMConfig>
+    <GeneralConfig>
+        <Type/>
+        <Device/>
+        <create_VHDL>false</create_VHDL>
+        <inst/>
+    </GeneralConfig>
+    <GeneratedFiles>
+        <Verilog Enable="true">ip_sdram.v</Verilog>
+    </GeneratedFiles>
+</SDRAMConfig>

@@ -1,0 +1,13 @@
+TITLE: Versatile Express V2M-MPS2 configuration file
+
+[CONFIGURATION]
+AUTORUN: FALSE              ;Auto Run from power on
+AUTORUNDELAY: 3             ;Delay in seconds to wait for key press to stop boot up
+RTC: FALSE                  ;TRUE = Enable RTC, False = Disable RTC
+
+ASSERTNPOR: TRUE            ;External resets assert nPOR
+WDTRESET: NONE              ;Watchdog reset options NONE/RESETMB/RESETDB
+
+USB_REMOTE: TRUE            ;Selects remote command via USB
+
+MACADDRESS: 0xFFFFFFFFFFFF  ;MAC Address

@@ -1,0 +1,291 @@
+eagle_s20
+13 23 391 640 8454 9 7
+-1.824 -1.340 sdram_control eagle_s20 EG4S20BG256 Detail NA 8 3
+clock: clkin
+13 2496 136 2
+Setup check
+23 3
+Endpoint: ux_seg/reg4_syn_16
+23 -1.824000 55 3
+Timing path: u_sdram/reg1_syn_67.clk->ux_seg/reg4_syn_16
+u_sdram/reg1_syn_67.clk
+ux_seg/reg4_syn_16
+25 -1.824000 3.636000 5.460000 3 3
+u2/b[4] u_sdram/reg1_syn_67.b[0]
+u2/lt2_syn_13 u_sdram/reg1_syn_70.a[0]
+u2/z[13]_syn_7 ux_seg/reg4_syn_16.a[1]
+
+Timing path: u_sdram/reg1_syn_67.clk->ux_seg/reg4_syn_16
+u_sdram/reg1_syn_67.clk
+ux_seg/reg4_syn_16
+65 -1.824000 3.636000 5.460000 3 3
+u2/b[4] u_sdram/reg1_syn_67.b[0]
+u2/lt2_syn_13 u_sdram/reg1_syn_70.a[0]
+u2/z[13]_syn_7 ux_seg/reg4_syn_16.a[0]
+
+Timing path: u_sdram/reg1_syn_67.clk->ux_seg/reg4_syn_16
+u_sdram/reg1_syn_67.clk
+ux_seg/reg4_syn_16
+105 -1.783000 3.636000 5.419000 3 3
+u2/b[6] u_sdram/reg1_syn_67.d[0]
+u2/lt2_syn_13 u_sdram/reg1_syn_70.a[0]
+u2/z[13]_syn_7 ux_seg/reg4_syn_16.a[1]
+
+
+Endpoint: ux_seg/reg3_syn_24
+145 -1.780000 29 3
+Timing path: u_sdram/reg1_syn_67.clk->ux_seg/reg3_syn_24
+u_sdram/reg1_syn_67.clk
+ux_seg/reg3_syn_24
+147 -1.780000 3.636000 5.416000 3 3
+u2/b[4] u_sdram/reg1_syn_67.b[0]
+u2/lt2_syn_13 u_sdram/reg1_syn_70.a[0]
+u2/z[13]_syn_7 ux_seg/reg3_syn_24.a[1]
+
+Timing path: u_sdram/reg1_syn_67.clk->ux_seg/reg3_syn_24
+u_sdram/reg1_syn_67.clk
+ux_seg/reg3_syn_24
+187 -1.739000 3.636000 5.375000 3 3
+u2/b[6] u_sdram/reg1_syn_67.d[0]
+u2/lt2_syn_13 u_sdram/reg1_syn_70.a[0]
+u2/z[13]_syn_7 ux_seg/reg3_syn_24.a[1]
+
+Timing path: u_sdram/reg1_syn_64.clk->ux_seg/reg3_syn_24
+u_sdram/reg1_syn_64.clk
+ux_seg/reg3_syn_24
+227 -1.731000 3.636000 5.367000 3 3
+u2/b[3] u_sdram/reg1_syn_67.a[0]
+u2/lt2_syn_13 u_sdram/reg1_syn_70.a[0]
+u2/z[13]_syn_7 ux_seg/reg3_syn_24.a[1]
+
+
+Endpoint: ux_seg/reg3_syn_24
+267 -1.780000 29 3
+Timing path: u_sdram/reg1_syn_67.clk->ux_seg/reg3_syn_24
+u_sdram/reg1_syn_67.clk
+ux_seg/reg3_syn_24
+269 -1.780000 3.636000 5.416000 3 3
+u2/b[4] u_sdram/reg1_syn_67.b[0]
+u2/lt2_syn_13 u_sdram/reg1_syn_70.a[0]
+u2/z[13]_syn_7 ux_seg/reg3_syn_24.a[0]
+
+Timing path: u_sdram/reg1_syn_67.clk->ux_seg/reg3_syn_24
+u_sdram/reg1_syn_67.clk
+ux_seg/reg3_syn_24
+309 -1.739000 3.636000 5.375000 3 3
+u2/b[6] u_sdram/reg1_syn_67.d[0]
+u2/lt2_syn_13 u_sdram/reg1_syn_70.a[0]
+u2/z[13]_syn_7 ux_seg/reg3_syn_24.a[0]
+
+Timing path: u_sdram/reg1_syn_64.clk->ux_seg/reg3_syn_24
+u_sdram/reg1_syn_64.clk
+ux_seg/reg3_syn_24
+349 -1.731000 3.636000 5.367000 3 3
+u2/b[3] u_sdram/reg1_syn_67.a[0]
+u2/lt2_syn_13 u_sdram/reg1_syn_70.a[0]
+u2/z[13]_syn_7 ux_seg/reg3_syn_24.a[0]
+
+
+
+Hold check
+389 3
+Endpoint: ux_seg/reg2_syn_23
+391 -1.340000 1 1
+Timing path: u_sdram/reg1_syn_73.clk->ux_seg/reg2_syn_23
+u_sdram/reg1_syn_73.clk
+ux_seg/reg2_syn_23
+393 -1.340000 4.025000 2.685000 0 1
+u2/b[0] ux_seg/reg2_syn_23.mi[1]
+
+
+Endpoint: ux_seg/reg2_syn_23
+429 -1.238000 5 3
+Timing path: u_sdram/reg1_syn_67.clk->ux_seg/reg2_syn_23
+u_sdram/reg1_syn_67.clk
+ux_seg/reg2_syn_23
+431 -1.238000 4.025000 2.787000 1 1
+u2/b[6] ux_seg/reg2_syn_23.d[0]
+
+Timing path: u_sdram/reg1_syn_67.clk->ux_seg/reg2_syn_23
+u_sdram/reg1_syn_67.clk
+ux_seg/reg2_syn_23
+467 -1.079000 4.025000 2.946000 1 1
+u2/b[4] ux_seg/reg2_syn_23.b[0]
+
+Timing path: u_sdram/reg1_syn_70.clk->ux_seg/reg2_syn_23
+u_sdram/reg1_syn_70.clk
+ux_seg/reg2_syn_23
+503 -1.066000 4.025000 2.959000 1 1
+u2/b[7] ux_seg/reg2_syn_23.e[0]
+
+
+Endpoint: ux_seg/reg3_syn_27
+539 -1.144000 33 3
+Timing path: u_sdram/reg1_syn_73.clk->ux_seg/reg3_syn_27
+u_sdram/reg1_syn_73.clk
+ux_seg/reg3_syn_27
+541 -1.144000 4.025000 2.881000 1 1
+u2/b[1] ux_seg/reg3_syn_27.d[1]
+
+Timing path: u_sdram/reg1_syn_73.clk->ux_seg/reg3_syn_27
+u_sdram/reg1_syn_73.clk
+ux_seg/reg3_syn_27
+577 -1.144000 4.025000 2.881000 1 1
+u2/b[1] ux_seg/reg3_syn_27.d[0]
+
+Timing path: u_sdram/reg1_syn_70.clk->ux_seg/reg3_syn_27
+u_sdram/reg1_syn_70.clk
+ux_seg/reg3_syn_27
+613 -0.952000 4.025000 3.073000 1 1
+u2/b[2] ux_seg/reg3_syn_27.mi[0]
+
+
+
+
+clock: sd_clk
+649 5958 504 2
+Setup check
+659 3
+Endpoint: reg5_syn_108
+659 0.050000 112 3
+Timing path: reg0_syn_61.clk->reg5_syn_108
+reg0_syn_61.clk
+reg5_syn_108
+661 0.050000 7.096000 7.046000 4 6
+burst_cnt1[3] lt0_syn_42.a[0]
+lt0_syn_10 lt0_syn_45.fci
+lt0_syn_14 lt0_syn_48.fci
+lt0_syn_18 lt0_syn_50.fci
+burst_cnt1_b2_n rd_addr_b[8]_syn_28.a[0]
+rd_addr_b[8]_syn_4 reg5_syn_108.a[1]
+
+Timing path: reg0_syn_61.clk->reg5_syn_108
+reg0_syn_61.clk
+reg5_syn_108
+705 0.050000 7.096000 7.046000 4 6
+burst_cnt1[3] lt0_syn_42.a[0]
+lt0_syn_10 lt0_syn_45.fci
+lt0_syn_14 lt0_syn_48.fci
+lt0_syn_18 lt0_syn_50.fci
+burst_cnt1_b2_n rd_addr_b[8]_syn_28.a[1]
+rd_addr_b[8]_syn_4 reg5_syn_108.a[0]
+
+Timing path: reg0_syn_61.clk->reg5_syn_108
+reg0_syn_61.clk
+reg5_syn_108
+749 0.050000 7.096000 7.046000 4 6
+burst_cnt1[3] lt0_syn_42.a[0]
+lt0_syn_10 lt0_syn_45.fci
+lt0_syn_14 lt0_syn_48.fci
+lt0_syn_18 lt0_syn_50.fci
+burst_cnt1_b2_n rd_addr_b[8]_syn_28.a[0]
+rd_addr_b[8]_syn_4 reg5_syn_108.a[0]
+
+
+Endpoint: test_error_tmp_reg_syn_88
+793 0.052000 229 3
+Timing path: reg0_syn_65.clk->test_error_tmp_reg_syn_88
+reg0_syn_65.clk
+test_error_tmp_reg_syn_88
+795 0.052000 7.096000 7.044000 5 5
+burst_cnt1[7] lt2_syn_52.a[1]
+lt2_syn_18 lt2_syn_55.fci
+test_error_tmp_n6 sd_state_b[1]_syn_51.b[0]
+test_error_tmp_i_syn_3 reg10_syn_167.a[0]
+test_error_tmp_reg_syn_54 test_error_tmp_reg_syn_88.a[1]
+
+Timing path: reg0_syn_65.clk->test_error_tmp_reg_syn_88
+reg0_syn_65.clk
+test_error_tmp_reg_syn_88
+837 0.052000 7.096000 7.044000 5 5
+burst_cnt1[7] lt2_syn_52.a[1]
+lt2_syn_18 lt2_syn_55.fci
+test_error_tmp_n6 sd_state_b[1]_syn_51.b[0]
+test_error_tmp_i_syn_3 reg10_syn_167.a[0]
+test_error_tmp_reg_syn_54 test_error_tmp_reg_syn_88.a[0]
+
+Timing path: reg0_syn_58.clk->test_error_tmp_reg_syn_88
+reg0_syn_58.clk
+test_error_tmp_reg_syn_88
+879 0.113000 7.096000 6.983000 5 7
+burst_cnt1[2] lt2_syn_46.a[0]
+lt2_syn_10 lt2_syn_49.fci
+lt2_syn_14 lt2_syn_52.fci
+lt2_syn_18 lt2_syn_55.fci
+test_error_tmp_n6 sd_state_b[1]_syn_51.b[0]
+test_error_tmp_i_syn_3 reg10_syn_167.a[0]
+test_error_tmp_reg_syn_54 test_error_tmp_reg_syn_88.a[1]
+
+
+Endpoint: reg9_syn_24
+925 0.153000 105 3
+Timing path: reg0_syn_61.clk->reg9_syn_24
+reg0_syn_61.clk
+reg9_syn_24
+927 0.153000 7.096000 6.943000 3 3
+burst_cnt1[3] sd_cmd_b[1]_syn_65.b[1]
+sd_cmd_b[1]_syn_10 sd_cmd_b[1]_syn_59.a[1]
+sd_cmd_b[1]_syn_22 reg9_syn_24.a[1]
+
+Timing path: reg0_syn_61.clk->reg9_syn_24
+reg0_syn_61.clk
+reg9_syn_24
+965 0.153000 7.096000 6.943000 3 3
+burst_cnt1[3] sd_cmd_b[1]_syn_65.b[1]
+sd_cmd_b[1]_syn_10 sd_cmd_b[1]_syn_59.a[0]
+sd_cmd_b[1]_syn_22 reg9_syn_24.a[1]
+
+Timing path: reg0_syn_61.clk->reg9_syn_24
+reg0_syn_61.clk
+reg9_syn_24
+1003 0.153000 7.096000 6.943000 3 3
+burst_cnt1[3] sd_cmd_b[1]_syn_65.b[1]
+sd_cmd_b[1]_syn_10 sd_cmd_b[1]_syn_59.a[1]
+sd_cmd_b[1]_syn_22 reg9_syn_24.a[0]
+
+
+
+Hold check
+1041 3
+Endpoint: u_sdram/ux_data_path/reg0_syn_65
+1043 0.314000 1 1
+Timing path: reg4_syn_52.clk->u_sdram/ux_data_path/reg0_syn_65
+reg4_syn_52.clk
+u_sdram/ux_data_path/reg0_syn_65
+1045 0.314000 2.044000 2.358000 0 1
+u_sdram/ux_data_path/DATAIN[0] u_sdram/ux_data_path/reg0_syn_65.mi[1]
+
+
+Endpoint: u_sdram/ux_control/reg0_syn_90
+1079 0.330000 1 1
+Timing path: reg8_syn_129.clk->u_sdram/ux_control/reg0_syn_90
+reg8_syn_129.clk
+u_sdram/ux_control/reg0_syn_90
+1081 0.330000 2.044000 2.374000 0 1
+sd_addr[11] u_sdram/ux_control/reg0_syn_90.mi[0]
+
+
+Endpoint: u_sdram/ux_control/reg0_syn_96
+1115 0.339000 1 1
+Timing path: reg8_syn_124.clk->u_sdram/ux_control/reg0_syn_96
+reg8_syn_124.clk
+u_sdram/ux_control/reg0_syn_96
+1117 0.339000 2.028000 2.367000 0 1
+sd_addr[17] u_sdram/ux_control/reg0_syn_96.mi[0]
+
+
+
+
+clock: sd_clk1
+1153 0 0 0
+
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  sd_clk (200.0MHz)                              4.950ns     202.000MHz        0.138ns       165        0.000ns
+	  clkin (24.0MHz)                               43.424ns      23.029MHz        0.066ns        35      -11.720ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+

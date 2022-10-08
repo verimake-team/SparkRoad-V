@@ -1,0 +1,1178 @@
+=========================================================================================================
+Auto created by Tang Dynasty v5.6.59063
+Copyright (c) 2012-2022 Anlogic
+Sat Oct  8 18:16:57 2022
+=========================================================================================================
+
+
+Top Model:                sdram_control                                                   
+Device:                   eagle_s20                                                       
+Timing Constraint File:   ../../sdram_test.sdc                                            
+STA Level:                Detail                                                          
+Speed Grade:              NA                                                              
+
+=========================================================================================================
+Timing constraint:        clock: clkin                                                    
+Clock = clkin, period 41.6ns, rising at 0ns, falling at 20.8ns
+
+136 endpoints analyzed totally, and 2496 paths analyzed
+16 errors detected : 9 setup errors (TNS = -11.720), 7 hold errors (TNS = -9.086)
+Minimum period is 43.424ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point ux_seg/reg4_syn_16 (55 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check):    -1.824 ns                                                        
+ Start Point:             u_sdram/reg1_syn_67.clk (rising edge triggered by clock sd_clk) 
+ End Point:               ux_seg/reg4_syn_16.a[1] (rising edge triggered by clock clkin)  
+ Clock group:             clkin                                                           
+ Process:                 Slow                                                            
+ Data Path Delay:         3.184ns  (logic 1.733ns, net 1.451ns, 54% logic)                
+ Logic Levels:            3 ( LUT5=3 )                                                    
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/reg1_syn_67.clk (clk_200m)                          net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_syn_67.q[1]                                    clk2q                   0.146 r     2.422
+ u_sdram/reg1_syn_67.b[0]                                    net  (fanout = 7)       0.654 r     3.076
+ u_sdram/reg1_syn_67.f[0]                                    cell (LUT5)             0.431 r     3.507
+ u_sdram/reg1_syn_70.a[0]                                    net  (fanout = 6)       0.468 r     3.975
+ u_sdram/reg1_syn_70.f[0]                                    cell (LUT5)             0.424 r     4.399
+ ux_seg/reg4_syn_16.a[1]                                     net  (fanout = 5)       0.329 r     4.728
+ ux_seg/reg4_syn_16                                          path2reg0 (LUT5)        0.732       5.460
+ Arrival time                                                                        5.460                  (3 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ CLKIN                                                                               0.000       0.000                    
+ CLKIN_syn_2.ipad                                            hier                    0.000       0.000                    
+ CLKIN_syn_2.di                                              cell (PAD)              1.700       1.700                    
+ ux_seg/reg4_syn_16.clk (CLKIN_dup_1)                        net                     1.852       3.552      ../../src/sdram_control.v(2)
+ capture clock edge                                                                  0.200       3.752
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       3.636
+ clock uncertainty                                                                  -0.000       3.636
+ clock recovergence pessimism                                                        0.000       3.636
+ Required time                                                                       3.636            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              -1.824ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):    -1.824 ns                                                        
+ Start Point:             u_sdram/reg1_syn_67.clk (rising edge triggered by clock sd_clk) 
+ End Point:               ux_seg/reg4_syn_16.a[0] (rising edge triggered by clock clkin)  
+ Clock group:             clkin                                                           
+ Process:                 Slow                                                            
+ Data Path Delay:         3.184ns  (logic 1.733ns, net 1.451ns, 54% logic)                
+ Logic Levels:            3 ( LUT5=3 )                                                    
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/reg1_syn_67.clk (clk_200m)                          net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_syn_67.q[1]                                    clk2q                   0.146 r     2.422
+ u_sdram/reg1_syn_67.b[0]                                    net  (fanout = 7)       0.654 r     3.076
+ u_sdram/reg1_syn_67.f[0]                                    cell (LUT5)             0.431 r     3.507
+ u_sdram/reg1_syn_70.a[0]                                    net  (fanout = 6)       0.468 r     3.975
+ u_sdram/reg1_syn_70.f[0]                                    cell (LUT5)             0.424 r     4.399
+ ux_seg/reg4_syn_16.a[0]                                     net  (fanout = 5)       0.329 r     4.728
+ ux_seg/reg4_syn_16                                          path2reg0 (LUT5)        0.732       5.460
+ Arrival time                                                                        5.460                  (3 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ CLKIN                                                                               0.000       0.000                    
+ CLKIN_syn_2.ipad                                            hier                    0.000       0.000                    
+ CLKIN_syn_2.di                                              cell (PAD)              1.700       1.700                    
+ ux_seg/reg4_syn_16.clk (CLKIN_dup_1)                        net                     1.852       3.552      ../../src/sdram_control.v(2)
+ capture clock edge                                                                  0.200       3.752
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       3.636
+ clock uncertainty                                                                  -0.000       3.636
+ clock recovergence pessimism                                                        0.000       3.636
+ Required time                                                                       3.636            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              -1.824ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):    -1.783 ns                                                        
+ Start Point:             u_sdram/reg1_syn_67.clk (rising edge triggered by clock sd_clk) 
+ End Point:               ux_seg/reg4_syn_16.a[1] (rising edge triggered by clock clkin)  
+ Clock group:             clkin                                                           
+ Process:                 Slow                                                            
+ Data Path Delay:         3.143ns  (logic 1.564ns, net 1.579ns, 49% logic)                
+ Logic Levels:            3 ( LUT5=3 )                                                    
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/reg1_syn_67.clk (clk_200m)                          net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_syn_67.q[0]                                    clk2q                   0.146 r     2.422
+ u_sdram/reg1_syn_67.d[0]                                    net  (fanout = 7)       0.782 r     3.204
+ u_sdram/reg1_syn_67.f[0]                                    cell (LUT5)             0.262 r     3.466
+ u_sdram/reg1_syn_70.a[0]                                    net  (fanout = 6)       0.468 r     3.934
+ u_sdram/reg1_syn_70.f[0]                                    cell (LUT5)             0.424 r     4.358
+ ux_seg/reg4_syn_16.a[1]                                     net  (fanout = 5)       0.329 r     4.687
+ ux_seg/reg4_syn_16                                          path2reg0 (LUT5)        0.732       5.419
+ Arrival time                                                                        5.419                  (3 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ CLKIN                                                                               0.000       0.000                    
+ CLKIN_syn_2.ipad                                            hier                    0.000       0.000                    
+ CLKIN_syn_2.di                                              cell (PAD)              1.700       1.700                    
+ ux_seg/reg4_syn_16.clk (CLKIN_dup_1)                        net                     1.852       3.552      ../../src/sdram_control.v(2)
+ capture clock edge                                                                  0.200       3.752
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       3.636
+ clock uncertainty                                                                  -0.000       3.636
+ clock recovergence pessimism                                                        0.000       3.636
+ Required time                                                                       3.636            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              -1.783ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point ux_seg/reg3_syn_24 (29 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check):    -1.780 ns                                                        
+ Start Point:             u_sdram/reg1_syn_67.clk (rising edge triggered by clock sd_clk) 
+ End Point:               ux_seg/reg3_syn_24.a[1] (rising edge triggered by clock clkin)  
+ Clock group:             clkin                                                           
+ Process:                 Slow                                                            
+ Data Path Delay:         3.140ns  (logic 1.543ns, net 1.597ns, 49% logic)                
+ Logic Levels:            3 ( LUT5=3 )                                                    
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/reg1_syn_67.clk (clk_200m)                          net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_syn_67.q[1]                                    clk2q                   0.146 r     2.422
+ u_sdram/reg1_syn_67.b[0]                                    net  (fanout = 7)       0.654 r     3.076
+ u_sdram/reg1_syn_67.f[0]                                    cell (LUT5)             0.431 r     3.507
+ u_sdram/reg1_syn_70.a[0]                                    net  (fanout = 6)       0.468 r     3.975
+ u_sdram/reg1_syn_70.f[0]                                    cell (LUT5)             0.424 r     4.399
+ ux_seg/reg3_syn_24.a[1]                                     net  (fanout = 5)       0.475 r     4.874
+ ux_seg/reg3_syn_24                                          path2reg1 (LUT5)        0.542       5.416
+ Arrival time                                                                        5.416                  (3 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ CLKIN                                                                               0.000       0.000                    
+ CLKIN_syn_2.ipad                                            hier                    0.000       0.000                    
+ CLKIN_syn_2.di                                              cell (PAD)              1.700       1.700                    
+ ux_seg/reg3_syn_24.clk (CLKIN_dup_1)                        net                     1.852       3.552      ../../src/sdram_control.v(2)
+ capture clock edge                                                                  0.200       3.752
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       3.636
+ clock uncertainty                                                                  -0.000       3.636
+ clock recovergence pessimism                                                        0.000       3.636
+ Required time                                                                       3.636            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              -1.780ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):    -1.739 ns                                                        
+ Start Point:             u_sdram/reg1_syn_67.clk (rising edge triggered by clock sd_clk) 
+ End Point:               ux_seg/reg3_syn_24.a[1] (rising edge triggered by clock clkin)  
+ Clock group:             clkin                                                           
+ Process:                 Slow                                                            
+ Data Path Delay:         3.099ns  (logic 1.374ns, net 1.725ns, 44% logic)                
+ Logic Levels:            3 ( LUT5=3 )                                                    
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/reg1_syn_67.clk (clk_200m)                          net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_syn_67.q[0]                                    clk2q                   0.146 r     2.422
+ u_sdram/reg1_syn_67.d[0]                                    net  (fanout = 7)       0.782 r     3.204
+ u_sdram/reg1_syn_67.f[0]                                    cell (LUT5)             0.262 r     3.466
+ u_sdram/reg1_syn_70.a[0]                                    net  (fanout = 6)       0.468 r     3.934
+ u_sdram/reg1_syn_70.f[0]                                    cell (LUT5)             0.424 r     4.358
+ ux_seg/reg3_syn_24.a[1]                                     net  (fanout = 5)       0.475 r     4.833
+ ux_seg/reg3_syn_24                                          path2reg1 (LUT5)        0.542       5.375
+ Arrival time                                                                        5.375                  (3 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ CLKIN                                                                               0.000       0.000                    
+ CLKIN_syn_2.ipad                                            hier                    0.000       0.000                    
+ CLKIN_syn_2.di                                              cell (PAD)              1.700       1.700                    
+ ux_seg/reg3_syn_24.clk (CLKIN_dup_1)                        net                     1.852       3.552      ../../src/sdram_control.v(2)
+ capture clock edge                                                                  0.200       3.752
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       3.636
+ clock uncertainty                                                                  -0.000       3.636
+ clock recovergence pessimism                                                        0.000       3.636
+ Required time                                                                       3.636            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              -1.739ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):    -1.731 ns                                                        
+ Start Point:             u_sdram/reg1_syn_64.clk (rising edge triggered by clock sd_clk) 
+ End Point:               ux_seg/reg3_syn_24.a[1] (rising edge triggered by clock clkin)  
+ Clock group:             clkin                                                           
+ Process:                 Slow                                                            
+ Data Path Delay:         3.091ns  (logic 1.536ns, net 1.555ns, 49% logic)                
+ Logic Levels:            3 ( LUT5=3 )                                                    
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/reg1_syn_64.clk (clk_200m)                          net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_syn_64.q[1]                                    clk2q                   0.146 r     2.422
+ u_sdram/reg1_syn_67.a[0]                                    net  (fanout = 6)       0.612 r     3.034
+ u_sdram/reg1_syn_67.f[0]                                    cell (LUT5)             0.424 r     3.458
+ u_sdram/reg1_syn_70.a[0]                                    net  (fanout = 6)       0.468 r     3.926
+ u_sdram/reg1_syn_70.f[0]                                    cell (LUT5)             0.424 r     4.350
+ ux_seg/reg3_syn_24.a[1]                                     net  (fanout = 5)       0.475 r     4.825
+ ux_seg/reg3_syn_24                                          path2reg1 (LUT5)        0.542       5.367
+ Arrival time                                                                        5.367                  (3 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ CLKIN                                                                               0.000       0.000                    
+ CLKIN_syn_2.ipad                                            hier                    0.000       0.000                    
+ CLKIN_syn_2.di                                              cell (PAD)              1.700       1.700                    
+ ux_seg/reg3_syn_24.clk (CLKIN_dup_1)                        net                     1.852       3.552      ../../src/sdram_control.v(2)
+ capture clock edge                                                                  0.200       3.752
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       3.636
+ clock uncertainty                                                                  -0.000       3.636
+ clock recovergence pessimism                                                        0.000       3.636
+ Required time                                                                       3.636            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              -1.731ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point ux_seg/reg3_syn_24 (29 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check):    -1.780 ns                                                        
+ Start Point:             u_sdram/reg1_syn_67.clk (rising edge triggered by clock sd_clk) 
+ End Point:               ux_seg/reg3_syn_24.a[0] (rising edge triggered by clock clkin)  
+ Clock group:             clkin                                                           
+ Process:                 Slow                                                            
+ Data Path Delay:         3.140ns  (logic 1.543ns, net 1.597ns, 49% logic)                
+ Logic Levels:            3 ( LUT5=3 )                                                    
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/reg1_syn_67.clk (clk_200m)                          net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_syn_67.q[1]                                    clk2q                   0.146 r     2.422
+ u_sdram/reg1_syn_67.b[0]                                    net  (fanout = 7)       0.654 r     3.076
+ u_sdram/reg1_syn_67.f[0]                                    cell (LUT5)             0.431 r     3.507
+ u_sdram/reg1_syn_70.a[0]                                    net  (fanout = 6)       0.468 r     3.975
+ u_sdram/reg1_syn_70.f[0]                                    cell (LUT5)             0.424 r     4.399
+ ux_seg/reg3_syn_24.a[0]                                     net  (fanout = 5)       0.475 r     4.874
+ ux_seg/reg3_syn_24                                          path2reg0 (LUT5)        0.542       5.416
+ Arrival time                                                                        5.416                  (3 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ CLKIN                                                                               0.000       0.000                    
+ CLKIN_syn_2.ipad                                            hier                    0.000       0.000                    
+ CLKIN_syn_2.di                                              cell (PAD)              1.700       1.700                    
+ ux_seg/reg3_syn_24.clk (CLKIN_dup_1)                        net                     1.852       3.552      ../../src/sdram_control.v(2)
+ capture clock edge                                                                  0.200       3.752
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       3.636
+ clock uncertainty                                                                  -0.000       3.636
+ clock recovergence pessimism                                                        0.000       3.636
+ Required time                                                                       3.636            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              -1.780ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):    -1.739 ns                                                        
+ Start Point:             u_sdram/reg1_syn_67.clk (rising edge triggered by clock sd_clk) 
+ End Point:               ux_seg/reg3_syn_24.a[0] (rising edge triggered by clock clkin)  
+ Clock group:             clkin                                                           
+ Process:                 Slow                                                            
+ Data Path Delay:         3.099ns  (logic 1.374ns, net 1.725ns, 44% logic)                
+ Logic Levels:            3 ( LUT5=3 )                                                    
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/reg1_syn_67.clk (clk_200m)                          net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_syn_67.q[0]                                    clk2q                   0.146 r     2.422
+ u_sdram/reg1_syn_67.d[0]                                    net  (fanout = 7)       0.782 r     3.204
+ u_sdram/reg1_syn_67.f[0]                                    cell (LUT5)             0.262 r     3.466
+ u_sdram/reg1_syn_70.a[0]                                    net  (fanout = 6)       0.468 r     3.934
+ u_sdram/reg1_syn_70.f[0]                                    cell (LUT5)             0.424 r     4.358
+ ux_seg/reg3_syn_24.a[0]                                     net  (fanout = 5)       0.475 r     4.833
+ ux_seg/reg3_syn_24                                          path2reg0 (LUT5)        0.542       5.375
+ Arrival time                                                                        5.375                  (3 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ CLKIN                                                                               0.000       0.000                    
+ CLKIN_syn_2.ipad                                            hier                    0.000       0.000                    
+ CLKIN_syn_2.di                                              cell (PAD)              1.700       1.700                    
+ ux_seg/reg3_syn_24.clk (CLKIN_dup_1)                        net                     1.852       3.552      ../../src/sdram_control.v(2)
+ capture clock edge                                                                  0.200       3.752
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       3.636
+ clock uncertainty                                                                  -0.000       3.636
+ clock recovergence pessimism                                                        0.000       3.636
+ Required time                                                                       3.636            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              -1.739ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):    -1.731 ns                                                        
+ Start Point:             u_sdram/reg1_syn_64.clk (rising edge triggered by clock sd_clk) 
+ End Point:               ux_seg/reg3_syn_24.a[0] (rising edge triggered by clock clkin)  
+ Clock group:             clkin                                                           
+ Process:                 Slow                                                            
+ Data Path Delay:         3.091ns  (logic 1.536ns, net 1.555ns, 49% logic)                
+ Logic Levels:            3 ( LUT5=3 )                                                    
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/reg1_syn_64.clk (clk_200m)                          net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_syn_64.q[1]                                    clk2q                   0.146 r     2.422
+ u_sdram/reg1_syn_67.a[0]                                    net  (fanout = 6)       0.612 r     3.034
+ u_sdram/reg1_syn_67.f[0]                                    cell (LUT5)             0.424 r     3.458
+ u_sdram/reg1_syn_70.a[0]                                    net  (fanout = 6)       0.468 r     3.926
+ u_sdram/reg1_syn_70.f[0]                                    cell (LUT5)             0.424 r     4.350
+ ux_seg/reg3_syn_24.a[0]                                     net  (fanout = 5)       0.475 r     4.825
+ ux_seg/reg3_syn_24                                          path2reg0 (LUT5)        0.542       5.367
+ Arrival time                                                                        5.367                  (3 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ CLKIN                                                                               0.000       0.000                    
+ CLKIN_syn_2.ipad                                            hier                    0.000       0.000                    
+ CLKIN_syn_2.di                                              cell (PAD)              1.700       1.700                    
+ ux_seg/reg3_syn_24.clk (CLKIN_dup_1)                        net                     1.852       3.552      ../../src/sdram_control.v(2)
+ capture clock edge                                                                  0.200       3.752
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       3.636
+ clock uncertainty                                                                  -0.000       3.636
+ clock recovergence pessimism                                                        0.000       3.636
+ Required time                                                                       3.636            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              -1.731ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point ux_seg/reg2_syn_23 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):     -1.340 ns                                                        
+ Start Point:             u_sdram/reg1_syn_73.clk (rising edge triggered by clock sd_clk) 
+ End Point:               ux_seg/reg2_syn_23.mi[1] (rising edge triggered by clock clkin) 
+ Clock group:             clkin                                                           
+ Process:                 Slow                                                            
+ Data Path Delay:         0.640ns  (logic 0.239ns, net 0.401ns, 37% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/reg1_syn_73.clk (clk_200m)                          net                     2.045       2.045      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.045
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_syn_73.q[1]                                    clk2q                   0.128 r     2.173
+ ux_seg/reg2_syn_23.mi[1]                                    net  (fanout = 1)       0.401 r     2.574
+ ux_seg/reg2_syn_23                                          path2reg1               0.111       2.685
+ Arrival time                                                                        2.685                  (0 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ CLKIN                                                                               0.000       0.000                    
+ CLKIN_syn_2.ipad                                            hier                    0.000       0.000                    
+ CLKIN_syn_2.di                                              cell (PAD)              1.890       1.890                    
+ ux_seg/reg2_syn_23.clk (CLKIN_dup_1)                        net                     2.061       3.951      ../../src/sdram_control.v(2)
+ capture clock edge                                                                  0.000       3.951
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.074       4.025
+ clock uncertainty                                                                   0.000       4.025
+ clock recovergence pessimism                                                        0.000       4.025
+ Required time                                                                       4.025            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              -1.340ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point ux_seg/reg2_syn_23 (5 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):     -1.238 ns                                                        
+ Start Point:             u_sdram/reg1_syn_67.clk (rising edge triggered by clock sd_clk) 
+ End Point:               ux_seg/reg2_syn_23.d[0] (rising edge triggered by clock clkin)  
+ Clock group:             clkin                                                           
+ Process:                 Slow                                                            
+ Data Path Delay:         0.742ns  (logic 0.443ns, net 0.299ns, 59% logic)                
+ Logic Levels:            1                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/reg1_syn_67.clk (clk_200m)                          net                     2.045       2.045      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.045
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_syn_67.q[0]                                    clk2q                   0.128 r     2.173
+ ux_seg/reg2_syn_23.d[0]                                     net  (fanout = 7)       0.299 r     2.472
+ ux_seg/reg2_syn_23                                          path2reg0               0.315       2.787
+ Arrival time                                                                        2.787                  (1 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ CLKIN                                                                               0.000       0.000                    
+ CLKIN_syn_2.ipad                                            hier                    0.000       0.000                    
+ CLKIN_syn_2.di                                              cell (PAD)              1.890       1.890                    
+ ux_seg/reg2_syn_23.clk (CLKIN_dup_1)                        net                     2.061       3.951      ../../src/sdram_control.v(2)
+ capture clock edge                                                                  0.000       3.951
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.074       4.025
+ clock uncertainty                                                                   0.000       4.025
+ clock recovergence pessimism                                                        0.000       4.025
+ Required time                                                                       4.025            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              -1.238ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check):     -1.079 ns                                                        
+ Start Point:             u_sdram/reg1_syn_67.clk (rising edge triggered by clock sd_clk) 
+ End Point:               ux_seg/reg2_syn_23.b[0] (rising edge triggered by clock clkin)  
+ Clock group:             clkin                                                           
+ Process:                 Slow                                                            
+ Data Path Delay:         0.901ns  (logic 0.602ns, net 0.299ns, 66% logic)                
+ Logic Levels:            1                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/reg1_syn_67.clk (clk_200m)                          net                     2.045       2.045      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.045
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_syn_67.q[1]                                    clk2q                   0.128 r     2.173
+ ux_seg/reg2_syn_23.b[0]                                     net  (fanout = 7)       0.299 r     2.472
+ ux_seg/reg2_syn_23                                          path2reg0               0.474       2.946
+ Arrival time                                                                        2.946                  (1 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ CLKIN                                                                               0.000       0.000                    
+ CLKIN_syn_2.ipad                                            hier                    0.000       0.000                    
+ CLKIN_syn_2.di                                              cell (PAD)              1.890       1.890                    
+ ux_seg/reg2_syn_23.clk (CLKIN_dup_1)                        net                     2.061       3.951      ../../src/sdram_control.v(2)
+ capture clock edge                                                                  0.000       3.951
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.074       4.025
+ clock uncertainty                                                                   0.000       4.025
+ clock recovergence pessimism                                                        0.000       4.025
+ Required time                                                                       4.025            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              -1.079ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check):     -1.066 ns                                                        
+ Start Point:             u_sdram/reg1_syn_70.clk (rising edge triggered by clock sd_clk) 
+ End Point:               ux_seg/reg2_syn_23.e[0] (rising edge triggered by clock clkin)  
+ Clock group:             clkin                                                           
+ Process:                 Slow                                                            
+ Data Path Delay:         0.914ns  (logic 0.478ns, net 0.436ns, 52% logic)                
+ Logic Levels:            1                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/reg1_syn_70.clk (clk_200m)                          net                     2.045       2.045      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.045
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_syn_70.q[1]                                    clk2q                   0.128 r     2.173
+ ux_seg/reg2_syn_23.e[0]                                     net  (fanout = 7)       0.436 r     2.609
+ ux_seg/reg2_syn_23                                          path2reg0               0.350       2.959
+ Arrival time                                                                        2.959                  (1 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ CLKIN                                                                               0.000       0.000                    
+ CLKIN_syn_2.ipad                                            hier                    0.000       0.000                    
+ CLKIN_syn_2.di                                              cell (PAD)              1.890       1.890                    
+ ux_seg/reg2_syn_23.clk (CLKIN_dup_1)                        net                     2.061       3.951      ../../src/sdram_control.v(2)
+ capture clock edge                                                                  0.000       3.951
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.074       4.025
+ clock uncertainty                                                                   0.000       4.025
+ clock recovergence pessimism                                                        0.000       4.025
+ Required time                                                                       4.025            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              -1.066ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point ux_seg/reg3_syn_27 (33 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):     -1.144 ns                                                        
+ Start Point:             u_sdram/reg1_syn_73.clk (rising edge triggered by clock sd_clk) 
+ End Point:               ux_seg/reg3_syn_27.d[1] (rising edge triggered by clock clkin)  
+ Clock group:             clkin                                                           
+ Process:                 Slow                                                            
+ Data Path Delay:         0.836ns  (logic 0.567ns, net 0.269ns, 67% logic)                
+ Logic Levels:            1 ( LUT5=1 )                                                    
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/reg1_syn_73.clk (clk_200m)                          net                     2.045       2.045      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.045
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_syn_73.q[0]                                    clk2q                   0.128 r     2.173
+ ux_seg/reg3_syn_27.d[1]                                     net  (fanout = 6)       0.269 r     2.442
+ ux_seg/reg3_syn_27                                          path2reg0 (LUT5)        0.439       2.881
+ Arrival time                                                                        2.881                  (1 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ CLKIN                                                                               0.000       0.000                    
+ CLKIN_syn_2.ipad                                            hier                    0.000       0.000                    
+ CLKIN_syn_2.di                                              cell (PAD)              1.890       1.890                    
+ ux_seg/reg3_syn_27.clk (CLKIN_dup_1)                        net                     2.061       3.951      ../../src/sdram_control.v(2)
+ capture clock edge                                                                  0.000       3.951
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.074       4.025
+ clock uncertainty                                                                   0.000       4.025
+ clock recovergence pessimism                                                        0.000       4.025
+ Required time                                                                       4.025            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              -1.144ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check):     -1.144 ns                                                        
+ Start Point:             u_sdram/reg1_syn_73.clk (rising edge triggered by clock sd_clk) 
+ End Point:               ux_seg/reg3_syn_27.d[0] (rising edge triggered by clock clkin)  
+ Clock group:             clkin                                                           
+ Process:                 Slow                                                            
+ Data Path Delay:         0.836ns  (logic 0.567ns, net 0.269ns, 67% logic)                
+ Logic Levels:            1 ( LUT5=1 )                                                    
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/reg1_syn_73.clk (clk_200m)                          net                     2.045       2.045      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.045
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_syn_73.q[0]                                    clk2q                   0.128 r     2.173
+ ux_seg/reg3_syn_27.d[0]                                     net  (fanout = 6)       0.269 r     2.442
+ ux_seg/reg3_syn_27                                          path2reg0 (LUT5)        0.439       2.881
+ Arrival time                                                                        2.881                  (1 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ CLKIN                                                                               0.000       0.000                    
+ CLKIN_syn_2.ipad                                            hier                    0.000       0.000                    
+ CLKIN_syn_2.di                                              cell (PAD)              1.890       1.890                    
+ ux_seg/reg3_syn_27.clk (CLKIN_dup_1)                        net                     2.061       3.951      ../../src/sdram_control.v(2)
+ capture clock edge                                                                  0.000       3.951
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.074       4.025
+ clock uncertainty                                                                   0.000       4.025
+ clock recovergence pessimism                                                        0.000       4.025
+ Required time                                                                       4.025            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              -1.144ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check):     -0.952 ns                                                        
+ Start Point:             u_sdram/reg1_syn_70.clk (rising edge triggered by clock sd_clk) 
+ End Point:               ux_seg/reg3_syn_27.mi[0] (rising edge triggered by clock clkin) 
+ Clock group:             clkin                                                           
+ Process:                 Slow                                                            
+ Data Path Delay:         1.028ns  (logic 0.483ns, net 0.545ns, 46% logic)                
+ Logic Levels:            1 ( LUT5=1 )                                                    
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/reg1_syn_70.clk (clk_200m)                          net                     2.045       2.045      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.045
+---------------------------------------------------------------------------------------------------------
+ u_sdram/reg1_syn_70.q[0]                                    clk2q                   0.128 r     2.173
+ ux_seg/reg3_syn_27.mi[0]                                    net  (fanout = 5)       0.545 r     2.718
+ ux_seg/reg3_syn_27                                          path2reg0 (LUT5)        0.355       3.073
+ Arrival time                                                                        3.073                  (1 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ CLKIN                                                                               0.000       0.000                    
+ CLKIN_syn_2.ipad                                            hier                    0.000       0.000                    
+ CLKIN_syn_2.di                                              cell (PAD)              1.890       1.890                    
+ ux_seg/reg3_syn_27.clk (CLKIN_dup_1)                        net                     2.061       3.951      ../../src/sdram_control.v(2)
+ capture clock edge                                                                  0.000       3.951
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.074       4.025
+ clock uncertainty                                                                   0.000       4.025
+ clock recovergence pessimism                                                        0.000       4.025
+ Required time                                                                       4.025            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              -0.952ns          
+
+---------------------------------------------------------------------------------------------------------
+
+
+=========================================================================================================
+Timing constraint:        clock: sd_clk                                                   
+Clock = sd_clk, period 5ns, rising at 0ns, falling at 2.5ns
+
+504 endpoints analyzed totally, and 5958 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0.000), 0 hold errors (TNS = 0.000)
+Minimum period is 4.95ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point reg5_syn_108 (112 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check):     0.050 ns                                                        
+ Start Point:             reg0_syn_61.clk (rising edge triggered by clock sd_clk)         
+ End Point:               reg5_syn_108.a[1] (rising edge triggered by clock sd_clk)       
+ Clock group:             sd_clk                                                          
+ Process:                 Slow                                                            
+ Data Path Delay:         4.770ns  (logic 2.492ns, net 2.278ns, 52% logic)                
+ Logic Levels:            4 ( LUT5=2 ADDER=2 )                                            
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg0_syn_61.clk (clk_200m)                                  net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ reg0_syn_61.q[0]                                            clk2q                   0.146 r     2.422
+ lt0_syn_42.a[0]                                             net  (fanout = 6)       0.496 r     2.918
+ lt0_syn_42.fco                                              cell (ADDER)            0.706 r     3.624
+ lt0_syn_45.fci                                              net  (fanout = 1)       0.000 f     3.624
+ lt0_syn_45.fco                                              cell (ADDER)            0.073 r     3.697
+ lt0_syn_48.fci                                              net  (fanout = 1)       0.000 f     3.697
+ lt0_syn_48.fco                                              cell (ADDER)            0.073 r     3.770
+ lt0_syn_50.fci                                              net  (fanout = 1)       0.000 f     3.770
+ lt0_syn_50.f[0]                                             cell (ADDER)            0.144 r     3.914
+ rd_addr_b[8]_syn_28.a[0]                                    net  (fanout = 17)      1.157 r     5.071
+ rd_addr_b[8]_syn_28.fx[0]                                   cell (LUT5)             0.618 r     5.689
+ reg5_syn_108.a[1]                                           net  (fanout = 2)       0.625 r     6.314
+ reg5_syn_108                                                path2reg0 (LUT5)        0.732       7.046
+ Arrival time                                                                        7.046                  (4 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg5_syn_108.clk (clk_200m)                                 net                     2.045       2.045      ../../src/sdram_control.v(29)
+ capture clock edge                                                                  5.000       7.045
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       6.929
+ clock uncertainty                                                                  -0.000       6.929
+ clock recovergence pessimism                                                        0.167       7.096
+ Required time                                                                       7.096            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.050ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     0.050 ns                                                        
+ Start Point:             reg0_syn_61.clk (rising edge triggered by clock sd_clk)         
+ End Point:               reg5_syn_108.a[0] (rising edge triggered by clock sd_clk)       
+ Clock group:             sd_clk                                                          
+ Process:                 Slow                                                            
+ Data Path Delay:         4.770ns  (logic 2.492ns, net 2.278ns, 52% logic)                
+ Logic Levels:            4 ( LUT5=2 ADDER=2 )                                            
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg0_syn_61.clk (clk_200m)                                  net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ reg0_syn_61.q[0]                                            clk2q                   0.146 r     2.422
+ lt0_syn_42.a[0]                                             net  (fanout = 6)       0.496 r     2.918
+ lt0_syn_42.fco                                              cell (ADDER)            0.706 r     3.624
+ lt0_syn_45.fci                                              net  (fanout = 1)       0.000 f     3.624
+ lt0_syn_45.fco                                              cell (ADDER)            0.073 r     3.697
+ lt0_syn_48.fci                                              net  (fanout = 1)       0.000 f     3.697
+ lt0_syn_48.fco                                              cell (ADDER)            0.073 r     3.770
+ lt0_syn_50.fci                                              net  (fanout = 1)       0.000 f     3.770
+ lt0_syn_50.f[0]                                             cell (ADDER)            0.144 r     3.914
+ rd_addr_b[8]_syn_28.a[1]                                    net  (fanout = 17)      1.157 r     5.071
+ rd_addr_b[8]_syn_28.fx[0]                                   cell (LUT5)             0.618 r     5.689
+ reg5_syn_108.a[0]                                           net  (fanout = 2)       0.625 r     6.314
+ reg5_syn_108                                                path2reg0 (LUT5)        0.732       7.046
+ Arrival time                                                                        7.046                  (4 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg5_syn_108.clk (clk_200m)                                 net                     2.045       2.045      ../../src/sdram_control.v(29)
+ capture clock edge                                                                  5.000       7.045
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       6.929
+ clock uncertainty                                                                  -0.000       6.929
+ clock recovergence pessimism                                                        0.167       7.096
+ Required time                                                                       7.096            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.050ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     0.050 ns                                                        
+ Start Point:             reg0_syn_61.clk (rising edge triggered by clock sd_clk)         
+ End Point:               reg5_syn_108.a[0] (rising edge triggered by clock sd_clk)       
+ Clock group:             sd_clk                                                          
+ Process:                 Slow                                                            
+ Data Path Delay:         4.770ns  (logic 2.492ns, net 2.278ns, 52% logic)                
+ Logic Levels:            4 ( LUT5=2 ADDER=2 )                                            
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg0_syn_61.clk (clk_200m)                                  net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ reg0_syn_61.q[0]                                            clk2q                   0.146 r     2.422
+ lt0_syn_42.a[0]                                             net  (fanout = 6)       0.496 r     2.918
+ lt0_syn_42.fco                                              cell (ADDER)            0.706 r     3.624
+ lt0_syn_45.fci                                              net  (fanout = 1)       0.000 f     3.624
+ lt0_syn_45.fco                                              cell (ADDER)            0.073 r     3.697
+ lt0_syn_48.fci                                              net  (fanout = 1)       0.000 f     3.697
+ lt0_syn_48.fco                                              cell (ADDER)            0.073 r     3.770
+ lt0_syn_50.fci                                              net  (fanout = 1)       0.000 f     3.770
+ lt0_syn_50.f[0]                                             cell (ADDER)            0.144 r     3.914
+ rd_addr_b[8]_syn_28.a[0]                                    net  (fanout = 17)      1.157 r     5.071
+ rd_addr_b[8]_syn_28.fx[0]                                   cell (LUT5)             0.618 r     5.689
+ reg5_syn_108.a[0]                                           net  (fanout = 2)       0.625 r     6.314
+ reg5_syn_108                                                path2reg0 (LUT5)        0.732       7.046
+ Arrival time                                                                        7.046                  (4 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg5_syn_108.clk (clk_200m)                                 net                     2.045       2.045      ../../src/sdram_control.v(29)
+ capture clock edge                                                                  5.000       7.045
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       6.929
+ clock uncertainty                                                                  -0.000       6.929
+ clock recovergence pessimism                                                        0.167       7.096
+ Required time                                                                       7.096            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.050ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point test_error_tmp_reg_syn_88 (229 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check):     0.052 ns                                                        
+ Start Point:             reg0_syn_65.clk (rising edge triggered by clock sd_clk)         
+ End Point:               test_error_tmp_reg_syn_88.a[1] (rising edge triggered by clock sd_clk)
+ Clock group:             sd_clk                                                          
+ Process:                 Slow                                                            
+ Data Path Delay:         4.768ns  (logic 2.715ns, net 2.053ns, 56% logic)                
+ Logic Levels:            5 ( LUT5=3 ADDER=2 )                                            
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg0_syn_65.clk (clk_200m)                                  net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ reg0_syn_65.q[0]                                            clk2q                   0.146 r     2.422
+ lt2_syn_52.a[1]                                             net  (fanout = 7)       0.775 r     3.197
+ lt2_syn_52.fco                                              cell (ADDER)            0.627 r     3.824
+ lt2_syn_55.fci                                              net  (fanout = 1)       0.000 f     3.824
+ lt2_syn_55.f[1]                                             cell (ADDER)            0.355 r     4.179
+ sd_state_b[1]_syn_51.b[0]                                   net  (fanout = 1)       0.515 r     4.694
+ sd_state_b[1]_syn_51.f[0]                                   cell (LUT5)             0.431 r     5.125
+ reg10_syn_167.a[0]                                          net  (fanout = 3)       0.456 r     5.581
+ reg10_syn_167.f[0]                                          cell (LUT5)             0.424 r     6.005
+ test_error_tmp_reg_syn_88.a[1]                              net  (fanout = 2)       0.307 r     6.312
+ test_error_tmp_reg_syn_88                                   path2reg0 (LUT5)        0.732       7.044
+ Arrival time                                                                        7.044                  (5 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ test_error_tmp_reg_syn_88.clk (clk_200m)                    net                     2.045       2.045      ../../src/sdram_control.v(29)
+ capture clock edge                                                                  5.000       7.045
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       6.929
+ clock uncertainty                                                                  -0.000       6.929
+ clock recovergence pessimism                                                        0.167       7.096
+ Required time                                                                       7.096            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.052ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     0.052 ns                                                        
+ Start Point:             reg0_syn_65.clk (rising edge triggered by clock sd_clk)         
+ End Point:               test_error_tmp_reg_syn_88.a[0] (rising edge triggered by clock sd_clk)
+ Clock group:             sd_clk                                                          
+ Process:                 Slow                                                            
+ Data Path Delay:         4.768ns  (logic 2.715ns, net 2.053ns, 56% logic)                
+ Logic Levels:            5 ( LUT5=3 ADDER=2 )                                            
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg0_syn_65.clk (clk_200m)                                  net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ reg0_syn_65.q[0]                                            clk2q                   0.146 r     2.422
+ lt2_syn_52.a[1]                                             net  (fanout = 7)       0.775 r     3.197
+ lt2_syn_52.fco                                              cell (ADDER)            0.627 r     3.824
+ lt2_syn_55.fci                                              net  (fanout = 1)       0.000 f     3.824
+ lt2_syn_55.f[1]                                             cell (ADDER)            0.355 r     4.179
+ sd_state_b[1]_syn_51.b[0]                                   net  (fanout = 1)       0.515 r     4.694
+ sd_state_b[1]_syn_51.f[0]                                   cell (LUT5)             0.431 r     5.125
+ reg10_syn_167.a[0]                                          net  (fanout = 3)       0.456 r     5.581
+ reg10_syn_167.f[0]                                          cell (LUT5)             0.424 r     6.005
+ test_error_tmp_reg_syn_88.a[0]                              net  (fanout = 2)       0.307 r     6.312
+ test_error_tmp_reg_syn_88                                   path2reg0 (LUT5)        0.732       7.044
+ Arrival time                                                                        7.044                  (5 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ test_error_tmp_reg_syn_88.clk (clk_200m)                    net                     2.045       2.045      ../../src/sdram_control.v(29)
+ capture clock edge                                                                  5.000       7.045
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       6.929
+ clock uncertainty                                                                  -0.000       6.929
+ clock recovergence pessimism                                                        0.167       7.096
+ Required time                                                                       7.096            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.052ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     0.113 ns                                                        
+ Start Point:             reg0_syn_58.clk (rising edge triggered by clock sd_clk)         
+ End Point:               test_error_tmp_reg_syn_88.a[1] (rising edge triggered by clock sd_clk)
+ Clock group:             sd_clk                                                          
+ Process:                 Slow                                                            
+ Data Path Delay:         4.707ns  (logic 2.940ns, net 1.767ns, 62% logic)                
+ Logic Levels:            5 ( LUT5=3 ADDER=2 )                                            
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg0_syn_58.clk (clk_200m)                                  net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ reg0_syn_58.q[0]                                            clk2q                   0.146 r     2.422
+ lt2_syn_46.a[0]                                             net  (fanout = 6)       0.489 r     2.911
+ lt2_syn_46.fco                                              cell (ADDER)            0.706 r     3.617
+ lt2_syn_49.fci                                              net  (fanout = 1)       0.000 f     3.617
+ lt2_syn_49.fco                                              cell (ADDER)            0.073 r     3.690
+ lt2_syn_52.fci                                              net  (fanout = 1)       0.000 f     3.690
+ lt2_syn_52.fco                                              cell (ADDER)            0.073 r     3.763
+ lt2_syn_55.fci                                              net  (fanout = 1)       0.000 f     3.763
+ lt2_syn_55.f[1]                                             cell (ADDER)            0.355 r     4.118
+ sd_state_b[1]_syn_51.b[0]                                   net  (fanout = 1)       0.515 r     4.633
+ sd_state_b[1]_syn_51.f[0]                                   cell (LUT5)             0.431 r     5.064
+ reg10_syn_167.a[0]                                          net  (fanout = 3)       0.456 r     5.520
+ reg10_syn_167.f[0]                                          cell (LUT5)             0.424 r     5.944
+ test_error_tmp_reg_syn_88.a[1]                              net  (fanout = 2)       0.307 r     6.251
+ test_error_tmp_reg_syn_88                                   path2reg0 (LUT5)        0.732       6.983
+ Arrival time                                                                        6.983                  (5 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ test_error_tmp_reg_syn_88.clk (clk_200m)                    net                     2.045       2.045      ../../src/sdram_control.v(29)
+ capture clock edge                                                                  5.000       7.045
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       6.929
+ clock uncertainty                                                                  -0.000       6.929
+ clock recovergence pessimism                                                        0.167       7.096
+ Required time                                                                       7.096            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.113ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point reg9_syn_24 (105 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check):     0.153 ns                                                        
+ Start Point:             reg0_syn_61.clk (rising edge triggered by clock sd_clk)         
+ End Point:               reg9_syn_24.a[1] (rising edge triggered by clock sd_clk)        
+ Clock group:             sd_clk                                                          
+ Process:                 Slow                                                            
+ Data Path Delay:         4.667ns  (logic 1.927ns, net 2.740ns, 41% logic)                
+ Logic Levels:            3 ( LUT5=2 LUT2=1 )                                             
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg0_syn_61.clk (clk_200m)                                  net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ reg0_syn_61.q[0]                                            clk2q                   0.146 r     2.422
+ sd_cmd_b[1]_syn_65.b[1]                                     net  (fanout = 6)       0.775 r     3.197
+ sd_cmd_b[1]_syn_65.f[1]                                     cell (LUT2)             0.431 r     3.628
+ sd_cmd_b[1]_syn_59.a[1]                                     net  (fanout = 5)       1.340 r     4.968
+ sd_cmd_b[1]_syn_59.fx[0]                                    cell (LUT5)             0.618 r     5.586
+ reg9_syn_24.a[1]                                            net  (fanout = 2)       0.625 r     6.211
+ reg9_syn_24                                                 path2reg0 (LUT5)        0.732       6.943
+ Arrival time                                                                        6.943                  (3 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg9_syn_24.clk (clk_200m)                                  net                     2.045       2.045      ../../src/sdram_control.v(29)
+ capture clock edge                                                                  5.000       7.045
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       6.929
+ clock uncertainty                                                                  -0.000       6.929
+ clock recovergence pessimism                                                        0.167       7.096
+ Required time                                                                       7.096            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.153ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     0.153 ns                                                        
+ Start Point:             reg0_syn_61.clk (rising edge triggered by clock sd_clk)         
+ End Point:               reg9_syn_24.a[1] (rising edge triggered by clock sd_clk)        
+ Clock group:             sd_clk                                                          
+ Process:                 Slow                                                            
+ Data Path Delay:         4.667ns  (logic 1.927ns, net 2.740ns, 41% logic)                
+ Logic Levels:            3 ( LUT5=2 LUT2=1 )                                             
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg0_syn_61.clk (clk_200m)                                  net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ reg0_syn_61.q[0]                                            clk2q                   0.146 r     2.422
+ sd_cmd_b[1]_syn_65.b[1]                                     net  (fanout = 6)       0.775 r     3.197
+ sd_cmd_b[1]_syn_65.f[1]                                     cell (LUT2)             0.431 r     3.628
+ sd_cmd_b[1]_syn_59.a[0]                                     net  (fanout = 5)       1.340 r     4.968
+ sd_cmd_b[1]_syn_59.fx[0]                                    cell (LUT5)             0.618 r     5.586
+ reg9_syn_24.a[1]                                            net  (fanout = 2)       0.625 r     6.211
+ reg9_syn_24                                                 path2reg0 (LUT5)        0.732       6.943
+ Arrival time                                                                        6.943                  (3 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg9_syn_24.clk (clk_200m)                                  net                     2.045       2.045      ../../src/sdram_control.v(29)
+ capture clock edge                                                                  5.000       7.045
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       6.929
+ clock uncertainty                                                                  -0.000       6.929
+ clock recovergence pessimism                                                        0.167       7.096
+ Required time                                                                       7.096            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.153ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     0.153 ns                                                        
+ Start Point:             reg0_syn_61.clk (rising edge triggered by clock sd_clk)         
+ End Point:               reg9_syn_24.a[0] (rising edge triggered by clock sd_clk)        
+ Clock group:             sd_clk                                                          
+ Process:                 Slow                                                            
+ Data Path Delay:         4.667ns  (logic 1.927ns, net 2.740ns, 41% logic)                
+ Logic Levels:            3 ( LUT5=2 LUT2=1 )                                             
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg0_syn_61.clk (clk_200m)                                  net                     2.276       2.276      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ reg0_syn_61.q[0]                                            clk2q                   0.146 r     2.422
+ sd_cmd_b[1]_syn_65.b[1]                                     net  (fanout = 6)       0.775 r     3.197
+ sd_cmd_b[1]_syn_65.f[1]                                     cell (LUT2)             0.431 r     3.628
+ sd_cmd_b[1]_syn_59.a[1]                                     net  (fanout = 5)       1.340 r     4.968
+ sd_cmd_b[1]_syn_59.fx[0]                                    cell (LUT5)             0.618 r     5.586
+ reg9_syn_24.a[0]                                            net  (fanout = 2)       0.625 r     6.211
+ reg9_syn_24                                                 path2reg0 (LUT5)        0.732       6.943
+ Arrival time                                                                        6.943                  (3 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg9_syn_24.clk (clk_200m)                                  net                     2.045       2.045      ../../src/sdram_control.v(29)
+ capture clock edge                                                                  5.000       7.045
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116       6.929
+ clock uncertainty                                                                  -0.000       6.929
+ clock recovergence pessimism                                                        0.167       7.096
+ Required time                                                                       7.096            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.153ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point u_sdram/ux_data_path/reg0_syn_65 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.314 ns                                                        
+ Start Point:             reg4_syn_52.clk (rising edge triggered by clock sd_clk)         
+ End Point:               u_sdram/ux_data_path/reg0_syn_65.mi[1] (rising edge triggered by clock sd_clk)
+ Clock group:             sd_clk                                                          
+ Process:                 Fast                                                            
+ Data Path Delay:         0.420ns  (logic 0.204ns, net 0.216ns, 48% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg4_syn_52.clk (clk_200m)                                  net                     1.938       1.938      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       1.938
+---------------------------------------------------------------------------------------------------------
+ reg4_syn_52.q[0]                                            clk2q                   0.109 r     2.047
+ u_sdram/ux_data_path/reg0_syn_65.mi[1]                      net  (fanout = 3)       0.216 r     2.263
+ u_sdram/ux_data_path/reg0_syn_65                            path2reg1               0.095       2.358
+ Arrival time                                                                        2.358                  (0 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/ux_data_path/reg0_syn_65.clk (clk_200m)             net                     2.130       2.130      ../../src/sdram_control.v(29)
+ capture clock edge                                                                  0.000       2.130
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.061       2.191
+ clock uncertainty                                                                   0.000       2.191
+ clock recovergence pessimism                                                       -0.147       2.044
+ Required time                                                                       2.044            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.314ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_sdram/ux_control/reg0_syn_90 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.330 ns                                                        
+ Start Point:             reg8_syn_129.clk (rising edge triggered by clock sd_clk)        
+ End Point:               u_sdram/ux_control/reg0_syn_90.mi[0] (rising edge triggered by clock sd_clk)
+ Clock group:             sd_clk                                                          
+ Process:                 Fast                                                            
+ Data Path Delay:         0.436ns  (logic 0.204ns, net 0.232ns, 46% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg8_syn_129.clk (clk_200m)                                 net                     1.938       1.938      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       1.938
+---------------------------------------------------------------------------------------------------------
+ reg8_syn_129.q[0]                                           clk2q                   0.109 r     2.047
+ u_sdram/ux_control/reg0_syn_90.mi[0]                        net  (fanout = 4)       0.232 r     2.279
+ u_sdram/ux_control/reg0_syn_90                              path2reg0               0.095       2.374
+ Arrival time                                                                        2.374                  (0 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/ux_control/reg0_syn_90.clk (clk_200m)               net                     2.130       2.130      ../../src/sdram_control.v(29)
+ capture clock edge                                                                  0.000       2.130
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.061       2.191
+ clock uncertainty                                                                   0.000       2.191
+ clock recovergence pessimism                                                       -0.147       2.044
+ Required time                                                                       2.044            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.330ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_sdram/ux_control/reg0_syn_96 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.339 ns                                                        
+ Start Point:             reg8_syn_124.clk (rising edge triggered by clock sd_clk)        
+ End Point:               u_sdram/ux_control/reg0_syn_96.mi[0] (rising edge triggered by clock sd_clk)
+ Clock group:             sd_clk                                                          
+ Process:                 Fast                                                            
+ Data Path Delay:         0.429ns  (logic 0.204ns, net 0.225ns, 47% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ reg8_syn_124.clk (clk_200m)                                 net                     1.938       1.938      ../../src/sdram_control.v(29)
+ launch clock edge                                                                   0.000       1.938
+---------------------------------------------------------------------------------------------------------
+ reg8_syn_124.q[1]                                           clk2q                   0.109 r     2.047
+ u_sdram/ux_control/reg0_syn_96.mi[0]                        net  (fanout = 3)       0.225 r     2.272
+ u_sdram/ux_control/reg0_syn_96                              path2reg0               0.095       2.367
+ Arrival time                                                                        2.367                  (0 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_sys_pll/bufg_feedback.clko                                                        0.000       0.000                    
+ u_sdram/ux_control/reg0_syn_96.clk (clk_200m)               net                     2.130       2.130      ../../src/sdram_control.v(29)
+ capture clock edge                                                                  0.000       2.130
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.061       2.191
+ clock uncertainty                                                                   0.000       2.191
+ clock recovergence pessimism                                                       -0.163       2.028
+ Required time                                                                       2.028            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.339ns          
+
+---------------------------------------------------------------------------------------------------------
+
+
+=========================================================================================================
+Timing constraint:        clock: sd_clk1                                                  
+Clock = sd_clk1, period 5ns, rising at 0ns, falling at 2.5ns
+
+0 endpoints analyzed totally, and 0 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0), 0 hold errors (TNS = 0)
+Minimum period is 0ns
+---------------------------------------------------------------------------------------------------------
+
+
+=========================================================================================================
+Timing summary:                                                                           
+---------------------------------------------------------------------------------------------------------
+Constraint path number: 8454 (STA coverage = 90.86%)
+Timing violations: 9 setup errors, and 7 hold errors.
+Minimal setup slack: -1.824, minimal hold slack: -1.340
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  sd_clk (200.0MHz)                              4.950ns     202.000MHz        0.138ns       165        0.000ns
+	  clkin (24.0MHz)                               43.424ns      23.029MHz        0.066ns        35      -11.720ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
+---------------------------------------------------------------------------------------------------------

@@ -1,0 +1,40 @@
+standard
+***Report Model: buttons_led Device: EG4S20BG256***
+
+IO Statistics
+#IO                        22
+  #input                    6
+  #output                  16
+  #inout                    0
+
+LUT Statistics
+#Total_luts                47
+  #lut4                    23
+  #lut5                     4
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b              20
+
+Utilization Statistics
+#lut                       47   out of  19600    0.24%
+#reg                       35   out of  19600    0.18%
+#le                         0
+#dsp                        0   out of     29    0.00%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       22   out of    188   11.70%
+  #ireg                     0
+  #oreg                     0
+  #treg                     0
+#pll                        0   out of      4    0.00%
+
+Report Hierarchy Area:
++-------------------------------------------------------------------+
+|Instance |Module      |lut     |ripple  |seq     |bram    |dsp     |
++-------------------------------------------------------------------+
+|top      |buttons_led |27      |20      |35      |0       |0       |
+|  ux_btn |debounce    |19      |20      |29      |0       |0       |
+|  ux_rst |rst_n       |0       |0       |1       |0       |0       |
++-------------------------------------------------------------------+
