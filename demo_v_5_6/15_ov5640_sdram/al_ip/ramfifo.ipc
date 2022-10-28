@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SoftFifoConfig>
+    <Config>
+        <A_EMPTY_NUM>7</A_EMPTY_NUM>
+        <A_FULL_NUM>8</A_FULL_NUM>
+        <CLKMODE>ASYNC</CLKMODE>
+        <IMP_OPT>EMB9K(Timing Opt)</IMP_OPT>
+        <OUT_REG>Disable</OUT_REG>
+        <RAM_OPT>ERAM</RAM_OPT>
+        <R_DEPTH>1024</R_DEPTH>
+        <R_WIDTH>16</R_WIDTH>
+        <SHOW_AHEAD>Disable</SHOW_AHEAD>
+        <W_DEPTH>1024</W_DEPTH>
+        <W_WIDTH>16</W_WIDTH>
+    </Config>
+    <GeneralConfig>
+        <Device>EG4S20BG256</Device>
+        <Type>EG4_Soft_FIFO</Type>
+        <Version>1.0</Version>
+        <create_VHDL>false</create_VHDL>
+        <inst>ramfifo</inst>
+    </GeneralConfig>
+    <GeneratedFiles>
+        <Verilog Enable="true">ramfifo.v</Verilog>
+        <SDC_FILE Enable="true">ramfifo.sdc</SDC_FILE>
+    </GeneratedFiles>
+</SoftFifoConfig>

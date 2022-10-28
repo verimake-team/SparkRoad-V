@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+    <Project_Created_Time>2020-03-26 10:20:29</Project_Created_Time>
+    <TD_Encoding>UTF-8</TD_Encoding>
+    <TD_Version>4.6.14756</TD_Version>
+    <UCode>10110001</UCode>
+    <Name>ov5640_sdram</Name>
+    <HardWare>
+        <Family>EG4</Family>
+        <Device>EG4S20BG256</Device>
+    </HardWare>
+    <Source_Files>
+        <Header>
+            <File>src/Sdram_Control_4Port/Sdram_Params.h</File>
+        </Header>
+        <Verilog>
+            <File>src/CMOS_Capture_RGB565.v</File>
+            <File>src/Driver.v</File>
+            <File>src/OV5640_SDRAM.v</File>
+            <File>src/uart_driver.v</File>
+            <File>src/Sdram_Control_4Port/command.v</File>
+            <File>src/Sdram_Control_4Port/control_interface.v</File>
+            <File>src/Sdram_Control_4Port/sdr_data_path.v</File>
+            <File>src/Sdram_Control_4Port/Sdram_Control_4Port.v</File>
+            <File>src/Sdram_Control_4Port/Sdram_RD_FIFO.v</File>
+            <File>src/Sdram_Control_4Port/Sdram_WR_FIFO.v</File>
+            <File>src/sccb/I2C_Controller.v</File>
+            <File>src/sccb/I2C_OV5640_Init_RGB565.v</File>
+            <File>src/sccb/I2C_OV5640_RGB565_Config.v</File>
+            <File>al_ip/ramfifo.v</File>
+            <File>al_ip/sys_pll.v</File>
+            <File>al_ip/uart_buffer.v</File>
+            <File>al_ip/sdram.v</File>
+        </Verilog>
+        <ADC_FILE>constraints/sparkroad_large.adc</ADC_FILE>
+        <SDC_FILE/>
+        <CWC_FILE/>
+    </Source_Files>
+    <TOP_MODULE>
+        <LABEL/>
+        <MODULE>OV5640_SDRAM</MODULE>
+        <CREATEINDEX>auto</CREATEINDEX>
+    </TOP_MODULE>
+    <Project_Settings>
+        <Step_Last_Change>2020-04-06 14:30:10</Step_Last_Change>
+        <Current_Step>0</Current_Step>
+        <Step_Status>true</Step_Status>
+    </Project_Settings>
+</Project>

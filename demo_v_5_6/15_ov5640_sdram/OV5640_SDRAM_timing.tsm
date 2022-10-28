@@ -1,0 +1,19 @@
+eagle_s20
+13 0 0 0 0 0 0
+infinity infinity OV5640_SDRAM eagle_s20 EG4S20BG256 Detail NA 14 0
+
+Timing group statistics: 
+	Clock constraints: 
+	  No constraint path
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+Warning: No clock constraint on 7 clock net(s): 
+	Sdram_Control_4Port/CTRL_CLK
+	Sdram_Control_4Port/SDRAM_CLK
+	VGA_VCLK_dup_1
+	clk_in_dup_1
+	cmos_pclk_dup_1
+	cmos_xclk_dup_1
+	u_I2C_OV5640_Init_RGB565/u_I2C_Controller/clk
+

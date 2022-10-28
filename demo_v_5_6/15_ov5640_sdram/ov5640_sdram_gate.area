@@ -1,0 +1,33 @@
+standard
+***Report Model: OV5640_SDRAM***
+
+IO Statistics
+#IO                    53
+  #input               15
+  #output              36
+  #inout                2
+
+Utilization Statistics
+#lut                 3198   out of  19600   16.32%
+#reg                  864   out of  19600    4.41%
+#le                  3235
+  #lut only          2371   out of   3235   73.29%
+  #reg only            37   out of   3235    1.14%
+  #lut&reg            827   out of   3235   25.56%
+#dsp                    0   out of     29    0.00%
+#bram                   7   out of     64   10.94%
+  #bram9k               7
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   53   out of    188   28.19%
+  #ireg                10
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      4   25.00%
+
+Report Hierarchy Area:
++--------------------------------------------+
+|Instance |Module       |le    |lut   |seq   |
++--------------------------------------------+
+|top      |OV5640_SDRAM |3235  |3198  |864   |
++--------------------------------------------+
