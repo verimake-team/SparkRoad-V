@@ -10,9 +10,7 @@
 		<input_frequency>24.0000000000000000Mhz</input_frequency>
 		<feedback_mode>Normal</feedback_mode>
 		<clk_num>CLKC0</clk_num>
-		<enable_standby>ENABLE</enable_standby>
 		<enable_reset>ENABLE</enable_reset>
-		<pll_lock>ENABLE</pll_lock>
 	</Page1>
 	<Page2>
 		<bandwidth_setting>Medium</bandwidth_setting>
