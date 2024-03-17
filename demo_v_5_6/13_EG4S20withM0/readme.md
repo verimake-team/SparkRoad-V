@@ -10,12 +10,12 @@
   GND           ---- GND
   ```
   （如果你使用的是其他开发板，可能需要修改引脚约束文件将顶层模块 `M0demo.v` 中的 `SWDIOTMS` 与 `SWCLKTCK` 分配至另外可用的端口，然后再将自己分配的端口与调试器的对应端口相连）  
-  
-2. 在 4.6 版本的 TD 工具中综合项目，将 `M0demo.bit` 烧录给开发板（本项目文件可在 4.6 版本的 TD 下直接使用，若使用其他版本，可能需要修改部分文件）  
-3. 用 MDK 打开 `../M0/MDK` 中的项目  
-4. 在 MDK 中点击 `Options for Target... -> Debug -> Use(ST-Link/JLink...) -> Settings`，检查能否通过 SWD 检测到正确的内核  
-5. `rebuild` 项目  
-6. 点击 `Start/Stop Debug Session`，设置断点，开始运行，即可观察到 LED 在代码的控制下开始闪烁了  
+2. 注意开发板的复位拨码开关是否关闭(LED0对应的开关，拨至"1")。 
+3. 在 4.6 版本的 TD 工具中综合项目，将 `M0demo.bit` 烧录给开发板（本项目文件可在 4.6 版本的 TD 下直接使用，若使用其他版本，可能需要修改部分文件）  
+4. 用 MDK 打开 `../M0/MDK` 中的项目  
+5. 在 MDK 中点击 `Options for Target... -> Debug -> Use(ST-Link/JLink...) -> Settings`，检查能否通过 SWD 检测到正确的内核  
+6. `rebuild` 项目  
+7. 点击 `Start/Stop Debug Session`，设置断点，开始运行，即可观察到 LED 在代码的控制下开始闪烁了  
 
 ### Usage  
 <pre>
@@ -49,22 +49,24 @@ Author: R7 and PengYu
             |-----------------------------------|
      
 2nd. Connect the FPGA to computer via Type-C(USB).
-     
-3rd. Download M0demo.bit with JTAG mode.
 
-4th. Open MDK project in ../M0/MDK
+3rd. Please pay attention to the state of the switch (near LED0) is on.
+  
+4th. Download M0demo.bit with JTAG mode.
 
-5th. Click Options for 
+5th. Open MDK project in ../M0/MDK
+
+6th. Click Options for 
      Target -> Debug -> Use(ST-Link/JLink..) -> Setting
      Check whether CoreSight is correct
 
-6th. Click rebuild
+7th. Click rebuild
 
-7th. Click Start/Stop Debug Session
+8th. Click Start/Stop Debug Session
 
-8th. Set breakpoint and click run
+9th. Set breakpoint and click run
      
-9th. You will see diode state changing on the development board
+10th. You will see diode state changing on the development board
 
-10th. Enjoy yourself!
+11th. Enjoy yourself!
 </pre>
