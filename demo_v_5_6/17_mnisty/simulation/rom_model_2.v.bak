@@ -1,0 +1,28 @@
+module rom_8x144x3 (
+    input wire clk,
+    input wire ren,             // ?????
+    input wire [8:0] addr,      // ????
+    output reg [11:0] data_out   // ????
+);
+
+    // ROM?????????784????8?
+    reg [11:0] rom [0:431];
+
+    integer i;
+
+    // ???ROM??
+    initial begin
+        for (i = 0; i < 432; i = i + 1) begin
+            rom[i] = i;   // ?1?28????ROM
+        end
+    end
+
+    // ???
+    always @(posedge clk) begin
+        if (ren) begin
+            data_out <= rom[addr];  // ?ROM?????????????
+        end
+    end
+
+endmodule
+

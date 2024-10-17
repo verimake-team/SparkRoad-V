@@ -1,0 +1,1177 @@
+=========================================================================================================
+Auto created by Tang Dynasty v5.6.59063
+Copyright (c) 2012-2022 Anlogic
+Thu Oct 17 19:24:42 2024
+=========================================================================================================
+
+
+Top Model:                top_module                                                      
+Device:                   eagle_s20                                                       
+Timing Constraint File:   ../../cam.sdc                                                   
+STA Level:                Detail                                                          
+Speed Grade:              NA                                                              
+
+=========================================================================================================
+Timing constraint:        clock: clk_24m                                                  
+Clock = clk_24m, period 40.8ns, rising at 0ns, falling at 20.4ns
+
+8832 endpoints analyzed totally, and more than 2000000000 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0.000), 0 hold errors (TNS = 0.000)
+Minimum period is 34.799ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_conv2/data_out_b[10]_syn_12 ( >1000000000 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check):     6.001 ns                                                        
+ Start Point:             u_conv2/ramread0_syn_101270.clk (rising edge triggered by clock clk_24m)
+ End Point:               u_conv2/data_out_b[10]_syn_12.a[0] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         34.619ns  (logic 15.003ns, net 19.616ns, 43% logic)             
+ Logic Levels:            24 ( ADDER=11 LUT4=6 LUT2=2 MULT18=1 LUT5=1 )                   
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.660       1.660                    
+ u_conv2/ramread0_syn_101270.clk (u_conv2/ramread0_syn_4482[0]) net                     2.061       3.721      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       3.721
+---------------------------------------------------------------------------------------------------------
+ u_conv2/ramread0_syn_101270.q[0]                            clk2q                   0.146 r     3.867
+ u_conv2/ramread0_syn_103125.c[1]                            net  (fanout = 39)      0.960 r     4.827
+ u_conv2/ramread0_syn_103125.f[1]                            cell (LUT4)             0.348 r     5.175
+ u_conv2/conv_out_b55[4]_syn_38.d[0]                         net  (fanout = 18)      2.167 r     7.342
+ u_conv2/conv_out_b55[4]_syn_38.f[0]                         cell (LUT2)             0.205 r     7.547
+ u_conv2/mult23_syn_2945.c[0]                                net  (fanout = 33)      2.004 r     9.551
+ u_conv2/mult23_syn_2945.f[0]                                cell (LUT4)             0.348 r     9.899
+ u_conv2/mult23_syn_2932.c[1]                                net  (fanout = 1)       0.309 r    10.208
+ u_conv2/mult23_syn_2932.f[1]                                cell (LUT4)             0.348 r    10.556
+ u_conv2/conv_out_b32[0]_syn_5.b[1]                          net  (fanout = 4)       0.920 r    11.476
+ u_conv2/conv_out_b32[0]_syn_5.fx[0]                         cell (LUT5)             0.543 r    12.019
+ u_conv2/mult3_syn_2.a[0]                                    net  (fanout = 1)       2.058 r    14.077
+ u_conv2/mult3_syn_2.p[0]                                    cell (MULT18)           3.563 r    17.640
+ u_conv2/conv_out_b28[0]_syn_252.e[0]                        net  (fanout = 1)       1.566 r    19.206
+ u_conv2/conv_out_b28[0]_syn_252.fx[1]                       cell                    1.102 r    20.308
+ u_conv2/conv_out_b28[0]_syn_258.b[1]                        net  (fanout = 1)       0.957 r    21.265
+ u_conv2/conv_out_b28[0]_syn_258.fx[1]                       cell                    0.825 r    22.090
+ u_conv2/conv_out_b88[0]_syn_125.e[1]                        net  (fanout = 1)       0.754 r    22.844
+ u_conv2/conv_out_b88[0]_syn_125.fx[1]                       cell                    0.770 r    23.614
+ u_conv2/conv_out_b60[0]_syn_621.e[1]                        net  (fanout = 1)       0.774 r    24.388
+ u_conv2/conv_out_b60[0]_syn_621.fco                         cell (ADDER)            0.715 r    25.103
+ u_conv2/conv_out_b60[0]_syn_622.fci                         net  (fanout = 1)       0.000 f    25.103
+ u_conv2/conv_out_b60[0]_syn_622.f[0]                        cell (ADDER)            0.198 r    25.301
+ u_conv2/conv_out_b60[0]_syn_628.a[0]                        net  (fanout = 1)       1.232 r    26.533
+ u_conv2/conv_out_b60[0]_syn_628.fco                         cell (ADDER)            0.947 r    27.480
+ u_conv2/conv_out_b60[0]_syn_629.fci                         net  (fanout = 1)       0.000 f    27.480
+ u_conv2/conv_out_b60[0]_syn_629.fx[0]                       cell (ADDER)            0.387 r    27.867
+ u_conv2/add47_syn_70.e[1]                                   net  (fanout = 6)       1.566 r    29.433
+ u_conv2/add47_syn_70.fco                                    cell (ADDER)            0.715 r    30.148
+ u_conv2/add47_syn_71.fci                                    net  (fanout = 1)       0.000 f    30.148
+ u_conv2/add47_syn_71.fco                                    cell (ADDER)            0.132 r    30.280
+ u_conv2/add47_syn_72.fci                                    net  (fanout = 1)       0.000 f    30.280
+ u_conv2/add47_syn_72.f[0]                                   cell (ADDER)            0.198 r    30.478
+ _al_n1_syn_3379.e[1]                                        net  (fanout = 3)       0.676 r    31.154
+ _al_n1_syn_3379.fco                                         cell (ADDER)            0.715 r    31.869
+ _al_n1_syn_3380.fci                                         net  (fanout = 1)       0.000 f    31.869
+ _al_n1_syn_3380.f[0]                                        cell (ADDER)            0.198 r    32.067
+ u_conv2/lt3_syn_71.b[0]                                     net  (fanout = 2)       0.944 r    33.011
+ u_conv2/lt3_syn_71.fco                                      cell (ADDER)            0.627 r    33.638
+ u_conv2/lt3_syn_74.fci                                      net  (fanout = 1)       0.000 f    33.638
+ u_conv2/lt3_syn_74.fco                                      cell (ADDER)            0.073 r    33.711
+ u_conv2/lt3_syn_77.fci                                      net  (fanout = 1)       0.000 f    33.711
+ u_conv2/lt3_syn_77.f[1]                                     cell (ADDER)            0.355 r    34.066
+ u_conv2/data_out_b[10]_syn_14.d[0]                          net  (fanout = 1)       0.738 r    34.804
+ u_conv2/data_out_b[10]_syn_14.f[0]                          cell (LUT2)             0.262 r    35.066
+ u_conv2/data_out_b[6]_syn_13.b[0]                           net  (fanout = 11)      0.496 r    35.562
+ u_conv2/data_out_b[6]_syn_13.f[0]                           cell (LUT4)             0.333 r    35.895
+ u_conv2/data_out_b[8]_syn_12.a[0]                           net  (fanout = 1)       0.738 r    36.633
+ u_conv2/data_out_b[8]_syn_12.f[0]                           cell (LUT4)             0.408 r    37.041
+ u_conv2/data_out_b[10]_syn_12.a[0]                          net  (fanout = 1)       0.757 r    37.798
+ u_conv2/data_out_b[10]_syn_12                               path2reg0 (LUT4)        0.542      38.340
+ Arrival time                                                                       38.340                  (24 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.493       1.493                    
+ u_conv2/data_out_b[10]_syn_12.clk (u_conv2/ramread0_syn_4482[0]) net                     1.852       3.345      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                 40.800      44.145
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      44.029
+ clock uncertainty                                                                  -0.000      44.029
+ clock recovergence pessimism                                                        0.312      44.341
+ Required time                                                                      44.341            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               6.001ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     6.001 ns                                                        
+ Start Point:             u_conv2/ramread0_syn_101270.clk (rising edge triggered by clock clk_24m)
+ End Point:               u_conv2/data_out_b[10]_syn_12.a[0] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         34.619ns  (logic 15.003ns, net 19.616ns, 43% logic)             
+ Logic Levels:            24 ( ADDER=11 LUT4=6 LUT2=2 MULT18=1 LUT5=1 )                   
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.660       1.660                    
+ u_conv2/ramread0_syn_101270.clk (u_conv2/ramread0_syn_4482[0]) net                     2.061       3.721      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       3.721
+---------------------------------------------------------------------------------------------------------
+ u_conv2/ramread0_syn_101270.q[0]                            clk2q                   0.146 r     3.867
+ u_conv2/ramread0_syn_103125.c[1]                            net  (fanout = 39)      0.960 r     4.827
+ u_conv2/ramread0_syn_103125.f[1]                            cell (LUT4)             0.348 r     5.175
+ u_conv2/conv_out_b55[4]_syn_38.d[0]                         net  (fanout = 18)      2.167 r     7.342
+ u_conv2/conv_out_b55[4]_syn_38.f[0]                         cell (LUT2)             0.205 r     7.547
+ u_conv2/mult23_syn_2945.c[0]                                net  (fanout = 33)      2.004 r     9.551
+ u_conv2/mult23_syn_2945.f[0]                                cell (LUT4)             0.348 r     9.899
+ u_conv2/mult23_syn_2932.c[1]                                net  (fanout = 1)       0.309 r    10.208
+ u_conv2/mult23_syn_2932.f[1]                                cell (LUT4)             0.348 r    10.556
+ u_conv2/conv_out_b32[0]_syn_5.b[0]                          net  (fanout = 4)       0.920 r    11.476
+ u_conv2/conv_out_b32[0]_syn_5.fx[0]                         cell (LUT5)             0.543 r    12.019
+ u_conv2/mult3_syn_2.a[0]                                    net  (fanout = 1)       2.058 r    14.077
+ u_conv2/mult3_syn_2.p[0]                                    cell (MULT18)           3.563 r    17.640
+ u_conv2/conv_out_b28[0]_syn_252.e[0]                        net  (fanout = 1)       1.566 r    19.206
+ u_conv2/conv_out_b28[0]_syn_252.fx[1]                       cell                    1.102 r    20.308
+ u_conv2/conv_out_b28[0]_syn_258.b[1]                        net  (fanout = 1)       0.957 r    21.265
+ u_conv2/conv_out_b28[0]_syn_258.fx[1]                       cell                    0.825 r    22.090
+ u_conv2/conv_out_b88[0]_syn_125.e[1]                        net  (fanout = 1)       0.754 r    22.844
+ u_conv2/conv_out_b88[0]_syn_125.fx[1]                       cell                    0.770 r    23.614
+ u_conv2/conv_out_b60[0]_syn_621.e[1]                        net  (fanout = 1)       0.774 r    24.388
+ u_conv2/conv_out_b60[0]_syn_621.fco                         cell (ADDER)            0.715 r    25.103
+ u_conv2/conv_out_b60[0]_syn_622.fci                         net  (fanout = 1)       0.000 f    25.103
+ u_conv2/conv_out_b60[0]_syn_622.f[0]                        cell (ADDER)            0.198 r    25.301
+ u_conv2/conv_out_b60[0]_syn_628.a[0]                        net  (fanout = 1)       1.232 r    26.533
+ u_conv2/conv_out_b60[0]_syn_628.fco                         cell (ADDER)            0.947 r    27.480
+ u_conv2/conv_out_b60[0]_syn_629.fci                         net  (fanout = 1)       0.000 f    27.480
+ u_conv2/conv_out_b60[0]_syn_629.fx[0]                       cell (ADDER)            0.387 r    27.867
+ u_conv2/add47_syn_70.e[1]                                   net  (fanout = 6)       1.566 r    29.433
+ u_conv2/add47_syn_70.fco                                    cell (ADDER)            0.715 r    30.148
+ u_conv2/add47_syn_71.fci                                    net  (fanout = 1)       0.000 f    30.148
+ u_conv2/add47_syn_71.fco                                    cell (ADDER)            0.132 r    30.280
+ u_conv2/add47_syn_72.fci                                    net  (fanout = 1)       0.000 f    30.280
+ u_conv2/add47_syn_72.f[0]                                   cell (ADDER)            0.198 r    30.478
+ _al_n1_syn_3379.e[1]                                        net  (fanout = 3)       0.676 r    31.154
+ _al_n1_syn_3379.fco                                         cell (ADDER)            0.715 r    31.869
+ _al_n1_syn_3380.fci                                         net  (fanout = 1)       0.000 f    31.869
+ _al_n1_syn_3380.f[0]                                        cell (ADDER)            0.198 r    32.067
+ u_conv2/lt3_syn_71.b[0]                                     net  (fanout = 2)       0.944 r    33.011
+ u_conv2/lt3_syn_71.fco                                      cell (ADDER)            0.627 r    33.638
+ u_conv2/lt3_syn_74.fci                                      net  (fanout = 1)       0.000 f    33.638
+ u_conv2/lt3_syn_74.fco                                      cell (ADDER)            0.073 r    33.711
+ u_conv2/lt3_syn_77.fci                                      net  (fanout = 1)       0.000 f    33.711
+ u_conv2/lt3_syn_77.f[1]                                     cell (ADDER)            0.355 r    34.066
+ u_conv2/data_out_b[10]_syn_14.d[0]                          net  (fanout = 1)       0.738 r    34.804
+ u_conv2/data_out_b[10]_syn_14.f[0]                          cell (LUT2)             0.262 r    35.066
+ u_conv2/data_out_b[6]_syn_13.b[0]                           net  (fanout = 11)      0.496 r    35.562
+ u_conv2/data_out_b[6]_syn_13.f[0]                           cell (LUT4)             0.333 r    35.895
+ u_conv2/data_out_b[8]_syn_12.a[0]                           net  (fanout = 1)       0.738 r    36.633
+ u_conv2/data_out_b[8]_syn_12.f[0]                           cell (LUT4)             0.408 r    37.041
+ u_conv2/data_out_b[10]_syn_12.a[0]                          net  (fanout = 1)       0.757 r    37.798
+ u_conv2/data_out_b[10]_syn_12                               path2reg0 (LUT4)        0.542      38.340
+ Arrival time                                                                       38.340                  (24 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.493       1.493                    
+ u_conv2/data_out_b[10]_syn_12.clk (u_conv2/ramread0_syn_4482[0]) net                     1.852       3.345      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                 40.800      44.145
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      44.029
+ clock uncertainty                                                                  -0.000      44.029
+ clock recovergence pessimism                                                        0.312      44.341
+ Required time                                                                      44.341            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               6.001ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     6.047 ns                                                        
+ Start Point:             u_conv2/ramread0_syn_101270.clk (rising edge triggered by clock clk_24m)
+ End Point:               u_conv2/data_out_b[10]_syn_12.a[0] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         34.573ns  (logic 15.081ns, net 19.492ns, 43% logic)             
+ Logic Levels:            24 ( ADDER=11 LUT4=6 LUT2=2 MULT18=1 LUT5=1 )                   
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.660       1.660                    
+ u_conv2/ramread0_syn_101270.clk (u_conv2/ramread0_syn_4482[0]) net                     2.061       3.721      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       3.721
+---------------------------------------------------------------------------------------------------------
+ u_conv2/ramread0_syn_101270.q[0]                            clk2q                   0.146 r     3.867
+ u_conv2/ramread0_syn_103125.c[1]                            net  (fanout = 39)      0.960 r     4.827
+ u_conv2/ramread0_syn_103125.f[1]                            cell (LUT4)             0.348 r     5.175
+ u_conv2/conv_out_b55[4]_syn_38.d[0]                         net  (fanout = 18)      2.167 r     7.342
+ u_conv2/conv_out_b55[4]_syn_38.f[0]                         cell (LUT2)             0.205 r     7.547
+ u_conv2/mult23_syn_2945.c[0]                                net  (fanout = 33)      2.004 r     9.551
+ u_conv2/mult23_syn_2945.f[0]                                cell (LUT4)             0.348 r     9.899
+ u_conv2/mult23_syn_2932.c[1]                                net  (fanout = 1)       0.309 r    10.208
+ u_conv2/mult23_syn_2932.f[1]                                cell (LUT4)             0.348 r    10.556
+ u_conv2/conv_out_b32[0]_syn_5.b[1]                          net  (fanout = 4)       0.920 r    11.476
+ u_conv2/conv_out_b32[0]_syn_5.fx[0]                         cell (LUT5)             0.543 r    12.019
+ u_conv2/mult3_syn_2.a[0]                                    net  (fanout = 1)       2.058 r    14.077
+ u_conv2/mult3_syn_2.p[0]                                    cell (MULT18)           3.563 r    17.640
+ u_conv2/conv_out_b28[0]_syn_252.e[0]                        net  (fanout = 1)       1.566 r    19.206
+ u_conv2/conv_out_b28[0]_syn_252.fx[1]                       cell                    1.102 r    20.308
+ u_conv2/conv_out_b28[0]_syn_258.b[1]                        net  (fanout = 1)       0.957 r    21.265
+ u_conv2/conv_out_b28[0]_syn_258.fx[1]                       cell                    0.825 r    22.090
+ u_conv2/conv_out_b88[0]_syn_125.e[1]                        net  (fanout = 1)       0.754 r    22.844
+ u_conv2/conv_out_b88[0]_syn_125.fco                         cell (ADDER)            0.715 r    23.559
+ u_conv2/conv_out_b88[0]_syn_126.fci                         net  (fanout = 1)       0.000 f    23.559
+ u_conv2/conv_out_b88[0]_syn_126.fx[0]                       cell (ADDER)            0.387 r    23.946
+ u_conv2/conv_out_b60[0]_syn_622.e[0]                        net  (fanout = 1)       0.778 r    24.724
+ u_conv2/conv_out_b60[0]_syn_622.fx[0]                       cell                    0.770 r    25.494
+ u_conv2/conv_out_b60[0]_syn_628.b[0]                        net  (fanout = 1)       1.104 r    26.598
+ u_conv2/conv_out_b60[0]_syn_628.fco                         cell (ADDER)            0.836 r    27.434
+ u_conv2/conv_out_b60[0]_syn_629.fci                         net  (fanout = 1)       0.000 f    27.434
+ u_conv2/conv_out_b60[0]_syn_629.fx[0]                       cell (ADDER)            0.387 r    27.821
+ u_conv2/add47_syn_70.e[1]                                   net  (fanout = 6)       1.566 r    29.387
+ u_conv2/add47_syn_70.fco                                    cell (ADDER)            0.715 r    30.102
+ u_conv2/add47_syn_71.fci                                    net  (fanout = 1)       0.000 f    30.102
+ u_conv2/add47_syn_71.fco                                    cell (ADDER)            0.132 r    30.234
+ u_conv2/add47_syn_72.fci                                    net  (fanout = 1)       0.000 f    30.234
+ u_conv2/add47_syn_72.f[0]                                   cell (ADDER)            0.198 r    30.432
+ _al_n1_syn_3379.e[1]                                        net  (fanout = 3)       0.676 r    31.108
+ _al_n1_syn_3379.fco                                         cell (ADDER)            0.715 r    31.823
+ _al_n1_syn_3380.fci                                         net  (fanout = 1)       0.000 f    31.823
+ _al_n1_syn_3380.f[0]                                        cell (ADDER)            0.198 r    32.021
+ u_conv2/lt3_syn_71.b[0]                                     net  (fanout = 2)       0.944 r    32.965
+ u_conv2/lt3_syn_71.fco                                      cell (ADDER)            0.627 r    33.592
+ u_conv2/lt3_syn_74.fci                                      net  (fanout = 1)       0.000 f    33.592
+ u_conv2/lt3_syn_74.fco                                      cell (ADDER)            0.073 r    33.665
+ u_conv2/lt3_syn_77.fci                                      net  (fanout = 1)       0.000 f    33.665
+ u_conv2/lt3_syn_77.f[1]                                     cell (ADDER)            0.355 r    34.020
+ u_conv2/data_out_b[10]_syn_14.d[0]                          net  (fanout = 1)       0.738 r    34.758
+ u_conv2/data_out_b[10]_syn_14.f[0]                          cell (LUT2)             0.262 r    35.020
+ u_conv2/data_out_b[6]_syn_13.b[0]                           net  (fanout = 11)      0.496 r    35.516
+ u_conv2/data_out_b[6]_syn_13.f[0]                           cell (LUT4)             0.333 r    35.849
+ u_conv2/data_out_b[8]_syn_12.a[0]                           net  (fanout = 1)       0.738 r    36.587
+ u_conv2/data_out_b[8]_syn_12.f[0]                           cell (LUT4)             0.408 r    36.995
+ u_conv2/data_out_b[10]_syn_12.a[0]                          net  (fanout = 1)       0.757 r    37.752
+ u_conv2/data_out_b[10]_syn_12                               path2reg0 (LUT4)        0.542      38.294
+ Arrival time                                                                       38.294                  (24 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.493       1.493                    
+ u_conv2/data_out_b[10]_syn_12.clk (u_conv2/ramread0_syn_4482[0]) net                     1.852       3.345      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                 40.800      44.145
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      44.029
+ clock uncertainty                                                                  -0.000      44.029
+ clock recovergence pessimism                                                        0.312      44.341
+ Required time                                                                      44.341            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               6.047ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_conv2/reg2_syn_82 ( >1000000000 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check):     6.161 ns                                                        
+ Start Point:             u_conv2/ramread0_syn_101270.clk (rising edge triggered by clock clk_24m)
+ End Point:               u_conv2/reg2_syn_82.a[1] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         34.459ns  (logic 15.225ns, net 19.234ns, 44% logic)             
+ Logic Levels:            24 ( ADDER=11 LUT4=5 LUT2=2 LUT3=1 MULT18=1 LUT5=1 )            
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.660       1.660                    
+ u_conv2/ramread0_syn_101270.clk (u_conv2/ramread0_syn_4482[0]) net                     2.061       3.721      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       3.721
+---------------------------------------------------------------------------------------------------------
+ u_conv2/ramread0_syn_101270.q[0]                            clk2q                   0.146 r     3.867
+ u_conv2/ramread0_syn_103125.c[1]                            net  (fanout = 39)      0.960 r     4.827
+ u_conv2/ramread0_syn_103125.f[1]                            cell (LUT4)             0.348 r     5.175
+ u_conv2/conv_out_b55[4]_syn_38.d[0]                         net  (fanout = 18)      2.167 r     7.342
+ u_conv2/conv_out_b55[4]_syn_38.f[0]                         cell (LUT2)             0.205 r     7.547
+ u_conv2/mult23_syn_2945.c[0]                                net  (fanout = 33)      2.004 r     9.551
+ u_conv2/mult23_syn_2945.f[0]                                cell (LUT4)             0.348 r     9.899
+ u_conv2/mult23_syn_2932.c[1]                                net  (fanout = 1)       0.309 r    10.208
+ u_conv2/mult23_syn_2932.f[1]                                cell (LUT4)             0.348 r    10.556
+ u_conv2/conv_out_b32[0]_syn_5.b[1]                          net  (fanout = 4)       0.920 r    11.476
+ u_conv2/conv_out_b32[0]_syn_5.fx[0]                         cell (LUT5)             0.543 r    12.019
+ u_conv2/mult3_syn_2.a[0]                                    net  (fanout = 1)       2.058 r    14.077
+ u_conv2/mult3_syn_2.p[0]                                    cell (MULT18)           3.563 r    17.640
+ u_conv2/conv_out_b28[0]_syn_252.e[0]                        net  (fanout = 1)       1.566 r    19.206
+ u_conv2/conv_out_b28[0]_syn_252.fx[1]                       cell                    1.102 r    20.308
+ u_conv2/conv_out_b28[0]_syn_258.b[1]                        net  (fanout = 1)       0.957 r    21.265
+ u_conv2/conv_out_b28[0]_syn_258.fx[1]                       cell                    0.825 r    22.090
+ u_conv2/conv_out_b88[0]_syn_125.e[1]                        net  (fanout = 1)       0.754 r    22.844
+ u_conv2/conv_out_b88[0]_syn_125.fx[1]                       cell                    0.770 r    23.614
+ u_conv2/conv_out_b60[0]_syn_621.e[1]                        net  (fanout = 1)       0.774 r    24.388
+ u_conv2/conv_out_b60[0]_syn_621.fco                         cell (ADDER)            0.715 r    25.103
+ u_conv2/conv_out_b60[0]_syn_622.fci                         net  (fanout = 1)       0.000 f    25.103
+ u_conv2/conv_out_b60[0]_syn_622.f[0]                        cell (ADDER)            0.198 r    25.301
+ u_conv2/conv_out_b60[0]_syn_628.a[0]                        net  (fanout = 1)       1.232 r    26.533
+ u_conv2/conv_out_b60[0]_syn_628.fco                         cell (ADDER)            0.947 r    27.480
+ u_conv2/conv_out_b60[0]_syn_629.fci                         net  (fanout = 1)       0.000 f    27.480
+ u_conv2/conv_out_b60[0]_syn_629.fx[0]                       cell (ADDER)            0.387 r    27.867
+ u_conv2/add47_syn_70.e[1]                                   net  (fanout = 6)       1.566 r    29.433
+ u_conv2/add47_syn_70.fco                                    cell (ADDER)            0.715 r    30.148
+ u_conv2/add47_syn_71.fci                                    net  (fanout = 1)       0.000 f    30.148
+ u_conv2/add47_syn_71.f[0]                                   cell (ADDER)            0.198 r    30.346
+ _al_n1_syn_3370.e[1]                                        net  (fanout = 3)       0.625 r    30.971
+ _al_n1_syn_3370.fco                                         cell (ADDER)            0.715 r    31.686
+ _al_n1_syn_3371.fci                                         net  (fanout = 1)       0.000 f    31.686
+ _al_n1_syn_3371.fx[1]                                       cell (ADDER)            0.453 r    32.139
+ u_conv2/lt1_syn_68.b[1]                                     net  (fanout = 2)       0.884 r    33.023
+ u_conv2/lt1_syn_68.fco                                      cell (ADDER)            0.539 r    33.562
+ u_conv2/lt1_syn_71.fci                                      net  (fanout = 1)       0.000 f    33.562
+ u_conv2/lt1_syn_71.fco                                      cell (ADDER)            0.073 r    33.635
+ u_conv2/lt1_syn_74.fci                                      net  (fanout = 1)       0.000 f    33.635
+ u_conv2/lt1_syn_74.fco                                      cell (ADDER)            0.073 r    33.708
+ u_conv2/lt1_syn_77.fci                                      net  (fanout = 1)       0.000 f    33.708
+ u_conv2/lt1_syn_77.f[1]                                     cell (ADDER)            0.355 r    34.063
+ u_conv2/data_out_b[4]_syn_25.d[0]                           net  (fanout = 1)       0.468 r    34.531
+ u_conv2/data_out_b[4]_syn_25.f[0]                           cell (LUT3)             0.262 r    34.793
+ u_conv2/data_out_b[10]_syn_14.b[1]                          net  (fanout = 11)      0.658 r    35.451
+ u_conv2/data_out_b[10]_syn_14.f[1]                          cell (LUT2)             0.431 r    35.882
+ u_conv2/data_out_b[10]_syn_12.a[1]                          net  (fanout = 1)       0.738 r    36.620
+ u_conv2/data_out_b[10]_syn_12.f[1]                          cell (LUT4)             0.424 r    37.044
+ u_conv2/reg2_syn_82.a[1]                                    net  (fanout = 1)       0.594 r    37.638
+ u_conv2/reg2_syn_82                                         path2reg1 (LUT4)        0.542      38.180
+ Arrival time                                                                       38.180                  (24 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.493       1.493                    
+ u_conv2/reg2_syn_82.clk (u_conv2/ramread0_syn_4482[0])      net                     1.852       3.345      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                 40.800      44.145
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      44.029
+ clock uncertainty                                                                  -0.000      44.029
+ clock recovergence pessimism                                                        0.312      44.341
+ Required time                                                                      44.341            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               6.161ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     6.161 ns                                                        
+ Start Point:             u_conv2/ramread0_syn_101270.clk (rising edge triggered by clock clk_24m)
+ End Point:               u_conv2/reg2_syn_82.a[1] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         34.459ns  (logic 15.225ns, net 19.234ns, 44% logic)             
+ Logic Levels:            24 ( ADDER=11 LUT4=5 LUT2=2 LUT3=1 MULT18=1 LUT5=1 )            
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.660       1.660                    
+ u_conv2/ramread0_syn_101270.clk (u_conv2/ramread0_syn_4482[0]) net                     2.061       3.721      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       3.721
+---------------------------------------------------------------------------------------------------------
+ u_conv2/ramread0_syn_101270.q[0]                            clk2q                   0.146 r     3.867
+ u_conv2/ramread0_syn_103125.c[1]                            net  (fanout = 39)      0.960 r     4.827
+ u_conv2/ramread0_syn_103125.f[1]                            cell (LUT4)             0.348 r     5.175
+ u_conv2/conv_out_b55[4]_syn_38.d[0]                         net  (fanout = 18)      2.167 r     7.342
+ u_conv2/conv_out_b55[4]_syn_38.f[0]                         cell (LUT2)             0.205 r     7.547
+ u_conv2/mult23_syn_2945.c[0]                                net  (fanout = 33)      2.004 r     9.551
+ u_conv2/mult23_syn_2945.f[0]                                cell (LUT4)             0.348 r     9.899
+ u_conv2/mult23_syn_2932.c[1]                                net  (fanout = 1)       0.309 r    10.208
+ u_conv2/mult23_syn_2932.f[1]                                cell (LUT4)             0.348 r    10.556
+ u_conv2/conv_out_b32[0]_syn_5.b[0]                          net  (fanout = 4)       0.920 r    11.476
+ u_conv2/conv_out_b32[0]_syn_5.fx[0]                         cell (LUT5)             0.543 r    12.019
+ u_conv2/mult3_syn_2.a[0]                                    net  (fanout = 1)       2.058 r    14.077
+ u_conv2/mult3_syn_2.p[0]                                    cell (MULT18)           3.563 r    17.640
+ u_conv2/conv_out_b28[0]_syn_252.e[0]                        net  (fanout = 1)       1.566 r    19.206
+ u_conv2/conv_out_b28[0]_syn_252.fx[1]                       cell                    1.102 r    20.308
+ u_conv2/conv_out_b28[0]_syn_258.b[1]                        net  (fanout = 1)       0.957 r    21.265
+ u_conv2/conv_out_b28[0]_syn_258.fx[1]                       cell                    0.825 r    22.090
+ u_conv2/conv_out_b88[0]_syn_125.e[1]                        net  (fanout = 1)       0.754 r    22.844
+ u_conv2/conv_out_b88[0]_syn_125.fx[1]                       cell                    0.770 r    23.614
+ u_conv2/conv_out_b60[0]_syn_621.e[1]                        net  (fanout = 1)       0.774 r    24.388
+ u_conv2/conv_out_b60[0]_syn_621.fco                         cell (ADDER)            0.715 r    25.103
+ u_conv2/conv_out_b60[0]_syn_622.fci                         net  (fanout = 1)       0.000 f    25.103
+ u_conv2/conv_out_b60[0]_syn_622.f[0]                        cell (ADDER)            0.198 r    25.301
+ u_conv2/conv_out_b60[0]_syn_628.a[0]                        net  (fanout = 1)       1.232 r    26.533
+ u_conv2/conv_out_b60[0]_syn_628.fco                         cell (ADDER)            0.947 r    27.480
+ u_conv2/conv_out_b60[0]_syn_629.fci                         net  (fanout = 1)       0.000 f    27.480
+ u_conv2/conv_out_b60[0]_syn_629.fx[0]                       cell (ADDER)            0.387 r    27.867
+ u_conv2/add47_syn_70.e[1]                                   net  (fanout = 6)       1.566 r    29.433
+ u_conv2/add47_syn_70.fco                                    cell (ADDER)            0.715 r    30.148
+ u_conv2/add47_syn_71.fci                                    net  (fanout = 1)       0.000 f    30.148
+ u_conv2/add47_syn_71.f[0]                                   cell (ADDER)            0.198 r    30.346
+ _al_n1_syn_3370.e[1]                                        net  (fanout = 3)       0.625 r    30.971
+ _al_n1_syn_3370.fco                                         cell (ADDER)            0.715 r    31.686
+ _al_n1_syn_3371.fci                                         net  (fanout = 1)       0.000 f    31.686
+ _al_n1_syn_3371.fx[1]                                       cell (ADDER)            0.453 r    32.139
+ u_conv2/lt1_syn_68.b[1]                                     net  (fanout = 2)       0.884 r    33.023
+ u_conv2/lt1_syn_68.fco                                      cell (ADDER)            0.539 r    33.562
+ u_conv2/lt1_syn_71.fci                                      net  (fanout = 1)       0.000 f    33.562
+ u_conv2/lt1_syn_71.fco                                      cell (ADDER)            0.073 r    33.635
+ u_conv2/lt1_syn_74.fci                                      net  (fanout = 1)       0.000 f    33.635
+ u_conv2/lt1_syn_74.fco                                      cell (ADDER)            0.073 r    33.708
+ u_conv2/lt1_syn_77.fci                                      net  (fanout = 1)       0.000 f    33.708
+ u_conv2/lt1_syn_77.f[1]                                     cell (ADDER)            0.355 r    34.063
+ u_conv2/data_out_b[4]_syn_25.d[0]                           net  (fanout = 1)       0.468 r    34.531
+ u_conv2/data_out_b[4]_syn_25.f[0]                           cell (LUT3)             0.262 r    34.793
+ u_conv2/data_out_b[10]_syn_14.b[1]                          net  (fanout = 11)      0.658 r    35.451
+ u_conv2/data_out_b[10]_syn_14.f[1]                          cell (LUT2)             0.431 r    35.882
+ u_conv2/data_out_b[10]_syn_12.a[1]                          net  (fanout = 1)       0.738 r    36.620
+ u_conv2/data_out_b[10]_syn_12.f[1]                          cell (LUT4)             0.424 r    37.044
+ u_conv2/reg2_syn_82.a[1]                                    net  (fanout = 1)       0.594 r    37.638
+ u_conv2/reg2_syn_82                                         path2reg1 (LUT4)        0.542      38.180
+ Arrival time                                                                       38.180                  (24 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.493       1.493                    
+ u_conv2/reg2_syn_82.clk (u_conv2/ramread0_syn_4482[0])      net                     1.852       3.345      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                 40.800      44.145
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      44.029
+ clock uncertainty                                                                  -0.000      44.029
+ clock recovergence pessimism                                                        0.312      44.341
+ Required time                                                                      44.341            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               6.161ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     6.198 ns                                                        
+ Start Point:             u_conv2/ramread0_syn_101270.clk (rising edge triggered by clock clk_24m)
+ End Point:               u_conv2/reg2_syn_82.a[1] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         34.422ns  (logic 15.348ns, net 19.074ns, 44% logic)             
+ Logic Levels:            23 ( ADDER=9 LUT4=5 LUT2=2 LUT3=1 MULT18=1 LUT5=1 )             
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.660       1.660                    
+ u_conv2/ramread0_syn_101270.clk (u_conv2/ramread0_syn_4482[0]) net                     2.061       3.721      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       3.721
+---------------------------------------------------------------------------------------------------------
+ u_conv2/ramread0_syn_101270.q[0]                            clk2q                   0.146 r     3.867
+ u_conv2/ramread0_syn_103125.c[1]                            net  (fanout = 39)      0.960 r     4.827
+ u_conv2/ramread0_syn_103125.f[1]                            cell (LUT4)             0.348 r     5.175
+ u_conv2/conv_out_b55[4]_syn_38.d[0]                         net  (fanout = 18)      2.167 r     7.342
+ u_conv2/conv_out_b55[4]_syn_38.f[0]                         cell (LUT2)             0.205 r     7.547
+ u_conv2/mult23_syn_2945.c[0]                                net  (fanout = 33)      2.004 r     9.551
+ u_conv2/mult23_syn_2945.f[0]                                cell (LUT4)             0.348 r     9.899
+ u_conv2/mult23_syn_2932.c[1]                                net  (fanout = 1)       0.309 r    10.208
+ u_conv2/mult23_syn_2932.f[1]                                cell (LUT4)             0.348 r    10.556
+ u_conv2/conv_out_b32[0]_syn_5.b[1]                          net  (fanout = 4)       0.920 r    11.476
+ u_conv2/conv_out_b32[0]_syn_5.fx[0]                         cell (LUT5)             0.543 r    12.019
+ u_conv2/mult3_syn_2.a[0]                                    net  (fanout = 1)       2.058 r    14.077
+ u_conv2/mult3_syn_2.p[0]                                    cell (MULT18)           3.563 r    17.640
+ u_conv2/conv_out_b28[0]_syn_252.e[0]                        net  (fanout = 1)       1.566 r    19.206
+ u_conv2/conv_out_b28[0]_syn_252.fx[1]                       cell                    1.102 r    20.308
+ u_conv2/conv_out_b28[0]_syn_258.b[1]                        net  (fanout = 1)       0.957 r    21.265
+ u_conv2/conv_out_b28[0]_syn_258.fx[1]                       cell                    0.825 r    22.090
+ u_conv2/conv_out_b88[0]_syn_125.e[1]                        net  (fanout = 1)       0.754 r    22.844
+ u_conv2/conv_out_b88[0]_syn_125.fx[1]                       cell                    0.770 r    23.614
+ u_conv2/conv_out_b60[0]_syn_621.e[1]                        net  (fanout = 1)       0.774 r    24.388
+ u_conv2/conv_out_b60[0]_syn_621.fco                         cell (ADDER)            0.715 r    25.103
+ u_conv2/conv_out_b60[0]_syn_622.fci                         net  (fanout = 1)       0.000 f    25.103
+ u_conv2/conv_out_b60[0]_syn_622.f[0]                        cell (ADDER)            0.198 r    25.301
+ u_conv2/conv_out_b60[0]_syn_628.a[0]                        net  (fanout = 1)       1.232 r    26.533
+ u_conv2/conv_out_b60[0]_syn_628.fco                         cell (ADDER)            0.947 r    27.480
+ u_conv2/conv_out_b60[0]_syn_629.fci                         net  (fanout = 1)       0.000 f    27.480
+ u_conv2/conv_out_b60[0]_syn_629.fx[0]                       cell (ADDER)            0.387 r    27.867
+ u_conv2/add47_syn_70.e[1]                                   net  (fanout = 6)       1.566 r    29.433
+ u_conv2/add47_syn_70.fco                                    cell (ADDER)            0.715 r    30.148
+ u_conv2/add47_syn_71.fci                                    net  (fanout = 1)       0.000 f    30.148
+ u_conv2/add47_syn_71.fx[0]                                  cell (ADDER)            0.387 r    30.535
+ _al_n1_syn_3371.d[0]                                        net  (fanout = 3)       0.465 r    31.000
+ _al_n1_syn_3371.fx[1]                                       cell                    1.102 r    32.102
+ u_conv2/lt1_syn_68.b[1]                                     net  (fanout = 2)       0.884 r    32.986
+ u_conv2/lt1_syn_68.fco                                      cell (ADDER)            0.539 r    33.525
+ u_conv2/lt1_syn_71.fci                                      net  (fanout = 1)       0.000 f    33.525
+ u_conv2/lt1_syn_71.fco                                      cell (ADDER)            0.073 r    33.598
+ u_conv2/lt1_syn_74.fci                                      net  (fanout = 1)       0.000 f    33.598
+ u_conv2/lt1_syn_74.fco                                      cell (ADDER)            0.073 r    33.671
+ u_conv2/lt1_syn_77.fci                                      net  (fanout = 1)       0.000 f    33.671
+ u_conv2/lt1_syn_77.f[1]                                     cell (ADDER)            0.355 r    34.026
+ u_conv2/data_out_b[4]_syn_25.d[0]                           net  (fanout = 1)       0.468 r    34.494
+ u_conv2/data_out_b[4]_syn_25.f[0]                           cell (LUT3)             0.262 r    34.756
+ u_conv2/data_out_b[10]_syn_14.b[1]                          net  (fanout = 11)      0.658 r    35.414
+ u_conv2/data_out_b[10]_syn_14.f[1]                          cell (LUT2)             0.431 r    35.845
+ u_conv2/data_out_b[10]_syn_12.a[1]                          net  (fanout = 1)       0.738 r    36.583
+ u_conv2/data_out_b[10]_syn_12.f[1]                          cell (LUT4)             0.424 r    37.007
+ u_conv2/reg2_syn_82.a[1]                                    net  (fanout = 1)       0.594 r    37.601
+ u_conv2/reg2_syn_82                                         path2reg1 (LUT4)        0.542      38.143
+ Arrival time                                                                       38.143                  (23 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.493       1.493                    
+ u_conv2/reg2_syn_82.clk (u_conv2/ramread0_syn_4482[0])      net                     1.852       3.345      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                 40.800      44.145
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      44.029
+ clock uncertainty                                                                  -0.000      44.029
+ clock recovergence pessimism                                                        0.312      44.341
+ Required time                                                                      44.341            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               6.198ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_conv2/reg2_syn_71 ( >1000000000 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check):     6.201 ns                                                        
+ Start Point:             u_conv2/ramread0_syn_101270.clk (rising edge triggered by clock clk_24m)
+ End Point:               u_conv2/reg2_syn_71.a[1] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         34.419ns  (logic 15.101ns, net 19.318ns, 43% logic)             
+ Logic Levels:            24 ( ADDER=11 LUT4=6 LUT2=2 MULT18=1 LUT5=1 )                   
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.660       1.660                    
+ u_conv2/ramread0_syn_101270.clk (u_conv2/ramread0_syn_4482[0]) net                     2.061       3.721      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       3.721
+---------------------------------------------------------------------------------------------------------
+ u_conv2/ramread0_syn_101270.q[0]                            clk2q                   0.146 r     3.867
+ u_conv2/ramread0_syn_103125.c[1]                            net  (fanout = 39)      0.960 r     4.827
+ u_conv2/ramread0_syn_103125.f[1]                            cell (LUT4)             0.348 r     5.175
+ u_conv2/conv_out_b55[4]_syn_38.d[0]                         net  (fanout = 18)      2.167 r     7.342
+ u_conv2/conv_out_b55[4]_syn_38.f[0]                         cell (LUT2)             0.205 r     7.547
+ u_conv2/mult23_syn_2945.c[0]                                net  (fanout = 33)      2.004 r     9.551
+ u_conv2/mult23_syn_2945.f[0]                                cell (LUT4)             0.348 r     9.899
+ u_conv2/mult23_syn_2932.c[1]                                net  (fanout = 1)       0.309 r    10.208
+ u_conv2/mult23_syn_2932.f[1]                                cell (LUT4)             0.348 r    10.556
+ u_conv2/conv_out_b32[0]_syn_5.b[1]                          net  (fanout = 4)       0.920 r    11.476
+ u_conv2/conv_out_b32[0]_syn_5.fx[0]                         cell (LUT5)             0.543 r    12.019
+ u_conv2/mult3_syn_2.a[0]                                    net  (fanout = 1)       2.058 r    14.077
+ u_conv2/mult3_syn_2.p[0]                                    cell (MULT18)           3.563 r    17.640
+ u_conv2/conv_out_b28[0]_syn_252.e[0]                        net  (fanout = 1)       1.566 r    19.206
+ u_conv2/conv_out_b28[0]_syn_252.fx[1]                       cell                    1.102 r    20.308
+ u_conv2/conv_out_b28[0]_syn_258.b[1]                        net  (fanout = 1)       0.957 r    21.265
+ u_conv2/conv_out_b28[0]_syn_258.fx[1]                       cell                    0.825 r    22.090
+ u_conv2/conv_out_b88[0]_syn_125.e[1]                        net  (fanout = 1)       0.754 r    22.844
+ u_conv2/conv_out_b88[0]_syn_125.fx[1]                       cell                    0.770 r    23.614
+ u_conv2/conv_out_b60[0]_syn_621.e[1]                        net  (fanout = 1)       0.774 r    24.388
+ u_conv2/conv_out_b60[0]_syn_621.fco                         cell (ADDER)            0.715 r    25.103
+ u_conv2/conv_out_b60[0]_syn_622.fci                         net  (fanout = 1)       0.000 f    25.103
+ u_conv2/conv_out_b60[0]_syn_622.f[0]                        cell (ADDER)            0.198 r    25.301
+ u_conv2/conv_out_b60[0]_syn_628.a[0]                        net  (fanout = 1)       1.232 r    26.533
+ u_conv2/conv_out_b60[0]_syn_628.fco                         cell (ADDER)            0.947 r    27.480
+ u_conv2/conv_out_b60[0]_syn_629.fci                         net  (fanout = 1)       0.000 f    27.480
+ u_conv2/conv_out_b60[0]_syn_629.fx[0]                       cell (ADDER)            0.387 r    27.867
+ u_conv2/add47_syn_70.e[1]                                   net  (fanout = 6)       1.566 r    29.433
+ u_conv2/add47_syn_70.fco                                    cell (ADDER)            0.715 r    30.148
+ u_conv2/add47_syn_71.fci                                    net  (fanout = 1)       0.000 f    30.148
+ u_conv2/add47_syn_71.fco                                    cell (ADDER)            0.132 r    30.280
+ u_conv2/add47_syn_72.fci                                    net  (fanout = 1)       0.000 f    30.280
+ u_conv2/add47_syn_72.f[0]                                   cell (ADDER)            0.198 r    30.478
+ _al_n1_syn_3379.e[1]                                        net  (fanout = 3)       0.676 r    31.154
+ _al_n1_syn_3379.fco                                         cell (ADDER)            0.715 r    31.869
+ _al_n1_syn_3380.fci                                         net  (fanout = 1)       0.000 f    31.869
+ _al_n1_syn_3380.f[0]                                        cell (ADDER)            0.198 r    32.067
+ u_conv2/lt3_syn_71.b[0]                                     net  (fanout = 2)       0.944 r    33.011
+ u_conv2/lt3_syn_71.fco                                      cell (ADDER)            0.627 r    33.638
+ u_conv2/lt3_syn_74.fci                                      net  (fanout = 1)       0.000 f    33.638
+ u_conv2/lt3_syn_74.fco                                      cell (ADDER)            0.073 r    33.711
+ u_conv2/lt3_syn_77.fci                                      net  (fanout = 1)       0.000 f    33.711
+ u_conv2/lt3_syn_77.f[1]                                     cell (ADDER)            0.355 r    34.066
+ u_conv2/data_out_b[10]_syn_14.d[0]                          net  (fanout = 1)       0.738 r    34.804
+ u_conv2/data_out_b[10]_syn_14.f[0]                          cell (LUT2)             0.262 r    35.066
+ u_conv2/data_out_b[2]_syn_13.b[1]                           net  (fanout = 11)      0.643 r    35.709
+ u_conv2/data_out_b[2]_syn_13.f[1]                           cell (LUT4)             0.431 r    36.140
+ u_conv2/data_out_b[1]_syn_12.a[0]                           net  (fanout = 1)       0.456 r    36.596
+ u_conv2/data_out_b[1]_syn_12.f[0]                           cell (LUT4)             0.408 r    37.004
+ u_conv2/reg2_syn_71.a[1]                                    net  (fanout = 1)       0.594 r    37.598
+ u_conv2/reg2_syn_71                                         path2reg1 (LUT4)        0.542      38.140
+ Arrival time                                                                       38.140                  (24 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.493       1.493                    
+ u_conv2/reg2_syn_71.clk (u_conv2/ramread0_syn_4482[0])      net                     1.852       3.345      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                 40.800      44.145
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      44.029
+ clock uncertainty                                                                  -0.000      44.029
+ clock recovergence pessimism                                                        0.312      44.341
+ Required time                                                                      44.341            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               6.201ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     6.201 ns                                                        
+ Start Point:             u_conv2/ramread0_syn_101270.clk (rising edge triggered by clock clk_24m)
+ End Point:               u_conv2/reg2_syn_71.a[1] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         34.419ns  (logic 15.101ns, net 19.318ns, 43% logic)             
+ Logic Levels:            24 ( ADDER=11 LUT4=6 LUT2=2 MULT18=1 LUT5=1 )                   
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.660       1.660                    
+ u_conv2/ramread0_syn_101270.clk (u_conv2/ramread0_syn_4482[0]) net                     2.061       3.721      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       3.721
+---------------------------------------------------------------------------------------------------------
+ u_conv2/ramread0_syn_101270.q[0]                            clk2q                   0.146 r     3.867
+ u_conv2/ramread0_syn_103125.c[1]                            net  (fanout = 39)      0.960 r     4.827
+ u_conv2/ramread0_syn_103125.f[1]                            cell (LUT4)             0.348 r     5.175
+ u_conv2/conv_out_b55[4]_syn_38.d[0]                         net  (fanout = 18)      2.167 r     7.342
+ u_conv2/conv_out_b55[4]_syn_38.f[0]                         cell (LUT2)             0.205 r     7.547
+ u_conv2/mult23_syn_2945.c[0]                                net  (fanout = 33)      2.004 r     9.551
+ u_conv2/mult23_syn_2945.f[0]                                cell (LUT4)             0.348 r     9.899
+ u_conv2/mult23_syn_2932.c[1]                                net  (fanout = 1)       0.309 r    10.208
+ u_conv2/mult23_syn_2932.f[1]                                cell (LUT4)             0.348 r    10.556
+ u_conv2/conv_out_b32[0]_syn_5.b[0]                          net  (fanout = 4)       0.920 r    11.476
+ u_conv2/conv_out_b32[0]_syn_5.fx[0]                         cell (LUT5)             0.543 r    12.019
+ u_conv2/mult3_syn_2.a[0]                                    net  (fanout = 1)       2.058 r    14.077
+ u_conv2/mult3_syn_2.p[0]                                    cell (MULT18)           3.563 r    17.640
+ u_conv2/conv_out_b28[0]_syn_252.e[0]                        net  (fanout = 1)       1.566 r    19.206
+ u_conv2/conv_out_b28[0]_syn_252.fx[1]                       cell                    1.102 r    20.308
+ u_conv2/conv_out_b28[0]_syn_258.b[1]                        net  (fanout = 1)       0.957 r    21.265
+ u_conv2/conv_out_b28[0]_syn_258.fx[1]                       cell                    0.825 r    22.090
+ u_conv2/conv_out_b88[0]_syn_125.e[1]                        net  (fanout = 1)       0.754 r    22.844
+ u_conv2/conv_out_b88[0]_syn_125.fx[1]                       cell                    0.770 r    23.614
+ u_conv2/conv_out_b60[0]_syn_621.e[1]                        net  (fanout = 1)       0.774 r    24.388
+ u_conv2/conv_out_b60[0]_syn_621.fco                         cell (ADDER)            0.715 r    25.103
+ u_conv2/conv_out_b60[0]_syn_622.fci                         net  (fanout = 1)       0.000 f    25.103
+ u_conv2/conv_out_b60[0]_syn_622.f[0]                        cell (ADDER)            0.198 r    25.301
+ u_conv2/conv_out_b60[0]_syn_628.a[0]                        net  (fanout = 1)       1.232 r    26.533
+ u_conv2/conv_out_b60[0]_syn_628.fco                         cell (ADDER)            0.947 r    27.480
+ u_conv2/conv_out_b60[0]_syn_629.fci                         net  (fanout = 1)       0.000 f    27.480
+ u_conv2/conv_out_b60[0]_syn_629.fx[0]                       cell (ADDER)            0.387 r    27.867
+ u_conv2/add47_syn_70.e[1]                                   net  (fanout = 6)       1.566 r    29.433
+ u_conv2/add47_syn_70.fco                                    cell (ADDER)            0.715 r    30.148
+ u_conv2/add47_syn_71.fci                                    net  (fanout = 1)       0.000 f    30.148
+ u_conv2/add47_syn_71.fco                                    cell (ADDER)            0.132 r    30.280
+ u_conv2/add47_syn_72.fci                                    net  (fanout = 1)       0.000 f    30.280
+ u_conv2/add47_syn_72.f[0]                                   cell (ADDER)            0.198 r    30.478
+ _al_n1_syn_3379.e[1]                                        net  (fanout = 3)       0.676 r    31.154
+ _al_n1_syn_3379.fco                                         cell (ADDER)            0.715 r    31.869
+ _al_n1_syn_3380.fci                                         net  (fanout = 1)       0.000 f    31.869
+ _al_n1_syn_3380.f[0]                                        cell (ADDER)            0.198 r    32.067
+ u_conv2/lt3_syn_71.b[0]                                     net  (fanout = 2)       0.944 r    33.011
+ u_conv2/lt3_syn_71.fco                                      cell (ADDER)            0.627 r    33.638
+ u_conv2/lt3_syn_74.fci                                      net  (fanout = 1)       0.000 f    33.638
+ u_conv2/lt3_syn_74.fco                                      cell (ADDER)            0.073 r    33.711
+ u_conv2/lt3_syn_77.fci                                      net  (fanout = 1)       0.000 f    33.711
+ u_conv2/lt3_syn_77.f[1]                                     cell (ADDER)            0.355 r    34.066
+ u_conv2/data_out_b[10]_syn_14.d[0]                          net  (fanout = 1)       0.738 r    34.804
+ u_conv2/data_out_b[10]_syn_14.f[0]                          cell (LUT2)             0.262 r    35.066
+ u_conv2/data_out_b[2]_syn_13.b[1]                           net  (fanout = 11)      0.643 r    35.709
+ u_conv2/data_out_b[2]_syn_13.f[1]                           cell (LUT4)             0.431 r    36.140
+ u_conv2/data_out_b[1]_syn_12.a[0]                           net  (fanout = 1)       0.456 r    36.596
+ u_conv2/data_out_b[1]_syn_12.f[0]                           cell (LUT4)             0.408 r    37.004
+ u_conv2/reg2_syn_71.a[1]                                    net  (fanout = 1)       0.594 r    37.598
+ u_conv2/reg2_syn_71                                         path2reg1 (LUT4)        0.542      38.140
+ Arrival time                                                                       38.140                  (24 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.493       1.493                    
+ u_conv2/reg2_syn_71.clk (u_conv2/ramread0_syn_4482[0])      net                     1.852       3.345      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                 40.800      44.145
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      44.029
+ clock uncertainty                                                                  -0.000      44.029
+ clock recovergence pessimism                                                        0.312      44.341
+ Required time                                                                      44.341            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               6.201ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     6.247 ns                                                        
+ Start Point:             u_conv2/ramread0_syn_101270.clk (rising edge triggered by clock clk_24m)
+ End Point:               u_conv2/reg2_syn_71.a[1] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         34.373ns  (logic 15.179ns, net 19.194ns, 44% logic)             
+ Logic Levels:            24 ( ADDER=11 LUT4=6 LUT2=2 MULT18=1 LUT5=1 )                   
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.660       1.660                    
+ u_conv2/ramread0_syn_101270.clk (u_conv2/ramread0_syn_4482[0]) net                     2.061       3.721      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       3.721
+---------------------------------------------------------------------------------------------------------
+ u_conv2/ramread0_syn_101270.q[0]                            clk2q                   0.146 r     3.867
+ u_conv2/ramread0_syn_103125.c[1]                            net  (fanout = 39)      0.960 r     4.827
+ u_conv2/ramread0_syn_103125.f[1]                            cell (LUT4)             0.348 r     5.175
+ u_conv2/conv_out_b55[4]_syn_38.d[0]                         net  (fanout = 18)      2.167 r     7.342
+ u_conv2/conv_out_b55[4]_syn_38.f[0]                         cell (LUT2)             0.205 r     7.547
+ u_conv2/mult23_syn_2945.c[0]                                net  (fanout = 33)      2.004 r     9.551
+ u_conv2/mult23_syn_2945.f[0]                                cell (LUT4)             0.348 r     9.899
+ u_conv2/mult23_syn_2932.c[1]                                net  (fanout = 1)       0.309 r    10.208
+ u_conv2/mult23_syn_2932.f[1]                                cell (LUT4)             0.348 r    10.556
+ u_conv2/conv_out_b32[0]_syn_5.b[1]                          net  (fanout = 4)       0.920 r    11.476
+ u_conv2/conv_out_b32[0]_syn_5.fx[0]                         cell (LUT5)             0.543 r    12.019
+ u_conv2/mult3_syn_2.a[0]                                    net  (fanout = 1)       2.058 r    14.077
+ u_conv2/mult3_syn_2.p[0]                                    cell (MULT18)           3.563 r    17.640
+ u_conv2/conv_out_b28[0]_syn_252.e[0]                        net  (fanout = 1)       1.566 r    19.206
+ u_conv2/conv_out_b28[0]_syn_252.fx[1]                       cell                    1.102 r    20.308
+ u_conv2/conv_out_b28[0]_syn_258.b[1]                        net  (fanout = 1)       0.957 r    21.265
+ u_conv2/conv_out_b28[0]_syn_258.fx[1]                       cell                    0.825 r    22.090
+ u_conv2/conv_out_b88[0]_syn_125.e[1]                        net  (fanout = 1)       0.754 r    22.844
+ u_conv2/conv_out_b88[0]_syn_125.fco                         cell (ADDER)            0.715 r    23.559
+ u_conv2/conv_out_b88[0]_syn_126.fci                         net  (fanout = 1)       0.000 f    23.559
+ u_conv2/conv_out_b88[0]_syn_126.fx[0]                       cell (ADDER)            0.387 r    23.946
+ u_conv2/conv_out_b60[0]_syn_622.e[0]                        net  (fanout = 1)       0.778 r    24.724
+ u_conv2/conv_out_b60[0]_syn_622.fx[0]                       cell                    0.770 r    25.494
+ u_conv2/conv_out_b60[0]_syn_628.b[0]                        net  (fanout = 1)       1.104 r    26.598
+ u_conv2/conv_out_b60[0]_syn_628.fco                         cell (ADDER)            0.836 r    27.434
+ u_conv2/conv_out_b60[0]_syn_629.fci                         net  (fanout = 1)       0.000 f    27.434
+ u_conv2/conv_out_b60[0]_syn_629.fx[0]                       cell (ADDER)            0.387 r    27.821
+ u_conv2/add47_syn_70.e[1]                                   net  (fanout = 6)       1.566 r    29.387
+ u_conv2/add47_syn_70.fco                                    cell (ADDER)            0.715 r    30.102
+ u_conv2/add47_syn_71.fci                                    net  (fanout = 1)       0.000 f    30.102
+ u_conv2/add47_syn_71.fco                                    cell (ADDER)            0.132 r    30.234
+ u_conv2/add47_syn_72.fci                                    net  (fanout = 1)       0.000 f    30.234
+ u_conv2/add47_syn_72.f[0]                                   cell (ADDER)            0.198 r    30.432
+ _al_n1_syn_3379.e[1]                                        net  (fanout = 3)       0.676 r    31.108
+ _al_n1_syn_3379.fco                                         cell (ADDER)            0.715 r    31.823
+ _al_n1_syn_3380.fci                                         net  (fanout = 1)       0.000 f    31.823
+ _al_n1_syn_3380.f[0]                                        cell (ADDER)            0.198 r    32.021
+ u_conv2/lt3_syn_71.b[0]                                     net  (fanout = 2)       0.944 r    32.965
+ u_conv2/lt3_syn_71.fco                                      cell (ADDER)            0.627 r    33.592
+ u_conv2/lt3_syn_74.fci                                      net  (fanout = 1)       0.000 f    33.592
+ u_conv2/lt3_syn_74.fco                                      cell (ADDER)            0.073 r    33.665
+ u_conv2/lt3_syn_77.fci                                      net  (fanout = 1)       0.000 f    33.665
+ u_conv2/lt3_syn_77.f[1]                                     cell (ADDER)            0.355 r    34.020
+ u_conv2/data_out_b[10]_syn_14.d[0]                          net  (fanout = 1)       0.738 r    34.758
+ u_conv2/data_out_b[10]_syn_14.f[0]                          cell (LUT2)             0.262 r    35.020
+ u_conv2/data_out_b[2]_syn_13.b[1]                           net  (fanout = 11)      0.643 r    35.663
+ u_conv2/data_out_b[2]_syn_13.f[1]                           cell (LUT4)             0.431 r    36.094
+ u_conv2/data_out_b[1]_syn_12.a[0]                           net  (fanout = 1)       0.456 r    36.550
+ u_conv2/data_out_b[1]_syn_12.f[0]                           cell (LUT4)             0.408 r    36.958
+ u_conv2/reg2_syn_71.a[1]                                    net  (fanout = 1)       0.594 r    37.552
+ u_conv2/reg2_syn_71                                         path2reg1 (LUT4)        0.542      38.094
+ Arrival time                                                                       38.094                  (24 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.493       1.493                    
+ u_conv2/reg2_syn_71.clk (u_conv2/ramread0_syn_4482[0])      net                     1.852       3.345      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                 40.800      44.145
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      44.029
+ clock uncertainty                                                                  -0.000      44.029
+ clock recovergence pessimism                                                        0.312      44.341
+ Required time                                                                      44.341            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               6.247ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point u_ram_8x8x3lcd/inst_syn_2 (8 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.186 ns                                                        
+ Start Point:             u_conv2/reg2_syn_78.clk (rising edge triggered by clock clk_24m)
+ End Point:               u_ram_8x8x3lcd/inst_syn_2.dia[4] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Fast                                                            
+ Data Path Delay:         0.431ns  (logic 0.109ns, net 0.322ns, 25% logic)                
+ Logic Levels:            1 ( EMB=1 )                                                     
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.184       1.184                    
+ u_conv2/reg2_syn_78.clk (u_conv2/ramread0_syn_4482[0])      net                     1.750       2.934      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       2.934
+---------------------------------------------------------------------------------------------------------
+ u_conv2/reg2_syn_78.q[0]                                    clk2q                   0.109 r     3.043
+ u_ram_8x8x3lcd/inst_syn_2.dia[4]                            net  (fanout = 3)       0.322 r     3.365
+ u_ram_8x8x3lcd/inst_syn_2                                   path2reg (EMB)          0.000       3.365
+ Arrival time                                                                        3.365                  (1 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.302       1.302                    
+ u_ram_8x8x3lcd/inst_syn_2.clka (u_conv2/ramread0_syn_4482[0]) net                     1.923       3.225      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                  0.000       3.225
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.200       3.425
+ clock uncertainty                                                                   0.000       3.425
+ clock recovergence pessimism                                                       -0.246       3.179
+ Required time                                                                       3.179            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.186ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check):      0.195 ns                                                        
+ Start Point:             u_conv2/reg2_syn_71.clk (rising edge triggered by clock clk_24m)
+ End Point:               u_ram_8x8x3lcd/inst_syn_2.dia[0] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Fast                                                            
+ Data Path Delay:         0.440ns  (logic 0.109ns, net 0.331ns, 24% logic)                
+ Logic Levels:            1 ( EMB=1 )                                                     
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.184       1.184                    
+ u_conv2/reg2_syn_71.clk (u_conv2/ramread0_syn_4482[0])      net                     1.750       2.934      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       2.934
+---------------------------------------------------------------------------------------------------------
+ u_conv2/reg2_syn_71.q[0]                                    clk2q                   0.109 r     3.043
+ u_ram_8x8x3lcd/inst_syn_2.dia[0]                            net  (fanout = 3)       0.331 r     3.374
+ u_ram_8x8x3lcd/inst_syn_2                                   path2reg (EMB)          0.000       3.374
+ Arrival time                                                                        3.374                  (1 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.302       1.302                    
+ u_ram_8x8x3lcd/inst_syn_2.clka (u_conv2/ramread0_syn_4482[0]) net                     1.923       3.225      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                  0.000       3.225
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.200       3.425
+ clock uncertainty                                                                   0.000       3.425
+ clock recovergence pessimism                                                       -0.246       3.179
+ Required time                                                                       3.179            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.195ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check):      0.196 ns                                                        
+ Start Point:             u_conv2/reg2_syn_71.clk (rising edge triggered by clock clk_24m)
+ End Point:               u_ram_8x8x3lcd/inst_syn_2.dia[2] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Fast                                                            
+ Data Path Delay:         0.441ns  (logic 0.109ns, net 0.332ns, 24% logic)                
+ Logic Levels:            1 ( EMB=1 )                                                     
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.184       1.184                    
+ u_conv2/reg2_syn_71.clk (u_conv2/ramread0_syn_4482[0])      net                     1.750       2.934      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       2.934
+---------------------------------------------------------------------------------------------------------
+ u_conv2/reg2_syn_71.q[1]                                    clk2q                   0.109 r     3.043
+ u_ram_8x8x3lcd/inst_syn_2.dia[2]                            net  (fanout = 3)       0.332 r     3.375
+ u_ram_8x8x3lcd/inst_syn_2                                   path2reg (EMB)          0.000       3.375
+ Arrival time                                                                        3.375                  (1 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.302       1.302                    
+ u_ram_8x8x3lcd/inst_syn_2.clka (u_conv2/ramread0_syn_4482[0]) net                     1.923       3.225      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                  0.000       3.225
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.200       3.425
+ clock uncertainty                                                                   0.000       3.425
+ clock recovergence pessimism                                                       -0.246       3.179
+ Required time                                                                       3.179            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.196ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_ram_4x4x3lcd/inst_syn_2 (6 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.195 ns                                                        
+ Start Point:             u_vga_sync/counter_hs[1]_syn_636.clk (rising edge triggered by clock clk_24m)
+ End Point:               u_ram_4x4x3lcd/inst_syn_2.addra[4] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Fast                                                            
+ Data Path Delay:         0.440ns  (logic 0.109ns, net 0.331ns, 24% logic)                
+ Logic Levels:            1 ( EMB=1 )                                                     
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.184       1.184                    
+ u_vga_sync/counter_hs[1]_syn_636.clk (u_conv2/ramread0_syn_4482[0]) net                     1.750       2.934      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       2.934
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/counter_hs[1]_syn_636.q[1]                       clk2q                   0.109 r     3.043
+ u_ram_4x4x3lcd/inst_syn_2.addra[4]                          net  (fanout = 2)       0.331 r     3.374
+ u_ram_4x4x3lcd/inst_syn_2                                   path2reg (EMB)          0.000       3.374
+ Arrival time                                                                        3.374                  (1 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.302       1.302                    
+ u_ram_4x4x3lcd/inst_syn_2.clka (u_conv2/ramread0_syn_4482[0]) net                     1.923       3.225      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                  0.000       3.225
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.200       3.425
+ clock uncertainty                                                                   0.000       3.425
+ clock recovergence pessimism                                                       -0.246       3.179
+ Required time                                                                       3.179            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.195ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check):      0.196 ns                                                        
+ Start Point:             u_vga_sync/counter_hs[1]_syn_636.clk (rising edge triggered by clock clk_24m)
+ End Point:               u_ram_4x4x3lcd/inst_syn_2.addra[3] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Fast                                                            
+ Data Path Delay:         0.441ns  (logic 0.109ns, net 0.332ns, 24% logic)                
+ Logic Levels:            1 ( EMB=1 )                                                     
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.184       1.184                    
+ u_vga_sync/counter_hs[1]_syn_636.clk (u_conv2/ramread0_syn_4482[0]) net                     1.750       2.934      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       2.934
+---------------------------------------------------------------------------------------------------------
+ u_vga_sync/counter_hs[1]_syn_636.q[0]                       clk2q                   0.109 r     3.043
+ u_ram_4x4x3lcd/inst_syn_2.addra[3]                          net  (fanout = 2)       0.332 r     3.375
+ u_ram_4x4x3lcd/inst_syn_2                                   path2reg (EMB)          0.000       3.375
+ Arrival time                                                                        3.375                  (1 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.302       1.302                    
+ u_ram_4x4x3lcd/inst_syn_2.clka (u_conv2/ramread0_syn_4482[0]) net                     1.923       3.225      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                  0.000       3.225
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.200       3.425
+ clock uncertainty                                                                   0.000       3.425
+ clock recovergence pessimism                                                       -0.246       3.179
+ Required time                                                                       3.179            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.196ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check):      0.246 ns                                                        
+ Start Point:             u_pool2/reg6_syn_39.clk (rising edge triggered by clock clk_24m)
+ End Point:               u_ram_4x4x3lcd/inst_syn_2.addra[8] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Fast                                                            
+ Data Path Delay:         0.491ns  (logic 0.109ns, net 0.382ns, 22% logic)                
+ Logic Levels:            1 ( EMB=1 )                                                     
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.184       1.184                    
+ u_pool2/reg6_syn_39.clk (u_conv2/ramread0_syn_4482[0])      net                     1.750       2.934      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       2.934
+---------------------------------------------------------------------------------------------------------
+ u_pool2/reg6_syn_39.q[0]                                    clk2q                   0.109 r     3.043
+ u_ram_4x4x3lcd/inst_syn_2.addra[8]                          net  (fanout = 2)       0.382 r     3.425
+ u_ram_4x4x3lcd/inst_syn_2                                   path2reg (EMB)          0.000       3.425
+ Arrival time                                                                        3.425                  (1 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.302       1.302                    
+ u_ram_4x4x3lcd/inst_syn_2.clka (u_conv2/ramread0_syn_4482[0]) net                     1.923       3.225      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                  0.000       3.225
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.200       3.425
+ clock uncertainty                                                                   0.000       3.425
+ clock recovergence pessimism                                                       -0.246       3.179
+ Required time                                                                       3.179            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.246ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_ram_8x8x3lcd/inst_syn_2 (8 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.196 ns                                                        
+ Start Point:             u_conv2/reg8_syn_59.clk (rising edge triggered by clock clk_24m)
+ End Point:               u_ram_8x8x3lcd/inst_syn_2.addra[9] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Fast                                                            
+ Data Path Delay:         0.441ns  (logic 0.109ns, net 0.332ns, 24% logic)                
+ Logic Levels:            1 ( EMB=1 )                                                     
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.184       1.184                    
+ u_conv2/reg8_syn_59.clk (u_conv2/ramread0_syn_4482[0])      net                     1.750       2.934      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       2.934
+---------------------------------------------------------------------------------------------------------
+ u_conv2/reg8_syn_59.q[0]                                    clk2q                   0.109 r     3.043
+ u_ram_8x8x3lcd/inst_syn_2.addra[9]                          net  (fanout = 3)       0.332 r     3.375
+ u_ram_8x8x3lcd/inst_syn_2                                   path2reg (EMB)          0.000       3.375
+ Arrival time                                                                        3.375                  (1 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.302       1.302                    
+ u_ram_8x8x3lcd/inst_syn_2.clka (u_conv2/ramread0_syn_4482[0]) net                     1.923       3.225      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                  0.000       3.225
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.200       3.425
+ clock uncertainty                                                                   0.000       3.425
+ clock recovergence pessimism                                                       -0.246       3.179
+ Required time                                                                       3.179            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.196ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check):      0.275 ns                                                        
+ Start Point:             u_conv2/reg8_syn_52.clk (rising edge triggered by clock clk_24m)
+ End Point:               u_ram_8x8x3lcd/inst_syn_2.addra[6] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Fast                                                            
+ Data Path Delay:         0.520ns  (logic 0.109ns, net 0.411ns, 20% logic)                
+ Logic Levels:            1 ( EMB=1 )                                                     
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.184       1.184                    
+ u_conv2/reg8_syn_52.clk (u_conv2/ramread0_syn_4482[0])      net                     1.750       2.934      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       2.934
+---------------------------------------------------------------------------------------------------------
+ u_conv2/reg8_syn_52.q[1]                                    clk2q                   0.109 r     3.043
+ u_ram_8x8x3lcd/inst_syn_2.addra[6]                          net  (fanout = 3)       0.411 r     3.454
+ u_ram_8x8x3lcd/inst_syn_2                                   path2reg (EMB)          0.000       3.454
+ Arrival time                                                                        3.454                  (1 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.302       1.302                    
+ u_ram_8x8x3lcd/inst_syn_2.clka (u_conv2/ramread0_syn_4482[0]) net                     1.923       3.225      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                  0.000       3.225
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.200       3.425
+ clock uncertainty                                                                   0.000       3.425
+ clock recovergence pessimism                                                       -0.246       3.179
+ Required time                                                                       3.179            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.275ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check):      0.282 ns                                                        
+ Start Point:             img_sel[0]_syn_731.clk (rising edge triggered by clock clk_24m) 
+ End Point:               u_ram_8x8x3lcd/inst_syn_2.addra[8] (rising edge triggered by clock clk_24m)
+ Clock group:             clk_24m                                                         
+ Process:                 Fast                                                            
+ Data Path Delay:         0.527ns  (logic 0.109ns, net 0.418ns, 20% logic)                
+ Logic Levels:            1 ( EMB=1 )                                                     
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.184       1.184                    
+ img_sel[0]_syn_731.clk (u_conv2/ramread0_syn_4482[0])       net                     1.750       2.934      ../../sources/rtl/conv2.v(133)
+ launch clock edge                                                                   0.000       2.934
+---------------------------------------------------------------------------------------------------------
+ img_sel[0]_syn_731.q[0]                                     clk2q                   0.109 r     3.043
+ u_ram_8x8x3lcd/inst_syn_2.addra[8]                          net  (fanout = 3)       0.418 r     3.461
+ u_ram_8x8x3lcd/inst_syn_2                                   path2reg (EMB)          0.000       3.461
+ Arrival time                                                                        3.461                  (1 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ clk_24m                                                                             0.000       0.000                    
+ clk_24m_syn_6.ipad                                          hier                    0.000       0.000                    
+ clk_24m_syn_6.di                                            cell (PAD)              1.302       1.302                    
+ u_ram_8x8x3lcd/inst_syn_2.clka (u_conv2/ramread0_syn_4482[0]) net                     1.923       3.225      ../../sources/rtl/conv2.v(133)
+ capture clock edge                                                                  0.000       3.225
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.200       3.425
+ clock uncertainty                                                                   0.000       3.425
+ clock recovergence pessimism                                                       -0.246       3.179
+ Required time                                                                       3.179            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.282ns          
+
+---------------------------------------------------------------------------------------------------------
+
+
+=========================================================================================================
+Timing summary:                                                                           
+---------------------------------------------------------------------------------------------------------
+Constraint path number: more than 1,000,000,000 (STA coverage = 90.04%)
+Timing violations: 0 setup errors, and 0 hold errors.
+Minimal setup slack: 6.001, minimal hold slack: 0.186
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  clk_24m (24.5MHz)                             34.799ns      28.736MHz        0.326ns      2059        0.000ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
+
+Warning: No clock constraint on 7 clock net(s): 
+	cam_pclk_dup_1
+	camera_wrreq_syn_3
+	clk_lcd
+	u_camera_init/divider2[7]_syn_2
+	u_camera_init/divider2[8]_syn_4
+	u_camera_init/u_i2c_write/clk
+	u_camera_reader/clk
+
+---------------------------------------------------------------------------------------------------------

@@ -1,0 +1,430 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/modelsim_dlx64_10.6c/examples
+vconv1
+Z0 !s110 1723893819
+!i10b 1
+!s100 Fch1bg3KUB79g4RNEeZGl0
+IbF;H7:R5fM2fIiP^D^TK=3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation
+w1722501572
+8C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/conv1.v
+FC:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/conv1.v
+L0 3
+Z3 OP;L;10.6c;65
+r1
+!s85 0
+31
+Z4 !s108 1723893819.000000
+!s107 C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/conv1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/conv1.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vconv1_ram
+R0
+!i10b 1
+!s100 RJ`:dFfhU@e86K4Tcb78X3
+I;MzlPo1:z5hCM8B9PN9B^0
+R1
+R2
+w1722259069
+8C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv1_ram.v
+FC:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv1_ram.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv1_ram.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv1_ram.v|
+!i113 1
+R5
+R6
+vconv2
+R0
+!i10b 1
+!s100 iOdOQMPT32IDKGf@X=Hz92
+IT^OWj?XMnHZjcg>K0Ee`g3
+R1
+R2
+w1723893807
+8C:\Users\VeriMake_C1\Desktop\lyj\mnisty\sources\rtl\conv2.v
+FC:\Users\VeriMake_C1\Desktop\lyj\mnisty\sources\rtl\conv2.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\Users\VeriMake_C1\Desktop\lyj\mnisty\sources\rtl\conv2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\VeriMake_C1\Desktop\lyj\mnisty\sources\rtl\conv2.v|
+!i113 1
+R5
+R6
+vconv_1_ram
+!s110 1722256438
+!i10b 1
+!s100 BnPzH2lc0V3;ThOfW42M[1
+Ij8REFN0LeZm^]W4=F>7lU0
+R1
+R2
+w1722246372
+Z7 8C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\conv1_ram.v
+Z8 FC:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\conv1_ram.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1722256438.000000
+Z9 !s107 C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\conv1_ram.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\conv1_ram.v|
+!i113 1
+R5
+R6
+vconv_1ram
+!s110 1722258997
+!i10b 1
+!s100 XiSGm3e:L;2Q3>efmzO6d3
+IV<KmL^elNTdGzSRaAhPoh0
+R1
+R2
+w1722257782
+R7
+R8
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1722258997.000000
+R9
+R10
+!i113 1
+R5
+R6
+vfc
+R0
+!i10b 1
+!s100 W0:11Tjljm>fb_d>2@D4k1
+I@8RcdU<Oe4G<iZ]1GNDb93
+R1
+R2
+w1721909719
+8C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/fc1.v
+FC:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/fc1.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/fc1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/fc1.v|
+!i113 1
+R5
+R6
+vout_ram
+R0
+!i10b 1
+!s100 1TmlGJ<jFi`=J>I<E=i960
+I3P4d8CHF3HhIHLae?egS@2
+R1
+R2
+w1721886903
+8C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/out_ram.v
+FC:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/out_ram.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/out_ram.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/out_ram.v|
+!i113 1
+R5
+R6
+voutput_layer
+R0
+!i10b 1
+!s100 7R^IzKFB9oM=22=blAJCF2
+IFQN]9VeL7LO<[5aZ5n_fL0
+R1
+R2
+w1721909488
+8C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/out_layer.v
+FC:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/out_layer.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/out_layer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/out_layer.v|
+!i113 1
+R5
+R6
+vpool1
+R0
+!i10b 1
+!s100 Y@KdgmdXgEG`YYVnizGo]0
+I8DE;A3hll>OThBM3>2RRJ2
+R1
+R2
+w1721799426
+8C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/pool1.v
+FC:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/pool1.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/pool1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/pool1.v|
+!i113 1
+R5
+R6
+vpool2
+R0
+!i10b 1
+!s100 X_RZg]VE?R1=l=a:aFd_E3
+IADX@k=B[XDD^523<SU25^1
+R1
+R2
+w1721902121
+8C:\Users\VeriMake_C1\Desktop\lyj\mnisty\sources\rtl\pool2.v
+FC:\Users\VeriMake_C1\Desktop\lyj\mnisty\sources\rtl\pool2.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\Users\VeriMake_C1\Desktop\lyj\mnisty\sources\rtl\pool2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\VeriMake_C1\Desktop\lyj\mnisty\sources\rtl\pool2.v|
+!i113 1
+R5
+R6
+vram_12x12x3
+R0
+!i10b 1
+!s100 c=V8fe`CWRD?igZJUYG6A0
+I2Y^@K6WLRNzMX=T<7lVGR1
+R1
+R2
+w1722407297
+8C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/12x12x3ram.v
+FC:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/12x12x3ram.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/12x12x3ram.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/12x12x3ram.v|
+!i113 1
+R5
+R6
+vram_24x24x3
+R0
+!i10b 1
+!s100 RZ=35fUM;]7[a5BlPXO6T3
+I;4ZPBRYIO>zc>LaaV0lg^0
+R1
+R2
+w1722404715
+8C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/24x24x3ram.v
+FC:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/24x24x3ram.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/24x24x3ram.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/24x24x3ram.v|
+!i113 1
+R5
+R6
+vram_4x4x3
+R0
+!i10b 1
+!s100 HO1;EeKZ_jSI;EAg6l53C0
+Ieh4]nKBbgC_>G=4DPS?6z1
+R1
+R2
+w1722485731
+8C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/4x4x3ram.v
+FC:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/4x4x3ram.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/4x4x3ram.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/4x4x3ram.v|
+!i113 1
+R5
+R6
+vram_8x8x3
+R0
+!i10b 1
+!s100 9JN?a_1EWniXzf9=@`8G>3
+IgoZNb9^;gNYm^k7aYLO]K3
+R1
+R2
+w1722407006
+8C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/8x8x3ram.v
+FC:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/8x8x3ram.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/8x8x3ram.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/8x8x3ram.v|
+!i113 1
+R5
+R6
+vram_accum
+R0
+!i10b 1
+!s100 @cGiFXH>6h<f9kCI;2<V<3
+IcX54D]1Oh8JUICTZeQ4Ii3
+R1
+R2
+w1723883118
+8C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\accum_ram.v
+FC:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\accum_ram.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\accum_ram.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\accum_ram.v|
+!i113 1
+R5
+R6
+vrom_8x144x3
+R0
+!i10b 1
+!s100 P=g4I^O:MiXMV[S@Y=zNb3
+IRg3SIP@PgHo50kZ722nG33
+R1
+R2
+w1721886975
+Z11 8C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/rom_model_2.v
+Z12 FC:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/rom_model_2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+Z13 !s107 C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/rom_model_2.v|
+Z14 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/rom_model_2.v|
+!i113 1
+R5
+R6
+vrom_8x784
+R0
+!i10b 1
+!s100 o]LfEl`IPN1:@cKa=74fi2
+IkU[IR^:F9KC]B0A6^c8nO3
+R1
+R2
+w1723790962
+8C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\rom_model.v
+FC:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\rom_model.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\rom_model.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\rom_model.v|
+!i113 1
+R5
+R6
+vrom_8x784x3
+!s110 1721791216
+!i10b 1
+!s100 @9`=iO@Vn8e@_zG3bJYg51
+IX[m=X[0Bz2?GajWe=YCfb0
+R1
+R2
+w1721714088
+R11
+R12
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1721791216.000000
+R13
+R14
+!i113 1
+R5
+R6
+vtb_conv1
+R0
+!i10b 1
+!s100 ?Himn^QX8Xnhm>Y:67TTZ1
+IjiYN^gHW^M62ECRdPh5EA2
+R1
+R2
+w1723892413
+8C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\conv1_tb.v
+FC:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\conv1_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\conv1_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\conv1_tb.v|
+!i113 1
+R5
+R6
+vtb_conv2
+R0
+!i10b 1
+!s100 7>Yo;oHl:[XXkT=eK?@hG0
+IoZ^5A<31WiNQL?^X@SLM83
+R1
+R2
+w1721874947
+8C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv2_tb.v
+FC:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv2_tb.v
+L0 7
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv2_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv2_tb.v|
+!i113 1
+R5
+R6

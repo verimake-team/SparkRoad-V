@@ -1,0 +1,472 @@
+=========================================================================================================
+Auto created by Tang Dynasty v5.6.59063
+Copyright (c) 2012-2022 Anlogic
+Fri Aug  2 18:49:44 2024
+=========================================================================================================
+
+
+Top Model:                test_camera                                                     
+Device:                   eagle_s20                                                       
+Timing Constraint File:                                                                   
+STA Level:                Detail                                                          
+Speed Grade:              NA                                                              
+
+=========================================================================================================
+Timing constraint:        clock: DeriveClock                                              
+Clock = DeriveClock, period 20ns, rising at 0ns, falling at 10ns
+
+652 endpoints analyzed totally, and 700 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0.000), 0 hold errors (TNS = 0.000)
+Minimum period is 1.96ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_pool1/ren_reg (6 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check):     18.040 ns                                                       
+ Start Point:             u_pool1/upstream_busy_d1_reg.clk (rising edge triggered by clock DeriveClock)
+ End Point:               u_pool1/ren_reg.d (rising edge triggered by clock DeriveClock)  
+ Clock group:             DeriveClock                                                     
+ Process:                 Slow                                                            
+ Data Path Delay:         1.950ns  (logic 1.950ns, net 0.000ns, 100% logic)               
+ Logic Levels:            5                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_pool1/upstream_busy_d1_reg.clk                            clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_pool1/upstream_busy_d1_reg.q                              clk2q                   0.240 r     0.240
+ u_pool1/ren_i2.I[1]                                         net  (fanout = 1)       0.000 f     0.240
+ u_pool1/ren_i2.O                                            cell                    0.120 r     0.360
+ u_pool1/ren_i1.sel                                          net  (fanout = 1)       0.000 f     0.360
+ u_pool1/ren_i1.o                                            cell                    0.360 r     0.720
+ u_pool1/ren_i5.i1                                           net  (fanout = 3)       0.000 f     0.720
+ u_pool1/ren_i5.o                                            cell                    0.360 r     1.080
+ u_pool1/ren_i4.i1                                           net  (fanout = 1)       0.000 f     1.080
+ u_pool1/ren_i4.o                                            cell                    0.360 r     1.440
+ u_pool1/ren_i.i1                                            net  (fanout = 1)       0.000 f     1.440
+ u_pool1/ren_i.o                                             cell                    0.360 r     1.800
+ u_pool1/ren_reg.d                                           net  (fanout = 1)       0.000 f     1.800
+ u_pool1/ren_reg                                             path2reg                0.150       1.950
+ Arrival time                                                                        1.950                  (5 lvl)       
+
+ u_pool1/ren_reg.clk                                                                 0.000       0.000
+ capture clock edge                                                                 20.000      20.000
+ cell setup                                                                         -0.010      19.990
+ clock uncertainty                                                                  -0.000      19.990
+ clock recovergence pessimism                                                        0.000      19.990
+ Required time                                                                      19.990            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              18.040ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     18.160 ns                                                       
+ Start Point:             u_pool1/ren_reg.clk (rising edge triggered by clock DeriveClock)
+ End Point:               u_pool1/ren_reg.d (rising edge triggered by clock DeriveClock)  
+ Clock group:             DeriveClock                                                     
+ Process:                 Slow                                                            
+ Data Path Delay:         1.830ns  (logic 1.830ns, net 0.000ns, 100% logic)               
+ Logic Levels:            4                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_pool1/ren_reg.clk                                         clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_pool1/ren_reg.q                                           clk2q                   0.240 r     0.240
+ u_pool1/ren_i1.i0                                           net  (fanout = 3)       0.000 f     0.240
+ u_pool1/ren_i1.o                                            cell                    0.360 r     0.600
+ u_pool1/ren_i5.i1                                           net  (fanout = 3)       0.000 f     0.600
+ u_pool1/ren_i5.o                                            cell                    0.360 r     0.960
+ u_pool1/ren_i4.i1                                           net  (fanout = 1)       0.000 f     0.960
+ u_pool1/ren_i4.o                                            cell                    0.360 r     1.320
+ u_pool1/ren_i.i1                                            net  (fanout = 1)       0.000 f     1.320
+ u_pool1/ren_i.o                                             cell                    0.360 r     1.680
+ u_pool1/ren_reg.d                                           net  (fanout = 1)       0.000 f     1.680
+ u_pool1/ren_reg                                             path2reg                0.150       1.830
+ Arrival time                                                                        1.830                  (4 lvl)       
+
+ u_pool1/ren_reg.clk                                                                 0.000       0.000
+ capture clock edge                                                                 20.000      20.000
+ cell setup                                                                         -0.010      19.990
+ clock uncertainty                                                                  -0.000      19.990
+ clock recovergence pessimism                                                        0.000      19.990
+ Required time                                                                      19.990            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              18.160ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     18.400 ns                                                       
+ Start Point:             u_pool1/upstream_busy_d1_reg.clk (rising edge triggered by clock DeriveClock)
+ End Point:               u_pool1/ren_reg.d (rising edge triggered by clock DeriveClock)  
+ Clock group:             DeriveClock                                                     
+ Process:                 Slow                                                            
+ Data Path Delay:         1.590ns  (logic 1.590ns, net 0.000ns, 100% logic)               
+ Logic Levels:            4                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_pool1/upstream_busy_d1_reg.clk                            clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_pool1/upstream_busy_d1_reg.q                              clk2q                   0.240 r     0.240
+ u_pool1/ren_i2.I[1]                                         net  (fanout = 1)       0.000 f     0.240
+ u_pool1/ren_i2.O                                            cell                    0.120 r     0.360
+ u_pool1/ren_i1.sel                                          net  (fanout = 1)       0.000 f     0.360
+ u_pool1/ren_i1.o                                            cell                    0.360 r     0.720
+ u_pool1/ren_i4.i0                                           net  (fanout = 3)       0.000 f     0.720
+ u_pool1/ren_i4.o                                            cell                    0.360 r     1.080
+ u_pool1/ren_i.i1                                            net  (fanout = 1)       0.000 f     1.080
+ u_pool1/ren_i.o                                             cell                    0.360 r     1.440
+ u_pool1/ren_reg.d                                           net  (fanout = 1)       0.000 f     1.440
+ u_pool1/ren_reg                                             path2reg                0.150       1.590
+ Arrival time                                                                        1.590                  (4 lvl)       
+
+ u_pool1/ren_reg.clk                                                                 0.000       0.000
+ capture clock edge                                                                 20.000      20.000
+ cell setup                                                                         -0.010      19.990
+ clock uncertainty                                                                  -0.000      19.990
+ clock recovergence pessimism                                                        0.000      19.990
+ Required time                                                                      19.990            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              18.400ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_pool2/ren_reg (6 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check):     18.040 ns                                                       
+ Start Point:             u_pool2/upstream_busy_d1_reg.clk (rising edge triggered by clock DeriveClock)
+ End Point:               u_pool2/ren_reg.d (rising edge triggered by clock DeriveClock)  
+ Clock group:             DeriveClock                                                     
+ Process:                 Slow                                                            
+ Data Path Delay:         1.950ns  (logic 1.950ns, net 0.000ns, 100% logic)               
+ Logic Levels:            5                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_pool2/upstream_busy_d1_reg.clk                            clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_pool2/upstream_busy_d1_reg.q                              clk2q                   0.240 r     0.240
+ u_pool2/ren_i2.I[1]                                         net  (fanout = 1)       0.000 f     0.240
+ u_pool2/ren_i2.O                                            cell                    0.120 r     0.360
+ u_pool2/ren_i1.sel                                          net  (fanout = 1)       0.000 f     0.360
+ u_pool2/ren_i1.o                                            cell                    0.360 r     0.720
+ u_pool2/ren_i5.i1                                           net  (fanout = 3)       0.000 f     0.720
+ u_pool2/ren_i5.o                                            cell                    0.360 r     1.080
+ u_pool2/ren_i4.i1                                           net  (fanout = 1)       0.000 f     1.080
+ u_pool2/ren_i4.o                                            cell                    0.360 r     1.440
+ u_pool2/ren_i.i1                                            net  (fanout = 1)       0.000 f     1.440
+ u_pool2/ren_i.o                                             cell                    0.360 r     1.800
+ u_pool2/ren_reg.d                                           net  (fanout = 1)       0.000 f     1.800
+ u_pool2/ren_reg                                             path2reg                0.150       1.950
+ Arrival time                                                                        1.950                  (5 lvl)       
+
+ u_pool2/ren_reg.clk                                                                 0.000       0.000
+ capture clock edge                                                                 20.000      20.000
+ cell setup                                                                         -0.010      19.990
+ clock uncertainty                                                                  -0.000      19.990
+ clock recovergence pessimism                                                        0.000      19.990
+ Required time                                                                      19.990            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              18.040ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     18.160 ns                                                       
+ Start Point:             u_pool2/ren_reg.clk (rising edge triggered by clock DeriveClock)
+ End Point:               u_pool2/ren_reg.d (rising edge triggered by clock DeriveClock)  
+ Clock group:             DeriveClock                                                     
+ Process:                 Slow                                                            
+ Data Path Delay:         1.830ns  (logic 1.830ns, net 0.000ns, 100% logic)               
+ Logic Levels:            4                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_pool2/ren_reg.clk                                         clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_pool2/ren_reg.q                                           clk2q                   0.240 r     0.240
+ u_pool2/ren_i1.i0                                           net  (fanout = 3)       0.000 f     0.240
+ u_pool2/ren_i1.o                                            cell                    0.360 r     0.600
+ u_pool2/ren_i5.i1                                           net  (fanout = 3)       0.000 f     0.600
+ u_pool2/ren_i5.o                                            cell                    0.360 r     0.960
+ u_pool2/ren_i4.i1                                           net  (fanout = 1)       0.000 f     0.960
+ u_pool2/ren_i4.o                                            cell                    0.360 r     1.320
+ u_pool2/ren_i.i1                                            net  (fanout = 1)       0.000 f     1.320
+ u_pool2/ren_i.o                                             cell                    0.360 r     1.680
+ u_pool2/ren_reg.d                                           net  (fanout = 1)       0.000 f     1.680
+ u_pool2/ren_reg                                             path2reg                0.150       1.830
+ Arrival time                                                                        1.830                  (4 lvl)       
+
+ u_pool2/ren_reg.clk                                                                 0.000       0.000
+ capture clock edge                                                                 20.000      20.000
+ cell setup                                                                         -0.010      19.990
+ clock uncertainty                                                                  -0.000      19.990
+ clock recovergence pessimism                                                        0.000      19.990
+ Required time                                                                      19.990            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              18.160ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     18.400 ns                                                       
+ Start Point:             u_pool2/upstream_busy_d1_reg.clk (rising edge triggered by clock DeriveClock)
+ End Point:               u_pool2/ren_reg.d (rising edge triggered by clock DeriveClock)  
+ Clock group:             DeriveClock                                                     
+ Process:                 Slow                                                            
+ Data Path Delay:         1.590ns  (logic 1.590ns, net 0.000ns, 100% logic)               
+ Logic Levels:            4                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_pool2/upstream_busy_d1_reg.clk                            clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_pool2/upstream_busy_d1_reg.q                              clk2q                   0.240 r     0.240
+ u_pool2/ren_i2.I[1]                                         net  (fanout = 1)       0.000 f     0.240
+ u_pool2/ren_i2.O                                            cell                    0.120 r     0.360
+ u_pool2/ren_i1.sel                                          net  (fanout = 1)       0.000 f     0.360
+ u_pool2/ren_i1.o                                            cell                    0.360 r     0.720
+ u_pool2/ren_i4.i0                                           net  (fanout = 3)       0.000 f     0.720
+ u_pool2/ren_i4.o                                            cell                    0.360 r     1.080
+ u_pool2/ren_i.i1                                            net  (fanout = 1)       0.000 f     1.080
+ u_pool2/ren_i.o                                             cell                    0.360 r     1.440
+ u_pool2/ren_reg.d                                           net  (fanout = 1)       0.000 f     1.440
+ u_pool2/ren_reg                                             path2reg                0.150       1.590
+ Arrival time                                                                        1.590                  (4 lvl)       
+
+ u_pool2/ren_reg.clk                                                                 0.000       0.000
+ capture clock edge                                                                 20.000      20.000
+ cell setup                                                                         -0.010      19.990
+ clock uncertainty                                                                  -0.000      19.990
+ clock recovergence pessimism                                                        0.000      19.990
+ Required time                                                                      19.990            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              18.400ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_fc/read_flag_reg (7 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check):     18.160 ns                                                       
+ Start Point:             u_fc/layer_ren_fft1_reg.clk (rising edge triggered by clock DeriveClock)
+ End Point:               u_fc/read_flag_reg.d (rising edge triggered by clock DeriveClock)
+ Clock group:             DeriveClock                                                     
+ Process:                 Slow                                                            
+ Data Path Delay:         1.830ns  (logic 1.830ns, net 0.000ns, 100% logic)               
+ Logic Levels:            5                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_fc/layer_ren_fft1_reg.clk                                 clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_fc/layer_ren_fft1_reg.q                                   clk2q                   0.240 r     0.240
+ u_fc/read_flag_i4.I[0]                                      net  (fanout = 2)       0.000 f     0.240
+ u_fc/read_flag_i4.O                                         cell                    0.240 r     0.480
+ u_fc/read_flag_i3.I[0]                                      net  (fanout = 1)       0.000 f     0.480
+ u_fc/read_flag_i3.O                                         cell                    0.120 r     0.600
+ u_fc/read_flag_i2.sel                                       net  (fanout = 1)       0.000 f     0.600
+ u_fc/read_flag_i2.o                                         cell                    0.360 r     0.960
+ u_fc/read_flag_i1.i0                                        net  (fanout = 1)       0.000 f     0.960
+ u_fc/read_flag_i1.o                                         cell                    0.360 r     1.320
+ u_fc/read_flag_i.i0                                         net  (fanout = 1)       0.000 f     1.320
+ u_fc/read_flag_i.o                                          cell                    0.360 r     1.680
+ u_fc/read_flag_reg.d                                        net  (fanout = 1)       0.000 f     1.680
+ u_fc/read_flag_reg                                          path2reg                0.150       1.830
+ Arrival time                                                                        1.830                  (5 lvl)       
+
+ u_fc/read_flag_reg.clk                                                              0.000       0.000
+ capture clock edge                                                                 20.000      20.000
+ cell setup                                                                         -0.010      19.990
+ clock uncertainty                                                                  -0.000      19.990
+ clock recovergence pessimism                                                        0.000      19.990
+ Required time                                                                      19.990            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              18.160ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     18.160 ns                                                       
+ Start Point:             u_fc/layer_ren_fft2_reg.clk (rising edge triggered by clock DeriveClock)
+ End Point:               u_fc/read_flag_reg.d (rising edge triggered by clock DeriveClock)
+ Clock group:             DeriveClock                                                     
+ Process:                 Slow                                                            
+ Data Path Delay:         1.830ns  (logic 1.830ns, net 0.000ns, 100% logic)               
+ Logic Levels:            5                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_fc/layer_ren_fft2_reg.clk                                 clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_fc/layer_ren_fft2_reg.q                                   clk2q                   0.240 r     0.240
+ u_fc/read_flag_i4.I[1]                                      net  (fanout = 2)       0.000 f     0.240
+ u_fc/read_flag_i4.O                                         cell                    0.240 r     0.480
+ u_fc/read_flag_i3.I[0]                                      net  (fanout = 1)       0.000 f     0.480
+ u_fc/read_flag_i3.O                                         cell                    0.120 r     0.600
+ u_fc/read_flag_i2.sel                                       net  (fanout = 1)       0.000 f     0.600
+ u_fc/read_flag_i2.o                                         cell                    0.360 r     0.960
+ u_fc/read_flag_i1.i0                                        net  (fanout = 1)       0.000 f     0.960
+ u_fc/read_flag_i1.o                                         cell                    0.360 r     1.320
+ u_fc/read_flag_i.i0                                         net  (fanout = 1)       0.000 f     1.320
+ u_fc/read_flag_i.o                                          cell                    0.360 r     1.680
+ u_fc/read_flag_reg.d                                        net  (fanout = 1)       0.000 f     1.680
+ u_fc/read_flag_reg                                          path2reg                0.150       1.830
+ Arrival time                                                                        1.830                  (5 lvl)       
+
+ u_fc/read_flag_reg.clk                                                              0.000       0.000
+ capture clock edge                                                                 20.000      20.000
+ cell setup                                                                         -0.010      19.990
+ clock uncertainty                                                                  -0.000      19.990
+ clock recovergence pessimism                                                        0.000      19.990
+ Required time                                                                      19.990            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              18.160ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     18.400 ns                                                       
+ Start Point:             u_fc/layer_ren_fft2_reg.clk (rising edge triggered by clock DeriveClock)
+ End Point:               u_fc/read_flag_reg.d (rising edge triggered by clock DeriveClock)
+ Clock group:             DeriveClock                                                     
+ Process:                 Slow                                                            
+ Data Path Delay:         1.590ns  (logic 1.590ns, net 0.000ns, 100% logic)               
+ Logic Levels:            4                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_fc/layer_ren_fft2_reg.clk                                 clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_fc/layer_ren_fft2_reg.q                                   clk2q                   0.240 r     0.240
+ u_fc/read_flag_i3.I[1]                                      net  (fanout = 2)       0.000 f     0.240
+ u_fc/read_flag_i3.O                                         cell                    0.120 r     0.360
+ u_fc/read_flag_i2.sel                                       net  (fanout = 1)       0.000 f     0.360
+ u_fc/read_flag_i2.o                                         cell                    0.360 r     0.720
+ u_fc/read_flag_i1.i0                                        net  (fanout = 1)       0.000 f     0.720
+ u_fc/read_flag_i1.o                                         cell                    0.360 r     1.080
+ u_fc/read_flag_i.i0                                         net  (fanout = 1)       0.000 f     1.080
+ u_fc/read_flag_i.o                                          cell                    0.360 r     1.440
+ u_fc/read_flag_reg.d                                        net  (fanout = 1)       0.000 f     1.440
+ u_fc/read_flag_reg                                          path2reg                0.150       1.590
+ Arrival time                                                                        1.590                  (4 lvl)       
+
+ u_fc/read_flag_reg.clk                                                              0.000       0.000
+ capture clock edge                                                                 20.000      20.000
+ cell setup                                                                         -0.010      19.990
+ clock uncertainty                                                                  -0.000      19.990
+ clock recovergence pessimism                                                        0.000      19.990
+ Required time                                                                      19.990            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              18.400ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point u_conv1/upstream_busy_d1_reg (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.260 ns                                                        
+ Start Point:             reg0.clk (rising edge triggered by clock DeriveClock)           
+ End Point:               u_conv1/upstream_busy_d1_reg.d (rising edge triggered by clock DeriveClock)
+ Clock group:             DeriveClock                                                     
+ Process:                 Fast                                                            
+ Data Path Delay:         0.270ns  (logic 0.270ns, net 0.000ns, 100% logic)               
+ Logic Levels:            1                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ reg0.clk                                                    clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ reg0.q[22]                                                  clk2q                   0.000 f     0.000
+ clk_div_i.I                                                 net  (fanout = 2)       0.000 f     0.000
+ clk_div_i.O                                                 cell                    0.120 r     0.120
+ u_conv1.upstream_busy                                       net  (fanout = 1)       0.000 f     0.120
+ u_conv1/upstream_busy_d1_reg.d                              net  (fanout = 2)       0.000 f     0.120
+ u_conv1/upstream_busy_d1_reg                                path2reg                0.150       0.270
+ Arrival time                                                                        0.270                  (1 lvl)       
+
+ u_conv1/upstream_busy_d1_reg.clk                                                    0.000       0.000
+ capture clock edge                                                                  0.000       0.000
+ cell hold                                                                           0.010       0.010
+ clock uncertainty                                                                   0.000       0.010
+ clock recovergence pessimism                                                        0.000       0.010
+ Required time                                                                       0.010            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.260ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_fc/layer_ren_fft2_reg (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.380 ns                                                        
+ Start Point:             u_fc/layer_ren_fft1_reg.clk (rising edge triggered by clock DeriveClock)
+ End Point:               u_fc/layer_ren_fft2_reg.d (rising edge triggered by clock DeriveClock)
+ Clock group:             DeriveClock                                                     
+ Process:                 Fast                                                            
+ Data Path Delay:         0.390ns  (logic 0.390ns, net 0.000ns, 100% logic)               
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_fc/layer_ren_fft1_reg.clk                                 clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_fc/layer_ren_fft1_reg.q                                   clk2q                   0.240 r     0.240
+ u_fc/layer_ren_fft2_reg.d                                   net  (fanout = 2)       0.000 f     0.240
+ u_fc/layer_ren_fft2_reg                                     path2reg                0.150       0.390
+ Arrival time                                                                        0.390                  (0 lvl)       
+
+ u_fc/layer_ren_fft2_reg.clk                                                         0.000       0.000
+ capture clock edge                                                                  0.000       0.000
+ cell hold                                                                           0.010       0.010
+ clock uncertainty                                                                   0.000       0.010
+ clock recovergence pessimism                                                        0.000       0.010
+ Required time                                                                       0.010            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.380ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_fc/compare_flag_fft1_reg (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.380 ns                                                        
+ Start Point:             u_fc/compare_flag_reg.clk (rising edge triggered by clock DeriveClock)
+ End Point:               u_fc/compare_flag_fft1_reg.d (rising edge triggered by clock DeriveClock)
+ Clock group:             DeriveClock                                                     
+ Process:                 Fast                                                            
+ Data Path Delay:         0.390ns  (logic 0.390ns, net 0.000ns, 100% logic)               
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_fc/compare_flag_reg.clk                                   clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_fc/compare_flag_reg.q                                     clk2q                   0.240 r     0.240
+ u_fc/compare_flag_fft1_reg.d                                net  (fanout = 8)       0.000 f     0.240
+ u_fc/compare_flag_fft1_reg                                  path2reg                0.150       0.390
+ Arrival time                                                                        0.390                  (0 lvl)       
+
+ u_fc/compare_flag_fft1_reg.clk                                                      0.000       0.000
+ capture clock edge                                                                  0.000       0.000
+ cell hold                                                                           0.010       0.010
+ clock uncertainty                                                                   0.000       0.010
+ clock recovergence pessimism                                                        0.000       0.010
+ Required time                                                                       0.010            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.380ns          
+
+---------------------------------------------------------------------------------------------------------
+
+
+=========================================================================================================
+Timing summary:                                                                           
+---------------------------------------------------------------------------------------------------------
+Constraint path number: 700 (STA coverage = 26.01%)
+Timing violations: 0 setup errors, and 0 hold errors.
+Minimal setup slack: 18.040, minimal hold slack: 0.260
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  DeriveClock (50.0MHz)                          1.960ns     510.204MHz        0.000ns       332        0.000ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
+---------------------------------------------------------------------------------------------------------

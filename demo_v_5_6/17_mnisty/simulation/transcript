@@ -1,0 +1,521 @@
+# Reading C:/modelsim_dlx64_10.6c/tcl/vsim/pref.tcl
+# OpenFile C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv1.mpf
+# Loading project conv1
+vsim -gui work.tb_conv1
+# vsim -gui work.tb_conv1 
+# Start time: 14:38:42 on Aug 16,2024
+# //  ModelSim DE-64 10.6c Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim DE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.conv1
+# Loading work.ram_24x24x3
+# Loading work.pool1
+# Loading work.ram_12x12x3
+# Loading work.conv2
+# Loading work.ram_accum
+# Loading work.ram_8x8x3
+# Loading work.pool2
+# Loading work.ram_4x4x3
+# Loading work.fc
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv1/upstream_busy
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: VeriMake_C1  Hostname: DESKTOP-7REVOC9  ProcessID: 7896
+#           Attempting to use alternate WLF file "./wlft3ws9q4".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft3ws9q4
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv1/data_in
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv1/raddr
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv1/waddr
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv1/data_out
+add wave -position insertpoint  \
+sim:/tb_conv1/conv1_data_in
+add wave -position insertpoint  \
+sim:/tb_conv1/conv1_raddr
+add wave -position insertpoint  \
+sim:/tb_conv1/conv1_busy
+add wave -position insertpoint  \
+sim:/tb_conv1/conv1_data_in
+add wave -position insertpoint  \
+sim:/tb_conv1/conv1_raddr
+add wave -position insertpoint  \
+sim:/tb_conv1/conv1_waddr
+add wave -position insertpoint  \
+sim:/tb_conv1/conv1_data_out
+add wave -position insertpoint  \
+sim:/tb_conv1/pool1_ren
+add wave -position insertpoint  \
+sim:/tb_conv1/pool1_raddr
+add wave -position insertpoint  \
+sim:/tb_conv1/pool1_data_in
+add wave -position insertpoint  \
+sim:/tb_conv1/pool1_waddr
+add wave -position insertpoint  \
+sim:/tb_conv1/pool1_data_out
+add wave -position insertpoint  \
+sim:/tb_conv1/conv2_busy
+add wave -position insertpoint  \
+sim:/tb_conv1/conv2_data_in
+add wave -position insertpoint  \
+sim:/tb_conv1/conv2_raddr
+add wave -position insertpoint  \
+sim:/tb_conv1/conv2_waddr
+add wave -position insertpoint  \
+sim:/tb_conv1/conv2_data_out
+add wave -position insertpoint  \
+sim:/tb_conv1/pool2_ren
+add wave -position insertpoint  \
+sim:/tb_conv1/pool2_raddr
+add wave -position insertpoint  \
+sim:/tb_conv1/pool2_data_in
+add wave -position insertpoint  \
+sim:/tb_conv1/pool2_waddr
+add wave -position insertpoint  \
+sim:/tb_conv1/pool2_data_out
+add wave -position insertpoint  \
+sim:/tb_conv1/fc_data_in
+add wave -position insertpoint  \
+sim:/tb_conv1/fc_raddr
+add wave -position insertpoint  \
+sim:/tb_conv1/fc_data_out
+run
+run
+restart
+run
+run
+run
+run
+run
+run
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# Compile of conv2_tb.v was successful.
+# Compile of rom_model_2.v was successful.
+# Compile of pool1.v was successful.
+# Compile of conv2.v was successful.
+# Compile of conv1_ram.v was successful.
+# Compile of fc1.v was successful.
+# Compile of out_layer.v was successful.
+# Compile of pool2.v was successful.
+# Compile of 24x24x3ram.v was successful.
+# Compile of 12x12x3ram.v was successful.
+# Compile of 8x8x3ram.v was successful.
+# Compile of 4x4x3ram.v was successful.
+# Compile of accum_ram.v was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.conv1
+# Loading work.ram_24x24x3
+# Loading work.pool1
+# Loading work.ram_12x12x3
+# Loading work.conv2
+# Loading work.ram_accum
+# Loading work.ram_8x8x3
+# Loading work.pool2
+# Loading work.ram_4x4x3
+# Loading work.fc
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv2/accum2_out
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv2/accum1_out
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv2/accum_raddr
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# Compile of conv2_tb.v was successful.
+# Compile of rom_model_2.v was successful.
+# Compile of pool1.v was successful.
+# Compile of conv2.v was successful.
+# Compile of conv1_ram.v was successful.
+# Compile of fc1.v was successful.
+# Compile of out_layer.v was successful.
+# Compile of pool2.v was successful.
+# Compile of 24x24x3ram.v was successful.
+# Compile of 12x12x3ram.v was successful.
+# Compile of 8x8x3ram.v was successful.
+# Compile of 4x4x3ram.v was successful.
+# Compile of accum_ram.v was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.conv1
+# Loading work.ram_24x24x3
+# Loading work.pool1
+# Loading work.ram_12x12x3
+# Loading work.conv2
+# Loading work.ram_accum
+# Loading work.ram_8x8x3
+# Loading work.pool2
+# Loading work.ram_4x4x3
+# Loading work.fc
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv2/index_x
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv2/index_y
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv2/channel_cnt
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv2/layer_cnt
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv2/state
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv2/accum_waddr
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv2/conv_out
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# Compile of conv2_tb.v was successful.
+# Compile of rom_model_2.v was successful.
+# Compile of pool1.v was successful.
+# Compile of conv2.v was successful.
+# Compile of conv1_ram.v was successful.
+# Compile of fc1.v was successful.
+# Compile of out_layer.v was successful.
+# Compile of pool2.v was successful.
+# Compile of 24x24x3ram.v was successful.
+# Compile of 12x12x3ram.v was successful.
+# Compile of 8x8x3ram.v was successful.
+# Compile of 4x4x3ram.v was successful.
+# Compile of accum_ram.v was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.conv1
+# Loading work.ram_24x24x3
+# Loading work.pool1
+# Loading work.ram_12x12x3
+# Loading work.conv2
+# Loading work.ram_accum
+# Loading work.ram_8x8x3
+# Loading work.pool2
+# Loading work.ram_4x4x3
+# Loading work.fc
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# Compile of conv2_tb.v was successful.
+# Compile of rom_model_2.v was successful.
+# Compile of pool1.v was successful.
+# Compile of conv2.v was successful.
+# Compile of conv1_ram.v was successful.
+# Compile of fc1.v was successful.
+# Compile of out_layer.v was successful.
+# Compile of pool2.v was successful.
+# Compile of 24x24x3ram.v was successful.
+# Compile of 12x12x3ram.v was successful.
+# Compile of 8x8x3ram.v was successful.
+# Compile of 4x4x3ram.v was successful.
+# Compile of accum_ram.v was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.conv1
+# Loading work.ram_24x24x3
+# Loading work.pool1
+# Loading work.ram_12x12x3
+# Loading work.conv2
+# Loading work.ram_8x8x3
+# Loading work.pool2
+# Loading work.ram_4x4x3
+# Loading work.fc
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_conv1/u_conv2/accum_raddr'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_conv1/u_conv2/accum_waddr'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_conv1/u_conv2/accum1_out'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_conv1/u_conv2/accum2_out'. 
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# Compile of conv2_tb.v was successful.
+# Compile of rom_model_2.v was successful.
+# Compile of pool1.v was successful.
+# Compile of conv2.v was successful.
+# Compile of conv1_ram.v was successful.
+# Compile of fc1.v was successful.
+# Compile of out_layer.v was successful.
+# Compile of pool2.v was successful.
+# Compile of 24x24x3ram.v was successful.
+# Compile of 12x12x3ram.v was successful.
+# Compile of 8x8x3ram.v was successful.
+# Compile of 4x4x3ram.v was successful.
+# Compile of accum_ram.v was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.conv1
+# Loading work.ram_24x24x3
+# Loading work.pool1
+# Loading work.ram_12x12x3
+# Loading work.conv2
+# Loading work.ram_8x8x3
+# Loading work.pool2
+# Loading work.ram_4x4x3
+# Loading work.fc
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv2/temp_out
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv2/sum3
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv2/out_buffer
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv2/buffer
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# Compile of conv2_tb.v was successful.
+# Compile of rom_model_2.v was successful.
+# Compile of pool1.v was successful.
+# Compile of conv2.v was successful.
+# Compile of conv1_ram.v was successful.
+# Compile of fc1.v was successful.
+# Compile of out_layer.v was successful.
+# Compile of pool2.v was successful.
+# Compile of 24x24x3ram.v was successful.
+# Compile of 12x12x3ram.v was successful.
+# Compile of 8x8x3ram.v was successful.
+# Compile of 4x4x3ram.v was successful.
+# Compile of accum_ram.v was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.conv1
+# Loading work.ram_24x24x3
+# Loading work.pool1
+# Loading work.ram_12x12x3
+# Loading work.conv2
+# Loading work.ram_8x8x3
+# Loading work.pool2
+# Loading work.ram_4x4x3
+# Loading work.fc
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# Compile of conv2_tb.v was successful.
+# Compile of rom_model_2.v was successful.
+# Compile of pool1.v was successful.
+# Compile of conv2.v was successful.
+# Compile of conv1_ram.v was successful.
+# Compile of fc1.v was successful.
+# Compile of out_layer.v was successful.
+# Compile of pool2.v was successful.
+# Compile of 24x24x3ram.v was successful.
+# Compile of 12x12x3ram.v was successful.
+# Compile of 8x8x3ram.v was successful.
+# Compile of 4x4x3ram.v was successful.
+# Compile of accum_ram.v was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.conv1
+# Loading work.ram_24x24x3
+# Loading work.pool1
+# Loading work.ram_12x12x3
+# Loading work.conv2
+# Loading work.ram_8x8x3
+# Loading work.pool2
+# Loading work.ram_4x4x3
+# Loading work.fc
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# Compile of conv2_tb.v was successful.
+# Compile of rom_model_2.v was successful.
+# Compile of pool1.v was successful.
+# Compile of conv2.v was successful.
+# Compile of conv1_ram.v was successful.
+# Compile of fc1.v was successful.
+# Compile of out_layer.v was successful.
+# Compile of pool2.v was successful.
+# Compile of 24x24x3ram.v was successful.
+# Compile of 12x12x3ram.v was successful.
+# Compile of 8x8x3ram.v was successful.
+# Compile of 4x4x3ram.v was successful.
+# Compile of accum_ram.v was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.conv1
+# Loading work.ram_24x24x3
+# Loading work.pool1
+# Loading work.ram_12x12x3
+# Loading work.conv2
+# Loading work.ram_8x8x3
+# Loading work.pool2
+# Loading work.ram_4x4x3
+# Loading work.fc
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# Compile of conv2_tb.v was successful.
+# Compile of rom_model_2.v was successful.
+# Compile of pool1.v was successful.
+# Compile of conv2.v was successful.
+# Compile of conv1_ram.v was successful.
+# Compile of fc1.v was successful.
+# Compile of out_layer.v was successful.
+# Compile of pool2.v was successful.
+# Compile of 24x24x3ram.v was successful.
+# Compile of 12x12x3ram.v was successful.
+# Compile of 8x8x3ram.v was successful.
+# Compile of 4x4x3ram.v was successful.
+# Compile of accum_ram.v was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.conv1
+# Loading work.ram_24x24x3
+# Loading work.pool1
+# Loading work.ram_12x12x3
+# Loading work.conv2
+# Loading work.ram_8x8x3
+# Loading work.pool2
+# Loading work.ram_4x4x3
+# Loading work.fc
+run
+add wave -position insertpoint  \
+sim:/tb_conv1/u_ram_8x8x3/ram
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv2/wen
+restart
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# Compile of conv2_tb.v was successful.
+# Compile of rom_model_2.v was successful.
+# Compile of pool1.v was successful.
+# Compile of conv2.v was successful.
+# Compile of conv1_ram.v was successful.
+# Compile of fc1.v was successful.
+# Compile of out_layer.v was successful.
+# Compile of pool2.v was successful.
+# Compile of 24x24x3ram.v was successful.
+# Compile of 12x12x3ram.v was successful.
+# Compile of 8x8x3ram.v was successful.
+# Compile of 4x4x3ram.v was successful.
+# Compile of accum_ram.v was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.conv1
+# Loading work.ram_24x24x3
+# Loading work.pool1
+# Loading work.ram_12x12x3
+# Loading work.conv2
+# Loading work.ram_8x8x3
+# Loading work.pool2
+# Loading work.ram_4x4x3
+# Loading work.fc
+run
+# End time: 20:02:24 on Aug 17,2024, Elapsed time: 29:23:42
+# Errors: 62, Warnings: 0
