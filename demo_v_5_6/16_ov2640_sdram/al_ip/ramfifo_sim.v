@@ -1,10 +1,11 @@
-// Verilog netlist created by Tang Dynasty v5.6.59063
-// Thu Oct  6 13:01:16 2022
+// Verilog netlist created by TD v4.6.14756
+// Sun Apr  5 13:28:48 2020
 
 `timescale 1ns / 1ps
-module ramfifo  // ramfifo.v(14)
+module ramfifo  // al_ip/ramfifo.v(14)
   (
-  clk,
+  clkr,
+  clkw,
   di,
   re,
   rst,
@@ -16,1732 +17,453 @@ module ramfifo  // ramfifo.v(14)
   wrusedw
   );
 
-  input clk;  // ramfifo.v(24)
-  input [15:0] di;  // ramfifo.v(23)
-  input re;  // ramfifo.v(25)
-  input rst;  // ramfifo.v(22)
-  input we;  // ramfifo.v(24)
-  output [15:0] do;  // ramfifo.v(27)
-  output empty_flag;  // ramfifo.v(28)
-  output full_flag;  // ramfifo.v(29)
-  output [10:0] rdusedw;  // ramfifo.v(30)
-  output [10:0] wrusedw;  // ramfifo.v(31)
+  input clkr;  // al_ip/ramfifo.v(25)
+  input clkw;  // al_ip/ramfifo.v(24)
+  input [15:0] di;  // al_ip/ramfifo.v(23)
+  input re;  // al_ip/ramfifo.v(25)
+  input rst;  // al_ip/ramfifo.v(22)
+  input we;  // al_ip/ramfifo.v(24)
+  output [15:0] do;  // al_ip/ramfifo.v(27)
+  output empty_flag;  // al_ip/ramfifo.v(28)
+  output full_flag;  // al_ip/ramfifo.v(29)
+  output [10:0] rdusedw;  // al_ip/ramfifo.v(30)
+  output [10:0] wrusedw;  // al_ip/ramfifo.v(31)
 
-  wire logic_ramfifo_syn_1;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_2;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_3;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_4;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_5;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_6;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_7;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_8;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_9;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_10;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_11;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_12;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_13;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_14;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_15;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_16;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_17;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_18;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_19;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_20;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_21;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_22;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_23;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_24;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_25;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_26;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_27;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_28;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_29;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_30;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_31;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_32;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_33;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_45;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_46;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_47;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_48;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_49;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_50;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_51;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_52;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_53;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_54;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_55;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_56;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_57;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_58;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_59;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_60;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_61;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_62;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_63;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_64;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_65;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_66;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_67;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_68;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_69;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_70;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_71;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_72;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_73;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_74;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_75;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_76;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_78;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_79;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_80;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_81;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_82;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_83;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_84;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_85;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_86;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_87;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_88;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_89;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_90;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_91;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_92;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_93;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_94;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_95;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_96;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_97;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_98;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_99;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_100;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_101;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_102;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_103;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_104;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_105;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_106;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_107;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_108;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_109;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_152;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_154;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_158;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_159;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_160;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_161;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_162;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_163;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_164;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_165;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_166;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_167;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_168;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_169;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_173;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_175;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_205;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_225;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_226;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_227;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_228;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_229;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_230;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_231;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_232;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_233;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_234;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_235;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_253;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_255;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_257;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_259;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_261;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_263;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_265;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_267;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_269;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_271;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_276;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_278;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_280;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_282;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_284;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_286;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_288;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_290;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_292;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_296;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_298;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_300;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_302;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_304;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_306;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_308;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_310;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_312;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_314;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_319;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_321;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_323;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_325;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_327;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_329;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_331;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_333;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_335;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_539;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_540;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_541;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_542;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_543;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_544;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_545;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_546;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_547;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_548;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_549;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_550;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_551;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_552;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_553;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_554;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_555;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_556;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_557;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_558;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_559;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_605;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_606;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_607;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_608;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_609;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_610;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_611;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_612;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_613;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_614;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_615;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_616;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_617;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_618;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_619;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_620;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_621;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_622;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_623;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_624;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_625;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_672;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_673;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_674;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_675;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_676;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_677;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_678;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_679;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_680;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_681;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_682;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_730;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_731;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_732;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_733;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_734;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_735;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_736;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_737;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_738;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_739;  // ramfifo.v(39)
-  wire logic_ramfifo_syn_740;  // ramfifo.v(39)
-  wire clk_syn_1;  // ramfifo.v(24)
-  wire clk_syn_2;  // ramfifo.v(24)
-  wire clk_syn_3;  // ramfifo.v(24)
-  wire clk_syn_4;  // ramfifo.v(24)
-  wire clk_syn_5;  // ramfifo.v(24)
-  wire clk_syn_6;  // ramfifo.v(24)
-  wire clk_syn_7;  // ramfifo.v(24)
-  wire clk_syn_8;  // ramfifo.v(24)
-  wire clk_syn_9;  // ramfifo.v(24)
-  wire clk_syn_10;  // ramfifo.v(24)
-  wire clk_syn_11;  // ramfifo.v(24)
-  wire clk_syn_12;  // ramfifo.v(24)
-  wire clk_syn_14;  // ramfifo.v(24)
-  wire clk_syn_16;  // ramfifo.v(24)
-  wire clk_syn_18;  // ramfifo.v(24)
-  wire clk_syn_20;  // ramfifo.v(24)
-  wire clk_syn_22;  // ramfifo.v(24)
-  wire clk_syn_24;  // ramfifo.v(24)
-  wire clk_syn_26;  // ramfifo.v(24)
-  wire clk_syn_28;  // ramfifo.v(24)
-  wire clk_syn_30;  // ramfifo.v(24)
-  wire clk_syn_32;  // ramfifo.v(24)
-  wire clk_syn_34;  // ramfifo.v(24)
-  wire clk_syn_40;  // ramfifo.v(24)
-  wire clk_syn_42;  // ramfifo.v(24)
-  wire clk_syn_44;  // ramfifo.v(24)
-  wire clk_syn_46;  // ramfifo.v(24)
-  wire clk_syn_48;  // ramfifo.v(24)
-  wire clk_syn_50;  // ramfifo.v(24)
-  wire clk_syn_52;  // ramfifo.v(24)
-  wire clk_syn_54;  // ramfifo.v(24)
-  wire clk_syn_56;  // ramfifo.v(24)
-  wire clk_syn_58;  // ramfifo.v(24)
-  wire clk_syn_60;  // ramfifo.v(24)
-  wire clk_syn_62;  // ramfifo.v(24)
-  wire clk_syn_64;  // ramfifo.v(24)
-  wire clk_syn_66;  // ramfifo.v(24)
-  wire clk_syn_68;  // ramfifo.v(24)
-  wire clk_syn_70;  // ramfifo.v(24)
-  wire clk_syn_72;  // ramfifo.v(24)
-  wire clk_syn_74;  // ramfifo.v(24)
-  wire clk_syn_76;  // ramfifo.v(24)
-  wire clk_syn_78;  // ramfifo.v(24)
-  wire clk_syn_80;  // ramfifo.v(24)
-  wire clk_syn_81;  // ramfifo.v(24)
-  wire clk_syn_82;  // ramfifo.v(24)
-  wire clk_syn_83;  // ramfifo.v(24)
-  wire clk_syn_84;  // ramfifo.v(24)
-  wire clk_syn_85;  // ramfifo.v(24)
-  wire clk_syn_86;  // ramfifo.v(24)
-  wire clk_syn_87;  // ramfifo.v(24)
-  wire clk_syn_88;  // ramfifo.v(24)
-  wire clk_syn_89;  // ramfifo.v(24)
-  wire clk_syn_90;  // ramfifo.v(24)
-  wire clk_syn_91;  // ramfifo.v(24)
-  wire clk_syn_92;  // ramfifo.v(24)
-  wire clk_syn_94;  // ramfifo.v(24)
-  wire clk_syn_95;  // ramfifo.v(24)
-  wire clk_syn_96;  // ramfifo.v(24)
-  wire clk_syn_97;  // ramfifo.v(24)
-  wire clk_syn_98;  // ramfifo.v(24)
-  wire clk_syn_99;  // ramfifo.v(24)
-  wire clk_syn_100;  // ramfifo.v(24)
-  wire clk_syn_101;  // ramfifo.v(24)
-  wire clk_syn_102;  // ramfifo.v(24)
-  wire clk_syn_103;  // ramfifo.v(24)
-  wire clk_syn_104;  // ramfifo.v(24)
-  wire clk_syn_105;  // ramfifo.v(24)
-  wire clk_syn_107;  // ramfifo.v(24)
-  wire clk_syn_109;  // ramfifo.v(24)
-  wire clk_syn_111;  // ramfifo.v(24)
-  wire clk_syn_113;  // ramfifo.v(24)
-  wire clk_syn_115;  // ramfifo.v(24)
-  wire clk_syn_117;  // ramfifo.v(24)
-  wire clk_syn_119;  // ramfifo.v(24)
-  wire clk_syn_121;  // ramfifo.v(24)
-  wire clk_syn_123;  // ramfifo.v(24)
-  wire clk_syn_125;  // ramfifo.v(24)
-  wire clk_syn_127;  // ramfifo.v(24)
-  wire clk_syn_133;  // ramfifo.v(24)
-  wire clk_syn_135;  // ramfifo.v(24)
-  wire clk_syn_137;  // ramfifo.v(24)
-  wire clk_syn_139;  // ramfifo.v(24)
-  wire clk_syn_141;  // ramfifo.v(24)
-  wire clk_syn_143;  // ramfifo.v(24)
-  wire clk_syn_145;  // ramfifo.v(24)
-  wire clk_syn_147;  // ramfifo.v(24)
-  wire clk_syn_149;  // ramfifo.v(24)
-  wire clk_syn_151;  // ramfifo.v(24)
-  wire clk_syn_153;  // ramfifo.v(24)
-  wire clk_syn_155;  // ramfifo.v(24)
-  wire clk_syn_157;  // ramfifo.v(24)
-  wire clk_syn_159;  // ramfifo.v(24)
-  wire clk_syn_161;  // ramfifo.v(24)
-  wire clk_syn_163;  // ramfifo.v(24)
-  wire clk_syn_165;  // ramfifo.v(24)
-  wire clk_syn_167;  // ramfifo.v(24)
-  wire clk_syn_169;  // ramfifo.v(24)
-  wire clk_syn_171;  // ramfifo.v(24)
-  wire clk_syn_173;  // ramfifo.v(24)
-  wire clk_syn_174;  // ramfifo.v(24)
-  wire clk_syn_175;  // ramfifo.v(24)
-  wire clk_syn_176;  // ramfifo.v(24)
-  wire clk_syn_177;  // ramfifo.v(24)
-  wire clk_syn_178;  // ramfifo.v(24)
-  wire clk_syn_179;  // ramfifo.v(24)
-  wire clk_syn_180;  // ramfifo.v(24)
-  wire clk_syn_181;  // ramfifo.v(24)
-  wire clk_syn_182;  // ramfifo.v(24)
-  wire clk_syn_183;  // ramfifo.v(24)
-  wire clk_syn_184;  // ramfifo.v(24)
-  wire clk_syn_185;  // ramfifo.v(24)
-  wire re_syn_2;  // ramfifo.v(25)
-  wire we_syn_2;  // ramfifo.v(24)
-  wire _al_n1_syn_4;
-  wire _al_n1_syn_6;
-  wire _al_n1_syn_8;
-  wire _al_n1_syn_10;
-  wire _al_n1_syn_12;
-  wire _al_n1_syn_14;
-  wire _al_n1_syn_16;
-  wire _al_n1_syn_18;
-  wire _al_n1_syn_20;
-  wire _al_n1_syn_28;
-  wire _al_n1_syn_30;
-  wire _al_n1_syn_32;
-  wire _al_n1_syn_34;
-  wire _al_n1_syn_36;
-  wire _al_n1_syn_38;
-  wire _al_n1_syn_40;
-  wire _al_n1_syn_42;
-  wire _al_n1_syn_44;
+  wire and_and__al_n1_q0_al_o;
+  wire and_and__al_n1_q0_ne_o;
+  wire and_and_and__al_n1_q_o;
+  wire and_and_and__al_n1_q_o_al_n31;
+  wire and_and_and_and__al__o;
+  wire and_and_and_and__al__o_al_n32;
+  wire and_and_and_and_and__o;
+  wire and_and_and_and_and__o_al_n0;
+  wire and_and_and_and_and__o_al_n1;
+  wire and_and_and_and_and__o_al_n2;
+  wire and_and_and_and_and__o_al_n3;
+  wire and_and_and_and_and__o_al_n33;
+  wire and_and_and_and_and__o_al_n34;
+  wire and_and_and_and_and__o_al_n35;
+  wire and_and_and_and_and__o_al_n36;
+  wire and_and_and_and_and__o_al_n37;
+  wire and_and_and_and_and__o_al_n38;
+  wire and_and_and_and_and__o_al_n4;
+  wire and_or_q11_al_n30_q1_o;
+  wire and_or_q11_q10_o_and_o;
+  wire and_q1_al_n20_and__a_o;
+  wire and_q1_and__al_n1_q0_o;
+  wire and_q2_al_n21_and_an_o;
+  wire and_q2_and_and__al_n_o;
+  wire and_q3_al_n22_and_an_o;
+  wire and_q3_and_and_and___o;
+  wire and_q4_al_n23_and_an_o;
+  wire and_q4_and_and_and_a_o;
+  wire and_q5_al_n24_and_an_o;
+  wire and_q5_and_and_and_a_o;
+  wire and_q6_al_n25_and_an_o;
+  wire and_q6_and_and_and_a_o;
+  wire and_q7_al_n26_and_an_o;
+  wire and_q7_and_and_and_a_o;
+  wire and_q8_al_n27_and_an_o;
+  wire and_q8_and_and_and_a_o;
+  wire and_q9_al_n28_and_an_o;
+  wire and_q9_and_and_and_a_o;
+  wire and_re_empty_equal_o_o;
+  wire and_we_full_equal_o__o;
+  wire delayed_wrptr_g0;
+  wire delayed_wrptr_g1;
+  wire delayed_wrptr_g10;
+  wire delayed_wrptr_g2;
+  wire delayed_wrptr_g3;
+  wire delayed_wrptr_g4;
+  wire delayed_wrptr_g5;
+  wire delayed_wrptr_g6;
+  wire delayed_wrptr_g7;
+  wire delayed_wrptr_g8;
+  wire delayed_wrptr_g9;
+  wire \empty_equal/or_or_or_xor_i0[0]_i_o ;
+  wire \empty_equal/or_or_xor_i0[0]_i1[0_o ;
+  wire \empty_equal/or_or_xor_i0[5]_i1[5_o ;
+  wire \empty_equal/or_xor_i0[0]_i1[0]_o_o ;
+  wire \empty_equal/or_xor_i0[2]_i1[2]_o_o ;
+  wire \empty_equal/or_xor_i0[3]_i1[3]_o_o ;
+  wire \empty_equal/or_xor_i0[5]_i1[5]_o_o ;
+  wire \empty_equal/or_xor_i0[6]_i1[6]_o_o ;
+  wire \empty_equal/or_xor_i0[8]_i1[8]_o_o ;
+  wire \empty_equal/or_xor_i0[9]_i1[9]_o_o ;
+  wire \empty_equal/xor_i0[0]_i1[0]_o ;
+  wire \empty_equal/xor_i0[10]_i1[10]_o ;
+  wire \empty_equal/xor_i0[1]_i1[1]_o ;
+  wire \empty_equal/xor_i0[2]_i1[2]_o ;
+  wire \empty_equal/xor_i0[3]_i1[3]_o ;
+  wire \empty_equal/xor_i0[4]_i1[4]_o ;
+  wire \empty_equal/xor_i0[5]_i1[5]_o ;
+  wire \empty_equal/xor_i0[6]_i1[6]_o ;
+  wire \empty_equal/xor_i0[7]_i1[7]_o ;
+  wire \empty_equal/xor_i0[8]_i1[8]_o ;
+  wire \empty_equal/xor_i0[9]_i1[9]_o ;
+  wire empty_equal_o_neg;
+  wire \full_equal/or_or_or_xor_i0[0]_i_o ;
+  wire \full_equal/or_or_xor_i0[0]_i1[0_o ;
+  wire \full_equal/or_or_xor_i0[5]_i1[5_o ;
+  wire \full_equal/or_xor_i0[0]_i1[0]_o_o ;
+  wire \full_equal/or_xor_i0[2]_i1[2]_o_o ;
+  wire \full_equal/or_xor_i0[3]_i1[3]_o_o ;
+  wire \full_equal/or_xor_i0[5]_i1[5]_o_o ;
+  wire \full_equal/or_xor_i0[6]_i1[6]_o_o ;
+  wire \full_equal/or_xor_i0[8]_i1[8]_o_o ;
+  wire \full_equal/or_xor_i0[9]_i1[9]_o_o ;
+  wire \full_equal/xor_i0[0]_i1[0]_o ;
+  wire \full_equal/xor_i0[10]_i1[10]_o ;
+  wire \full_equal/xor_i0[1]_i1[1]_o ;
+  wire \full_equal/xor_i0[2]_i1[2]_o ;
+  wire \full_equal/xor_i0[3]_i1[3]_o ;
+  wire \full_equal/xor_i0[4]_i1[4]_o ;
+  wire \full_equal/xor_i0[5]_i1[5]_o ;
+  wire \full_equal/xor_i0[6]_i1[6]_o ;
+  wire \full_equal/xor_i0[7]_i1[7]_o ;
+  wire \full_equal/xor_i0[8]_i1[8]_o ;
+  wire \full_equal/xor_i0[9]_i1[9]_o ;
+  wire full_equal_o_neg;
+  wire gray_counter_mux_o0;
+  wire gray_counter_mux_o0_al_n40;
+  wire gray_counter_mux_o1;
+  wire gray_counter_mux_o10;
+  wire gray_counter_mux_o10_al_n50;
+  wire gray_counter_mux_o11;
+  wire gray_counter_mux_o11_al_n51;
+  wire gray_counter_mux_o1_al_n41;
+  wire gray_counter_mux_o2;
+  wire gray_counter_mux_o2_al_n42;
+  wire gray_counter_mux_o3;
+  wire gray_counter_mux_o3_al_n43;
+  wire gray_counter_mux_o4;
+  wire gray_counter_mux_o4_al_n44;
+  wire gray_counter_mux_o5;
+  wire gray_counter_mux_o5_al_n45;
+  wire gray_counter_mux_o6;
+  wire gray_counter_mux_o6_al_n46;
+  wire gray_counter_mux_o7;
+  wire gray_counter_mux_o7_al_n47;
+  wire gray_counter_mux_o8;
+  wire gray_counter_mux_o8_al_n48;
+  wire gray_counter_mux_o9;
+  wire gray_counter_mux_o9_al_n49;
+  wire mux_o0;
+  wire mux_o0_al_n52;
+  wire mux_o1;
+  wire mux_o10;
+  wire mux_o10_al_n62;
+  wire mux_o1_al_n53;
+  wire mux_o2;
+  wire mux_o2_al_n54;
+  wire mux_o3;
+  wire mux_o3_al_n55;
+  wire mux_o4;
+  wire mux_o4_al_n56;
+  wire mux_o5;
+  wire mux_o5_al_n57;
+  wire mux_o6;
+  wire mux_o6_al_n58;
+  wire mux_o7;
+  wire mux_o7_al_n59;
+  wire mux_o8;
+  wire mux_o8_al_n60;
+  wire mux_o9;
+  wire mux_o9_al_n61;
+  wire or_q11_al_n30_q10_al_o;
+  wire or_q11_q10_o;
+  wire q0;
+  wire q0_al_n19;
+  wire q0_al_n19_neg;
+  wire q0_neg;
+  wire q1;
+  wire q10;
+  wire q10_al_n29;
+  wire q11;
+  wire q11_al_n30;
+  wire q1_al_n20;
+  wire q1_al_n20_neg;
+  wire q1_neg;
+  wire q2;
+  wire q2_al_n21;
+  wire q2_al_n21_neg;
+  wire q2_neg;
+  wire q3;
+  wire q3_al_n22;
+  wire q3_al_n22_neg;
+  wire q3_neg;
+  wire q4;
+  wire q4_al_n23;
+  wire q4_al_n23_neg;
+  wire q4_neg;
+  wire q5;
+  wire q5_al_n24;
+  wire q5_al_n24_neg;
+  wire q5_neg;
+  wire q6;
+  wire q6_al_n25;
+  wire q6_al_n25_neg;
+  wire q6_neg;
+  wire q7;
+  wire q7_al_n26;
+  wire q7_al_n26_neg;
+  wire q7_neg;
+  wire q8;
+  wire q8_al_n27;
+  wire q8_al_n27_neg;
+  wire q8_neg;
+  wire q9;
+  wire q9_al_n28;
+  wire q9_al_n28_neg;
+  wire q9_neg;
+  wire rdptr_g0;
+  wire rdptr_g1;
+  wire rdptr_g10;
+  wire rdptr_g2;
+  wire rdptr_g3;
+  wire rdptr_g4;
+  wire rdptr_g5;
+  wire rdptr_g6;
+  wire rdptr_g7;
+  wire rdptr_g8;
+  wire rdptr_g9;
+  wire rdptr_g_bin_d10;
+  wire rdptr_g_bin_d11;
+  wire rdptr_g_bin_d110;
+  wire rdptr_g_bin_d12;
+  wire rdptr_g_bin_d13;
+  wire rdptr_g_bin_d14;
+  wire rdptr_g_bin_d15;
+  wire rdptr_g_bin_d16;
+  wire rdptr_g_bin_d17;
+  wire rdptr_g_bin_d18;
+  wire rdptr_g_bin_d19;
+  wire \rdusedw_sub/c0 ;
+  wire \rdusedw_sub/c1 ;
+  wire \rdusedw_sub/c10 ;
+  wire \rdusedw_sub/c2 ;
+  wire \rdusedw_sub/c3 ;
+  wire \rdusedw_sub/c4 ;
+  wire \rdusedw_sub/c5 ;
+  wire \rdusedw_sub/c6 ;
+  wire \rdusedw_sub/c7 ;
+  wire \rdusedw_sub/c8 ;
+  wire \rdusedw_sub/c9 ;
+  wire sync_delayed_wrptr_g0;
+  wire sync_delayed_wrptr_g1;
+  wire sync_delayed_wrptr_g10;
+  wire sync_delayed_wrptr_g2;
+  wire sync_delayed_wrptr_g3;
+  wire sync_delayed_wrptr_g4;
+  wire sync_delayed_wrptr_g5;
+  wire sync_delayed_wrptr_g6;
+  wire sync_delayed_wrptr_g7;
+  wire sync_delayed_wrptr_g8;
+  wire sync_delayed_wrptr_g9;
+  wire sync_delayed_wrptr_g_bin_d10;
+  wire sync_delayed_wrptr_g_bin_d11;
+  wire sync_delayed_wrptr_g_bin_d110;
+  wire sync_delayed_wrptr_g_bin_d12;
+  wire sync_delayed_wrptr_g_bin_d13;
+  wire sync_delayed_wrptr_g_bin_d14;
+  wire sync_delayed_wrptr_g_bin_d15;
+  wire sync_delayed_wrptr_g_bin_d16;
+  wire sync_delayed_wrptr_g_bin_d17;
+  wire sync_delayed_wrptr_g_bin_d18;
+  wire sync_delayed_wrptr_g_bin_d19;
+  wire sync_rdptr_g0;
+  wire sync_rdptr_g1;
+  wire sync_rdptr_g10;
+  wire sync_rdptr_g10_neg;
+  wire sync_rdptr_g2;
+  wire sync_rdptr_g3;
+  wire sync_rdptr_g4;
+  wire sync_rdptr_g5;
+  wire sync_rdptr_g6;
+  wire sync_rdptr_g7;
+  wire sync_rdptr_g8;
+  wire sync_rdptr_g9;
+  wire sync_rdptr_g9_neg;
+  wire sync_rdptr_g_bin_d10;
+  wire sync_rdptr_g_bin_d11;
+  wire sync_rdptr_g_bin_d110;
+  wire sync_rdptr_g_bin_d12;
+  wire sync_rdptr_g_bin_d13;
+  wire sync_rdptr_g_bin_d14;
+  wire sync_rdptr_g_bin_d15;
+  wire sync_rdptr_g_bin_d16;
+  wire sync_rdptr_g_bin_d17;
+  wire sync_rdptr_g_bin_d18;
+  wire sync_rdptr_g_bin_d19;
+  wire wrptr_g0;
+  wire wrptr_g1;
+  wire wrptr_g10;
+  wire wrptr_g2;
+  wire wrptr_g3;
+  wire wrptr_g4;
+  wire wrptr_g5;
+  wire wrptr_g6;
+  wire wrptr_g7;
+  wire wrptr_g8;
+  wire wrptr_g9;
+  wire wrptr_g_bin_d10;
+  wire wrptr_g_bin_d11;
+  wire wrptr_g_bin_d12;
+  wire wrptr_g_bin_d13;
+  wire wrptr_g_bin_d14;
+  wire wrptr_g_bin_d15;
+  wire wrptr_g_bin_d16;
+  wire wrptr_g_bin_d17;
+  wire wrptr_g_bin_d18;
+  wire wrptr_g_bin_d19;
+  wire \wrusedw_sub/c0 ;
+  wire \wrusedw_sub/c1 ;
+  wire \wrusedw_sub/c10 ;
+  wire \wrusedw_sub/c2 ;
+  wire \wrusedw_sub/c3 ;
+  wire \wrusedw_sub/c4 ;
+  wire \wrusedw_sub/c5 ;
+  wire \wrusedw_sub/c6 ;
+  wire \wrusedw_sub/c7 ;
+  wire \wrusedw_sub/c8 ;
+  wire \wrusedw_sub/c9 ;
+  wire xor_q10_al_n29_and_q_o;
+  wire xor_q10_and_q9_and_a_o;
+  wire xor_q11_al_n30_and_o_o;
+  wire xor_q11_and_or_q11_q_o;
+  wire xor_q1_al_n20_and_q0_o;
+  wire xor_q1_and_q0__al_n1_o;
+  wire xor_q2_al_n21_and_q1_o;
+  wire xor_q2_and_q1_and__a_o;
+  wire xor_q3_al_n22_and_q2_o;
+  wire xor_q3_and_q2_and_an_o;
+  wire xor_q4_al_n23_and_q3_o;
+  wire xor_q4_and_q3_and_an_o;
+  wire xor_q5_al_n24_and_q4_o;
+  wire xor_q5_and_q4_and_an_o;
+  wire xor_q6_al_n25_and_q5_o;
+  wire xor_q6_and_q5_and_an_o;
+  wire xor_q7_al_n26_and_q6_o;
+  wire xor_q7_and_q6_and_an_o;
+  wire xor_q8_al_n27_and_q7_o;
+  wire xor_q8_and_q7_and_an_o;
+  wire xor_q9_al_n28_and_q8_o;
+  wire xor_q9_and_q8_and_an_o;
+  wire xor_rdptr_g10_rdptr__o;
+  wire xor_sync_delayed_wrp_o;
+  wire xor_sync_rdptr_g10_s_o;
+  wire xor_wrptr_g10_wrptr__o;
+  wire xor_xor_rdptr_g10_rd_o;
+  wire xor_xor_sync_delayed_o;
+  wire xor_xor_sync_rdptr_g_o;
+  wire xor_xor_wrptr_g10_wr_o;
+  wire xor_xor_xor_rdptr_g1_o;
+  wire xor_xor_xor_sync_del_o;
+  wire xor_xor_xor_sync_rdp_o;
+  wire xor_xor_xor_wrptr_g1_o;
+  wire xor_xor_xor_xor_rdpt_o;
+  wire xor_xor_xor_xor_sync_o;
+  wire xor_xor_xor_xor_sync_o_al_n120;
+  wire xor_xor_xor_xor_wrpt_o;
+  wire xor_xor_xor_xor_xor__o;
+  wire xor_xor_xor_xor_xor__o_al_n108;
+  wire xor_xor_xor_xor_xor__o_al_n109;
+  wire xor_xor_xor_xor_xor__o_al_n110;
+  wire xor_xor_xor_xor_xor__o_al_n111;
+  wire xor_xor_xor_xor_xor__o_al_n112;
+  wire xor_xor_xor_xor_xor__o_al_n114;
+  wire xor_xor_xor_xor_xor__o_al_n115;
+  wire xor_xor_xor_xor_xor__o_al_n116;
+  wire xor_xor_xor_xor_xor__o_al_n117;
+  wire xor_xor_xor_xor_xor__o_al_n118;
+  wire xor_xor_xor_xor_xor__o_al_n119;
+  wire xor_xor_xor_xor_xor__o_al_n121;
+  wire xor_xor_xor_xor_xor__o_al_n122;
+  wire xor_xor_xor_xor_xor__o_al_n123;
+  wire xor_xor_xor_xor_xor__o_al_n124;
+  wire xor_xor_xor_xor_xor__o_al_n125;
+  wire xor_xor_xor_xor_xor__o_al_n126;
+  wire xor_xor_xor_xor_xor__o_al_n128;
+  wire xor_xor_xor_xor_xor__o_al_n129;
+  wire xor_xor_xor_xor_xor__o_al_n130;
+  wire xor_xor_xor_xor_xor__o_al_n131;
+  wire xor_xor_xor_xor_xor__o_al_n132;
+  wire xor_xor_xor_xor_xor__o_al_n133;
 
-  and _al_n1_syn_11 (_al_n1_syn_12, _al_n1_syn_10, clk_syn_26);
-  and _al_n1_syn_13 (_al_n1_syn_14, _al_n1_syn_12, clk_syn_28);
-  and _al_n1_syn_15 (_al_n1_syn_16, _al_n1_syn_14, clk_syn_30);
-  and _al_n1_syn_17 (_al_n1_syn_18, _al_n1_syn_16, clk_syn_32);
-  and _al_n1_syn_19 (_al_n1_syn_20, _al_n1_syn_18, clk_syn_34);
-  and _al_n1_syn_27 (_al_n1_syn_28, clk_syn_109, clk_syn_111);
-  and _al_n1_syn_29 (_al_n1_syn_30, _al_n1_syn_28, clk_syn_113);
-  and _al_n1_syn_3 (_al_n1_syn_4, clk_syn_16, clk_syn_18);
-  and _al_n1_syn_31 (_al_n1_syn_32, _al_n1_syn_30, clk_syn_115);
-  and _al_n1_syn_33 (_al_n1_syn_34, _al_n1_syn_32, clk_syn_117);
-  and _al_n1_syn_35 (_al_n1_syn_36, _al_n1_syn_34, clk_syn_119);
-  and _al_n1_syn_37 (_al_n1_syn_38, _al_n1_syn_36, clk_syn_121);
-  and _al_n1_syn_39 (_al_n1_syn_40, _al_n1_syn_38, clk_syn_123);
-  and _al_n1_syn_41 (_al_n1_syn_42, _al_n1_syn_40, clk_syn_125);
-  and _al_n1_syn_43 (_al_n1_syn_44, _al_n1_syn_42, clk_syn_127);
-  and _al_n1_syn_5 (_al_n1_syn_6, _al_n1_syn_4, clk_syn_20);
-  and _al_n1_syn_7 (_al_n1_syn_8, _al_n1_syn_6, clk_syn_22);
-  and _al_n1_syn_9 (_al_n1_syn_10, _al_n1_syn_8, clk_syn_24);
-  or clk_syn_106 (clk_syn_107, clk_syn_105, clk_syn_104);  // ramfifo.v(24)
-  not clk_syn_108 (clk_syn_109, clk_syn_94);  // ramfifo.v(24)
-  not clk_syn_110 (clk_syn_111, clk_syn_95);  // ramfifo.v(24)
-  not clk_syn_112 (clk_syn_113, clk_syn_96);  // ramfifo.v(24)
-  not clk_syn_114 (clk_syn_115, clk_syn_97);  // ramfifo.v(24)
-  not clk_syn_116 (clk_syn_117, clk_syn_98);  // ramfifo.v(24)
-  not clk_syn_118 (clk_syn_119, clk_syn_99);  // ramfifo.v(24)
-  not clk_syn_120 (clk_syn_121, clk_syn_100);  // ramfifo.v(24)
-  not clk_syn_122 (clk_syn_123, clk_syn_101);  // ramfifo.v(24)
-  not clk_syn_124 (clk_syn_125, clk_syn_102);  // ramfifo.v(24)
-  not clk_syn_126 (clk_syn_127, clk_syn_103);  // ramfifo.v(24)
-  or clk_syn_13 (clk_syn_14, clk_syn_12, clk_syn_11);  // ramfifo.v(24)
-  xor clk_syn_132 (clk_syn_133, clk_syn_95, clk_syn_94);  // ramfifo.v(24)
-  and clk_syn_134 (clk_syn_135, clk_syn_95, clk_syn_109);  // ramfifo.v(24)
-  xor clk_syn_136 (clk_syn_137, clk_syn_96, clk_syn_135);  // ramfifo.v(24)
-  and clk_syn_138 (clk_syn_139, clk_syn_96, _al_n1_syn_28);  // ramfifo.v(24)
-  xor clk_syn_140 (clk_syn_141, clk_syn_97, clk_syn_139);  // ramfifo.v(24)
-  and clk_syn_142 (clk_syn_143, clk_syn_97, _al_n1_syn_30);  // ramfifo.v(24)
-  xor clk_syn_144 (clk_syn_145, clk_syn_98, clk_syn_143);  // ramfifo.v(24)
-  and clk_syn_146 (clk_syn_147, clk_syn_98, _al_n1_syn_32);  // ramfifo.v(24)
-  xor clk_syn_148 (clk_syn_149, clk_syn_99, clk_syn_147);  // ramfifo.v(24)
-  not clk_syn_15 (clk_syn_16, clk_syn_1);  // ramfifo.v(24)
-  and clk_syn_150 (clk_syn_151, clk_syn_99, _al_n1_syn_34);  // ramfifo.v(24)
-  xor clk_syn_152 (clk_syn_153, clk_syn_100, clk_syn_151);  // ramfifo.v(24)
-  and clk_syn_154 (clk_syn_155, clk_syn_100, _al_n1_syn_36);  // ramfifo.v(24)
-  xor clk_syn_156 (clk_syn_157, clk_syn_101, clk_syn_155);  // ramfifo.v(24)
-  and clk_syn_158 (clk_syn_159, clk_syn_101, _al_n1_syn_38);  // ramfifo.v(24)
-  xor clk_syn_160 (clk_syn_161, clk_syn_102, clk_syn_159);  // ramfifo.v(24)
-  and clk_syn_162 (clk_syn_163, clk_syn_102, _al_n1_syn_40);  // ramfifo.v(24)
-  xor clk_syn_164 (clk_syn_165, clk_syn_103, clk_syn_163);  // ramfifo.v(24)
-  and clk_syn_166 (clk_syn_167, clk_syn_103, _al_n1_syn_42);  // ramfifo.v(24)
-  xor clk_syn_168 (clk_syn_169, clk_syn_104, clk_syn_167);  // ramfifo.v(24)
-  not clk_syn_17 (clk_syn_18, clk_syn_2);  // ramfifo.v(24)
-  and clk_syn_170 (clk_syn_171, clk_syn_107, _al_n1_syn_44);  // ramfifo.v(24)
-  xor clk_syn_172 (clk_syn_173, clk_syn_105, clk_syn_171);  // ramfifo.v(24)
-  not clk_syn_19 (clk_syn_20, clk_syn_3);  // ramfifo.v(24)
-  not clk_syn_21 (clk_syn_22, clk_syn_4);  // ramfifo.v(24)
-  not clk_syn_23 (clk_syn_24, clk_syn_5);  // ramfifo.v(24)
-  not clk_syn_25 (clk_syn_26, clk_syn_6);  // ramfifo.v(24)
-  not clk_syn_27 (clk_syn_28, clk_syn_7);  // ramfifo.v(24)
-  AL_DFF_X clk_syn_280 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_81),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_1));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_281 (
-    .ar(1'b0),
-    .as(rst),
-    .clk(clk),
-    .d(clk_syn_82),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_2));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_282 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_83),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_3));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_283 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_84),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_4));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_284 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_85),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_5));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_285 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_86),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_6));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_286 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_87),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_7));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_287 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_88),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_8));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_288 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_89),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_9));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_289 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_90),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_10));  // ramfifo.v(24)
-  not clk_syn_29 (clk_syn_30, clk_syn_8);  // ramfifo.v(24)
-  AL_DFF_X clk_syn_290 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_91),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_11));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_291 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_92),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_12));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_292 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_174),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_94));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_293 (
-    .ar(1'b0),
-    .as(rst),
-    .clk(clk),
-    .d(clk_syn_175),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_95));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_294 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_176),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_96));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_295 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_177),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_97));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_296 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_178),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_98));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_297 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_179),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_99));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_298 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_180),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_100));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_299 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_181),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_101));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_300 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_182),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_102));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_301 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_183),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_103));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_302 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_184),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_104));  // ramfifo.v(24)
-  AL_DFF_X clk_syn_303 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(clk_syn_185),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(clk_syn_105));  // ramfifo.v(24)
-  not clk_syn_31 (clk_syn_32, clk_syn_9);  // ramfifo.v(24)
-  not clk_syn_33 (clk_syn_34, clk_syn_10);  // ramfifo.v(24)
-  xor clk_syn_39 (clk_syn_40, clk_syn_2, clk_syn_1);  // ramfifo.v(24)
-  and clk_syn_41 (clk_syn_42, clk_syn_2, clk_syn_16);  // ramfifo.v(24)
-  xor clk_syn_43 (clk_syn_44, clk_syn_3, clk_syn_42);  // ramfifo.v(24)
-  and clk_syn_45 (clk_syn_46, clk_syn_3, _al_n1_syn_4);  // ramfifo.v(24)
-  xor clk_syn_47 (clk_syn_48, clk_syn_4, clk_syn_46);  // ramfifo.v(24)
-  and clk_syn_49 (clk_syn_50, clk_syn_4, _al_n1_syn_6);  // ramfifo.v(24)
-  xor clk_syn_51 (clk_syn_52, clk_syn_5, clk_syn_50);  // ramfifo.v(24)
-  and clk_syn_53 (clk_syn_54, clk_syn_5, _al_n1_syn_8);  // ramfifo.v(24)
-  xor clk_syn_55 (clk_syn_56, clk_syn_6, clk_syn_54);  // ramfifo.v(24)
-  and clk_syn_57 (clk_syn_58, clk_syn_6, _al_n1_syn_10);  // ramfifo.v(24)
-  xor clk_syn_59 (clk_syn_60, clk_syn_7, clk_syn_58);  // ramfifo.v(24)
-  and clk_syn_61 (clk_syn_62, clk_syn_7, _al_n1_syn_12);  // ramfifo.v(24)
-  xor clk_syn_63 (clk_syn_64, clk_syn_8, clk_syn_62);  // ramfifo.v(24)
-  and clk_syn_65 (clk_syn_66, clk_syn_8, _al_n1_syn_14);  // ramfifo.v(24)
-  xor clk_syn_67 (clk_syn_68, clk_syn_9, clk_syn_66);  // ramfifo.v(24)
-  and clk_syn_69 (clk_syn_70, clk_syn_9, _al_n1_syn_16);  // ramfifo.v(24)
-  xor clk_syn_71 (clk_syn_72, clk_syn_10, clk_syn_70);  // ramfifo.v(24)
-  and clk_syn_73 (clk_syn_74, clk_syn_10, _al_n1_syn_18);  // ramfifo.v(24)
-  xor clk_syn_75 (clk_syn_76, clk_syn_11, clk_syn_74);  // ramfifo.v(24)
-  and clk_syn_77 (clk_syn_78, clk_syn_14, _al_n1_syn_20);  // ramfifo.v(24)
-  xor clk_syn_79 (clk_syn_80, clk_syn_12, clk_syn_78);  // ramfifo.v(24)
+  and and_and__al_n1_q0_al (and_and__al_n1_q0_al_o, q0_al_n19_neg, q1_al_n20_neg);
+  and and_and__al_n1_q0_ne (and_and__al_n1_q0_ne_o, q0_neg, q1_neg);
+  and and_and_and__al_n1_q (and_and_and__al_n1_q_o, and_and__al_n1_q0_ne_o, q2_neg);
+  and and_and_and__al_n1_q_al_u19 (and_and_and__al_n1_q_o_al_n31, and_and__al_n1_q0_al_o, q2_al_n21_neg);
+  and and_and_and_and__al_ (and_and_and_and__al__o, and_and_and__al_n1_q_o, q3_neg);
+  and and_and_and_and__al__al_u20 (and_and_and_and__al__o_al_n32, and_and_and__al_n1_q_o_al_n31, q3_al_n22_neg);
+  and and_and_and_and_and_ (and_and_and_and_and__o, and_and_and_and__al__o, q4_neg);
+  and and_and_and_and_and__al_u0 (and_and_and_and_and__o_al_n0, and_and_and_and_and__o, q5_neg);
+  and and_and_and_and_and__al_u1 (and_and_and_and_and__o_al_n1, and_and_and_and_and__o_al_n0, q6_neg);
+  and and_and_and_and_and__al_u2 (and_and_and_and_and__o_al_n2, and_and_and_and_and__o_al_n1, q7_neg);
+  and and_and_and_and_and__al_u21 (and_and_and_and_and__o_al_n33, and_and_and_and__al__o_al_n32, q4_al_n23_neg);
+  and and_and_and_and_and__al_u22 (and_and_and_and_and__o_al_n34, and_and_and_and_and__o_al_n33, q5_al_n24_neg);
+  and and_and_and_and_and__al_u23 (and_and_and_and_and__o_al_n35, and_and_and_and_and__o_al_n34, q6_al_n25_neg);
+  and and_and_and_and_and__al_u24 (and_and_and_and_and__o_al_n36, and_and_and_and_and__o_al_n35, q7_al_n26_neg);
+  and and_and_and_and_and__al_u25 (and_and_and_and_and__o_al_n37, and_and_and_and_and__o_al_n36, q8_al_n27_neg);
+  and and_and_and_and_and__al_u26 (and_and_and_and_and__o_al_n38, and_and_and_and_and__o_al_n37, q9_al_n28_neg);
+  and and_and_and_and_and__al_u3 (and_and_and_and_and__o_al_n3, and_and_and_and_and__o_al_n2, q8_neg);
+  and and_and_and_and_and__al_u4 (and_and_and_and_and__o_al_n4, and_and_and_and_and__o_al_n3, q9_neg);
+  and and_or_q11_al_n30_q1 (and_or_q11_al_n30_q1_o, or_q11_al_n30_q10_al_o, and_and_and_and_and__o_al_n38);
+  and and_or_q11_q10_o_and (and_or_q11_q10_o_and_o, or_q11_q10_o, and_and_and_and_and__o_al_n4);
+  and and_q1_al_n20_and__a (and_q1_al_n20_and__a_o, q1_al_n20, q0_al_n19_neg);
+  and and_q1_and__al_n1_q0 (and_q1_and__al_n1_q0_o, q1, q0_neg);
+  and and_q2_al_n21_and_an (and_q2_al_n21_and_an_o, q2_al_n21, and_and__al_n1_q0_al_o);
+  and and_q2_and_and__al_n (and_q2_and_and__al_n_o, q2, and_and__al_n1_q0_ne_o);
+  and and_q3_al_n22_and_an (and_q3_al_n22_and_an_o, q3_al_n22, and_and_and__al_n1_q_o_al_n31);
+  and and_q3_and_and_and__ (and_q3_and_and_and___o, q3, and_and_and__al_n1_q_o);
+  and and_q4_al_n23_and_an (and_q4_al_n23_and_an_o, q4_al_n23, and_and_and_and__al__o_al_n32);
+  and and_q4_and_and_and_a (and_q4_and_and_and_a_o, q4, and_and_and_and__al__o);
+  and and_q5_al_n24_and_an (and_q5_al_n24_and_an_o, q5_al_n24, and_and_and_and_and__o_al_n33);
+  and and_q5_and_and_and_a (and_q5_and_and_and_a_o, q5, and_and_and_and_and__o);
+  and and_q6_al_n25_and_an (and_q6_al_n25_and_an_o, q6_al_n25, and_and_and_and_and__o_al_n34);
+  and and_q6_and_and_and_a (and_q6_and_and_and_a_o, q6, and_and_and_and_and__o_al_n0);
+  and and_q7_al_n26_and_an (and_q7_al_n26_and_an_o, q7_al_n26, and_and_and_and_and__o_al_n35);
+  and and_q7_and_and_and_a (and_q7_and_and_and_a_o, q7, and_and_and_and_and__o_al_n1);
+  and and_q8_al_n27_and_an (and_q8_al_n27_and_an_o, q8_al_n27, and_and_and_and_and__o_al_n36);
+  and and_q8_and_and_and_a (and_q8_and_and_and_a_o, q8, and_and_and_and_and__o_al_n2);
+  and and_q9_al_n28_and_an (and_q9_al_n28_and_an_o, q9_al_n28, and_and_and_and_and__o_al_n37);
+  and and_q9_and_and_and_a (and_q9_and_and_and_a_o, q9, and_and_and_and_and__o_al_n3);
+  and and_re_empty_equal_o (and_re_empty_equal_o_o, re, empty_equal_o_neg);
+  and and_we_full_equal_o_ (and_we_full_equal_o__o, we, full_equal_o_neg);
   EG_PHY_CONFIG #(
     .DONE_PERSISTN("ENABLE"),
     .INIT_PERSISTN("ENABLE"),
     .JTAG_PERSISTN("DISABLE"),
     .PROGRAMN_PERSISTN("DISABLE"))
     config_inst ();
-  not logic_ramfifo_syn_151 (logic_ramfifo_syn_152, logic_ramfifo_syn_54);  // ramfifo.v(39)
-  not logic_ramfifo_syn_153 (logic_ramfifo_syn_154, logic_ramfifo_syn_55);  // ramfifo.v(39)
-  not logic_ramfifo_syn_157 (logic_ramfifo_syn_158, full_flag);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_172 (logic_ramfifo_syn_173, logic_ramfifo_syn_33, logic_ramfifo_syn_32);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_174 (logic_ramfifo_syn_175, logic_ramfifo_syn_11, logic_ramfifo_syn_10);  // ramfifo.v(39)
-  not logic_ramfifo_syn_204 (logic_ramfifo_syn_205, empty_flag);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_252 (logic_ramfifo_syn_253, logic_ramfifo_syn_55, logic_ramfifo_syn_54);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_254 (logic_ramfifo_syn_255, logic_ramfifo_syn_253, logic_ramfifo_syn_53);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_256 (logic_ramfifo_syn_257, logic_ramfifo_syn_255, logic_ramfifo_syn_52);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_258 (logic_ramfifo_syn_259, logic_ramfifo_syn_257, logic_ramfifo_syn_51);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_260 (logic_ramfifo_syn_261, logic_ramfifo_syn_259, logic_ramfifo_syn_50);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_262 (logic_ramfifo_syn_263, logic_ramfifo_syn_261, logic_ramfifo_syn_49);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_264 (logic_ramfifo_syn_265, logic_ramfifo_syn_263, logic_ramfifo_syn_48);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_266 (logic_ramfifo_syn_267, logic_ramfifo_syn_265, logic_ramfifo_syn_47);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_268 (logic_ramfifo_syn_269, logic_ramfifo_syn_267, logic_ramfifo_syn_46);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_270 (logic_ramfifo_syn_271, logic_ramfifo_syn_269, logic_ramfifo_syn_45);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_275 (logic_ramfifo_syn_276, logic_ramfifo_syn_175, logic_ramfifo_syn_9);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_277 (logic_ramfifo_syn_278, logic_ramfifo_syn_276, logic_ramfifo_syn_8);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_279 (logic_ramfifo_syn_280, logic_ramfifo_syn_278, logic_ramfifo_syn_7);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_281 (logic_ramfifo_syn_282, logic_ramfifo_syn_280, logic_ramfifo_syn_6);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_283 (logic_ramfifo_syn_284, logic_ramfifo_syn_282, logic_ramfifo_syn_5);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_285 (logic_ramfifo_syn_286, logic_ramfifo_syn_284, logic_ramfifo_syn_4);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_287 (logic_ramfifo_syn_288, logic_ramfifo_syn_286, logic_ramfifo_syn_3);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_289 (logic_ramfifo_syn_290, logic_ramfifo_syn_288, logic_ramfifo_syn_2);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_291 (logic_ramfifo_syn_292, logic_ramfifo_syn_290, logic_ramfifo_syn_1);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_295 (logic_ramfifo_syn_296, logic_ramfifo_syn_88, logic_ramfifo_syn_87);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_297 (logic_ramfifo_syn_298, logic_ramfifo_syn_296, logic_ramfifo_syn_86);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_299 (logic_ramfifo_syn_300, logic_ramfifo_syn_298, logic_ramfifo_syn_85);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_301 (logic_ramfifo_syn_302, logic_ramfifo_syn_300, logic_ramfifo_syn_84);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_303 (logic_ramfifo_syn_304, logic_ramfifo_syn_302, logic_ramfifo_syn_83);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_305 (logic_ramfifo_syn_306, logic_ramfifo_syn_304, logic_ramfifo_syn_82);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_307 (logic_ramfifo_syn_308, logic_ramfifo_syn_306, logic_ramfifo_syn_81);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_309 (logic_ramfifo_syn_310, logic_ramfifo_syn_308, logic_ramfifo_syn_80);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_311 (logic_ramfifo_syn_312, logic_ramfifo_syn_310, logic_ramfifo_syn_79);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_313 (logic_ramfifo_syn_314, logic_ramfifo_syn_312, logic_ramfifo_syn_78);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_318 (logic_ramfifo_syn_319, logic_ramfifo_syn_173, logic_ramfifo_syn_31);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_320 (logic_ramfifo_syn_321, logic_ramfifo_syn_319, logic_ramfifo_syn_30);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_322 (logic_ramfifo_syn_323, logic_ramfifo_syn_321, logic_ramfifo_syn_29);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_324 (logic_ramfifo_syn_325, logic_ramfifo_syn_323, logic_ramfifo_syn_28);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_326 (logic_ramfifo_syn_327, logic_ramfifo_syn_325, logic_ramfifo_syn_27);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_328 (logic_ramfifo_syn_329, logic_ramfifo_syn_327, logic_ramfifo_syn_26);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_330 (logic_ramfifo_syn_331, logic_ramfifo_syn_329, logic_ramfifo_syn_25);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_332 (logic_ramfifo_syn_333, logic_ramfifo_syn_331, logic_ramfifo_syn_24);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_334 (logic_ramfifo_syn_335, logic_ramfifo_syn_333, logic_ramfifo_syn_23);  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_364 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_159),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_1));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_365 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_160),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_2));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_366 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_161),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_3));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_367 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_162),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_4));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_368 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_163),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_5));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_369 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_164),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_6));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_370 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_165),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_7));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_371 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_166),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_8));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_372 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_167),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_9));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_373 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_168),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_10));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_374 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_169),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_11));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_375 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_1),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_12));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_376 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_2),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_13));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_377 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_3),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_14));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_378 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_4),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_15));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_379 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_5),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_16));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_380 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_6),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_17));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_381 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_7),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_18));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_382 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_8),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_19));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_383 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_9),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_20));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_384 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_10),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_21));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_385 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_11),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_22));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_389 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_225),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_23));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_390 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_226),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_24));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_391 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_227),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_25));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_392 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_228),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_26));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_393 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_229),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_27));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_394 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_230),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_28));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_395 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_231),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_29));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_396 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_232),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_30));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_397 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_233),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_31));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_398 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_234),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_32));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_399 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_235),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_33));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_411 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_23),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_45));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_412 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_24),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_46));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_413 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_25),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_47));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_414 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_26),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_48));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_415 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_27),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_49));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_416 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_28),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_50));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_417 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_29),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_51));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_418 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_30),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_52));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_419 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_31),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_53));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_420 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_32),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_54));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_421 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_33),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_55));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_422 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_271),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_56));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_423 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_269),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_57));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_424 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_267),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_58));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_425 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_265),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_59));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_426 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_263),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_60));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_427 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_261),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_61));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_428 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_259),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_62));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_429 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_257),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_63));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_430 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_255),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_64));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_431 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_253),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_65));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_432 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_55),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_66));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_433 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_292),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_67));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_434 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_290),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_68));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_435 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_288),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_69));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_436 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_286),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_70));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_437 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_284),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_71));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_438 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_282),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_72));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_439 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_280),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_73));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_440 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_278),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_74));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_441 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_276),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_75));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_442 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_175),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_76));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_444 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_12),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_78));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_445 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_13),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_79));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_446 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_14),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_80));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_447 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_15),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_81));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_448 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_16),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_82));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_449 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_17),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_83));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_450 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_18),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_84));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_451 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_19),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_85));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_452 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_20),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_86));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_453 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_21),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_87));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_454 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_22),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_88));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_455 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_314),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_89));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_456 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_312),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_90));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_457 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_310),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_91));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_458 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_308),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_92));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_459 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_306),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_93));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_460 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_304),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_94));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_461 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_302),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_95));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_462 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_300),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_96));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_463 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_298),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_97));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_464 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_296),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_98));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_465 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_88),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_99));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_466 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_335),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_100));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_467 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_333),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_101));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_468 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_331),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_102));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_469 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_329),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_103));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_470 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_327),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_104));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_471 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_325),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_105));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_472 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_323),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_106));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_473 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_321),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_107));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_474 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_319),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_108));  // ramfifo.v(39)
-  AL_DFF_X logic_ramfifo_syn_475 (
-    .ar(rst),
-    .as(1'b0),
-    .clk(clk),
-    .d(logic_ramfifo_syn_173),
-    .en(1'b1),
-    .sr(1'b0),
-    .ss(1'b0),
-    .q(logic_ramfifo_syn_109));  // ramfifo.v(39)
-  // address_offset=0;data_offset=0;depth=1024;width=16;num_section=1;width_per_section=16;section_size=16;working_depth=2048;working_width=16;working_numbyte=1;mode_ecc=0;address_step=1;bytes_in_per_section=1;
-  // logic_ramfifo_syn_337_1024x16
+  not \empty_equal/none_diff  (empty_flag, \empty_equal/or_or_or_xor_i0[0]_i_o );
+  or \empty_equal/or_or_or_xor_i0[0]_i  (\empty_equal/or_or_or_xor_i0[0]_i_o , \empty_equal/or_or_xor_i0[0]_i1[0_o , \empty_equal/or_or_xor_i0[5]_i1[5_o );
+  or \empty_equal/or_or_xor_i0[0]_i1[0  (\empty_equal/or_or_xor_i0[0]_i1[0_o , \empty_equal/or_xor_i0[0]_i1[0]_o_o , \empty_equal/or_xor_i0[2]_i1[2]_o_o );
+  or \empty_equal/or_or_xor_i0[5]_i1[5  (\empty_equal/or_or_xor_i0[5]_i1[5_o , \empty_equal/or_xor_i0[5]_i1[5]_o_o , \empty_equal/or_xor_i0[8]_i1[8]_o_o );
+  or \empty_equal/or_xor_i0[0]_i1[0]_o  (\empty_equal/or_xor_i0[0]_i1[0]_o_o , \empty_equal/xor_i0[0]_i1[0]_o , \empty_equal/xor_i0[1]_i1[1]_o );
+  or \empty_equal/or_xor_i0[2]_i1[2]_o  (\empty_equal/or_xor_i0[2]_i1[2]_o_o , \empty_equal/xor_i0[2]_i1[2]_o , \empty_equal/or_xor_i0[3]_i1[3]_o_o );
+  or \empty_equal/or_xor_i0[3]_i1[3]_o  (\empty_equal/or_xor_i0[3]_i1[3]_o_o , \empty_equal/xor_i0[3]_i1[3]_o , \empty_equal/xor_i0[4]_i1[4]_o );
+  or \empty_equal/or_xor_i0[5]_i1[5]_o  (\empty_equal/or_xor_i0[5]_i1[5]_o_o , \empty_equal/xor_i0[5]_i1[5]_o , \empty_equal/or_xor_i0[6]_i1[6]_o_o );
+  or \empty_equal/or_xor_i0[6]_i1[6]_o  (\empty_equal/or_xor_i0[6]_i1[6]_o_o , \empty_equal/xor_i0[6]_i1[6]_o , \empty_equal/xor_i0[7]_i1[7]_o );
+  or \empty_equal/or_xor_i0[8]_i1[8]_o  (\empty_equal/or_xor_i0[8]_i1[8]_o_o , \empty_equal/xor_i0[8]_i1[8]_o , \empty_equal/or_xor_i0[9]_i1[9]_o_o );
+  or \empty_equal/or_xor_i0[9]_i1[9]_o  (\empty_equal/or_xor_i0[9]_i1[9]_o_o , \empty_equal/xor_i0[9]_i1[9]_o , \empty_equal/xor_i0[10]_i1[10]_o );
+  xor \empty_equal/xor_i0[0]_i1[0]  (\empty_equal/xor_i0[0]_i1[0]_o , sync_delayed_wrptr_g0, rdptr_g0);
+  xor \empty_equal/xor_i0[10]_i1[10]  (\empty_equal/xor_i0[10]_i1[10]_o , sync_delayed_wrptr_g10, rdptr_g10);
+  xor \empty_equal/xor_i0[1]_i1[1]  (\empty_equal/xor_i0[1]_i1[1]_o , sync_delayed_wrptr_g1, rdptr_g1);
+  xor \empty_equal/xor_i0[2]_i1[2]  (\empty_equal/xor_i0[2]_i1[2]_o , sync_delayed_wrptr_g2, rdptr_g2);
+  xor \empty_equal/xor_i0[3]_i1[3]  (\empty_equal/xor_i0[3]_i1[3]_o , sync_delayed_wrptr_g3, rdptr_g3);
+  xor \empty_equal/xor_i0[4]_i1[4]  (\empty_equal/xor_i0[4]_i1[4]_o , sync_delayed_wrptr_g4, rdptr_g4);
+  xor \empty_equal/xor_i0[5]_i1[5]  (\empty_equal/xor_i0[5]_i1[5]_o , sync_delayed_wrptr_g5, rdptr_g5);
+  xor \empty_equal/xor_i0[6]_i1[6]  (\empty_equal/xor_i0[6]_i1[6]_o , sync_delayed_wrptr_g6, rdptr_g6);
+  xor \empty_equal/xor_i0[7]_i1[7]  (\empty_equal/xor_i0[7]_i1[7]_o , sync_delayed_wrptr_g7, rdptr_g7);
+  xor \empty_equal/xor_i0[8]_i1[8]  (\empty_equal/xor_i0[8]_i1[8]_o , sync_delayed_wrptr_g8, rdptr_g8);
+  xor \empty_equal/xor_i0[9]_i1[9]  (\empty_equal/xor_i0[9]_i1[9]_o , sync_delayed_wrptr_g9, rdptr_g9);
+  not empty_equal_o_inv (empty_equal_o_neg, empty_flag);
+  // address_offset=0;data_offset=0;depth=1024;width=16;num_section=1;width_per_section=16;section_size=16;working_depth=2048;working_width=16;address_step=1;bytes_in_per_section=1;
   EG_PHY_BRAM32K #(
     .CSAMUX("1"),
     .DATA_WIDTH_A("16"),
     .DATA_WIDTH_B("16"),
-    .INIT_00(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_01(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_02(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_03(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_04(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_05(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_06(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_07(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_08(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_09(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_0A(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_0B(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_0C(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_0D(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_0E(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_0F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_10(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_11(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_12(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_13(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_14(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_15(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_16(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_17(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_18(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_19(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_1A(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_1B(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_1C(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_1D(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_1E(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_1F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_20(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_21(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_22(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_23(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_24(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_25(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_26(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_27(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_28(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_29(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_2A(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_2B(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_2C(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_2D(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_2E(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_2F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_30(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_31(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_32(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_33(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_34(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_35(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_36(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_37(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_38(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_39(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_3A(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_3B(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_3C(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_3D(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_3E(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_3F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_40(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_41(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_42(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_43(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_44(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_45(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_46(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_47(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_48(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_49(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_4A(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_4B(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_4C(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_4D(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_4E(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_4F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_50(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_51(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_52(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_53(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_54(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_55(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_56(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_57(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_58(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_59(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_5A(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_5B(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_5C(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_5D(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_5E(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_5F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_60(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_61(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_62(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_63(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_64(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_65(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_66(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_67(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_68(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_69(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_6A(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_6B(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_6C(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_6D(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_6E(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_6F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_70(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_71(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_72(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_73(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_74(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_75(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_76(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_77(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_78(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_79(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_7A(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_7B(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_7C(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_7D(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_7E(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_7F(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .MODE("DP16K"),
     .OCEAMUX("1"),
     .OCEBMUX("1"),
@@ -1751,459 +473,1461 @@ module ramfifo  // ramfifo.v(14)
     .WEBMUX("0"),
     .WRITEMODE_A("NORMAL"),
     .WRITEMODE_B("NORMAL"))
-    logic_ramfifo_syn_477 (
-    .addra({1'b0,logic_ramfifo_syn_175,logic_ramfifo_syn_9,logic_ramfifo_syn_8,logic_ramfifo_syn_7,logic_ramfifo_syn_6,logic_ramfifo_syn_5,logic_ramfifo_syn_4,logic_ramfifo_syn_3,logic_ramfifo_syn_2,logic_ramfifo_syn_1}),
-    .addrb({1'b0,logic_ramfifo_syn_173,logic_ramfifo_syn_31,logic_ramfifo_syn_30,logic_ramfifo_syn_29,logic_ramfifo_syn_28,logic_ramfifo_syn_27,logic_ramfifo_syn_26,logic_ramfifo_syn_25,logic_ramfifo_syn_24,logic_ramfifo_syn_23}),
+    fifo_bram_1024x16_sub_000000_000 (
+    .addra({1'b0,xor_wrptr_g10_wrptr__o,wrptr_g8,wrptr_g7,wrptr_g6,wrptr_g5,wrptr_g4,wrptr_g3,wrptr_g2,wrptr_g1,wrptr_g0}),
+    .addrb({1'b0,xor_rdptr_g10_rdptr__o,rdptr_g8,rdptr_g7,rdptr_g6,rdptr_g5,rdptr_g4,rdptr_g3,rdptr_g2,rdptr_g1,rdptr_g0}),
     .bytewea(1'b0),
     .byteweb(1'b0),
-    .clka(clk),
-    .clkb(clk),
-    .csb(re_syn_2),
+    .clka(clkw),
+    .clkb(clkr),
+    .csb(and_re_empty_equal_o_o),
     .dia(di),
     .rsta(rst),
     .rstb(rst),
-    .wea(we_syn_2),
-    .dob(do));  // ramfifo.v(39)
-  not logic_ramfifo_syn_494 (full_flag, logic_ramfifo_syn_559);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_495 (logic_ramfifo_syn_539, logic_ramfifo_syn_1, logic_ramfifo_syn_45);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_496 (logic_ramfifo_syn_540, logic_ramfifo_syn_2, logic_ramfifo_syn_46);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_497 (logic_ramfifo_syn_541, logic_ramfifo_syn_3, logic_ramfifo_syn_47);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_498 (logic_ramfifo_syn_542, logic_ramfifo_syn_4, logic_ramfifo_syn_48);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_499 (logic_ramfifo_syn_543, logic_ramfifo_syn_5, logic_ramfifo_syn_49);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_500 (logic_ramfifo_syn_544, logic_ramfifo_syn_6, logic_ramfifo_syn_50);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_501 (logic_ramfifo_syn_545, logic_ramfifo_syn_7, logic_ramfifo_syn_51);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_502 (logic_ramfifo_syn_546, logic_ramfifo_syn_8, logic_ramfifo_syn_52);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_503 (logic_ramfifo_syn_547, logic_ramfifo_syn_9, logic_ramfifo_syn_53);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_504 (logic_ramfifo_syn_548, logic_ramfifo_syn_10, logic_ramfifo_syn_152);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_505 (logic_ramfifo_syn_549, logic_ramfifo_syn_11, logic_ramfifo_syn_154);  // ramfifo.v(39)
-  or logic_ramfifo_syn_506 (logic_ramfifo_syn_550, logic_ramfifo_syn_539, logic_ramfifo_syn_540);  // ramfifo.v(39)
-  or logic_ramfifo_syn_507 (logic_ramfifo_syn_551, logic_ramfifo_syn_542, logic_ramfifo_syn_543);  // ramfifo.v(39)
-  or logic_ramfifo_syn_508 (logic_ramfifo_syn_552, logic_ramfifo_syn_541, logic_ramfifo_syn_551);  // ramfifo.v(39)
-  or logic_ramfifo_syn_509 (logic_ramfifo_syn_553, logic_ramfifo_syn_550, logic_ramfifo_syn_552);  // ramfifo.v(39)
-  or logic_ramfifo_syn_510 (logic_ramfifo_syn_554, logic_ramfifo_syn_545, logic_ramfifo_syn_546);  // ramfifo.v(39)
-  or logic_ramfifo_syn_511 (logic_ramfifo_syn_555, logic_ramfifo_syn_544, logic_ramfifo_syn_554);  // ramfifo.v(39)
-  or logic_ramfifo_syn_512 (logic_ramfifo_syn_556, logic_ramfifo_syn_548, logic_ramfifo_syn_549);  // ramfifo.v(39)
-  or logic_ramfifo_syn_513 (logic_ramfifo_syn_557, logic_ramfifo_syn_547, logic_ramfifo_syn_556);  // ramfifo.v(39)
-  or logic_ramfifo_syn_514 (logic_ramfifo_syn_558, logic_ramfifo_syn_555, logic_ramfifo_syn_557);  // ramfifo.v(39)
-  or logic_ramfifo_syn_515 (logic_ramfifo_syn_559, logic_ramfifo_syn_553, logic_ramfifo_syn_558);  // ramfifo.v(39)
-  not logic_ramfifo_syn_560 (empty_flag, logic_ramfifo_syn_625);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_561 (logic_ramfifo_syn_605, logic_ramfifo_syn_78, logic_ramfifo_syn_23);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_562 (logic_ramfifo_syn_606, logic_ramfifo_syn_79, logic_ramfifo_syn_24);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_563 (logic_ramfifo_syn_607, logic_ramfifo_syn_80, logic_ramfifo_syn_25);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_564 (logic_ramfifo_syn_608, logic_ramfifo_syn_81, logic_ramfifo_syn_26);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_565 (logic_ramfifo_syn_609, logic_ramfifo_syn_82, logic_ramfifo_syn_27);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_566 (logic_ramfifo_syn_610, logic_ramfifo_syn_83, logic_ramfifo_syn_28);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_567 (logic_ramfifo_syn_611, logic_ramfifo_syn_84, logic_ramfifo_syn_29);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_568 (logic_ramfifo_syn_612, logic_ramfifo_syn_85, logic_ramfifo_syn_30);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_569 (logic_ramfifo_syn_613, logic_ramfifo_syn_86, logic_ramfifo_syn_31);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_570 (logic_ramfifo_syn_614, logic_ramfifo_syn_87, logic_ramfifo_syn_32);  // ramfifo.v(39)
-  xor logic_ramfifo_syn_571 (logic_ramfifo_syn_615, logic_ramfifo_syn_88, logic_ramfifo_syn_33);  // ramfifo.v(39)
-  or logic_ramfifo_syn_572 (logic_ramfifo_syn_616, logic_ramfifo_syn_605, logic_ramfifo_syn_606);  // ramfifo.v(39)
-  or logic_ramfifo_syn_573 (logic_ramfifo_syn_617, logic_ramfifo_syn_608, logic_ramfifo_syn_609);  // ramfifo.v(39)
-  or logic_ramfifo_syn_574 (logic_ramfifo_syn_618, logic_ramfifo_syn_607, logic_ramfifo_syn_617);  // ramfifo.v(39)
-  or logic_ramfifo_syn_575 (logic_ramfifo_syn_619, logic_ramfifo_syn_616, logic_ramfifo_syn_618);  // ramfifo.v(39)
-  or logic_ramfifo_syn_576 (logic_ramfifo_syn_620, logic_ramfifo_syn_611, logic_ramfifo_syn_612);  // ramfifo.v(39)
-  or logic_ramfifo_syn_577 (logic_ramfifo_syn_621, logic_ramfifo_syn_610, logic_ramfifo_syn_620);  // ramfifo.v(39)
-  or logic_ramfifo_syn_578 (logic_ramfifo_syn_622, logic_ramfifo_syn_614, logic_ramfifo_syn_615);  // ramfifo.v(39)
-  or logic_ramfifo_syn_579 (logic_ramfifo_syn_623, logic_ramfifo_syn_613, logic_ramfifo_syn_622);  // ramfifo.v(39)
-  or logic_ramfifo_syn_580 (logic_ramfifo_syn_624, logic_ramfifo_syn_621, logic_ramfifo_syn_623);  // ramfifo.v(39)
-  or logic_ramfifo_syn_581 (logic_ramfifo_syn_625, logic_ramfifo_syn_619, logic_ramfifo_syn_624);  // ramfifo.v(39)
+    .wea(and_we_full_equal_o__o),
+    .dob(do));
+  not \full_equal/none_diff  (full_flag, \full_equal/or_or_or_xor_i0[0]_i_o );
+  or \full_equal/or_or_or_xor_i0[0]_i  (\full_equal/or_or_or_xor_i0[0]_i_o , \full_equal/or_or_xor_i0[0]_i1[0_o , \full_equal/or_or_xor_i0[5]_i1[5_o );
+  or \full_equal/or_or_xor_i0[0]_i1[0  (\full_equal/or_or_xor_i0[0]_i1[0_o , \full_equal/or_xor_i0[0]_i1[0]_o_o , \full_equal/or_xor_i0[2]_i1[2]_o_o );
+  or \full_equal/or_or_xor_i0[5]_i1[5  (\full_equal/or_or_xor_i0[5]_i1[5_o , \full_equal/or_xor_i0[5]_i1[5]_o_o , \full_equal/or_xor_i0[8]_i1[8]_o_o );
+  or \full_equal/or_xor_i0[0]_i1[0]_o  (\full_equal/or_xor_i0[0]_i1[0]_o_o , \full_equal/xor_i0[0]_i1[0]_o , \full_equal/xor_i0[1]_i1[1]_o );
+  or \full_equal/or_xor_i0[2]_i1[2]_o  (\full_equal/or_xor_i0[2]_i1[2]_o_o , \full_equal/xor_i0[2]_i1[2]_o , \full_equal/or_xor_i0[3]_i1[3]_o_o );
+  or \full_equal/or_xor_i0[3]_i1[3]_o  (\full_equal/or_xor_i0[3]_i1[3]_o_o , \full_equal/xor_i0[3]_i1[3]_o , \full_equal/xor_i0[4]_i1[4]_o );
+  or \full_equal/or_xor_i0[5]_i1[5]_o  (\full_equal/or_xor_i0[5]_i1[5]_o_o , \full_equal/xor_i0[5]_i1[5]_o , \full_equal/or_xor_i0[6]_i1[6]_o_o );
+  or \full_equal/or_xor_i0[6]_i1[6]_o  (\full_equal/or_xor_i0[6]_i1[6]_o_o , \full_equal/xor_i0[6]_i1[6]_o , \full_equal/xor_i0[7]_i1[7]_o );
+  or \full_equal/or_xor_i0[8]_i1[8]_o  (\full_equal/or_xor_i0[8]_i1[8]_o_o , \full_equal/xor_i0[8]_i1[8]_o , \full_equal/or_xor_i0[9]_i1[9]_o_o );
+  or \full_equal/or_xor_i0[9]_i1[9]_o  (\full_equal/or_xor_i0[9]_i1[9]_o_o , \full_equal/xor_i0[9]_i1[9]_o , \full_equal/xor_i0[10]_i1[10]_o );
+  xor \full_equal/xor_i0[0]_i1[0]  (\full_equal/xor_i0[0]_i1[0]_o , wrptr_g0, sync_rdptr_g0);
+  xor \full_equal/xor_i0[10]_i1[10]  (\full_equal/xor_i0[10]_i1[10]_o , wrptr_g10, sync_rdptr_g10_neg);
+  xor \full_equal/xor_i0[1]_i1[1]  (\full_equal/xor_i0[1]_i1[1]_o , wrptr_g1, sync_rdptr_g1);
+  xor \full_equal/xor_i0[2]_i1[2]  (\full_equal/xor_i0[2]_i1[2]_o , wrptr_g2, sync_rdptr_g2);
+  xor \full_equal/xor_i0[3]_i1[3]  (\full_equal/xor_i0[3]_i1[3]_o , wrptr_g3, sync_rdptr_g3);
+  xor \full_equal/xor_i0[4]_i1[4]  (\full_equal/xor_i0[4]_i1[4]_o , wrptr_g4, sync_rdptr_g4);
+  xor \full_equal/xor_i0[5]_i1[5]  (\full_equal/xor_i0[5]_i1[5]_o , wrptr_g5, sync_rdptr_g5);
+  xor \full_equal/xor_i0[6]_i1[6]  (\full_equal/xor_i0[6]_i1[6]_o , wrptr_g6, sync_rdptr_g6);
+  xor \full_equal/xor_i0[7]_i1[7]  (\full_equal/xor_i0[7]_i1[7]_o , wrptr_g7, sync_rdptr_g7);
+  xor \full_equal/xor_i0[8]_i1[8]  (\full_equal/xor_i0[8]_i1[8]_o , wrptr_g8, sync_rdptr_g8);
+  xor \full_equal/xor_i0[9]_i1[9]  (\full_equal/xor_i0[9]_i1[9]_o , wrptr_g9, sync_rdptr_g9_neg);
+  not full_equal_o_inv (full_equal_o_neg, full_flag);
+  AL_MUX \gray_counter_mux_al_u28_b0/al_mux_b0_0_0  (
+    .i0(q0_al_n19),
+    .i1(q0_al_n19_neg),
+    .sel(and_re_empty_equal_o_o),
+    .o(gray_counter_mux_o0_al_n40));
+  AL_MUX \gray_counter_mux_al_u28_b1/al_mux_b0_0_0  (
+    .i0(q1_al_n20),
+    .i1(xor_q1_al_n20_and_q0_o),
+    .sel(and_re_empty_equal_o_o),
+    .o(gray_counter_mux_o1_al_n41));
+  AL_MUX \gray_counter_mux_al_u28_b10/al_mux_b0_0_0  (
+    .i0(q10_al_n29),
+    .i1(xor_q10_al_n29_and_q_o),
+    .sel(and_re_empty_equal_o_o),
+    .o(gray_counter_mux_o10_al_n50));
+  AL_MUX \gray_counter_mux_al_u28_b11/al_mux_b0_0_0  (
+    .i0(q11_al_n30),
+    .i1(xor_q11_al_n30_and_o_o),
+    .sel(and_re_empty_equal_o_o),
+    .o(gray_counter_mux_o11_al_n51));
+  AL_MUX \gray_counter_mux_al_u28_b2/al_mux_b0_0_0  (
+    .i0(q2_al_n21),
+    .i1(xor_q2_al_n21_and_q1_o),
+    .sel(and_re_empty_equal_o_o),
+    .o(gray_counter_mux_o2_al_n42));
+  AL_MUX \gray_counter_mux_al_u28_b3/al_mux_b0_0_0  (
+    .i0(q3_al_n22),
+    .i1(xor_q3_al_n22_and_q2_o),
+    .sel(and_re_empty_equal_o_o),
+    .o(gray_counter_mux_o3_al_n43));
+  AL_MUX \gray_counter_mux_al_u28_b4/al_mux_b0_0_0  (
+    .i0(q4_al_n23),
+    .i1(xor_q4_al_n23_and_q3_o),
+    .sel(and_re_empty_equal_o_o),
+    .o(gray_counter_mux_o4_al_n44));
+  AL_MUX \gray_counter_mux_al_u28_b5/al_mux_b0_0_0  (
+    .i0(q5_al_n24),
+    .i1(xor_q5_al_n24_and_q4_o),
+    .sel(and_re_empty_equal_o_o),
+    .o(gray_counter_mux_o5_al_n45));
+  AL_MUX \gray_counter_mux_al_u28_b6/al_mux_b0_0_0  (
+    .i0(q6_al_n25),
+    .i1(xor_q6_al_n25_and_q5_o),
+    .sel(and_re_empty_equal_o_o),
+    .o(gray_counter_mux_o6_al_n46));
+  AL_MUX \gray_counter_mux_al_u28_b7/al_mux_b0_0_0  (
+    .i0(q7_al_n26),
+    .i1(xor_q7_al_n26_and_q6_o),
+    .sel(and_re_empty_equal_o_o),
+    .o(gray_counter_mux_o7_al_n47));
+  AL_MUX \gray_counter_mux_al_u28_b8/al_mux_b0_0_0  (
+    .i0(q8_al_n27),
+    .i1(xor_q8_al_n27_and_q7_o),
+    .sel(and_re_empty_equal_o_o),
+    .o(gray_counter_mux_o8_al_n48));
+  AL_MUX \gray_counter_mux_al_u28_b9/al_mux_b0_0_0  (
+    .i0(q9_al_n28),
+    .i1(xor_q9_al_n28_and_q8_o),
+    .sel(and_re_empty_equal_o_o),
+    .o(gray_counter_mux_o9_al_n49));
+  AL_MUX \gray_counter_mux_b0/al_mux_b0_0_0  (
+    .i0(q0),
+    .i1(q0_neg),
+    .sel(and_we_full_equal_o__o),
+    .o(gray_counter_mux_o0));
+  AL_MUX \gray_counter_mux_b1/al_mux_b0_0_0  (
+    .i0(q1),
+    .i1(xor_q1_and_q0__al_n1_o),
+    .sel(and_we_full_equal_o__o),
+    .o(gray_counter_mux_o1));
+  AL_MUX \gray_counter_mux_b10/al_mux_b0_0_0  (
+    .i0(q10),
+    .i1(xor_q10_and_q9_and_a_o),
+    .sel(and_we_full_equal_o__o),
+    .o(gray_counter_mux_o10));
+  AL_MUX \gray_counter_mux_b11/al_mux_b0_0_0  (
+    .i0(q11),
+    .i1(xor_q11_and_or_q11_q_o),
+    .sel(and_we_full_equal_o__o),
+    .o(gray_counter_mux_o11));
+  AL_MUX \gray_counter_mux_b2/al_mux_b0_0_0  (
+    .i0(q2),
+    .i1(xor_q2_and_q1_and__a_o),
+    .sel(and_we_full_equal_o__o),
+    .o(gray_counter_mux_o2));
+  AL_MUX \gray_counter_mux_b3/al_mux_b0_0_0  (
+    .i0(q3),
+    .i1(xor_q3_and_q2_and_an_o),
+    .sel(and_we_full_equal_o__o),
+    .o(gray_counter_mux_o3));
+  AL_MUX \gray_counter_mux_b4/al_mux_b0_0_0  (
+    .i0(q4),
+    .i1(xor_q4_and_q3_and_an_o),
+    .sel(and_we_full_equal_o__o),
+    .o(gray_counter_mux_o4));
+  AL_MUX \gray_counter_mux_b5/al_mux_b0_0_0  (
+    .i0(q5),
+    .i1(xor_q5_and_q4_and_an_o),
+    .sel(and_we_full_equal_o__o),
+    .o(gray_counter_mux_o5));
+  AL_MUX \gray_counter_mux_b6/al_mux_b0_0_0  (
+    .i0(q6),
+    .i1(xor_q6_and_q5_and_an_o),
+    .sel(and_we_full_equal_o__o),
+    .o(gray_counter_mux_o6));
+  AL_MUX \gray_counter_mux_b7/al_mux_b0_0_0  (
+    .i0(q7),
+    .i1(xor_q7_and_q6_and_an_o),
+    .sel(and_we_full_equal_o__o),
+    .o(gray_counter_mux_o7));
+  AL_MUX \gray_counter_mux_b8/al_mux_b0_0_0  (
+    .i0(q8),
+    .i1(xor_q8_and_q7_and_an_o),
+    .sel(and_we_full_equal_o__o),
+    .o(gray_counter_mux_o8));
+  AL_MUX \gray_counter_mux_b9/al_mux_b0_0_0  (
+    .i0(q9),
+    .i1(xor_q9_and_q8_and_an_o),
+    .sel(and_we_full_equal_o__o),
+    .o(gray_counter_mux_o9));
+  reg_ar_as_w1 gray_counter_reg_al_u29_b0 (
+    .clk(clkr),
+    .d(gray_counter_mux_o0_al_n40),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q0_al_n19));
+  reg_ar_as_w1 gray_counter_reg_al_u29_b1 (
+    .clk(clkr),
+    .d(gray_counter_mux_o1_al_n41),
+    .en(1'b1),
+    .reset(1'b0),
+    .set(rst),
+    .q(q1_al_n20));
+  reg_ar_as_w1 gray_counter_reg_al_u29_b10 (
+    .clk(clkr),
+    .d(gray_counter_mux_o10_al_n50),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q10_al_n29));
+  reg_ar_as_w1 gray_counter_reg_al_u29_b11 (
+    .clk(clkr),
+    .d(gray_counter_mux_o11_al_n51),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q11_al_n30));
+  reg_ar_as_w1 gray_counter_reg_al_u29_b2 (
+    .clk(clkr),
+    .d(gray_counter_mux_o2_al_n42),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q2_al_n21));
+  reg_ar_as_w1 gray_counter_reg_al_u29_b3 (
+    .clk(clkr),
+    .d(gray_counter_mux_o3_al_n43),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q3_al_n22));
+  reg_ar_as_w1 gray_counter_reg_al_u29_b4 (
+    .clk(clkr),
+    .d(gray_counter_mux_o4_al_n44),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q4_al_n23));
+  reg_ar_as_w1 gray_counter_reg_al_u29_b5 (
+    .clk(clkr),
+    .d(gray_counter_mux_o5_al_n45),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q5_al_n24));
+  reg_ar_as_w1 gray_counter_reg_al_u29_b6 (
+    .clk(clkr),
+    .d(gray_counter_mux_o6_al_n46),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q6_al_n25));
+  reg_ar_as_w1 gray_counter_reg_al_u29_b7 (
+    .clk(clkr),
+    .d(gray_counter_mux_o7_al_n47),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q7_al_n26));
+  reg_ar_as_w1 gray_counter_reg_al_u29_b8 (
+    .clk(clkr),
+    .d(gray_counter_mux_o8_al_n48),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q8_al_n27));
+  reg_ar_as_w1 gray_counter_reg_al_u29_b9 (
+    .clk(clkr),
+    .d(gray_counter_mux_o9_al_n49),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q9_al_n28));
+  reg_ar_as_w1 gray_counter_reg_b0 (
+    .clk(clkw),
+    .d(gray_counter_mux_o0),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q0));
+  reg_ar_as_w1 gray_counter_reg_b1 (
+    .clk(clkw),
+    .d(gray_counter_mux_o1),
+    .en(1'b1),
+    .reset(1'b0),
+    .set(rst),
+    .q(q1));
+  reg_ar_as_w1 gray_counter_reg_b10 (
+    .clk(clkw),
+    .d(gray_counter_mux_o10),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q10));
+  reg_ar_as_w1 gray_counter_reg_b11 (
+    .clk(clkw),
+    .d(gray_counter_mux_o11),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q11));
+  reg_ar_as_w1 gray_counter_reg_b2 (
+    .clk(clkw),
+    .d(gray_counter_mux_o2),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q2));
+  reg_ar_as_w1 gray_counter_reg_b3 (
+    .clk(clkw),
+    .d(gray_counter_mux_o3),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q3));
+  reg_ar_as_w1 gray_counter_reg_b4 (
+    .clk(clkw),
+    .d(gray_counter_mux_o4),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q4));
+  reg_ar_as_w1 gray_counter_reg_b5 (
+    .clk(clkw),
+    .d(gray_counter_mux_o5),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q5));
+  reg_ar_as_w1 gray_counter_reg_b6 (
+    .clk(clkw),
+    .d(gray_counter_mux_o6),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q6));
+  reg_ar_as_w1 gray_counter_reg_b7 (
+    .clk(clkw),
+    .d(gray_counter_mux_o7),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q7));
+  reg_ar_as_w1 gray_counter_reg_b8 (
+    .clk(clkw),
+    .d(gray_counter_mux_o8),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q8));
+  reg_ar_as_w1 gray_counter_reg_b9 (
+    .clk(clkw),
+    .d(gray_counter_mux_o9),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(q9));
+  AL_MUX \mux_al_u30_b0/al_mux_b0_0_0  (
+    .i0(rdptr_g0),
+    .i1(q1_al_n20),
+    .sel(and_re_empty_equal_o_o),
+    .o(mux_o0_al_n52));
+  AL_MUX \mux_al_u30_b1/al_mux_b0_0_0  (
+    .i0(rdptr_g1),
+    .i1(q2_al_n21),
+    .sel(and_re_empty_equal_o_o),
+    .o(mux_o1_al_n53));
+  AL_MUX \mux_al_u30_b10/al_mux_b0_0_0  (
+    .i0(rdptr_g10),
+    .i1(q11_al_n30),
+    .sel(and_re_empty_equal_o_o),
+    .o(mux_o10_al_n62));
+  AL_MUX \mux_al_u30_b2/al_mux_b0_0_0  (
+    .i0(rdptr_g2),
+    .i1(q3_al_n22),
+    .sel(and_re_empty_equal_o_o),
+    .o(mux_o2_al_n54));
+  AL_MUX \mux_al_u30_b3/al_mux_b0_0_0  (
+    .i0(rdptr_g3),
+    .i1(q4_al_n23),
+    .sel(and_re_empty_equal_o_o),
+    .o(mux_o3_al_n55));
+  AL_MUX \mux_al_u30_b4/al_mux_b0_0_0  (
+    .i0(rdptr_g4),
+    .i1(q5_al_n24),
+    .sel(and_re_empty_equal_o_o),
+    .o(mux_o4_al_n56));
+  AL_MUX \mux_al_u30_b5/al_mux_b0_0_0  (
+    .i0(rdptr_g5),
+    .i1(q6_al_n25),
+    .sel(and_re_empty_equal_o_o),
+    .o(mux_o5_al_n57));
+  AL_MUX \mux_al_u30_b6/al_mux_b0_0_0  (
+    .i0(rdptr_g6),
+    .i1(q7_al_n26),
+    .sel(and_re_empty_equal_o_o),
+    .o(mux_o6_al_n58));
+  AL_MUX \mux_al_u30_b7/al_mux_b0_0_0  (
+    .i0(rdptr_g7),
+    .i1(q8_al_n27),
+    .sel(and_re_empty_equal_o_o),
+    .o(mux_o7_al_n59));
+  AL_MUX \mux_al_u30_b8/al_mux_b0_0_0  (
+    .i0(rdptr_g8),
+    .i1(q9_al_n28),
+    .sel(and_re_empty_equal_o_o),
+    .o(mux_o8_al_n60));
+  AL_MUX \mux_al_u30_b9/al_mux_b0_0_0  (
+    .i0(rdptr_g9),
+    .i1(q10_al_n29),
+    .sel(and_re_empty_equal_o_o),
+    .o(mux_o9_al_n61));
+  AL_MUX \mux_b0/al_mux_b0_0_0  (
+    .i0(wrptr_g0),
+    .i1(q1),
+    .sel(and_we_full_equal_o__o),
+    .o(mux_o0));
+  AL_MUX \mux_b1/al_mux_b0_0_0  (
+    .i0(wrptr_g1),
+    .i1(q2),
+    .sel(and_we_full_equal_o__o),
+    .o(mux_o1));
+  AL_MUX \mux_b10/al_mux_b0_0_0  (
+    .i0(wrptr_g10),
+    .i1(q11),
+    .sel(and_we_full_equal_o__o),
+    .o(mux_o10));
+  AL_MUX \mux_b2/al_mux_b0_0_0  (
+    .i0(wrptr_g2),
+    .i1(q3),
+    .sel(and_we_full_equal_o__o),
+    .o(mux_o2));
+  AL_MUX \mux_b3/al_mux_b0_0_0  (
+    .i0(wrptr_g3),
+    .i1(q4),
+    .sel(and_we_full_equal_o__o),
+    .o(mux_o3));
+  AL_MUX \mux_b4/al_mux_b0_0_0  (
+    .i0(wrptr_g4),
+    .i1(q5),
+    .sel(and_we_full_equal_o__o),
+    .o(mux_o4));
+  AL_MUX \mux_b5/al_mux_b0_0_0  (
+    .i0(wrptr_g5),
+    .i1(q6),
+    .sel(and_we_full_equal_o__o),
+    .o(mux_o5));
+  AL_MUX \mux_b6/al_mux_b0_0_0  (
+    .i0(wrptr_g6),
+    .i1(q7),
+    .sel(and_we_full_equal_o__o),
+    .o(mux_o6));
+  AL_MUX \mux_b7/al_mux_b0_0_0  (
+    .i0(wrptr_g7),
+    .i1(q8),
+    .sel(and_we_full_equal_o__o),
+    .o(mux_o7));
+  AL_MUX \mux_b8/al_mux_b0_0_0  (
+    .i0(wrptr_g8),
+    .i1(q9),
+    .sel(and_we_full_equal_o__o),
+    .o(mux_o8));
+  AL_MUX \mux_b9/al_mux_b0_0_0  (
+    .i0(wrptr_g9),
+    .i1(q10),
+    .sel(and_we_full_equal_o__o),
+    .o(mux_o9));
+  or or_q11_al_n30_q10_al (or_q11_al_n30_q10_al_o, q11_al_n30, q10_al_n29);
+  or or_q11_q10 (or_q11_q10_o, q11, q10);
+  not q0_al_n19_inv (q0_al_n19_neg, q0_al_n19);
+  not q0_inv (q0_neg, q0);
+  not q1_al_n20_inv (q1_al_n20_neg, q1_al_n20);
+  not q1_inv (q1_neg, q1);
+  not q2_al_n21_inv (q2_al_n21_neg, q2_al_n21);
+  not q2_inv (q2_neg, q2);
+  not q3_al_n22_inv (q3_al_n22_neg, q3_al_n22);
+  not q3_inv (q3_neg, q3);
+  not q4_al_n23_inv (q4_al_n23_neg, q4_al_n23);
+  not q4_inv (q4_neg, q4);
+  not q5_al_n24_inv (q5_al_n24_neg, q5_al_n24);
+  not q5_inv (q5_neg, q5);
+  not q6_al_n25_inv (q6_al_n25_neg, q6_al_n25);
+  not q6_inv (q6_neg, q6);
+  not q7_al_n26_inv (q7_al_n26_neg, q7_al_n26);
+  not q7_inv (q7_neg, q7);
+  not q8_al_n27_inv (q8_al_n27_neg, q8_al_n27);
+  not q8_inv (q8_neg, q8);
+  not q9_al_n28_inv (q9_al_n28_neg, q9_al_n28);
+  not q9_inv (q9_neg, q9);
+  AL_MAP_ADDER #(
+    .ALUTYPE("SUB"))
+    \rdusedw_sub/u0  (
+    .a(sync_delayed_wrptr_g_bin_d10),
+    .b(rdptr_g_bin_d10),
+    .c(\rdusedw_sub/c0 ),
+    .o({\rdusedw_sub/c1 ,rdusedw[0]}));
+  AL_MAP_ADDER #(
+    .ALUTYPE("SUB"))
+    \rdusedw_sub/u1  (
+    .a(sync_delayed_wrptr_g_bin_d11),
+    .b(rdptr_g_bin_d11),
+    .c(\rdusedw_sub/c1 ),
+    .o({\rdusedw_sub/c2 ,rdusedw[1]}));
+  AL_MAP_ADDER #(
+    .ALUTYPE("SUB"))
+    \rdusedw_sub/u10  (
+    .a(sync_delayed_wrptr_g_bin_d110),
+    .b(rdptr_g_bin_d110),
+    .c(\rdusedw_sub/c10 ),
+    .o({open_n85,rdusedw[10]}));
+  AL_MAP_ADDER #(
+    .ALUTYPE("SUB"))
+    \rdusedw_sub/u2  (
+    .a(sync_delayed_wrptr_g_bin_d12),
+    .b(rdptr_g_bin_d12),
+    .c(\rdusedw_sub/c2 ),
+    .o({\rdusedw_sub/c3 ,rdusedw[2]}));
+  AL_MAP_ADDER #(
+    .ALUTYPE("SUB"))
+    \rdusedw_sub/u3  (
+    .a(sync_delayed_wrptr_g_bin_d13),
+    .b(rdptr_g_bin_d13),
+    .c(\rdusedw_sub/c3 ),
+    .o({\rdusedw_sub/c4 ,rdusedw[3]}));
+  AL_MAP_ADDER #(
+    .ALUTYPE("SUB"))
+    \rdusedw_sub/u4  (
+    .a(sync_delayed_wrptr_g_bin_d14),
+    .b(rdptr_g_bin_d14),
+    .c(\rdusedw_sub/c4 ),
+    .o({\rdusedw_sub/c5 ,rdusedw[4]}));
+  AL_MAP_ADDER #(
+    .ALUTYPE("SUB"))
+    \rdusedw_sub/u5  (
+    .a(sync_delayed_wrptr_g_bin_d15),
+    .b(rdptr_g_bin_d15),
+    .c(\rdusedw_sub/c5 ),
+    .o({\rdusedw_sub/c6 ,rdusedw[5]}));
+  AL_MAP_ADDER #(
+    .ALUTYPE("SUB"))
+    \rdusedw_sub/u6  (
+    .a(sync_delayed_wrptr_g_bin_d16),
+    .b(rdptr_g_bin_d16),
+    .c(\rdusedw_sub/c6 ),
+    .o({\rdusedw_sub/c7 ,rdusedw[6]}));
+  AL_MAP_ADDER #(
+    .ALUTYPE("SUB"))
+    \rdusedw_sub/u7  (
+    .a(sync_delayed_wrptr_g_bin_d17),
+    .b(rdptr_g_bin_d17),
+    .c(\rdusedw_sub/c7 ),
+    .o({\rdusedw_sub/c8 ,rdusedw[7]}));
+  AL_MAP_ADDER #(
+    .ALUTYPE("SUB"))
+    \rdusedw_sub/u8  (
+    .a(sync_delayed_wrptr_g_bin_d18),
+    .b(rdptr_g_bin_d18),
+    .c(\rdusedw_sub/c8 ),
+    .o({\rdusedw_sub/c9 ,rdusedw[8]}));
+  AL_MAP_ADDER #(
+    .ALUTYPE("SUB"))
+    \rdusedw_sub/u9  (
+    .a(sync_delayed_wrptr_g_bin_d19),
+    .b(rdptr_g_bin_d19),
+    .c(\rdusedw_sub/c9 ),
+    .o({\rdusedw_sub/c10 ,rdusedw[9]}));
   AL_MAP_ADDER #(
     .ALUTYPE("SUB_CARRY"))
-    logic_ramfifo_syn_626 (
+    \rdusedw_sub/ucin  (
     .a(1'b0),
-    .o({logic_ramfifo_syn_672,open_n87}));  // ramfifo.v(39)
+    .o({\rdusedw_sub/c0 ,open_n88}));
+  reg_ar_as_w1 reg_deleay_wrptr_b0 (
+    .clk(clkw),
+    .d(wrptr_g0),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(delayed_wrptr_g0));
+  reg_ar_as_w1 reg_deleay_wrptr_b1 (
+    .clk(clkw),
+    .d(wrptr_g1),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(delayed_wrptr_g1));
+  reg_ar_as_w1 reg_deleay_wrptr_b10 (
+    .clk(clkw),
+    .d(wrptr_g10),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(delayed_wrptr_g10));
+  reg_ar_as_w1 reg_deleay_wrptr_b2 (
+    .clk(clkw),
+    .d(wrptr_g2),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(delayed_wrptr_g2));
+  reg_ar_as_w1 reg_deleay_wrptr_b3 (
+    .clk(clkw),
+    .d(wrptr_g3),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(delayed_wrptr_g3));
+  reg_ar_as_w1 reg_deleay_wrptr_b4 (
+    .clk(clkw),
+    .d(wrptr_g4),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(delayed_wrptr_g4));
+  reg_ar_as_w1 reg_deleay_wrptr_b5 (
+    .clk(clkw),
+    .d(wrptr_g5),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(delayed_wrptr_g5));
+  reg_ar_as_w1 reg_deleay_wrptr_b6 (
+    .clk(clkw),
+    .d(wrptr_g6),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(delayed_wrptr_g6));
+  reg_ar_as_w1 reg_deleay_wrptr_b7 (
+    .clk(clkw),
+    .d(wrptr_g7),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(delayed_wrptr_g7));
+  reg_ar_as_w1 reg_deleay_wrptr_b8 (
+    .clk(clkw),
+    .d(wrptr_g8),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(delayed_wrptr_g8));
+  reg_ar_as_w1 reg_deleay_wrptr_b9 (
+    .clk(clkw),
+    .d(wrptr_g9),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(delayed_wrptr_g9));
+  reg_ar_as_w1 reg_rdptr_al_u45_b0 (
+    .clk(clkw),
+    .d(rdptr_g0),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g0));
+  reg_ar_as_w1 reg_rdptr_al_u45_b1 (
+    .clk(clkw),
+    .d(rdptr_g1),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g1));
+  reg_ar_as_w1 reg_rdptr_al_u45_b10 (
+    .clk(clkw),
+    .d(rdptr_g10),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g10));
+  reg_ar_as_w1 reg_rdptr_al_u45_b2 (
+    .clk(clkw),
+    .d(rdptr_g2),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g2));
+  reg_ar_as_w1 reg_rdptr_al_u45_b3 (
+    .clk(clkw),
+    .d(rdptr_g3),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g3));
+  reg_ar_as_w1 reg_rdptr_al_u45_b4 (
+    .clk(clkw),
+    .d(rdptr_g4),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g4));
+  reg_ar_as_w1 reg_rdptr_al_u45_b5 (
+    .clk(clkw),
+    .d(rdptr_g5),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g5));
+  reg_ar_as_w1 reg_rdptr_al_u45_b6 (
+    .clk(clkw),
+    .d(rdptr_g6),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g6));
+  reg_ar_as_w1 reg_rdptr_al_u45_b7 (
+    .clk(clkw),
+    .d(rdptr_g7),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g7));
+  reg_ar_as_w1 reg_rdptr_al_u45_b8 (
+    .clk(clkw),
+    .d(rdptr_g8),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g8));
+  reg_ar_as_w1 reg_rdptr_al_u45_b9 (
+    .clk(clkw),
+    .d(rdptr_g9),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g9));
+  reg_ar_as_w1 reg_rdptr_al_u58_b0 (
+    .clk(clkr),
+    .d(delayed_wrptr_g0),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g0));
+  reg_ar_as_w1 reg_rdptr_al_u58_b1 (
+    .clk(clkr),
+    .d(delayed_wrptr_g1),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g1));
+  reg_ar_as_w1 reg_rdptr_al_u58_b10 (
+    .clk(clkr),
+    .d(delayed_wrptr_g10),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g10));
+  reg_ar_as_w1 reg_rdptr_al_u58_b2 (
+    .clk(clkr),
+    .d(delayed_wrptr_g2),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g2));
+  reg_ar_as_w1 reg_rdptr_al_u58_b3 (
+    .clk(clkr),
+    .d(delayed_wrptr_g3),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g3));
+  reg_ar_as_w1 reg_rdptr_al_u58_b4 (
+    .clk(clkr),
+    .d(delayed_wrptr_g4),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g4));
+  reg_ar_as_w1 reg_rdptr_al_u58_b5 (
+    .clk(clkr),
+    .d(delayed_wrptr_g5),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g5));
+  reg_ar_as_w1 reg_rdptr_al_u58_b6 (
+    .clk(clkr),
+    .d(delayed_wrptr_g6),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g6));
+  reg_ar_as_w1 reg_rdptr_al_u58_b7 (
+    .clk(clkr),
+    .d(delayed_wrptr_g7),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g7));
+  reg_ar_as_w1 reg_rdptr_al_u58_b8 (
+    .clk(clkr),
+    .d(delayed_wrptr_g8),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g8));
+  reg_ar_as_w1 reg_rdptr_al_u58_b9 (
+    .clk(clkr),
+    .d(delayed_wrptr_g9),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g9));
+  reg_ar_as_w1 reg_rdptr_b0 (
+    .clk(clkr),
+    .d(mux_o0_al_n52),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g0));
+  reg_ar_as_w1 reg_rdptr_b1 (
+    .clk(clkr),
+    .d(mux_o1_al_n53),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g1));
+  reg_ar_as_w1 reg_rdptr_b10 (
+    .clk(clkr),
+    .d(mux_o10_al_n62),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g10));
+  reg_ar_as_w1 reg_rdptr_b2 (
+    .clk(clkr),
+    .d(mux_o2_al_n54),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g2));
+  reg_ar_as_w1 reg_rdptr_b3 (
+    .clk(clkr),
+    .d(mux_o3_al_n55),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g3));
+  reg_ar_as_w1 reg_rdptr_b4 (
+    .clk(clkr),
+    .d(mux_o4_al_n56),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g4));
+  reg_ar_as_w1 reg_rdptr_b5 (
+    .clk(clkr),
+    .d(mux_o5_al_n57),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g5));
+  reg_ar_as_w1 reg_rdptr_b6 (
+    .clk(clkr),
+    .d(mux_o6_al_n58),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g6));
+  reg_ar_as_w1 reg_rdptr_b7 (
+    .clk(clkr),
+    .d(mux_o7_al_n59),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g7));
+  reg_ar_as_w1 reg_rdptr_b8 (
+    .clk(clkr),
+    .d(mux_o8_al_n60),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g8));
+  reg_ar_as_w1 reg_rdptr_b9 (
+    .clk(clkr),
+    .d(mux_o9_al_n61),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g9));
+  reg_ar_as_w1 reg_rdptr_d1_al_u66_b0 (
+    .clk(clkr),
+    .d(xor_xor_xor_xor_xor__o_al_n126),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g_bin_d10));
+  reg_ar_as_w1 reg_rdptr_d1_al_u66_b1 (
+    .clk(clkr),
+    .d(xor_xor_xor_xor_xor__o_al_n125),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g_bin_d11));
+  reg_ar_as_w1 reg_rdptr_d1_al_u66_b10 (
+    .clk(clkr),
+    .d(sync_delayed_wrptr_g10),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g_bin_d110));
+  reg_ar_as_w1 reg_rdptr_d1_al_u66_b2 (
+    .clk(clkr),
+    .d(xor_xor_xor_xor_xor__o_al_n124),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g_bin_d12));
+  reg_ar_as_w1 reg_rdptr_d1_al_u66_b3 (
+    .clk(clkr),
+    .d(xor_xor_xor_xor_xor__o_al_n123),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g_bin_d13));
+  reg_ar_as_w1 reg_rdptr_d1_al_u66_b4 (
+    .clk(clkr),
+    .d(xor_xor_xor_xor_xor__o_al_n122),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g_bin_d14));
+  reg_ar_as_w1 reg_rdptr_d1_al_u66_b5 (
+    .clk(clkr),
+    .d(xor_xor_xor_xor_xor__o_al_n121),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g_bin_d15));
+  reg_ar_as_w1 reg_rdptr_d1_al_u66_b6 (
+    .clk(clkr),
+    .d(xor_xor_xor_xor_sync_o_al_n120),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g_bin_d16));
+  reg_ar_as_w1 reg_rdptr_d1_al_u66_b7 (
+    .clk(clkr),
+    .d(xor_xor_xor_sync_del_o),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g_bin_d17));
+  reg_ar_as_w1 reg_rdptr_d1_al_u66_b8 (
+    .clk(clkr),
+    .d(xor_xor_sync_delayed_o),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g_bin_d18));
+  reg_ar_as_w1 reg_rdptr_d1_al_u66_b9 (
+    .clk(clkr),
+    .d(xor_sync_delayed_wrp_o),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_delayed_wrptr_g_bin_d19));
+  reg_ar_as_w1 reg_rdptr_d1_b0 (
+    .clk(clkw),
+    .d(xor_xor_xor_xor_xor__o_al_n112),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g_bin_d10));
+  reg_ar_as_w1 reg_rdptr_d1_b1 (
+    .clk(clkw),
+    .d(xor_xor_xor_xor_xor__o_al_n111),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g_bin_d11));
+  reg_ar_as_w1 reg_rdptr_d1_b10 (
+    .clk(clkw),
+    .d(sync_rdptr_g10),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g_bin_d110));
+  reg_ar_as_w1 reg_rdptr_d1_b2 (
+    .clk(clkw),
+    .d(xor_xor_xor_xor_xor__o_al_n110),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g_bin_d12));
+  reg_ar_as_w1 reg_rdptr_d1_b3 (
+    .clk(clkw),
+    .d(xor_xor_xor_xor_xor__o_al_n109),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g_bin_d13));
+  reg_ar_as_w1 reg_rdptr_d1_b4 (
+    .clk(clkw),
+    .d(xor_xor_xor_xor_xor__o_al_n108),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g_bin_d14));
+  reg_ar_as_w1 reg_rdptr_d1_b5 (
+    .clk(clkw),
+    .d(xor_xor_xor_xor_xor__o),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g_bin_d15));
+  reg_ar_as_w1 reg_rdptr_d1_b6 (
+    .clk(clkw),
+    .d(xor_xor_xor_xor_sync_o),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g_bin_d16));
+  reg_ar_as_w1 reg_rdptr_d1_b7 (
+    .clk(clkw),
+    .d(xor_xor_xor_sync_rdp_o),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g_bin_d17));
+  reg_ar_as_w1 reg_rdptr_d1_b8 (
+    .clk(clkw),
+    .d(xor_xor_sync_rdptr_g_o),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g_bin_d18));
+  reg_ar_as_w1 reg_rdptr_d1_b9 (
+    .clk(clkw),
+    .d(xor_sync_rdptr_g10_s_o),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(sync_rdptr_g_bin_d19));
+  reg_ar_as_w1 reg_wrptr_b0 (
+    .clk(clkw),
+    .d(mux_o0),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g0));
+  reg_ar_as_w1 reg_wrptr_b1 (
+    .clk(clkw),
+    .d(mux_o1),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g1));
+  reg_ar_as_w1 reg_wrptr_b10 (
+    .clk(clkw),
+    .d(mux_o10),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g10));
+  reg_ar_as_w1 reg_wrptr_b2 (
+    .clk(clkw),
+    .d(mux_o2),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g2));
+  reg_ar_as_w1 reg_wrptr_b3 (
+    .clk(clkw),
+    .d(mux_o3),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g3));
+  reg_ar_as_w1 reg_wrptr_b4 (
+    .clk(clkw),
+    .d(mux_o4),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g4));
+  reg_ar_as_w1 reg_wrptr_b5 (
+    .clk(clkw),
+    .d(mux_o5),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g5));
+  reg_ar_as_w1 reg_wrptr_b6 (
+    .clk(clkw),
+    .d(mux_o6),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g6));
+  reg_ar_as_w1 reg_wrptr_b7 (
+    .clk(clkw),
+    .d(mux_o7),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g7));
+  reg_ar_as_w1 reg_wrptr_b8 (
+    .clk(clkw),
+    .d(mux_o8),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g8));
+  reg_ar_as_w1 reg_wrptr_b9 (
+    .clk(clkw),
+    .d(mux_o9),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g9));
+  reg_ar_as_w1 reg_wrptr_d1_al_u74_b0 (
+    .clk(clkr),
+    .d(xor_xor_xor_xor_xor__o_al_n133),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g_bin_d10));
+  reg_ar_as_w1 reg_wrptr_d1_al_u74_b1 (
+    .clk(clkr),
+    .d(xor_xor_xor_xor_xor__o_al_n132),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g_bin_d11));
+  reg_ar_as_w1 reg_wrptr_d1_al_u74_b10 (
+    .clk(clkr),
+    .d(rdptr_g10),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g_bin_d110));
+  reg_ar_as_w1 reg_wrptr_d1_al_u74_b2 (
+    .clk(clkr),
+    .d(xor_xor_xor_xor_xor__o_al_n131),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g_bin_d12));
+  reg_ar_as_w1 reg_wrptr_d1_al_u74_b3 (
+    .clk(clkr),
+    .d(xor_xor_xor_xor_xor__o_al_n130),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g_bin_d13));
+  reg_ar_as_w1 reg_wrptr_d1_al_u74_b4 (
+    .clk(clkr),
+    .d(xor_xor_xor_xor_xor__o_al_n129),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g_bin_d14));
+  reg_ar_as_w1 reg_wrptr_d1_al_u74_b5 (
+    .clk(clkr),
+    .d(xor_xor_xor_xor_xor__o_al_n128),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g_bin_d15));
+  reg_ar_as_w1 reg_wrptr_d1_al_u74_b6 (
+    .clk(clkr),
+    .d(xor_xor_xor_xor_rdpt_o),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g_bin_d16));
+  reg_ar_as_w1 reg_wrptr_d1_al_u74_b7 (
+    .clk(clkr),
+    .d(xor_xor_xor_rdptr_g1_o),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g_bin_d17));
+  reg_ar_as_w1 reg_wrptr_d1_al_u74_b8 (
+    .clk(clkr),
+    .d(xor_xor_rdptr_g10_rd_o),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g_bin_d18));
+  reg_ar_as_w1 reg_wrptr_d1_al_u74_b9 (
+    .clk(clkr),
+    .d(xor_rdptr_g10_rdptr__o),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(rdptr_g_bin_d19));
+  reg_ar_as_w1 reg_wrptr_d1_b0 (
+    .clk(clkw),
+    .d(xor_xor_xor_xor_xor__o_al_n119),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g_bin_d10));
+  reg_ar_as_w1 reg_wrptr_d1_b1 (
+    .clk(clkw),
+    .d(xor_xor_xor_xor_xor__o_al_n118),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g_bin_d11));
+  reg_ar_as_w1 reg_wrptr_d1_b2 (
+    .clk(clkw),
+    .d(xor_xor_xor_xor_xor__o_al_n117),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g_bin_d12));
+  reg_ar_as_w1 reg_wrptr_d1_b3 (
+    .clk(clkw),
+    .d(xor_xor_xor_xor_xor__o_al_n116),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g_bin_d13));
+  reg_ar_as_w1 reg_wrptr_d1_b4 (
+    .clk(clkw),
+    .d(xor_xor_xor_xor_xor__o_al_n115),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g_bin_d14));
+  reg_ar_as_w1 reg_wrptr_d1_b5 (
+    .clk(clkw),
+    .d(xor_xor_xor_xor_xor__o_al_n114),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g_bin_d15));
+  reg_ar_as_w1 reg_wrptr_d1_b6 (
+    .clk(clkw),
+    .d(xor_xor_xor_xor_wrpt_o),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g_bin_d16));
+  reg_ar_as_w1 reg_wrptr_d1_b7 (
+    .clk(clkw),
+    .d(xor_xor_xor_wrptr_g1_o),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g_bin_d17));
+  reg_ar_as_w1 reg_wrptr_d1_b8 (
+    .clk(clkw),
+    .d(xor_xor_wrptr_g10_wr_o),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g_bin_d18));
+  reg_ar_as_w1 reg_wrptr_d1_b9 (
+    .clk(clkw),
+    .d(xor_wrptr_g10_wrptr__o),
+    .en(1'b1),
+    .reset(rst),
+    .set(1'b0),
+    .q(wrptr_g_bin_d19));
+  not sync_rdptr_g10_inv (sync_rdptr_g10_neg, sync_rdptr_g10);
+  not sync_rdptr_g9_inv (sync_rdptr_g9_neg, sync_rdptr_g9);
   AL_MAP_ADDER #(
     .ALUTYPE("SUB"))
-    logic_ramfifo_syn_627 (
-    .a(logic_ramfifo_syn_67),
-    .b(logic_ramfifo_syn_56),
-    .c(logic_ramfifo_syn_672),
-    .o({logic_ramfifo_syn_673,wrusedw[0]}));  // ramfifo.v(39)
+    \wrusedw_sub/u0  (
+    .a(wrptr_g_bin_d10),
+    .b(sync_rdptr_g_bin_d10),
+    .c(\wrusedw_sub/c0 ),
+    .o({\wrusedw_sub/c1 ,wrusedw[0]}));
   AL_MAP_ADDER #(
     .ALUTYPE("SUB"))
-    logic_ramfifo_syn_628 (
-    .a(logic_ramfifo_syn_68),
-    .b(logic_ramfifo_syn_57),
-    .c(logic_ramfifo_syn_673),
-    .o({logic_ramfifo_syn_674,wrusedw[1]}));  // ramfifo.v(39)
+    \wrusedw_sub/u1  (
+    .a(wrptr_g_bin_d11),
+    .b(sync_rdptr_g_bin_d11),
+    .c(\wrusedw_sub/c1 ),
+    .o({\wrusedw_sub/c2 ,wrusedw[1]}));
   AL_MAP_ADDER #(
     .ALUTYPE("SUB"))
-    logic_ramfifo_syn_629 (
-    .a(logic_ramfifo_syn_69),
-    .b(logic_ramfifo_syn_58),
-    .c(logic_ramfifo_syn_674),
-    .o({logic_ramfifo_syn_675,wrusedw[2]}));  // ramfifo.v(39)
+    \wrusedw_sub/u10  (
+    .a(delayed_wrptr_g10),
+    .b(sync_rdptr_g_bin_d110),
+    .c(\wrusedw_sub/c10 ),
+    .o({open_n89,wrusedw[10]}));
   AL_MAP_ADDER #(
     .ALUTYPE("SUB"))
-    logic_ramfifo_syn_630 (
-    .a(logic_ramfifo_syn_70),
-    .b(logic_ramfifo_syn_59),
-    .c(logic_ramfifo_syn_675),
-    .o({logic_ramfifo_syn_676,wrusedw[3]}));  // ramfifo.v(39)
+    \wrusedw_sub/u2  (
+    .a(wrptr_g_bin_d12),
+    .b(sync_rdptr_g_bin_d12),
+    .c(\wrusedw_sub/c2 ),
+    .o({\wrusedw_sub/c3 ,wrusedw[2]}));
   AL_MAP_ADDER #(
     .ALUTYPE("SUB"))
-    logic_ramfifo_syn_631 (
-    .a(logic_ramfifo_syn_71),
-    .b(logic_ramfifo_syn_60),
-    .c(logic_ramfifo_syn_676),
-    .o({logic_ramfifo_syn_677,wrusedw[4]}));  // ramfifo.v(39)
+    \wrusedw_sub/u3  (
+    .a(wrptr_g_bin_d13),
+    .b(sync_rdptr_g_bin_d13),
+    .c(\wrusedw_sub/c3 ),
+    .o({\wrusedw_sub/c4 ,wrusedw[3]}));
   AL_MAP_ADDER #(
     .ALUTYPE("SUB"))
-    logic_ramfifo_syn_632 (
-    .a(logic_ramfifo_syn_72),
-    .b(logic_ramfifo_syn_61),
-    .c(logic_ramfifo_syn_677),
-    .o({logic_ramfifo_syn_678,wrusedw[5]}));  // ramfifo.v(39)
+    \wrusedw_sub/u4  (
+    .a(wrptr_g_bin_d14),
+    .b(sync_rdptr_g_bin_d14),
+    .c(\wrusedw_sub/c4 ),
+    .o({\wrusedw_sub/c5 ,wrusedw[4]}));
   AL_MAP_ADDER #(
     .ALUTYPE("SUB"))
-    logic_ramfifo_syn_633 (
-    .a(logic_ramfifo_syn_73),
-    .b(logic_ramfifo_syn_62),
-    .c(logic_ramfifo_syn_678),
-    .o({logic_ramfifo_syn_679,wrusedw[6]}));  // ramfifo.v(39)
+    \wrusedw_sub/u5  (
+    .a(wrptr_g_bin_d15),
+    .b(sync_rdptr_g_bin_d15),
+    .c(\wrusedw_sub/c5 ),
+    .o({\wrusedw_sub/c6 ,wrusedw[5]}));
   AL_MAP_ADDER #(
     .ALUTYPE("SUB"))
-    logic_ramfifo_syn_634 (
-    .a(logic_ramfifo_syn_74),
-    .b(logic_ramfifo_syn_63),
-    .c(logic_ramfifo_syn_679),
-    .o({logic_ramfifo_syn_680,wrusedw[7]}));  // ramfifo.v(39)
+    \wrusedw_sub/u6  (
+    .a(wrptr_g_bin_d16),
+    .b(sync_rdptr_g_bin_d16),
+    .c(\wrusedw_sub/c6 ),
+    .o({\wrusedw_sub/c7 ,wrusedw[6]}));
   AL_MAP_ADDER #(
     .ALUTYPE("SUB"))
-    logic_ramfifo_syn_635 (
-    .a(logic_ramfifo_syn_75),
-    .b(logic_ramfifo_syn_64),
-    .c(logic_ramfifo_syn_680),
-    .o({logic_ramfifo_syn_681,wrusedw[8]}));  // ramfifo.v(39)
+    \wrusedw_sub/u7  (
+    .a(wrptr_g_bin_d17),
+    .b(sync_rdptr_g_bin_d17),
+    .c(\wrusedw_sub/c7 ),
+    .o({\wrusedw_sub/c8 ,wrusedw[7]}));
   AL_MAP_ADDER #(
     .ALUTYPE("SUB"))
-    logic_ramfifo_syn_636 (
-    .a(logic_ramfifo_syn_76),
-    .b(logic_ramfifo_syn_65),
-    .c(logic_ramfifo_syn_681),
-    .o({logic_ramfifo_syn_682,wrusedw[9]}));  // ramfifo.v(39)
+    \wrusedw_sub/u8  (
+    .a(wrptr_g_bin_d18),
+    .b(sync_rdptr_g_bin_d18),
+    .c(\wrusedw_sub/c8 ),
+    .o({\wrusedw_sub/c9 ,wrusedw[8]}));
   AL_MAP_ADDER #(
     .ALUTYPE("SUB"))
-    logic_ramfifo_syn_637 (
-    .a(logic_ramfifo_syn_22),
-    .b(logic_ramfifo_syn_66),
-    .c(logic_ramfifo_syn_682),
-    .o({open_n88,wrusedw[10]}));  // ramfifo.v(39)
+    \wrusedw_sub/u9  (
+    .a(wrptr_g_bin_d19),
+    .b(sync_rdptr_g_bin_d19),
+    .c(\wrusedw_sub/c9 ),
+    .o({\wrusedw_sub/c10 ,wrusedw[9]}));
   AL_MAP_ADDER #(
     .ALUTYPE("SUB_CARRY"))
-    logic_ramfifo_syn_684 (
+    \wrusedw_sub/ucin  (
     .a(1'b0),
-    .o({logic_ramfifo_syn_730,open_n91}));  // ramfifo.v(39)
-  AL_MAP_ADDER #(
-    .ALUTYPE("SUB"))
-    logic_ramfifo_syn_685 (
-    .a(logic_ramfifo_syn_89),
-    .b(logic_ramfifo_syn_100),
-    .c(logic_ramfifo_syn_730),
-    .o({logic_ramfifo_syn_731,rdusedw[0]}));  // ramfifo.v(39)
-  AL_MAP_ADDER #(
-    .ALUTYPE("SUB"))
-    logic_ramfifo_syn_686 (
-    .a(logic_ramfifo_syn_90),
-    .b(logic_ramfifo_syn_101),
-    .c(logic_ramfifo_syn_731),
-    .o({logic_ramfifo_syn_732,rdusedw[1]}));  // ramfifo.v(39)
-  AL_MAP_ADDER #(
-    .ALUTYPE("SUB"))
-    logic_ramfifo_syn_687 (
-    .a(logic_ramfifo_syn_91),
-    .b(logic_ramfifo_syn_102),
-    .c(logic_ramfifo_syn_732),
-    .o({logic_ramfifo_syn_733,rdusedw[2]}));  // ramfifo.v(39)
-  AL_MAP_ADDER #(
-    .ALUTYPE("SUB"))
-    logic_ramfifo_syn_688 (
-    .a(logic_ramfifo_syn_92),
-    .b(logic_ramfifo_syn_103),
-    .c(logic_ramfifo_syn_733),
-    .o({logic_ramfifo_syn_734,rdusedw[3]}));  // ramfifo.v(39)
-  AL_MAP_ADDER #(
-    .ALUTYPE("SUB"))
-    logic_ramfifo_syn_689 (
-    .a(logic_ramfifo_syn_93),
-    .b(logic_ramfifo_syn_104),
-    .c(logic_ramfifo_syn_734),
-    .o({logic_ramfifo_syn_735,rdusedw[4]}));  // ramfifo.v(39)
-  AL_MAP_ADDER #(
-    .ALUTYPE("SUB"))
-    logic_ramfifo_syn_690 (
-    .a(logic_ramfifo_syn_94),
-    .b(logic_ramfifo_syn_105),
-    .c(logic_ramfifo_syn_735),
-    .o({logic_ramfifo_syn_736,rdusedw[5]}));  // ramfifo.v(39)
-  AL_MAP_ADDER #(
-    .ALUTYPE("SUB"))
-    logic_ramfifo_syn_691 (
-    .a(logic_ramfifo_syn_95),
-    .b(logic_ramfifo_syn_106),
-    .c(logic_ramfifo_syn_736),
-    .o({logic_ramfifo_syn_737,rdusedw[6]}));  // ramfifo.v(39)
-  AL_MAP_ADDER #(
-    .ALUTYPE("SUB"))
-    logic_ramfifo_syn_692 (
-    .a(logic_ramfifo_syn_96),
-    .b(logic_ramfifo_syn_107),
-    .c(logic_ramfifo_syn_737),
-    .o({logic_ramfifo_syn_738,rdusedw[7]}));  // ramfifo.v(39)
-  AL_MAP_ADDER #(
-    .ALUTYPE("SUB"))
-    logic_ramfifo_syn_693 (
-    .a(logic_ramfifo_syn_97),
-    .b(logic_ramfifo_syn_108),
-    .c(logic_ramfifo_syn_738),
-    .o({logic_ramfifo_syn_739,rdusedw[8]}));  // ramfifo.v(39)
-  AL_MAP_ADDER #(
-    .ALUTYPE("SUB"))
-    logic_ramfifo_syn_694 (
-    .a(logic_ramfifo_syn_98),
-    .b(logic_ramfifo_syn_109),
-    .c(logic_ramfifo_syn_739),
-    .o({logic_ramfifo_syn_740,rdusedw[9]}));  // ramfifo.v(39)
-  AL_MAP_ADDER #(
-    .ALUTYPE("SUB"))
-    logic_ramfifo_syn_695 (
-    .a(logic_ramfifo_syn_99),
-    .b(logic_ramfifo_syn_55),
-    .c(logic_ramfifo_syn_740),
-    .o({open_n92,rdusedw[10]}));  // ramfifo.v(39)
-  and re_syn_1 (re_syn_2, re, logic_ramfifo_syn_205);  // ramfifo.v(25)
-  AL_MUX re_syn_261 (
-    .i0(clk_syn_94),
-    .i1(clk_syn_109),
-    .sel(re_syn_2),
-    .o(clk_syn_174));  // ramfifo.v(25)
-  AL_MUX re_syn_266 (
-    .i0(clk_syn_95),
-    .i1(clk_syn_133),
-    .sel(re_syn_2),
-    .o(clk_syn_175));  // ramfifo.v(25)
-  AL_MUX re_syn_271 (
-    .i0(clk_syn_96),
-    .i1(clk_syn_137),
-    .sel(re_syn_2),
-    .o(clk_syn_176));  // ramfifo.v(25)
-  AL_MUX re_syn_276 (
-    .i0(clk_syn_97),
-    .i1(clk_syn_141),
-    .sel(re_syn_2),
-    .o(clk_syn_177));  // ramfifo.v(25)
-  AL_MUX re_syn_281 (
-    .i0(clk_syn_98),
-    .i1(clk_syn_145),
-    .sel(re_syn_2),
-    .o(clk_syn_178));  // ramfifo.v(25)
-  AL_MUX re_syn_286 (
-    .i0(clk_syn_99),
-    .i1(clk_syn_149),
-    .sel(re_syn_2),
-    .o(clk_syn_179));  // ramfifo.v(25)
-  AL_MUX re_syn_291 (
-    .i0(clk_syn_100),
-    .i1(clk_syn_153),
-    .sel(re_syn_2),
-    .o(clk_syn_180));  // ramfifo.v(25)
-  AL_MUX re_syn_296 (
-    .i0(clk_syn_101),
-    .i1(clk_syn_157),
-    .sel(re_syn_2),
-    .o(clk_syn_181));  // ramfifo.v(25)
-  AL_MUX re_syn_301 (
-    .i0(clk_syn_102),
-    .i1(clk_syn_161),
-    .sel(re_syn_2),
-    .o(clk_syn_182));  // ramfifo.v(25)
-  AL_MUX re_syn_306 (
-    .i0(clk_syn_103),
-    .i1(clk_syn_165),
-    .sel(re_syn_2),
-    .o(clk_syn_183));  // ramfifo.v(25)
-  AL_MUX re_syn_311 (
-    .i0(clk_syn_104),
-    .i1(clk_syn_169),
-    .sel(re_syn_2),
-    .o(clk_syn_184));  // ramfifo.v(25)
-  AL_MUX re_syn_316 (
-    .i0(clk_syn_105),
-    .i1(clk_syn_173),
-    .sel(re_syn_2),
-    .o(clk_syn_185));  // ramfifo.v(25)
-  AL_MUX re_syn_321 (
-    .i0(logic_ramfifo_syn_23),
-    .i1(clk_syn_95),
-    .sel(re_syn_2),
-    .o(logic_ramfifo_syn_225));  // ramfifo.v(25)
-  AL_MUX re_syn_326 (
-    .i0(logic_ramfifo_syn_24),
-    .i1(clk_syn_96),
-    .sel(re_syn_2),
-    .o(logic_ramfifo_syn_226));  // ramfifo.v(25)
-  AL_MUX re_syn_331 (
-    .i0(logic_ramfifo_syn_25),
-    .i1(clk_syn_97),
-    .sel(re_syn_2),
-    .o(logic_ramfifo_syn_227));  // ramfifo.v(25)
-  AL_MUX re_syn_336 (
-    .i0(logic_ramfifo_syn_26),
-    .i1(clk_syn_98),
-    .sel(re_syn_2),
-    .o(logic_ramfifo_syn_228));  // ramfifo.v(25)
-  AL_MUX re_syn_341 (
-    .i0(logic_ramfifo_syn_27),
-    .i1(clk_syn_99),
-    .sel(re_syn_2),
-    .o(logic_ramfifo_syn_229));  // ramfifo.v(25)
-  AL_MUX re_syn_346 (
-    .i0(logic_ramfifo_syn_28),
-    .i1(clk_syn_100),
-    .sel(re_syn_2),
-    .o(logic_ramfifo_syn_230));  // ramfifo.v(25)
-  AL_MUX re_syn_351 (
-    .i0(logic_ramfifo_syn_29),
-    .i1(clk_syn_101),
-    .sel(re_syn_2),
-    .o(logic_ramfifo_syn_231));  // ramfifo.v(25)
-  AL_MUX re_syn_356 (
-    .i0(logic_ramfifo_syn_30),
-    .i1(clk_syn_102),
-    .sel(re_syn_2),
-    .o(logic_ramfifo_syn_232));  // ramfifo.v(25)
-  AL_MUX re_syn_361 (
-    .i0(logic_ramfifo_syn_31),
-    .i1(clk_syn_103),
-    .sel(re_syn_2),
-    .o(logic_ramfifo_syn_233));  // ramfifo.v(25)
-  AL_MUX re_syn_366 (
-    .i0(logic_ramfifo_syn_32),
-    .i1(clk_syn_104),
-    .sel(re_syn_2),
-    .o(logic_ramfifo_syn_234));  // ramfifo.v(25)
-  AL_MUX re_syn_371 (
-    .i0(logic_ramfifo_syn_33),
-    .i1(clk_syn_105),
-    .sel(re_syn_2),
-    .o(logic_ramfifo_syn_235));  // ramfifo.v(25)
-  and we_syn_1 (we_syn_2, we, logic_ramfifo_syn_158);  // ramfifo.v(24)
-  AL_MUX we_syn_103 (
-    .i0(logic_ramfifo_syn_4),
-    .i1(clk_syn_5),
-    .sel(we_syn_2),
-    .o(logic_ramfifo_syn_162));  // ramfifo.v(24)
-  AL_MUX we_syn_108 (
-    .i0(logic_ramfifo_syn_5),
-    .i1(clk_syn_6),
-    .sel(we_syn_2),
-    .o(logic_ramfifo_syn_163));  // ramfifo.v(24)
-  AL_MUX we_syn_113 (
-    .i0(logic_ramfifo_syn_6),
-    .i1(clk_syn_7),
-    .sel(we_syn_2),
-    .o(logic_ramfifo_syn_164));  // ramfifo.v(24)
-  AL_MUX we_syn_118 (
-    .i0(logic_ramfifo_syn_7),
-    .i1(clk_syn_8),
-    .sel(we_syn_2),
-    .o(logic_ramfifo_syn_165));  // ramfifo.v(24)
-  AL_MUX we_syn_123 (
-    .i0(logic_ramfifo_syn_8),
-    .i1(clk_syn_9),
-    .sel(we_syn_2),
-    .o(logic_ramfifo_syn_166));  // ramfifo.v(24)
-  AL_MUX we_syn_128 (
-    .i0(logic_ramfifo_syn_9),
-    .i1(clk_syn_10),
-    .sel(we_syn_2),
-    .o(logic_ramfifo_syn_167));  // ramfifo.v(24)
-  AL_MUX we_syn_133 (
-    .i0(logic_ramfifo_syn_10),
-    .i1(clk_syn_11),
-    .sel(we_syn_2),
-    .o(logic_ramfifo_syn_168));  // ramfifo.v(24)
-  AL_MUX we_syn_138 (
-    .i0(logic_ramfifo_syn_11),
-    .i1(clk_syn_12),
-    .sel(we_syn_2),
-    .o(logic_ramfifo_syn_169));  // ramfifo.v(24)
-  AL_MUX we_syn_28 (
-    .i0(clk_syn_1),
-    .i1(clk_syn_16),
-    .sel(we_syn_2),
-    .o(clk_syn_81));  // ramfifo.v(24)
-  AL_MUX we_syn_33 (
-    .i0(clk_syn_2),
-    .i1(clk_syn_40),
-    .sel(we_syn_2),
-    .o(clk_syn_82));  // ramfifo.v(24)
-  AL_MUX we_syn_38 (
-    .i0(clk_syn_3),
-    .i1(clk_syn_44),
-    .sel(we_syn_2),
-    .o(clk_syn_83));  // ramfifo.v(24)
-  AL_MUX we_syn_43 (
-    .i0(clk_syn_4),
-    .i1(clk_syn_48),
-    .sel(we_syn_2),
-    .o(clk_syn_84));  // ramfifo.v(24)
-  AL_MUX we_syn_48 (
-    .i0(clk_syn_5),
-    .i1(clk_syn_52),
-    .sel(we_syn_2),
-    .o(clk_syn_85));  // ramfifo.v(24)
-  AL_MUX we_syn_53 (
-    .i0(clk_syn_6),
-    .i1(clk_syn_56),
-    .sel(we_syn_2),
-    .o(clk_syn_86));  // ramfifo.v(24)
-  AL_MUX we_syn_58 (
-    .i0(clk_syn_7),
-    .i1(clk_syn_60),
-    .sel(we_syn_2),
-    .o(clk_syn_87));  // ramfifo.v(24)
-  AL_MUX we_syn_63 (
-    .i0(clk_syn_8),
-    .i1(clk_syn_64),
-    .sel(we_syn_2),
-    .o(clk_syn_88));  // ramfifo.v(24)
-  AL_MUX we_syn_68 (
-    .i0(clk_syn_9),
-    .i1(clk_syn_68),
-    .sel(we_syn_2),
-    .o(clk_syn_89));  // ramfifo.v(24)
-  AL_MUX we_syn_73 (
-    .i0(clk_syn_10),
-    .i1(clk_syn_72),
-    .sel(we_syn_2),
-    .o(clk_syn_90));  // ramfifo.v(24)
-  AL_MUX we_syn_78 (
-    .i0(clk_syn_11),
-    .i1(clk_syn_76),
-    .sel(we_syn_2),
-    .o(clk_syn_91));  // ramfifo.v(24)
-  AL_MUX we_syn_83 (
-    .i0(clk_syn_12),
-    .i1(clk_syn_80),
-    .sel(we_syn_2),
-    .o(clk_syn_92));  // ramfifo.v(24)
-  AL_MUX we_syn_88 (
-    .i0(logic_ramfifo_syn_1),
-    .i1(clk_syn_2),
-    .sel(we_syn_2),
-    .o(logic_ramfifo_syn_159));  // ramfifo.v(24)
-  AL_MUX we_syn_93 (
-    .i0(logic_ramfifo_syn_2),
-    .i1(clk_syn_3),
-    .sel(we_syn_2),
-    .o(logic_ramfifo_syn_160));  // ramfifo.v(24)
-  AL_MUX we_syn_98 (
-    .i0(logic_ramfifo_syn_3),
-    .i1(clk_syn_4),
-    .sel(we_syn_2),
-    .o(logic_ramfifo_syn_161));  // ramfifo.v(24)
+    .o({\wrusedw_sub/c0 ,open_n92}));
+  xor xor_q10_al_n29_and_q (xor_q10_al_n29_and_q_o, q10_al_n29, and_q9_al_n28_and_an_o);
+  xor xor_q10_and_q9_and_a (xor_q10_and_q9_and_a_o, q10, and_q9_and_and_and_a_o);
+  xor xor_q11_al_n30_and_o (xor_q11_al_n30_and_o_o, q11_al_n30, and_or_q11_al_n30_q1_o);
+  xor xor_q11_and_or_q11_q (xor_q11_and_or_q11_q_o, q11, and_or_q11_q10_o_and_o);
+  xor xor_q1_al_n20_and_q0 (xor_q1_al_n20_and_q0_o, q1_al_n20, q0_al_n19);
+  xor xor_q1_and_q0__al_n1 (xor_q1_and_q0__al_n1_o, q1, q0);
+  xor xor_q2_al_n21_and_q1 (xor_q2_al_n21_and_q1_o, q2_al_n21, and_q1_al_n20_and__a_o);
+  xor xor_q2_and_q1_and__a (xor_q2_and_q1_and__a_o, q2, and_q1_and__al_n1_q0_o);
+  xor xor_q3_al_n22_and_q2 (xor_q3_al_n22_and_q2_o, q3_al_n22, and_q2_al_n21_and_an_o);
+  xor xor_q3_and_q2_and_an (xor_q3_and_q2_and_an_o, q3, and_q2_and_and__al_n_o);
+  xor xor_q4_al_n23_and_q3 (xor_q4_al_n23_and_q3_o, q4_al_n23, and_q3_al_n22_and_an_o);
+  xor xor_q4_and_q3_and_an (xor_q4_and_q3_and_an_o, q4, and_q3_and_and_and___o);
+  xor xor_q5_al_n24_and_q4 (xor_q5_al_n24_and_q4_o, q5_al_n24, and_q4_al_n23_and_an_o);
+  xor xor_q5_and_q4_and_an (xor_q5_and_q4_and_an_o, q5, and_q4_and_and_and_a_o);
+  xor xor_q6_al_n25_and_q5 (xor_q6_al_n25_and_q5_o, q6_al_n25, and_q5_al_n24_and_an_o);
+  xor xor_q6_and_q5_and_an (xor_q6_and_q5_and_an_o, q6, and_q5_and_and_and_a_o);
+  xor xor_q7_al_n26_and_q6 (xor_q7_al_n26_and_q6_o, q7_al_n26, and_q6_al_n25_and_an_o);
+  xor xor_q7_and_q6_and_an (xor_q7_and_q6_and_an_o, q7, and_q6_and_and_and_a_o);
+  xor xor_q8_al_n27_and_q7 (xor_q8_al_n27_and_q7_o, q8_al_n27, and_q7_al_n26_and_an_o);
+  xor xor_q8_and_q7_and_an (xor_q8_and_q7_and_an_o, q8, and_q7_and_and_and_a_o);
+  xor xor_q9_al_n28_and_q8 (xor_q9_al_n28_and_q8_o, q9_al_n28, and_q8_al_n27_and_an_o);
+  xor xor_q9_and_q8_and_an (xor_q9_and_q8_and_an_o, q9, and_q8_and_and_and_a_o);
+  xor xor_rdptr_g10_rdptr_ (xor_rdptr_g10_rdptr__o, rdptr_g10, rdptr_g9);
+  xor xor_sync_delayed_wrp (xor_sync_delayed_wrp_o, sync_delayed_wrptr_g10, sync_delayed_wrptr_g9);
+  xor xor_sync_rdptr_g10_s (xor_sync_rdptr_g10_s_o, sync_rdptr_g10, sync_rdptr_g9);
+  xor xor_wrptr_g10_wrptr_ (xor_wrptr_g10_wrptr__o, wrptr_g10, wrptr_g9);
+  xor xor_xor_rdptr_g10_rd (xor_xor_rdptr_g10_rd_o, xor_rdptr_g10_rdptr__o, rdptr_g8);
+  xor xor_xor_sync_delayed (xor_xor_sync_delayed_o, xor_sync_delayed_wrp_o, sync_delayed_wrptr_g8);
+  xor xor_xor_sync_rdptr_g (xor_xor_sync_rdptr_g_o, xor_sync_rdptr_g10_s_o, sync_rdptr_g8);
+  xor xor_xor_wrptr_g10_wr (xor_xor_wrptr_g10_wr_o, xor_wrptr_g10_wrptr__o, wrptr_g8);
+  xor xor_xor_xor_rdptr_g1 (xor_xor_xor_rdptr_g1_o, xor_xor_rdptr_g10_rd_o, rdptr_g7);
+  xor xor_xor_xor_sync_del (xor_xor_xor_sync_del_o, xor_xor_sync_delayed_o, sync_delayed_wrptr_g7);
+  xor xor_xor_xor_sync_rdp (xor_xor_xor_sync_rdp_o, xor_xor_sync_rdptr_g_o, sync_rdptr_g7);
+  xor xor_xor_xor_wrptr_g1 (xor_xor_xor_wrptr_g1_o, xor_xor_wrptr_g10_wr_o, wrptr_g7);
+  xor xor_xor_xor_xor_rdpt (xor_xor_xor_xor_rdpt_o, xor_xor_xor_rdptr_g1_o, rdptr_g6);
+  xor xor_xor_xor_xor_sync (xor_xor_xor_xor_sync_o, xor_xor_xor_sync_rdp_o, sync_rdptr_g6);
+  xor xor_xor_xor_xor_sync_al_u59 (xor_xor_xor_xor_sync_o_al_n120, xor_xor_xor_sync_del_o, sync_delayed_wrptr_g6);
+  xor xor_xor_xor_xor_wrpt (xor_xor_xor_xor_wrpt_o, xor_xor_xor_wrptr_g1_o, wrptr_g6);
+  xor xor_xor_xor_xor_xor_ (xor_xor_xor_xor_xor__o, xor_xor_xor_xor_sync_o, sync_rdptr_g5);
+  xor xor_xor_xor_xor_xor__al_u46 (xor_xor_xor_xor_xor__o_al_n108, xor_xor_xor_xor_xor__o, sync_rdptr_g4);
+  xor xor_xor_xor_xor_xor__al_u47 (xor_xor_xor_xor_xor__o_al_n109, xor_xor_xor_xor_xor__o_al_n108, sync_rdptr_g3);
+  xor xor_xor_xor_xor_xor__al_u48 (xor_xor_xor_xor_xor__o_al_n110, xor_xor_xor_xor_xor__o_al_n109, sync_rdptr_g2);
+  xor xor_xor_xor_xor_xor__al_u49 (xor_xor_xor_xor_xor__o_al_n111, xor_xor_xor_xor_xor__o_al_n110, sync_rdptr_g1);
+  xor xor_xor_xor_xor_xor__al_u50 (xor_xor_xor_xor_xor__o_al_n112, xor_xor_xor_xor_xor__o_al_n111, sync_rdptr_g0);
+  xor xor_xor_xor_xor_xor__al_u52 (xor_xor_xor_xor_xor__o_al_n114, xor_xor_xor_xor_wrpt_o, wrptr_g5);
+  xor xor_xor_xor_xor_xor__al_u53 (xor_xor_xor_xor_xor__o_al_n115, xor_xor_xor_xor_xor__o_al_n114, wrptr_g4);
+  xor xor_xor_xor_xor_xor__al_u54 (xor_xor_xor_xor_xor__o_al_n116, xor_xor_xor_xor_xor__o_al_n115, wrptr_g3);
+  xor xor_xor_xor_xor_xor__al_u55 (xor_xor_xor_xor_xor__o_al_n117, xor_xor_xor_xor_xor__o_al_n116, wrptr_g2);
+  xor xor_xor_xor_xor_xor__al_u56 (xor_xor_xor_xor_xor__o_al_n118, xor_xor_xor_xor_xor__o_al_n117, wrptr_g1);
+  xor xor_xor_xor_xor_xor__al_u57 (xor_xor_xor_xor_xor__o_al_n119, xor_xor_xor_xor_xor__o_al_n118, wrptr_g0);
+  xor xor_xor_xor_xor_xor__al_u60 (xor_xor_xor_xor_xor__o_al_n121, xor_xor_xor_xor_sync_o_al_n120, sync_delayed_wrptr_g5);
+  xor xor_xor_xor_xor_xor__al_u61 (xor_xor_xor_xor_xor__o_al_n122, xor_xor_xor_xor_xor__o_al_n121, sync_delayed_wrptr_g4);
+  xor xor_xor_xor_xor_xor__al_u62 (xor_xor_xor_xor_xor__o_al_n123, xor_xor_xor_xor_xor__o_al_n122, sync_delayed_wrptr_g3);
+  xor xor_xor_xor_xor_xor__al_u63 (xor_xor_xor_xor_xor__o_al_n124, xor_xor_xor_xor_xor__o_al_n123, sync_delayed_wrptr_g2);
+  xor xor_xor_xor_xor_xor__al_u64 (xor_xor_xor_xor_xor__o_al_n125, xor_xor_xor_xor_xor__o_al_n124, sync_delayed_wrptr_g1);
+  xor xor_xor_xor_xor_xor__al_u65 (xor_xor_xor_xor_xor__o_al_n126, xor_xor_xor_xor_xor__o_al_n125, sync_delayed_wrptr_g0);
+  xor xor_xor_xor_xor_xor__al_u68 (xor_xor_xor_xor_xor__o_al_n128, xor_xor_xor_xor_rdpt_o, rdptr_g5);
+  xor xor_xor_xor_xor_xor__al_u69 (xor_xor_xor_xor_xor__o_al_n129, xor_xor_xor_xor_xor__o_al_n128, rdptr_g4);
+  xor xor_xor_xor_xor_xor__al_u70 (xor_xor_xor_xor_xor__o_al_n130, xor_xor_xor_xor_xor__o_al_n129, rdptr_g3);
+  xor xor_xor_xor_xor_xor__al_u71 (xor_xor_xor_xor_xor__o_al_n131, xor_xor_xor_xor_xor__o_al_n130, rdptr_g2);
+  xor xor_xor_xor_xor_xor__al_u72 (xor_xor_xor_xor_xor__o_al_n132, xor_xor_xor_xor_xor__o_al_n131, rdptr_g1);
+  xor xor_xor_xor_xor_xor__al_u73 (xor_xor_xor_xor_xor__o_al_n133, xor_xor_xor_xor_xor__o_al_n132, rdptr_g0);
 
 endmodule 
+
+module reg_ar_as_w1
+  (
+  clk,
+  d,
+  en,
+  reset,
+  set,
+  q
+  );
+
+  input clk;
+  input d;
+  input en;
+  input reset;
+  input set;
+  output q;
+
+  parameter REGSET = "RESET";
+  wire enout;
+
+  AL_MUX u_en0 (
+    .i0(q),
+    .i1(d),
+    .sel(en),
+    .o(enout));
+  AL_DFF #(
+    .INI((REGSET == "SET") ? 1'b1 : 1'b0))
+    u_seq0 (
+    .clk(clk),
+    .d(enout),
+    .reset(reset),
+    .set(set),
+    .q(q));
+
+endmodule 
+
+module AL_MUX
+  (
+  input i0,
+  input i1,
+  input sel,
+  output o
+  );
+
+  wire not_sel, sel_i0, sel_i1;
+  not u0 (not_sel, sel);
+  and u1 (sel_i1, sel, i1);
+  and u2 (sel_i0, not_sel, i0);
+  or u3 (o, sel_i1, sel_i0);
+
+endmodule
+
+module AL_DFF
+  (
+  input reset,
+  input set,
+  input clk,
+  input d,
+  output reg q
+  );
+
+  parameter INI = 1'b0;
+
+  tri0 gsrn = glbl.gsrn;
+
+  always @(gsrn)
+  begin
+    if(!gsrn)
+      assign q = INI;
+    else
+      deassign q;
+  end
+
+  always @(posedge reset or posedge set or posedge clk)
+  begin
+    if (reset)
+      q <= 1'b0;
+    else if (set)
+      q <= 1'b1;
+    else
+      q <= d;
+  end
+
+endmodule
 

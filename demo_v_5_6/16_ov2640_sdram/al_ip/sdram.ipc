@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <SDRAMConfig>
     <GeneralConfig>
         <Type>EG_PHY_SDRAM</Type>
@@ -6,4 +6,7 @@
         <create_VHDL>false</create_VHDL>
         <inst>sdram</inst>
     </GeneralConfig>
+    <GeneratedFiles>
+        <Verilog Enable="true">sdram.v</Verilog>
+    </GeneratedFiles>
 </SDRAMConfig>

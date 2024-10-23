@@ -18,6 +18,5 @@
     </ShowAheadOption>
     <GeneratedFiles>
         <Verilog Enable="true">ramfifo.v</Verilog>
-        <SimVerilog Enable="false">ramfifo_sim.v</SimVerilog>
     </GeneratedFiles>
 </RAM_FIFOConfig>

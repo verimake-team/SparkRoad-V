@@ -1,0 +1,480 @@
+============================================================
+   Tang Dynasty, V5.6.119222
+      Copyright (c) 2012-2024 Anlogic Inc.
+   Executable = D:/Anlogic/TD_5.6.5_Release_119.222/bin/td.exe
+   Built at =   17:28:21 May 30 2024
+   Run by =     zhangzzp
+   Run Date =   Wed Oct 23 17:11:47 2024
+
+   Run on =     LAPTOP-0TAVQITN
+============================================================
+RUN-1002 : start command "open_project ov2640_sdram.prj"
+RUN-6001 WARNING: File ../../al_ip/ip_pll.v already exists in IP ../../al_ip/ip_pll.ipc, it will be removed from project.
+RUN-6001 WARNING: File ../../al_ip/ramfifo.v already exists in IP ../../al_ip/ramfifo.ipc, it will be removed from project.
+RUN-6001 WARNING: File ../../al_ip/sdram.v already exists in IP ../../al_ip/sdram.ipc, it will be removed from project.
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+HDL-1007 : analyze verilog file ../../al_ip/ip_pll.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../al_ip/ip_pll.v(86)
+HDL-1007 : analyze verilog file ../../al_ip/ramfifo.v
+HDL-1007 : analyze verilog file ../../al_ip/sdram.v
+HDL-1007 : analyze verilog file ../../RTL/camera_init.v
+HDL-1007 : undeclared symbol 'clk_div', assumed default net type 'wire' in ../../RTL/camera_init.v(74)
+HDL-1007 : analyze verilog file ../../RTL/camera_reader.v
+HDL-1007 : analyze verilog file ../../RTL/i2c_module.v
+HDL-1007 : analyze verilog file ../../RTL/test_camera.v
+HDL-1007 : analyze verilog file ../../RTL/Sdram_Control_4Port/command.v
+HDL-1007 : analyze included file ../../RTL/Sdram_Control_4Port/Sdram_Params.h in ../../RTL/Sdram_Control_4Port/command.v(27)
+HDL-1007 : back to file '../../RTL/Sdram_Control_4Port/command.v' in ../../RTL/Sdram_Control_4Port/command.v(27)
+HDL-1007 : analyze verilog file ../../RTL/Sdram_Control_4Port/control_interface.v
+HDL-1007 : analyze included file ../../RTL/Sdram_Control_4Port/Sdram_Params.h in ../../RTL/Sdram_Control_4Port/control_interface.v(21)
+HDL-1007 : back to file '../../RTL/Sdram_Control_4Port/control_interface.v' in ../../RTL/Sdram_Control_4Port/control_interface.v(21)
+HDL-1007 : analyze verilog file ../../RTL/Sdram_Control_4Port/sdr_data_path.v
+HDL-1007 : analyze included file ../../RTL/Sdram_Control_4Port/Sdram_Params.h in ../../RTL/Sdram_Control_4Port/sdr_data_path.v(10)
+HDL-1007 : back to file '../../RTL/Sdram_Control_4Port/sdr_data_path.v' in ../../RTL/Sdram_Control_4Port/sdr_data_path.v(10)
+HDL-1007 : analyze verilog file ../../RTL/Sdram_Control_4Port/Sdram_Control_4Port.v
+HDL-1007 : analyze included file ../../RTL/Sdram_Control_4Port/Sdram_Params.h in ../../RTL/Sdram_Control_4Port/Sdram_Control_4Port.v(49)
+HDL-1007 : back to file '../../RTL/Sdram_Control_4Port/Sdram_Control_4Port.v' in ../../RTL/Sdram_Control_4Port/Sdram_Control_4Port.v(49)
+HDL-1007 : analyze verilog file ../../RTL/Sdram_Control_4Port/Sdram_RD_FIFO.v
+HDL-1007 : analyze verilog file ../../RTL/Sdram_Control_4Port/Sdram_WR_FIFO.v
+HDL-1007 : analyze verilog file ../../RTL/Driver.v
+RUN-1001 : Project manager successfully analyzed 14 source files.
+RUN-1002 : start command "import_device eagle_s20.db -package EG4S20BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "import_db ov2640_sdram_elaborate.db"
+RUN-1001 : Importing database generated by Tang Dynasty, V5.6.119222.
+RUN-1001 : Database version number 46146.
+RUN-1001 : Import flow parameters
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import design success TD_VERSION=5.6.119222 , DB_VERSION=46146
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file D:/Anlogic/TD_5.6.5_Release_119.222/license/Anlogic.lic
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+SYN-1012 : SanityCheck: Model "test_camera"
+SYN-1012 : SanityCheck: Model "Sdram_Control_4Port"
+SYN-5065 CRITICAL-WARNING: Register "rRD1_ADDR" in ../../RTL/Sdram_Control_4Port/Sdram_Control_4Port.v(102) is described with both an asynchronous reset and an asynchronous set.
+SYN-5065 CRITICAL-WARNING: Register "rRD2_ADDR" in ../../RTL/Sdram_Control_4Port/Sdram_Control_4Port.v(103) is described with both an asynchronous reset and an asynchronous set.
+SYN-5065 CRITICAL-WARNING: Register "rWR1_ADDR" in ../../RTL/Sdram_Control_4Port/Sdram_Control_4Port.v(100) is described with both an asynchronous reset and an asynchronous set.
+SYN-5065 CRITICAL-WARNING: Register "rWR2_ADDR" in ../../RTL/Sdram_Control_4Port/Sdram_Control_4Port.v(101) is described with both an asynchronous reset and an asynchronous set.
+SYN-1012 : SanityCheck: Model "command"
+SYN-1012 : SanityCheck: Model "control_interface"
+SYN-1012 : SanityCheck: Model "sdr_data_path"
+SYN-1012 : SanityCheck: Model "Sdram_RD_FIFO"
+SYN-1012 : SanityCheck: Model "ramfifo"
+SYN-1012 : SanityCheck: Model "sdram"
+SYN-1012 : SanityCheck: Model "Sdram_WR_FIFO"
+SYN-1012 : SanityCheck: Model "Driver"
+SYN-1012 : SanityCheck: Model "camera_init"
+SYN-1012 : SanityCheck: Model "i2c_module"
+SYN-1012 : SanityCheck: Model "camera_reader"
+SYN-1012 : SanityCheck: Model "ip_pll"
+SYN-1043 : Mark ip_pll as IO macro for instance bufg_feedback
+SYN-1043 : Mark Sdram_Control_4Port as IO macro for instance DQ_i
+SYN-1011 : Flatten model test_camera
+SYN-5074 CRITICAL-WARNING: Dangling multi-driven net "u_pll/open" with first driver pin "u_pll/pll_inst.do[7]" in ../../al_ip/ip_pll.v(86)
+SYN-5074 CRITICAL-WARNING: Dangling multi-driven net "u_pll/open" with other driver pin "u_pll/pll_inst.do[6]" in ../../al_ip/ip_pll.v(86)
+SYN-5074 CRITICAL-WARNING: Dangling multi-driven net "u_pll/open" with other driver pin "u_pll/pll_inst.do[5]" in ../../al_ip/ip_pll.v(86)
+SYN-5074 CRITICAL-WARNING: Dangling multi-driven net "u_pll/open" with other driver pin "u_pll/pll_inst.do[4]" in ../../al_ip/ip_pll.v(86)
+SYN-5074 CRITICAL-WARNING: Dangling multi-driven net "u_pll/open" with other driver pin "u_pll/pll_inst.do[3]" in ../../al_ip/ip_pll.v(86)
+SYN-5074 CRITICAL-WARNING: Dangling multi-driven net "u_pll/open" with other driver pin "u_pll/pll_inst.do[2]" in ../../al_ip/ip_pll.v(86)
+SYN-5074 CRITICAL-WARNING: Dangling multi-driven net "u_pll/open" with other driver pin "u_pll/pll_inst.do[1]" in ../../al_ip/ip_pll.v(86)
+SYN-5074 CRITICAL-WARNING: Dangling multi-driven net "u_pll/open" with other driver pin "u_pll/pll_inst.do[0]" in ../../al_ip/ip_pll.v(86)
+SYN-5074 CRITICAL-WARNING: Dangling multi-driven net "u_pll/open" with other driver pin "u_pll/pll_inst.psdone" in ../../al_ip/ip_pll.v(86)
+SYN-5074 CRITICAL-WARNING: Dangling multi-driven net "u_pll/open" with other driver pin "u_pll/pll_inst.extlock" in ../../al_ip/ip_pll.v(86)
+SYN-1032 : 6374/379 useful/useless nets, 1594/130 useful/useless insts
+SYN-1016 : Merged 749 instances.
+SYN-1032 : 2843/3623 useful/useless nets, 973/91 useful/useless insts
+SYN-1016 : Merged 536 instances.
+SYN-5013 WARNING: Undriven net: model "test_camera" / net "Sdram_Control_4Port/read_fifo1/dcfifo_component/clk" in ../../al_ip/ramfifo.v(24)
+SYN-5014 WARNING: the net's pin: pin "clk" in ../../al_ip/ramfifo.v(39)
+SYN-5013 WARNING: Undriven net: model "test_camera" / net "Sdram_Control_4Port/write_fifo1/dcfifo_component/clk" in ../../al_ip/ramfifo.v(24)
+SYN-5014 WARNING: the net's pin: pin "clk" in ../../al_ip/ramfifo.v(39)
+SYN-5013 WARNING: Undriven net: model "test_camera" / net "Sdram_Control_4Port/write_fifo2/dcfifo_component/clk" in ../../al_ip/ramfifo.v(24)
+SYN-5014 WARNING: the net's pin: pin "clk" in ../../al_ip/ramfifo.v(39)
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-1032 : 2386/72 useful/useless nets, 2141/132 useful/useless insts
+SYN-1014 : Optimize round 1
+SYN-1017 : Remove 2 const input seq instances
+SYN-1002 :     u_cam_vga_out/reg0_syn_13
+SYN-1002 :     u_camera_init/reg4_syn_4
+SYN-1019 : Optimized 42 mux instances.
+SYN-1021 : Optimized 34 onehot mux instances.
+SYN-1020 : Optimized 199 distributor mux.
+SYN-1001 : Optimize 10 less-than instances
+SYN-1019 : Optimized 8 mux instances.
+SYN-1016 : Merged 690 instances.
+SYN-1015 : Optimize round 1, 1518 better
+SYN-1014 : Optimize round 2
+SYN-1044 : Optimized 8 inv instances.
+SYN-1032 : 1913/78 useful/useless nets, 1684/469 useful/useless insts
+SYN-1017 : Remove 7 const input seq instances
+SYN-1002 :     Sdram_Control_4Port/reg10_syn_11
+SYN-1002 :     Sdram_Control_4Port/reg11_syn_2
+SYN-1002 :     Sdram_Control_4Port/reg11_syn_21
+SYN-1002 :     Sdram_Control_4Port/reg13_syn_2
+SYN-1002 :     Sdram_Control_4Port/reg13_syn_21
+SYN-1002 :     Sdram_Control_4Port/reg4_syn_3
+SYN-1002 :     Sdram_Control_4Port/reg7_syn_3
+SYN-1019 : Optimized 2 mux instances.
+SYN-1020 : Optimized 3 distributor mux.
+SYN-1016 : Merged 12 instances.
+SYN-1015 : Optimize round 2, 603 better
+SYN-1032 : 1861/44 useful/useless nets, 1662/17 useful/useless insts
+SYN-3003 : Optimized 1 equivalent DFF(s)
+SYN-3003 : Optimized 1 equivalent DFF(s)
+SYN-3004 : Optimized 2 const0 DFF(s)
+SYN-3003 : Optimized 1 equivalent DFF(s)
+SYN-3003 : Optimized 1 equivalent DFF(s)
+SYN-3003 : Optimized 1 equivalent DFF(s)
+SYN-3003 : Optimized 1 equivalent DFF(s)
+SYN-3003 : Optimized 1 equivalent DFF(s)
+SYN-3003 : Optimized 1 equivalent DFF(s)
+SYN-3003 : Optimized 1 equivalent DFF(s)
+SYN-3003 : Optimized 1 equivalent DFF(s)
+SYN-1032 : 1832/29 useful/useless nets, 1640/10 useful/useless insts
+SYN-1014 : Optimize round 1
+SYN-1044 : Optimized 2 inv instances.
+SYN-1032 : 1827/2 useful/useless nets, 1635/0 useful/useless insts
+SYN-1017 : Remove 2 const input seq instances
+SYN-1002 :     Sdram_Control_4Port/command1/reg0_syn_2
+SYN-1002 :     Sdram_Control_4Port/reg0_syn_2
+SYN-1019 : Optimized 3 mux instances.
+SYN-1015 : Optimize round 1, 14 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 1815/7 useful/useless nets, 1625/3 useful/useless insts
+SYN-1015 : Optimize round 2, 5 better
+SYN-1014 : Optimize round 3
+SYN-1015 : Optimize round 3, 0 better
+RUN-1003 : finish command "optimize_rtl" in  2.624897s wall, 0.453125s user + 0.015625s system = 0.468750s CPU (17.9%)
+
+RUN-1004 : used memory is 110 MB, reserved memory is 85 MB, peak memory is 112 MB
+RUN-1002 : start command "report_area -file ov2640_sdram_rtl.area"
+RUN-1001 : standard
+***Report Model: test_camera Device: EG4S20BG256***
+
+IO Statistics
+#IO                        45
+  #input                   13
+  #output                  31
+  #inout                    1
+
+Gate Statistics
+#Basic gates              913
+  #and                    168
+  #nand                     0
+  #or                      45
+  #nor                      0
+  #xor                      0
+  #xnor                     0
+  #buf                      0
+  #not                     79
+  #bufif1                  33
+  #MX21                   227
+  #FADD                     0
+  #DFF                    361
+  #LATCH                    0
+#MACRO_ADD                 28
+#MACRO_EQ                 216
+#MACRO_MUX                460
+#MACRO_OTHERS               4
+
+Report Hierarchy Area:
++--------------------------------------------------------------------+
+|Instance               |Module              |gates  |seq    |macros |
++--------------------------------------------------------------------+
+|top                    |test_camera         |552    |361    |248    |
+|  Sdram_Control_4Port  |Sdram_Control_4Port |298    |189    |41     |
+|    command1           |command             |106    |47     |0      |
+|    control1           |control_interface   |26     |50     |17     |
+|    read_fifo1         |Sdram_RD_FIFO       |0      |0      |1      |
+|      dcfifo_component |ramfifo             |0      |0      |1      |
+|    sdram1             |sdram               |0      |0      |0      |
+|    write_fifo1        |Sdram_WR_FIFO       |0      |0      |1      |
+|      dcfifo_component |ramfifo             |0      |0      |1      |
+|    write_fifo2        |Sdram_WR_FIFO       |0      |0      |1      |
+|      dcfifo_component |ramfifo             |0      |0      |1      |
+|  u_cam_vga_out        |Driver              |22     |23     |11     |
+|  u_camera_init        |camera_init         |193    |85     |193    |
+|    u_i2c_write        |i2c_module          |130    |43     |6      |
+|  u_camera_reader      |camera_reader       |37     |63     |2      |
+|  u_pll                |ip_pll              |0      |0      |1      |
++--------------------------------------------------------------------+
+
+RUN-1002 : start command "export_db ov2640_sdram_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "optimize_gate -maparea ov2640_sdram_gate.area"
+RUN-1001 : Open license file D:/Anlogic/TD_5.6.5_Release_119.222/license/Anlogic.lic
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Gate Property
+RUN-1001 : ------------------------------------------------------------------
+RUN-1001 :          Parameters         |  Settings  |  Default Values  |  Note  
+RUN-1001 : ------------------------------------------------------------------
+RUN-1001 :         cascade_dsp         |    off     |       off        |        
+RUN-1001 :         cascade_eram        |    off     |       off        |        
+RUN-1001 :        gate_sim_model       |    off     |       off        |        
+RUN-1001 :        map_sim_model        |    off     |       off        |        
+RUN-1001 :         map_strategy        |     1      |        1         |        
+RUN-1001 :           opt_area          |   medium   |      medium      |        
+RUN-1001 :          opt_timing         |    auto    |       auto       |        
+RUN-1001 :         pack_effort         |   medium   |      medium      |        
+RUN-1001 :      pack_lslice_ripple     |     on     |        on        |        
+RUN-1001 :   pack_lslice_ripple_ratio  |    0.5     |       0.5        |        
+RUN-1001 :        pack_seq_in_io       |    auto    |       auto       |        
+RUN-1001 :        ph1_mux_ratio        |    1.0     |       1.0        |        
+RUN-1001 :            report           |  standard  |     standard     |        
+RUN-1001 :           retiming          |    off     |       off        |        
+RUN-1001 : ------------------------------------------------------------------
+SYN-2002 : EG_PHY_SDRAM_2M_32 instance Sdram_Control_4Port/sdram1/sdram.
+SYN-2001 : Map 100 IOs to PADs
+SYN-1032 : 1845/15 useful/useless nets, 1666/58 useful/useless insts
+RUN-1002 : start command "update_pll_param -module test_camera"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 1 BUFG to GCLK
+SYN-2541 : Logic Ram FIFO "Sdram_Control_4Port/read_fifo1/dcfifo_component/logic_ramfifo"
+SYN-2541 : Logic Ram FIFO "Sdram_Control_4Port/write_fifo1/dcfifo_component/logic_ramfifo"
+SYN-2541 : Logic Ram FIFO "Sdram_Control_4Port/write_fifo2/dcfifo_component/logic_ramfifo"
+SYN-2512 : LOGIC BRAM "Sdram_Control_4Port/read_fifo1/dcfifo_component/logic_ramfifo_syn_337"
+SYN-2512 : LOGIC BRAM "Sdram_Control_4Port/write_fifo1/dcfifo_component/logic_ramfifo_syn_337"
+SYN-2512 : LOGIC BRAM "Sdram_Control_4Port/write_fifo2/dcfifo_component/logic_ramfifo_syn_337"
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 2604/1269 useful/useless nets, 2428/1105 useful/useless insts
+SYN-1016 : Merged 12 instances.
+SYN-2571 : Optimize after map_dsp, round 1, 2278 better
+SYN-2571 : Optimize after map_dsp, round 2
+SYN-2571 : Optimize after map_dsp, round 2, 0 better
+SYN-1001 : Throwback 26 control mux instances
+SYN-2501 : Optimize round 1
+SYN-1032 : 4950/79 useful/useless nets, 4777/81 useful/useless insts
+SYN-1016 : Merged 1977 instances.
+SYN-2501 : Optimize round 1, 3932 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 28 macro adder
+SYN-1019 : Optimized 1664 mux instances.
+SYN-1016 : Merged 1875 instances.
+SYN-1032 : 3793/43 useful/useless nets, 3620/36 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=5, #lut = 1090 (3.62), #lev = 7 (3.26)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=5, #lut = 996 (3.56), #lev = 6 (3.17)
+SYN-3001 : Logic optimization runtime opt =   0.49 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 2651 instances into 1000 LUTs, name keeping = 50%.
+RUN-1002 : start command "report_area -file ov2640_sdram_gate.area"
+RUN-1001 : standard
+***Report Model: test_camera Device: EG4S20BG256***
+
+IO Statistics
+#IO                        45
+  #input                   13
+  #output                  31
+  #inout                    1
+
+LUT Statistics
+#Total_luts              1324
+  #lut4                   778
+  #lut5                   222
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b             324
+
+Utilization Statistics
+#lut                     1324   out of  19600    6.76%
+#reg                      537   out of  19600    2.74%
+#le                         0
+#dsp                        0   out of     29    0.00%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    3   out of     16   18.75%
+#pad                       45   out of    188   23.94%
+  #ireg                    10
+  #oreg                     2
+  #treg                     1
+#pll                        1   out of      4   25.00%
+
+Report Hierarchy Area:
++-----------------------------------------------------------------------------------------+
+|Instance               |Module              |lut     |ripple  |seq     |bram    |dsp     |
++-----------------------------------------------------------------------------------------+
+|top                    |test_camera         |1000    |324     |550     |3       |0       |
+|  Sdram_Control_4Port  |Sdram_Control_4Port |420     |156     |374     |3       |0       |
+|    command1           |command             |56      |0       |46      |0       |0       |
+|    control1           |control_interface   |37      |61      |50      |0       |0       |
+|    data_path1         |sdr_data_path       |16      |0       |0       |0       |0       |
+|    read_fifo1         |Sdram_RD_FIFO       |43      |12      |76      |1       |0       |
+|      dcfifo_component |ramfifo             |43      |12      |76      |1       |0       |
+|    sdram1             |sdram               |2       |0       |0       |0       |0       |
+|    write_fifo1        |Sdram_WR_FIFO       |43      |12      |76      |1       |0       |
+|      dcfifo_component |ramfifo             |43      |12      |76      |1       |0       |
+|    write_fifo2        |Sdram_WR_FIFO       |0       |0       |0       |1       |0       |
+|      dcfifo_component |ramfifo             |0       |0       |0       |1       |0       |
+|  u_cam_vga_out        |Driver              |24      |98      |23      |0       |0       |
+|  u_camera_init        |camera_init         |509     |28      |85      |0       |0       |
+|    u_i2c_write        |i2c_module          |152     |0       |43      |0       |0       |
+|  u_camera_reader      |camera_reader       |26      |42      |54      |0       |0       |
+|  u_pll                |ip_pll              |0       |0       |0       |0       |0       |
++-----------------------------------------------------------------------------------------+
+
+SYN-1001 : Packing model "test_camera" ...
+SYN-4010 : Pack lib has 58 rtl pack models with 25 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 1 better
+SYN-1014 : Optimize round 2
+SYN-1015 : Optimize round 2, 0 better
+SYN-4002 : Packing 536 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 13 carry chain into lslice
+SYN-4007 : Packing 158 adder to BLE ...
+SYN-4008 : Packed 158 adder and 1 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+RUN-1003 : finish command "optimize_gate -maparea ov2640_sdram_gate.area" in  3.195155s wall, 1.437500s user + 0.109375s system = 1.546875s CPU (48.4%)
+
+RUN-1004 : used memory is 124 MB, reserved memory is 96 MB, peak memory is 132 MB
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model test_camera
+RUN-1002 : start command "export_db ov2640_sdram_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "backup_run_log run.log ../.logs/syn_1/td_20241023_171147.log"

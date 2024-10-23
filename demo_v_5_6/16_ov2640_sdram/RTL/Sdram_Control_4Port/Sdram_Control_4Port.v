@@ -212,13 +212,12 @@ wire					active;
 		.DM(2'b00),
 		.DQOUT(DQOUT),
 		.DQM(IDQM)
-	  ); 
+	  );
 
 	Sdram_WR_FIFO 	write_fifo1(
 		.reset(~RESET_N),
 		.data(WR1_DATA),
 		.wrreq(WR1),
-//        .clk(WR1_CLK),
 		.wrclk(WR1_CLK),
 		.aclr(WR1_LOAD),
 		.rdreq(IN_REQ&WR_MASK[0]),
@@ -234,7 +233,6 @@ wire					active;
 		.reset(~RESET_N),
 		.data(WR2_DATA),
 		.wrreq(WR2),
-//        .clk(WR2_CLK),
 		.wrclk(WR2_CLK),
 		.aclr(WR2_LOAD),
 		.rdreq(IN_REQ&WR_MASK[1]),
@@ -252,11 +250,10 @@ wire					active;
 		.reset(~RESET_N),
 		.data(mDATAOUT),
 		.wrreq(OUT_VALID&RD_MASK[0]),
-//        .clk(RD1_CLK),
 		.wrclk(CTRL_CLK),
 		.aclr(RD1_LOAD),
 		.rdreq(RD1),
-		.rdclk(RD1_CLK),	
+		.rdclk(RD1_CLK),
 		.q(RD1_DATA),
 		.wrfull(),
 		.wrusedw(read_side_fifo_wusedw1),
@@ -268,7 +265,6 @@ wire					active;
 		.reset(~RESET_N),
 		.data(mDATAOUT),
 		.wrreq(OUT_VALID&RD_MASK[1]),
-//        .clk(RD2_CLK),
 		.wrclk(CTRL_CLK),
 		.aclr(RD2_LOAD),
 		.rdreq(RD2),

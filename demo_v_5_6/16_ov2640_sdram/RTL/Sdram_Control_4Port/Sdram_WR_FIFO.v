@@ -41,7 +41,6 @@ module Sdram_WR_FIFO (
 	aclr,
 	data,
 	rdclk,
-//	clk,
 	rdreq,
 	wrclk,
 	wrreq,
@@ -54,7 +53,6 @@ module Sdram_WR_FIFO (
 	input     reset;
 	input	  aclr;
 	input	[15:0]  data;
-//    input 	 clk;
 	input	  rdclk;
 	input	  rdreq;
 	input	  wrclk;
@@ -83,10 +81,9 @@ module Sdram_WR_FIFO (
 	wire  wrfull = sub_wire3;
 	wire [15:0] wrusedw = sub_wire4[15:0];
 
-	softfifo	dcfifo_component (
+	ramfifo2	dcfifo_component (
 				.rst(reset),
 				.clkw (wrclk),
-//				.clk(clk),
 				.di (data),
 				.we (wrreq),
 				.full_flag (sub_wire3),
