@@ -83,7 +83,7 @@ begin
 		sm_bit2_num <= 4'h0;
 	else if(cnt == CNT_TIME && sm_bit1_num == 9)
 	begin		
-		if(sm_bit2_num == 10 )
+		if(sm_bit2_num == 9 )
 			sm_bit2_num <= 4'h0;
 		else 
 			sm_bit2_num <= sm_bit2_num + 1;
@@ -98,7 +98,7 @@ begin
 		sm_bit3_num <= 4'h0;
 	else if(cnt == CNT_TIME && sm_bit2_num == 9 && sm_bit1_num == 9)
 	begin		
-		if(sm_bit3_num == 10 )
+		if(sm_bit3_num == 9 )
 			sm_bit3_num <= 4'h0;
 		else
 			sm_bit3_num <= sm_bit3_num + 1;
@@ -113,7 +113,7 @@ begin
 		sm_bit4_num <= 4'h0;
 	else if(cnt == CNT_TIME && sm_bit3_num == 9 && sm_bit2_num == 9 && sm_bit1_num == 9)
 	begin		
-		if(sm_bit4_num == 10)
+		if(sm_bit4_num == 9)
 			sm_bit4_num <= 4'h0;
 		else
 			sm_bit4_num <= sm_bit4_num + 1;
