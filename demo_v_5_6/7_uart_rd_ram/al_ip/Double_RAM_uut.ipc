@@ -21,12 +21,13 @@
         <width_a>8</width_a>
         <register_a>None</register_a>
         <enable_a>disable</enable_a>
+        <enable_wea>disable</enable_wea>
     </PortAOption>
     <PortBOption>
         <mode_b>NORMAL</mode_b>
         <depth_b>256</depth_b>
         <width_b>8</width_b>
-        <register_b>RegWithOre</register_b>
+        <register_b>RegWithoutOre</register_b>
         <enable_b>enable</enable_b>
     </PortBOption>
     <FillMemoryInitValues>

@@ -106,7 +106,7 @@ ram_rw_control u_ram_rw_control
 speed_setting
 #(
 	.BPS_SET	    (BPS_SET	    ),
-	.CLK_PERIORD	(CLK_PERIORD	)
+	.CLK_PERIORD	(CLK_PERIORD	) 
 )
 speed_tx
 (	

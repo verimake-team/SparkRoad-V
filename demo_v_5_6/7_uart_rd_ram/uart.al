@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project Version="3" Minor="2" Path="C:/Users/zhang/Desktop/back/chace/githubsc/SparkRoad-V/demo_5_6_1/7_uart_rd_ram">
+<Project Version="3" Minor="2" Path="C:/Users/zhangzzp/Desktop/work/TD/7_uart_rd_ram">
     <Project_Created_Time></Project_Created_Time>
-    <TD_Version>5.6.59063</TD_Version>
+    <TD_Version>5.6.119222</TD_Version>
     <UCode>10111010</UCode>
     <Name>uart</Name>
     <HardWare>
@@ -11,7 +11,7 @@
     </HardWare>
     <Source_Files>
         <Verilog>
-            <File Path="al_ip/pll_test.v">
+            <File Path="source/rtl/my_uart_rx.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
@@ -19,7 +19,7 @@
                     <Attr Name="CompileOrder" Val="1"/>
                 </FileInfo>
             </File>
-            <File Path="al_ip/Double_RAM_uut.v">
+            <File Path="source/rtl/my_uart_tx.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
@@ -27,7 +27,7 @@
                     <Attr Name="CompileOrder" Val="2"/>
                 </FileInfo>
             </File>
-            <File Path="source/rtl/my_uart_rx.v">
+            <File Path="source/rtl/speed_setting.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
@@ -35,7 +35,7 @@
                     <Attr Name="CompileOrder" Val="3"/>
                 </FileInfo>
             </File>
-            <File Path="source/rtl/my_uart_tx.v">
+            <File Path="source/rtl/uart_top.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
@@ -43,28 +43,12 @@
                     <Attr Name="CompileOrder" Val="4"/>
                 </FileInfo>
             </File>
-            <File Path="source/rtl/speed_setting.v">
-                <FileInfo>
-                    <Attr Name="UsedInSyn" Val="true"/>
-                    <Attr Name="UsedInP&R" Val="true"/>
-                    <Attr Name="BelongTo" Val="design_1"/>
-                    <Attr Name="CompileOrder" Val="5"/>
-                </FileInfo>
-            </File>
-            <File Path="source/rtl/uart_top.v">
-                <FileInfo>
-                    <Attr Name="UsedInSyn" Val="true"/>
-                    <Attr Name="UsedInP&R" Val="true"/>
-                    <Attr Name="BelongTo" Val="design_1"/>
-                    <Attr Name="CompileOrder" Val="6"/>
-                </FileInfo>
-            </File>
             <File Path="source/rtl/ram_rw_control.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
                     <Attr Name="BelongTo" Val="design_1"/>
-                    <Attr Name="CompileOrder" Val="7"/>
+                    <Attr Name="CompileOrder" Val="5"/>
                 </FileInfo>
             </File>
         </Verilog>
@@ -84,7 +68,7 @@
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
                     <Attr Name="BelongTo" Val="design_1"/>
-                    <Attr Name="CompileOrder" Val="8"/>
+                    <Attr Name="CompileOrder" Val="6"/>
                 </FileInfo>
             </File>
             <File Path="al_ip/Double_RAM_uut.ipc">
@@ -92,7 +76,7 @@
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
                     <Attr Name="BelongTo" Val="design_1"/>
-                    <Attr Name="CompileOrder" Val="9"/>
+                    <Attr Name="CompileOrder" Val="7"/>
                 </FileInfo>
             </File>
         </IP_FILE>
@@ -121,6 +105,8 @@
                     <rtl_sim_model>on</rtl_sim_model>
                 </RtlProperty>
             </Strategy>
+            <UserParams>
+            </UserParams>
         </Run>
         <Run Name="phy_1" Type="PhysicalDesign" ConstraintSet="constraint_1" Description="" SynRun="syn_1" Active="true">
             <Strategy Name="Default_PhysicalDesign_Strategy">
@@ -128,6 +114,8 @@
                     <lib>E:/DEMO/EG4S20BG256_DEMO/uart_r_ram/uart/simulation</lib>
                 </SimProperty>
             </Strategy>
+            <UserParams>
+            </UserParams>
         </Run>
     </Runs>
     <Project_Settings>
